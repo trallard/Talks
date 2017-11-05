@@ -12,7 +12,7 @@ $secondary: #3FB8AF; /*turqoise */
 $secondary-light: #7FC7AF;
 $primary-light: #FF9E9D;
 $white: #fff;
-$purple: #A70267;
+$purple: #7C77B9;
 
 $title-font:'Amatic SC', cursive;
 $base-font:'Josefin Sans', sans-serif;
@@ -45,3 +45,120 @@ $base-font:'Josefin Sans', sans-serif;
 
 .reveal .progress span {
   background: $secondary;}
+
+/*********************************************
+ * custom components
+ *********************************************/
+
+
+/* Slides */
+
+   .white_overlay h2 {
+     font-family: $title-font;
+     font-weight: bold;
+     color: $white;
+     margin: 0;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     font-size: 8rem;
+     transform: translate(-50%, -50%);
+   }
+
+.dark_box{
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    );
+    height: 50%;
+    width: 50%;
+    float: none;
+  }
+
+
+  .two-colors{
+    height: auto;
+    background-color: $white;
+    background: linear-gradient(to right,
+      $purple 50%,
+      $white 50%
+    )
+  }
+
+
+  .items-block {
+      display: flex;
+      font-family: $base-font;
+
+      .single-block {
+      width: 100%;
+      display: flex;
+      padding: 10px;
+
+          &.single1 {
+              width:50%;
+              color: $white;
+           }
+
+          &.single2 {
+              width: 50%;
+          }
+      }
+  }
+
+  .item-img {
+      width: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .item-img img {
+          max-width: 100%;
+      }
+  }
+
+
+/* Classes */
+.reveal table {
+  max-width: 960px;
+  margin: 10px auto;
+}
+
+.caption {
+  font-size: 1.6em;
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+.reveal table thead th {
+  font-weight: 400;
+  background: #8a97a0;
+  color: #FFF;
+}
+
+.reveal table tr {
+  background: #f4f7f8;
+  border-bottom: 1px solid #FFF;
+  margin-bottom: 5px;
+}
+
+.reveal table tr:nth-child(even) {
+  background: #e8eeef;
+}
+
+.reveal table th, td {
+  text-align: left;
+  padding: 20px;
+  font-weight: 300;
+}
+
+.reveal table tfoot tr {
+  background: none;
+}
+
+.reveal table tfoot td {
+  padding: 10px 2px;
+  font-size: 0.8em;
+  font-style: italic;
+  color: #8a97a0;
+}
