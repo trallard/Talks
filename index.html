@@ -4,11 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title> Tania A. for Manchester R </title>
+		<title> BMS 353 </title>
 
 		<link rel="stylesheet" href="reveal.js/css/reveal.css">
 		<link rel="stylesheet" href="reveal.js/css/theme/white.css">
-		<link rel="stylesheet" href="reveal.js/css/theme/custom.css">
+		<link rel="stylesheet" href="sass/trallard_formal.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
@@ -24,43 +24,145 @@
 	</head>
 	<body>
 		<div class="reveal">
-			<div class="slides">
+			<div class="slides logo-bottom">
 				<section>
-					<h2> Tania Allard </h2>
-					<p>
-						<strong> What has reproducibility even done for us?</strong>
+					<h2> BMS 353 </h2>
+					<h2> Bionformatics for Biomedical Sciences </h2>
+					<br><br>
+					<hr>
+					<p class='author'>
+						Module coordinator: Dr. Marta Milo
 						<br>
-						<hr>
-						<small>November 9th, 2017</small>
+						Research Software Instructors: Dr Tania Allard, Dr. Mike Croucher
 					</p>
 				</section>
 
-				<section data-background-image='./assets/code.jpg' class='dark_box'>
-					<div class="white_overlay">
-						<h2>Hola</h2>
-					</div>
+				<section>
+						<h2> An introduction to the tools we will be using </h2>
 				</section>
 
 				<section class='two-colors'>
-					<table>
-  <tr>
-    <th>hola</th>
-    <th>hola1</th>
-  </tr>
-  <tr>
-    <td>adios</td>
-    <td>adios2</td>
-  </tr>
-	<tr>
-    <td>adios</td>
-    <td>adios2</td>
-  </tr>
-</table>
+					<h4>R vs the old way</h4>
+					<div style='Width:100%>, display: block;, top:10%, position: relative;'>
+					<div class="sm_img" style='float:left!important;'>
+					<img src="./assets/BMS535/Rlogo.svg" alt="Rlogo">
+					</div>
+					<div class="sm_img" style='display: inine-block;'>
+					<img src="./assets/BMS535/SPSS.png" alt="SPSS">
+					</div>
+				</div>
+
+					<div class="items-block">
+						<div class="single-block single1">
+							R is a free language and environment for statistical computing and graphics
+						</div>
+
+						<div class="single-block single2">
+							<ul>
+								<li>Very expensive</li>
+								<li> Popular with industry</li>
+							</ul>
+						</div>
+					</div>
+				<div class='float_modal'>
+					<p class='modal_p'>Not surprisingly R is far more popular now!
+					<a href="http://r4stats.com/articles/popularity/">http://r4stats.com/articles/popularity/</a></p>
+				</div>
 				</section>
 
+				<section>
+					<h3>The number of jobs requiring R has increased too!</h3>
+					<img src="./assets/BMS535/r-vs-stata.png" alt="vs">
+				</section>
 
 				<section>
-					<p> Thanks a lot for your time and attention! :)</p>
+					<h3>Packages</h3>
+					<box-text>These save time by using other people's code</box-text>
+					<hr>
+					<ul class='fragment'>
+						<li>Comprehensive R archive Network (CRAN) <strong> 9662</strong> packages
+							(November 2016)
+							<a href="https://cran.r-project.org">https://cran.r-project.org</a>
+					 </li>
+						<li>
+							Bioconductor <strong> 1211</strong> packages (November 2016)
+							<a href="http://bioconductor.org/">http://bioconductor.org/</a>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Packages</h3>
+					<box-text>These save time by using other people's code</box-text>
+					<hr>
+					<ul class='fragment'>
+						<li>Comprehensive R archive Network (CRAN) <strong> 11749</strong> packages
+							(November 2017)
+							<a href="https://cran.r-project.org">https://cran.r-project.org</a>
+					 </li>
+						<li>
+							Bioconductor <strong>1476 </strong> packages (November 2017)
+							<a href="http://bioconductor.org/">http://bioconductor.org/</a>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Jupyter notebooks</h3>
+					<img src="./assets/BMS535/jupyter.png" alt="jupyter" height="500px">
+				</section>
+
+				<section>
+					<img src="./assets/BMS535/use.png" alt="jupyter" height="500px">
+				</section>
+
+				<section >
+					<div class="sm_img">
+						<img src="./assets/BMS535/jupyter_logo.png" alt="logo">
+					</div>
+					<p class='left_align'>Combine live computer code, data, tetx, and mathematics in an
+					interactive document.<br><br>
+					Academic papers only gve a description of your analyis. <br><br>
+					Jupyter notebooks contain both the description and the analysis.</p>
+				</section>
+
+				<section>
+					<img src="./assets/BMS535/CoCalc_Logo.png" alt="cocalc" height="150px;">
+					<ul>
+						<li>Collaborative computational mathematics </li>
+						<li>All open source environment for running Jupyter notebooks (and others)
+						 in the cloud</li>
+						 <li>Dedicated Virtual Machine for this course on the Google Cloud Platform</li>
+						 <li>As powerful as a node on the Sheffield University Supercomputer: Iceberg</li>
+					</ul>
+				</section>
+
+				<section>
+					<h4>Log into CoCalc</h4>
+					<p class='fragment grow'>
+					<a href="https://cocalc.com">https://cocalc.com</a></p>
+					<br>
+					<img src="./assets/BMS535/cocalc_login.png" alt="login" height='400px;'>
+				</section>
+
+				<section>
+					<h3>Handy tips for the notebooks</h3>
+					<p class='left_align'>
+					<box-text>Ctrl/Cmd</box-text> + <box-text>y</box-text>changes the cell to
+					code mode
+					<br><br>
+					<box-text>Ctrl/Cmd</box-text> + <box-text>m</box-text> changes cell to markdown
+					<br><br>
+					<box-text>Shift</box-text> + <box-text>Enter</box-text> evaluates the cell
+					<br><br>
+					To add Latex in a markdown cell make sure to enclose in <code>$$</code>
+					or <code>$</code>
+					</p>
+				</section>
+
+				<section>
+					Also, we put together a <strong>mini</strong> CoCal tutorial that you can
+					check at <a href="https://tutorial.cocalc.com/students/">https://tutorial.cocalc.com/students/</a>
 				</section>
 
 			</div>
@@ -81,6 +183,7 @@
 					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
+			Reveal.configure({ slideNumber: 'c/t'});
 		</script>
 	</body>
 </html>

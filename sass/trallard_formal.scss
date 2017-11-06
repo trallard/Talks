@@ -114,8 +114,8 @@ $base-font:'Raleway', sans-serif;
 
 
 .float_modal{
-  position: fixed;
-  top: 85%;
+  position: relative;
+  top: 90px;
   left: 50%;
   max-width: 900px;
   min-width: 100px;
@@ -162,6 +162,10 @@ $base-font:'Raleway', sans-serif;
             width: 50%;
             color: $white;
             font-size: 0.9em;
+
+            &.h5{
+              color: $white;
+            }
         }
     }
 }
@@ -170,7 +174,7 @@ $base-font:'Raleway', sans-serif;
     width: 200px;
     height: 200px;
     display: flex;
-    position:fixed;
+    position:absolute;
     top: 10%;
 
     .item-img img {

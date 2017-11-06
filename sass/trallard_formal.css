@@ -91,8 +91,8 @@ section.has-light-background, section.has-light-background h1, section.has-light
   border: 0px; }
 
 .float_modal {
-  position: fixed;
-  top: 85%;
+  position: relative;
+  top: 90px;
   left: 50%;
   max-width: 900px;
   min-width: 100px;
@@ -127,12 +127,14 @@ section.has-light-background, section.has-light-background h1, section.has-light
       width: 50%;
       color: #fff;
       font-size: 0.9em; }
+      .items-block .single-block.single2.h5 {
+        color: #fff; }
 
 .item-img {
   width: 200px;
   height: 200px;
   display: flex;
-  position: fixed;
+  position: absolute;
   top: 10%; }
   .item-img .item-img img {
     max-width: 100%;
