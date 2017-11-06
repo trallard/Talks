@@ -53,17 +53,17 @@ $base-font:'Josefin Sans', sans-serif;
 
 /* Slides */
 
-   .white_overlay h2 {
-     font-family: $title-font;
-     font-weight: bold;
-     color: $white;
-     margin: 0;
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     font-size: 8rem;
-     transform: translate(-50%, -50%);
-   }
+.white_overlay h2 {
+ font-family: $title-font;
+ font-weight: bold;
+ color: $white;
+ margin: 0;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ font-size: 8rem;
+ transform: translate(-50%, -50%);
+}
 
 .dark_box{
   background-image: linear-gradient(
