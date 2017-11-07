@@ -2,7 +2,7 @@
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
 @import url(../../lib/font/source-sans-pro/source-sans-pro.css);
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Amatic+SC:400+700');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Amatic+SC:400+700');
 
 /*********************************************
 * PERSONAL
@@ -127,53 +127,30 @@ background-image: linear-gradient(
 }
 
 
-.content_box{
-  border-color: $purple;
-  border-width: 2px;
-  border-style: solid;
+.float_modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 900px;
+  min-width: 100px;
+  max-height: 600px;
+  min-height: 100px;
+  z-index: 2000;
+  transform: translateX(-50%) translateY(-50%);
+  background: hsla(212, 11%, 20%, 0.98);
+  border-radius: 10px;
 }
 
-/* Classes */
-.reveal table {
-  max-width: 960px;
-  margin: 10px auto;
+.modal_p{
+  padding: 10px;
+  color: $primary-light;
+  font-size: 0.56em;
 }
 
-.caption {
-  font-size: 1.6em;
-  font-weight: 400;
-  padding: 10px 0;
-}
-
-.reveal table thead th {
-  font-weight: 400;
-  background: #8a97a0;
-  color: #FFF;
-}
-
-.reveal table tr {
-  background: #f4f7f8;
-  border-bottom: 1px solid #FFF;
-  margin-bottom: 5px;
-}
-
-.reveal table tr:nth-child(even) {
-  background: #e8eeef;
-}
-
-.reveal table th, td {
-  text-align: left;
-  padding: 20px;
-  font-weight: 300;
-}
-
-.reveal table tfoot tr {
-  background: none;
-}
-
-.reveal table tfoot td {
-  padding: 10px 2px;
-  font-size: 0.8em;
+.caption_p{
+  font-weight: light;
   font-style: italic;
-  color: #8a97a0;
+  font-size: 0.4em;
+  color: $white;
+  font-family: $base-font;
 }
