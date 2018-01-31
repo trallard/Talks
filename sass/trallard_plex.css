@@ -1,0 +1,148 @@
+/** Customised template for slides  **/
+@import url(../node_modules/@ibm/type/css/ibm-type.css);
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash");
+section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
+  color: #222; }
+
+/*********************************************
+* PERSONAL
+*********************************************/
+/* ultra violet */
+/* lavender violet */
+/*blue moon*/
+/* dark gray */
+/*********************************************
+ * OVER WRITING
+ *********************************************/
+.reveal {
+  font-family: "IBMPlexSans", sans-serif; }
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  color: #654EA3;
+  font-family: "IBMPlexSerif", monospace;
+  font-weight: bold;
+  text-transform: none; }
+
+.reveal strong,
+.reveal b {
+  font-weight: bold;
+  color: #747CA8; }
+
+.reveal .controls {
+  color: #747CA8; }
+
+.reveal .progress span {
+  background: #747CA8; }
+
+.reveal a {
+  color: #3388A6 !important;
+  padding: 10px; }
+
+/*********************************************
+ * custom components
+ *********************************************/
+.logo-top {
+  position: fixed;
+  display: block;
+  bottom: 8px;
+  right: 8px;
+  z-index: 31;
+  background-image: url("../../assets/Sheffield_logo.png");
+  background-size: 20%;
+  background-position: 0% 0%;
+  background-repeat: no-repeat; }
+
+.logo-bottom {
+  position: fixed;
+  display: block;
+  bottom: 8px;
+  right: 8px;
+  z-index: 31;
+  background-image: url("../../assets/Sheffield_logo.png");
+  background-size: 20%;
+  background-position: 0% 0%;
+  background-repeat: no-repeat; }
+
+.reveal box-text {
+  border: 4px solid #3388A6;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 0.9em; }
+
+.author {
+  font-family: "IBMPlexSans", sans-serif;
+  color: #939abc;
+  font-size: 25px !important;
+  padding-top: 20px !important; }
+
+.sm_img {
+  max-width: 200px;
+  height: auto;
+  float: right; }
+
+.reveal section img {
+  padding: 10px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border: 0px; }
+
+.float_modal {
+  position: relative;
+  top: 90px;
+  left: 50%;
+  max-width: 900px;
+  min-width: 100px;
+  max-height: 600px;
+  min-height: 100px;
+  z-index: 2000;
+  transform: translateX(-50%) translateY(-50%);
+  background: rgba(45, 51, 57, 0.98);
+  border-radius: 15px; }
+
+.modal_p {
+  padding: 5px;
+  color: #fff;
+  font-size: 0.56em; }
+
+.two-colors {
+  height: auto;
+  background-color: #fff;
+  background: linear-gradient(to right, #fff 50%, #747CA8 50%); }
+
+.items-block {
+  display: flex;
+  font-family: "IBMPlexSans", sans-serif; }
+  .items-block .single-block {
+    width: 100%;
+    display: flex;
+    padding: 10px; }
+    .items-block .single-block.single1 {
+      width: 50%;
+      font-size: 0.9em; }
+    .items-block .single-block.single2 {
+      width: 50%;
+      color: #fff;
+      font-size: 0.9em; }
+      .items-block .single-block.single2.h5 {
+        color: #fff; }
+
+.item-img {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  position: absolute;
+  top: 10%; }
+  .item-img .item-img img {
+    max-width: 100%;
+    margin: 10px;
+    padding: 10px; }
+
+.left_align {
+  text-align: left; }
+
+/*# sourceMappingURL=trallard_plex.css.map */

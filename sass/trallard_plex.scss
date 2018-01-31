@@ -1,21 +1,21 @@
 /** Customised template for slides  **/
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
-@import url(../../lib/font/plex/plex.css);
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,700|Sansita:400,700,800');
+@import url(../node_modules/@ibm/type/css/ibm-type.css);
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
 
 /*********************************************
 * PERSONAL
 *********************************************/
-$primary: #3f51b5; /* slate gray */
-$secondary: #607d8b; /* blue */
+$primary: #654EA3; /* ultra violet */
+$secondary: #747CA8; /* lavender violet */
 $secondary-light: lighten($secondary, 10%);
 $primary-light: lighten($primary, 10%);
 $white: #fff;
-$purple: #7C77B9;
+$third: #3388A6; /*blue moon*/
 $text-color: #737373; /* dark gray */
 
-$title-font:'Sansita' cursive;
+$title-font:'IBMPlexSerif', monospace;
 $base-font:'IBMPlexSans', sans-serif;
 
 /*********************************************
@@ -49,7 +49,7 @@ $base-font:'IBMPlexSans', sans-serif;
   background: $secondary;}
 
 .reveal a{
-  color: $purple!important;
+  color: $third!important;
   padding: 10px;
 }
 
@@ -84,7 +84,7 @@ $base-font:'IBMPlexSans', sans-serif;
 
 
 .reveal box-text{
-  border: 4px solid $purple;
+  border: 4px solid $third;
   padding: 8px;
   border-radius: 5px;
   font-size: 0.9em;
