@@ -1,0 +1,334 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Her+Data Tania Allard</title>
+
+  <!-- Reveal themes -->
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="reveal.js/css/theme/simple.css">
+
+  <!-- Full theme -->
+  <link rel="stylesheet" href="sass/full_theme.css">
+  <link rel="stylesheet" href="sass/presentation.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="sass/google_syntax.css">
+
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+	<meta property="og:url" content="https://trallard.github.io/presentation-better-analytics/" />
+	<meta property="og:title" content="Her+Data: the value of community" />
+	<!-- <meta property="og:image" content="https://trallard.github.io/Talks/images/facebook-card.png" /> -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:creator" content="@trallard">
+	<!-- <meta name="twitter:image" content="https://gapple.github.io/presentation-better-analytics/images/twitter-card.png"> -->
+
+</head>
+<body>
+<div class="reveal pattern--stream">
+	<div class="slides">
+
+		<section>
+			<section class="title" id="title">
+				<div class="grid-wrapper">
+					<div class="header">
+						<!-- <div class="logo logo--full"><span class="visually-hidden">Myplanet</span></div> -->
+					</div>
+					<div class="content">
+						<h1>The importance of community in Data Science</h1>
+						<div class="description">
+							Her + Data International Women's Day 2018
+						</div>
+					</div>
+					<div class="credit">
+						<hr>
+						<div class="label">Presented By</div>
+						<div class="name">Tania Allard, PhD</div>
+					</div>
+					<a class="presentation-url" href="https://trallard.github.io/Talks/her+data">
+            https://trallard.github.io/Talks/her+data</a>
+				</div>
+			</section>
+
+			<section class="about" id="about">
+				<div class="grid-wrapper">
+					<div class="content">
+						<aside>
+							<h2>Geoff Appleby</h2>
+							<hr>
+							<ul class="projects">
+								<li><a href="https://www.drupal.org/project/csp">Content-Security-Policy</a></li>
+								<li><a href="https://www.drupal.org/project/ga">Googalytics</a></li>
+								<li><a href="https://www.drupal.org/project/ie9">IE9 Compatibility</a></li>
+								<li><a href="https://www.drupal.org/project/persistent_login">Persistent Login</a></li>
+							</ul>
+							<hr>
+							<ul class="accounts">
+								<li class="drupal"><a href="https://www.drupal.org/u/gapple"><i class="fa fa-drupal"></i> <span>gapple</span></a></li>
+								<li class="twitter"><a href="https://twitter.com/ixek"><i class="fab fa-twitter"></i> <span>ixek</span></a></li>
+							</ul>
+						</aside>
+					</div>
+				</div>
+			</section>
+		</section>
+
+		<section class="commands">
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek"><i class="fa fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<ul>
+						<li>Create</li>
+						<li>Require</li>
+						<li>Set</li>
+						<li>Send</li>
+					</ul>
+				</div>
+			</section>
+
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek"><i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h1>Create</h1>
+						<table>
+							<tr><th>trackingId:</th><td>{string}</td></tr>
+							<tr><th>cookieDomain:</th><td>{string}</td></tr>
+						</table>
+						<figure class="code">
+							<pre><code class="lang-js">
+								ga('create', 'UA-107047227-2', 'auto');
+							</code></pre>
+						</figure>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek"><i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h1>Require</h1>
+						<table>
+							<tr><th>plugin:</th><td>{string}</td></tr>
+						</table>
+						<figure class="code">
+							<pre><code class="lang-js">
+								ga('require', 'linker');
+							</code></pre>
+						</figure>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek"><i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h1>Dimensions</h1>
+						<h2>Set</h2>
+						<table>
+							<tr><th>key:</th><td>{string}</td></tr>
+							<tr><th>value:</th><td>{string}</td></tr>
+						</table>
+						<figure class="code">
+							<pre><code class="lang-js">
+								ga('set', 'dimension1', 'article');
+							</code></pre>
+						</figure>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek"><i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h1>Metrics</h1>
+						<h2>Set</h2>
+						<table>
+							<tr><th>key:</th><td>{number}</td></tr>
+							<tr><th>value:</th><td>{number}</td></tr>
+						</table>
+						<figure class="code">
+							<pre><code class="lang-js">
+								ga('set', 'metric1', 2);
+							</code></pre>
+						</figure>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek"><i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h1>Pageview</h1>
+						<h2>Send</h2>
+						<table>
+							<tr><th>title:</th><td>{string}</td><td>optional</td></tr>
+							<tr><th>location:</th><td>{string}</td><td>optional</td></tr>
+							<tr><th>page:</th><td>{string}</td><td>optional</td></tr>
+						</table>
+						<figure class="code">
+							<pre><code class="lang-js">
+								ga('send', 'pageview');
+							</code></pre>
+						</figure>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek"><i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h1>Events</h1>
+						<h2>Send</h2>
+						<table>
+							<tr><th>category:</th><td>{string}</td></tr>
+							<tr><th>action:</th><td>{string}</td></tr>
+							<tr><th>label:</th><td>{string}</td><td>optional</td></tr>
+							<tr><th>value:</th><td>{number}</td><td>optional</td></tr>
+						</table>
+						<figure class="code">
+							<pre><code class="lang-js">
+								ga('send', 'event', 'video', 'play', 'cats.mp4');
+							</code></pre>
+						</figure>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek"><i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h1>User Timings</h1>
+						<h2>Send</h2>
+						<table>
+							<tr><th>category:</th><td>{string}</td></tr>
+							<tr><th>var:</th><td>{string}</td></tr>
+							<tr><th>value:</th><td>{number}</td></tr>
+							<tr><th>label:</th><td>{string}</td><td>optional</td></tr>
+						</table>
+						<figure class="code">
+							<pre><code class="lang-js">
+								ga('send', 'timing', 'resource', 'get', 100);
+							</code></pre>
+						</figure>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek"><i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h1>Social</h1>
+						<h2>Send</h2>
+						<table>
+							<tr><th>network:</th><td>{string}</td></tr>
+							<tr><th>action:</th><td>{string}</td></tr>
+							<tr><th>target:</th><td>{string}</td></tr>
+						</table>
+						<figure class="code">
+							<pre><code class="lang-js">
+								ga('send', 'social', 'twitter', 'tweet', 'articles/give-it-a-go-and-grow-your-own-herbs');
+							</code></pre>
+						</figure>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek"><i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<figure class="code">
+					<pre><code class="lang-html">
+						&lt;script&gt;
+							window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+
+							ga('create', 'UA-XXXXX-Y', 'auto');
+							ga('set', 'dimension1', 'article');
+							ga('send', 'pageview');
+
+							jQuery('video').on('play', function () {
+								ga('send', 'event', 'video', 'play', 'cats.mp4');
+							});
+
+						&lt;/script&gt;
+						&lt;script async src='https://www.google-analytics.com/analytics.js'&gt;&lt;/script&gt;
+					</code></pre>
+					</figure>
+				</div>
+			</section>
+		</section>
+
+		<section id="demo">
+			<div class="grid-wrapper">
+				<div class="header">
+					<div class="logo"></div>
+					<div class="twitter"><a href="https://twitter.com/ixek"><i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+				</div>
+				<div class="content">
+					<h1>Demo</h1>
+					<a href="https://github.com/gapple/presentation-better-analytics/tree/master/demo/umami_ga">umami_ga.module</a>
+					<!-- <img src="images/banana-sharpener.gif"/> -->
+				</div>
+			</div>
+		</section>
+
+
+		<section id="end" class="color--ice">
+			<div class="grid-wrapper">
+				<div class="content">
+					<a href="https://twitter.com/ixek"><i class="fab fa-twitter-square fa-3x"></i>
+            <span>ixek</span></a>
+				</div>
+			</div>
+		</section>
+
+	</div>
+</div>
+
+<script src="reveal.js/lib/js/head.min.js"></script>
+<script src="reveal.js/js/reveal.js"></script>
+<script src="reveal.js/js/reveal-init.js"></script>
+
+</body>
+</html>
