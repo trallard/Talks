@@ -23,7 +23,7 @@ body {
   font-family: "IBMPlexSans", sans-serif;
   font-size: inherit;
   font-weight: normal;
-  color: #222; }
+  color: #737373; }
 
 ::selection {
   color: #fff;
@@ -320,10 +320,10 @@ html {
   background-color: #5F4B8B; }
 
 .reveal.pattern--stream .progress {
-  color: #0D7D7F; }
+  color: #3388A6; }
 
 .reveal.pattern--stream .controls {
-  color: #0D7D7F; }
+  color: #3388A6; }
 
 .reveal .slides section.color--dark {
   background-color: #22272B;

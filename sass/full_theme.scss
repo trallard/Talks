@@ -32,7 +32,7 @@ body {
   font-family: $base-font;
   font-size: inherit;
   font-weight: normal;
-  color: #222; }
+  color: $text-color; }
 
 ::selection {
   color: #fff;
@@ -362,9 +362,9 @@ html {
   .reveal.pattern--stream .slides section.title {
     background-color: $primary; }
   .reveal.pattern--stream .progress {
-    color: #0D7D7F; }
+    color: $third; }
   .reveal.pattern--stream .controls {
-    color: #0D7D7F; }
+    color: $third; }
 
 .reveal .slides section.color--dark {
   background-color: #22272B;
