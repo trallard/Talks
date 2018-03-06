@@ -27,12 +27,6 @@ img {
     }
 }
 
-.reveal pre code {
-    background-color: #f8f8f8;
-    border: 1ex solid #f8f8f8;
-    font-size: 125%;
-    line-height: 1.1em;
-}
 
 .header .twitter {
     margin-left: auto;
@@ -62,6 +56,9 @@ img {
         display: none;
     }
 }
+
+/* Table to the left: right under the content: no
+division for the cells */
 
 .commands table {
     margin: 0;
