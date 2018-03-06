@@ -430,6 +430,35 @@ color: $third; }
     }
 }
 
+.reveal .slides section.color--grad-purple{
+  background-color: $white;
+  color: #FFFFFF;
+  background: linear-gradient(45deg,
+    ( #2D266F, #7C2289 ));
+}
+.reveal .slides section.color--purple .logo {
+  background-image: url("../assets/Tania_logo_gray.png"); }
+
+
+.reveal .slides section.color--grad-green{
+  background-color: $white;
+  color: #FFFFFF;
+  background: linear-gradient(45deg,
+    ( #90218C, #009890 ));
+}
+.reveal .slides section.color--grad-green .logo {
+  background-image: url("../assets/Tania_logo_white.png"); }
+
+
+.reveal .slides section.color--grad-blue{
+  background-color: $white;
+  color: #FFFFFF;
+  background: linear-gradient(45deg,
+    ( #303395, #27F0F0 ));
+}
+.reveal .slides section.color--grad-blue .logo {
+  background-image: url("../assets/Tania_logo_white.png"); }
+
 
 .grid-wrapper {
 display: grid; }
