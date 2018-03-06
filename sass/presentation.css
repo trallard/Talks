@@ -6,11 +6,11 @@
 img {
     display: block;
 }
-
-.fa-drupal {
-    color: #0678be;
-}
 .fa-twitter {
+    color: #1DA1F2;
+}
+
+.fa-github {
     color: #1DA1F2;
 }
 
@@ -56,7 +56,7 @@ img {
     text-align: right;
     font-size: 0.95em;
     align-self: center;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 @media (max-width: 480px) {
@@ -64,58 +64,6 @@ img {
         display: none;
     }
 }
-
-#about {
-    background-image: url('../images/eaglebluffs.jpg');
-    background-size: cover;
-    background-position: center center;
-}
-#about a {
-    color: rgb(51, 51, 51);
-}
-#about aside {
-    background-color: rgba(255, 255, 255, .8);
-    color: #000;
-    float: right;
-    font-size: 1.5em;
-    padding: 5vmin;
-}
-#about aside hr {
-    color: rgba(0,0,0, 0.075);
-    margin: 2.5vmin 0;
-}
-#about aside ul {
-    display: block;
-    font-size: inherit;
-    list-style: none;
-    margin: 2.5vmin 0 0;
-    width: auto;
-}
-#about .projects {
-    text-align: center;
-}
-#about .accounts a .fa + span,
-#about .projects a {
-    /*text-decoration: underline rgba(51, 51, 51, 0.1);*/
-}
-#about .accounts a:hover .fa + span,
-#about .projects a:hover {
-    text-decoration: underline rgba(51, 51, 51, 0.65);
-}
-#about .accounts {
-    display: grid;
-    justify-content: center;
-}
-#about .accounts a {
-    display: flex;
-    align-items: baseline;
-}
-#about .accounts .fa {
-    margin-right: 0.25ex;
-    width: 1.8ex;
-}
-
-
 
 .commands table {
     margin: 0;
@@ -146,4 +94,77 @@ img {
     margin-top: auto;
     text-align: center;
     font-size: 150%;
+}
+
+
+
+/*********************************************
+ * custom components
+ *********************************************/
+.dark_box {
+    background-image: url('../assets/code.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.dark_box aside{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+  border-radius: 5px;
+  position: relative;
+  float: center;
+  top: 50%;
+  border-radius: 5px;
+  color: #fff!important;
+  font-size: 1.5em;
+  padding: 5vmin 5vmin;
+}
+
+#about {
+    background-image: url('../assets/code2.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#about a {
+    color: rgb(51, 51, 51);
+}
+#about aside {
+    background-color: rgba(255, 255, 255, .8);
+    color: #000;
+    float: left;
+    font-size: 1.5em;
+    padding: 5vmin;
+}
+#about aside hr {
+    color: rgba(0,0,0, 0.075);
+    margin: 2.5vmin 0;
+}
+#about aside ul {
+    display: block;
+    font-size: inherit;
+    list-style: none;
+    margin: 2.5vmin 0 0;
+    width: auto;
+}
+#about .projects {
+    text-align: left;
+}
+#about .accounts a .fa + span,
+#about .projects a {
+    /*text-decoration: underline rgba(51, 51, 51, 0.1);*/
+}
+#about .accounts a:hover .fa + span,
+#about .projects a:hover {
+    text-decoration: underline rgba(51, 51, 51, 0.65);
+}
+#about .accounts {
+    display: grid;
+    justify-content: center;
+}
+#about .accounts a {
+    display: flex;
+    align-items: baseline;
+}
+#about .accounts .fa {
+    margin-right: 0.25ex;
+    width: 1.8ex;
 }
