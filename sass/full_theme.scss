@@ -280,6 +280,11 @@ text-shadow: none; }
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
 
+
+/*********************************************
+* ENABLE RESPONSIVENESS
+*********************************************/
+
 html {
   font-size: 2.25vmin; }
 
@@ -291,69 +296,21 @@ html {
   html {
     font-size: 14px; } }
 
+/*********************************************
+* THEME SPECIFICS: EACH PATTERN WILL BE A THEME
+*********************************************/
+
 .visually-hidden {
-  position: absolute !important;
-  clip: rect(1px, 1px, 1px, 1px);
-  overflow: hidden;
-  height: 1px;
-  width: 1px;
-  word-wrap: normal; }
+position: absolute !important;
+clip: rect(1px, 1px, 1px, 1px);
+overflow: hidden;
+height: 1px;
+width: 1px;
+word-wrap: normal; }
 
 .reveal[class*="pattern--"] {
   background-position: center center;
   background-size: 133vmax auto; }
-
-// .reveal.pattern--molecules {
-//   background-image: url("../../lib/myplanet/patterns/molecules/pattern.svg"); }
-//   .reveal.pattern--molecules .slides section.intro {
-//     background-color: #FAFAFA; }
-//     .reveal.pattern--molecules .slides section.intro .logo {
-//       background-image: url("../../lib/myplanet/patterns/molecules/logo.svg"); }
-//   .reveal.pattern--molecules .slides section.title {
-//     background-color: #872E27; }
-//   .reveal.pattern--molecules .progress {
-//     color: #872E27; }
-//   .reveal.pattern--molecules .controls {
-//     color: #872E27; }
-//
-// .reveal.pattern--night-sky {
-//   background-image: url("../../lib/myplanet/patterns/night-sky/pattern.svg"); }
-//   .reveal.pattern--night-sky .slides section.intro {
-//     background-color: #DEF9F6; }
-//     .reveal.pattern--night-sky .slides section.intro .logo {
-//       background-image: url("../../lib/myplanet/patterns/night-sky/logo.svg"); }
-//   .reveal.pattern--night-sky .slides section.title {
-//     background-color: #0D7D7F; }
-//   .reveal.pattern--night-sky .progress {
-//     color: #0D7D7F; }
-//   .reveal.pattern--night-sky .controls {
-//     color: #0D7D7F; }
-
-// .reveal.pattern--orange-river {
-//   background-image: url("../../lib/myplanet/patterns/orange-river/pattern.svg"); }
-//   .reveal.pattern--orange-river .slides section.intro {
-//     background-color: #FFEDE9; }
-//     .reveal.pattern--orange-river .slides section.intro .logo {
-//       background-image: url("../../lib/myplanet/patterns/orange-river/logo.svg"); }
-//   .reveal.pattern--orange-river .slides section.title {
-//     background-color: #872E27; }
-//   .reveal.pattern--orange-river .progress {
-//     color: #872E27; }
-//   .reveal.pattern--orange-river .controls {
-//     color: #872E27; }
-
-// .reveal.pattern--playground {
-//   background-image: url("../../lib/myplanet/patterns/playground/pattern.svg"); }
-//   .reveal.pattern--playground .slides section.intro {
-//     background-color: #FCECDB; }
-//     .reveal.pattern--playground .slides section.intro .logo {
-//       background-image: url("../../lib/myplanet/patterns/playground/logo.svg"); }
-//   .reveal.pattern--playground .slides section.title {
-//     background-color: #8E3E28; }
-//   .reveal.pattern--playground .progress {
-//     color: #8E3E28; }
-//   .reveal.pattern--playground .controls {
-//     color: #8E3E28; }
 
 .reveal.pattern--stream {
   background-image: url("../assets/patterns/stream.svg"); }
@@ -368,6 +325,9 @@ color: $third; }
 .reveal.pattern--stream .controls {
 color: $third; }
 
+/*********************************************
+* ADDITIONAL SLIDES CLASSES
+*********************************************/
 
 .reveal .slides section.color--dark {
   background-color: #22272B;
@@ -459,9 +419,17 @@ color: $third; }
 .reveal .slides section.color--grad-blue .logo {
   background-image: url("../assets/Tania_logo_white.png"); }
 
-
+/*********************************************
+* CSS GRID USE
+*********************************************/
 .grid-wrapper {
 display: grid; }
+
+
+
+/*********************************************
+* REVEAL SPECIFICS
+*********************************************/
 
 .reveal .slides {
 text-align: left; }
@@ -521,6 +489,11 @@ background: none;
 border: none;
 box-shadow: none;
 margin: 0; }
+
+/*********************************************
+* MODIFIED SECTIONS
+* ADDS LOGO AND SPECIFICS FOR THE THEME
+*********************************************/
 
 .reveal .slides section {
 height: 100vh;
@@ -838,21 +811,25 @@ figure.code {
 figure.code pre {
   box-shadow: none;
   font-size: 1rem;
-  height: 100%;
+  height: auto;
+  // height: 100%;  //full height
   line-height: 1.1rem;
   margin: 0;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  border-radius: 10px;}
 
 .reveal pre code {
   background-color: #3f3f3f;
   border: 1ex solid #3f3f3f;
   border-width: 1ex 2ex;
   box-sizing: border-box;
-  height: 100%;
+  // height: 100%;
+  height: auto;
   max-height: none;
   -moz-tab-size: 2;
-  tab-size: 2; }
+  tab-size: 2;
+  border-radius: 10px;}
 
 figure.code figcaption {
   box-sizing: border-box;
@@ -862,7 +839,8 @@ figure.code figcaption {
   border: 1px solid #3f3f3f;
   border-bottom-width: 0;
   background-color: #333;
-  text-align: left; }
+  text-align: left;
+  border-radius: 5px;}
 
 figure.code pre + figcaption {
   border-top-width: 0;
@@ -871,3 +849,13 @@ figure.code pre + figcaption {
 
 figure.code figcaption.path {
   font-family: monospace; }
+
+
+figure.shell {
+  width:500px;
+  height:270px;
+  background:#fff;
+  border-radius:8px;
+  margin:0 auto;
+  color: #383838;
+}
