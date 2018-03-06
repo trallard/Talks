@@ -71,6 +71,16 @@
 			</section>
 		</section>
 
+    <section class=" color--ice" id="subsection--ice">
+      <div class="grid-wrapper">
+        <div class="logo"></div>
+        <h1>Enter Your Title</h1>
+        <div class="description">
+          This is where the description goes. Keep it short and sweet.
+        </div>
+      </div>
+    </section>
+
 		<section class="commands">
 			<section>
 				<div class="grid-wrapper">
@@ -245,56 +255,55 @@
 					</div>
 				</div>
 			</section>
-
-			<section>
-				<div class="grid-wrapper">
-					<div class="header">
-						<div class="logo"></div>
-						<div class="twitter"><a href="https://twitter.com/ixek"><i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-					</div>
-					<div class="content">
-						<h1>Social</h1>
-						<h2>Send</h2>
-						<table>
-							<tr><th>network:</th><td>{string}</td></tr>
-							<tr><th>action:</th><td>{string}</td></tr>
-							<tr><th>target:</th><td>{string}</td></tr>
-						</table>
-						<figure class="code">
-							<pre><code class="lang-js">
-								ga('send', 'social', 'twitter', 'tweet', 'articles/give-it-a-go-and-grow-your-own-herbs');
-							</code></pre>
-						</figure>
-					</div>
-				</div>
-			</section>
-
-			<section>
-				<div class="grid-wrapper">
-					<div class="header">
-						<div class="logo"></div>
-						<div class="twitter"><a href="https://twitter.com/ixek"><i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-					</div>
-					<figure class="code">
-					<pre><code class="lang-html">
-						&lt;script&gt;
-							window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-
-							ga('create', 'UA-XXXXX-Y', 'auto');
-							ga('set', 'dimension1', 'article');
-							ga('send', 'pageview');
-
-							jQuery('video').on('play', function () {
-								ga('send', 'event', 'video', 'play', 'cats.mp4');
-							});
-
-						&lt;/script&gt;
-						&lt;script async src='https://www.google-analytics.com/analytics.js'&gt;&lt;/script&gt;
-					</code></pre>
-					</figure>
-				</div>
-			</section>
 		</section>
+
+    <section id="blank">
+      <div class="grid-wrapper">
+        <div class="header">
+          <div class="logo"></div>
+          <div class="section">Section</div>
+        </div>
+        <div class="content">Content</div>
+      </div>
+    </section>
+    <section class="quote color--midnight" id="quote--midnight">
+      <div class="grid-wrapper">
+        <div class="logo"></div>
+        <blockquote>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis enim risus. Cras cursus at lacus eget malesuada. Duis vel justo lorem.
+          </p>
+          <hr/>
+          <cite>Caption/Annotation/Citation</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="code color--dark" id="code--path">
+      <div class="grid-wrapper">
+        <div class="header">
+          <div class="logo"></div>
+          <div class="section">Section</div>
+        </div>
+        <figure class="code">
+          <!--
+            Code highlighting is performed by highlight.js
+
+            Leading whitespace is trimmed by default.  Add the data-notrim attribute to the code element to preserve it.
+            If showing an HTML example, add the data-escape attribute to the code element.
+          -->
+          <pre><code class="lang-php">
+            namespace \myplanet\reveal;
+
+            function foo() {
+              echo "bar";
+            }
+          </code></pre>
+          <!-- figcaption element is optional, can be placed above or below code  -->
+          <figcaption class="path">/src/myplanet/reveal/functions.php</figcaption>
+        </figure>
+      </div>
+    </section>
 
 		<section id="demo">
 			<div class="grid-wrapper">
@@ -309,6 +318,21 @@
 				</div>
 			</div>
 		</section>
+
+    <section class="dark_box">
+      <aside>
+        <h2>Title</h2>
+        Content goes here: make it catchy
+      </aside>
+    </section>
+
+    <section class="color--two" >
+      <div class="grid-wrapper">
+        <div class="logo"></div>
+        <h1>Enter Your Title</h1>
+        Keep the content snappy
+      </div>
+    </section>
 
 
 		<section id="end" class="color--ice">

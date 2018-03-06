@@ -373,7 +373,7 @@ color: $third; }
   background-color: #22272B;
   color: #EEEDEF; }
 .reveal .slides section.color--dark .logo {
-  background-image: url("../assets/Tania_logo.png"); }
+  background-image: url("../assets/Tania_logo_gray2.png"); }
 
 .reveal .slides section.color--ice {
   background-color: #9292A8;
@@ -391,13 +391,45 @@ color: $third; }
   background-color: #2A2A49;
   color: #FFFFFF; }
 .reveal .slides section.color--midnight .logo {
-  background-image: url("../assets/Tania_logo.png"); }
+  background-image: url("../assets/Tania_logo_gray.png"); }
 
-.reveal .slides section.color--radiant {
-  background-color: #F25930;
+.reveal .slides section.color--vibrant{
+  background-color: #4ecdc4;
   color: #FFFFFF; }
 .reveal .slides section.color--radiant .logo {
   background-image: url("../assets/Tania_logo.png"); }
+
+.reveal .slides section.color--two{
+  background-color: $white;
+  color: #FFFFFF;
+  background: linear-gradient(to right,
+    $primary 50%,
+    $white 50%
+  )}
+
+.reveal .slides section.color--two .logo {
+  background-image: url("../assets/Tania_logo_gray.png"); }
+
+.items-block {
+    display: flex;
+    font-family: $base-font;
+
+    .single-block {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+
+        &.single1 {
+            width:50%;
+            color: $white;
+         }
+
+        &.single2 {
+            width: 50%;
+        }
+    }
+}
+
 
 .grid-wrapper {
 display: grid; }
