@@ -1,7 +1,8 @@
 /**
- * Full theme for reveal.js
+ * Myplanet theme for reveal.js.
  */
-@import url(../node_modules/@ibm/type/css/ibm-type.css);
+@import url(../../reveal.js/lib/font/source-sans-pro/source-sans-pro.css);
+@import url(../../reveal.js/lib/font/poppins/poppins.css);
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
 
@@ -20,7 +21,7 @@ body {
   background-color: #fff; }
 
 .reveal {
-  font-family: "IBMPlexSans", sans-serif;
+  font-family: "Poppins", Helvetica, sans-serif;
   font-size: inherit;
   font-weight: normal;
   color: #737373; }
@@ -32,7 +33,7 @@ body {
 
 ::-moz-selection {
   color: #fff;
-  background: #bee4fd;
+  background: #3388A6;
   text-shadow: none; }
 
 .reveal .slides > section,
@@ -41,8 +42,8 @@ body {
   font-weight: inherit; }
 
 /*********************************************
- * HEADERS
- *********************************************/
+* HEADERS
+*********************************************/
 .reveal h1,
 .reveal h2,
 .reveal h3,
@@ -254,7 +255,7 @@ body {
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: #3388A6; }
+  color: #42affa; }
 
 /*********************************************
  * PROGRESS BAR
@@ -269,14 +270,14 @@ body {
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
 
 html {
-  font-size: 2.5vmin; }
+  font-size: 2.25vmin; }
 
 @media (max-width: 768px) {
   html {
-    font-size: 18px; } }
+    font-size: 16px; } }
 @media (max-width: 568px) {
   html {
-    font-size: 16px; } }
+    font-size: 14px; } }
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
@@ -288,24 +289,6 @@ html {
 .reveal[class*="pattern--"] {
   background-position: center center;
   background-size: 133vmax auto; }
-
-.reveal.pattern--molecules {
-  background-image: url("../assets/patterns/pattern.svg"); }
-
-.reveal.pattern--molecules .slides section.intro {
-  background-color: #3388A6; }
-
-.reveal.pattern--molecules .slides section.intro .logo {
-  background-image: url("../assets/Tania_logo.png"); }
-
-.reveal.pattern--molecules .slides section.title {
-  background-color: #747CA8; }
-
-.reveal.pattern--molecules .progress {
-  color: #3388A6; }
-
-.reveal.pattern--molecules .controls {
-  color: #3388A6; }
 
 .reveal.pattern--stream {
   background-image: url("../assets/patterns/stream.svg"); }
@@ -392,6 +375,20 @@ html {
 .reveal h6 {
   margin-bottom: 2.5vmin;
   color: inherit; }
+
+.reveal .slides section {
+  box-sizing: border-box;
+  padding: 0; }
+
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+  display: block; }
+
+.reveal section img {
+  background: none;
+  border: none;
+  box-shadow: none;
+  margin: 0; }
 
 .reveal .slides section {
   box-sizing: border-box;
