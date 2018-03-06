@@ -6,12 +6,9 @@
 img {
     display: block;
 }
-.fa-twitter {
-    color: #1DA1F2;
-}
-
-.fa-github {
-    color: #1DA1F2;
+.social_icon {
+    color: #5F4B8B;
+    padding-right: 10px;
 }
 
 .reveal a {
