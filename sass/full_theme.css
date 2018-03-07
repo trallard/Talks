@@ -831,15 +831,6 @@ figure.code {
     background-color: #333;
     text-align: left;
     border-radius: 5px; }
-  figure.code shell {
-    box-shadow: rgba(0, 0, 0, 0.55) 0px 20px 68px;
-    background-color: #121212;
-    font-size: 1rem;
-    line-height: 1.1rem;
-    margin: 0;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 10px; }
 
 .reveal pre code {
   background-color: #3f3f3f;

@@ -303,10 +303,19 @@
             If showing an HTML example, add the data-escape attribute to the
 						 code element.
           -->
-          <pre><code>
-            for i in elements:
-								print i
-          </code></pre>
+					<div data-markdown>
+						```python
+						def print_hello():
+							print("Hello world!")
+
+						def add_one(number):
+							return number + 1
+
+						print_hello()
+						eight_plus_one = add_one(8)
+						print(eight_plus_one)
+						```
+					</div>
           <!-- figcaption element is optional, can be placed above or below code  -->
           <figcaption class="path">/src/tania/planets</figcaption>
         </figure>
