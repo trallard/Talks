@@ -3,7 +3,6 @@
  */
 @import url(../../reveal.js/lib/font/source-sans-pro/source-sans-pro.css);
 @import url(../../reveal.js/lib/font/poppins/poppins.css);
-@import url(_presentation.scss);
 
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
@@ -324,11 +323,11 @@ word-wrap: normal; }
 .reveal.pattern--stream .slides section.intro {
   background-color: $primary; }
 .reveal.pattern--stream .slides section.intro .logo {
-  background-image: url("../assets/Tania_logo.png"); }
+  background-image: url("../assets/Tania_logo_white.png"); }
 .reveal.pattern--stream .slides section.title {
 background-color: $primary; }
-.reveal.pattern--stream .progress {
-color: $third; }
+.reveal.pattern--stream .progress span {
+background: $third; }
 .reveal.pattern--stream .controls {
 color: $third; }
 
