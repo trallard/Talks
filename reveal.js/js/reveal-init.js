@@ -21,7 +21,7 @@ Reveal.initialize({
         { src: 'reveal.js/plugin/markdown/markdown.js' },
         { src: 'reveal.js/plugin/notes/notes.js', async: true },
         {
-            src: '../reveal.js/plugin/highlight/highlight.js',
+            src: '/reveal.js/plugin/highlight/highlight.js',
             async: true,
             condition: function () {
                 // Trim whitespace from code blocks, and prevent HTML escaping by default.
