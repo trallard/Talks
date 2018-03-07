@@ -5,7 +5,11 @@
 
 img {
     display: block;
+    width: auto;
+    vertical-align: bottom;
+    align-self:
 }
+
 .social_icon {
     color: #5F4B8B;
     padding-right: 10px;
@@ -90,13 +94,6 @@ division for the cells */
     margin-top: 2em;
 }
 
-#demo img {
-    margin: auto;
-    max-height: 50vmin;
-    max-width: 50vmin;
-    width: 100%;
-    height: 100%;
-}
 
 #end .content {
     margin-top: auto;
@@ -186,4 +183,18 @@ division for the cells */
 }
 
 
-/* Code in terminal like figure */
+/* More custom classes */
+.reveal strong,
+.reveal b {
+  font-weight: 400;
+  color: #F8757F;
+}
+
+
+figure.display {
+  margin: auto;
+  max-height: 50vmin;
+  max-width: 50vmin;
+  width: 80%;
+  height: auto;
+  display: block;}

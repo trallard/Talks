@@ -3,6 +3,7 @@
  */
 @import url(../../reveal.js/lib/font/source-sans-pro/source-sans-pro.css);
 @import url(../../reveal.js/lib/font/poppins/poppins.css);
+@import url(_presentation.scss);
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
 
@@ -51,7 +52,7 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #222;
+  color: #5F4B8B;
   font-family: "IBMPlexSerif", monospace;
   font-weight: 400;
   line-height: 1.2;
@@ -217,10 +218,11 @@ body {
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
-  transition: color .15s ease; }
+  transition: color .15s ease;
+  text-decoration: underline; }
 
 .reveal a:hover {
-  color: #8dcffc;
+  color: #3388A6;
   text-shadow: none;
   border: none; }
 
@@ -255,7 +257,7 @@ body {
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: #42affa; }
+  color: #3388A6; }
 
 /*********************************************
  * PROGRESS BAR
