@@ -820,57 +820,47 @@ line-height: 1.8em; }
 .reveal .slides section.end.color--radiant .logo {
   background-image: url("../assets/Tania_logo.png"); }
 
-/*******************************************************************************
- * Code Segments
- ******************************************************************************/
- figure.code {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden; }
+  /*******************************************************************************
+   * Code Segments
+   ******************************************************************************/
+  figure.code {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; }
 
- figure.code pre {
-  box-shadow: none;
-  font-size: 1rem;
-  height: 100%;
-  line-height: 1.1rem;
-  margin: 0;
-  width: 100%;
-  overflow: hidden; }
+  figure.code pre {
+    box-shadow: none;
+    font-size: 1rem;
+    height: 100%;
+    line-height: 1.1rem;
+    margin: 0;
+    width: 100%;
+    overflow: hidden; }
 
- figure.code figcaption {
- box-sizing: border-box;
- padding: 1ex 2ex;
- width: 100%;
- font-size: 0.875em;
- border: 1px solid #3f3f3f;
- border-bottom-width: 0;
- background-color: #333;
- text-align: left; }
+  .reveal pre code {
+    background-color: #3f3f3f;
+    border: 1ex solid #3f3f3f;
+    border-width: 1ex 2ex;
+    box-sizing: border-box;
+    height: 100%;
+    max-height: none;
+    -moz-tab-size: 2;
+    tab-size: 2; }
 
- figure.code pre + figcaption {
-   border-top-width: 0;
-   border-bottom-width: 1px;
-   color: #EEEDEF; }
+  figure.code figcaption {
+    box-sizing: border-box;
+    padding: 1ex 2ex;
+    width: 100%;
+    font-size: 0.875em;
+    border: 1px solid #3f3f3f;
+    border-bottom-width: 0;
+    background-color: #333;
+    text-align: left; }
 
- figure.code figcaption.path {
-   font-family: monospace; }
+  figure.code pre + figcaption {
+    border-top-width: 0;
+    border-bottom-width: 1px;
+    color: #EEEDEF; }
 
-.reveal pre code {
-  background-color: #3f3f3f;
-  border: 1ex solid #3f3f3f;
-  border-width: 1ex 2ex;
-  box-sizing: border-box;
-  // height: 100%;
-  height: auto;
-  max-height: none;
-  -moz-tab-size: 2;
-  tab-size: 2;
-  border-radius: 10px;}
-
-figure.code pre + figcaption {
-  border-top-width: 0;
-  border-bottom-width: 1px;
-  color: #EEEDEF; }
-
-figure.code figcaption.path {
-  font-family: monospace; }
+  figure.code figcaption.path {
+    font-family: monospace; }
