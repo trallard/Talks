@@ -160,29 +160,6 @@ text-shadow: none; }
 .reveal q {
   font-style: italic; }
 
-.reveal pre {
-  display: block;
-  position: relative;
-  width: 90%;
-  margin: 20px auto;
-  text-align: left;
-  font-size: 0.55em;
-  font-family: monospace;
-  line-height: 1.2em;
-  word-wrap: break-word;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3); }
-
-.reveal code {
-  font-family: monospace;
-  text-transform: none; }
-
-.reveal pre code {
-  display: block;
-  padding: 5px;
-  overflow: auto;
-  max-height: 400px;
-  word-wrap: normal; }
-
 .reveal table {
   margin: auto;
   border-collapse: collapse;
@@ -826,8 +803,8 @@ line-height: 1.8em; }
 figure.code {
   display: flex;
   flex-direction: column;
-  overflow: hidden;  
-  pre{
+  overflow: hidden;
+  & pre{
       box-shadow: none;
       font-size: 1rem;
       height: auto;
@@ -838,7 +815,7 @@ figure.code {
       overflow: hidden;
       border-radius: 10px;
   }
-  figcaption {
+  & figcaption {
     box-sizing: border-box;
     padding: 1ex 2ex;
     width: 100%;
@@ -850,8 +827,24 @@ figure.code {
     border-radius: 5px;}
 }
 
+figure.code pre + figcaption {
+  border-top-width: 0;
+  border-bottom-width: 1px;
+  color: #EEEDEF; }
+
+figure.code figcaption.path {
+  font-family: monospace; }
+
+
+.reveal code {
+  font-family: monospace;
+  text-transform: none; }
+
 
 .reveal pre code {
+  diaplay: block;
+  padding: 5px;
+  overflow: auto;
   background-color: #3f3f3f;
   border: 1ex solid #3f3f3f;
   border-width: 1ex 2ex;
@@ -861,12 +854,19 @@ figure.code {
   max-height: none;
   -moz-tab-size: 2;
   tab-size: 2;
-  border-radius: 10px;}
+  border-radius: 10px;
+  max-height: 400px;
+  word-wrap: normal; }
 
-figure.code pre + figcaption {
-  border-top-width: 0;
-  border-bottom-width: 1px;
-  color: #EEEDEF; }
 
-figure.code figcaption.path {
-  font-family: monospace; }
+.reveal pre {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 0.55em;
+  font-family: monospace;
+  line-height: 1.2em;
+  word-wrap: break-word;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3); }
