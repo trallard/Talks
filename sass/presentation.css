@@ -27,6 +27,12 @@ img {
     }
 }
 
+.reveal pre code {
+    background-color: #f8f8f8;
+    border: 1ex solid #f8f8f8;
+    font-size: 125%;
+    line-height: 1.1em;
+}
 
 .header .twitter {
     margin-left: auto;
