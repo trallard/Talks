@@ -810,16 +810,34 @@ figure.code {
   display: flex;
   flex-direction: column;
   overflow: hidden; }
-
-figure.code pre {
-  box-shadow: none;
-  font-size: 1rem;
-  height: auto;
-  line-height: 1.1rem;
-  margin: 0;
-  width: 100%;
-  overflow: hidden;
-  border-radius: 10px; }
+  figure.code pre {
+    box-shadow: none;
+    font-size: 1rem;
+    height: auto;
+    line-height: 1.1rem;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px; }
+  figure.code figcaption {
+    box-sizing: border-box;
+    padding: 1ex 2ex;
+    width: 100%;
+    font-size: 0.875em;
+    border: 1px solid #3f3f3f;
+    border-bottom-width: 0;
+    background-color: #333;
+    text-align: left;
+    border-radius: 5px; }
+  figure.code shell {
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 20px 68px;
+    background-color: #121212;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px; }
 
 .reveal pre code {
   background-color: #3f3f3f;
@@ -832,17 +850,6 @@ figure.code pre {
   tab-size: 2;
   border-radius: 10px; }
 
-figure.code figcaption {
-  box-sizing: border-box;
-  padding: 1ex 2ex;
-  width: 100%;
-  font-size: 0.875em;
-  border: 1px solid #3f3f3f;
-  border-bottom-width: 0;
-  background-color: #333;
-  text-align: left;
-  border-radius: 5px; }
-
 figure.code pre + figcaption {
   border-top-width: 0;
   border-bottom-width: 1px;
@@ -850,13 +857,5 @@ figure.code pre + figcaption {
 
 figure.code figcaption.path {
   font-family: monospace; }
-
-figure.shell {
-  width: 500px;
-  height: 270px;
-  background: #fff;
-  border-radius: 8px;
-  margin: 0 auto;
-  color: #383838; }
 
 /*# sourceMappingURL=full_theme.css.map */

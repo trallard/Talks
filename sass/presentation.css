@@ -57,6 +57,13 @@ img {
     }
 }
 
+.reveal pre code {
+    background-color: #f8f8f8;
+    border: 1ex solid #f8f8f8;
+    font-size: 125%;
+    line-height: 1.1em;
+}
+
 /* Table to the left: right under the content: no
 division for the cells */
 
@@ -158,11 +165,8 @@ division for the cells */
 #about .projects {
     text-align: left;
 }
-#about .accounts a .fa + span,
-#about .projects a {
-    /*text-decoration: underline rgba(51, 51, 51, 0.1);*/
-}
-#about .accounts a:hover .fa + span,
+
+#about .accounts a:hover .fab + span,
 #about .projects a:hover {
     text-decoration: underline rgba(51, 51, 51, 0.65);
 }
@@ -174,7 +178,6 @@ division for the cells */
     display: flex;
     align-items: baseline;
 }
-#about .accounts .fa {
-    margin-right: 0.25ex;
-    width: 1.8ex;
-}
+
+
+/* Code in terminal like figure */
