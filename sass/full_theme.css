@@ -464,10 +464,12 @@ html {
   box-shadow: none;
   margin: 0; }
 
-/*********************************************
+/************************************************
 * MODIFIED SECTIONS
 * ADDS LOGO AND SPECIFICS FOR THE THEME
-*********************************************/
+* Slides have two main areas: header and contetnt
+*
+**************************************************/
 .reveal .slides section {
   height: 100vh;
   margin: 0;
