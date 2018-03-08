@@ -1,8 +1,10 @@
 /**
- * Myplanet theme for reveal.js.
+ * Tania Allard theme for reveal.js
+ * Basic reveal.js used and based on the white theme
  */
 @import url(../../reveal.js/lib/font/source-sans-pro/source-sans-pro.css);
 @import url(../../reveal.js/lib/font/poppins/poppins.css);
+@import url("https://fonts.googleapis.com/css?family=Overpass+Mono:400,600");
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
 
@@ -16,10 +18,6 @@ section.has-light-background, section.has-light-background h1, section.has-light
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
-body {
-  background: #fff;
-  background-color: #fff; }
-
 .reveal {
   font-family: "Poppins", Helvetica, sans-serif;
   font-size: inherit;
@@ -35,11 +33,6 @@ body {
   color: #fff;
   background: #3388A6;
   text-shadow: none; }
-
-.reveal .slides > section,
-.reveal .slides > section > section {
-  line-height: 1.3;
-  font-weight: inherit; }
 
 /*********************************************
 * HEADERS
@@ -60,154 +53,11 @@ body {
   text-shadow: none;
   word-wrap: break-word; }
 
-.reveal h1 {
-  font-size: 2.5em; }
-
-.reveal h2 {
-  font-size: 1.6em; }
-
-.reveal h3 {
-  font-size: 1.3em; }
-
-.reveal h4 {
-  font-size: 1em; }
-
-.reveal h1 {
-  text-shadow: none; }
-
 /*********************************************
- * OTHER
+ * OTHER- modifications to reveal themes
  *********************************************/
-.reveal p {
-  margin: 20px 0;
-  line-height: 1.3; }
-
-/* Ensure certain elements are never larger than the slide itself */
-.reveal img,
-.reveal video,
-.reveal iframe {
-  max-width: 95%;
-  max-height: 95%; }
-
-.reveal strong,
-.reveal b {
-  font-weight: bold; }
-
 .reveal em {
   font-style: italic; }
-
-.reveal ol,
-.reveal dl,
-.reveal ul {
-  display: inline-block;
-  text-align: left;
-  margin: 0 0 0 1em; }
-
-.reveal ol {
-  list-style-type: decimal; }
-
-.reveal ul {
-  list-style-type: disc; }
-
-.reveal ul ul {
-  list-style-type: square; }
-
-.reveal ul ul ul {
-  list-style-type: circle; }
-
-.reveal ul ul,
-.reveal ul ol,
-.reveal ol ol,
-.reveal ol ul {
-  display: block;
-  margin-left: 40px; }
-
-.reveal dt {
-  font-weight: bold; }
-
-.reveal dd {
-  margin-left: 40px; }
-
-.reveal blockquote {
-  display: block;
-  position: relative;
-  width: 70%;
-  margin: 20px auto;
-  padding: 5px;
-  font-style: italic;
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); }
-
-.reveal blockquote p:first-child,
-.reveal blockquote p:last-child {
-  display: inline-block; }
-
-.reveal q {
-  font-style: italic; }
-
-.reveal pre {
-  display: block;
-  position: relative;
-  width: 90%;
-  margin: 20px auto;
-  text-align: left;
-  font-size: 0.55em;
-  font-family: monospace;
-  line-height: 1.2em;
-  word-wrap: break-word;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3); }
-
-.reveal code {
-  font-family: monospace;
-  text-transform: none; }
-
-.reveal pre code {
-  display: block;
-  padding: 5px;
-  overflow: auto;
-  max-height: 400px;
-  word-wrap: normal; }
-
-.reveal table {
-  margin: auto;
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-.reveal table th {
-  font-weight: bold; }
-
-.reveal table th,
-.reveal table td {
-  text-align: left;
-  padding: 0.2em 0.5em 0.2em 0.5em;
-  border-bottom: 1px solid; }
-
-.reveal table th[align="center"],
-.reveal table td[align="center"] {
-  text-align: center; }
-
-.reveal table th[align="right"],
-.reveal table td[align="right"] {
-  text-align: right; }
-
-.reveal table tbody tr:last-child th,
-.reveal table tbody tr:last-child td {
-  border-bottom: none; }
-
-.reveal sup {
-  vertical-align: super; }
-
-.reveal sub {
-  vertical-align: sub; }
-
-.reveal small {
-  display: inline-block;
-  font-size: 0.6em;
-  line-height: 1.2em;
-  vertical-align: top; }
-
-.reveal small * {
-  vertical-align: top; }
 
 /*********************************************
  * LINKS
@@ -217,8 +67,7 @@ body {
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
-  transition: color .15s ease;
-  text-decoration: underline; }
+  transition: color .15s ease; }
 
 .reveal a:hover {
   color: #3388A6;
@@ -274,11 +123,11 @@ body {
 * ENABLE RESPONSIVENESS
 *********************************************/
 html {
-  font-size: 2.25vmin; }
+  font-size: 3.3vmin; }
 
 @media (max-width: 768px) {
   html {
-    font-size: 16px; } }
+    font-size: 18px; } }
 @media (max-width: 568px) {
   html {
     font-size: 14px; } }
@@ -377,10 +226,11 @@ html {
 .reveal .slides section.color--grad-purple {
   background-color: #fff;
   color: #FFFFFF;
-  background: linear-gradient(45deg, #2D266F, #7C2289); }
+  background: linear-gradient(45deg, #2D266F, #7C2289);
+  color: white !important; }
 
-.reveal .slides section.color--purple .logo {
-  background-image: url("../assets/Tania_logo_gray.png"); }
+.reveal .slides section.color--grad-purple .logo {
+  background-image: url("../assets/Tania_logo_white.png"); }
 
 .reveal .slides section.color--grad-green {
   background-color: #fff;
@@ -813,42 +663,57 @@ figure.code {
   display: flex;
   flex-direction: column;
   overflow: hidden; }
-
-figure.code pre {
-  box-shadow: none;
-  font-size: 1rem;
-  height: 100%;
-  line-height: 1.1rem;
-  margin: 0;
-  width: 100%;
-  overflow: hidden; }
-
-.reveal pre code {
-  background-color: #3f3f3f;
-  border: 1ex solid #3f3f3f;
-  border-width: 1ex 2ex;
-  box-sizing: border-box;
-  height: 100%;
-  max-height: none;
-  -moz-tab-size: 2;
-  tab-size: 2; }
-
-figure.code figcaption {
-  box-sizing: border-box;
-  padding: 1ex 2ex;
-  width: 100%;
-  font-size: 0.875em;
-  border: 1px solid #3f3f3f;
-  border-bottom-width: 0;
-  background-color: #333;
-  text-align: left; }
-
-figure.code pre + figcaption {
-  border-top-width: 0;
-  border-bottom-width: 1px;
-  color: #EEEDEF; }
+  figure.code pre {
+    box-shadow: none;
+    font-size: 1rem;
+    height: 100%;
+    line-height: 1.1rem;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px; }
+  figure.code figcaption {
+    box-sizing: border-box;
+    padding: 1ex 2ex;
+    width: 100%;
+    font-size: 0.875em;
+    border-bottom-width: 0;
+    background-color: #333;
+    text-align: left;
+    border-radius: 3px; }
+  figure.code pre + figcaption {
+    border-top-width: 0;
+    border-bottom-width: 1px;
+    color: #EEEDEF; }
 
 figure.code figcaption.path {
-  font-family: monospace; }
+  font-family: "Overpass Mono", monospace; }
+
+.reveal pre {
+  box-shadow: none;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  width: 100%; }
+  .reveal pre code {
+    max-height: none;
+    -moz-tab-size: 2;
+    tab-size: 2;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #222; }
+
+.reveal code {
+  font-family: "Overpass Mono", monospace;
+  text-transform: none;
+  font-size: 1.1rem;
+  color: #747CA8; }
+
+figure.code2 {
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 20px 68px; }
+  figure.code2 pre {
+    border-radius: 12px; }
+    figure.code2 pre code {
+      background-color: #222;
+      margin: 0; }
 
 /*# sourceMappingURL=full_theme.css.map */

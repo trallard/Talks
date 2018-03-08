@@ -10,42 +10,43 @@ img {
     align-self:
 }
 
+/* Used in the about section */
 .social_icon {
     color: #5F4B8B;
     padding-right: 10px;
 }
 
+
 .reveal a {
     color: inherit;
 }
 
+/* Ensure the list are shown in the center */
 .reveal ul {
-    font-size: 1.5em;
+    font-size: 1.2em;
     align-self: center;
     justify-self: center;
 }
 
+/* Responsive lists */
 @media (min-width: 1280px) {
     .reveal ul {
         width: calc(80% - 1em);
     }
 }
 
-.reveal pre code {
-    background-color: #f8f8f8;
-    border: 1ex solid #f8f8f8;
-    font-size: 125%;
-    line-height: 1.1em;
-}
 
+/* Twitter icon and handle on the header */
 .header .twitter {
     margin-left: auto;
     opacity: 0.5;
+    font-size: 0.8rem;
 }
 .header .twitter .fa-twitter {
     color: inherit;
 }
 
+/* Remove padding from title in the heading section */
 .reveal .slides section.title {
     padding: 0;
 }
@@ -53,6 +54,8 @@ img {
     grid-template-columns: auto;
     grid-template-areas: "title" "description";
 }
+
+/* Add url to the intro slide header */
 .slides .title .presentation-url {
     grid-area: header;
     text-align: right;
@@ -67,12 +70,16 @@ img {
     }
 }
 
-.reveal pre code {
+
+/* pre code class modify for light background */
+/* .reveal pre code {
     background-color: #f8f8f8;
     border: 1ex solid #f8f8f8;
-    font-size: 115%;
+    font-size: 1rem;
     line-height: 1.1em;
-}
+    border-radius: 5px;
+} */
+
 
 /* Table to the left: right under the content: no
 division for the cells */
@@ -198,3 +205,17 @@ figure.display {
   width: 80%;
   height: auto;
   display: block;}
+
+
+div.images {
+  text-align: center;
+  width: 100%:
+  background-color: #222;
+  max-height: 50vmin;
+}
+div.images img {
+  margin: 0 auto;
+  margin-top: 3.0em;
+  display: block;
+  border: 0px solid #303030;
+}
