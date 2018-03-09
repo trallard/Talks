@@ -151,7 +151,7 @@ html {
 
 @media (max-width: 568px) {
   html {
-    font-size: 14px; } }
+    font-size: 16px; } }
 
 /*********************************************
 * THEME SPECIFICS: EACH PATTERN WILL BE A THEME
@@ -283,14 +283,14 @@ color: $third; }
 .grid-wrapper {
 display: grid; }
 
-
-
 /*********************************************
 * REVEAL SPECIFICS
 *********************************************/
 
 .reveal .slides {
-text-align: left; }
+text-align: left;
+// text-align: center;
+}
 
 .reveal .slides > section,
 .reveal .slides > section > section {
@@ -333,7 +333,6 @@ border: none;
 box-shadow: none;
 margin: 0; }
 
-
 .reveal .slides section {
 box-sizing: border-box;
 padding: 0; }
@@ -360,44 +359,68 @@ height: 100vh;
 margin: 0;
 width: 100vw;
 color: #2A2A49; }
+
+// If no colour is given this is white
 .reveal .slides section:not([class*='color--']) {
-  background-color: #FFFFFF; }
+  background-color: $white; }
+
 .reveal .slides section.stack {
   background-color: transparent; }
+
+// Grid for the slides
 .reveal .slides section .grid-wrapper {
   box-sizing: border-box;
   grid-column-gap: 10vmin;
   grid-row-gap: 5vmin;
-  grid-template-areas: "header" "content";
-  grid-template-rows: 4.5vmin 1fr;
+  grid-template-rows: 5.5vmin 1fr;
+  // grid-template-columns: 1fr 80% 1fr;
+  grid-template-areas:
+    " header"
+    "content";
   height: 100%;
   padding: 10vmin; }
+
+// Slides header
 .reveal .slides section .header {
   align-items: center;
   display: flex;
-  grid-area: header; }
+  grid-area: header;
+  background-color: $secondary;}
+
+// Logo in header
 .reveal .slides section .logo {
   background-image: url("../assets/Tania_logo.png");
   background-repeat: no-repeat;
   background-size: auto 100%;
   display: inline-block;
   grid-area: header;
-  height: 4.5vmin;
+  height: 5.5vmin;
   margin-right: 4.5vmin;
-  width: 4.5vmin; }
+  width: 4.5vmin;}
+
+// Section title in header
 .reveal .slides section .section {
   text-transform: uppercase;
-  line-height: 4.5vmin;
+  line-height: 5.5vmin;
   font-size: 0.6em;
-  font-weight: bold; }
+  font-weight: 500; }
+
+
 .reveal .slides section:not([class*="color--"]) .section {
   color: #9292A8; }
+
+// Main content in slides
 .reveal .slides section .content {
   align-self: center;
-  grid-area: content; }
+  grid-area: content;
+  background-color: $primary;}
+
+
+// Dark coloured slides
 .reveal .slides section.color--dark .section {
   color: #EEEDEF; }
 
+// Intro slide
 .reveal .slides section.intro {
 height: calc(100vh - 8vmin);
 margin: 4vmin;
@@ -409,6 +432,7 @@ width: calc(100vw - 8vmin); }
     margin: 2vmin;
     width: calc(100vw - 4vmin); } }
 
+// Wrapper for the logo in the intro
 .reveal .slides section.intro .logo-wrapper {
   display: flex;
   height: 100%; }
@@ -422,11 +446,12 @@ width: calc(100vw - 8vmin); }
   min-width: 200px;
 width: 33%; }
 
+// Title section in intro
 .reveal .slides section.title {
   height: calc(100vh - 8vmin);
   margin: 4vmin;
   width: calc(100vw - 8vmin);
-  color: #FFFFFF;
+  color: $white;
   margin-left: 22vw;
   width: calc(100vw - 4vmin - 22vw); }
 
@@ -436,8 +461,12 @@ width: 33%; }
       margin: 2vmin;
       width: calc(100vw - 4vmin); } }
 
+// Grid areas for intro
 .reveal .slides section.title .grid-wrapper {
-grid-template-areas: "header header" "content content" ". credit";
+grid-template-areas:
+  "header header"
+  "content content"
+  ". credit";
 grid-template-columns: auto 40%;
 grid-template-rows: 6vmin 1fr auto;
 grid-column-gap: 10vmin; }
@@ -472,6 +501,7 @@ line-height: 1.8em; }
 .reveal .slides section.title .credit .label {
   font-size: 60%;
   text-transform: uppercase; }
+
 .reveal .slides section.title .credit .name {
   font-weight: bold; }
 
@@ -488,21 +518,26 @@ line-height: 1.8em; }
     grid-template-areas: "title description";
     grid-template-columns: auto 40%;
     grid-column-gap: 10vmin; }
-  .reveal .slides section.title h1 {
+
+.reveal .slides section.title h1 {
     grid-area: title; }
-  .reveal .slides section.title .description {
+
+.reveal .slides section.title .description {
     grid-area: description;
     margin-top: 0.5em; } }
 
+// Subsection slide: header wide content and descr
 .reveal .slides section.subsection .grid-wrapper {
   grid-template-areas: "header" "title" "description";
-  grid-template-rows: 4.5vmin 3fr 1fr; }
+  grid-template-rows: 5.5vmin 3fr 1fr; }
 
+// Subsection title
 .reveal .slides section.subsection h1 {
   align-self: center;
   grid-area: title;
   margin: 0; }
 
+// Subsection description
 .reveal .slides section.subsection .description {
   color: #9292A8;
   grid-area: description;
@@ -511,16 +546,18 @@ line-height: 1.8em; }
 .reveal .slides section.subsection:not([class*='color--']) .logo, .reveal .slides section.subsection.color--light .logo {
   background-image: url("../assets/Tania_logo.png"); }
 
+// For midnight color subsection
 .reveal .slides section.subsection.color--midnight .description, .reveal .slides section.subsection.color--ice .description, .reveal .slides section.subsection.color--radiant .description {
   color: #EEEDEF; }
 
+// Quotes
 .reveal .slides section.quote blockquote {
   align-self: center;
   background: none;
   color: #66646B;
   border: none;
   box-shadow: none;
-  font-size: 2em;
+  font-size: 1.8em;
   font-style: normal;
   margin: 0;
   max-width: 42ex;
@@ -531,13 +568,14 @@ line-height: 1.8em; }
   border: solid #9292A8;
   border-width: 1px 0 0 0;
   margin: .8em 0;
-  width: 10%; }
+  width: 15%; }
 
 .reveal .slides section.quote cite {
   color: #9292A8;
   display: block;
   font-size: 1rem; }
 
+// Quotes in midnight
 .reveal .slides section.quote.color--midnight blockquote, .reveal .slides section.quote.color--ice blockquote, .reveal .slides section.quote.color--radiant blockquote {
   color: #FFFFFF; }
 
@@ -547,6 +585,7 @@ line-height: 1.8em; }
 .reveal .slides section.quote.color--midnight cite, .reveal .slides section.quote.color--ice cite, .reveal .slides section.quote.color--radiant cite {
   color: #EEEDEF; }
 
+// Team slides
 .reveal .slides section.team .content {
   display: grid;
   grid-auto-columns: 1fr;
@@ -655,13 +694,16 @@ line-height: 1.8em; }
     max-width: 40%;
     width: auto; } }
 
+// Ending slide
 .reveal .slides section.end {
   height: 100vh;
   margin: 0;
   width: 100vw; }
+
 .reveal .slides section.end .logo-wrapper {
   display: flex;
   height: 100%; }
+
 .reveal .slides section.end .logo {
   background-image: url("../assets/Tania_logo.png");
   background-position: center;
@@ -671,6 +713,7 @@ line-height: 1.8em; }
   min-height: 200px;
   min-width: 200px;
   width: 33%; }
+
 .reveal .slides section.end.color--radiant .logo {
   background-image: url("../assets/Tania_logo.png"); }
 

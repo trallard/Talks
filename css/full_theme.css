@@ -130,7 +130,7 @@ html {
     font-size: 18px; } }
 @media (max-width: 568px) {
   html {
-    font-size: 14px; } }
+    font-size: 16px; } }
 /*********************************************
 * THEME SPECIFICS: EACH PATTERN WILL BE A THEME
 *********************************************/
@@ -328,7 +328,7 @@ html {
   color: #2A2A49; }
 
 .reveal .slides section:not([class*='color--']) {
-  background-color: #FFFFFF; }
+  background-color: #fff; }
 
 .reveal .slides section.stack {
   background-color: transparent; }
@@ -337,15 +337,16 @@ html {
   box-sizing: border-box;
   grid-column-gap: 10vmin;
   grid-row-gap: 5vmin;
-  grid-template-areas: "header" "content";
-  grid-template-rows: 4.5vmin 1fr;
+  grid-template-rows: 5.5vmin 1fr;
+  grid-template-areas: " header" "content";
   height: 100%;
   padding: 10vmin; }
 
 .reveal .slides section .header {
   align-items: center;
   display: flex;
-  grid-area: header; }
+  grid-area: header;
+  background-color: #747CA8; }
 
 .reveal .slides section .logo {
   background-image: url("../assets/Tania_logo.png");
@@ -353,22 +354,23 @@ html {
   background-size: auto 100%;
   display: inline-block;
   grid-area: header;
-  height: 4.5vmin;
+  height: 5.5vmin;
   margin-right: 4.5vmin;
   width: 4.5vmin; }
 
 .reveal .slides section .section {
   text-transform: uppercase;
-  line-height: 4.5vmin;
+  line-height: 5.5vmin;
   font-size: 0.6em;
-  font-weight: bold; }
+  font-weight: 500; }
 
 .reveal .slides section:not([class*="color--"]) .section {
   color: #9292A8; }
 
 .reveal .slides section .content {
   align-self: center;
-  grid-area: content; }
+  grid-area: content;
+  background-color: #5F4B8B; }
 
 .reveal .slides section.color--dark .section {
   color: #EEEDEF; }
@@ -400,7 +402,7 @@ html {
   height: calc(100vh - 8vmin);
   margin: 4vmin;
   width: calc(100vw - 8vmin);
-  color: #FFFFFF;
+  color: #fff;
   margin-left: 22vw;
   width: calc(100vw - 4vmin - 22vw); }
 
@@ -471,7 +473,7 @@ html {
     margin-top: 0.5em; } }
 .reveal .slides section.subsection .grid-wrapper {
   grid-template-areas: "header" "title" "description";
-  grid-template-rows: 4.5vmin 3fr 1fr; }
+  grid-template-rows: 5.5vmin 3fr 1fr; }
 
 .reveal .slides section.subsection h1 {
   align-self: center;
@@ -495,7 +497,7 @@ html {
   color: #66646B;
   border: none;
   box-shadow: none;
-  font-size: 2em;
+  font-size: 1.8em;
   font-style: normal;
   margin: 0;
   max-width: 42ex;
@@ -506,7 +508,7 @@ html {
   border: solid #9292A8;
   border-width: 1px 0 0 0;
   margin: .8em 0;
-  width: 10%; }
+  width: 15%; }
 
 .reveal .slides section.quote cite {
   color: #9292A8;
