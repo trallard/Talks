@@ -146,6 +146,9 @@ html {
   background-position: center center;
   background-size: 133vmax auto; }
 
+/*********************************************
+* ACTUAL THEMES
+*********************************************/
 .reveal.pattern--stream {
   background-image: url("../assets/patterns/stream.svg"); }
 
