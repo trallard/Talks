@@ -385,7 +385,8 @@ color: #2A2A49; }
   align-items: center;
   display: flex;
   grid-area: header;
-  background-color: $secondary;}
+  // background-color: $secondary;
+}
 
 // Logo in header
 .reveal .slides section .logo {
@@ -413,7 +414,8 @@ color: #2A2A49; }
 .reveal .slides section .content {
   align-self: center;
   grid-area: content;
-  background-color: $primary;}
+  // background-color: $primary;
+}
 
 
 // Dark coloured slides

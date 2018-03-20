@@ -345,8 +345,7 @@ html {
 .reveal .slides section .header {
   align-items: center;
   display: flex;
-  grid-area: header;
-  background-color: #747CA8; }
+  grid-area: header; }
 
 .reveal .slides section .logo {
   background-image: url("../assets/Tania_logo.png");
@@ -369,8 +368,7 @@ html {
 
 .reveal .slides section .content {
   align-self: center;
-  grid-area: content;
-  background-color: #5F4B8B; }
+  grid-area: content; }
 
 .reveal .slides section.color--dark .section {
   color: #EEEDEF; }
