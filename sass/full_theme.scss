@@ -333,19 +333,6 @@ border: none;
 box-shadow: none;
 margin: 0; }
 
-.reveal .slides section {
-box-sizing: border-box;
-padding: 0; }
-
-.reveal blockquote p:first-child,
-.reveal blockquote p:last-child {
-display: block; }
-
-.reveal section img {
-background: none;
-border: none;
-box-shadow: none;
-margin: 0; }
 
 /************************************************
 * MODIFIED SECTIONS
@@ -373,10 +360,10 @@ color: #2A2A49; }
   grid-column-gap: 10vmin;
   grid-row-gap: 5vmin;
   grid-template-rows: 5.5vmin 1fr;
-  // grid-template-columns: 1fr 80% 1fr;
+  grid-template-columns: 1fr 90% 1fr;
   grid-template-areas:
-    " header"
-    "content";
+    ". header ."
+    ". content .";
   height: 100%;
   padding: 10vmin; }
 
@@ -396,7 +383,7 @@ color: #2A2A49; }
   display: inline-block;
   grid-area: header;
   height: 5.5vmin;
-  margin-right: 4.5vmin;
+  margin-right: 1.5vmin;
   width: 4.5vmin;}
 
 // Section title in header

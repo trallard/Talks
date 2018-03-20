@@ -3,12 +3,12 @@
  * Presentation-specific styles.
  */
 
-img {
+/* .reveal img {
     display: block;
     width: auto;
     vertical-align: bottom;
-    align-self:
-}
+    align-self:center;
+} */
 
 /* Used in the about section */
 .social_icon {
@@ -201,8 +201,8 @@ division for the cells */
 
 figure.display {
   margin: auto;
-  max-height: 50vmin;
-  max-width: 50vmin;
+  /* max-height: 50vmin; */
+  max-width: 80vmin;
   width: 80%;
   height: auto;
   display: block;}
