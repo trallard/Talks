@@ -144,6 +144,8 @@ word-wrap: break-word; }
 
 html {
   font-size: 3.3vmin; }
+  // font-size: 3.3vmin; }
+
 
 @media (max-width: 768px) {
   html {
@@ -754,8 +756,8 @@ figure.code {
 .reveal pre{
   box-shadow: none;
   font-size: 1rem;
-  line-height: 1.1rem;
-  width: 100%;
+  line-height: 1.05rem;
+  width: 90%;
   & code{
     max-height: none;
     -moz-tab-size: 2;
@@ -763,15 +765,16 @@ figure.code {
     box-sizing: border-box;
     border-radius: 5px;
     color: #222;
+    font-family: $code-font;
   }
 }
 
-.reveal code {
-  font-family: $code-font;
-  text-transform: none;
-  font-size: 1.1rem;
-  color: $secondary;
-}
+
+// .reveal code {
+//   font-family: $code-font;
+//   text-transform: none;
+//   font-size: 1.1rem;
+// }
 
 
 figure.code2 {
