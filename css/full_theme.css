@@ -221,6 +221,13 @@ html {
 .reveal .slides section.color--ice .logo {
   background-image: url("../assets/Tania_logo.png"); }
 
+.reveal .slides section.color--violet {
+  background-color: #3A015C;
+  color: #FFFFFF; }
+
+.reveal .slides section.color--violet .logo {
+  background-image: url("../assets/Tania_logo.png"); }
+
 .reveal .slides section.color--light {
   background-color: #FFFFFF;
   color: #66646B; }
