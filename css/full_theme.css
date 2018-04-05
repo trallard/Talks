@@ -167,6 +167,43 @@ html {
 .reveal.pattern--stream .controls {
   color: #3388A6; }
 
+.reveal.pattern--synapses {
+  background-image: url("../assets/patterns/zigzag.jpg"); }
+
+.reveal.pattern--synapses .slides section.intro {
+  background-color: #DD7373; }
+
+.reveal.pattern--synapses .slides section.intro .logo {
+  background-image: url("../../lib/myplanet/patterns/synapses/logo.svg"); }
+
+.reveal.pattern--synapses .slides section.title {
+  background-color: #1C2541; }
+
+.reveal.pattern--synapses .progress {
+  color: #D1D1D1; }
+
+.reveal.pattern--synapses .controls {
+  color: #D1D1D1; }
+
+.reveal.pattern--lines {
+  background-image: url("../assets/patterns/lines.png"); }
+
+.reveal.pattern--lines .slides section.intro {
+  background-color: #DD7373; }
+
+.reveal.pattern--lines .slides section.intro .logo {
+  background-image: url("../../lib/myplanet/patterns/synapses/logo.svg"); }
+
+.reveal.pattern--lines .slides section.title {
+  background-color: #41ead4;
+  color: #3A015C; }
+
+.reveal.pattern--lines .progress {
+  color: #ff206e; }
+
+.reveal.pattern--lines .controls {
+  color: #ff206e; }
+
 /*********************************************
 * ADDITIONAL SLIDES CLASSES
 *********************************************/
