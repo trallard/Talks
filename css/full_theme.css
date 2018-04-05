@@ -146,6 +146,9 @@ html {
   background-position: center center;
   background-size: 133vmax auto; }
 
+/*********************************************
+* ACTUAL THEMES
+*********************************************/
 .reveal.pattern--stream {
   background-image: url("../assets/patterns/stream.svg"); }
 
@@ -163,6 +166,43 @@ html {
 
 .reveal.pattern--stream .controls {
   color: #3388A6; }
+
+.reveal.pattern--synapses {
+  background-image: url("../assets/patterns/zigzag.jpg"); }
+
+.reveal.pattern--synapses .slides section.intro {
+  background-color: #DD7373; }
+
+.reveal.pattern--synapses .slides section.intro .logo {
+  background-image: url("../../lib/myplanet/patterns/synapses/logo.svg"); }
+
+.reveal.pattern--synapses .slides section.title {
+  background-color: #1C2541; }
+
+.reveal.pattern--synapses .progress {
+  color: #D1D1D1; }
+
+.reveal.pattern--synapses .controls {
+  color: #D1D1D1; }
+
+.reveal.pattern--lines {
+  background-image: url("../assets/patterns/lines.png"); }
+
+.reveal.pattern--lines .slides section.intro {
+  background-color: #DD7373; }
+
+.reveal.pattern--lines .slides section.intro .logo {
+  background-image: url("../../lib/myplanet/patterns/synapses/logo.svg"); }
+
+.reveal.pattern--lines .slides section.title {
+  background-color: #41ead4;
+  color: #3A015C; }
+
+.reveal.pattern--lines .progress {
+  color: #ff206e; }
+
+.reveal.pattern--lines .controls {
+  color: #ff206e; }
 
 /*********************************************
 * ADDITIONAL SLIDES CLASSES
@@ -679,21 +719,16 @@ figure.code figcaption.path {
 .reveal pre {
   box-shadow: none;
   font-size: 1rem;
-  line-height: 1.1rem;
-  width: 100%; }
+  line-height: 1.05rem;
+  width: 90%; }
   .reveal pre code {
     max-height: none;
     -moz-tab-size: 2;
     tab-size: 2;
     box-sizing: border-box;
     border-radius: 5px;
-    color: #222; }
-
-.reveal code {
-  font-family: "Overpass Mono", monospace;
-  text-transform: none;
-  font-size: 1.1rem;
-  color: #747CA8; }
+    color: #222;
+    font-family: "Overpass Mono", monospace; }
 
 figure.code2 {
   box-shadow: rgba(0, 0, 0, 0.55) 0px 20px 68px; }

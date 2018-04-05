@@ -144,6 +144,8 @@ word-wrap: break-word; }
 
 html {
   font-size: 3.3vmin; }
+  // font-size: 3.3vmin; }
+
 
 @media (max-width: 768px) {
   html {
@@ -169,6 +171,13 @@ word-wrap: normal; }
   background-position: center center;
   background-size: 133vmax auto; }
 
+
+/*********************************************
+* ACTUAL THEMES
+*********************************************/
+
+// Stream
+
 .reveal.pattern--stream {
   background-image: url("../assets/patterns/stream.svg"); }
 .reveal.pattern--stream .slides section.intro {
@@ -181,6 +190,41 @@ background-color: $primary; }
 background: $third; }
 .reveal.pattern--stream .controls {
 color: $third; }
+
+
+// Zigzag
+
+.reveal.pattern--synapses {
+  background-image: url("../assets/patterns/zigzag.jpg"); }
+.reveal.pattern--synapses .slides section.intro {
+  background-color: #DD7373; }
+  .reveal.pattern--synapses .slides section.intro .logo {
+    background-image: url("../../lib/myplanet/patterns/synapses/logo.svg"); }
+.reveal.pattern--synapses .slides section.title {
+  background-color: #1C2541; }
+.reveal.pattern--synapses .progress {
+  color: #D1D1D1; }
+.reveal.pattern--synapses .controls {
+  color: #D1D1D1; }
+
+
+
+// Lines
+
+.reveal.pattern--lines {
+  background-image: url("../assets/patterns/lines.png"); }
+.reveal.pattern--lines .slides section.intro {
+  background-color: #DD7373; }
+  .reveal.pattern--lines .slides section.intro .logo {
+    background-image: url("../../lib/myplanet/patterns/synapses/logo.svg"); }
+.reveal.pattern--lines .slides section.title {
+  background-color: #41ead4;
+  color: #3A015C;}
+.reveal.pattern--lines .progress {
+  color: #ff206e; }
+.reveal.pattern--lines .controls {
+  color: #ff206e; }
+
 
 /*********************************************
 * ADDITIONAL SLIDES CLASSES
@@ -747,8 +791,8 @@ figure.code {
 .reveal pre{
   box-shadow: none;
   font-size: 1rem;
-  line-height: 1.1rem;
-  width: 100%;
+  line-height: 1.05rem;
+  width: 90%;
   & code{
     max-height: none;
     -moz-tab-size: 2;
@@ -756,15 +800,16 @@ figure.code {
     box-sizing: border-box;
     border-radius: 5px;
     color: #222;
+    font-family: $code-font;
   }
 }
 
-.reveal code {
-  font-family: $code-font;
-  text-transform: none;
-  font-size: 1.1rem;
-  color: $secondary;
-}
+
+// .reveal code {
+//   font-family: $code-font;
+//   text-transform: none;
+//   font-size: 1.1rem;
+// }
 
 
 figure.code2 {
