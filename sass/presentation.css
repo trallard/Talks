@@ -202,15 +202,22 @@ division for the cells */
 figure.display {
   margin: auto;
   /* max-height: 50vmin; */
-  max-width: 80vmin;
-  width: 80%;
+  max-width: 100vmin;
+  width: 90%;
   height: auto;
   display: block;}
 
+.display figcaption {
+  padding: 10px;
+  font-size: 0.85rem;
+  width: 110%!important;
+  align-self: center;
+  color: #F8757F;
+}
 
 div.images {
   text-align: center;
-  width: 100%:
+  max-width: 100%:
   background-color: #222;
   max-height: 50vmin;
 }
