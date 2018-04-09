@@ -215,8 +215,8 @@ color: $third; }
   background-image: url("../assets/patterns/lines.png"); }
 .reveal.pattern--lines .slides section.intro {
   background-color: #DD7373; }
-  .reveal.pattern--lines .slides section.intro .logo {
-    background-image: url("../../lib/myplanet/patterns/synapses/logo.svg"); }
+.reveal.pattern--lines .slides section.intro .logo {
+  background-image: url("../../lib/myplanet/patterns/synapses/logo.svg"); }
 .reveal.pattern--lines .slides section.title {
   background-color: #41ead4;
   color: #3A015C;}
@@ -242,11 +242,11 @@ color: $third; }
 .reveal .slides section.color--ice .logo {
   background-image: url("../assets/Tania_logo.png"); }
 
-  .reveal .slides section.color--violet {
-    background-color: #3A015C;
-    color: #FFFFFF; }
-  .reveal .slides section.color--violet .logo {
-    background-image: url("../assets/Tania_logo.png"); }
+.reveal .slides section.color--violet {
+  background-color: #3A015C;
+  color: #FFFFFF; }
+.reveal .slides section.color--violet .logo {
+  background-image: url("../assets/Tania_logo.png"); }
 
 .reveal .slides section.color--light {
   background-color: #FFFFFF;
@@ -273,7 +273,6 @@ color: $third; }
     $primary 50%,
     $white 50%
   )}
-
 .reveal .slides section.color--two .logo {
   background-image: url("../assets/Tania_logo_gray.png"); }
 
