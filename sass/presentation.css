@@ -240,3 +240,36 @@ div.images img {
   display: block;
   border: 0px solid #303030;
 }
+
+/* Floating modal */
+
+.float_modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 900px;
+  min-width: 100px;
+  max-height: 600px;
+  min-height: 100px;
+  z-index: 2000;
+  transform: translateX(-50%) translateY(-50%);
+  background: hsla(212, 11%, 20%, 0.98);
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+.modal_p{
+  padding: 10px!important;
+  color: #fff;
+  font-size: 0.56em;
+}
+
+.caption_p{
+  font-weight: light;
+  font-style: italic;
+  font-size: 0.4em;
+  color: #747CA8; /*lavender violet*/
+  font-family: $base-font;
+  padding: 10px!important;
+}
