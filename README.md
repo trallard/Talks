@@ -2,5 +2,6 @@
 
 - 2nd Research Software Engineering conference [http://bitsandchips.me/JNB_reproducible/](http://bitsandchips.me/JNB_reproducible/)
 - Manchester R group: [http://bitsandchips.me/Talks/ManchesteR.html](http://bitsandchips.me/Talks/ManchesteR.html)
-- BMS3535: [http://bitsandchips.me/Talks/ManchesteR.html](http://bitsandchips.me/Talks/BMS353.html)
+- BMS3535: [http://bitsandchips.me/Talks/BMS3535.html](http://bitsandchips.me/Talks/BMS353.html)
 - Her + Data: [http://bitsandchips.me/Talks/her+data.html](http://bitsandchips.me/Talks/her+data.html)
+- PyCon: wokshop on reproducible analysis [http://bitsandchips.me/Talks/PyCon.html](http://bitsandchips.me/Talks/PyCon.html)
