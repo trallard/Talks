@@ -18,7 +18,7 @@ $primary: #5F4B8B; /* ultra violet */
 $secondary: #747CA8; /* lavender violet */
 $secondary-light: lighten($secondary, 10%);
 $primary-light: lighten($primary, 10%);
-$third: #3388A6; /*blue moon*/
+// $third: #3388A6; /*blue moon*/
 
 // Colors used on all themes
 $light-gray: #e2e6e9;
@@ -37,20 +37,41 @@ $code-font:  'Overpass Mono', monospace;
 * DEFINING THEMES
 *********************************************/
 //define a theme map
-$theme-map: (
-  'streams-theme':(
+$themes: (
+  'streams':(
     'primary': #5F4B8B,
     'secondary': #747CA8,
     'third': #3388A6,
   ),
-  'lines-theme':(
+  'lines':(
     'primary': #5F4B8B,
     'secondary': #41ead4,
     'third': #ff206e,
   )
 );
 //call initialize mixin with the theme-map variable
-@include sass-themify-init($theme-map);
+// @include sass-themify-init($theme-map);
+
+/*
+ * Implementation of themes
+ */
+@mixin themify($themes) {
+  @each $theme, $map in $themes {
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}
 
 /*********************************************
  * GLOBAL STYLES
@@ -63,13 +84,21 @@ $theme-map: (
 
 ::selection {
   color: #fff;
-  background: $third;
-  text-shadow: none; }
+  // background: $third;
+  text-shadow: none;
+  @include themify($themes){
+    background: themed('third')
+  }
+}
 
 ::-moz-selection {
   color: #fff;
-  background: $third;
-  text-shadow: none; }
+  // background: $third;
+  text-shadow: none;
+  @include themify($themes){
+    background: themed('third')
+  }
+}
 
 /*********************************************
 * HEADERS
@@ -110,9 +139,13 @@ word-wrap: break-word; }
   transition: color .15s ease;}
 
 .reveal a:hover {
-  color: $third;
+  // color: $third;
   text-shadow: none;
-  border: none; }
+  border: none;
+  @include themify($themes){
+    color: themed('third')
+  }
+}
 
 .reveal .roll span:after {
   color: #fff;
@@ -145,14 +178,22 @@ word-wrap: break-word; }
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: $third; }
+  // color: $third;
+  @include themify($themes){
+    color: themed('third')
+  }
+}
 
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
-  color: $third; }
+  // color: $third;]
+  @include themify($themes){
+    color: themed('third')
+  }
+}
 
 .reveal .progress span {
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
@@ -209,9 +250,16 @@ word-wrap: normal; }
 .reveal.pattern--stream .slides section.title {
 background-color: $primary; }
 .reveal.pattern--stream .progress span {
-background: $third; }
+// background: $third;
+@include themify($themes){
+  background: themed('third')
+}
+}
 .reveal.pattern--stream .controls {
-color: $third; }
+// color: $third;
+@include themify($themes){
+  color: themed('third')}
+ }
 
 
 // Zigzag
@@ -243,8 +291,6 @@ color: $third; }
   background-color: #41ead4;
   color: #3A015C;}
 .reveal.pattern--lines .progress {
-  color: #ff206e; }
-.reveal.pattern--lines .controls {
   color: #ff206e; }
 
 

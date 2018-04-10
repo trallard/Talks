@@ -13,11 +13,13 @@ section.has-light-background, section.has-light-background h1, section.has-light
 *********************************************/
 /* ultra violet */
 /* lavender violet */
-/*blue moon*/
 /* dark gray */
 /*********************************************
 * DEFINING THEMES
 *********************************************/
+/*
+ * Implementation of themes
+ */
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -29,13 +31,19 @@ section.has-light-background, section.has-light-background h1, section.has-light
 
 ::selection {
   color: #fff;
-  background: #3388A6;
   text-shadow: none; }
+  .theme-streams ::selection {
+    background: #3388A6; }
+  .theme-lines ::selection {
+    background: #ff206e; }
 
 ::-moz-selection {
   color: #fff;
-  background: #3388A6;
   text-shadow: none; }
+  .theme-streams ::-moz-selection {
+    background: #3388A6; }
+  .theme-lines ::-moz-selection {
+    background: #ff206e; }
 
 /*********************************************
 * HEADERS
@@ -73,9 +81,12 @@ section.has-light-background, section.has-light-background h1, section.has-light
   transition: color .15s ease; }
 
 .reveal a:hover {
-  color: #3388A6;
   text-shadow: none;
   border: none; }
+  .theme-streams .reveal a:hover {
+    color: #3388A6; }
+  .theme-lines .reveal a:hover {
+    color: #ff206e; }
 
 .reveal .roll span:after {
   color: #fff;
@@ -107,15 +118,20 @@ section.has-light-background, section.has-light-background h1, section.has-light
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
-.reveal .controls {
+.theme-streams .reveal .controls {
   color: #3388A6; }
+.theme-lines .reveal .controls {
+  color: #ff206e; }
 
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
-  background: rgba(0, 0, 0, 0.2);
-  color: #3388A6; }
+  background: rgba(0, 0, 0, 0.2); }
+  .theme-streams .reveal .progress {
+    color: #3388A6; }
+  .theme-lines .reveal .progress {
+    color: #ff206e; }
 
 .reveal .progress span {
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
@@ -164,11 +180,15 @@ html {
 .reveal.pattern--stream .slides section.title {
   background-color: #5F4B8B; }
 
-.reveal.pattern--stream .progress span {
+.theme-streams .reveal.pattern--stream .progress span {
   background: #3388A6; }
+.theme-lines .reveal.pattern--stream .progress span {
+  background: #ff206e; }
 
-.reveal.pattern--stream .controls {
+.theme-streams .reveal.pattern--stream .controls {
   color: #3388A6; }
+.theme-lines .reveal.pattern--stream .controls {
+  color: #ff206e; }
 
 .reveal.pattern--synapses {
   background-image: url("../assets/patterns/zigzag.jpg"); }
@@ -202,9 +222,6 @@ html {
   color: #3A015C; }
 
 .reveal.pattern--lines .progress {
-  color: #ff206e; }
-
-.reveal.pattern--lines .controls {
   color: #ff206e; }
 
 /*********************************************
