@@ -12,7 +12,6 @@ section.has-light-background, section.has-light-background h1, section.has-light
 * PERSONAL
 *********************************************/
 /* ultra violet */
-/* lavender violet */
 /* dark gray */
 /*********************************************
 * DEFINING THEMES
@@ -24,10 +23,13 @@ section.has-light-background, section.has-light-background h1, section.has-light
  * GLOBAL STYLES
  *********************************************/
 .reveal {
-  font-family: "Poppins", Helvetica, sans-serif;
   font-size: inherit;
   font-weight: normal;
   color: #737373; }
+  .theme-poppins-font .reveal {
+    font-family: Poppins, Helvetica, sans-serif; }
+  .theme-plex-font .reveal {
+    font-family: IBMPlexSans, sans-serif; }
 
 ::selection {
   color: #fff;
@@ -48,21 +50,27 @@ section.has-light-background, section.has-light-background h1, section.has-light
 /*********************************************
 * HEADERS
 *********************************************/
-.reveal h1,
-.reveal h2,
-.reveal h3,
-.reveal h4,
-.reveal h5,
-.reveal h6 {
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   margin: 0 0 20px 0;
-  color: #5F4B8B;
-  font-family: "IBMPlexSerif", monospace;
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: normal;
   text-transform: none;
   text-shadow: none;
   word-wrap: break-word; }
+  .theme-streams .reveal h1,
+  .theme-streams .reveal h2,
+  .theme-streams .reveal h3,
+  .theme-streams .reveal h4,
+  .theme-streams .reveal h5,
+  .theme-streams .reveal h6 {
+    color: #5F4B8B; }
+  .theme-lines .reveal h1, .theme-lines .reveal h2, .theme-lines .reveal h3, .theme-lines .reveal h4, .theme-lines .reveal h5, .theme-lines .reveal h6 {
+    color: #5F4B8B; }
+  .theme-poppins-font .reveal h1, .theme-poppins-font .reveal h2, .theme-poppins-font .reveal h3, .theme-poppins-font .reveal h4, .theme-poppins-font .reveal h5, .theme-poppins-font .reveal h6 {
+    font-family: IBMPlexSerif, monospace; }
+  .theme-plex-font .reveal h1, .theme-plex-font .reveal h2, .theme-plex-font .reveal h3, .theme-plex-font .reveal h4, .theme-plex-font .reveal h5, .theme-plex-font .reveal h6 {
+    font-family: IBMPlexSerif, monospace; }
 
 /*********************************************
  * OTHER- modifications to reveal themes
@@ -171,13 +179,17 @@ html {
 .reveal.pattern--stream {
   background-image: url("../assets/patterns/stream.svg"); }
 
-.reveal.pattern--stream .slides section.intro {
+.theme-streams .reveal.pattern--stream .slides section.intro {
+  background-color: #5F4B8B; }
+.theme-lines .reveal.pattern--stream .slides section.intro {
   background-color: #5F4B8B; }
 
 .reveal.pattern--stream .slides section.intro .logo {
   background-image: url("../assets/Tania_logo_white.png"); }
 
-.reveal.pattern--stream .slides section.title {
+.theme-streams .reveal.pattern--stream .slides section.title {
+  background-color: #5F4B8B; }
+.theme-lines .reveal.pattern--stream .slides section.title {
   background-color: #5F4B8B; }
 
 .theme-streams .reveal.pattern--stream .progress span {
@@ -219,11 +231,13 @@ html {
 
 .reveal.pattern--lines .slides section.title {
   background-color: #41ead4;
+  /*Violet*/
   color: #3A015C; }
 
 .reveal.pattern--lines .progress {
   color: #ff206e; }
 
+/*hot pink*/
 /*********************************************
 * ADDITIONAL SLIDES CLASSES
 *********************************************/

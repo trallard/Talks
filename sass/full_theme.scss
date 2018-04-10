@@ -15,9 +15,9 @@ section.has-light-background, section.has-light-background h1, section.has-light
 
 // STREAMS THEME
 $primary: #5F4B8B; /* ultra violet */
-$secondary: #747CA8; /* lavender violet */
-$secondary-light: lighten($secondary, 10%);
-$primary-light: lighten($primary, 10%);
+// $secondary: #747CA8; /* lavender violet */
+// $secondary-light: lighten($secondary, 10%);
+// $primary-light: lighten($primary, 10%);
 // $third: #3388A6; /*blue moon*/
 
 // Colors used on all themes
@@ -39,15 +39,23 @@ $code-font:  'Overpass Mono', monospace;
 //define a theme map
 $themes: (
   'streams':(
-    'primary': #5F4B8B,
-    'secondary': #747CA8,
+    'primary': #5F4B8B, /* ultra violet */
+    'secondary': #747CA8, /* lavender violet */
     'third': #3388A6,
   ),
   'lines':(
-    'primary': #5F4B8B,
-    'secondary': #41ead4,
-    'third': #ff206e,
-  )
+    'primary': #5F4B8B, /* violet */
+    'secondary': #41ead4, /* sea green */
+    'third': #ff206e, /* hot pink*/
+  ),
+  'poppins-font':(
+    'title-font': #{'IBMPlexSerif', monospace},
+    'base-font' : #{"Poppins", Helvetica, sans-serif},
+  ),
+  'plex-font': (
+    'title-font': #{'IBMPlexSerif', monospace},
+    'base-font' : #{'IBMPlexSans', sans-serif},
+  ),
 );
 //call initialize mixin with the theme-map variable
 // @include sass-themify-init($theme-map);
@@ -77,10 +85,14 @@ $themes: (
  * GLOBAL STYLES
  *********************************************/
 .reveal {
-  font-family: $second-font;
+  // font-family: $second-font;
   font-size: inherit;
   font-weight: normal;
-  color: $text-color; }
+  color: $text-color;
+  @include themify($themes){
+    font-family: themed('base-font')
+  }
+}
 
 ::selection {
   color: #fff;
@@ -110,8 +122,12 @@ $themes: (
 .reveal h5,
 .reveal h6 {
 margin: 0 0 20px 0;
-color: $primary;
-font-family: $title-font;
+// color: $primary;
+// font-family: $title-font;
+@include themify($themes){
+  color: themed('primary');
+  font-family: themed('title-font');
+}
 font-weight: 400; //600 too bold for IBM plex
 line-height: 1.2;
 letter-spacing: normal;
@@ -244,11 +260,15 @@ word-wrap: normal; }
 .reveal.pattern--stream {
   background-image: url("../assets/patterns/stream.svg"); }
 .reveal.pattern--stream .slides section.intro {
-  background-color: $primary; }
+  @include themify($themes){
+    background-color: themed('primary')
+  }}
 .reveal.pattern--stream .slides section.intro .logo {
   background-image: url("../assets/Tania_logo_white.png"); }
 .reveal.pattern--stream .slides section.title {
-background-color: $primary; }
+  @include themify($themes){
+    background-color: themed('primary')
+  } }
 .reveal.pattern--stream .progress span {
 // background: $third;
 @include themify($themes){
@@ -268,8 +288,8 @@ background-color: $primary; }
   background-image: url("../assets/patterns/zigzag.jpg"); }
 .reveal.pattern--synapses .slides section.intro {
   background-color: #DD7373; }
-  .reveal.pattern--synapses .slides section.intro .logo {
-    background-image: url("../../lib/myplanet/patterns/synapses/logo.svg"); }
+.reveal.pattern--synapses .slides section.intro .logo {
+  background-image: url("../../lib/myplanet/patterns/synapses/logo.svg"); }
 .reveal.pattern--synapses .slides section.title {
   background-color: #1C2541; }
 .reveal.pattern--synapses .progress {
@@ -288,10 +308,10 @@ background-color: $primary; }
 .reveal.pattern--lines .slides section.intro .logo {
   background-image: url("../../lib/myplanet/patterns/synapses/logo.svg"); }
 .reveal.pattern--lines .slides section.title {
-  background-color: #41ead4;
+  background-color: #41ead4; /*Violet*/
   color: #3A015C;}
 .reveal.pattern--lines .progress {
-  color: #ff206e; }
+  color: #ff206e; } /*hot pink*/
 
 
 /*********************************************
