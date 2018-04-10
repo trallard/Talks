@@ -1,6 +1,7 @@
 /**
  * @file
  * Presentation-specific styles.
+ * There are NOT Reveal.js modifiers but added css items
  */
 
 /* .reveal img {
@@ -106,7 +107,7 @@ division for the cells */
 #end .content {
     margin-top: auto;
     text-align: center;
-    font-size: 150%;
+    font-size: 140%;
 }
 
 
@@ -114,6 +115,10 @@ division for the cells */
 /*********************************************
  * custom slides
  *********************************************/
+
+/* Slide with image background and semi-transluscent
+black box with white text (ideal for presentation sections) */
+
 .dark_box {
     background-image: url('../assets/code.jpg');
     background-size: cover;
@@ -146,6 +151,9 @@ division for the cells */
   width: auto;
   text-align: center;
 }
+/*
+Slide containing information about the presenter
+has a background image and a box with the details */
 
 #about {
     background-image: url('../assets/code2.jpg');
@@ -192,13 +200,15 @@ division for the cells */
 
 
 /* More custom classes */
+
+/* Strong text */
 .reveal strong,
 .reveal b {
   font-weight: 400;
   color: #F8757F;
 }
 
-
+/* Larger images */
 figure.display {
   margin: auto;
   /* max-height: 50vmin; */
@@ -215,12 +225,15 @@ figure.display {
   color: #F8757F;
 }
 
+/* Regular images that go in the center */
+
 div.images {
   text-align: center;
   max-width: 100%:
   background-color: #222;
   max-height: 50vmin;
 }
+
 div.images img {
   margin: 0 auto;
   margin-top: 3.0em;
