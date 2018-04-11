@@ -24,6 +24,7 @@ $primary: #5F4B8B; /* ultra violet */
 $light-gray: #e2e6e9;
 $white: #fff;
 $text-color: #737373; /* dark gray */
+$salmon: #F8757F;
 
 // Fonts used
 $title-font:'IBMPlexSerif', monospace;
@@ -42,11 +43,15 @@ $themes: (
     'primary': #5F4B8B, /* ultra violet */
     'secondary': #747CA8, /* lavender violet */
     'third': #3388A6,
+    'primary-light':lighten(#5F4B8B, 10%),
+    'secondary-light' :lighten(#747CA8, 10%),
   ),
   'lines':(
     'primary': #3A015C, /* violet */
     'secondary': #41ead4, /* sea green */
     'third': #ff206e, /* hot pink*/
+    'primary-light':lighten(#3A015C, 10%),
+    'secondary-light' :lighten(#41ead4, 10%),
   ),
   'poppins-font':(
     'title-font': #{'IBMPlexSerif', monospace},
@@ -104,7 +109,7 @@ $themes: (
 }
 
 ::-moz-selection {
-  color: #fff;
+  color: $white;
   // background: $third;
   text-shadow: none;
   @include themify($themes){
@@ -168,7 +173,7 @@ word-wrap: break-word; }
 }
 
 .reveal .roll span:after {
-  color: #fff;
+  color: $white;
   background: #068de9; }
 
 /*********************************************
@@ -313,7 +318,7 @@ word-wrap: normal; }
   background-image: url("../../lib/myplanet/patterns/synapses/logo.svg"); }
 .reveal.pattern--lines .slides section.title {
   background-color: #41ead4; /*sea green*/
-  color: #3A015C;}
+  color: #3A015C;} /* violet */
 .reveal.pattern--lines .progress {
   color: #ff206e; } /*hot pink*/
 
@@ -329,40 +334,46 @@ word-wrap: normal; }
   background-image: url("../assets/Tania_logo_gray2.png"); }
 
 .reveal .slides section.color--ice {
-  background-color: #9292A8;
-  color: #FFFFFF; }
+  background-color: #9292A8; /* pale lavender gray */
+  color: $white; }
 .reveal .slides section.color--ice .logo {
   background-image: url("../assets/Tania_logo.png"); }
 
 .reveal .slides section.color--violet {
   background-color: #3A015C;
-  color: #FFFFFF; }
+  color: $white; }
 .reveal .slides section.color--violet .logo {
   background-image: url("../assets/Tania_logo.png"); }
 
 .reveal .slides section.color--light {
-  background-color: #FFFFFF;
-  color: #66646B; }
+  background-color: $white;
+  color: #66646B;} /* dark grey */
 .reveal .slides section.color--light .logo {
   background-image: url("../assets/Tania_logo.png"); }
 
 .reveal .slides section.color--midnight {
-  background-color: #2A2A49;
-  color: #FFFFFF; }
+  background-color: #2A2A49; /* navy blue */
+  color: $white;
+  & h1, h2{
+    color: $salmon;
+  }
+}
 .reveal .slides section.color--midnight .logo {
   background-image: url("../assets/Tania_logo_gray.png"); }
 
 .reveal .slides section.color--vibrant{
-  background-color: #4ecdc4;
-  color: #FFFFFF!important; }
+  background-color: #4ecdc4; /* turquoise */
+  color:$white;
+  & h1{
+    color: $white;
+  }
+}
 .reveal .slides section.color--vibrant .logo {
   background-image: url("../assets/Tania_logo.png"); }
 
-.reveal .slides section.color--vibrant h1{color:$white;} 
-
 .reveal .slides section.color--two{
   background-color: $white;
-  color: #FFFFFF;
+  color: $white;
   background: linear-gradient(to right,
     $primary 50%,
     $white 50%
@@ -392,33 +403,39 @@ word-wrap: normal; }
 
 .reveal .slides section.color--grad-purple{
   background-color: $white;
-  color: #FFFFFF;
   background: linear-gradient(45deg,
     ( #2D266F, #7C2289 ));
-  color: white!important;
+  color: $white!important;
+  & h1{
+    color: $white;
+  }
+  & .logo {
+    background-image: url("../assets/Tania_logo_white.png"); }
 }
-.reveal .slides section.color--grad-purple .logo {
-  background-image: url("../assets/Tania_logo_white.png"); }
-
 
 .reveal .slides section.color--grad-green{
   background-color: $white;
-  color: #FFFFFF;
+  color: $white;
   background: linear-gradient(45deg,
     ( #90218C, #009890 ));
+  & h1{
+    color: $white;
+  }
+  & .logo{
+    background-image: url("../assets/Tania_logo_white.png"); }
 }
-.reveal .slides section.color--grad-green .logo {
-  background-image: url("../assets/Tania_logo_white.png"); }
-
 
 .reveal .slides section.color--grad-blue{
   background-color: $white;
   color: #FFFFFF;
   background: linear-gradient(45deg,
     ( #303395, #27F0F0 ));
+    & h1{
+      color: $white;
+    }
+    & .logo{
+      background-image: url("../assets/Tania_logo_white.png"); }
 }
-.reveal .slides section.color--grad-blue .logo {
-  background-image: url("../assets/Tania_logo_white.png"); }
 
 /*********************************************
 * CSS GRID USE

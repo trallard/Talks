@@ -238,6 +238,7 @@ html {
   /*sea green*/
   color: #3A015C; }
 
+/* violet */
 .reveal.pattern--lines .progress {
   color: #ff206e; }
 
@@ -254,45 +255,50 @@ html {
 
 .reveal .slides section.color--ice {
   background-color: #9292A8;
-  color: #FFFFFF; }
+  /* pale lavender gray */
+  color: #fff; }
 
 .reveal .slides section.color--ice .logo {
   background-image: url("../assets/Tania_logo.png"); }
 
 .reveal .slides section.color--violet {
   background-color: #3A015C;
-  color: #FFFFFF; }
+  color: #fff; }
 
 .reveal .slides section.color--violet .logo {
   background-image: url("../assets/Tania_logo.png"); }
 
 .reveal .slides section.color--light {
-  background-color: #FFFFFF;
+  background-color: #fff;
   color: #66646B; }
 
+/* dark grey */
 .reveal .slides section.color--light .logo {
   background-image: url("../assets/Tania_logo.png"); }
 
 .reveal .slides section.color--midnight {
   background-color: #2A2A49;
-  color: #FFFFFF; }
+  /* navy blue */
+  color: #fff; }
+  .reveal .slides section.color--midnight h1, .reveal .slides section.color--midnight h2 {
+    color: #F8757F; }
 
 .reveal .slides section.color--midnight .logo {
   background-image: url("../assets/Tania_logo_gray.png"); }
 
 .reveal .slides section.color--vibrant {
   background-color: #4ecdc4;
-  color: #FFFFFF !important; }
+  /* turquoise */
+  color: #fff; }
+  .reveal .slides section.color--vibrant h1 {
+    color: #fff; }
 
 .reveal .slides section.color--vibrant .logo {
   background-image: url("../assets/Tania_logo.png"); }
 
-.reveal .slides section.color--vibrant h1 {
-  color: #fff; }
-
 .reveal .slides section.color--two {
   background-color: #fff;
-  color: #FFFFFF;
+  color: #fff;
   background: linear-gradient(to right, #5F4B8B 50%, #fff 50%); }
 
 .reveal .slides section.color--two .logo {
@@ -313,28 +319,30 @@ html {
 
 .reveal .slides section.color--grad-purple {
   background-color: #fff;
-  color: #FFFFFF;
   background: linear-gradient(45deg, #2D266F, #7C2289);
-  color: white !important; }
-
-.reveal .slides section.color--grad-purple .logo {
-  background-image: url("../assets/Tania_logo_white.png"); }
+  color: #fff !important; }
+  .reveal .slides section.color--grad-purple h1 {
+    color: #fff; }
+  .reveal .slides section.color--grad-purple .logo {
+    background-image: url("../assets/Tania_logo_white.png"); }
 
 .reveal .slides section.color--grad-green {
   background-color: #fff;
-  color: #FFFFFF;
+  color: #fff;
   background: linear-gradient(45deg, #90218C, #009890); }
-
-.reveal .slides section.color--grad-green .logo {
-  background-image: url("../assets/Tania_logo_white.png"); }
+  .reveal .slides section.color--grad-green h1 {
+    color: #fff; }
+  .reveal .slides section.color--grad-green .logo {
+    background-image: url("../assets/Tania_logo_white.png"); }
 
 .reveal .slides section.color--grad-blue {
   background-color: #fff;
   color: #FFFFFF;
   background: linear-gradient(45deg, #303395, #27F0F0); }
-
-.reveal .slides section.color--grad-blue .logo {
-  background-image: url("../assets/Tania_logo_white.png"); }
+  .reveal .slides section.color--grad-blue h1 {
+    color: #fff; }
+  .reveal .slides section.color--grad-blue .logo {
+    background-image: url("../assets/Tania_logo_white.png"); }
 
 /*********************************************
 * CSS GRID USE
