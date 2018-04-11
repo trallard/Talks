@@ -44,7 +44,7 @@ $themes: (
     'third': #3388A6,
   ),
   'lines':(
-    'primary': #5F4B8B, /* violet */
+    'primary': #3A015C, /* violet */
     'secondary': #41ead4, /* sea green */
     'third': #ff206e, /* hot pink*/
   ),
@@ -148,7 +148,10 @@ word-wrap: break-word; }
  * LINKS
  *********************************************/
 .reveal a {
-  color: #42affa;
+  // color: #42affa;
+  @include themify($themes){
+    color: themed('third');
+  }
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
@@ -158,6 +161,7 @@ word-wrap: break-word; }
   // color: $third;
   text-shadow: none;
   border: none;
+  text-decoration: underline;
   @include themify($themes){
     color: themed('third')
   }
@@ -308,7 +312,7 @@ word-wrap: normal; }
 .reveal.pattern--lines .slides section.intro .logo {
   background-image: url("../../lib/myplanet/patterns/synapses/logo.svg"); }
 .reveal.pattern--lines .slides section.title {
-  background-color: #41ead4; /*Violet*/
+  background-color: #41ead4; /*sea green*/
   color: #3A015C;}
 .reveal.pattern--lines .progress {
   color: #ff206e; } /*hot pink*/
@@ -350,9 +354,11 @@ word-wrap: normal; }
 
 .reveal .slides section.color--vibrant{
   background-color: #4ecdc4;
-  color: #FFFFFF; }
+  color: #FFFFFF!important; }
 .reveal .slides section.color--vibrant .logo {
   background-image: url("../assets/Tania_logo.png"); }
+
+.reveal .slides section.color--vibrant h1{color:$white;} 
 
 .reveal .slides section.color--two{
   background-color: $white;
@@ -454,7 +460,8 @@ bottom: 4vmin; }
 .reveal h5,
 .reveal h6 {
 margin-bottom: 2.5vmin;
-color: inherit; }
+color: inherit;
+}
 
 .reveal .slides section {
 box-sizing: border-box;
@@ -550,6 +557,7 @@ color: #2A2A49; }
 .reveal .slides section.intro {
 height: calc(100vh - 8vmin);
 margin: 4vmin;
+padding: 15px;
 width: calc(100vw - 8vmin); }
 
 @media (max-width: 768px) {
@@ -611,7 +619,7 @@ align-self: center;
 grid-area: content; }
 
 .reveal .slides section.title h1 {
-color: #FFFFFF; }
+color: $white; }
 
 .reveal .slides section.title .credit {
 align-self: end;
@@ -620,9 +628,9 @@ line-height: 1.8em; }
 
 .reveal .slides section.title .credit hr {
   border: solid #EEEDEF;
-  border-width: 1px 0 0 0;
+  border-width: 2px 0 0 0;
   margin: 0 0 .8em 0;
-  width: 20%; }
+  width: 25%; }
 
 .reveal .slides section.title .credit .label {
   font-size: 60%;
