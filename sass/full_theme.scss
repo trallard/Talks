@@ -14,7 +14,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 *********************************************/
 
 // STREAMS THEME
-$primary: #5F4B8B; /* ultra violet */
+// $primary: #5F4B8B; /*  ultra violet */
 // $secondary: #747CA8; /* lavender violet */
 // $secondary-light: lighten($secondary, 10%);
 // $primary-light: lighten($primary, 10%);
@@ -25,6 +25,7 @@ $light-gray: #e2e6e9;
 $white: #fff;
 $text-color: #737373; /* dark gray */
 $salmon: #F8757F;
+$ultraviolet: #5F4B8B;
 
 // Fonts used
 $title-font:'IBMPlexSerif', monospace;
@@ -375,7 +376,7 @@ word-wrap: normal; }
   background-color: $white;
   color: $white;
   background: linear-gradient(to right,
-    $primary 50%,
+    $ultraviolet 50%,
     $white 50%
   )}
 .reveal .slides section.color--two .logo {
@@ -677,7 +678,7 @@ line-height: 1.8em; }
     grid-area: description;
     margin-top: 0.5em; } }
 
-// Subsection slide: header wide content and descr
+// Subsection slide: header with content and description
 .reveal .slides section.subsection .grid-wrapper {
   grid-template-areas: "header" "title" "description";
   grid-template-rows: 5.5vmin 3fr 1fr; }
