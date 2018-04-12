@@ -4,7 +4,7 @@
  */
 @import url(../../reveal.js/lib/font/source-sans-pro/source-sans-pro.css);
 @import url(../../reveal.js/lib/font/poppins/poppins.css);
-@import url("https://fonts.googleapis.com/css?family=Overpass+Mono:400,600");
+@import url("https://fonts.googleapis.com/css?family=Didact+Gothic|Dosis:400,600|Overpass+Mono|PT+Mono");
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
 
@@ -29,6 +29,8 @@ section.has-light-background, section.has-light-background h1, section.has-light
     font-family: Poppins, Helvetica, sans-serif; }
   .theme-plex-font .reveal {
     font-family: IBMPlexSans, sans-serif; }
+  .theme-dosis-font .reveal {
+    font-family: Didact Gothic, sans-serif; }
 
 ::selection {
   color: #fff;
@@ -70,6 +72,8 @@ section.has-light-background, section.has-light-background h1, section.has-light
     font-family: IBMPlexSerif, monospace; }
   .theme-plex-font .reveal h1, .theme-plex-font .reveal h2, .theme-plex-font .reveal h3, .theme-plex-font .reveal h4, .theme-plex-font .reveal h5, .theme-plex-font .reveal h6 {
     font-family: IBMPlexSerif, monospace; }
+  .theme-dosis-font .reveal h1, .theme-dosis-font .reveal h2, .theme-dosis-font .reveal h3, .theme-dosis-font .reveal h4, .theme-dosis-font .reveal h5, .theme-dosis-font .reveal h6 {
+    font-family: Dosis, sans-serif; }
 
 /*********************************************
  * OTHER- modifications to reveal themes
@@ -81,14 +85,11 @@ section.has-light-background, section.has-light-background h1, section.has-light
  * LINKS
  *********************************************/
 .reveal a {
+  color: #42affa;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   transition: color .15s ease; }
-  .theme-streams .reveal a {
-    color: #3388A6; }
-  .theme-lines .reveal a {
-    color: #ff206e; }
 
 .reveal a:hover {
   text-shadow: none;
@@ -304,8 +305,13 @@ html {
   background-image: url("../assets/Tania_logo_gray.png"); }
 
 .items-block {
-  display: flex;
-  font-family: "IBMPlexSans", sans-serif; }
+  display: flex; }
+  .theme-poppins-font .items-block {
+    font-family: Poppins, Helvetica, sans-serif; }
+  .theme-plex-font .items-block {
+    font-family: IBMPlexSans, sans-serif; }
+  .theme-dosis-font .items-block {
+    font-family: Didact Gothic, sans-serif; }
   .items-block .single-block {
     width: 100%;
     display: flex;
