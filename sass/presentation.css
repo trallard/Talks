@@ -17,14 +17,9 @@
     padding-right: 10px;
 }
 
-
-.reveal a {
-    color: inherit;
-}
-
 /* Ensure the list are shown in the center */
 .reveal ul {
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
     align-self: center;
     justify-self: center;
 }
@@ -39,6 +34,7 @@
 
 /* Twitter icon and handle on the header */
 .header .twitter {
+    color: #42affa;
     margin-left: auto;
     opacity: 0.5;
     font-size: 0.8rem;

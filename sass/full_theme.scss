@@ -147,10 +147,10 @@ word-wrap: break-word; }
  * LINKS
  *********************************************/
 .reveal a {
-  color: #42affa;
-  // @include themify($themes){
-  //   color: themed('third');
-  // }
+  // color: #42affa;
+  @include themify($themes){
+    color: themed('third');
+  }
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
@@ -225,9 +225,12 @@ word-wrap: break-word; }
 *********************************************/
 
 html {
-  font-size: 3.3vmin; }
+  font-size: 3.5vmin; }
   // font-size: 3.3vmin; }
 
+@media (max-width: 1200px) {
+  html {
+    font-size: 18px; } }
 
 @media (max-width: 768px) {
   html {
