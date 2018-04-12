@@ -4,50 +4,112 @@
  */
 @import url(../../reveal.js/lib/font/source-sans-pro/source-sans-pro.css);
 @import url(../../reveal.js/lib/font/poppins/poppins.css);
-@import url('https://fonts.googleapis.com/css?family=Overpass+Mono:400,600');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Dosis:400,600|Overpass+Mono|PT+Mono');
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
-
+@import "themify.scss";
 
 /*********************************************
 * PERSONAL
 *********************************************/
 
-// STREAMS THEME
-$primary: #5F4B8B; /* ultra violet */
-$secondary: #747CA8; /* lavender violet */
-$secondary-light: lighten($secondary, 10%);
-$primary-light: lighten($primary, 10%);
-$third: #3388A6; /*blue moon*/
+
+// Colors used on all themes
 $light-gray: #e2e6e9;
-
-
 $white: #fff;
 $text-color: #737373; /* dark gray */
+$salmon: #F8757F;
+$ultraviolet: #5F4B8B;
 
-$title-font:'IBMPlexSerif', monospace;
-$base-font:'IBMPlexSans', sans-serif;
-$second-font: "Poppins", Helvetica, sans-serif;
+// Fonts used
 $code-font:  'Overpass Mono', monospace;
+
+/*********************************************
+* DEFINING THEMES
+*********************************************/
+//define a theme map
+$themes: (
+  'streams':(
+    'primary': #5F4B8B, /* ultra violet */
+    'secondary': #747CA8, /* lavender violet */
+    'third': #3388A6,
+    'primary-light':lighten(#5F4B8B, 10%),
+    'secondary-light' :lighten(#747CA8, 10%),
+  ),
+  'lines':(
+    'primary': #3A015C, /* violet */
+    'secondary': #41ead4, /* sea green */
+    'third': #ff206e, /* hot pink*/
+    'primary-light':lighten(#3A015C, 10%),
+    'secondary-light' :lighten(#41ead4, 10%),
+  ),
+  'poppins-font':(
+    'title-font': #{'IBMPlexSerif', monospace},
+    'base-font' : #{"Poppins", Helvetica, sans-serif},
+  ),
+  'plex-font': (
+    'title-font': #{'IBMPlexSerif', monospace},
+    'base-font' : #{'IBMPlexSans', sans-serif},
+  ),
+  'dosis-font': (
+  'title-font': #{'Dosis', sans-serif},
+  'base-font' : #{'Didact Gothic', sans-serif},
+  )
+);
+//call initialize mixin with the theme-map variable
+// @include sass-themify-init($theme-map);
+
+/*
+ * Implementation of themes
+ */
+@mixin themify($themes) {
+  @each $theme, $map in $themes {
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}
 
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 .reveal {
-  font-family: $second-font;
+  // font-family: $second-font;
   font-size: inherit;
   font-weight: normal;
-  color: $text-color; }
+  color: $text-color;
+  @include themify($themes){
+    font-family: themed('base-font')
+  }
+}
 
 ::selection {
   color: #fff;
-  background: $third;
-  text-shadow: none; }
+  // background: $third;
+  text-shadow: none;
+  @include themify($themes){
+    background: themed('third')
+  }
+}
 
 ::-moz-selection {
-  color: #fff;
-  background: $third;
-  text-shadow: none; }
+  color: $white;
+  // background: $third;
+  text-shadow: none;
+  @include themify($themes){
+    background: themed('third')
+  }
+}
 
 /*********************************************
 * HEADERS
@@ -59,8 +121,12 @@ $code-font:  'Overpass Mono', monospace;
 .reveal h5,
 .reveal h6 {
 margin: 0 0 20px 0;
-color: $primary;
-font-family: $title-font;
+// color: $primary;
+// font-family: $title-font;
+@include themify($themes){
+  color: themed('primary');
+  font-family: themed('title-font');
+}
 font-weight: 400; //600 too bold for IBM plex
 line-height: 1.2;
 letter-spacing: normal;
@@ -82,18 +148,26 @@ word-wrap: break-word; }
  *********************************************/
 .reveal a {
   color: #42affa;
+  // @include themify($themes){
+  //   color: themed('third');
+  // }
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   transition: color .15s ease;}
 
 .reveal a:hover {
-  color: $third;
+  // color: $third;
   text-shadow: none;
-  border: none; }
+  border: none;
+  text-decoration: underline;
+  @include themify($themes){
+    color: themed('third')
+  }
+}
 
 .reveal .roll span:after {
-  color: #fff;
+  color: $white;
   background: #068de9; }
 
 /*********************************************
@@ -123,14 +197,22 @@ word-wrap: break-word; }
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: $third; }
+  // color: $third;
+  @include themify($themes){
+    color: themed('third')
+  }
+}
 
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
-  color: $third; }
+  // color: $third;]
+  @include themify($themes){
+    color: themed('third')
+  }
+}
 
 .reveal .progress span {
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
@@ -181,15 +263,26 @@ word-wrap: normal; }
 .reveal.pattern--stream {
   background-image: url("../assets/patterns/stream.svg"); }
 .reveal.pattern--stream .slides section.intro {
-  background-color: $primary; }
+  @include themify($themes){
+    background-color: themed('primary')
+  }}
 .reveal.pattern--stream .slides section.intro .logo {
   background-image: url("../assets/Tania_logo_white.png"); }
 .reveal.pattern--stream .slides section.title {
-background-color: $primary; }
+  @include themify($themes){
+    background-color: themed('primary')
+  } }
 .reveal.pattern--stream .progress span {
-background: $third; }
+// background: $third;
+@include themify($themes){
+  background: themed('third')
+}
+}
 .reveal.pattern--stream .controls {
-color: $third; }
+// color: $third;
+@include themify($themes){
+  color: themed('third')}
+ }
 
 
 // Zigzag
@@ -198,8 +291,8 @@ color: $third; }
   background-image: url("../assets/patterns/zigzag.jpg"); }
 .reveal.pattern--synapses .slides section.intro {
   background-color: #DD7373; }
-  .reveal.pattern--synapses .slides section.intro .logo {
-    background-image: url("../../lib/myplanet/patterns/synapses/logo.svg"); }
+.reveal.pattern--synapses .slides section.intro .logo {
+  background-image: url("../../lib/myplanet/patterns/synapses/logo.svg"); }
 .reveal.pattern--synapses .slides section.title {
   background-color: #1C2541; }
 .reveal.pattern--synapses .progress {
@@ -218,12 +311,10 @@ color: $third; }
 .reveal.pattern--lines .slides section.intro .logo {
   background-image: url("../../lib/myplanet/patterns/synapses/logo.svg"); }
 .reveal.pattern--lines .slides section.title {
-  background-color: #41ead4;
-  color: #3A015C;}
+  background-color: #41ead4; /*sea green*/
+  color: #3A015C;} /* violet */
 .reveal.pattern--lines .progress {
-  color: #ff206e; }
-.reveal.pattern--lines .controls {
-  color: #ff206e; }
+  color: #ff206e; } /*hot pink*/
 
 
 /*********************************************
@@ -237,40 +328,48 @@ color: $third; }
   background-image: url("../assets/Tania_logo_gray2.png"); }
 
 .reveal .slides section.color--ice {
-  background-color: #9292A8;
-  color: #FFFFFF; }
+  background-color: #9292A8; /* pale lavender gray */
+  color: $white; }
 .reveal .slides section.color--ice .logo {
   background-image: url("../assets/Tania_logo.png"); }
 
 .reveal .slides section.color--violet {
   background-color: #3A015C;
-  color: #FFFFFF; }
+  color: $white; }
 .reveal .slides section.color--violet .logo {
   background-image: url("../assets/Tania_logo.png"); }
 
 .reveal .slides section.color--light {
-  background-color: #FFFFFF;
-  color: #66646B; }
+  background-color: $white;
+  color: #66646B;} /* dark grey */
 .reveal .slides section.color--light .logo {
   background-image: url("../assets/Tania_logo.png"); }
 
 .reveal .slides section.color--midnight {
-  background-color: #2A2A49;
-  color: #FFFFFF; }
+  background-color: #2A2A49; /* navy blue */
+  color: $white;
+  & h1, h2{
+    color: $salmon;
+  }
+}
 .reveal .slides section.color--midnight .logo {
   background-image: url("../assets/Tania_logo_gray.png"); }
 
 .reveal .slides section.color--vibrant{
-  background-color: #4ecdc4;
-  color: #FFFFFF; }
+  background-color: #4ecdc4; /* turquoise */
+  color:$white;
+  & h1{
+    color: $white;
+  }
+}
 .reveal .slides section.color--vibrant .logo {
   background-image: url("../assets/Tania_logo.png"); }
 
 .reveal .slides section.color--two{
   background-color: $white;
-  color: #FFFFFF;
+  color: $white;
   background: linear-gradient(to right,
-    $primary 50%,
+    $ultraviolet 50%,
     $white 50%
   )}
 .reveal .slides section.color--two .logo {
@@ -278,7 +377,9 @@ color: $third; }
 
 .items-block {
     display: flex;
-    font-family: $base-font;
+    @include themify($themes){
+      font-family: themed('base-font')
+    }
 
     .single-block {
     width: 100%;
@@ -298,33 +399,39 @@ color: $third; }
 
 .reveal .slides section.color--grad-purple{
   background-color: $white;
-  color: #FFFFFF;
   background: linear-gradient(45deg,
     ( #2D266F, #7C2289 ));
-  color: white!important;
+  color: $white!important;
+  & h1{
+    color: $white;
+  }
+  & .logo {
+    background-image: url("../assets/Tania_logo_white.png"); }
 }
-.reveal .slides section.color--grad-purple .logo {
-  background-image: url("../assets/Tania_logo_white.png"); }
-
 
 .reveal .slides section.color--grad-green{
   background-color: $white;
-  color: #FFFFFF;
+  color: $white;
   background: linear-gradient(45deg,
     ( #90218C, #009890 ));
+  & h1{
+    color: $white;
+  }
+  & .logo{
+    background-image: url("../assets/Tania_logo_white.png"); }
 }
-.reveal .slides section.color--grad-green .logo {
-  background-image: url("../assets/Tania_logo_white.png"); }
-
 
 .reveal .slides section.color--grad-blue{
   background-color: $white;
   color: #FFFFFF;
   background: linear-gradient(45deg,
     ( #303395, #27F0F0 ));
+    & h1{
+      color: $white;
+    }
+    & .logo{
+      background-image: url("../assets/Tania_logo_white.png"); }
 }
-.reveal .slides section.color--grad-blue .logo {
-  background-image: url("../assets/Tania_logo_white.png"); }
 
 /*********************************************
 * CSS GRID USE
@@ -366,7 +473,8 @@ bottom: 4vmin; }
 .reveal h5,
 .reveal h6 {
 margin-bottom: 2.5vmin;
-color: inherit; }
+color: inherit;
+}
 
 .reveal .slides section {
 box-sizing: border-box;
@@ -462,6 +570,7 @@ color: #2A2A49; }
 .reveal .slides section.intro {
 height: calc(100vh - 8vmin);
 margin: 4vmin;
+padding: 15px;
 width: calc(100vw - 8vmin); }
 
 @media (max-width: 768px) {
@@ -523,7 +632,7 @@ align-self: center;
 grid-area: content; }
 
 .reveal .slides section.title h1 {
-color: #FFFFFF; }
+color: $white; }
 
 .reveal .slides section.title .credit {
 align-self: end;
@@ -532,9 +641,9 @@ line-height: 1.8em; }
 
 .reveal .slides section.title .credit hr {
   border: solid #EEEDEF;
-  border-width: 1px 0 0 0;
+  border-width: 2px 0 0 0;
   margin: 0 0 .8em 0;
-  width: 20%; }
+  width: 25%; }
 
 .reveal .slides section.title .credit .label {
   font-size: 60%;
@@ -564,7 +673,7 @@ line-height: 1.8em; }
     grid-area: description;
     margin-top: 0.5em; } }
 
-// Subsection slide: header wide content and descr
+// Subsection slide: header with content and description
 .reveal .slides section.subsection .grid-wrapper {
   grid-template-areas: "header" "title" "description";
   grid-template-rows: 5.5vmin 3fr 1fr; }

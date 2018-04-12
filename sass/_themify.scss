@@ -1,0 +1,75 @@
+//# The MIT License (MIT)
+
+//Copyright © Xun Chen
+
+//Permission is hereby granted, free of charge, to any person obtaining a copy of
+//this software and associated documentation files (the "Software"), to deal in
+//the Software without restriction, including without limitation the rights to
+//use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+//of the Software, and to permit persons to whom the Software is furnished to do
+//so, subject to the following conditions:
+
+//The above copyright notice and this permission notice shall be included in all
+//copies or substantial portions of the Software.
+
+//THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+//SOFTWARE.
+
+@mixin sass-themify-init($scheme-table){
+  @if $scheme-table == null{
+    @error "[sass-themify] sass-themify mixin needs a valid $scheme-table map defined"
+  } @else {
+    @if variable-exists("sass-themify-scheme-table") {
+      @warn "[sass-themify] sass-themify has already been initialized once. Initializing again will replace the previous initialized color scheme"
+    }
+    $sass-themify-scheme-table: $scheme-table !global;
+  }
+}
+
+@mixin sass-themify($element:"body"){
+  //determine if global varaible has been declared or not
+  @if not variable-exists("sass-themify-theme-name") {
+    $sass-themify-theme-name: null !global;
+  }
+
+  @each $theme-name, $color-map in $sass-themify-scheme-table{
+    $sass-themify-theme-name: $theme-name !global;
+    @if $theme-name != "default"{
+      #{$element}.#{$theme-name}{
+        @content;
+      }
+    } @else {
+      #{$element}{
+        @content;
+      }
+    }
+    $sass-themify-theme-name: null !global;
+  }
+}
+
+@function sass-themify-get-map-deep($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}
+
+
+@function sass-themify-get-color($component){
+  @if $sass-themify-scheme-table == null {
+    @error "[sass-themify] You need to call sass-themify mixin to initialize a theme before you can call the sass-themify-get function.";
+  }
+  @if $sass-themify-theme-name == null {
+    @error "[sass-themify] sass-themify-get function can only be used within the scope of the 'sass-themify' mixin.";
+  }
+  @return sass-themify-get-map-deep($sass-themify-scheme-table,$sass-themify-theme-name,$component);
+}
+
+@function sass-themify-get-theme-name(){
+  @return $sass-themify-theme-name;
+}
