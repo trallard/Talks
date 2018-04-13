@@ -147,14 +147,17 @@ word-wrap: break-word; }
  * LINKS
  *********************************************/
 .reveal a {
-  // color: #42affa;
+  // color: #563b64;
   @include themify($themes){
-    color: themed('third');
+    text-decoration-color: themed('third');
+    -webkit-text-decoration-color: themed('third');
   }
-  text-decoration: none;
+  text-decoration: underline;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
-  transition: color .15s ease;}
+  transition: color .15s ease;
+
+}
 
 .reveal a:hover {
   // color: $third;
@@ -517,8 +520,9 @@ color: #2A2A49; }
 // Grid for the slides
 .reveal .slides section .grid-wrapper {
   box-sizing: border-box;
-  grid-column-gap: 10vmin;
-  grid-row-gap: 5vmin;
+  grid-column-gap: 5vmin;
+  // grid-row-gap: 5vmin;
+  grid-row-gap: 2vmin;
   grid-template-rows: 5.5vmin 1fr;
   grid-template-columns: 1fr 90% 1fr;
   grid-template-areas:
@@ -527,12 +531,22 @@ color: #2A2A49; }
   height: 100%;
   padding: 10vmin; }
 
+// This extends to the full width of the slide
+// .reveal .slides section .grid-wrapper {
+//     box-sizing: border-box;
+//     grid-column-gap: 10vmin;
+//     grid-row-gap: 5vmin;
+//     grid-template-areas: "header" "content";
+//     grid-template-rows: 4.5vmin 1fr;
+//     height: 100%;
+//     padding: 10vmin; }
+
 // Slides header
 .reveal .slides section .header {
   align-items: center;
   display: flex;
   grid-area: header;
-  // background-color: $secondary;
+  // background-color: #121212;
 }
 
 // Logo in header
@@ -561,7 +575,7 @@ color: #2A2A49; }
 .reveal .slides section .content {
   align-self: center;
   grid-area: content;
-  // background-color: $primary;
+// background-color: $light-gray;
 }
 
 

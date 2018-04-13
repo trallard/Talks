@@ -38,7 +38,9 @@
     margin-left: auto;
     opacity: 0.5;
     font-size: 0.8rem;
+    text-decoration: none;
 }
+
 
 .header .twitter .fa-twitter {
     color: inherit;
