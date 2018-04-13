@@ -17,6 +17,12 @@
     padding-right: 10px;
 }
 
+
+/* Make sure to inherit style */
+.reveal a {
+    color: inherit;
+}
+
 /* Ensure the list are shown in the center */
 .reveal ul {
     /* font-size: 1.2em; */
