@@ -85,11 +85,16 @@ section.has-light-background, section.has-light-background h1, section.has-light
  * LINKS
  *********************************************/
 .reveal a {
-  color: #42affa;
-  text-decoration: none;
+  text-decoration: underline;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   transition: color .15s ease; }
+  .theme-streams .reveal a {
+    text-decoration-color: #3388A6;
+    -webkit-text-decoration-color: #3388A6; }
+  .theme-lines .reveal a {
+    text-decoration-color: #ff206e;
+    -webkit-text-decoration-color: #ff206e; }
 
 .reveal a:hover {
   text-shadow: none;
@@ -422,8 +427,8 @@ html {
 
 .reveal .slides section .grid-wrapper {
   box-sizing: border-box;
-  grid-column-gap: 10vmin;
-  grid-row-gap: 5vmin;
+  grid-column-gap: 5vmin;
+  grid-row-gap: 2vmin;
   grid-template-rows: 5.5vmin 1fr;
   grid-template-columns: 1fr 90% 1fr;
   grid-template-areas: ". header ." ". content .";
