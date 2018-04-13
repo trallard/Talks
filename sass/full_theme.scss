@@ -20,6 +20,7 @@ $white: #fff;
 $text-color: #737373; /* dark gray */
 $salmon: #F8757F;
 $ultraviolet: #5F4B8B;
+$seagreen:  #41ead4;
 
 // Fonts used
 $code-font:  'Overpass Mono', monospace;
@@ -40,6 +41,13 @@ $themes: (
     'primary': #3A015C, /* violet */
     'secondary': #41ead4, /* sea green */
     'third': #ff206e, /* hot pink*/
+    'primary-light':lighten(#3A015C, 10%),
+    'secondary-light' :lighten(#41ead4, 10%),
+  ),
+  'black':(
+    'primary': #5B82D4, /*blue*/
+    'secondary': #F2E38A, /*yellow*/
+    'third': #C687E8, /*lilac*/
     'primary-light':lighten(#3A015C, 10%),
     'secondary-light' :lighten(#41ead4, 10%),
   ),
@@ -155,18 +163,24 @@ word-wrap: break-word; }
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   transition: color .15s ease;
+  &:hover {
+    text-shadow: none;
+    border: none;
+    text-decoration: underline;
+    @include themify($themes){
+      color: themed('third')
+    }}
 
 }
 
-.reveal a:hover {
-  // color: $third;
-  text-shadow: none;
-  border: none;
-  text-decoration: underline;
-  @include themify($themes){
-    color: themed('third')
-  }
-}
+// .reveal a:hover {
+//   text-shadow: none;
+//   border: none;
+//   text-decoration: underline;
+//   @include themify($themes){
+//     color: themed('third')
+//   }
+// }
 
 .reveal .roll span:after {
   color: $white;
@@ -199,7 +213,6 @@ word-wrap: break-word; }
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  // color: $third;
   @include themify($themes){
     color: themed('third')
   }
@@ -210,7 +223,6 @@ word-wrap: break-word; }
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
-  // color: $third;]
   @include themify($themes){
     color: themed('third')
   }
@@ -254,6 +266,7 @@ height: 1px;
 width: 1px;
 word-wrap: normal; }
 
+// Used for the theming
 .reveal[class*="pattern--"] {
   background-position: center center;
   background-size: 133vmax auto; }
@@ -264,7 +277,6 @@ word-wrap: normal; }
 *********************************************/
 
 // Stream
-
 .reveal.pattern--stream {
   background-image: url("../assets/patterns/stream.svg"); }
 .reveal.pattern--stream .slides section.intro {
@@ -278,26 +290,46 @@ word-wrap: normal; }
     background-color: themed('primary')
   } }
 .reveal.pattern--stream .progress span {
-// background: $third;
 @include themify($themes){
   background: themed('third')
 }
 }
 .reveal.pattern--stream .controls {
-// color: $third;
 @include themify($themes){
   color: themed('third')}
  }
+
+ // Lines
+ .reveal.pattern--lines {
+   background-image: url("../assets/patterns/lines.png"); }
+ .reveal.pattern--lines .slides section.intro {
+   @include themify($themes){
+     background-color: themed('secondary')
+   } }
+ .reveal.pattern--lines .slides section.intro .logo {
+   background-image: url("../../lib/myplanet/patterns/synapses/logo.svg"); }
+ .reveal.pattern--lines .slides section.title {
+   @include themify($themes){
+     background-color: themed('secondary');
+     color: themed('primary')
+   }}
+ .reveal.pattern--lines .progress {
+   @include themify($themes){
+     background-color: themed('third')
+   } }
 
 
 // Zigzag
 
 .reveal.pattern--synapses {
   background-image: url("../assets/patterns/zigzag.jpg"); }
+
 .reveal.pattern--synapses .slides section.intro {
-  background-color: #DD7373; }
-.reveal.pattern--synapses .slides section.intro .logo {
-  background-image: url("../../lib/myplanet/patterns/synapses/logo.svg"); }
+  background-color: #DD7373;
+  & logo{
+    background-image: url("../../lib/myplanet/patterns/synapses/logo.svg");
+  }
+}
 .reveal.pattern--synapses .slides section.title {
   background-color: #1C2541; }
 .reveal.pattern--synapses .progress {
@@ -307,49 +339,40 @@ word-wrap: normal; }
 
 
 
-// Lines
-
-.reveal.pattern--lines {
-  background-image: url("../assets/patterns/lines.png"); }
-.reveal.pattern--lines .slides section.intro {
-  background-color: #DD7373; }
-.reveal.pattern--lines .slides section.intro .logo {
-  background-image: url("../../lib/myplanet/patterns/synapses/logo.svg"); }
-.reveal.pattern--lines .slides section.title {
-  background-color: #41ead4; /*sea green*/
-  color: #3A015C;} /* violet */
-.reveal.pattern--lines .progress {
-  color: #ff206e; } /*hot pink*/
-
-
 /*********************************************
 * ADDITIONAL SLIDES CLASSES
 *********************************************/
 
+// Black slides
 .reveal .slides section.color--dark {
   background-color: #22272B;
   color: #EEEDEF; }
 .reveal .slides section.color--dark .logo {
   background-image: url("../assets/Tania_logo_gray2.png"); }
 
+// Grey lavender
 .reveal .slides section.color--ice {
   background-color: #9292A8; /* pale lavender gray */
   color: $white; }
 .reveal .slides section.color--ice .logo {
   background-image: url("../assets/Tania_logo.png"); }
 
+
+// Violet slide
 .reveal .slides section.color--violet {
   background-color: #3A015C;
   color: $white; }
 .reveal .slides section.color--violet .logo {
   background-image: url("../assets/Tania_logo.png"); }
 
+// Light slide
 .reveal .slides section.color--light {
   background-color: $white;
   color: #66646B;} /* dark grey */
 .reveal .slides section.color--light .logo {
   background-image: url("../assets/Tania_logo.png"); }
 
+// Dark navy
 .reveal .slides section.color--midnight {
   background-color: #2A2A49; /* navy blue */
   color: $white;
@@ -360,8 +383,9 @@ word-wrap: normal; }
 .reveal .slides section.color--midnight .logo {
   background-image: url("../assets/Tania_logo_gray.png"); }
 
+// Turquoise slide
 .reveal .slides section.color--vibrant{
-  background-color: #4ecdc4; /* turquoise */
+  background-color: $seagreen;
   color:$white;
   & h1{
     color: $white;
@@ -370,6 +394,8 @@ word-wrap: normal; }
 .reveal .slides section.color--vibrant .logo {
   background-image: url("../assets/Tania_logo.png"); }
 
+
+// Two tones slide
 .reveal .slides section.color--two{
   background-color: $white;
   color: $white;
@@ -447,7 +473,7 @@ display: grid; }
 /*********************************************
 * REVEAL SPECIFICS
 *********************************************/
-
+// Note that by default the text is aligned to the center
 .reveal .slides {
 text-align: left;
 // text-align: center;
@@ -507,7 +533,7 @@ margin: 0; }
 height: 100vh;
 margin: 0;
 width: 100vw;
-color: #2A2A49; }
+color: #2A2A49; } /* very dark purple */
 
 // If no colour is given this is white
 .reveal .slides section:not([class*='color--']) {
@@ -566,7 +592,6 @@ color: #2A2A49; }
   font-size: 0.6em;
   font-weight: 500; }
 
-
 .reveal .slides section:not([class*="color--"]) .section {
   color: #9292A8; }
 
@@ -576,7 +601,6 @@ color: #2A2A49; }
   grid-area: content;
 // background-color: $light-gray;
 }
-
 
 // Dark coloured slides
 .reveal .slides section.color--dark .section {

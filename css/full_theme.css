@@ -39,6 +39,8 @@ section.has-light-background, section.has-light-background h1, section.has-light
     background: #3388A6; }
   .theme-lines ::selection {
     background: #ff206e; }
+  .theme-black ::selection {
+    background: #C687E8; }
 
 ::-moz-selection {
   color: #fff;
@@ -47,6 +49,8 @@ section.has-light-background, section.has-light-background h1, section.has-light
     background: #3388A6; }
   .theme-lines ::-moz-selection {
     background: #ff206e; }
+  .theme-black ::-moz-selection {
+    background: #C687E8; }
 
 /*********************************************
 * HEADERS
@@ -68,6 +72,8 @@ section.has-light-background, section.has-light-background h1, section.has-light
     color: #5F4B8B; }
   .theme-lines .reveal h1, .theme-lines .reveal h2, .theme-lines .reveal h3, .theme-lines .reveal h4, .theme-lines .reveal h5, .theme-lines .reveal h6 {
     color: #3A015C; }
+  .theme-black .reveal h1, .theme-black .reveal h2, .theme-black .reveal h3, .theme-black .reveal h4, .theme-black .reveal h5, .theme-black .reveal h6 {
+    color: #5B82D4; }
   .theme-poppins-font .reveal h1, .theme-poppins-font .reveal h2, .theme-poppins-font .reveal h3, .theme-poppins-font .reveal h4, .theme-poppins-font .reveal h5, .theme-poppins-font .reveal h6 {
     font-family: IBMPlexSerif, monospace; }
   .theme-plex-font .reveal h1, .theme-plex-font .reveal h2, .theme-plex-font .reveal h3, .theme-plex-font .reveal h4, .theme-plex-font .reveal h5, .theme-plex-font .reveal h6 {
@@ -96,15 +102,20 @@ section.has-light-background, section.has-light-background h1, section.has-light
     text-decoration-color: #ff206e;
     -webkit-text-decoration-color: #ff206e;
     color: #ff206e; }
-
-.reveal a:hover {
-  text-shadow: none;
-  border: none;
-  text-decoration: underline; }
-  .theme-streams .reveal a:hover {
-    color: #3388A6; }
-  .theme-lines .reveal a:hover {
-    color: #ff206e; }
+  .theme-black .reveal a {
+    text-decoration-color: #C687E8;
+    -webkit-text-decoration-color: #C687E8;
+    color: #C687E8; }
+  .reveal a:hover {
+    text-shadow: none;
+    border: none;
+    text-decoration: underline; }
+    .theme-streams .reveal a:hover {
+      color: #3388A6; }
+    .theme-lines .reveal a:hover {
+      color: #ff206e; }
+    .theme-black .reveal a:hover {
+      color: #C687E8; }
 
 .reveal .roll span:after {
   color: #fff;
@@ -140,6 +151,8 @@ section.has-light-background, section.has-light-background h1, section.has-light
   color: #3388A6; }
 .theme-lines .reveal .controls {
   color: #ff206e; }
+.theme-black .reveal .controls {
+  color: #C687E8; }
 
 /*********************************************
  * PROGRESS BAR
@@ -150,6 +163,8 @@ section.has-light-background, section.has-light-background h1, section.has-light
     color: #3388A6; }
   .theme-lines .reveal .progress {
     color: #ff206e; }
+  .theme-black .reveal .progress {
+    color: #C687E8; }
 
 .reveal .progress span {
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
@@ -196,6 +211,8 @@ html {
   background-color: #5F4B8B; }
 .theme-lines .reveal.pattern--stream .slides section.intro {
   background-color: #3A015C; }
+.theme-black .reveal.pattern--stream .slides section.intro {
+  background-color: #5B82D4; }
 
 .reveal.pattern--stream .slides section.intro .logo {
   background-image: url("../assets/Tania_logo_white.png"); }
@@ -204,25 +221,60 @@ html {
   background-color: #5F4B8B; }
 .theme-lines .reveal.pattern--stream .slides section.title {
   background-color: #3A015C; }
+.theme-black .reveal.pattern--stream .slides section.title {
+  background-color: #5B82D4; }
 
 .theme-streams .reveal.pattern--stream .progress span {
   background: #3388A6; }
 .theme-lines .reveal.pattern--stream .progress span {
   background: #ff206e; }
+.theme-black .reveal.pattern--stream .progress span {
+  background: #C687E8; }
 
 .theme-streams .reveal.pattern--stream .controls {
   color: #3388A6; }
 .theme-lines .reveal.pattern--stream .controls {
   color: #ff206e; }
+.theme-black .reveal.pattern--stream .controls {
+  color: #C687E8; }
+
+.reveal.pattern--lines {
+  background-image: url("../assets/patterns/lines.png"); }
+
+.theme-streams .reveal.pattern--lines .slides section.intro {
+  background-color: #747CA8; }
+.theme-lines .reveal.pattern--lines .slides section.intro {
+  background-color: #41ead4; }
+.theme-black .reveal.pattern--lines .slides section.intro {
+  background-color: #F2E38A; }
+
+.reveal.pattern--lines .slides section.intro .logo {
+  background-image: url("../../lib/myplanet/patterns/synapses/logo.svg"); }
+
+.theme-streams .reveal.pattern--lines .slides section.title {
+  background-color: #747CA8;
+  color: #5F4B8B; }
+.theme-lines .reveal.pattern--lines .slides section.title {
+  background-color: #41ead4;
+  color: #3A015C; }
+.theme-black .reveal.pattern--lines .slides section.title {
+  background-color: #F2E38A;
+  color: #5B82D4; }
+
+.theme-streams .reveal.pattern--lines .progress {
+  background-color: #3388A6; }
+.theme-lines .reveal.pattern--lines .progress {
+  background-color: #ff206e; }
+.theme-black .reveal.pattern--lines .progress {
+  background-color: #C687E8; }
 
 .reveal.pattern--synapses {
   background-image: url("../assets/patterns/zigzag.jpg"); }
 
 .reveal.pattern--synapses .slides section.intro {
   background-color: #DD7373; }
-
-.reveal.pattern--synapses .slides section.intro .logo {
-  background-image: url("../../lib/myplanet/patterns/synapses/logo.svg"); }
+  .reveal.pattern--synapses .slides section.intro logo {
+    background-image: url("../../lib/myplanet/patterns/synapses/logo.svg"); }
 
 .reveal.pattern--synapses .slides section.title {
   background-color: #1C2541; }
@@ -233,25 +285,6 @@ html {
 .reveal.pattern--synapses .controls {
   color: #D1D1D1; }
 
-.reveal.pattern--lines {
-  background-image: url("../assets/patterns/lines.png"); }
-
-.reveal.pattern--lines .slides section.intro {
-  background-color: #DD7373; }
-
-.reveal.pattern--lines .slides section.intro .logo {
-  background-image: url("../../lib/myplanet/patterns/synapses/logo.svg"); }
-
-.reveal.pattern--lines .slides section.title {
-  background-color: #41ead4;
-  /*sea green*/
-  color: #3A015C; }
-
-/* violet */
-.reveal.pattern--lines .progress {
-  color: #ff206e; }
-
-/*hot pink*/
 /*********************************************
 * ADDITIONAL SLIDES CLASSES
 *********************************************/
@@ -296,8 +329,7 @@ html {
   background-image: url("../assets/Tania_logo_gray.png"); }
 
 .reveal .slides section.color--vibrant {
-  background-color: #4ecdc4;
-  /* turquoise */
+  background-color: #41ead4;
   color: #fff; }
   .reveal .slides section.color--vibrant h1 {
     color: #fff; }
@@ -423,6 +455,7 @@ html {
   width: 100vw;
   color: #2A2A49; }
 
+/* very dark purple */
 .reveal .slides section:not([class*='color--']) {
   background-color: #fff; }
 

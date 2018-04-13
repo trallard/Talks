@@ -13,10 +13,9 @@
 
 /* Used in the about section */
 .social_icon {
-    color: #5F4B8B;
+    color: #5F4B8B; /* ultraviolet */
     padding-right: 10px;
 }
-
 
 
 /* Ensure the list are shown in the center */
@@ -43,12 +42,12 @@
 }
 
 .header .twitter a{
-  color: black;
+  color: #5f6c7a; /*slate grey*/
   text-decoration: none;
 }
 
 .header .twitter .fa-twitter {
-    color: black;
+    color: #5f6c7a; /*slate grey*/
 }
 
 /* Remove padding from title in the heading section */
@@ -75,16 +74,6 @@
         display: none;
     }
 }
-
-
-/* pre code class modify for light background */
-/* .reveal pre code {
-    background-color: #f8f8f8;
-    border: 1ex solid #f8f8f8;
-    font-size: 1rem;
-    line-height: 1.1em;
-    border-radius: 5px;
-} */
 
 
 /* Table to the left: right under the content: no
@@ -154,6 +143,7 @@ black box with white text (ideal for presentation sections) */
   display: block;
   width: auto;
   text-align: center;
+  color: #bbc3cc!important;
 }
 /*
 Slide containing information about the presenter
@@ -209,25 +199,30 @@ has a background image and a box with the details */
 .reveal strong,
 .reveal b {
   font-weight: 400;
-  color: #F8757F;
+  color: #F8757F; /* salmon */
 }
 
 /* Larger images */
 figure.display {
   margin: auto;
-  /* max-height: 50vmin; */
+  text-align: center;
   max-width: 100vmin;
-  width: 90%;
+  width: 100%vw;
   height: auto;
-  display: block;}
+  display: block;
+  padding: 10px;
+}
 
 .display figcaption {
   padding: 10px;
   font-size: 0.85rem;
-  width: 110%!important;
-  align-self: center;
-  color: #F8757F;
+  color: #121212;
+  float: left;
+  border: solid #EEEDEF;
+  border-width: 3px 0 0 0;
+  width: 100%;
 }
+
 
 /* Regular images that go in the center */
 
@@ -262,12 +257,12 @@ div.images img {
   text-align: center;
 }
 
-
 .modal_p{
   padding: 10px!important;
   color: #fff;
   font-size: 0.56em;
 }
+
 
 .caption_p{
   font-weight: light;
