@@ -18,6 +18,7 @@
 }
 
 
+/* Make sure to inherit style */
 .reveal a {
     color: inherit;
 }
