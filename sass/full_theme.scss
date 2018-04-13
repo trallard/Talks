@@ -147,12 +147,11 @@ word-wrap: break-word; }
  * LINKS
  *********************************************/
 .reveal a {
-  // color: #563b64;
   @include themify($themes){
     text-decoration-color: themed('third');
     -webkit-text-decoration-color: themed('third');
+    color: themed('third')
   }
-  text-decoration: underline;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   transition: color .15s ease;

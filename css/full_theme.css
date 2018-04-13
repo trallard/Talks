@@ -85,16 +85,17 @@ section.has-light-background, section.has-light-background h1, section.has-light
  * LINKS
  *********************************************/
 .reveal a {
-  text-decoration: underline;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   transition: color .15s ease; }
   .theme-streams .reveal a {
     text-decoration-color: #3388A6;
-    -webkit-text-decoration-color: #3388A6; }
+    -webkit-text-decoration-color: #3388A6;
+    color: #3388A6; }
   .theme-lines .reveal a {
     text-decoration-color: #ff206e;
-    -webkit-text-decoration-color: #ff206e; }
+    -webkit-text-decoration-color: #ff206e;
+    color: #ff206e; }
 
 .reveal a:hover {
   text-shadow: none;
