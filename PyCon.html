@@ -392,6 +392,10 @@
 												<p class='fragment'> Always be able to figure out what <strong>code and data</strong>
 													were used to generate which result.
 												</p>
+												<p class='fragment'>
+													If using version control you can also refer to specific versions of your study
+													(i.e. manuscript, first quarter report, Nobel Prize committee version)
+												</p>
 											</div>
 										</div>
 									</section>
@@ -443,9 +447,44 @@
 							reproducible, replicable or robust?
 							<br> <br>
 							🙁 Have you ever encountered any barriers to reproducibility? Of what sort?
+							<br> <br>
+							📝 Write your thoughs
+							<a href="https://public.etherpad-mozilla.org/p/ReproduciblePython" target="_blank"
+							style='color:#3A015C;'>
+							on this Etherpad  </a>
 						</div>
 					</div>
 				</section>
+
+				<section>
+					<div class="grid-wrapper">
+						<div class="header">
+							<div class="logo"></div>
+							<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+							</div>
+							<div class="content">
+								<h1>⚡ Before we move on</h1>
+								I know you are eager to get on with the hands-on session
+								but there are some requirements that need to be satisfied.
+								Make sure you have the following installed:
+								<br><br>
+								<ul>
+									<li>Text editor</li>
+									<li>Jupyter notebooks or JupyterLab</li>
+									<li>nbval and nbdime</li>
+									<li>pytest</li>
+									<li>pandas</li>
+									<li>Docker</li>
+								</ul>
+								<br><br>
+								Also you need to have a <a href="https://github.com">GitHub</a> account (note
+								that a GitLab account also works) and a <a href="https://travis-ci.org/">
+								Travis CI</a> account (make sure to get it from travis-ci.org so that
+								it is for free!)
+							</div>
+						</div>
+					</section>
 
 				<section class=" color--grad-purple">
 					<div class="grid-wrapper">
@@ -468,26 +507,24 @@
 									<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 								</div>
 								<div class="content">
-									<h1>⚡ Before we move on</h1>
-									I know you are eager to get on with the hands-on session
-									but there are some requirements that need to be satisfied.
-									Make sure you have the following installed:
-									<br><br>
-									<ul>
-										<li>Text editor</li>
-										<li>Jupyter notebooks or JupyterLab</li>
-										<li>nbval and nbdime</li>
-										<li>pytest</li>
-										<li>pandas</li>
-										<li>Docker</li>
-									</ul>
-									<br><br>
-									Also you need to have a <a href="https://github.com">GitHub</a> account (note
-									that a GitLab account also works) and a <a href="https://travis-ci.org/">
-									Travis CI</a> account (make sure to get it from travis-ci.org so that
-									it is for free!)
+									<h1>What will we do today? </h1>
+									<ol>
+										<li>Use a reproducibility-first approach to set up a new project</li>
+										<li>Create a clean and useful directory structure for our project</li>
+										<li>Set up and use version control to track our changes</li>
+										<li>Add raw data to our project</li>
+										<li>Write the code to perform the analysis (including <strong>tests</strong>)</li>
+										<li>Learn more about testing</li>
+										<li>Create a run all script for the project: automate all the things!</li>
+										<li>Learn how to run automated tests</li>
+										<li>Share your analysis</li>
+									</ol>
 								</div>
 							</div>
+						</section>
+
+						<section class="dark_box" style="background-image:url('./assets/PyCon/stepcat.jpg');">
+
 						</section>
 
 						<section class=" color--ice">
@@ -546,7 +583,7 @@
 											  <tr class='fragment'>
 											    <td>Who and how long will this be maintained for?</td>
 											    <td>6 months, until studies compleition </td>
-											    <td>Collaborators, OSS</td>
+											    <td>Collaborators, OSS community</td>
 											  </tr>
 											  <tr class='fragment'>
 											    <td>What does my data look like?</td>
@@ -558,7 +595,7 @@
 									</div>
 								</section>
 
-								<section>
+								<!-- <section>
 									<div class="grid-wrapper">
 										<div class="header">
 											<div class="logo"></div>
@@ -566,14 +603,16 @@
 												<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 											</div>
 											<div class="content">
-												<h1>Treat your digital assets with <strong> love</strong></h1>
-												The results are important but the process you followed
-												to get there is
-												<strong>just as important</strong>: your scripts, null results,
-												and iterations can make a huge difference to others
+												<h1>Treat your digital research assets with <strong> care</strong></h1>
+												The results are important but the process you followed and the tools
+												you used to get there are
+												<strong>just as important</strong>.
+												<br>
+												Your scripts/code, null results, datasets,
+												and iterations can make a positive difference in research
 											</div>
 										</div>
-									</section>
+									</section> -->
 
 						<section>
 							<div class="grid-wrapper">
