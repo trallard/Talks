@@ -207,6 +207,12 @@ has a background image and a box with the details */
   color: #F8757F; /* salmon */
 }
 
+.reveal strong-alt{
+  font-weight: 400;
+  color: #028090F; /* metallic seaweed */
+}
+
+
 /* Larger images */
 figure.display {
   margin: auto;
@@ -269,15 +275,19 @@ div.images img {
 .modal_p{
   padding: 10px!important;
   color: #fff;
-  font-size: 0.56em;
+  font-size: 1.2em;
 }
-
 
 .caption_p{
   font-weight: light;
   font-style: italic;
-  font-size: 0.4em;
+  font-size: 0.5em;
   color:  #B2BAE5; /*lavender violet*/
   font-family: $base-font;
   padding: 10px!important;
+}
+
+.caption_p a{
+  /* color:  #B2BAE5!important; /*lavender violet*/
+  font-style: italic!important;
 }
