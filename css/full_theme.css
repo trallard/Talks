@@ -33,14 +33,14 @@ section.has-light-background, section.has-light-background h1, section.has-light
     font-family: Didact Gothic, sans-serif; }
 
 ::selection {
-  color: #fff;
+  color: #151515;
   text-shadow: none; }
   .theme-streams ::selection {
-    background: #3388A6; }
+    background: #939abc; }
   .theme-lines ::selection {
-    background: #ff206e; }
+    background: #6fefde; }
   .theme-black ::selection {
-    background: #C687E8; }
+    background: #6fefde; }
 
 ::-moz-selection {
   color: #fff;

@@ -28,8 +28,10 @@ $code-font:  'Overpass Mono', monospace;
 /*********************************************
 * DEFINING THEMES
 *********************************************/
-//define a theme map
+//This section defines the many themes available
+// To define a new theme you need to create a new map
 $themes: (
+  // The following are colour themes
   'streams':(
     'primary': #5F4B8B, /* ultra violet */
     'secondary': #747CA8, /* lavender violet */
@@ -51,6 +53,7 @@ $themes: (
     'primary-light':lighten(#3A015C, 10%),
     'secondary-light' :lighten(#41ead4, 10%),
   ),
+  // The following are font themes
   'poppins-font':(
     'title-font': #{'IBMPlexSerif', monospace},
     'base-font' : #{"Poppins", Helvetica, sans-serif},
@@ -62,7 +65,7 @@ $themes: (
   'dosis-font': (
   'title-font': #{'Dosis', sans-serif},
   'base-font' : #{'Didact Gothic', sans-serif},
-  )
+  ),
 );
 //call initialize mixin with the theme-map variable
 // @include sass-themify-init($theme-map);
@@ -102,11 +105,11 @@ $themes: (
 }
 
 ::selection {
-  color: #fff;
+  color: #151515;
   // background: $third;
   text-shadow: none;
   @include themify($themes){
-    background: themed('third')
+    background: themed('secondary-light')
   }
 }
 
