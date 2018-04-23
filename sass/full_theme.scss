@@ -914,6 +914,8 @@ figure.code {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 10px;
   & pre{
     box-shadow: none;
     font-size: 1rem;
@@ -948,8 +950,9 @@ figure.code {
 .reveal pre{
   box-shadow: none;
   font-size: 1rem;
-  line-height: 1.05rem;
+  line-height: 1.1rem;
   width: 90%;
+  border-left: 3px solid $ultraviolet;
   & code{
     max-height: none;
     -moz-tab-size: 2;
@@ -958,9 +961,14 @@ figure.code {
     border-radius: 5px;
     color: #222;
     font-family: $code-font;
+    background-color: #eeeeee;
   }
 }
 
+.reveal small{
+  font-size: 0.8rem;
+  padding-top: 10px;
+}
 
 // .reveal code {
 //   font-family: $code-font;
@@ -976,6 +984,7 @@ figure.code2 {
     & code{
       background-color: #222;
       margin: 0;
+      color: #d5d5d5;
     }
   }
 }

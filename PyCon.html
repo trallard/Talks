@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="sass/presentation.css">
 
 	<!-- Theme used for syntax highlighting of code -->
-	<link rel="stylesheet" href="css/google_syntax.css">
+	<link rel="stylesheet" href="css/colorbrewer_syntax.css">
 
 	<!-- Favicon -->
 	<link rel="icon" href="./assets/Tania_logo.png"/>
@@ -715,7 +715,7 @@
 
 				</section>
 
-				<section>
+				<section class="color--ice">
 					<div class="grid-wrapper">
 						<div class="header">
 							<div class="logo"></div>
@@ -723,10 +723,135 @@
 								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 							</div>
 							<div class="content">
-								<h1></h1>
+								<h1>🗳️ Quick poll: 5 mins</h1>
+				 			 🤔 How do you  start a new project? Do you have any preferred files,
+							 directory, data structure or naming conventions?
+							 <br><br>
+							 📝 Write your ideas
+ 							<a href="https://public.etherpad-mozilla.org/p/ReproduciblePython" target="_blank"
+ 							style='color:#3A015C; font-weight:600;'>
+ 							on this Etherpad  </a>
 							</div>
 						</div>
 					</section>
+
+					<section>
+					<section>
+						<div class="grid-wrapper">
+							<div class="header">
+								<div class="logo"></div>
+								<div class="twitter"><a href="https://twitter.com/ixek">
+									<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+								</div>
+								<div class="content">
+									<h1>Project structure</h1>
+									There is no single best way to organise a file system.
+									🔑 The key is to make sure that the structure is consistent and
+									informative.
+									<br> <br>
+									Use a single root directory per project.
+
+								</div>
+							</div>
+						</section>
+
+						<section>
+							<div class="grid-wrapper">
+								<div class="header">
+									<div class="logo"></div>
+									<div class="twitter"><a href="https://twitter.com/ixek">
+										<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+									</div>
+									<div class="content">
+										<figure class='code' style="font-size:0.8rem;">
+											<pre><code>
+	.
+├── LICENSE
+├── README.md
+├── bin                <- Compiled codes or binaries*
+├── config             <- Configuration files*
+├── data
+│   ├── external       <- Data from third party sources*
+│   ├── interim        <- Intermediate data that has been transformed
+│   ├── processed      <- The clean data set
+│   └── raw            <- The original, immutable data dump
+├── docs               <- Package documentation
+├── notebooks          <- Jupyter or Rmarkdown noteboks
+├── reports            <- For a manuscript source, e.g., LaTeX, md
+├── figures            <- Figures for the manuscript or reports
+├── output             <- The results of your analysis
+└── src                <- Source code for this project
+    ├── data           <- scripts and programs to process data
+    ├── models         <- Source code for your own model
+    ├── tools          <- Any helper scripts go here (utils)
+    └── visualization  <- Scripts for visualisation of your results, e.g., matplotlib, ggplot2 related.
+											</code> </pre>
+										</figure>
+									</div>
+								</div>
+							</section>
+
+							<section >
+							 <div class="grid-wrapper">
+								 <div class="content">
+									You can do this manually, from the shell, using Finder, whatever
+									method you prefer.
+
+									<p class="fragment">We are going to use
+										<a href="https://github.com/mkrapp/cookiecutter-reproducible-science">
+										Cookie cutter</a> to create out folder structure. </p>
+										<div class="fragment">
+											Using your shell/terminal/command line type:
+
+										<figure class="code">
+											<div data-markdown>
+												```bash
+												$ cookiecutter gh:mkrapp/cookiecutter-reproducible-science
+												```
+											</div></figure>
+											And follow the instructions on the shell
+											<br>
+											<small>Note that there is a
+												<a href="https://github.com/drivendata/cookiecutter-data-science">
+												Data science cookiecutter version</a> </small>
+										</div>
+								 </div>
+							 </div>
+							</section>
+
+							<section >
+			 				 <div class="grid-wrapper">
+			 					 <div class="content">
+			 						 <h2>Initialize the repository</h2>
+									 We want to use version control from the very start. We will initialize
+									 a Git repository within this directory.
+									 <br>
+									 From a terminal:
+									 <br>
+									 <figure class="code">
+										 <div data-markdown>
+											 ```bash
+											 $ cd reproProject
+											 $ git init
+											 $ git status
+											 ```
+										 </div></figure>
+										 If you are happy with the LICENSE you can do your first commit
+										 now:
+										 <figure class="code">
+											 <div data-markdown>
+												 ```bash
+												 $ git add .                         # Adding all the changes made
+												 $ git commit -m 'Create initial structure'    # Commit
+												 ```
+											 </div></figure>
+									</div>
+			 				 </div>
+			 			 </section>
+
+					</section>
+
+
 
 				<section >
  				 <div class="grid-wrapper">
@@ -740,6 +865,7 @@
  					 </div>
  				 </div>
  			 </section>
+
 
 				<section id="end" class="color--violet">
 					<div class="grid-wrapper">

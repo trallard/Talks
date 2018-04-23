@@ -793,7 +793,9 @@ html {
 figure.code {
   display: flex;
   flex-direction: column;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 10px; }
   figure.code pre {
     box-shadow: none;
     font-size: 1rem;
@@ -823,8 +825,9 @@ figure.code figcaption.path {
 .reveal pre {
   box-shadow: none;
   font-size: 1rem;
-  line-height: 1.05rem;
-  width: 90%; }
+  line-height: 1.1rem;
+  width: 90%;
+  border-left: 3px solid #5F4B8B; }
   .reveal pre code {
     max-height: none;
     -moz-tab-size: 2;
@@ -832,7 +835,12 @@ figure.code figcaption.path {
     box-sizing: border-box;
     border-radius: 5px;
     color: #222;
-    font-family: "Overpass Mono", monospace; }
+    font-family: "Overpass Mono", monospace;
+    background-color: #eeeeee; }
+
+.reveal small {
+  font-size: 0.8rem;
+  padding-top: 10px; }
 
 figure.code2 {
   box-shadow: rgba(0, 0, 0, 0.55) 0px 20px 68px; }
@@ -840,6 +848,7 @@ figure.code2 {
     border-radius: 12px; }
     figure.code2 pre code {
       background-color: #222;
-      margin: 0; }
+      margin: 0;
+      color: #d5d5d5; }
 
 /*# sourceMappingURL=full_theme.css.map */
