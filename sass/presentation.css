@@ -18,13 +18,6 @@
 }
 
 
-/* Ensure the list are shown in the center */
-.reveal ul {
-    /* font-size: 1.2em; */
-    align-self: center;
-    justify-self: center;
-}
-
 /* Responsive lists */
 @media (min-width: 1280px) {
     .reveal ul {
@@ -121,7 +114,6 @@ black box with white text (ideal for presentation sections) */
     background-image: url('../assets/code.jpg');
     background-size: cover;
     background-position: center center;
-
 }
 
 .dark_box aside {
@@ -212,6 +204,12 @@ has a background image and a box with the details */
   color: #028090F; /* metallic seaweed */
 }
 
+/* Small text */
+.reveal small{
+  font-size: 0.8rem;
+  padding-top: 10px;
+}
+
 
 /* Larger images */
 figure.display {
@@ -272,12 +270,14 @@ div.images img {
   text-align: center;
 }
 
+/* Text into the modal */
 .modal_p{
   padding: 10px!important;
   color: #fff;
   font-size: 1.2em;
 }
 
+/* Adding caption to the modal */
 .caption_p{
   font-weight: light;
   font-style: italic;
@@ -287,6 +287,7 @@ div.images img {
   padding: 10px!important;
 }
 
+/* Links inside the modal caption */
 .caption_p a{
   /* color:  #B2BAE5!important; /*lavender violet*/
   font-style: italic!important;

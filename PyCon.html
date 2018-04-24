@@ -8,7 +8,7 @@
 
   <!-- Reveal themes -->
   <link rel="stylesheet" href="reveal.js/css/reveal.css">
-	<link rel="stylesheet" href="reveal.js/css/theme/white.css">
+	<link rel="stylesheet" href="reveal.js/css/theme/black.css">
 
 	<!-- Full theme; allows for the selction of multple themes -->
 	<link rel="stylesheet" href="css/full_theme.css">
@@ -29,9 +29,11 @@
 </head>
 
 <!-- Need to specify the theme here -->
+<!-- First theme- is for colour, theme-xxx-font is for the font -->
 <body class="theme-lines theme-dosis-font">
 
 <!-- Specify the main theme to be used here -->
+<!-- this controls the background and logos -->
 <div class="reveal pattern--lines">
 
 	<!-- Slides start here -->
@@ -332,7 +334,22 @@
 							</div>
 						</section>
 
+						<!-- Used to introduce the subsection -->
+
 					<section>
+						<section class=" color--ice">
+							<div class="grid-wrapper">
+								<div class="header">
+									<div class="logo"></div>
+									<div class="twitter"><a href="https://twitter.com/ixek">
+										<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+									</div>
+									<div class="content">
+										<h1>🤷🏻‍ And why should I care?</h1>
+									</div>
+								</div>
+							</section>
+
 						<section>
 							<div class="grid-wrapper">
 								<div class="header">
@@ -341,8 +358,7 @@
 										<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 									</div>
 									<div class="content">
-										<h1> Why bother?</h1>
-											<h2>Convention</h2>
+										<h1> Convention </h1>
 											<div class="float_modal" style='position: relative; top:20%'>
 	 										 <p class='modal_p'>"It is like agreeing that we will all drive on the left or
 	 											 the right. A hallmark of civilization is following conventions
@@ -354,29 +370,6 @@
 								</div>
 							</section>
 
-							<section class='violet'>
-								<div class="grid-wrapper">
-									<div class="header">
-										<div class="logo"></div>
-										<div class="twitter"><a href="https://twitter.com/ixek">
-											<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-										</div>
-										<div class="content">
-											<h1> Why bother?</h1>
-												<h2> Tools </h2>
-										Leverage tools and functionality of package development:
-										<br> <br>
-										<ol>
-											<li> Manage dependencies </li>
-											<li> Make functionality available </li>
-											<li> Document functionality </li>
-											<li> Validate functionality </li>
-											<li> Version control</li>
-										</ul>
-										</div>
-									</div>
-								</section>
-
 								<section>
 									<div class="grid-wrapper">
 										<div class="header">
@@ -385,7 +378,7 @@
 												<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 											</div>
 											<div class="content">
-												<h2>From a technical point of view</h2>
+												<h1>Technical scenario</h1>
 												Your objective is
 												to have a complete chain of custody (<strong>provenance</strong>) from
 												your raw data to your finished results and figures.
@@ -409,7 +402,7 @@
 													<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 											</div>
 											<div class="content">
-												<h3>From a practical point of view</h3>
+												<h1>Practical scenario</h1>
 												Imagine someone manages to sneak into your lab at night AND
 												deletes everything except for your code and data ('cause these are in
 												safe repositories)
@@ -418,6 +411,7 @@
 												</div>
 										 </div>
 									</section>
+
 									<section>
 										<div class="grid-wrapper">
 											<div class="header">
@@ -426,17 +420,54 @@
 													<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 												</div>
 												<div class="content">
-													You could be able to run a single command to generate <strong>everything</strong>
+												 	Imagine being able to run a single command to generate <strong>everything</strong>
 													including results, tables, and figures in their final polished form.
 													<p class= 'fragment'> Wouldn't it be great?</p>
 													<p class='fragment'>
 														Better yet if someone completly unfamiliar with your project
-														could b able to look at these files and understand what you did and why
-														(i.e. readers, collaborators, your replacement, you in 6 months time)
+														could be able to look at these files and understand what you did and why
+														(i.e. readers, collaborators, your replacement, you in 6 months time).
 													</p>
 												</div>
 											</div>
 										</section>
+
+										<section>
+											<div class="grid-wrapper">
+												<div class="header">
+													<div class="logo"></div>
+													<div class="twitter"><a href="https://twitter.com/ixek">
+														<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+													</div>
+													<div class="content">
+													 	<h1>From a sustainability point of view</h1>
+														<p class= 'fragment'> Speed scientific progress</p>
+														<p class= 'fragment'> Contribute to open source and
+														our beloved community 🐍</p>
+														<p class='fragment'> Acquire more varied, highly
+														valuable skills </p>
+														<p class='fragment'> And my all time favourite...
+														increase the bus factor </p>
+													</div>
+												</div>
+											</section>
+
+											<section>
+												<div class="grid-wrapper">
+													<div class="header">
+														<div class="logo"></div>
+														<div class="twitter"><a href="https://twitter.com/ixek">
+															<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+														</div>
+														<div class="content">
+
+														<figure class="display">
+															<img src="./assets/ManchesteR/bus.png" alt="bus">
+														</figure>
+														</div>
+													</div>
+												</section>
+
 						</section>
 
 
@@ -481,6 +512,7 @@
 									<li>Jupyter notebooks or JupyterLab</li>
 									<li>nbval and nbdime</li>
 									<li>pytest</li>
+									<li>cookiecutter</li>
 									<li>pandas</li>
 									<li>Docker</li>
 								</ul>
@@ -527,6 +559,7 @@
 											automate all the things!</strong></li>
 										<li>Learn how to run automated tests</li>
 										<li>Share your analysis with the world!</li>
+										<li>And being credited for it!</li>
 									</ol>
 								</div>
 							</div>
@@ -535,19 +568,6 @@
 						<section class="dark_box" style="background-image:url('./assets/PyCon/stepcat.jpg');">
 
 						</section>
-
-						<!-- <section class=" color--ice">
-							<div class="grid-wrapper">
-								<div class="header">
-									<div class="logo"></div>
-									<div class="twitter"><a href="https://twitter.com/ixek">
-										<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-									</div>
-									<div class="content">
-										<h1> 1. Start with a project plan</h1>
-									</div>
-								</div>
-							</section> -->
 
 						<section>
 							<div class="grid-wrapper">
@@ -631,18 +651,23 @@
 						<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 					</div>
 					<div class="content">
-						<div class="float_modal" style='position: relative; top:20%'>
-						 <p class='modal_p'>"Open-source licenses allow people to coordinate their work freely,
+						<h1>Have you got a minute to hear about open source?</h1>
+						<div class="float_modal" style='position: relative; top:25%'>
+						 <p class='modal_p'>"Open-source licenses allow people to
+							 coordinate their work freely,
 							  within the confines of copyright law, while making access
-								and wide distribution a priority.
-								 I’ve always thought that this is fundamentally aligned with the method of science,
-								  where we value academic freedom and wide dissemination of scientific findings."</p>
+								and wide distribution a priority
+								I’ve always thought that this is fundamentally aligned with
+						  	 the method of science,
+							  where we value academic freedom and wide dissemination of
+								scientific findings."</p>
 						 <p class='caption_p'>- Lorena barba <a href="http://rtalbert.org/blog/2015/interview-lorena-barba">
 						 (Casting out nines Interview)</a></p>
 					</div>
 				</div>
 			</section>
 
+	<section>
 	<section>
 		<div class="grid-wrapper">
 			<div class="header">
@@ -660,6 +685,7 @@
 						<strong>does not make</strong> your project open source</li>
 						<li class="fragment">Code has copyright, and without a license others don't know
 						if they can use it or not (<strong>always add a license</strong>)</li>
+						<hr>
 						<li class="fragment"><strong>Permissive</strong> licenses give more freedoms:
 							authors need to be credited (MIT, BSD, Apache License)
 						</li>
@@ -676,11 +702,11 @@
 			<div class="grid-wrapper">
 				<div class="header">
 					<div class="logo"></div>
+					<div class="section">Quick guide to licensing</div>
 					<div class="twitter"><a href="https://twitter.com/ixek">
 						<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 					</div>
 					<div class="content">
-						<h1>Quick guide to licensing -pt. 2 </h1>
 						Not all licenses are compatible! Also compatibility is directional.
 						<figure class="display">
 							<img src="./assets/PyCon/morin.png" alt="excelno">
@@ -695,12 +721,11 @@
 				<div class="grid-wrapper">
 					<div class="header">
 						<div class="logo"></div>
+						<div class="section">Quick guide to licensing</div>
 						<div class="twitter"><a href="https://twitter.com/ixek">
 							<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 						</div>
 						<div class="content">
-							<h1>Quick guide to licensing -pt. 3 </h1>
-
 						The website <a href="http://choosealicense.com/">http://choosealicense.com/</a>
 						is a good starting point.
 						<br>
@@ -745,12 +770,13 @@
 								</div>
 								<div class="content">
 									<h1>Project structure</h1>
-									There is no single best way to organise a file system.
-									🔑 The key is to make sure that the structure is consistent and
-									informative.
-									<br> <br>
-									Use a single root directory per project.
-
+									<ul>
+										<li>There <strong>is no single</strong> way to organise a filesystem</li>
+										<li>🔑 The key is to make sure that the structure is consistsent and
+										informative</li>
+										<li>Use a <strong>single root directory</strong> per project </li>
+										<li>Find a structure that works for you and stick to it</li>
+									</ul>
 								</div>
 							</div>
 						</section>
@@ -759,58 +785,65 @@
 							<div class="grid-wrapper">
 								<div class="header">
 									<div class="logo"></div>
+									<div class="section">Project structure</div>
 									<div class="twitter"><a href="https://twitter.com/ixek">
 										<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 									</div>
 									<div class="content">
 										<figure class='code' style="font-size:0.8rem;">
-											<pre><code>
-	.
+											<pre><code>.
 ├── LICENSE
 ├── README.md
-├── bin                <- Compiled codes or binaries*
-├── config             <- Configuration files*
+├── bin                 <- Compiled codes or binaries*
+├── config              <- Configuration files*
 ├── data
-│   ├── external       <- Data from third party sources*
-│   ├── interim        <- Intermediate data that has been transformed
-│   ├── processed      <- The clean data set
-│   └── raw            <- The original, immutable data dump
-├── docs               <- Package documentation
-├── notebooks          <- Jupyter or Rmarkdown noteboks
-├── reports            <- For a manuscript source, e.g., LaTeX, md
-├── figures            <- Figures for the manuscript or reports
-├── output             <- The results of your analysis
-└── src                <- Source code for this project
-    ├── data           <- scripts and programs to process data
-    ├── models         <- Source code for your own model
-    ├── tools          <- Any helper scripts go here (utils)
-    └── visualization  <- Scripts for visualisation of your results, e.g., matplotlib, ggplot2 related.
-											</code> </pre>
+│   ├── external        <- Data from third party sources*
+│   ├── interim         <- Intermediate data that has been transformed
+│   ├── processed       <- The clean data set
+│   └── raw             <- The original, immutable data dump
+├── docs                <- Package documentation
+├── notebooks           <- Jupyter or Rmarkdown noteboks
+├── reports             <- For a manuscript source, e.g., LaTeX, md
+├── figures             <- Figures for the manuscript or reports
+├── output              <- The results of your analysis
+└── src                 <- Source code for this project
+    ├── data            <- scripts and programs to process data
+    ├── models          <- Source code for your own model
+    ├── tools           <- Any helper scripts go here (utils)
+    └── visualization   <- Scripts for visualisation of your outputs
+	</code> </pre>
 										</figure>
+									<small>⭐The sections marked with a * are optional</small>
 									</div>
 								</div>
 							</section>
 
 							<section >
 							 <div class="grid-wrapper">
+								 <div class="header">
+ 									<div class="logo"></div>
+ 									<div class="section">Project structure</div>
+ 									<div class="twitter"><a href="https://twitter.com/ixek">
+ 										<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+ 									</div>
 								 <div class="content">
 									You can do this manually, from the shell, using Finder, whatever
 									method you prefer.
 
 									<p class="fragment">We are going to use
 										<a href="https://github.com/mkrapp/cookiecutter-reproducible-science">
-										Cookie cutter</a> to create out folder structure. </p>
+										Cookie cutter</a> to create our base filesystem and some support
+									documents. </p>
 										<div class="fragment">
 											Using your shell/terminal/command line type:
 
-										<figure class="code">
 											<div data-markdown>
 												```bash
 												$ cookiecutter gh:mkrapp/cookiecutter-reproducible-science
 												```
-											</div></figure>
+											</div>
 											And follow the instructions on the shell
-											<br>
+											<br /> <hr>
 											<small>⭐ Note that there is a
 												<a href="https://github.com/drivendata/cookiecutter-data-science">
 												Data science cookiecutter version</a> </small>
@@ -818,6 +851,8 @@
 								 </div>
 							 </div>
 							</section>
+
+						</section>
 
 							<section >
 			 				 <div class="grid-wrapper">
@@ -828,26 +863,25 @@
 									 <br>
 									 From your shell:
 									 <br>
-									 <figure class="code">
 										 <div data-markdown>
 											 ```bash
-											 $ cd reproProject
-											 $ git init
-											 $ git status
+											 $ cd reproProject  # go to the newly created project
+											 $ git init	     # initialize a repository here
+											 $ git status	   # check the status (new/modified files)
 											 ```
-										 </div></figure>
-										 If you are happy with the LICENSE you can do your first commit
+										 </div>
+										 If you are happy with the LICENSE.md you can do your first commit
 										 now:
-										 <figure class="code">
 											 <div data-markdown>
 												 ```bash
-												 $ git add .                         # Adding all the changes made
+												 $ git add .         # Adding all the changes made
 												 $ git commit -m 'Create initial structure'  # Commit and comment
 												 ```
-											 </div></figure>
+											 </div>
+											 <hr>
 											 <small>⭐ Remember a commit is like a <strong>snapshot</strong>
-											 of your project at a specific time.
-										 	 <br> 🔥 If at any point you need to know if you are in a repository
+											 of your project at a specific time
+										 	 <br><br> 🔥 If at any point you need to know if you are in a repository
 										 type <code>git status</code> in your shell</small>
 									</div>
 			 				 </div>
@@ -856,13 +890,12 @@
 						 <section >
 					 	 <div class="grid-wrapper">
 					 		 <div class="content">
-					 			 <h2>Add raw data</h2>
+					 			 <h1>Starting with <strong>raw data</strong> </h1>
+								 You should <strong>never</strong> modify the raw data, do all
+								 your cleaning and processing on copies of the data.
 					 		 </div>
 					 	 </div>
 					  </section>
-
-					</section>
-
 
 
 				<section >
