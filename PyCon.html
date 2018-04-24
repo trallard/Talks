@@ -8,7 +8,7 @@
 
   <!-- Reveal themes -->
   <link rel="stylesheet" href="reveal.js/css/reveal.css">
-	<link rel="stylesheet" href="reveal.js/css/theme/white.css">
+	<link rel="stylesheet" href="reveal.js/css/theme/black.css">
 
 	<!-- Full theme; allows for the selction of multple themes -->
 	<link rel="stylesheet" href="css/full_theme.css">
@@ -29,9 +29,11 @@
 </head>
 
 <!-- Need to specify the theme here -->
+<!-- First theme- is for colour, theme-xxx-font is for the font -->
 <body class="theme-lines theme-dosis-font">
 
 <!-- Specify the main theme to be used here -->
+<!-- this controls the background and logos -->
 <div class="reveal pattern--lines">
 
 	<!-- Slides start here -->
@@ -745,11 +747,14 @@
 								</div>
 								<div class="content">
 									<h1>Project structure</h1>
-									There is no single best way to organise a file system.
-									🔑 The key is to make sure that the structure is consistent and
-									informative.
-									<br> <br>
-									Use a single root directory per project.
+									<ul>
+										<li>There <strong>is no single</strong> way to organise a filesystem</li>
+										<li>🔑 The key is to make sure that the structure is consistsent and
+										informative</li>
+										<li>Use a <strong>single root directory</strong> per project </li>
+										<li>Find a structure that works for you and stick to it</li>
+									</ul>
+
 
 								</div>
 							</div>
@@ -764,28 +769,27 @@
 									</div>
 									<div class="content">
 										<figure class='code' style="font-size:0.8rem;">
-											<pre><code>
-	.
+											<pre><code>.
 ├── LICENSE
 ├── README.md
-├── bin                <- Compiled codes or binaries*
-├── config             <- Configuration files*
+├── bin                 <- Compiled codes or binaries*
+├── config              <- Configuration files*
 ├── data
-│   ├── external       <- Data from third party sources*
-│   ├── interim        <- Intermediate data that has been transformed
-│   ├── processed      <- The clean data set
-│   └── raw            <- The original, immutable data dump
-├── docs               <- Package documentation
-├── notebooks          <- Jupyter or Rmarkdown noteboks
-├── reports            <- For a manuscript source, e.g., LaTeX, md
-├── figures            <- Figures for the manuscript or reports
-├── output             <- The results of your analysis
-└── src                <- Source code for this project
-    ├── data           <- scripts and programs to process data
-    ├── models         <- Source code for your own model
-    ├── tools          <- Any helper scripts go here (utils)
-    └── visualization  <- Scripts for visualisation of your results, e.g., matplotlib, ggplot2 related.
-											</code> </pre>
+│   ├── external        <- Data from third party sources*
+│   ├── interim         <- Intermediate data that has been transformed
+│   ├── processed       <- The clean data set
+│   └── raw             <- The original, immutable data dump
+├── docs                <- Package documentation
+├── notebooks           <- Jupyter or Rmarkdown noteboks
+├── reports             <- For a manuscript source, e.g., LaTeX, md
+├── figures             <- Figures for the manuscript or reports
+├── output              <- The results of your analysis
+└── src                 <- Source code for this project
+    ├── data            <- scripts and programs to process data
+    ├── models          <- Source code for your own model
+    ├── tools           <- Any helper scripts go here (utils)
+    └── visualization   <- Scripts for visualisation of your outputs
+	</code> </pre>
 										</figure>
 									</div>
 								</div>
@@ -803,14 +807,13 @@
 										<div class="fragment">
 											Using your shell/terminal/command line type:
 
-										<figure class="code">
 											<div data-markdown>
 												```bash
 												$ cookiecutter gh:mkrapp/cookiecutter-reproducible-science
 												```
-											</div></figure>
+											</div>
 											And follow the instructions on the shell
-											<br>
+											<br /> <hr>
 											<small>⭐ Note that there is a
 												<a href="https://github.com/drivendata/cookiecutter-data-science">
 												Data science cookiecutter version</a> </small>
@@ -828,25 +831,24 @@
 									 <br>
 									 From your shell:
 									 <br>
-									 <figure class="code">
 										 <div data-markdown>
 											 ```bash
 											 $ cd reproProject
 											 $ git init
 											 $ git status
 											 ```
-										 </div></figure>
+										 </div>
 										 If you are happy with the LICENSE you can do your first commit
 										 now:
-										 <figure class="code">
 											 <div data-markdown>
 												 ```bash
-												 $ git add .                         # Adding all the changes made
+												 $ git add .         # Adding all the changes made
 												 $ git commit -m 'Create initial structure'  # Commit and comment
 												 ```
-											 </div></figure>
+											 </div>
+											 <hr>
 											 <small>⭐ Remember a commit is like a <strong>snapshot</strong>
-											 of your project at a specific time.
+											 of your project at a specific time
 										 	 <br> 🔥 If at any point you need to know if you are in a repository
 										 type <code>git status</code> in your shell</small>
 									</div>

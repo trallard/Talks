@@ -4,6 +4,7 @@
  */
 @import url(../../reveal.js/lib/font/source-sans-pro/source-sans-pro.css);
 @import url(../../reveal.js/lib/font/poppins/poppins.css);
+@import url(../../reveal.js/lib/font/leafy/leafy.css);
 @import url("https://fonts.googleapis.com/css?family=Didact+Gothic|Dosis:400,600|Overpass+Mono|PT+Mono");
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
@@ -31,6 +32,8 @@ section.has-light-background, section.has-light-background h1, section.has-light
     font-family: IBMPlexSans, sans-serif; }
   .theme-dosis-font .reveal {
     font-family: Didact Gothic, sans-serif; }
+  .theme-leafy-font .reveal {
+    font-family: Dosis, sans-serif; }
 
 ::selection {
   color: #151515;
@@ -40,7 +43,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   .theme-lines ::selection {
     background: #6fefde; }
   .theme-black ::selection {
-    background: #6fefde; }
+    background: #ada1ce; }
 
 ::-moz-selection {
   color: #fff;
@@ -50,7 +53,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   .theme-lines ::-moz-selection {
     background: #ff206e; }
   .theme-black ::-moz-selection {
-    background: #C687E8; }
+    background: #F2E38A; }
 
 /*********************************************
 * HEADERS
@@ -73,13 +76,15 @@ section.has-light-background, section.has-light-background h1, section.has-light
   .theme-lines .reveal h1, .theme-lines .reveal h2, .theme-lines .reveal h3, .theme-lines .reveal h4, .theme-lines .reveal h5, .theme-lines .reveal h6 {
     color: #3A015C; }
   .theme-black .reveal h1, .theme-black .reveal h2, .theme-black .reveal h3, .theme-black .reveal h4, .theme-black .reveal h5, .theme-black .reveal h6 {
-    color: #5B82D4; }
+    color: #BDE16B; }
   .theme-poppins-font .reveal h1, .theme-poppins-font .reveal h2, .theme-poppins-font .reveal h3, .theme-poppins-font .reveal h4, .theme-poppins-font .reveal h5, .theme-poppins-font .reveal h6 {
     font-family: IBMPlexSerif, monospace; }
   .theme-plex-font .reveal h1, .theme-plex-font .reveal h2, .theme-plex-font .reveal h3, .theme-plex-font .reveal h4, .theme-plex-font .reveal h5, .theme-plex-font .reveal h6 {
     font-family: IBMPlexSerif, monospace; }
   .theme-dosis-font .reveal h1, .theme-dosis-font .reveal h2, .theme-dosis-font .reveal h3, .theme-dosis-font .reveal h4, .theme-dosis-font .reveal h5, .theme-dosis-font .reveal h6 {
     font-family: Dosis, sans-serif; }
+  .theme-leafy-font .reveal h1, .theme-leafy-font .reveal h2, .theme-leafy-font .reveal h3, .theme-leafy-font .reveal h4, .theme-leafy-font .reveal h5, .theme-leafy-font .reveal h6 {
+    font-family: Leafy, cursive; }
 
 /*********************************************
  * OTHER- modifications to reveal themes
@@ -103,9 +108,9 @@ section.has-light-background, section.has-light-background h1, section.has-light
     -webkit-text-decoration-color: #ff206e;
     color: #ff206e; }
   .theme-black .reveal a {
-    text-decoration-color: #C687E8;
-    -webkit-text-decoration-color: #C687E8;
-    color: #C687E8; }
+    text-decoration-color: #F2E38A;
+    -webkit-text-decoration-color: #F2E38A;
+    color: #F2E38A; }
   .reveal a:hover {
     text-shadow: none;
     border: none;
@@ -115,7 +120,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
     .theme-lines .reveal a:hover {
       color: #ff206e; }
     .theme-black .reveal a:hover {
-      color: #C687E8; }
+      color: #F2E38A; }
 
 .reveal .roll span:after {
   color: #fff;
@@ -152,7 +157,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .theme-lines .reveal .controls {
   color: #ff206e; }
 .theme-black .reveal .controls {
-  color: #C687E8; }
+  color: #F2E38A; }
 
 /*********************************************
  * PROGRESS BAR
@@ -164,7 +169,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   .theme-lines .reveal .progress {
     color: #ff206e; }
   .theme-black .reveal .progress {
-    color: #C687E8; }
+    color: #F2E38A; }
 
 .reveal .progress span {
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
@@ -212,7 +217,7 @@ html {
 .theme-lines .reveal.pattern--stream .slides section.intro {
   background-color: #3A015C; }
 .theme-black .reveal.pattern--stream .slides section.intro {
-  background-color: #5B82D4; }
+  background-color: #BDE16B; }
 
 .reveal.pattern--stream .slides section.intro .logo {
   background-image: url("../assets/Tania_logo_white.png"); }
@@ -222,21 +227,21 @@ html {
 .theme-lines .reveal.pattern--stream .slides section.title {
   background-color: #3A015C; }
 .theme-black .reveal.pattern--stream .slides section.title {
-  background-color: #5B82D4; }
+  background-color: #BDE16B; }
 
 .theme-streams .reveal.pattern--stream .progress span {
   background: #3388A6; }
 .theme-lines .reveal.pattern--stream .progress span {
   background: #ff206e; }
 .theme-black .reveal.pattern--stream .progress span {
-  background: #C687E8; }
+  background: #F2E38A; }
 
 .theme-streams .reveal.pattern--stream .controls {
   color: #3388A6; }
 .theme-lines .reveal.pattern--stream .controls {
   color: #ff206e; }
 .theme-black .reveal.pattern--stream .controls {
-  color: #C687E8; }
+  color: #F2E38A; }
 
 .reveal.pattern--lines {
   background-image: url("../assets/patterns/lines.png"); }
@@ -246,7 +251,7 @@ html {
 .theme-lines .reveal.pattern--lines .slides section.intro {
   background-color: #41ead4; }
 .theme-black .reveal.pattern--lines .slides section.intro {
-  background-color: #F2E38A; }
+  background-color: #C687E8; }
 
 .reveal.pattern--lines .slides section.intro .logo {
   background-image: url("../../lib/myplanet/patterns/synapses/logo.svg"); }
@@ -258,35 +263,43 @@ html {
   background-color: #41ead4;
   color: #3A015C; }
 .theme-black .reveal.pattern--lines .slides section.title {
-  background-color: #F2E38A;
-  color: #5B82D4; }
+  background-color: #C687E8;
+  color: #BDE16B; }
 
 .theme-streams .reveal.pattern--lines .progress {
   background-color: #3388A6; }
 .theme-lines .reveal.pattern--lines .progress {
   background-color: #ff206e; }
 .theme-black .reveal.pattern--lines .progress {
+  background-color: #F2E38A; }
+
+.theme-streams .reveal.pattern--hex .slides section.intro {
+  background-color: #747CA8; }
+.theme-lines .reveal.pattern--hex .slides section.intro {
+  background-color: #41ead4; }
+.theme-black .reveal.pattern--hex .slides section.intro {
   background-color: #C687E8; }
 
-.reveal.pattern--synapses {
-  background-image: url("../assets/patterns/zigzag.jpg"); }
+.theme-streams .reveal.pattern--hex .slides section.title {
+  background-color: #747CA8;
+  color: #5F4B8B; }
+.theme-lines .reveal.pattern--hex .slides section.title {
+  background-color: #41ead4;
+  color: #3A015C; }
+.theme-black .reveal.pattern--hex .slides section.title {
+  background-color: #C687E8;
+  color: #BDE16B; }
 
-.reveal.pattern--synapses .slides section.intro {
-  background-color: #DD7373; }
-  .reveal.pattern--synapses .slides section.intro logo {
-    background-image: url("../../lib/myplanet/patterns/synapses/logo.svg"); }
-
-.reveal.pattern--synapses .slides section.title {
-  background-color: #1C2541; }
-
-.reveal.pattern--synapses .progress {
-  color: #D1D1D1; }
-
-.reveal.pattern--synapses .controls {
-  color: #D1D1D1; }
+.theme-streams .reveal.pattern--hex .progress {
+  background-color: #3388A6; }
+.theme-lines .reveal.pattern--hex .progress {
+  background-color: #ff206e; }
+.theme-black .reveal.pattern--hex .progress {
+  background-color: #F2E38A; }
 
 /*********************************************
 * ADDITIONAL SLIDES CLASSES
+* THESE CAN BE USED WITH ANY THEME
 *********************************************/
 .reveal .slides section.color--dark {
   background-color: #22272B;
@@ -353,6 +366,8 @@ html {
     font-family: IBMPlexSans, sans-serif; }
   .theme-dosis-font .items-block {
     font-family: Didact Gothic, sans-serif; }
+  .theme-leafy-font .items-block {
+    font-family: Dosis, sans-serif; }
   .items-block .single-block {
     width: 100%;
     display: flex;
@@ -447,7 +462,6 @@ html {
 * MODIFIED SECTIONS
 * ADDS LOGO AND SPECIFICS FOR THE THEME
 * Slides have two main areas: header and contetnt
-*
 **************************************************/
 .reveal .slides section {
   height: 100vh;
@@ -797,12 +811,8 @@ figure.code {
   margin-top: 10px;
   margin-bottom: 10px; }
   figure.code pre {
-    box-shadow: none;
-    font-size: 1rem;
     height: 100%;
-    line-height: 1.1rem;
     margin: 0;
-    width: 100%;
     overflow: hidden;
     border-radius: 5px; }
   figure.code figcaption {
@@ -824,31 +834,22 @@ figure.code figcaption.path {
 
 .reveal pre {
   box-shadow: none;
-  font-size: 1rem;
   line-height: 1.1rem;
-  width: 90%;
-  border-left: 3px solid #5F4B8B; }
+  width: 100%;
+  font-size: 0.85rem; }
   .reveal pre code {
-    max-height: none;
     -moz-tab-size: 2;
     tab-size: 2;
     box-sizing: border-box;
-    border-radius: 5px;
-    color: #222;
-    font-family: "Overpass Mono", monospace;
-    background-color: #eeeeee; }
+    font-family: "Overpass Mono", monospace; }
+
+.reveal code {
+  background-color: #e2e6e9;
+  padding: 2px 7px;
+  border-radius: 3px; }
 
 .reveal small {
   font-size: 0.8rem;
   padding-top: 10px; }
-
-figure.code2 {
-  box-shadow: rgba(0, 0, 0, 0.55) 0px 20px 68px; }
-  figure.code2 pre {
-    border-radius: 12px; }
-    figure.code2 pre code {
-      background-color: #222;
-      margin: 0;
-      color: #d5d5d5; }
 
 /*# sourceMappingURL=full_theme.css.map */

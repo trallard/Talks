@@ -4,10 +4,10 @@
  */
 @import url(../../reveal.js/lib/font/source-sans-pro/source-sans-pro.css);
 @import url(../../reveal.js/lib/font/poppins/poppins.css);
+@import url(../../reveal.js/lib/font/leafy/leafy.css);
 @import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Dosis:400,600|Overpass+Mono|PT+Mono');
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
-@import "themify.scss";
 
 /*********************************************
 * PERSONAL
@@ -22,7 +22,7 @@ $salmon: #F8757F;
 $ultraviolet: #5F4B8B;
 $seagreen:  #41ead4;
 
-// Fonts used
+// Fonts used with no themes
 $code-font:  'Overpass Mono', monospace;
 
 /*********************************************
@@ -47,11 +47,11 @@ $themes: (
     'secondary-light' :lighten(#41ead4, 10%),
   ),
   'black':(
-    'primary': #5B82D4, /*blue*/
-    'secondary': #F2E38A, /*yellow*/
-    'third': #C687E8, /*lilac*/
-    'primary-light':lighten(#3A015C, 10%),
-    'secondary-light' :lighten(#41ead4, 10%),
+    'primary': #BDE16B, /*green*/
+    'secondary': #C687E8, /*lilac*/
+    'third': #F2E38A, /*yellow*/
+    'primary-light':lighten(#BDE16B, 10%),
+    'secondary-light' :lighten(#9080bc, 10%),
   ),
   // The following are font themes
   'poppins-font':(
@@ -66,9 +66,11 @@ $themes: (
   'title-font': #{'Dosis', sans-serif},
   'base-font' : #{'Didact Gothic', sans-serif},
   ),
+  'leafy-font': (
+  'title-font': #{'Leafy', cursive},
+  'base-font' : #{'Dosis', sans-serif},
+  ),
 );
-//call initialize mixin with the theme-map variable
-// @include sass-themify-init($theme-map);
 
 /*
  * Implementation of themes
@@ -321,29 +323,26 @@ word-wrap: normal; }
      background-color: themed('third')
    } }
 
-
-// Zigzag
-
-.reveal.pattern--synapses {
-  background-image: url("../assets/patterns/zigzag.jpg"); }
-
-.reveal.pattern--synapses .slides section.intro {
-  background-color: #DD7373;
-  & logo{
-    background-image: url("../../lib/myplanet/patterns/synapses/logo.svg");
-  }
-}
-.reveal.pattern--synapses .slides section.title {
-  background-color: #1C2541; }
-.reveal.pattern--synapses .progress {
-  color: #D1D1D1; }
-.reveal.pattern--synapses .controls {
-  color: #D1D1D1; }
+// Hex
+.reveal.pattern--hex .slides section.intro {
+ @include themify($themes){
+   background-color: themed('secondary')
+ } }
+.reveal.pattern--hex .slides section.title {
+ @include themify($themes){
+   background-color: themed('secondary');
+   color: themed('primary')
+ }}
+.reveal.pattern--hex .progress {
+ @include themify($themes){
+   background-color: themed('third')
+} }
 
 
 
 /*********************************************
 * ADDITIONAL SLIDES CLASSES
+* THESE CAN BE USED WITH ANY THEME
 *********************************************/
 
 // Black slides
@@ -409,6 +408,8 @@ word-wrap: normal; }
 .reveal .slides section.color--two .logo {
   background-image: url("../assets/Tania_logo_gray.png"); }
 
+// items inside the two colour slide
+// might change these for a grid in the future
 .items-block {
     display: flex;
     @include themify($themes){
@@ -431,6 +432,7 @@ word-wrap: normal; }
     }
 }
 
+// Gradient colour slides
 .reveal .slides section.color--grad-purple{
   background-color: $white;
   background: linear-gradient(45deg,
@@ -529,7 +531,6 @@ margin: 0; }
 * MODIFIED SECTIONS
 * ADDS LOGO AND SPECIFICS FOR THE THEME
 * Slides have two main areas: header and contetnt
-*
 **************************************************/
 
 .reveal .slides section {
@@ -645,11 +646,11 @@ width: 33%; }
   margin-left: 22vw;
   width: calc(100vw - 4vmin - 22vw); }
 
-  @media (max-width: 768px) {
-    .reveal .slides section.title {
-      height: calc(100vh - 4vmin);
-      margin: 2vmin;
-      width: calc(100vw - 4vmin); } }
+@media (max-width: 768px) {
+  .reveal .slides section.title {
+    height: calc(100vh - 4vmin);
+    margin: 2vmin;
+    width: calc(100vw - 4vmin); } }
 
 // Grid areas for intro
 .reveal .slides section.title .grid-wrapper {
@@ -907,9 +908,13 @@ line-height: 1.8em; }
 .reveal .slides section.end.color--radiant .logo {
   background-image: url("../assets/Tania_logo.png"); }
 
-  /*******************************************************************************
-   * Code Segments
-   ******************************************************************************/
+/*******************************************************************************
+ * Code Segments
+ ******************************************************************************/
+
+ // This gives a code within a figure element... will change in the future as this
+ // is a hack copied from somewhere else and I am not happy with the way it works
+ // but it allows to add captions
 figure.code {
   display: flex;
   flex-direction: column;
@@ -917,12 +922,8 @@ figure.code {
   margin-top: 10px;
   margin-bottom: 10px;
   & pre{
-    box-shadow: none;
-    font-size: 1rem;
     height: 100%;
-    line-height: 1.1rem;
     margin: 0;
-    width: 100%;
     overflow: hidden;
     border-radius: 5px;
   }
@@ -943,48 +944,30 @@ figure.code {
     color: #EEEDEF; }
 }
 
-  figure.code figcaption.path {
-    font-family: $code-font;
+figure.code figcaption.path {
+  font-family: $code-font;
 }
 
 .reveal pre{
   box-shadow: none;
-  font-size: 1rem;
   line-height: 1.1rem;
-  width: 90%;
-  border-left: 3px solid $ultraviolet;
+  width: 100%;
+  font-size: 0.85rem;
   & code{
-    max-height: none;
     -moz-tab-size: 2;
     tab-size: 2;
     box-sizing: border-box;
-    border-radius: 5px;
-    color: #222;
     font-family: $code-font;
-    background-color: #eeeeee;
   }
+}
+
+.reveal code{
+  background-color: $light-gray;
+  padding: 2px 7px;
+  border-radius: 3px;
 }
 
 .reveal small{
   font-size: 0.8rem;
   padding-top: 10px;
-}
-
-// .reveal code {
-//   font-family: $code-font;
-//   text-transform: none;
-//   font-size: 1.1rem;
-// }
-
-
-figure.code2 {
-  box-shadow: rgba(0, 0, 0, 0.55) 0px 20px 68px;
-  & pre{
-    border-radius: 12px;
-    & code{
-      background-color: #222;
-      margin: 0;
-      color: #d5d5d5;
-    }
-  }
 }

@@ -212,6 +212,14 @@ has a background image and a box with the details */
   color: #028090F; /* metallic seaweed */
 }
 
+/* Just an empty div to add bounding box effect to the text */
+.bounding div{
+  color: #121212;
+  width: auto;
+  max-width: 90%;
+  text-align: left;
+  line-height: 1.2.rem;
+}
 
 /* Larger images */
 figure.display {
@@ -272,12 +280,14 @@ div.images img {
   text-align: center;
 }
 
+/* Text into the modal */
 .modal_p{
   padding: 10px!important;
   color: #fff;
   font-size: 1.2em;
 }
 
+/* Adding caption to the modal */
 .caption_p{
   font-weight: light;
   font-style: italic;
@@ -287,6 +297,7 @@ div.images img {
   padding: 10px!important;
 }
 
+/* Links inside the modal caption */
 .caption_p a{
   /* color:  #B2BAE5!important; /*lavender violet*/
   font-style: italic!important;
