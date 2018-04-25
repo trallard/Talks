@@ -908,10 +908,13 @@ line-height: 1.8em; }
 .reveal .slides section.end.color--radiant .logo {
   background-image: url("../assets/Tania_logo.png"); }
 
+/*******************************************************************************
+ * Code Segments
+ ******************************************************************************/
 
-  /*******************************************************************************
-   * Code Segments
-   ******************************************************************************/
+ // This gives a code within a figure element... will change in the future as this
+ // is a hack copied from somewhere else and I am not happy with the way it works
+ // but it allows to add captions
 figure.code {
   display: flex;
   flex-direction: column;
@@ -922,7 +925,6 @@ figure.code {
     box-shadow: none;
     line-height: 1.1rem;
     margin: 0;
-    width: 100%;
     overflow: hidden;
     border-radius: 5px;
   }
@@ -949,16 +951,12 @@ figure.code figcaption.path {
 
 .reveal pre{
   box-shadow: none;
-  font-size: 1rem;
   line-height: 1.1rem;
   width: 100%;
   & code{
-    max-height: none;
     -moz-tab-size: 2;
     tab-size: 2;
     box-sizing: border-box;
-    border-radius: 5px;
-    color: #222;
     font-family: $code-font;
   }
 }

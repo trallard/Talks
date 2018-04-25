@@ -814,7 +814,6 @@ figure.code {
     box-shadow: none;
     line-height: 1.1rem;
     margin: 0;
-    width: 100%;
     overflow: hidden;
     border-radius: 5px; }
   figure.code figcaption {
@@ -836,11 +835,9 @@ figure.code figcaption.path {
 
 .reveal pre {
   box-shadow: none;
-  font-size: 1rem;
   line-height: 1.1rem;
   width: 100%; }
   .reveal pre code {
-    max-height: none;
     -moz-tab-size: 2;
     tab-size: 2;
     box-sizing: border-box;
@@ -853,14 +850,5 @@ figure.code figcaption.path {
   padding: 2px 7px;
   border-radius: 3px;
   font-size: 0.85rem; }
-
-figure.code2 {
-  box-shadow: rgba(0, 0, 0, 0.55) 0px 20px 68px; }
-  figure.code2 pre {
-    border-radius: 12px; }
-    figure.code2 pre code {
-      background-color: #222;
-      margin: 0;
-      color: #d5d5d5; }
 
 /*# sourceMappingURL=full_theme.css.map */
