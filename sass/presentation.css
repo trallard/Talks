@@ -210,6 +210,24 @@ has a background image and a box with the details */
   padding-top: 10px;
 }
 
+div.warn {
+  background-color: #FF5A5F;
+  border-color: #FF5A5F;
+  border-left: 5px solid #C81D25;
+  padding: 0.5em;
+
+  color: #fff;
+  opacity: 0.8;
+}
+
+div.info {
+  background-color: #087E8B;
+  border-color: #087E8B;
+  border-left: 5px solid #0B3954;
+  padding: 0.5em;
+  color: #fff;
+  opacity: 0.8;
+}
 
 /* Larger images */
 figure.display {
