@@ -958,16 +958,12 @@
 								<h1 id="Adding-raw-data">Adding raw data</h1>
 								<p>We will be using the Kaggle <a href="https://www.kaggle.com/residentmario/renaming-combining-data/data">wine review</a> dataset.
 								The first step is to download the data and store it in our <code>data/raw</code> directory.</p>
-								<ul>
-								<li><p>Right click on <a href="https://raw.githubusercontent.com/trallard/ReproduciblePython/master/data/raw/winemag-data-130k-v2.csv">this link</a>  slect <em>save as</em> and save it as <strong>winemag-data-130k.csv</strong></p>
-								</li>
-								<li><p>From the shell:</p>
-								<pre><code>$ wget -o winemag-data-130k.csv https://goo.gl/KPRXTi</code></pre>
-							</div>
+								You should have a copy of the datasets that we will be using already if you followed the installation instructions.
+
+						   Othwerwise you can get a copy using the link in the Etherpad.
+
 						</div>
 					 </section>
-				 </section>
-
 
 					 <section >
 					 <div class="grid-wrapper">
@@ -978,17 +974,23 @@
 								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 							</div>
 						 <div class="content">
-							 <h2 id="Adding-metadata">Adding metadata<a class="anchor-link" href="#Adding-metadata">&#182;</a></h2><p>You want to make sure that all your data has information describing how you got the data, the meaning of the columsns, etc.</p>
-							 <p>So we can create a README.txt ( or .md) file inside the data directory:</p>
+							 <h2 id="Adding-metadata">Adding metadata</h2>
+							 <p>You want to make sure that all your data has information describing
+								  how you got the data, the meaning of the columsns, etc.</p>
+									For your own use make sure to create at least a README file describing the data as best as you can.
 
-							 <pre><code>Data collected from Kaggle winemag reviews
-							 https://www.kaggle.com/residentmario/renaming-combining-data/data
-
-							 Collected on 09/05/2018 by Tania Allard</code></pre>
+	 							Create a README.txt (or .md) file inside the data directory
+								 and add the following content or something similar.
+							 <pre><code>
+Data collected from Kaggle winemag reviews
+https://www.kaggle.com/residentmario/renaming-combining-data/data
+Collected on 09/05/2018 by Tania Allard
+						 </code></pre>
 							 <p>Commit both the README and the data to the repository.</p>
 						 </div>
 					 </div>
 					</section>
+				</section>
 
 
 					<section >
