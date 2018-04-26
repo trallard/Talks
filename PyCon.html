@@ -750,8 +750,8 @@
 											Not all licenses are compatible! Also compatibility is directional.
 											<figure class="display">
 												<img src="./assets/PyCon/morin.png" alt="excelno">
-												<figcaption><a href="http://www.bitss.org/2015/12/31/science-is-show-me-not-trust-me/">
-													http://www.bitss.org/2015/12/31/science-is-show-me-not-trust-me/</a></figcaption>
+												<figcaption><a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002598">
+													Morin et al. (2012), PLOS</a></figcaption>
 											</figure>
 										</div>
 									</div>
@@ -853,7 +853,7 @@
 				 										<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 				 									</div>
 												 <div class="content">
-													You can do this manually, from the shell, using Finder, whatever
+													You can do this manually, from the shell or use whatever
 													method you prefer.
 
 													<p class="fragment">We are going to use
@@ -861,14 +861,20 @@
 														Cookie cutter</a> to create our base filesystem and some support
 													documents. </p>
 														<div class="fragment">
-															Using your shell/terminal/command line type:
-
+														 Using our command line we will first activate our conda
+														 environment.
+														<div data-markdown>
+															```bash
+															$ source activate reproPython
+															```
+														</div>
+														 Now we can create our project structure
 															<div data-markdown>
 																```bash
 																$ cookiecutter gh:mkrapp/cookiecutter-reproducible-science
 																```
 															</div>
-															And follow the instructions on the shell
+
 															<br /> <hr>
 															<small>⭐ Note that there is a
 																<a href="https://github.com/drivendata/cookiecutter-data-science">
@@ -881,9 +887,15 @@
 
 							<section >
 			 				 <div class="grid-wrapper">
+								 <div class="header">
+									<div class="logo"></div>
+									<div class="section">Project structure</div>
+									<div class="twitter"><a href="https://twitter.com/ixek">
+										<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+									</div>
 			 					 <div class="content">
-			 						 <h2>Initialize the repository</h2>
-									 We want to use version control from the very start. We will initialize
+			 						 <h2>Version control from the <strong>begining</strong> </h2>
+									 We will initialize
 									 a Git repository within this directory.
 									 <br>
 									 From your shell:
@@ -912,17 +924,102 @@
 			 				 </div>
 			 			 </section>
 
-						 <section >
+					 <section>
+						<section >
 					 	 <div class="grid-wrapper">
+							 <div class="header">
+								<div class="logo"></div>
+								<div class="section">Using data</div>
+								<div class="twitter"><a href="https://twitter.com/ixek">
+									<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+								</div>
 					 		 <div class="content">
-					 			 <h1>Starting with <strong>raw data</strong> </h1>
-								 <div class="info">
-									 You should *never* modify the raw data, do all
-  								 your cleaning and processing on copies of the data.
-								 </div>
+								 <h1 id="Getting-started-with-your-data">Getting started with your data
+									 </h1>
+									 <h3 id="Should-I-version-control-my-raw-data?">
+										 Should I version control my raw data?</h3>
+
+										 <div class='info'> The raw data *should* never change. All of the processing or data wrangling must be done in copies of your raw data. </div><p><br>
+								 However it is important to consider how you are going to share your data. The <a href="https://www.w3.org/TR/dwbp/#bp-summary">best practices for sharing data on the Web summary</a> is a good place to get started.</p>
+								 <p>You can also explore alternatives like <a href="https://git-annex.branchable.com/">git annex</a> to version control your data, or <a href="https://figshare.com/">FigShare</a> to share your data.</p>
 					 		 </div>
 					 	 </div>
 					  </section>
+
+						<section >
+						<div class="grid-wrapper">
+							<div class="header">
+							 <div class="logo"></div>
+							 <div class="section">Using data</div>
+							 <div class="twitter"><a href="https://twitter.com/ixek">
+								 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+							 </div>
+							<div class="content">
+								<h1 id="Adding-raw-data">Adding raw data</h1>
+								<p>We will be using the Kaggle <a href="https://www.kaggle.com/residentmario/renaming-combining-data/data">wine review</a> dataset.
+								The first step is to download the data and store it in our <code>data/raw</code> directory.</p>
+								<ul>
+								<li><p>Right click on <a href="https://raw.githubusercontent.com/trallard/ReproduciblePython/master/data/raw/winemag-data-130k-v2.csv">this link</a>  slect <em>save as</em> and save it as <strong>winemag-data-130k.csv</strong></p>
+								</li>
+								<li><p>From the shell:</p>
+								<pre><code>$ wget -o winemag-data-130k.csv https://goo.gl/KPRXTi</code></pre>
+							</div>
+						</div>
+					 </section>
+				 </section>
+
+
+					 <section >
+					 <div class="grid-wrapper">
+						 <div class="header">
+							<div class="logo"></div>
+							<div class="section">Project structure</div>
+							<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+							</div>
+						 <div class="content">
+							 <h2 id="Adding-metadata">Adding metadata<a class="anchor-link" href="#Adding-metadata">&#182;</a></h2><p>You want to make sure that all your data has information describing how you got the data, the meaning of the columsns, etc.</p>
+							 <p>So we can create a README.txt ( or .md) file inside the data directory:</p>
+
+							 <pre><code>Data collected from Kaggle winemag reviews
+							 https://www.kaggle.com/residentmario/renaming-combining-data/data
+
+							 Collected on 09/05/2018 by Tania Allard</code></pre>
+							 <p>Commit both the README and the data to the repository.</p>
+						 </div>
+					 </div>
+					</section>
+
+
+					<section >
+					<div class="grid-wrapper">
+						<div class="header">
+						 <div class="logo"></div>
+						 <div class="section">Project structure</div>
+						 <div class="twitter"><a href="https://twitter.com/ixek">
+							 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+						 </div>
+						<div class="content">
+
+
+						</div>
+					</div>
+				 </section>
+
+						<section >
+						<div class="grid-wrapper">
+							<div class="header">
+							 <div class="logo"></div>
+							 <div class="section">Project structure</div>
+							 <div class="twitter"><a href="https://twitter.com/ixek">
+								 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+							 </div>
+							<div class="content">
+
+
+							</div>
+						</div>
+					 </section>
 
 
 				<section >
