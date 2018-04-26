@@ -5,6 +5,11 @@
  * These are not Reveal.js modifiers
  */
 
+/* Icons in the about section */
+.social_icon{
+  color: #5f4b8b; /*ultraviolet*/
+  padding-right: 10px;
+}
 
 /* Responsive lists */
 @media (min-width: 1280px) {
