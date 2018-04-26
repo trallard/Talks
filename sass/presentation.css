@@ -253,6 +253,33 @@ div.images img {
   margin-right: auto;
 }
 
+/* Additional divs */
+div.warn {
+  background-color: #fb5c6f;
+  border-color: #fb5c6f;
+  border-left: 5px solid #C81D25;
+  padding: 0.5em;
+  color: #fff;
+  margin: 15px 0;
+  opacity: 0.8;
+}
+
+div.info {
+  background-color: #208a96;
+  border-color: #208a96;
+  border-left: 5px solid #0B3954;
+  padding: 0.5em;
+  color: #fff;
+  opacity: 0.8;
+  margin: 15px 0;
+}
+
+.info a{
+  color: #e8f3f4!important;
+  text-decoration: underline;
+  text-decoration-color: #e8f3f4!important;
+}
+
 /* Floating modal */
 
 .float_modal{
