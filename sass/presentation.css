@@ -198,6 +198,7 @@ has a background image and a box with the details */
 .reveal small{
   font-size: 0.8rem;
   padding-top: 10px;
+  line-height: 1.1rem;
 }
 
 /* Larger images */
@@ -309,4 +310,37 @@ div.info {
 .caption_p a{
   /* color:  #B2BAE5!important; /*lavender violet*/
   font-style: italic!important;
+}
+
+/* Columns for the content */
+.newspaper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.left {order:1; flex-basis:100%; height:auto;
+  min-height: 100px;}
+.middle {order:3; flex-basis:100%; height:auto;}
+.right {order:2; flex-basis:100%; height:auto;}
+
+@media screen and (min-width:600px) {
+   .newspaper {
+       flex-wrap:nowrap;
+   }
+
+    .left {
+        flex-basis:1;
+        order:1;
+    }
+    .middle {
+        flex-basis:1;
+        order:2;
+    }
+    .right {
+        flex-basis:1;
+        order:3;
+    }
 }
