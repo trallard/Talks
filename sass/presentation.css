@@ -4,6 +4,8 @@
  * and decided to put them in a separate css
  * These are not Reveal.js modifiers
  */
+@import url(../../assets/icons_collection/font/flaticon.css);
+
 
 /* Icons in the about section */
 .social_icon{
@@ -196,7 +198,7 @@ has a background image and a box with the details */
 /* Alternative strong text */
 .reveal strong-alt{
   font-weight: 400;
-  color: #028090F; /* metallic seaweed */
+  color: #028090; /* metallic seaweed */
 }
 
 /* Small text */
@@ -348,4 +350,39 @@ div.info {
         flex-basis:1;
         order:3;
     }
+}
+
+
+/* List using icons */
+.reveal ul.icon{
+  list-style-type: none;
+}
+
+ul.icon li{
+  text-indent: -1.4em;
+}
+
+ul.icon li::before{
+  font-family: 'flaticon';
+  content: "\f102"; /*maguey*/
+  float: left;
+	width: 1.2em;
+  font-size: 1em;
+  color: #028090;
+}
+
+
+ul.icon li.pinata::before{
+  content: "\f100";
+  color: #F8757F; /*salmon*/
+}
+ul.icon li.nopal::before{
+  content: "\f101";
+}
+ul.icon li.cactus::before{
+  content: "\f103";
+}
+ul.icon li.skull::before{
+  content: "\f104";
+  color: #454545; /*darkgray*/
 }
