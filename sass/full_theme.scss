@@ -13,8 +13,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 * PERSONAL
 *********************************************/
 
-
-// Colors used on all themes
+// Colours used on all themes
 $light-gray: #e2e6e9;
 $white: #fff;
 $text-color: #737373; /* dark gray */
@@ -97,7 +96,6 @@ $themes: (
  * GLOBAL STYLES
  *********************************************/
 .reveal {
-  // font-family: $second-font;
   font-size: inherit;
   font-weight: normal;
   color: $text-color;
@@ -134,8 +132,6 @@ $themes: (
 .reveal h5,
 .reveal h6 {
 margin: 0 0 20px 0;
-// color: $primary;
-// font-family: $title-font;
 @include themify($themes){
   color: themed('primary');
   font-family: themed('title-font');
@@ -171,21 +167,14 @@ word-wrap: break-word; }
   &:hover {
     text-shadow: none;
     border: none;
-    text-decoration: underline;
+    // text-decoration: underline;
     @include themify($themes){
-      color: themed('third')
+      color: themed('third');
+      border-bottom: 2px solid themed('third'); /* I prefer a thicker line */
     }}
 
 }
 
-// .reveal a:hover {
-//   text-shadow: none;
-//   border: none;
-//   text-decoration: underline;
-//   @include themify($themes){
-//     color: themed('third')
-//   }
-// }
 
 .reveal .roll span:after {
   color: $white;
@@ -591,9 +580,12 @@ color: #2A2A49; } /* very dark purple */
 
 // Section title in header
 .reveal .slides section .section {
+  @include themify($themes){
+    font-family: themed('title-font');
+  }
   text-transform: uppercase;
   line-height: 5.5vmin;
-  font-size: 0.6em;
+  font-size: 0.7em;
   font-weight: 500; }
 
 .reveal .slides section:not([class*="color--"]) .section {
@@ -603,7 +595,6 @@ color: #2A2A49; } /* very dark purple */
 .reveal .slides section .content {
   align-self: center;
   grid-area: content;
-// background-color: $light-gray;
 }
 
 // Dark coloured slides

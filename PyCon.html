@@ -177,6 +177,10 @@
 				</section>
 			</section>
 
+
+		<!-- Reproducibility crisis main section -->
+		<section>
+
 			<section class=" color--grad-purple">
 				<div class="grid-wrapper">
 					<div class="header">
@@ -260,9 +264,10 @@
 						</div>
 					</div>
 				</section>
+			</section>
 
 
-				<!-- Used to introduce the subsection -->
+				<!-- What is reproducibility? -->
 				<section class=" color--ice">
 					<div class="grid-wrapper">
 						<div class="header">
@@ -590,7 +595,7 @@
 													<li>Create a clean and useful directory structure for our project</li>
 													<li>Set up and use version control to track our changes</li>
 													<li>Add raw data to our project</li>
-													<li>Write the code to perform the analysis (including <strong>tests</strong>)</li>
+													<li>Reproducible code to perform the analysis (including <strong>tests</strong>)</li>
 													<li>Record your project's provenance</li>
 													<li>Learn more about testing</li>
 													<li>Create a run all script for the project:<strong>
@@ -681,31 +686,33 @@
 						</div>
 					</section> -->
 
+					<!-- Licensing section -->
 					<section>
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="twitter"><a href="https://twitter.com/ixek">
-									<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-								</div>
-								<div class="content">
-									<h1>Have you got a minute to talk about open source?</h1>
-									<div class="float_modal" style='position: relative; top:25%'>
-									 <p class='modal_p'>"Open-source licenses allow people to
-										 coordinate their work freely,
-										  within the confines of copyright law, while making access
-											and wide distribution a priority
-											I’ve always thought that this is fundamentally aligned with
-									  	 the method of science,
-										  where we value academic freedom and wide dissemination of
-											scientific findings."</p>
-									 <p class='caption_p'>- Lorena barba <a href="http://rtalbert.org/blog/2015/interview-lorena-barba">
-									 (Casting out nines Interview)</a></p>
-								</div>
-							</div>
-						</section>
 
-					<section>
+						<section>
+							<div class="grid-wrapper">
+								<div class="header">
+									<div class="logo"></div>
+									<div class="twitter"><a href="https://twitter.com/ixek">
+										<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+									</div>
+									<div class="content">
+										<h1>Have you got a minute to talk about open source?</h1>
+										<div class="float_modal" style='position: relative; top:25%'>
+										 <p class='modal_p'>"Open-source licenses allow people to
+											 coordinate their work freely,
+											  within the confines of copyright law, while making access
+												and wide distribution a priority
+												I’ve always thought that this is fundamentally aligned with
+										  	 the method of science,
+											  where we value academic freedom and wide dissemination of
+												scientific findings."</p>
+										 <p class='caption_p'>- Lorena barba <a href="http://rtalbert.org/blog/2015/interview-lorena-barba">
+										 (Casting out nines Interview)</a></p>
+									</div>
+								</div>
+							</section>
+
 						<section>
 							<div class="grid-wrapper">
 								<div class="header">
@@ -981,7 +988,7 @@
 					 <div class="grid-wrapper">
 						 <div class="header">
 							<div class="logo"></div>
-							<div class="section">Project structure</div>
+							<div class="section">Using data</div>
 							<div class="twitter"><a href="https://twitter.com/ixek">
 								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 							</div>
@@ -994,16 +1001,17 @@
 	 							Create a README.txt (or .md) file inside the data directory
 								 and add the following content or something similar.
 							 <pre><code>
+Title: Reproducible Python
+keywords: wine, reviews, magazine, kaggle
 Data collected from Kaggle winemag reviews
-https://www.kaggle.com/residentmario/renaming-combining-data/data
-Collected on 09/05/2018 by Tania Allard
+URL:  https://www.kaggle.com/residentmario/renaming-combining-data/data
+Collected on: 09/05/2018 by Tania Allard
 						 </code></pre>
 							 <p>Commit both the README and the data to the repository.</p>
 						 </div>
 					 </div>
 					</section>
 				</section>
-
 
 					<section >
 					<div class="grid-wrapper">
@@ -1042,7 +1050,15 @@ Collected on 09/05/2018 by Tania Allard
  						 <h2>Additional resources</h2>
 						 <ul class='icon'>
 						 	<li><a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002598">
-							A quick guide to software licensing</a>. Morin et al.
+							A quick guide to software licensing</a>
+							</li>
+							<li><a href="http://www.dcc.ac.uk/resources/metadata-standards">
+						   Metadata standards</a>
+							 <li><a href="https://www.lib.ncsu.edu/data-management/metadata#best">
+							 Introduction to metadata </a>
+							 <li><a href="http://schema.datacite.org/meta/kernel-4.0/"></a>
+							 DataCite Metadata Schema </li>
+							 </li>
 							</li>
 						 </ul>
  					 </div>
