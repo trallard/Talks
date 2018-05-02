@@ -587,14 +587,13 @@
 												<h1>What will we do today? </h1>
 												<ol>
 													<li>Use a reproducibility-first approach to set up a new project</li>
-													<li>Create a clean and useful directory structure for our project</li>
 													<li>Set up and use version control to track our changes</li>
-													<li>Add raw data to our project</li>
-													<li>Write the code to perform the analysis (including <strong>tests</strong>)</li>
-													<li>Record your project's provenance</li>
-													<li>Learn more about testing</li>
+													<li>Add data to our project (and <strong>metadata</strong>)</li>
+													<li>Set up a reproducible analysis workflow</li>
+													<li>Record our project's provenance</li>
 													<li>Create a run all script for the project:<strong>
 														automate all the things!</strong></li>
+														<li>Learn more about testing</li>
 													<li>Learn how to run automated tests</li>
 													<li>Share your analysis with the world!</li>
 													<li>And being credited for it!</li>
@@ -799,18 +798,18 @@
 													</div>
 													<div class="content">
 														<h1>Project structure</h1>
+														Good project layout ensures:
 														<ul class='icon'>
-															<li>There <strong>is no single</strong> way to organise a filesystem</li>
-															<li> The key is to make sure that the structure is consistent and
-															informative</li>
-															<li>Use a <strong>single root directory</strong> per project </li>
-															<li>Adhere to a single file structure</li>
+															<li>Integrity of the data</li>
+															<li>Portability of the project</li>
+															<li>Easier to pick the project back up after a brak</li>
 														</ul> <br><br>
-														<div class='info'> Start from the top level and add
-															folders as your project evolves... as you do make sure that
-														the structure is coherent.
-													</div>
-													</div>
+														There is no single way to organise a project.... but
+														we need to take advantage of the power of convention.
+														<div class="info">
+															"A place for everything, everything in its place"
+														<p class='caption_p'>- Benjamin Frankin</p>
+														</div>												</div>
 												</div>
 											</section>
 
@@ -861,7 +860,8 @@
 				 									</div>
 												 <div class="content">
 													You can do this manually, from the shell or use whatever
-													method you prefer.
+													method you prefer. But we want an opinionated approach
+													for this.
 
 													<p class="fragment">We are going to use
 														<a href="https://github.com/mkrapp/cookiecutter-reproducible-science">
@@ -1006,9 +1006,10 @@
 						<div class="content">
 								<h2>You got data... is it enough?</h2>
 									Data without documentation has no value
-									<br> <h3>metadata = data about data </h3>
+									<br> <h3>⭐️ metadata = data about data ⭐️</h3>
 									Information that describes, explains, locates or makes it easier
 									to <strong>find, access, and use</strong> a resource
+									(in this case data)
 									<div class="images">
 										<img src="./assets/PyCon/meta.jpg" alt="metadata" width="300px;">
 									</div>
@@ -1082,6 +1083,8 @@ Collected on 09/05/2018 by Tania Allard
 						 	<li><a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002598">
 							A quick guide to software licensing</a>. Morin et al.
 							</li>
+							<li><a href="http://mozillascience.github.io/checklist/">
+							Data Reuse Checklist</a> </li>
 						 </ul>
  					 </div>
  				 </div>
