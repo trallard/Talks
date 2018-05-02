@@ -1175,7 +1175,6 @@ Collected on 09/05/2018 by Tania Allard
 					<div class="images">
 						<img src="../assets/PyCon/dates_ISO.png" alt="">
 					</div>
-
 				</div>
 			</div>
 		 </section>
@@ -1189,7 +1188,26 @@ Collected on 09/05/2018 by Tania Allard
 					<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 				</div>
 			 <div class="content">
-
+				 <h2 id="What-works-and-what-doesn't">What works and what doesn't
+				 </h2>
+				 <table>
+				   <tr>
+				     <th>🚫 NO</th>
+				     <th>✔ YES</th>
+				   </tr>
+				   <tr>
+				     <td>report.docx</td>
+				     <td>2018-02-03_report-for-sla.docx</td>
+				   </tr>
+				   <tr>
+				     <td>Joey's filename has spaces and punctuation.xlsx</td>
+				     <td>joeys-filenames-are-getting-better.xlsx</td>
+				   </tr>
+				   <tr>
+				     <td>fig 1.png</td>
+				     <td>fig01_scatterplot-talk-length-vs-interest.png</td>
+				   </tr>
+				 </table>
 
 			 </div>
 		 </div>
@@ -1204,11 +1222,92 @@ Collected on 09/05/2018 by Tania Allard
 						 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 					 </div>
 					<div class="content">
+						<h1 id="The-scripts">The scripts</h1><p>Let's start by checking the scripts and notebooks:</p>
+						<ul>
+						<li><strong>00_explore-data.ipynb</strong>: exploratory analysis </li>
+						<li><strong>01_subset-data-GBP.py</strong>: subset of winemag-130k-v2.csv containing only the following columns: country, designation, points, price (in GBP). Save in a .csv file</li>
+						<li><strong>02_visualize-wines.py</strong></li>
+						<li><strong>03_country-subset.py</strong></li>
+						</ul>
+						<p>From the root of your file system you can run the scripts as follow:</p>
 
-
+						<pre><code>
+$ python src/data/01_subset-data-GBP.py data/raw/winemag-data-130k-v2.csv
+$ python src/visualization/02_visualize-wines.py data/interim/2018-05-09-winemag_priceGBP.csv
+$ python src/data/03_country-subset.py data/interim/2018-05-09-winemag_priceGBP.csv Chile
+					</code></pre>
 					</div>
 				</div>
 			 </section>
+
+			 <section >
+			 <div class="grid-wrapper">
+				 <div class="header">
+					<div class="logo"></div>
+					<div class="section">Processing data</div>
+					<div class="twitter"><a href="https://twitter.com/ixek">
+						<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+				 <div class="content">
+<h1 id="Packaging">Packaging<a class="anchor-link" href="#Packaging">&#182;</a></h1><p>We used a modular approach here, so we can use and reuse the functions more efficiently.
+The next step it to make a <code>runall</code> script to minimize the user interaction.</p>
+<p>First, we need to make sure that Python recognizes our scripts as a package so we can call functions from the multiple modules.</p>
+<p>From the shell:</p>
+
+<pre><code>$ touch src/data/__init__.py  # Create empty file
+$ touch src/visualization/__init__.py  # Create empty file
+$ touch src/__init__.py</code></pre>
+
+				 </div>
+			 </div>
+			</section>
+
+			<section >
+			<div class="grid-wrapper">
+				<div class="header">
+				 <div class="logo"></div>
+				 <div class="section">Processing data</div>
+				 <div class="twitter"><a href="https://twitter.com/ixek">
+					 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+				 </div>
+				<div class="content">
+					<h1 id="Creating-the-run-all-script">Creating the <code>run all</code> script<a class="anchor-link" href="#Creating-the-run-all-script">&#182;</a></h1><div class='info'>
+					    We will run everything from the root directory.<br>
+					    As such all the paths will be relative to the top level of your project
+					</div><p>Since our modules start with digits (i.e. <code>01</code>, <code>02</code>) we cannot do the import as we'd normally do</p>
+					<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mypackage</span> <span class="kn">import</span> <span class="n">myawesomemodule</span>
+					</pre></div>
+					<p>Instead we need to do it like so:</p>
+					<div class="highlight"><pre><span></span><span class="n">subset</span> <span class="o">=</span> <span class="n">importlib</span><span class="o">.</span><span class="n">import_module</span><span class="p">(</span><span class="s1">&#39;.data.01_subset-data-GBP&#39;</span><span class="p">,</span> <span class="s1">&#39;scripts&#39;</span><span class="p">)</span>
+					<span class="n">plotwines</span> <span class="o">=</span> <span class="n">importlib</span><span class="o">.</span><span class="n">import_module</span><span class="p">(</span><span class="s1">&#39;.visualization.02_visualize-wines&#39;</span><span class="p">,</span> <span class="s1">&#39;scripts&#39;</span><span class="p">)</span>
+					<span class="n">country_sub</span> <span class="o">=</span> <span class="n">importlib</span><span class="o">.</span><span class="n">import_module</span><span class="p">(</span><span class="s1">&#39;.data.03_country-subset&#39;</span><span class="p">,</span> <span class="s1">&#39;scripts&#39;</span><span class="p">)</span>
+					</pre></div>
+					<p>Also we need to make sure the imports are declared in <code>src/__init__.py</code></p>
+					<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">data</span>
+					<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">visualization</span>
+					</pre></div>
+				</div>
+			</div>
+		 </section>
+
+		 <section >
+		 <div class="grid-wrapper">
+		 	<div class="header">
+		 	 <div class="logo"></div>
+		 	 <div class="section">Processing data</div>
+		 	 <div class="twitter"><a href="https://twitter.com/ixek">
+		 		 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+		 	 </div>
+		 	<div class="content">
+				<h3 id="TO-DO:">TO DO:<a class="anchor-link" href="#TO-DO:">&#182;</a></h3><p>How would you do to run the analysis from step 01 (process the data) to 03 subset for a country and plot the results?</p>
+				<p>Once you have done this and make sure you can run it from your shell and commit the changes to git.</p>
+				<p>Note you might need to run this from the shell like so</p>
+
+				<pre><code>python -m scripts.runall-wine-analysis</code></pre>
+
+		 	</div>
+		 </div>
+		 </section>
 
 						<section >
 						<div class="grid-wrapper">
