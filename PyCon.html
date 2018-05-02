@@ -1037,10 +1037,15 @@ Data collected from Kaggle winemag reviews
 https://www.kaggle.com/residentmario/renaming-combining-data/data
 Collected on 09/05/2018 by Tania Allard
 						 </code></pre>
-							 <p>Commit both the README and the data to the repository.</p>
+							 <p>Commit the README to git </p>
 						 </div>
 					 </div>
 					</section>
+				</section>
+
+				<!-- Analyse data -->
+				<section class="dark_box" style="background-image:url('./assets/PyCon/makesense.png');">
+
 				</section>
 
 
@@ -1048,16 +1053,162 @@ Collected on 09/05/2018 by Tania Allard
 					<div class="grid-wrapper">
 						<div class="header">
 						 <div class="logo"></div>
-						 <div class="section">Project structure</div>
+						 <div class="section">Processing data</div>
 						 <div class="twitter"><a href="https://twitter.com/ixek">
 							 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 						 </div>
 						<div class="content">
-
+							<h1 id="Adding-the-code-that-performs-the-analysis">Adding the code that performs the analysis
+							</h1>
+							<p>We want to do the following:</p>
+							<ul class='icon'>
+							<li>Create a Jupyter notebook for exploratory analysis</li>
+							<li>Generate the following outputs using python scripts:
+								<ul class='icon'>
+							<li class='pinata'>Generate a subset of <code>winemag-130k-v2.csv</code> containing only the following columns:
+								<code>country, designation, points, price (in GBP)</code>. Save in a .csv file</li>
+							<li class='pinata'>Generate and save a table of wines only produced in Chile</li>
+							<li class='pinata'>Save a scatterplot of the wines points vs price and a distribution plot of wine scores</li>
+							</ul>
+							</li>
+							</ul>
 
 						</div>
 					</div>
 				 </section>
+
+				 <section >
+				 <div class="grid-wrapper">
+					 <div class="header">
+						<div class="logo"></div>
+						<div class="section">Processing data</div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+							<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+						</div>
+					 <div class="content">
+						 <p>Don't worry you do not have to generate all of the scripts... we have provided some scripts for you to get started.
+						 You should now have a directory called <code>SupportScripts</code></p>
+						 <p>You need to make sure that they are in the appropriate directory inside your newly created project.</p>
+						 <ul>
+						 <li>Noteboks</li>
+						 <li>src/data</li>
+						 <li>src/visualization</li>
+						 </ul>
+						 <p>Once this is done commit your changes to git</p>
+						 <div data-markdown>
+							 ```bash
+							 $ git add .
+							 $ git commit -m "Add processing scripts"
+							 ```
+						 </div>
+					 </div>
+				 </div>
+				</section>
+
+				<section >
+				<div class="grid-wrapper">
+					<div class="header">
+					 <div class="logo"></div>
+					 <div class="section">Processing data</div>
+					 <div class="twitter"><a href="https://twitter.com/ixek">
+						 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					 </div>
+					<div class="content">
+						<h1 id="Documentation">Documentation</h1>
+						<p>Documentation is an important part of a reproducible workflow.</p>
+						<p>Take 5 minutes and identify which scripts/notebook have the best documentation.
+							What makes it a good documentation?</p>
+						<p>A good point to start is checking the <a href="https://google.github.io/styleguide/pyguide.html#Comments">Google Python style guidelines</a></p>
+
+					</div>
+				</div>
+				</section>
+
+				<section >
+				<div class="grid-wrapper">
+					<div class="header">
+					 <div class="logo"></div>
+					 <div class="section">Processing data</div>
+					 <div class="twitter"><a href="https://twitter.com/ixek">
+						 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					 </div>
+					<div class="content">
+						<p>Let's face it.... there are going to be files
+						<strong>LOTS</strong> of files</p>
+						<figure class='display'>
+						<img src="../assets/PyCon/allthefiles.png" alt="files">
+						</figure>
+					</div>
+				</div>
+			 </section>
+
+			 <section >
+			 <div class="grid-wrapper">
+				 <div class="header">
+					<div class="logo"></div>
+					<div class="section">Processing data</div>
+					<div class="twitter"><a href="https://twitter.com/ixek">
+						<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+				 <div class="content">
+					 <h1 id="The-art-of-naming">The art of naming</h1>
+					 <p>The three principles for (file) names:</p>
+					 <ul>
+					 <li><strong>Machine readable </strong>: regex and globbing friendly, deliberate use of delimiters *</li>
+					 <li><strong>Human readable</strong>: contains info on content, connects to concept of slug from semantic URLs</li>
+					 <li><strong>Plays well with default ordering</strong>: put something numeric first, use ISO 8601 for dates <strong>YYYY-MM-DD</strong></li>
+					 </ul>
+					 <p><small>* Avoid spaced, accented characters, files 'foo' and 'Foo' </small></p>
+				 </div>
+			 </div>
+			</section>
+
+			<section >
+			<div class="grid-wrapper">
+				<div class="header">
+				 <div class="logo"></div>
+				 <div class="section">Processing data</div>
+				 <div class="twitter"><a href="https://twitter.com/ixek">
+					 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+				 </div>
+				<div class="content">
+					<div class="images">
+						<img src="../assets/PyCon/dates_ISO.png" alt="">
+					</div>
+
+				</div>
+			</div>
+		 </section>
+
+		 <section >
+		 <div class="grid-wrapper">
+			 <div class="header">
+				<div class="logo"></div>
+				<div class="section">Processing data</div>
+				<div class="twitter"><a href="https://twitter.com/ixek">
+					<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+				</div>
+			 <div class="content">
+
+
+			 </div>
+		 </div>
+		</section>
+
+				<section >
+				<div class="grid-wrapper">
+					<div class="header">
+					 <div class="logo"></div>
+					 <div class="section">Processing data</div>
+					 <div class="twitter"><a href="https://twitter.com/ixek">
+						 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					 </div>
+					<div class="content">
+
+
+					</div>
+				</div>
+			 </section>
 
 						<section >
 						<div class="grid-wrapper">
