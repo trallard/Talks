@@ -592,14 +592,13 @@
 												<h1>What will we do today? </h1>
 												<ol>
 													<li>Use a reproducibility-first approach to set up a new project</li>
-													<li>Create a clean and useful directory structure for our project</li>
 													<li>Set up and use version control to track our changes</li>
-													<li>Add raw data to our project</li>
-													<li>Reproducible code to perform the analysis (including <strong>tests</strong>)</li>
-													<li>Record your project's provenance</li>
-													<li>Learn more about testing</li>
+													<li>Add data to our project (and <strong>metadata</strong>)</li>
+													<li>Set up a reproducible analysis workflow</li>
+													<li>Record our project's provenance</li>
 													<li>Create a run all script for the project:<strong>
 														automate all the things!</strong></li>
+														<li>Learn more about testing</li>
 													<li>Learn how to run automated tests</li>
 													<li>Share your analysis with the world!</li>
 													<li>And being credited for it!</li>
@@ -806,17 +805,18 @@
 													</div>
 													<div class="content">
 														<h1>Project structure</h1>
+														Good project layout ensures:
 														<ul class='icon'>
-															<li>There <strong>is no single</strong> way to organise a filesystem</li>
-															<li> The key is to make sure that the structure is consistent and
-															informative</li>
-															<li>Use a <strong>single root directory</strong> per project </li>
-															<li>Find a structure that works for you and stick to it</li>
+															<li>Integrity of the data</li>
+															<li>Portability of the project</li>
+															<li>Easier to pick the project back up after a brak</li>
 														</ul> <br><br>
-														<div class='info'> Start from the top level and add
-															folders as your project evolves... as you do make sure that
-														the structure is coherent. </div>
-													</div>
+														There is no single way to organise a project.... but
+														we need to take advantage of the power of convention.
+														<div class="info">
+															"A place for everything, everything in its place"
+														<p class='caption_p'>- Benjamin Frankin</p>
+														</div>												</div>
 												</div>
 											</section>
 
@@ -867,7 +867,8 @@
 				 									</div>
 												 <div class="content">
 													You can do this manually, from the shell or use whatever
-													method you prefer.
+													method you prefer. But we want an opinionated approach
+													for this.
 
 													<p class="fragment">We are going to use
 														<a href="https://github.com/mkrapp/cookiecutter-reproducible-science">
@@ -937,7 +938,24 @@
 			 				 </div>
 			 			 </section>
 
-					 <section>
+
+						 <section>
+						  <section >
+						 	<div class="grid-wrapper">
+						 		<div class="header">
+						 		 <div class="logo"></div>
+						 		 <div class="section">Using data</div>
+						 		 <div class="twitter"><a href="https://twitter.com/ixek">
+						 			 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+						 		 </div>
+
+									<div class="content">
+										<h1>Raw data are <strong>sacrosanct</strong> </h1>
+		  							<div class="tweet" data-src="https://twitter.com/ucfagls/status/556107371634634755"
+		  							style="margin: 0px; position: absolute; top:55%;">
+		  						</div>
+						  </section>
+
 						<section >
 					 	 <div class="grid-wrapper">
 							 <div class="header">
@@ -985,6 +1003,27 @@
 					 </section>
 
 					 <section >
+					<div class="grid-wrapper">
+						<div class="header">
+						 <div class="logo"></div>
+						 <div class="section">Project structure</div>
+						 <div class="twitter"><a href="https://twitter.com/ixek">
+							 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+						 </div>
+						<div class="content">
+								<h2>You got data... is it enough?</h2>
+									Data without documentation has no value
+									<br> <h3>⭐️ metadata = data about data ⭐️</h3>
+									Information that describes, explains, locates or makes it easier
+									to <strong>find, access, and use</strong> a resource
+									(in this case data)
+									<div class="images">
+										<img src="./assets/PyCon/meta.jpg" alt="metadata" width="300px;">
+									</div>
+						</div>
+				 </section>
+
+					 <section >
 					 <div class="grid-wrapper">
 						 <div class="header">
 							<div class="logo"></div>
@@ -1007,161 +1046,277 @@ Data collected from Kaggle winemag reviews
 URL:  https://www.kaggle.com/residentmario/renaming-combining-data/data
 Collected on: 09/05/2018 by Tania Allard
 						 </code></pre>
-							 <p>Commit both the README and the data to the repository.</p>
+							 <p>Commit the README to git </p>
 						 </div>
 					 </div>
 					</section>
 				</section>
 
-				<!-- Analysis workflow -->
-				<section>
-						<section>
-						<div class="grid-wrapper">
-							<div class="header">
-							 <div class="logo"></div>
-							 <div class="section">Analysis workflow</div>
-							 <div class="twitter"><a href="https://twitter.com/ixek">
-								 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-							 </div>
-							<div class="content">
-								<h1>Adding the code that performs the analysis</h1>
-								<p>We want to do the following:</p>
-								<ul class='icon'>
-								<li>Create a Jupyter notebook for exploratory analysis</li>
-								<li>Generate the following outputs using Python scripts:
-									<ul class='icon'>
-								<li class='pinata'>Generate a subset of <code>winemag-130k-v2.csv</code> containing only the following columns:<code>Country, designation, points, price (in GBP)</code>. Save in a .csv file</li>
-								<li class='pinata'>Generate and save a table of wines only produced in Chile</li>
-								<li class='pinata'>Save a scatterplot of the wines points vs price and a distribution plot of wine scores</li>
-								</ul>
-								</li>
-								</ul>
-							</div>
-						</div>
-					 </section>
+				<!-- Analyse data -->
+				<section class="dark_box" style="background-image:url('./assets/PyCon/makesense.png');">
 
-					 <section>
-					 <div class="grid-wrapper">
-						 <div class="header">
-							<div class="logo"></div>
-							<div class="section">Analysis workflow</div>
-							<div class="twitter"><a href="https://twitter.com/ixek">
-								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-							</div>
-						 <div class="content">
-							 <p>Don't worry you do not have to generate all of the scripts... we have provided the bases for you to start working.
-							 You should now have a directory called <code>SupportScripts</code></p>
-							 <p>You need to make sure that they are in the appropriate directory inside your newly created project.</p>
-							 <ul>
-							 <li>Noteboks</li>
-							 <li>src/data</li>
-							 <li>src/visualization</li>
-							 </ul>
-							 <p>Once this is done commit your changes to git</p>
-							 <div data-markdown>
-								 ```bash
-								 $ git add .        	 				 # Adding all the changes made
-								 $ git commit -m 'Add analysis workflow'  # Commit and comment
-								 ```
-							 </div>
-						 </div>
-					 </div>
-					</section>
+				</section>
 
-					<section>
+
+					<section >
 					<div class="grid-wrapper">
 						<div class="header">
 						 <div class="logo"></div>
-						 <div class="section">Analysis workflow</div>
+						 <div class="section">Processing data</div>
 						 <div class="twitter"><a href="https://twitter.com/ixek">
 							 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 						 </div>
 						<div class="content">
-							<h1 id="Documentation">Documentation
-							</h1><p>Documentation is an important part of a reproducible workflow.</p>
-							<p>Take 5 minutes and identify which scripts/notebook have the best documentation. Why makes it a good documentation?</p>
-							<p>A good point to start is checking the <a href="https://google.github.io/styleguide/pyguide.html#Comments">Google Python style guidelines</a></p>
+							<h1 id="Adding-the-code-that-performs-the-analysis">Adding the code that performs the analysis
+							</h1>
+							<p>We want to do the following:</p>
+							<ul class='icon'>
+							<li>Create a Jupyter notebook for exploratory analysis</li>
+							<li>Generate the following outputs using python scripts:
+								<ul class='icon'>
+							<li class='pinata'>Generate a subset of <code>winemag-130k-v2.csv</code> containing only the following columns:
+								<code>country, designation, points, price (in GBP)</code>. Save in a .csv file</li>
+							<li class='pinata'>Generate and save a table of wines only produced in Chile</li>
+							<li class='pinata'>Save a scatterplot of the wines points vs price and a distribution plot of wine scores</li>
+							</ul>
+							</li>
+							</ul>
 
 						</div>
 					</div>
 				 </section>
 
-				 <section>
-				 <div class="grid-wrapper">
-					 <div class="header">
-						<div class="logo"></div>
-						<div class="section">Analysis workflow</div>
-						<div class="twitter"><a href="https://twitter.com/ixek">
-							<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-						</div>
-					 <div class="content">
-						 <h1 id="Documentation">The art of naming</h1>
-						 <ul class='icon'>
-						 <li><strong>Machine readable </strong>: regex and globbing friendly, deliberate use of delimiters *</li>
-						 <li><strong>Human readable</strong>: contains info on content, connects to concept of slug from semantic URLs</li>
-						 <li><strong>Plays well with default ordering</strong>: put something numeric first, use ISO 8601 for dates <strong>YYYY-MM-DD</strong></li>
-						 </ul>
-						 <p><small>* Avoid spaced, accented characters, files 'foo' and 'Foo' </small></p>
-					 </div>
-				 </div>
-				</section>
-
-				<section>
-				<div class="grid-wrapper">
-					<div class="header">
-					 <div class="logo"></div>
-					 <div class="section">Analysis workflow</div>
-					 <div class="twitter"><a href="https://twitter.com/ixek">
-						 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-					 </div>
-					<div class="content">
-					<div class='images'>
-						<img src="./assets/PyCon/dates_ISO.png" alt="dates Iso">
-					</div>
-					</div>
-				</div>
-			 </section>
-		</section>
-
-				<!-- Start from the beginning section -->
-				<section class="dark_box" style="background-image:url('./assets/PyCon/teatime.jpg');">
-
-				</section>
-
-				<!-- Testing -->
-				<section>
-					<section >
-	 				 <div class="grid-wrapper">
-	 					 <div class="header">
-	 						<div class="logo"></div>
-	 						<div class="section">Testing</div>
-	 						<div class="twitter"><a href="https://twitter.com/ixek">
-	 							<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-	 						</div>
-	 					 <div class="content">
-
-
-	 					 </div>
-	 				 </div>
-	 				</section>
-
-				</section>
-
-
 				 <section >
 				 <div class="grid-wrapper">
 					 <div class="header">
 						<div class="logo"></div>
-						<div class="section">Project structure</div>
+						<div class="section">Processing data</div>
 						<div class="twitter"><a href="https://twitter.com/ixek">
 							<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 						</div>
 					 <div class="content">
-
-
+						 <p>Don't worry you do not have to generate all of the scripts... we have provided some scripts for you to get started.
+						 You should now have a directory called <code>SupportScripts</code></p>
+						 <p>You need to make sure that they are in the appropriate directory inside your newly created project.</p>
+						 <ul>
+						 <li>Noteboks</li>
+						 <li>src/data</li>
+						 <li>src/visualization</li>
+						 </ul>
+						 <p>Once this is done commit your changes to git</p>
+						 <div data-markdown>
+							 ```bash
+							 $ git add .
+							 $ git commit -m "Add processing scripts"
+							 ```
+						 </div>
 					 </div>
 				 </div>
 				</section>
+
+				<section >
+				<div class="grid-wrapper">
+					<div class="header">
+					 <div class="logo"></div>
+					 <div class="section">Processing data</div>
+					 <div class="twitter"><a href="https://twitter.com/ixek">
+						 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					 </div>
+					<div class="content">
+						<h1 id="Documentation">Documentation</h1>
+						<p>Documentation is an important part of a reproducible workflow.</p>
+						<p>Take 5 minutes and identify which scripts/notebook have the best documentation.
+							What makes it a good documentation?</p>
+						<p>A good point to start is checking the <a href="https://google.github.io/styleguide/pyguide.html#Comments">Google Python style guidelines</a></p>
+
+					</div>
+				</div>
+				</section>
+
+				<section >
+				<div class="grid-wrapper">
+					<div class="header">
+					 <div class="logo"></div>
+					 <div class="section">Processing data</div>
+					 <div class="twitter"><a href="https://twitter.com/ixek">
+						 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					 </div>
+					<div class="content">
+						<p>Let's face it.... there are going to be files
+						<strong>LOTS</strong> of files</p>
+						<figure class='display'>
+						<img src="../assets/PyCon/allthefiles.png" alt="files">
+						</figure>
+					</div>
+				</div>
+			 </section>
+
+			 <section >
+			 <div class="grid-wrapper">
+				 <div class="header">
+					<div class="logo"></div>
+					<div class="section">Processing data</div>
+					<div class="twitter"><a href="https://twitter.com/ixek">
+						<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+				 <div class="content">
+					 <h1 id="The-art-of-naming">The art of naming</h1>
+					 <p>The three principles for (file) names:</p>
+					 <ul>
+					 <li><strong>Machine readable </strong>: regex and globbing friendly, deliberate use of delimiters *</li>
+					 <li><strong>Human readable</strong>: contains info on content, connects to concept of slug from semantic URLs</li>
+					 <li><strong>Plays well with default ordering</strong>: put something numeric first, use ISO 8601 for dates <strong>YYYY-MM-DD</strong></li>
+					 </ul>
+					 <p><small>* Avoid spaced, accented characters, files 'foo' and 'Foo' </small></p>
+				 </div>
+			 </div>
+			</section>
+
+			<section >
+			<div class="grid-wrapper">
+				<div class="header">
+				 <div class="logo"></div>
+				 <div class="section">Processing data</div>
+				 <div class="twitter"><a href="https://twitter.com/ixek">
+					 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+				 </div>
+				<div class="content">
+					<div class="images">
+						<img src="../assets/PyCon/dates_ISO.png" alt="">
+					</div>
+				</div>
+			</div>
+		 </section>
+
+		 <section >
+		 <div class="grid-wrapper">
+			 <div class="header">
+				<div class="logo"></div>
+				<div class="section">Processing data</div>
+				<div class="twitter"><a href="https://twitter.com/ixek">
+					<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+				</div>
+			 <div class="content">
+				 <h2 id="What-works-and-what-doesn't">What works and what doesn't
+				 </h2>
+				 <table>
+				   <tr>
+				     <th>🚫 NO</th>
+				     <th>✔ YES</th>
+				   </tr>
+				   <tr>
+				     <td>report.docx</td>
+				     <td>2018-02-03_report-for-sla.docx</td>
+				   </tr>
+				   <tr>
+				     <td>Joey's filename has spaces and punctuation.xlsx</td>
+				     <td>joeys-filenames-are-getting-better.xlsx</td>
+				   </tr>
+				   <tr>
+				     <td>fig 1.png</td>
+				     <td>fig01_scatterplot-talk-length-vs-interest.png</td>
+				   </tr>
+				 </table>
+
+			 </div>
+		 </div>
+		</section>
+
+				<section >
+				<div class="grid-wrapper">
+					<div class="header">
+					 <div class="logo"></div>
+					 <div class="section">Processing data</div>
+					 <div class="twitter"><a href="https://twitter.com/ixek">
+						 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					 </div>
+					<div class="content">
+						<h1 id="The-scripts">The scripts</h1><p>Let's start by checking the scripts and notebooks:</p>
+						<ul>
+						<li><strong>00_explore-data.ipynb</strong>: exploratory analysis </li>
+						<li><strong>01_subset-data-GBP.py</strong>: subset of winemag-130k-v2.csv containing only the following columns: country, designation, points, price (in GBP). Save in a .csv file</li>
+						<li><strong>02_visualize-wines.py</strong></li>
+						<li><strong>03_country-subset.py</strong></li>
+						</ul>
+						<p>From the root of your file system you can run the scripts as follow:</p>
+
+						<pre><code>
+$ python src/data/01_subset-data-GBP.py data/raw/winemag-data-130k-v2.csv
+$ python src/visualization/02_visualize-wines.py data/interim/2018-05-09-winemag_priceGBP.csv
+$ python src/data/03_country-subset.py data/interim/2018-05-09-winemag_priceGBP.csv Chile
+					</code></pre>
+					</div>
+				</div>
+			 </section>
+
+			 <section >
+			 <div class="grid-wrapper">
+				 <div class="header">
+					<div class="logo"></div>
+					<div class="section">Processing data</div>
+					<div class="twitter"><a href="https://twitter.com/ixek">
+						<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+				 <div class="content">
+<h1 id="Packaging">Packaging<a class="anchor-link" href="#Packaging">&#182;</a></h1><p>We used a modular approach here, so we can use and reuse the functions more efficiently.
+The next step it to make a <code>runall</code> script to minimize the user interaction.</p>
+<p>First, we need to make sure that Python recognizes our scripts as a package so we can call functions from the multiple modules.</p>
+<p>From the shell:</p>
+
+<pre><code>$ touch src/data/__init__.py  # Create empty file
+$ touch src/visualization/__init__.py  # Create empty file
+$ touch src/__init__.py</code></pre>
+
+				 </div>
+			 </div>
+			</section>
+
+			<section >
+			<div class="grid-wrapper">
+				<div class="header">
+				 <div class="logo"></div>
+				 <div class="section">Processing data</div>
+				 <div class="twitter"><a href="https://twitter.com/ixek">
+					 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+				 </div>
+				<div class="content">
+					<h1 id="Creating-the-run-all-script">Creating the <code>run all</code> script<a class="anchor-link" href="#Creating-the-run-all-script">&#182;</a></h1><div class='info'>
+					    We will run everything from the root directory.<br>
+					    As such all the paths will be relative to the top level of your project
+					</div><p>Since our modules start with digits (i.e. <code>01</code>, <code>02</code>) we cannot do the import as we'd normally do</p>
+					<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mypackage</span> <span class="kn">import</span> <span class="n">myawesomemodule</span>
+					</pre></div>
+					<p>Instead we need to do it like so:</p>
+					<div class="highlight"><pre><span></span><span class="n">subset</span> <span class="o">=</span> <span class="n">importlib</span><span class="o">.</span><span class="n">import_module</span><span class="p">(</span><span class="s1">&#39;.data.01_subset-data-GBP&#39;</span><span class="p">,</span> <span class="s1">&#39;scripts&#39;</span><span class="p">)</span>
+					<span class="n">plotwines</span> <span class="o">=</span> <span class="n">importlib</span><span class="o">.</span><span class="n">import_module</span><span class="p">(</span><span class="s1">&#39;.visualization.02_visualize-wines&#39;</span><span class="p">,</span> <span class="s1">&#39;scripts&#39;</span><span class="p">)</span>
+					<span class="n">country_sub</span> <span class="o">=</span> <span class="n">importlib</span><span class="o">.</span><span class="n">import_module</span><span class="p">(</span><span class="s1">&#39;.data.03_country-subset&#39;</span><span class="p">,</span> <span class="s1">&#39;scripts&#39;</span><span class="p">)</span>
+					</pre></div>
+					<p>Also we need to make sure the imports are declared in <code>src/__init__.py</code></p>
+					<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">data</span>
+					<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">visualization</span>
+					</pre></div>
+				</div>
+			</div>
+		 </section>
+
+		 <section >
+		 <div class="grid-wrapper">
+		 	<div class="header">
+		 	 <div class="logo"></div>
+		 	 <div class="section">Processing data</div>
+		 	 <div class="twitter"><a href="https://twitter.com/ixek">
+		 		 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+		 	 </div>
+		 	<div class="content">
+				<h3 id="TO-DO:">TO DO:<a class="anchor-link" href="#TO-DO:">&#182;</a></h3><p>How would you do to run the analysis from step 01 (process the data) to 03 subset for a country and plot the results?</p>
+				<p>Once you have done this and make sure you can run it from your shell and commit the changes to git.</p>
+				<p>Note you might need to run this from the shell like so</p>
+
+				<pre><code>python -m scripts.runall-wine-analysis</code></pre>
+
+		 	</div>
+		 </div>
+		 </section>
 
 						<section >
 						<div class="grid-wrapper">
@@ -1195,6 +1350,8 @@ Collected on: 09/05/2018 by Tania Allard
 							 DataCite Metadata Schema </li>
 							 </li>
 							</li>
+							<li><a href="http://mozillascience.github.io/checklist/">
+							Data Reuse Checklist</a> </li>
 						 </ul>
  					 </div>
  				 </div>
