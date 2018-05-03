@@ -805,7 +805,7 @@
 													</div>
 													<div class="content">
 														<h1>Project structure</h1>
-														Good project layout ensures:
+														Good project layout ensures: <br>
 														<ul class='icon'>
 															<li>Integrity of the data</li>
 															<li>Portability of the project</li>
@@ -1238,13 +1238,7 @@ Collected on: 09/05/2018 by Tania Allard
 						<li><strong>02_visualize-wines.py</strong></li>
 						<li><strong>03_country-subset.py</strong></li>
 						</ul>
-						<p>From the root of your file system you can run the scripts as follow:</p>
 
-						<pre><code>
-$ python src/data/01_subset-data-GBP.py data/raw/winemag-data-130k-v2.csv
-$ python src/visualization/02_visualize-wines.py data/interim/2018-05-09-winemag_priceGBP.csv
-$ python src/data/03_country-subset.py data/interim/2018-05-09-winemag_priceGBP.csv Chile
-					</code></pre>
 					</div>
 				</div>
 			 </section>
@@ -1258,16 +1252,36 @@ $ python src/data/03_country-subset.py data/interim/2018-05-09-winemag_priceGBP.
 						<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 					</div>
 				 <div class="content">
-<h1 id="Packaging">Packaging<a class="anchor-link" href="#Packaging">&#182;</a></h1><p>We used a modular approach here, so we can use and reuse the functions more efficiently.
+					You can run them from your shell like so:
+					 <pre><code>
+$ python src/data/01_subset-data-GBP.py data/raw/winemag-data-130k-v2.csv
+$ python src/visualization/02_visualize-wines.py data/interim/2018-05-09-winemag_priceGBP.csv
+$ python src/data/03_country-subset.py data/interim/2018-05-09-winemag_priceGBP.csv Chile
+				 </code></pre>
+
+				 Make sure to be at the root of your directory e.g. <code>reproPython-test</code>
+				 </div>
+			 </div>
+			</section>
+
+			 <section >
+			 <div class="grid-wrapper">
+				 <div class="header">
+					<div class="logo"></div>
+					<div class="section">Processing data</div>
+					<div class="twitter"><a href="https://twitter.com/ixek">
+						<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+				 <div class="content">
+<h1 id="Packaging">Packaging</h1>
+<p>We used a modular approach here, so we can use and reuse the functions more efficiently.
 The next step it to make a <code>runall</code> script to minimize the user interaction.</p>
 <p>First, we need to make sure that Python recognizes our scripts as a package so we can call functions from the multiple modules.</p>
 <p>From the shell:</p>
 
-<pre><code>$ touch src/data/__init__.py  # Create empty file
-$ touch src/visualization/__init__.py  # Create empty file
-$ touch src/__init__.py</code></pre>
-
-				 </div>
+<pre><code>$ touch src/data/__init__.py  	       # Ensures Python understands
+$ touch src/visualization/__init__.py  # that we are creating a package
+$ touch src/__init__.py</code></pre>				 </div>
 			 </div>
 			</section>
 
@@ -1280,17 +1294,18 @@ $ touch src/__init__.py</code></pre>
 					 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 				 </div>
 				<div class="content">
-					<h1 id="Creating-the-run-all-script">Creating the <code>run all</code> script<a class="anchor-link" href="#Creating-the-run-all-script">&#182;</a></h1><div class='info'>
+					<h1 id="Creating-the-run-all-script">Creating the <strong>run all</strong> script
+						</h1>
+					<div class='info'>
 					    We will run everything from the root directory.<br>
 					    As such all the paths will be relative to the top level of your project
-					</div><p>Since our modules start with digits (i.e. <code>01</code>, <code>02</code>) we cannot do the import as we'd normally do</p>
-					<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mypackage</span> <span class="kn">import</span> <span class="n">myawesomemodule</span>
-					</pre></div>
+					</div><p>Since our modules start with digits (i.e. <code>01</code>,
+						<code>02</code>) we cannot do the import as we'd normally do</p>
+				<pre> <code>from mypackage import myAwesomeModule</code> </pre>
 					<p>Instead we need to do it like so:</p>
-					<div class="highlight"><pre><span></span><span class="n">subset</span> <span class="o">=</span> <span class="n">importlib</span><span class="o">.</span><span class="n">import_module</span><span class="p">(</span><span class="s1">&#39;.data.01_subset-data-GBP&#39;</span><span class="p">,</span> <span class="s1">&#39;scripts&#39;</span><span class="p">)</span>
-					<span class="n">plotwines</span> <span class="o">=</span> <span class="n">importlib</span><span class="o">.</span><span class="n">import_module</span><span class="p">(</span><span class="s1">&#39;.visualization.02_visualize-wines&#39;</span><span class="p">,</span> <span class="s1">&#39;scripts&#39;</span><span class="p">)</span>
-					<span class="n">country_sub</span> <span class="o">=</span> <span class="n">importlib</span><span class="o">.</span><span class="n">import_module</span><span class="p">(</span><span class="s1">&#39;.data.03_country-subset&#39;</span><span class="p">,</span> <span class="s1">&#39;scripts&#39;</span><span class="p">)</span>
-					</pre></div>
+				<pre><code>subset = importlib.import_module('.data.01_subset-data-GBP', 'scripts')
+plotwines = importlib.import_module('.visualization.02_visualize-wines', 'scripts')
+country_sub = importlib.import_module('.data.03_country-subset', 'scripts')</code> </pre>
 					<p>Also we need to make sure the imports are declared in <code>src/__init__.py</code></p>
 					<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">data</span>
 					<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">visualization</span>
@@ -1301,6 +1316,22 @@ $ touch src/__init__.py</code></pre>
 
 		 <section >
 		 <div class="grid-wrapper">
+			 <div class="header">
+				<div class="logo"></div>
+				<div class="section">Processing data</div>
+				<div class="twitter"><a href="https://twitter.com/ixek">
+					<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+				</div>
+			 <div class="content">
+				 Also we need to make sure the imports are declared in src/__init__.py
+				 <pre><code>from . import data
+from . import visualization</code> </pre>
+			 </div>
+		 </div>
+		</section>
+
+		 <section >
+		 <div class="grid-wrapper">
 		 	<div class="header">
 		 	 <div class="logo"></div>
 		 	 <div class="section">Processing data</div>
@@ -1308,7 +1339,8 @@ $ touch src/__init__.py</code></pre>
 		 		 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 		 	 </div>
 		 	<div class="content">
-				<h3 id="TO-DO:">TO DO:<a class="anchor-link" href="#TO-DO:">&#182;</a></h3><p>How would you do to run the analysis from step 01 (process the data) to 03 subset for a country and plot the results?</p>
+				<h3 id="TO-DO:">TO DO:</h3>
+				<p>How would you do to run the analysis from step 01 (process the data) to 03 subset for a country and plot the results?</p>
 				<p>Once you have done this and make sure you can run it from your shell and commit the changes to git.</p>
 				<p>Note you might need to run this from the shell like so</p>
 
