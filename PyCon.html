@@ -1114,9 +1114,48 @@ Collected on: 09/05/2018 by Tania Allard
 				 </div>
 				</section>
 
-			<!-- Documentation and naming section -->
-			<section>
-			 <section >
+				<!-- Documentation and naming section -->
+				<section>
+				 <section >
+					<div class="grid-wrapper">
+						<div class="header">
+						 <div class="logo"></div>
+						 <div class="section">Processing data</div>
+						 <div class="twitter"><a href="https://twitter.com/ixek">
+							 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+						 </div>
+						<div class="content">
+							<p>Let's face it.... there are going to be files
+							<strong>LOTS</strong> of files</p>
+							<figure class='display'>
+							<img src="./assets/PyCon/allthefiles.png" alt="files">
+							</figure>
+						</div>
+					</div>
+				 </section>
+
+				 <section >
+				 <div class="grid-wrapper">
+					 <div class="header">
+						<div class="logo"></div>
+						<div class="section">Processing data</div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+							<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+						</div>
+					 <div class="content">
+						 <h1 id="The-art-of-naming">The art of naming</h1>
+						 <p>The three principles for (file) names:</p>
+						 <ul>
+						 <li><strong>Machine readable </strong>: regex and globbing friendly, deliberate use of delimiters *</li>
+						 <li><strong>Human readable</strong>: contains info on content, connects to concept of slug from semantic URLs</li>
+						 <li><strong>Plays well with default ordering</strong>: put something numeric first, use ISO 8601 for dates <strong>YYYY-MM-DD</strong></li>
+						 </ul>
+						 <p><small>* Avoid spaced, accented characters, files 'foo' and 'Foo' </small></p>
+					 </div>
+				 </div>
+				</section>
+
+				<section >
 				<div class="grid-wrapper">
 					<div class="header">
 					 <div class="logo"></div>
@@ -1125,11 +1164,9 @@ Collected on: 09/05/2018 by Tania Allard
 						 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 					 </div>
 					<div class="content">
-						<p>Let's face it.... there are going to be files
-						<strong>LOTS</strong> of files</p>
-						<figure class='display'>
-						<img src="./assets/PyCon/allthefiles.png" alt="files">
-						</figure>
+						<div class="images">
+							<img src="./assets/PyCon/dates_ISO.png" alt="">
+						</div>
 					</div>
 				</div>
 			 </section>
@@ -1143,16 +1180,30 @@ Collected on: 09/05/2018 by Tania Allard
 						<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 					</div>
 				 <div class="content">
-					 <h1 id="The-art-of-naming">The art of naming</h1>
-					 <p>The three principles for (file) names:</p>
-					 <ul>
-					 <li><strong>Machine readable </strong>: regex and globbing friendly, deliberate use of delimiters *</li>
-					 <li><strong>Human readable</strong>: contains info on content, connects to concept of slug from semantic URLs</li>
-					 <li><strong>Plays well with default ordering</strong>: put something numeric first, use ISO 8601 for dates <strong>YYYY-MM-DD</strong></li>
-					 </ul>
-					 <p><small>* Avoid spaced, accented characters, files 'foo' and 'Foo' </small></p>
+					 <h2 id="What-works-and-what-doesn't">What works and what doesn't
+					 </h2>
+					 <table>
+					   <tr>
+					     <th>🚫 NO</th>
+					     <th>✔ YES</th>
+					   </tr>
+					   <tr>
+					     <td>report.docx</td>
+					     <td>2018-02-03_report-for-sla.docx</td>
+					   </tr>
+					   <tr>
+					     <td>Joey's filename has spaces and punctuation.xlsx</td>
+					     <td>joeys-filenames-are-getting-better.xlsx</td>
+					   </tr>
+					   <tr>
+					     <td>fig 1.png</td>
+					     <td>fig01_scatterplot-talk-length-vs-interest.png</td>
+					   </tr>
+					 </table>
+
+					 </div>
 				 </div>
-			 </div>
+				</section>
 			</section>
 
 			<section >
@@ -1164,94 +1215,71 @@ Collected on: 09/05/2018 by Tania Allard
 					 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 				 </div>
 				<div class="content">
-					<div class="images">
-						<img src="./assets/PyCon/dates_ISO.png" alt="">
-					</div>
+					<h1>Running Jupyter Lab</h1>
+					We will be using Jupyter lab to write, execute, and modify our scripts and notebooks.
+
+					You should have this installed already. We are going to start an instance
+					by typing on the shell:
+					<pre><code>$ jupyter lab</code> </pre>
 				</div>
 			</div>
-		 </section>
-
-		 <section >
-		 <div class="grid-wrapper">
-			 <div class="header">
-				<div class="logo"></div>
-				<div class="section">Processing data</div>
-				<div class="twitter"><a href="https://twitter.com/ixek">
-					<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-				</div>
-			 <div class="content">
-				 <h2 id="What-works-and-what-doesn't">What works and what doesn't
-				 </h2>
-				 <table>
-				   <tr>
-				     <th>🚫 NO</th>
-				     <th>✔ YES</th>
-				   </tr>
-				   <tr>
-				     <td>report.docx</td>
-				     <td>2018-02-03_report-for-sla.docx</td>
-				   </tr>
-				   <tr>
-				     <td>Joey's filename has spaces and punctuation.xlsx</td>
-				     <td>joeys-filenames-are-getting-better.xlsx</td>
-				   </tr>
-				   <tr>
-				     <td>fig 1.png</td>
-				     <td>fig01_scatterplot-talk-length-vs-interest.png</td>
-				   </tr>
-				 </table>
-
-				 </div>
-			 </div>
 			</section>
-		</section>
 
-		<section >
-		<div class="grid-wrapper">
-			<div class="header">
-			 <div class="logo"></div>
-			 <div class="section">Processing data</div>
-			 <div class="twitter"><a href="https://twitter.com/ixek">
-				 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-			 </div>
-			<div class="content">
-				<h1>Running Jupyter Lab</h1>
-				We will be using Jupyter lab to write, execute, and modify our scripts and notebooks.
-
-				You should have this installed already. We are going to start an instance
-				by typing on the shell:
-				<pre><code>$ jupyter lab</code> </pre>
-			</div>
-		</div>
-		</section>
-
-		<!-- Scripting section -->
-		<section>
-				<section >
-				<div class="grid-wrapper">
-					<div class="header">
-					 <div class="logo"></div>
-					 <div class="section">Processing data</div>
-					 <div class="twitter"><a href="https://twitter.com/ixek">
-						 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-					 </div>
-					<div class="content">
-						<h1 id="The-scripts">The scripts</h1><p>Let's start by checking the scripts and notebooks:</p>
-						<ul>
-						<li><strong>00_explore-data.ipynb</strong>: exploratory analysis </li>
-						<li><strong>01_subset-data-GBP.py</strong>: subset of winemag-130k-v2.csv containing only the following columns: country, designation, points, price (in GBP). Save in a .csv file</li>
-						<li><strong>02_visualize-wines.py</strong></li>
-						<li><strong>03_country-subset.py</strong></li>
-						</ul>
-						<br>
-						<div class="info">
-							The best file names are self exploratory
+			<!-- Scripting section -->
+			<section>
+					<section >
+					<div class="grid-wrapper">
+						<div class="header">
+						 <div class="logo"></div>
+						 <div class="section">Processing data</div>
+						 <div class="twitter"><a href="https://twitter.com/ixek">
+							 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+						 </div>
+						<div class="content">
+							<h1 id="The-scripts">The scripts</h1><p>Let's start by checking the scripts and notebooks:</p>
+							<ul>
+							<li><strong>00_explore-data.ipynb</strong>: exploratory analysis </li>
+							<li><strong>01_subset-data-GBP.py</strong>: subset of winemag-130k-v2.csv containing only the following columns: country, designation, points, price (in GBP). Save in a .csv file</li>
+							<li><strong>02_visualize-wines.py</strong></li>
+							<li><strong>03_country-subset.py</strong></li>
+							</ul>
+							<br>
+							<div class="info">
+								The best file names are self exploratory
+							</div>
 						</div>
 					</div>
-				</div>
-			 </section>
+				 </section>
 
-			 <section >
+				 <section >
+				 <div class="grid-wrapper">
+					 <div class="header">
+						<div class="logo"></div>
+						<div class="section">Processing data</div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+							<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+						</div>
+					 <div class="content">
+						You can run them from your shell like so:
+						 <pre><code>
+	$ python src/data/01_subset-data-GBP.py data/raw/winemag-data-130k-v2.csv
+	$ python src/visualization/02_visualize-wines.py data/interim/2018-05-09-winemag_priceGBP.csv
+	$ python src/data/03_country-subset.py data/interim/2018-05-09-winemag_priceGBP.csv Chile
+					 </code></pre>
+
+					 Make sure to be at the root of your directory e.g. <code>reproPython-test</code>
+					 <br>
+					 😕 What problems did you encounter?
+					 <p class='fragment'>
+						Besides, this gets quite boring pretty soon
+						and still depends a lot on the user.
+					 </p>
+					 </div>
+				 </div>
+				</section>
+			</section>
+
+			<section >
 			 <div class="grid-wrapper">
 				 <div class="header">
 					<div class="logo"></div>
@@ -1260,161 +1288,498 @@ Collected on: 09/05/2018 by Tania Allard
 						<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 					</div>
 				 <div class="content">
-					You can run them from your shell like so:
-					 <pre><code>
-$ python src/data/01_subset-data-GBP.py data/raw/winemag-data-130k-v2.csv
-$ python src/visualization/02_visualize-wines.py data/interim/2018-05-09-winemag_priceGBP.csv
-$ python src/data/03_country-subset.py data/interim/2018-05-09-winemag_priceGBP.csv Chile
-				 </code></pre>
+					 <h1 id="Documentation">Documentation</h1>
+					 <p>Documentation is an important part of a reproducible workflow.</p>
+					 <p>Take 5 minutes and identify which scripts/notebook have the best documentation.
+						 What makes it a good documentation?</p>
+					 <p>A good point to start is checking the <a href="https://google.github.io/styleguide/pyguide.html#Comments">Google Python style guidelines</a></p>
 
-				 Make sure to be at the root of your directory e.g. <code>reproPython-test</code>
-				 <br>
-				 😕 What problems did you encounter?
-				 <p class='fragment'>
-					Besides, this gets quite boring pretty soon
-					and still depends a lot on the user.
-				 </p>
 				 </div>
 			 </div>
-			</section>
-		</section>
+			 </section>
 
-		<section >
-		 <div class="grid-wrapper">
-			 <div class="header">
-				<div class="logo"></div>
-				<div class="section">Processing data</div>
-				<div class="twitter"><a href="https://twitter.com/ixek">
-					<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-				</div>
-			 <div class="content">
-				 <h1 id="Documentation">Documentation</h1>
-				 <p>Documentation is an important part of a reproducible workflow.</p>
-				 <p>Take 5 minutes and identify which scripts/notebook have the best documentation.
-					 What makes it a good documentation?</p>
-				 <p>A good point to start is checking the <a href="https://google.github.io/styleguide/pyguide.html#Comments">Google Python style guidelines</a></p>
+						<!-- Automation section -->
+						<section>
+							<section >
+							<div class="grid-wrapper">
+								<div class="header">
+								 <div class="logo"></div>
+								 <div class="section">Automation</div>
+								 <div class="twitter"><a href="https://twitter.com/ixek">
+									 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+								 </div>
+								<div class="content">
+									<div class="images">
+										<img src="./assets/ManchesteR/automate.png">
+									</div>
+								</div>
+							</div>
+						 </section>
 
-			 </div>
-		 </div>
-		 </section>
+							 <section >
+							 <div class="grid-wrapper">
+								 <div class="header">
+									<div class="logo"></div>
+									<div class="section">Automation</div>
+									<div class="twitter"><a href="https://twitter.com/ixek">
+										<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+									</div>
+								 <div class="content">
+				<h1 id="Packaging">Packaging</h1>
+				<p>We used a modular approach here, so we can use and reuse the functions more efficiently.
+				The next step it to make a <code>runall</code> script to minimize the user interaction.</p>
+				<p>First, we need to make sure that Python recognizes our scripts as a package so we can call functions from the multiple modules.</p>
+				<p>From the shell:</p>
 
-		<!-- Automation section -->
-		<section>
-			<section >
-			<div class="grid-wrapper">
-				<div class="header">
-				 <div class="logo"></div>
-				 <div class="section">Automation</div>
-				 <div class="twitter"><a href="https://twitter.com/ixek">
-					 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-				 </div>
-				<div class="content">
-					<div class="images">
-						<img src="./assets/ManchesteR/automate.png">
+				<pre><code>$ touch src/data/__init__.py  	       # Ensures Python understands
+				$ touch src/visualization/__init__.py  # that we are creating a package
+				$ touch src/__init__.py</code></pre>				 </div>
+							 </div>
+							</section>
+
+							<section >
+							<div class="grid-wrapper">
+								<div class="header">
+								 <div class="logo"></div>
+								 <div class="section">Automation</div>
+								 <div class="twitter"><a href="https://twitter.com/ixek">
+									 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+								 </div>
+								<div class="content">
+									<h1 id="Creating-the-run-all-script">Creating the <strong>run all</strong> script
+										</h1>
+									<div class='info'>
+									    We will run everything from the root directory.<br>
+									    As such all the paths will be relative to the top level of your project
+									</div><p>Since our modules start with digits (i.e. <code>01</code>,
+										<code>02</code>) we cannot do the import as we'd normally do</p>
+								<pre> <code>from mypackage import myAwesomeModule</code> </pre>
+								</div>
+							</div>
+						 </section>
+
+						 <section >
+						 <div class="grid-wrapper">
+							 <div class="header">
+								<div class="logo"></div>
+								<div class="section">Automation</div>
+								<div class="twitter"><a href="https://twitter.com/ixek">
+									<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+								</div>
+							 <div class="content">
+								 <p>Instead we need to do it like so:</p>
+							 <pre><code>subset = importlib.import_module('.data.01_subset-data-GBP', 'scripts')
+				plotwines = importlib.import_module('.visualization.02_visualize-wines', 'scripts')
+				country_sub = importlib.import_module('.data.03_country-subset', 'scripts')</code> </pre>
+							Also, we need to make sure that the other subpackages/modules are imported
+							correctly.
+							Add the following to <code>src/__init__.py</code>
+							<pre><code>from . import data
+				from . import visualization</code> </pre>
+							 </div>
+						 </div>
+						</section>
+
+						 <section >
+						 <div class="grid-wrapper">
+						 	<div class="header">
+						 	 <div class="logo"></div>
+						 	 <div class="section">Processing data</div>
+						 	 <div class="twitter"><a href="https://twitter.com/ixek">
+						 		 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+						 	 </div>
+						 	<div class="content">
+								<h3 id="TO-DO:">TO DO:</h3>
+								<p>How would you do to run the analysis from step 01 (process the data) to 03 subset for a country and plot the results?</p>
+								<p>Once you have done this and make sure you can run it from your shell and commit the changes to git.</p>
+								<p>Note you might need to run this from the shell like so</p>
+
+								<pre><code>python -m scripts.runall-wine-analysis</code></pre>
+
+						 	</div>
+						 </div>
+						 </section>
+					 </section>
+
+					 <!-- Testing section -->
+				 <section>
+
+					 <section >
+					 <div class="grid-wrapper">
+					 	<div class="header">
+					 	 <div class="logo"></div>
+					 	 <div class="section">Testing</div>
+					 	 <div class="twitter"><a href="https://twitter.com/ixek">
+					 		 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					 	 </div>
+					 	<div class="content">
+							<h1>Testing</h1>
+							We now have a fully automated script! 🎉👏🏻🦄</p>
+							<p>😕 Such a shame we still cannot guarantee the results are
+								correct... or that there are no bugs.</p>
+							<p>The next step is to include <strong>tests</strong>... in fact
+								 testing should be a core part of our development process.
+								 In fact all of our <strong>reproducible workflows</strong>
+								 are analogous to experimental design in the scientific world</p>
+					 	</div>
+					 </div>
+					 </section>
+
+					 <section >
+					 <div class="grid-wrapper">
+					 	<div class="header">
+					 	 <div class="logo"></div>
+					 	 <div class="section">Testing</div>
+					 	 <div class="twitter"><a href="https://twitter.com/ixek">
+					 		 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					 	 </div>
+					 	<div class="content">
+							<figure class="display">
+								<img src="./assets/PyCon/the_difference.png" alt="science" height="500px;">
+							</figure>
+						<small> <a href="https://xkcd.com/242/">https://xkcd.com/242/</a> </small>
+					 	</div>
+					 </div>
+					 </section>
+
+					 <section >
+					 <div class="grid-wrapper">
+					 	<div class="header">
+					 	 <div class="logo"></div>
+					 	 <div class="section">Testing</div>
+					 	 <div class="twitter"><a href="https://twitter.com/ixek">
+					 		 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					 	 </div>
+					 	<div class="content">
+							<p>There are various approaches to test software:</p>
+							<ul class='icon'>
+							<li><strong>Assertions</strong>: 🦄 == 🦄</li>
+							<li><strong>Exceptions</strong>: (within the code) serve as warnings ⚠️</li>
+							<li><strong>Unit tests</strong>: investigate the behaviour of units of code (e.g functions)</li>
+							<li><strong>Regression tests</strong>: defends against 🐛</li>
+							<li><strong>Integration tests</strong>: ⚙️ checks that the pieces work together as expected</li>
+							</ul>
+					 	</div>
+					 </div>
+					 </section>
+
+					 <section >
+					 <div class="grid-wrapper">
+					 	<div class="header">
+					 	 <div class="logo"></div>
+					 	 <div class="section">Testing</div>
+					 	 <div class="twitter"><a href="https://twitter.com/ixek">
+					 		 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					 	 </div>
+					 	<div class="content">
+							<h2>Exceptions</h2>
+							<p>Remember when you tried to run <code>02_visualize-wines.py</code>?
+							  It woud not work unless you had created a figures directory beforehand.</p>
+							<p>We can catch this kinds of errors by adding this piece of code:</p>
+						<div data-markdown>
+```Python
+try:
+        # try to save the figure
+        fig.savefig(fname, bbox_inches = 'tight')
+    except OSError as e:
+        # wowza! the directory does not exist
+        os.makedirs('figures')
+        print('Creating figures directory')
+        fig.savefig(fname, bbox_inches='tight')
+```</div>
+						<p>Now our <code>runall script</code> should work!!! 🎉🎉</p>
+
+						<pre><code>$ python src.runall-wine-analysis</code></pre>
+						</div>
+					 	</div>
+					 </section>
+
+					 <section >
+					 <div class="grid-wrapper">
+					 	<div class="header">
+					 	 <div class="logo"></div>
+					 	 <div class="section">Testing</div>
+					 	 <div class="twitter"><a href="https://twitter.com/ixek">
+					 		 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					 	 </div>
+					 	<div class="content">
+							<h2>Unit testing</h2>
+							<p>Open <code>03_country-subset.py</code> and add the following function:</p>
+							<div data-markdown>
+```python
+def get_mean_price(filename):
+    """ function to get the mean price of the wines
+    rounded to 4 decimals"""
+    wine = pd.read_csv(filename)
+    mean_price = wine['price'].mean()
+    return round(mean_price, 4)  # note the rounding here
+```
+							</div>
+					 	</div>
+					 </div>
+					 </section>
+
+					 <section >
+					 <div class="grid-wrapper">
+						<div class="header">
+						 <div class="logo"></div>
+						 <div class="section">Testing</div>
+						 <div class="twitter"><a href="https://twitter.com/ixek">
+							 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+						 </div>
+						<div class="content">
+							An modify the get_country function
+							<div data-markdown>
+					```python
+					def get_country(filename, country):
+						# Load table
+						wine = pd.read_csv(filename)
+
+						# Use the country name to subset data
+						subset_country = wine[wine['country'] == country ].copy()
+
+						# Constructing the fname
+						today = datetime.datetime.today().strftime('%Y-%m-%d')
+						fname = f'data/processed/{today}-winemag_{country}.csv'
+
+						# Saving the csv
+						subset_country.to_csv(fname)
+						print(fname)  # print the fname from here
+
+						return(subset_country)  #returns the data frame```
+							</div>
+						</div>
+					 </div>
+					 </section>
+
+					 <section >
+					 <div class="grid-wrapper">
+					 	<div class="header">
+					 	 <div class="logo"></div>
+					 	 <div class="section">Testing</div>
+					 	 <div class="twitter"><a href="https://twitter.com/ixek">
+					 		 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					 	 </div>
+					 	<div class="content">
+							<h2>Create the testing suite</h2>
+							To run the tests we are going to use <strong>pytest</strong>.
+							You can find more information in the following resources:</p>
+							<ul>
+							<li>Pytest usage examples can be found <a href="http://doc.pytest.org/en/latest/usage.html">here</a></li>
+							<li>Rules for <a href="http://doc.pytest.org/en/latest/goodpractices.html">test discovery</a></li>
+							</ul>
+							<p>Now we can create our tests:</p>
+
+							<pre><code>$ mkdir tests                     # Create tests directory
+							$ touch tests/__init__.py         # Help find the test
+							$ touch test_03_country_subset.py # Create our first test</code></pre>
+							<p>⭐ Your test scripts name must start with: <code>test</code></p>
+					 	</div>
+					 </div>
+					 </section>
+
+					 <section >
+					 <div class="grid-wrapper">
+					 	<div class="header">
+					 	 <div class="logo"></div>
+					 	 <div class="section">Testing</div>
+					 	 <div class="twitter"><a href="https://twitter.com/ixek">
+					 		 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					 	 </div>
+					 	<div class="content">
+							Modifying <code>test_03_country_subset.py</code>
+						<div data-markdown>
+``` python
+import importlib
+
+country = importlib.import_module('.data.03_country-subset', 'src')
+
+interim_data = "data/interim/2018-05-09-winemag_priceGBP.csv"
+processed_data = "data/processed/2018-05-03-winemag_Chile.csv"
+
+def test_get_mean_price():
+    mean_price = country.get_mean_price(processed_data)
+    assert mean_price == 20.7865
+	```
 					</div>
-				</div>
-			</div>
-		 </section>
+					Run from the shell using <code>pytest</code>
+					 	</div>
+					 </div>
+					 </section>
 
-			 <section >
-			 <div class="grid-wrapper">
-				 <div class="header">
-					<div class="logo"></div>
-					<div class="section">Automation</div>
-					<div class="twitter"><a href="https://twitter.com/ixek">
-						<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-					</div>
-				 <div class="content">
-<h1 id="Packaging">Packaging</h1>
-<p>We used a modular approach here, so we can use and reuse the functions more efficiently.
-The next step it to make a <code>runall</code> script to minimize the user interaction.</p>
-<p>First, we need to make sure that Python recognizes our scripts as a package so we can call functions from the multiple modules.</p>
-<p>From the shell:</p>
+					 <section >
+					 <div class="grid-wrapper">
+					 	<div class="header">
+					 	 <div class="logo"></div>
+					 	 <div class="section">Testing</div>
+					 	 <div class="twitter"><a href="https://twitter.com/ixek">
+					 		 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					 	 </div>
+					 	<div class="content">
+							<h3>What else could go wrong?</h3>
+							What if we created a data set and we want to make sure that my interim
+							or raw data has not changed? -> What about my dataframes?
+							<div data-markdown>
+								```python
+import pandas.testing as pdt
+import pandas as pd
 
-<pre><code>$ touch src/data/__init__.py  	       # Ensures Python understands
-$ touch src/visualization/__init__.py  # that we are creating a package
-$ touch src/__init__.py</code></pre>				 </div>
-			 </div>
-			</section>
 
-			<section >
-			<div class="grid-wrapper">
-				<div class="header">
-				 <div class="logo"></div>
-				 <div class="section">Automation</div>
-				 <div class="twitter"><a href="https://twitter.com/ixek">
-					 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-				 </div>
-				<div class="content">
-					<h1 id="Creating-the-run-all-script">Creating the <strong>run all</strong> script
-						</h1>
-					<div class='info'>
-					    We will run everything from the root directory.<br>
-					    As such all the paths will be relative to the top level of your project
-					</div><p>Since our modules start with digits (i.e. <code>01</code>,
-						<code>02</code>) we cannot do the import as we'd normally do</p>
-				<pre> <code>from mypackage import myAwesomeModule</code> </pre>
-				</div>
-			</div>
-		 </section>
+interim_data = "data/interim/2018-05-09-winemag_priceGBP.csv"
+processed_data = "data/processed/2018-05-09-winemag_Chile.csv"
 
-		 <section >
-		 <div class="grid-wrapper">
-			 <div class="header">
-				<div class="logo"></div>
-				<div class="section">Automation</div>
-				<div class="twitter"><a href="https://twitter.com/ixek">
-					<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-				</div>
-			 <div class="content">
-				 <p>Instead we need to do it like so:</p>
-			 <pre><code>subset = importlib.import_module('.data.01_subset-data-GBP', 'scripts')
-plotwines = importlib.import_module('.visualization.02_visualize-wines', 'scripts')
-country_sub = importlib.import_module('.data.03_country-subset', 'scripts')</code> </pre>
-			Also, we need to make sure that the other subpackages/modules are imported
-			correctly.
-			Add the following to <code>src/__init__.py</code>
-			<pre><code>from . import data
-from . import visualization</code> </pre>
-			 </div>
-		 </div>
-		</section>
+def test_get_country():
+    # call the function
+    df = country.get_country(interim_data, 'Chile')
 
-		 <section >
-		 <div class="grid-wrapper">
-		 	<div class="header">
-		 	 <div class="logo"></div>
-		 	 <div class="section">Processing data</div>
-		 	 <div class="twitter"><a href="https://twitter.com/ixek">
-		 		 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-		 	 </div>
-		 	<div class="content">
-				<h3 id="TO-DO:">TO DO:</h3>
-				<p>How would you do to run the analysis from step 01 (process the data) to 03 subset for a country and plot the results?</p>
-				<p>Once you have done this and make sure you can run it from your shell and commit the changes to git.</p>
-				<p>Note you might need to run this from the shell like so</p>
+    # load my previous dataset
+    base = pd.read_csv(processed_data)
 
-				<pre><code>python -m scripts.runall-wine-analysis</code></pre>
+    # check if I am getting a dataframe
+    assert isinstance(df, pd.DataFrame)
+    assert isinstance(base, pd.DataFrame)
 
-		 	</div>
-		 </div>
-		 </section>
-	 </section>
+    # check that they are the same dataframes
+    pdt.assert_frame_equal(df, base)
+```
+							</div>
+					 	</div>
+					 </div>
+					 </section>
+
+					 <section >
+					 <div class="grid-wrapper">
+					 	<div class="header">
+					 	 <div class="logo"></div>
+					 	 <div class="section">Testing</div>
+					 	 <div class="twitter"><a href="https://twitter.com/ixek">
+					 		 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					 	 </div>
+					 	<div class="content">
+							<h3>See what we just did?</h3>
+							<p>We tested each of the functions in our module. <br>
+							Notice something in the functions we just wrote?</p>
+							<ul>
+							<li>Set-up: <code>mean = country.get_mean(interim_data)</code></li>
+							<li>Assertions: <code>assert mean_price == 20.786</code></li>
+							</ul>
+							<p>Now don't forget to commit your code:</p>
+
+							<pre><code>$ git add .
+$ git commit -m "Add unit test suite"</code></pre>
+					 	</div>
+					 </div>
+					 </section>
+
+
+					 <section >
+					 <div class="grid-wrapper">
+					 	<div class="header">
+					 	 <div class="logo"></div>
+					 	 <div class="section">Testing</div>
+					 	 <div class="twitter"><a href="https://twitter.com/ixek">
+					 		 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					 	 </div>
+					 	<div class="content">
+							<h2>Past as truth</h2>
+							<p>Regression tests assume that the past is “correct.” They are
+								great for letting developers know when and how a code base has
+								changed. They are not great for letting anyone know why the
+								change occurred. The change between what a code produces now
+								and what it computed before is called a regression.</p>
+							<p><strong> How many times have you tried to run a script or a
+								notebook you found online just to realize it is broken?</strong></p>
+							<p>Let's do some regression testing on the Jupyter notebook using
+								<a href="https://github.com/computationalmodelling/nbval">nbval</a></p>
+					 	</div>
+					 </div>
+					 </section>
+
+
+					 <section >
+					 <div class="grid-wrapper">
+					 	<div class="header">
+					 	 <div class="logo"></div>
+					 	 <div class="section">Testing</div>
+					 	 <div class="twitter"><a href="https://twitter.com/ixek">
+					 		 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					 	 </div>
+					 	<div class="content">
+							<p>We first need to understand how a Jupyter notebook works.
+							All the data is stored in a .json like format (organised key,
+							data values)... this includes the results, code, and markdown.</p>
+							<p><img src="assets/PyCon/json.jpg" alt="json"></p>
+							<p>Nbval checks the stored values while doing a <em>mock run</em>
+								on the notebook and compares the saved version of the notebook
+								 vs the results obtained from the mock run</p>
+					 	</div>
+					 </div>
+					 </section>
+
+
+					 <section >
+					 <div class="grid-wrapper">
+					 	<div class="header">
+					 	 <div class="logo"></div>
+					 	 <div class="section">Testing</div>
+					 	 <div class="twitter"><a href="https://twitter.com/ixek">
+					 		 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					 	 </div>
+					 	<div class="content">
+							<p>Try it on your shell</p>
+
+							<pre><code>$ pytest --nbval src/data/00_explore-data.ipynb</code></pre>
+							<p>What would happen if you were to have a cell like this one?</p>
+							<pre><code>import time
+print('This notebook was last run on: ' + time.strftime('%d/%m/%y') + ' at: ' + time.strftime('%H:%M:%S'))
+</code></pre>
+
+					 	</div>
+					 </div>
+					 </section>
 
 						<section >
 						<div class="grid-wrapper">
 							<div class="header">
 							 <div class="logo"></div>
-							 <div class="section">Project structure</div>
+							 <div class="section">Testing</div>
 							 <div class="twitter"><a href="https://twitter.com/ixek">
 								 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 							 </div>
 							<div class="content">
-
-
+								<h1>Provenance</h1>
+								Image you created a beautiful graph and some results that makes
+								your research Nobel worthy. Of course you ran the workflow multiple
+								 times doing minimal changes every single time. But now, 6 months
+								 later you need that **one** plot for you Nobel!!
+							<br><br>
+							We can use the package <a href="https://github.com/recipy/recipy">recipy</a>
+							to log each run of your code to a database, keeping track of the input files,
+							output files and the version of your code, and then let you query this database
+							 to find out how you actually did create graph.png
 							</div>
 						</div>
 					 </section>
+
+					 <section >
+					 <div class="grid-wrapper">
+					 	<div class="header">
+					 	 <div class="logo"></div>
+					 	 <div class="section">Testing</div>
+					 	 <div class="twitter"><a href="https://twitter.com/ixek">
+					 		 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					 	 </div>
+					 	<div class="content">
+							<div class='warn'>Make sure everything is commited to git before carrying on.</div>
+<br>
+Add the following line to your `runall-wine-analysis` script
+<pre><code>import recipy</code> </pre>
+Note that this has to be the firts import
+Run the script again <code>python -m src.runall-wine-analysis</code>
+					 	</div>
+					 </div>
+					 </section>
+				 </section>
 
 				<!-- Additional resources -->
 				<section >
