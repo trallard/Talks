@@ -1114,26 +1114,9 @@ Collected on: 09/05/2018 by Tania Allard
 				 </div>
 				</section>
 
-				<section >
-				<div class="grid-wrapper">
-					<div class="header">
-					 <div class="logo"></div>
-					 <div class="section">Processing data</div>
-					 <div class="twitter"><a href="https://twitter.com/ixek">
-						 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-					 </div>
-					<div class="content">
-						<h1 id="Documentation">Documentation</h1>
-						<p>Documentation is an important part of a reproducible workflow.</p>
-						<p>Take 5 minutes and identify which scripts/notebook have the best documentation.
-							What makes it a good documentation?</p>
-						<p>A good point to start is checking the <a href="https://google.github.io/styleguide/pyguide.html#Comments">Google Python style guidelines</a></p>
-
-					</div>
-				</div>
-				</section>
-
-				<section >
+			<!-- Documentation and naming section -->
+			<section>
+			 <section >
 				<div class="grid-wrapper">
 					<div class="header">
 					 <div class="logo"></div>
@@ -1145,7 +1128,7 @@ Collected on: 09/05/2018 by Tania Allard
 						<p>Let's face it.... there are going to be files
 						<strong>LOTS</strong> of files</p>
 						<figure class='display'>
-						<img src="../assets/PyCon/allthefiles.png" alt="files">
+						<img src="./assets/PyCon/allthefiles.png" alt="files">
 						</figure>
 					</div>
 				</div>
@@ -1182,7 +1165,7 @@ Collected on: 09/05/2018 by Tania Allard
 				 </div>
 				<div class="content">
 					<div class="images">
-						<img src="../assets/PyCon/dates_ISO.png" alt="">
+						<img src="./assets/PyCon/dates_ISO.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -1218,10 +1201,32 @@ Collected on: 09/05/2018 by Tania Allard
 				   </tr>
 				 </table>
 
+				 </div>
 			 </div>
-		 </div>
+			</section>
 		</section>
 
+		<section >
+		<div class="grid-wrapper">
+			<div class="header">
+			 <div class="logo"></div>
+			 <div class="section">Processing data</div>
+			 <div class="twitter"><a href="https://twitter.com/ixek">
+				 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+			 </div>
+			<div class="content">
+				<h1>Running Jupyter Lab</h1>
+				We will be using Jupyter lab to write, execute, and modify our scripts and notebooks.
+
+				You should have this installed already. We are going to start an instance
+				by typing on the shell:
+				<pre><code>$ jupyter lab</code> </pre>
+			</div>
+		</div>
+		</section>
+
+		<!-- Scripting section -->
+		<section>
 				<section >
 				<div class="grid-wrapper">
 					<div class="header">
@@ -1238,7 +1243,10 @@ Collected on: 09/05/2018 by Tania Allard
 						<li><strong>02_visualize-wines.py</strong></li>
 						<li><strong>03_country-subset.py</strong></li>
 						</ul>
-
+						<br>
+						<div class="info">
+							The best file names are self exploratory
+						</div>
 					</div>
 				</div>
 			 </section>
@@ -1260,15 +1268,58 @@ $ python src/data/03_country-subset.py data/interim/2018-05-09-winemag_priceGBP.
 				 </code></pre>
 
 				 Make sure to be at the root of your directory e.g. <code>reproPython-test</code>
+
+				 <p class='fragment'>
+					The only problem with this is that this gets quite boring pretty soon
+					and still depends a lot on the user.
+				 </p>
 				 </div>
 			 </div>
 			</section>
+		</section>
+
+		<section >
+		 <div class="grid-wrapper">
+			 <div class="header">
+				<div class="logo"></div>
+				<div class="section">Processing data</div>
+				<div class="twitter"><a href="https://twitter.com/ixek">
+					<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+				</div>
+			 <div class="content">
+				 <h1 id="Documentation">Documentation</h1>
+				 <p>Documentation is an important part of a reproducible workflow.</p>
+				 <p>Take 5 minutes and identify which scripts/notebook have the best documentation.
+					 What makes it a good documentation?</p>
+				 <p>A good point to start is checking the <a href="https://google.github.io/styleguide/pyguide.html#Comments">Google Python style guidelines</a></p>
+
+			 </div>
+		 </div>
+		 </section>
+
+		<!-- Automation section -->
+		<section>
+			<section >
+			<div class="grid-wrapper">
+				<div class="header">
+				 <div class="logo"></div>
+				 <div class="section">Automation</div>
+				 <div class="twitter"><a href="https://twitter.com/ixek">
+					 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+				 </div>
+				<div class="content">
+					<div class="images">
+						<img src="./assets/ManchesteR/automate.png">
+					</div>
+				</div>
+			</div>
+		 </section>
 
 			 <section >
 			 <div class="grid-wrapper">
 				 <div class="header">
 					<div class="logo"></div>
-					<div class="section">Processing data</div>
+					<div class="section">Automation</div>
 					<div class="twitter"><a href="https://twitter.com/ixek">
 						<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 					</div>
@@ -1289,7 +1340,7 @@ $ touch src/__init__.py</code></pre>				 </div>
 			<div class="grid-wrapper">
 				<div class="header">
 				 <div class="logo"></div>
-				 <div class="section">Processing data</div>
+				 <div class="section">Automation</div>
 				 <div class="twitter"><a href="https://twitter.com/ixek">
 					 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 				 </div>
@@ -1302,14 +1353,6 @@ $ touch src/__init__.py</code></pre>				 </div>
 					</div><p>Since our modules start with digits (i.e. <code>01</code>,
 						<code>02</code>) we cannot do the import as we'd normally do</p>
 				<pre> <code>from mypackage import myAwesomeModule</code> </pre>
-					<p>Instead we need to do it like so:</p>
-				<pre><code>subset = importlib.import_module('.data.01_subset-data-GBP', 'scripts')
-plotwines = importlib.import_module('.visualization.02_visualize-wines', 'scripts')
-country_sub = importlib.import_module('.data.03_country-subset', 'scripts')</code> </pre>
-					<p>Also we need to make sure the imports are declared in <code>src/__init__.py</code></p>
-					<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">data</span>
-					<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">visualization</span>
-					</pre></div>
 				</div>
 			</div>
 		 </section>
@@ -1318,13 +1361,19 @@ country_sub = importlib.import_module('.data.03_country-subset', 'scripts')</cod
 		 <div class="grid-wrapper">
 			 <div class="header">
 				<div class="logo"></div>
-				<div class="section">Processing data</div>
+				<div class="section">Automation</div>
 				<div class="twitter"><a href="https://twitter.com/ixek">
 					<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 				</div>
 			 <div class="content">
-				 Also we need to make sure the imports are declared in src/__init__.py
-				 <pre><code>from . import data
+				 <p>Instead we need to do it like so:</p>
+			 <pre><code>subset = importlib.import_module('.data.01_subset-data-GBP', 'scripts')
+plotwines = importlib.import_module('.visualization.02_visualize-wines', 'scripts')
+country_sub = importlib.import_module('.data.03_country-subset', 'scripts')</code> </pre>
+			Also, we need to make sure that the other subpackages/modules are imported
+			correctly.
+			Add the following to <code>src/__init__.py</code>
+			<pre><code>from . import data
 from . import visualization</code> </pre>
 			 </div>
 		 </div>
@@ -1349,6 +1398,7 @@ from . import visualization</code> </pre>
 		 	</div>
 		 </div>
 		 </section>
+	 </section>
 
 						<section >
 						<div class="grid-wrapper">
