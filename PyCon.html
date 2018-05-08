@@ -2063,6 +2063,30 @@ $ git push</code> </pre>
 							<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 						</div>
 					 <div class="content">
+						 <h2>😢 But it failed </h2>
+						 You will find that the test failed... since we did not add the data files.
+We will in this case add the raw data to our repository for demonstration purposes.
+
+First we need to tell git to add the interim and processed data. open your `.gitignore` file and add the following lines:
+<pre><code># Add data for test
+!data/interim/2018-05-09-winemag_priceGBP.*
+!data/processed/2018-05-09-winemag_Chile.*</code> </pre>
+<div class='info'> The prefix **!** negates the pattern, so these files will not be ignored.</div>
+
+Now you can commit and push to GitHub.
+					 </div>
+					</div>
+					</section>
+
+					<section >
+					<div class="grid-wrapper">
+					 <div class="header">
+						<div class="logo"></div>
+						<div class="section">Sharing your code</div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+							<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+						</div>
+					 <div class="content">
 						 <h1>Making your code citable</h1>
 						 Head to <a href="https://zenodo.org/">https://zenodo.org/</a> and login using your GitHub account
 						 <figure class="display">
