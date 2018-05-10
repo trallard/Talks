@@ -108,7 +108,7 @@
 							<div class="content">
 								<h1>What will we do today? </h1>
 								<ol>
-									<li>Learn moe about reproducibility</li>
+									<li>Learn more about reproducibility</li>
 									<li>Use a reproducibility-first approach to set up a new project</li>
 									<li>Set up and use version control to track our changes</li>
 									<li>Add data to our project (and <strong>metadata</strong>)</li>
@@ -908,30 +908,6 @@
 										</section>
 
 										<section >
-						 				 <div class="grid-wrapper">
-											 <div class="header">
-												<div class="logo"></div>
-												<div class="section">Version control</div>
-												<div class="twitter"><a href="https://twitter.com/ixek">
-													<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-												</div>
-						 					 <div class="content">
-						 						<h1>What is version control?</h1>
-												A VCS keeps tracks of every modification of your code/files
-												in a special database. <br>
-												Some of the advantages:
-												<ul class='icon'>
-													<li>Enables collaboration</li>
-													<li>Keeps track of the changes made and well as appropriate
-													timestamps</li>
-													<li>Can help you rollback if you make a mistake</li>
-													<li>Can access you work everywhere!</li>
-												</ul>
-												</div>
-						 				 </div>
-						 			 </section>
-
-									 <section >
   									<div class="grid-wrapper">
   										<div class="header">
   										 <div class="logo"></div>
@@ -1119,7 +1095,7 @@ $ git config --global user.email "tania.sanchezmonroy@gmail.com"</code> </pre>
 										best practices for sharing data on the Web summary</a> is a
 										 good place to get started.</p>
 								 <p>You can also explore alternatives like <a href="https://git-annex.branchable.com/">
-									 gitannex</a> or <a href="https://datalad.org">DataLad</a> to version control your data, or <a href="https://figshare.com/">FigShare</a> to share your data.</p>
+									 gitannex</a> or <a href="http://datalad.org/">DataLad</a> to version control your data, or <a href="https://figshare.com/">FigShare</a> to share your data.</p>
 					 		 </div>
 					 	 </div>
 					  </section>
@@ -1514,9 +1490,9 @@ $ touch src/__init__.py</code></pre>				 </div>
 								</div>
 							 <div class="content">
 								 <p>Instead we need to do it like so:</p>
-							 <pre><code>subset = importlib.import_module('.data.01_subset-data-GBP', 'scripts')
-plotwines = importlib.import_module('.visualization.02_visualize-wines', 'scripts')
-country_sub = importlib.import_module('.data.03_country-subset', 'scripts')</code> </pre>
+							 <pre><code>subset = importlib.import_module('.data.01_subset-data-GBP', 'src')
+plotwines = importlib.import_module('.visualization.02_visualize-wines', 'src')
+country_sub = importlib.import_module('.data.03_country-subset', 'src')</code> </pre>
 							Also, we need to make sure that the other subpackages/modules are imported
 							correctly.
 							Add the following to <code>src/__init__.py</code>
@@ -1540,7 +1516,7 @@ from . import visualization</code> </pre>
 								<p>Once you have done this and make sure you can run it from your shell and commit the changes to git.</p>
 								<p>Note you might need to run this from the shell like so</p>
 
-								<pre><code>python -m scripts.runall-wine-analysis</code></pre>
+								<pre><code>python -m src.runall-wine-analysis</code></pre>
 
 						 	</div>
 						 </div>
@@ -1643,8 +1619,8 @@ from . import visualization</code> </pre>
 						<div data-markdown>
 ```Python
 try:
-        # try to save the figure
-        fig.savefig(fname, bbox_inches = 'tight')
+    # try to save the figure
+    fig.savefig(fname, bbox_inches = 'tight')
 except OSError as e:
     # wowza! the directory does not exist
     os.makedirs('figures')
