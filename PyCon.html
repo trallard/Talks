@@ -115,8 +115,8 @@
 									<li>Set up a reproducible analysis workflow</li>
 									<li>Create a run all script for the project:<strong>
 										automate all the things!</strong></li>
-										<li>Learn more about testing</li>
-										<li>Record our project's provenance</li>
+									<li>Learn more about testing</li>
+									<li>Record our project's provenance</li>
 									<li>Learn how to run automated tests</li>
 									<li>Share your analysis with the world!</li>
 									<li>And being credited for it!</li>
@@ -401,10 +401,13 @@
 									<div class="content">
 										<h1> Convention </h1>
 											<div class="float_modal" style='position: relative; top:20%'>
-	 										 <p class='modal_p'>"It is like agreeing that we will all drive on the left or
+	 										 <p class='modal_p'>"It is like agreeing that we will all
+												 drive on the left or
 	 											 the right. A hallmark of civilization is following conventions
-	 											 that constrain your behaviour a little, in the name of public safety"</p>
-	 										 <p class='caption_p'>- Jenny Brian on <a href="https://www.tidyverse.org/articles/2017/12/workflow-vs-script/">
+	 											 that constrain your behaviour a little, in the name of
+												 public safety"</p>
+	 										 <p class='caption_p'>- Jenny Brian on
+												 <a href="https://www.tidyverse.org/articles/2017/12/workflow-vs-script/">
 	 										 Project oriented workflows</p>
 	 									 </div>
 									</div>
@@ -511,7 +514,7 @@
 						</section>
 
 
-			<!-- Used to introduce the subsection -->
+							<!-- Used to introduce the subsection -->
 							<section class=" color--ice">
 								<div class="grid-wrapper">
 									<div class="header">
@@ -550,7 +553,11 @@
 													<li>Data used to produce the results</li>
 													<li>The details of the workflows used</li>
 													<li>Information on how to cite our work</li>
+													<li>Deterministic execution environments*</li>
 												</ul>
+												<small class='fragment'>To ensure that if anyone else runs your analysis
+												on a different machine the would get the same results
+												</small>
 											</div>
 										</div>
 									</section>
@@ -817,7 +824,8 @@
 														<ul class='icon'>
 															<li>Integrity of the data</li>
 															<li>Portability of the project</li>
-															<li>Easier to pick the project back up after a break</li>
+															<li>Ease to pick the project back up after a break</li>
+															<li>Faster onboarding of new team members</li>
 														</ul> <br><br>
 														There is no single way to organise a project... but
 														we need to take advantage of the power of convention.
@@ -940,9 +948,10 @@
 												 <li class='fragment'>Enables collaboration</li>
 												 <li class='fragment'>Keeps track of the changes made as well as appropriate
 												 timestamps</li>
-												 <li class='fragment'>Can access you work everywhere!</li>
+												 <li class='fragment'>Can access your work everywhere!</li>
 												 <li class='fragment'>Help you and others to have a tidy
 												 project structure</li>
+												 <li class='fragment'>And overall...</li>
 											 </ul>
 											 </div>
 										</div>
@@ -1005,10 +1014,11 @@
 		 										<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 		 									</div>
 		 								 <div class="content">
+											 <h3>We first need to make sure everything is set up</h3>
 		 									Setting up git:
 											<pre><code>$ git config --global user.name "Tania Allard"
-$ git config --global user.email "tania.sanchezmonroy@gmail.com"</code> </pre>
-											If you are not sure if you have set up git before or
+$ git config --global user.email "taniar.allard@gmail.com"</code> </pre>
+											🤔 If you are not sure if you have set up git before or
 											want to check your configuration use
 											<pre><code>$ git config --list</code> </pre>
 
@@ -1167,7 +1177,102 @@ Collected on: 09/05/2018 by Tania Allard
 						 </div>
 					 </div>
 					</section>
-				</section>
+
+				<section >
+				<div class="grid-wrapper">
+					<div class="header">
+					 <div class="logo"></div>
+					 <div class="section">Using data</div>
+					 <div class="twitter"><a href="https://twitter.com/ixek">
+						 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					 </div>
+					<div class="content">
+						<h2> <a href="http://mozillascience.github.io/checklist/">
+						Diving deeper into metadata</a> </h2>
+						What would someone outside your research project (or you in 5 years time) need to know about your data to build on your work.
+						<br><br>
+						<table>
+							<tr>
+								<th>What</th>
+								<th>Such as..</th>
+							</tr>
+ 					   <tr>
+ 					   	<td>What is the title of the dataset?</td>
+							<td>The regulation of emotions in adolescents: age differences
+								and emotion-specific patterns</td>
+ 					   </tr>
+						 <tr>
+						 	<td>Are there any related publications or data sets?</td>
+							<td>Theurel A, Gentaz E (2018) The regulation of emotions in
+								adolescents: age differences and emotion-specific patterns.
+								PLOS ONE 13(6): e0195501. <a href="https://doi.org/10.1371/journal.pone.0195501">
+								https://doi.org/10.1371/journal.pone.0195501</a> </td>
+						 </tr>
+ 					 </table>
+					</div>
+				</div>
+			 </section>
+
+			 <section >
+			 <div class="grid-wrapper">
+				 <div class="header">
+					<div class="logo"></div>
+					<div class="section">Using data</div>
+					<div class="twitter"><a href="https://twitter.com/ixek">
+						<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+				 <div class="content">
+					<table>
+						<tr>
+							<th>Where</th>
+							<th>Such as..</th>
+						</tr>
+					 <tr>
+						<td>Where was the data collected?</td>
+						<td>France, Rhones Alpes</td>
+					 </tr>
+					 <tr>
+						<td>Where does the data live?</td>
+						<td>Theurel A, Gentaz E (2018) Data from: The regulation of emotions
+							in adolescents: age differences and emotion-specific patterns.
+							Dryad Digital Repository. <a href="https://doi.org/10.5061/dryad.n230404">
+							https://doi.org/10.5061/dryad.n230404</a> </td>
+					 </tr>
+				 </table>
+				 </div>
+			 </div>
+			</section>
+
+			<section >
+			<div class="grid-wrapper">
+				<div class="header">
+				 <div class="logo"></div>
+				 <div class="section">Using data</div>
+				 <div class="twitter"><a href="https://twitter.com/ixek">
+					 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+				 </div>
+				<div class="content">
+				 <table>
+					 <tr>
+						 <th>Who</th>
+						 <th>Such as..</th>
+					 </tr>
+					<tr>
+					 <td>Who is responsible for the data?</td>
+					 <td>Dr Theurel, Anne</td>
+					</tr>
+					<th>When</th>
+					<th>Such as..</th>
+					<tr>
+						<td>Was the data collected? What time span does the data cover?	</td>
+						<td>Collected: June 2015. Data coverage: 1932-1944</td>
+					</tr>
+				</table>
+				</div>
+			</div>
+		 </section>
+
+		 </section>
 
 				<!-- Analyse data -->
 				<section class="dark_box" style="background-image:url('./assets/PyCon/makesense.png');">
@@ -1186,7 +1291,7 @@ Collected on: 09/05/2018 by Tania Allard
 						<div class="content">
 							<h1 id="Adding-the-code-that-performs-the-analysis">Adding the code that performs the analysis
 							</h1>
-							<p>We want to do the following:</p>
+							<p>Imagine we want to do the following:</p>
 							<ul class='icon'>
 							<li>Create a Jupyter notebook for exploratory analysis</li>
 							<li>Generate the following outputs using python scripts:
