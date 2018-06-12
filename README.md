@@ -8,3 +8,7 @@
 | ManchesterR user group                       | 11 Nov 2017      | [http://bitsandchips.me/Talks/ManchesteR.html ](http://bitsandchips.me/Talks/ManchesteR.html)   |
 | Her + Data                                   | 08 Mar 2018      | [http://bitsandchips.me/Talks/her+data.html ](http://bitsandchips.me/Talks/her+data.html)     |
 | PyCon                                        | 09 May 2018      | [http://bitsandchips.me/Talks/PyCon.html  ](http://bitsandchips.me/Talks/PyCon.html)       |
+
+
+
+[Themes info](Themes_docs.md)
