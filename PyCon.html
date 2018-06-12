@@ -1452,6 +1452,57 @@ Collected on: 09/05/2018 by Tania Allard
 			</div>
 			</section>
 
+			<!-- Metadata done right -->
+			<section >
+ 		 <div class="grid-wrapper">
+ 			 <div class="header">
+ 				<div class="logo"></div>
+ 				<div class="section">Using data</div>
+ 				<div class="twitter"><a href="https://twitter.com/ixek">
+ 					<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+ 				</div>
+ 			 <div class="content">
+ 				<h2>Metadata done right</h2>
+ 				Take 5 minutes to inspect the dataset: what features does it have?
+ 				How are NA's represented?
+ 				<p class="fragment">
+ 				Now we are going to use the <a href="https://github.com/frictionlessdata/datapackage-py">
+ 				datapackage	</a> package to generate our metadata </p>
+ <pre class="fragment"><code>import datapackage					# load the package
+ package = datapackage.Package()									# create package instance
+ package.descriptor['name'] = 'winemag-reviews'
+ package.descriptor['title'] = 'Winemag wine reviews dataset'
+ package.descriptor
+ </code> </pre>
+ <p class="fragment">
+ 	For all the supported keys visit <a href="https://frictionlessdata.io/specs/data-package/#metadata">
+ 	Datapackage spec</a>
+ </p>
+ 			 </div>
+ 		 </div>
+ 		</section>
+
+ 		<section >
+ 		<div class="grid-wrapper">
+ 			<div class="header">
+ 			 <div class="logo"></div>
+ 			 <div class="section">Using data</div>
+ 			 <div class="twitter"><a href="https://twitter.com/ixek">
+ 				 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+ 			 </div>
+ 			<div class="content">
+ 				<h2> Inferring the schema</h2>
+ <pre><code>package.infer('./solutions/data/**/*.csv')
+ </code> </pre>
+ The infer method has found all our files and inspected it to extract useful
+ metadata like profile, encoding, format, Table Schema etc. Let's have a look at the resource:
+ <pre><code>package.descriptor['resources'][1]</code> </pre>
+ And we can save it to <code>json</code> or <code>zip</code>:
+ <pre><code>package.save('solutions/data/datapackage.json')</code> </pre>
+ 			</div>
+ 		</div>
+ 	 </section>
+
 			<!-- Scripting section -->
 			<section>
 					<section >
@@ -1621,7 +1672,31 @@ from . import visualization</code> </pre>
 								<p>Once you have done this and make sure you can run it from your shell and commit the changes to git.</p>
 								<p>Note you might need to run this from the shell like so</p>
 
-								<pre><code>python -m src.runall-wine-analysis</code></pre>
+								<pre><code>python -m all-wine-analysis</code></pre>
+
+						 	</div>
+						 </div>
+						 </section>
+
+						 <section class=" color--midnight">
+						 <div class="grid-wrapper">
+						 	<div class="header">
+						 	 <div class="logo"></div>
+						 	 <div class="section">Processing data</div>
+						 	 <div class="twitter"><a href="https://twitter.com/ixek">
+						 		 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+						 	 </div>
+						 	<div class="content">
+								<h3><strong>Some notes</strong></h3>
+								We have created a base structure for this project. Thus you can leverage the use of such structure instead of running everything from the root folder. You'd need to adjust the paths bits in the `runall-wine-analysis.py` script.
+
+Also note that in the data processing scripts the interim/final produced data sets are named by using today's date e.g.
+<pre><code># Constructing the fname
+today = datetime.datetime.today().strftime('%Y-%m-%d')
+fname = f'data/interim/{today}-winemag_priceGBP.csv'
+</code></pre>
+
+This is <strong>only</strong> to demonstrate the use of appropriate naming conventions, but might be problematic at the time of testing.
 
 						 	</div>
 						 </div>
@@ -1734,7 +1809,7 @@ except OSError as e:
 ```</div>
 						<p>Now our <code>runall script</code> should work!!! 🎉🎉</p>
 
-						<pre><code>$ python src.runall-wine-analysis</code></pre>
+						<pre><code>$ python all-wine-analysis</code></pre>
 						</div>
 					 	</div>
 					 </section>
