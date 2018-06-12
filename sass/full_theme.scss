@@ -45,6 +45,13 @@ $themes: (
     'primary-light':lighten(#3A015C, 10%),
     'secondary-light' :lighten(#41ead4, 10%),
   ),
+  'seacalm':(
+    'primary': #30638B, /* steel blue */
+    'secondary': #EDAF49, /* golden */
+    'third': #00798c, /* seagreen*/
+    'primary-light':lighten(#3A015C, 10%),
+    'secondary-light' :lighten(#41ead4, 10%),
+  ),
   'black':(
     'primary': #BDE16B, /*green*/
     'secondary': #C687E8, /*lilac*/
@@ -301,7 +308,7 @@ word-wrap: normal; }
      background-color: themed('secondary')
    } }
  .reveal.pattern--lines .slides section.intro .logo {
-   background-image: url("../../lib/myplanet/patterns/synapses/logo.svg"); }
+   background-image: url("../assets/Tania_logo_white.png"); }
  .reveal.pattern--lines .slides section.title {
    @include themify($themes){
      background-color: themed('secondary');
@@ -313,10 +320,12 @@ word-wrap: normal; }
    } }
 
 // Hex
+.reveal.pattern--hex {
+  background-image: url("../assets/patterns/hex_pattern.png"); }
 .reveal.pattern--hex .slides section.intro {
- @include themify($themes){
-   background-color: themed('secondary')
- } }
+  @include themify($themes){
+    background-color: themed('secondary')
+  }}
 .reveal.pattern--hex .slides section.title {
  @include themify($themes){
    background-color: themed('secondary');

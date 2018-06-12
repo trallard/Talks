@@ -42,6 +42,8 @@ section.has-light-background, section.has-light-background h1, section.has-light
     background: #939abc; }
   .theme-lines ::selection {
     background: #6fefde; }
+  .theme-seacalm ::selection {
+    background: #6fefde; }
   .theme-black ::selection {
     background: #ada1ce; }
 
@@ -52,6 +54,8 @@ section.has-light-background, section.has-light-background h1, section.has-light
     background: #3388A6; }
   .theme-lines ::-moz-selection {
     background: #ff206e; }
+  .theme-seacalm ::-moz-selection {
+    background: #00798c; }
   .theme-black ::-moz-selection {
     background: #F2E38A; }
 
@@ -75,6 +79,8 @@ section.has-light-background, section.has-light-background h1, section.has-light
     color: #5F4B8B; }
   .theme-lines .reveal h1, .theme-lines .reveal h2, .theme-lines .reveal h3, .theme-lines .reveal h4, .theme-lines .reveal h5, .theme-lines .reveal h6 {
     color: #3A015C; }
+  .theme-seacalm .reveal h1, .theme-seacalm .reveal h2, .theme-seacalm .reveal h3, .theme-seacalm .reveal h4, .theme-seacalm .reveal h5, .theme-seacalm .reveal h6 {
+    color: #30638B; }
   .theme-black .reveal h1, .theme-black .reveal h2, .theme-black .reveal h3, .theme-black .reveal h4, .theme-black .reveal h5, .theme-black .reveal h6 {
     color: #BDE16B; }
   .theme-poppins-font .reveal h1, .theme-poppins-font .reveal h2, .theme-poppins-font .reveal h3, .theme-poppins-font .reveal h4, .theme-poppins-font .reveal h5, .theme-poppins-font .reveal h6 {
@@ -107,6 +113,10 @@ section.has-light-background, section.has-light-background h1, section.has-light
     text-decoration-color: #ff206e;
     -webkit-text-decoration-color: #ff206e;
     color: #ff206e; }
+  .theme-seacalm .reveal a {
+    text-decoration-color: #00798c;
+    -webkit-text-decoration-color: #00798c;
+    color: #00798c; }
   .theme-black .reveal a {
     text-decoration-color: #F2E38A;
     -webkit-text-decoration-color: #F2E38A;
@@ -121,6 +131,10 @@ section.has-light-background, section.has-light-background h1, section.has-light
     .theme-lines .reveal a:hover {
       color: #ff206e;
       border-bottom: 2px solid #ff206e;
+      /* I prefer a thicker line */ }
+    .theme-seacalm .reveal a:hover {
+      color: #00798c;
+      border-bottom: 2px solid #00798c;
       /* I prefer a thicker line */ }
     .theme-black .reveal a:hover {
       color: #F2E38A;
@@ -173,6 +187,8 @@ section.has-light-background, section.has-light-background h1, section.has-light
   color: #3388A6; }
 .theme-lines .reveal .controls {
   color: #ff206e; }
+.theme-seacalm .reveal .controls {
+  color: #00798c; }
 .theme-black .reveal .controls {
   color: #F2E38A; }
 
@@ -185,6 +201,8 @@ section.has-light-background, section.has-light-background h1, section.has-light
     color: #3388A6; }
   .theme-lines .reveal .progress {
     color: #ff206e; }
+  .theme-seacalm .reveal .progress {
+    color: #00798c; }
   .theme-black .reveal .progress {
     color: #F2E38A; }
 
@@ -233,6 +251,8 @@ html {
   background-color: #5F4B8B; }
 .theme-lines .reveal.pattern--stream .slides section.intro {
   background-color: #3A015C; }
+.theme-seacalm .reveal.pattern--stream .slides section.intro {
+  background-color: #30638B; }
 .theme-black .reveal.pattern--stream .slides section.intro {
   background-color: #BDE16B; }
 
@@ -243,6 +263,8 @@ html {
   background-color: #5F4B8B; }
 .theme-lines .reveal.pattern--stream .slides section.title {
   background-color: #3A015C; }
+.theme-seacalm .reveal.pattern--stream .slides section.title {
+  background-color: #30638B; }
 .theme-black .reveal.pattern--stream .slides section.title {
   background-color: #BDE16B; }
 
@@ -250,6 +272,8 @@ html {
   background: #3388A6; }
 .theme-lines .reveal.pattern--stream .progress span {
   background: #ff206e; }
+.theme-seacalm .reveal.pattern--stream .progress span {
+  background: #00798c; }
 .theme-black .reveal.pattern--stream .progress span {
   background: #F2E38A; }
 
@@ -257,6 +281,8 @@ html {
   color: #3388A6; }
 .theme-lines .reveal.pattern--stream .controls {
   color: #ff206e; }
+.theme-seacalm .reveal.pattern--stream .controls {
+  color: #00798c; }
 .theme-black .reveal.pattern--stream .controls {
   color: #F2E38A; }
 
@@ -267,11 +293,13 @@ html {
   background-color: #747CA8; }
 .theme-lines .reveal.pattern--lines .slides section.intro {
   background-color: #41ead4; }
+.theme-seacalm .reveal.pattern--lines .slides section.intro {
+  background-color: #EDAF49; }
 .theme-black .reveal.pattern--lines .slides section.intro {
   background-color: #C687E8; }
 
 .reveal.pattern--lines .slides section.intro .logo {
-  background-image: url("../../lib/myplanet/patterns/synapses/logo.svg"); }
+  background-image: url("../assets/Tania_logo_white.png"); }
 
 .theme-streams .reveal.pattern--lines .slides section.title {
   background-color: #747CA8;
@@ -279,6 +307,9 @@ html {
 .theme-lines .reveal.pattern--lines .slides section.title {
   background-color: #41ead4;
   color: #3A015C; }
+.theme-seacalm .reveal.pattern--lines .slides section.title {
+  background-color: #EDAF49;
+  color: #30638B; }
 .theme-black .reveal.pattern--lines .slides section.title {
   background-color: #C687E8;
   color: #BDE16B; }
@@ -287,13 +318,20 @@ html {
   background-color: #3388A6; }
 .theme-lines .reveal.pattern--lines .progress {
   background-color: #ff206e; }
+.theme-seacalm .reveal.pattern--lines .progress {
+  background-color: #00798c; }
 .theme-black .reveal.pattern--lines .progress {
   background-color: #F2E38A; }
+
+.reveal.pattern--hex {
+  background-image: url("../assets/patterns/hex_pattern.png"); }
 
 .theme-streams .reveal.pattern--hex .slides section.intro {
   background-color: #747CA8; }
 .theme-lines .reveal.pattern--hex .slides section.intro {
   background-color: #41ead4; }
+.theme-seacalm .reveal.pattern--hex .slides section.intro {
+  background-color: #EDAF49; }
 .theme-black .reveal.pattern--hex .slides section.intro {
   background-color: #C687E8; }
 
@@ -303,6 +341,9 @@ html {
 .theme-lines .reveal.pattern--hex .slides section.title {
   background-color: #41ead4;
   color: #3A015C; }
+.theme-seacalm .reveal.pattern--hex .slides section.title {
+  background-color: #EDAF49;
+  color: #30638B; }
 .theme-black .reveal.pattern--hex .slides section.title {
   background-color: #C687E8;
   color: #BDE16B; }
@@ -311,6 +352,8 @@ html {
   background-color: #3388A6; }
 .theme-lines .reveal.pattern--hex .progress {
   background-color: #ff206e; }
+.theme-seacalm .reveal.pattern--hex .progress {
+  background-color: #00798c; }
 .theme-black .reveal.pattern--hex .progress {
   background-color: #F2E38A; }
 
