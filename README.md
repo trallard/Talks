@@ -8,7 +8,9 @@
 | ManchesterR user group                       | 11 Nov 2017      | [http://bitsandchips.me/Talks/ManchesteR.html ](http://bitsandchips.me/Talks/ManchesteR.html)   |
 | Her + Data                                   | 08 Mar 2018      | [http://bitsandchips.me/Talks/her+data.html ](http://bitsandchips.me/Talks/her+data.html)     |
 | PyCon                                        | 09 May 2018      | [http://bitsandchips.me/Talks/PyCon.html  ](http://bitsandchips.me/Talks/PyCon.html)       |
+| PyData Manchester                              | 12 Jun 2018      | [http://bitsandchips.me/Talks/PyData_Pyladies.html  ](http://bitsandchips.me/Talks/PyData_Pyladies.html)       |
 
 
+I have started collating some info on the themes in the slides... I plan to add more information on how these are structured and how to properly use the slides... bare with me.
 
-[Themes info](Themes_docs.md)
+[Tania slides themes info](Themes_docs.md)
