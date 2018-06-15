@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>🐍 PyCon 2018</title>
+	<title>🐍 Reproducible Python</title>
 
   <!-- Reveal themes -->
   <link rel="stylesheet" href="reveal.js/css/reveal.css">
@@ -35,11 +35,11 @@
 
 <!-- Need to specify the theme here -->
 <!-- First theme- is for colour, theme-xxx-font is for the font -->
-<body class="theme-lines theme-dosis-font">
+<body class="theme-seacalm theme-dosis-font">
 
 <!-- Specify the main theme to be used here -->
 <!-- this controls the background and logos -->
-<div class="reveal pattern--lines">
+<div class="reveal pattern--hex">
 
 	<!-- Slides start here -->
 	<div class="slides">
@@ -51,17 +51,16 @@
 							<!-- <div class="logo logo--full"><span class="visually-hidden">MyBrand</span></div> -->
 						</div>
 						<div class="content">
-							<h1 style='color:#3A015C'>
-								Down the rabbit hole.
+							<h1 >
+								Intro to reproducible workflows in Python
 							</h1>
-							<h3 style='color:#3A015C'>
-								A 101
-								on reproducible workflows with Python
+							<h3 >
+								Practical steps to level up your reproducibility
 							</h3>
 							<div class="description">
-								Tutorial session at Pycon 2018
+								University of Leeds
 								<br>
-								<a href="https://doi.org/cn9t">https://doi.org/cn9t</a>
+								<a href="http://doi.org/cn9t">http://doi.org/cn9t</a>
 							</div>
 						</div>
 						<div class="credit">
@@ -70,7 +69,7 @@
 							<div class="name">Tania Allard, PhD</div>
 						</div>
 						<a class="presentation-url" href="https://trallard.github.io/Talks/PyCon">
-	            https://trallard.github.io/Talks/Pycon</a>
+	            https://trallard.github.io/Talks/ReproPython</a>
 
 					</div>
 				</section>
@@ -115,8 +114,8 @@
 									<li>Set up a reproducible analysis workflow</li>
 									<li>Create a run all script for the project:<strong>
 										automate all the things!</strong></li>
-										<li>Learn more about testing</li>
-										<li>Record our project's provenance</li>
+									<li>Learn more about testing</li>
+									<li>Record our project's provenance</li>
 									<li>Learn how to run automated tests</li>
 									<li>Share your analysis with the world!</li>
 									<li>And being credited for it!</li>
@@ -129,7 +128,7 @@
 			</section>
 
 			<!-- Used to introduce a subsection -->
-			<section class=" color--ice">
+			<section class=" color--midnight">
 				<div class="grid-wrapper">
 					<div class="header">
 						<div class="logo"></div>
@@ -301,7 +300,7 @@
 
 
 				<!-- What is reproducibility? -->
-				<section class=" color--ice">
+				<section class=" color--midnight">
 					<div class="grid-wrapper">
 						<div class="header">
 							<div class="logo"></div>
@@ -327,7 +326,7 @@
 							<figure class="display">
 								<img src="./assets/ManchesteR/spectrum.png" alt="levels">
 							<figcaption> Peng (2011) <a href="https://doi.org/10.1126/science.1213847">
-							https://doi.org/10.1126/science.1213847</a></figcaption>
+                https://doi.org/10.1126/science.1213847</a>
 						</figcaption>
 						</div>
 					</section>
@@ -401,10 +400,13 @@
 									<div class="content">
 										<h1> Convention </h1>
 											<div class="float_modal" style='position: relative; top:20%'>
-	 										 <p class='modal_p'>"It is like agreeing that we will all drive on the left or
+	 										 <p class='modal_p'>"It is like agreeing that we will all
+												 drive on the left or
 	 											 the right. A hallmark of civilization is following conventions
-	 											 that constrain your behaviour a little, in the name of public safety"</p>
-	 										 <p class='caption_p'>- Jenny Brian on <a href="https://www.tidyverse.org/articles/2017/12/workflow-vs-script/">
+	 											 that constrain your behaviour a little, in the name of
+												 public safety"</p>
+	 										 <p class='caption_p'>- Jenny Brian on
+												 <a href="https://www.tidyverse.org/articles/2017/12/workflow-vs-script/">
 	 										 Project oriented workflows</p>
 	 									 </div>
 									</div>
@@ -511,8 +513,8 @@
 						</section>
 
 
-			<!-- Used to introduce the subsection -->
-							<section class=" color--ice">
+							<!-- Used to introduce the subsection -->
+							<section class=" color--midnight">
 								<div class="grid-wrapper">
 									<div class="header">
 										<div class="logo"></div>
@@ -528,7 +530,7 @@
 											<br> <br>
 											📝 Write your thoughs
 											<a href="https://public.etherpad-mozilla.org/p/ReproduciblePython" target="_blank"
-											style='color:#3A015C;'>
+											style='color:#F8757F;'>
 											on this Etherpad  </a>
 										</div>
 									</div>
@@ -550,7 +552,11 @@
 													<li>Data used to produce the results</li>
 													<li>The details of the workflows used</li>
 													<li>Information on how to cite our work</li>
+													<li>Deterministic execution environments*</li>
 												</ul>
+												<small class='fragment'>To ensure that if anyone else runs your analysis
+												on a different machine the would get the same results
+												</small>
 											</div>
 										</div>
 									</section>
@@ -715,7 +721,6 @@
 											  where we value academic freedom and wide dissemination of
 												scientific findings."</p>
 										 <p class='caption_p'>- Lorena Barba <a href="https://web.archive.org/web/20170923084818/http://rtalbert.org:80/blog/2015/interview-lorena-barba">
-										 (Casting out nines Interview)</a></p>
 									</div>
 								</div>
 							</section>
@@ -782,7 +787,7 @@
 
 									</section>
 
-									<section class="color--ice">
+									<section class="color--midnight">
 										<div class="grid-wrapper">
 											<div class="header">
 												<div class="logo"></div>
@@ -796,7 +801,7 @@
 												 <br><br>
 												 📝 Write your ideas
 					 							<a href="https://public.etherpad-mozilla.org/p/ReproduciblePython" target="_blank"
-					 							style='color:#3A015C; font-weight:600;'>
+					 							style='color:#F8757F; font-weight:600;'>
 					 							on this Etherpad  </a>
 												</div>
 											</div>
@@ -817,7 +822,8 @@
 														<ul class='icon'>
 															<li>Integrity of the data</li>
 															<li>Portability of the project</li>
-															<li>Easier to pick the project back up after a break</li>
+															<li>Ease to pick the project back up after a break</li>
+															<li>Faster onboarding of new team members</li>
 														</ul> <br><br>
 														There is no single way to organise a project... but
 														we need to take advantage of the power of convention.
@@ -839,7 +845,7 @@
 														<div class="content">
 															<figure class='code' style="font-size:0.8rem;">
 																<pre><code>.
-├── LICENSE
+├── LiceNSE
 ├── README.md
 ├── bin                 <- Compiled codes or binaries*
 ├── config              <- Configuration files*
@@ -940,9 +946,10 @@
 												 <li class='fragment'>Enables collaboration</li>
 												 <li class='fragment'>Keeps track of the changes made as well as appropriate
 												 timestamps</li>
-												 <li class='fragment'>Can access you work everywhere!</li>
+												 <li class='fragment'>Can access your work everywhere!</li>
 												 <li class='fragment'>Help you and others to have a tidy
 												 project structure</li>
+												 <li class='fragment'>And overall...</li>
 											 </ul>
 											 </div>
 										</div>
@@ -1005,10 +1012,11 @@
 		 										<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 		 									</div>
 		 								 <div class="content">
+											 <h3>We first need to make sure everything is set up</h3>
 		 									Setting up git:
 											<pre><code>$ git config --global user.name "Tania Allard"
-$ git config --global user.email "tania.sanchezmonroy@gmail.com"</code> </pre>
-											If you are not sure if you have set up git before or
+$ git config --global user.email "taniar.allard@gmail.com"</code> </pre>
+											🤔 If you are not sure if you have set up git before or
 											want to check your configuration use
 											<pre><code>$ git config --list</code> </pre>
 
@@ -1038,7 +1046,7 @@ $ git config --global user.email "tania.sanchezmonroy@gmail.com"</code> </pre>
 											 $ git status	   # check the status (new/modified files)
 											 ```
 										 </div>
-										 If you are happy with the LICENSE.md you can do your first commit
+										 If you are happy with the LiceNSE.md you can do your first commit
 										 now:
 											 <div data-markdown>
 												 ```
@@ -1167,7 +1175,102 @@ Collected on: 09/05/2018 by Tania Allard
 						 </div>
 					 </div>
 					</section>
-				</section>
+
+				<section >
+				<div class="grid-wrapper">
+					<div class="header">
+					 <div class="logo"></div>
+					 <div class="section">Using data</div>
+					 <div class="twitter"><a href="https://twitter.com/ixek">
+						 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					 </div>
+					<div class="content">
+						<h2> <a href="http://mozillascience.github.io/checklist/">
+						Diving deeper into metadata</a> </h2>
+						What would someone outside your research project (or you in 5 years time) need to know about your data to build on your work.
+						<br><br>
+						<table>
+							<tr>
+								<th>What</th>
+								<th>Such as..</th>
+							</tr>
+ 					   <tr>
+ 					   	<td>What is the title of the dataset?</td>
+							<td>The regulation of emotions in adolescents: age differences
+								and emotion-specific patterns</td>
+ 					   </tr>
+						 <tr>
+						 	<td>Are there any related publications or data sets?</td>
+							<td>Theurel A, Gentaz E (2018) The regulation of emotions in
+								adolescents: age differences and emotion-specific patterns.
+								PLOS ONE 13(6): e0195501. <a href="https://doi.org/10.1371/journal.pone.0195501">
+								https://doi.org/10.1371/journal.pone.0195501</a> </td>
+						 </tr>
+ 					 </table>
+					</div>
+				</div>
+			 </section>
+
+			 <section >
+			 <div class="grid-wrapper">
+				 <div class="header">
+					<div class="logo"></div>
+					<div class="section">Using data</div>
+					<div class="twitter"><a href="https://twitter.com/ixek">
+						<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+				 <div class="content">
+					<table>
+						<tr>
+							<th>Where</th>
+							<th>Such as..</th>
+						</tr>
+					 <tr>
+						<td>Where was the data collected?</td>
+						<td>France, Rhones Alpes</td>
+					 </tr>
+					 <tr>
+						<td>Where does the data live?</td>
+						<td>Theurel A, Gentaz E (2018) Data from: The regulation of emotions
+							in adolescents: age differences and emotion-specific patterns.
+							Dryad Digital Repository. <a href="https://doi.org/10.5061/dryad.n230404">
+							https://doi.org/10.5061/dryad.n230404</a> </td>
+					 </tr>
+				 </table>
+				 </div>
+			 </div>
+			</section>
+
+			<section >
+			<div class="grid-wrapper">
+				<div class="header">
+				 <div class="logo"></div>
+				 <div class="section">Using data</div>
+				 <div class="twitter"><a href="https://twitter.com/ixek">
+					 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+				 </div>
+				<div class="content">
+				 <table>
+					 <tr>
+						 <th>Who</th>
+						 <th>Such as..</th>
+					 </tr>
+					<tr>
+					 <td>Who is responsible for the data?</td>
+					 <td>Dr Theurel, Anne</td>
+					</tr>
+					<th>When</th>
+					<th>Such as..</th>
+					<tr>
+						<td>Was the data collected? What time span does the data cover?	</td>
+						<td>Collected: June 2015. Data coverage: 1932-1944</td>
+					</tr>
+				</table>
+				</div>
+			</div>
+		 </section>
+
+		 </section>
 
 				<!-- Analyse data -->
 				<section class="dark_box" style="background-image:url('./assets/PyCon/makesense.png');">
@@ -1186,7 +1289,7 @@ Collected on: 09/05/2018 by Tania Allard
 						<div class="content">
 							<h1 id="Adding-the-code-that-performs-the-analysis">Adding the code that performs the analysis
 							</h1>
-							<p>We want to do the following:</p>
+							<p>Imagine we want to do the following:</p>
 							<ul class='icon'>
 							<li>Create a Jupyter notebook for exploratory analysis</li>
 							<li>Generate the following outputs using python scripts:
@@ -1346,6 +1449,57 @@ Collected on: 09/05/2018 by Tania Allard
 				</div>
 			</div>
 			</section>
+
+			<!-- Metadata done right -->
+			<section >
+ 		 <div class="grid-wrapper">
+ 			 <div class="header">
+ 				<div class="logo"></div>
+ 				<div class="section">Using data</div>
+ 				<div class="twitter"><a href="https://twitter.com/ixek">
+ 					<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+ 				</div>
+ 			 <div class="content">
+ 				<h2>Metadata done right</h2>
+ 				Take 5 minutes to inspect the dataset: what features does it have?
+ 				How are NA's represented?
+ 				<p class="fragment">
+ 				Now we are going to use the <a href="https://github.com/frictionlessdata/datapackage-py">
+ 				datapackage	</a> package to generate our metadata </p>
+ <pre class="fragment"><code>import datapackage					     # load the package
+package = datapackage.Package() # create package instance
+package.descriptor['name'] = 'winemag-reviews'
+package.descriptor['title'] = 'Winemag wine reviews dataset'
+package.descriptor
+ </code> </pre>
+ <p class="fragment">
+ 	For all the supported keys visit <a href="https://frictionlessdata.io/specs/data-package/#metadata">
+ 	Datapackage spec</a>
+ </p>
+ 			 </div>
+ 		 </div>
+ 		</section>
+
+ 		<section >
+ 		<div class="grid-wrapper">
+ 			<div class="header">
+ 			 <div class="logo"></div>
+ 			 <div class="section">Using data</div>
+ 			 <div class="twitter"><a href="https://twitter.com/ixek">
+ 				 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+ 			 </div>
+ 			<div class="content">
+ 				<h2> Inferring the schema</h2>
+ <pre><code>package.infer('./solutions/data/**/*.csv')
+ </code> </pre>
+ The infer method has found all our files and inspected it to extract useful
+ metadata like profile, encoding, format, Table Schema etc. Let's have a look at the resource:
+ <pre><code>package.descriptor['resources'][1]</code> </pre>
+ And we can save it to <code>json</code> or <code>zip</code>:
+ <pre><code>package.save('solutions/data/datapackage.json')</code> </pre>
+ 			</div>
+ 		</div>
+ 	 </section>
 
 			<!-- Scripting section -->
 			<section>
@@ -1521,6 +1675,33 @@ from . import visualization</code> </pre>
 						 	</div>
 						 </div>
 						 </section>
+
+						 <section class=" color--midnight">
+						 <div class="grid-wrapper">
+						 	<div class="header">
+						 	 <div class="logo"></div>
+						 	 <div class="section">Processing data</div>
+						 	 <div class="twitter"><a href="https://twitter.com/ixek">
+						 		 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+						 	 </div>
+						 	<div class="content">
+								<h3><strong>Some notes</strong></h3>
+								We have created a base structure for this project.
+                Thus you can leverage the use of such structure
+                instead of running everything from the root folder.
+                You'd need to adjust the paths bits in the <code style='color:#000'>runall-wine-analysis.py</code> script.
+<br><br>
+Also note that in the data processing scripts the interim/final produced data sets are named by using today's date e.g.
+<pre><code># Constructing the fname
+today = datetime.datetime.today().strftime('%Y-%m-%d')
+fname = f'data/interim/{today}-winemag_priceGBP.csv'
+</code></pre>
+
+This is <strong>only</strong> to demonstrate the use of appropriate naming conventions, but might be problematic at the time of testing.
+
+						 	</div>
+						 </div>
+						 </section>
 					 </section>
 
 					 <!-- Testing section -->
@@ -1530,7 +1711,7 @@ from . import visualization</code> </pre>
 
 	 				</section>
 
-					<section class=" color--ice">
+					<section class=" color--midnight">
 						<div class="grid-wrapper">
 							<div class="header">
 								<div class="logo"></div>
@@ -1629,7 +1810,7 @@ except OSError as e:
 ```</div>
 						<p>Now our <code>runall script</code> should work!!! 🎉🎉</p>
 
-						<pre><code>$ python src.runall-wine-analysis</code></pre>
+						<pre><code>$ python -m src.runall-wine-analysis</code></pre>
 						</div>
 					 	</div>
 					 </section>
@@ -1706,7 +1887,7 @@ def get_mean_price(filename):
 							To run the tests we are going to use <strong>pytest</strong>.
 							You can find more information in the following resources:</p>
 							<ul>
-							<li>Read these <a href="http://doc.pytest.org/en/latest/usage.html"><strong>pytest</strong> usage examples</a></li>
+							<li>Read these <a href="http://doc.pytest.org/en/latest/usage.html">pytest usage examples</a></li>
 							<li>Rules for <a href="http://doc.pytest.org/en/latest/goodpractices.html">test discovery</a></li>
 							</ul>
 							<p>Now we can create our tests:</p>
