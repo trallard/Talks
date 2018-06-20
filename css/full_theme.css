@@ -241,20 +241,26 @@ section.has-light-background, section.has-light-background h1, section.has-light
 * ENABLE RESPONSIVENESS
 *********************************************/
 html {
-  font-size: 3.5vmin; }
+  font-size: 1em;
+  line-height: 1.5; }
+  @media (min-width: 48em) {
+    html {
+      font-size: 1.2em;
+      line-height: 1.95; } }
+  @media (min-width: 64em) {
+    html {
+      font-size: 1.5em;
+      line-height: 2.1; } }
+  @media (min-width: 85.375em) {
+    html {
+      font-size: 1.6em; } }
+  @media (min-width: 120em) {
+    html {
+      font-size: 1.8em; } }
+  @media (min-width: 160em) {
+    html {
+      font-size: 1.9em; } }
 
-@media (max-width: 1200px) {
-  html {
-    font-size: 19px; } }
-@media (max-width: 1200px) {
-  html {
-    font-size: 19px; } }
-@media (max-width: 768px) {
-  html {
-    font-size: 18px; } }
-@media (max-width: 568px) {
-  html {
-    font-size: 16px; } }
 /*********************************************
 * THEME SPECIFICS: EACH PATTERN WILL BE A THEME
 *********************************************/
@@ -494,6 +500,19 @@ html {
 * ADDITIONAL SLIDES CLASSES
 * THESE CAN BE USED WITH ANY THEME
 *********************************************/
+.reveal .slides section.color--code {
+  background-color: #eeeeee;
+  /* pale gray */
+  font-family: "Overpass Mono", monospace; }
+  .reveal .slides section.color--code h1, .reveal .slides section.color--code h2, .reveal .slides section.color--code h3 {
+    font-family: "Overpass Mono", monospace; }
+  .reveal .slides section.color--code code {
+    background-color: transparent !important;
+    font-size: 1rem; }
+
+.reveal .slides section.color--ice .logo {
+  background-image: url("../assets/Tania_logo.png"); }
+
 .reveal .slides section.color--dark {
   background-color: #22272B;
   color: #EEEDEF; }
@@ -1017,7 +1036,7 @@ figure.code {
   margin-bottom: 10px; }
   figure.code pre {
     box-shadow: none;
-    line-height: 1.1rem;
+    line-height: 1.3rem;
     margin: 0;
     overflow: hidden;
     border-radius: 5px; }
@@ -1059,6 +1078,6 @@ figure.code2 {
   background-color: #e2e6e9;
   padding: 2px 7px;
   border-radius: 3px;
-  font-size: 0.85rem; }
+  font-size: 1rem; }
 
 /*# sourceMappingURL=full_theme.css.map */
