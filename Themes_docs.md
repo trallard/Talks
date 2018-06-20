@@ -9,7 +9,7 @@
 
 
 ```
-<body class="theme-streams theme-poppins-font">
+<body class="theme-streams theme-leafy-font">
 <div class="reveal pattern--stream">
 ```
 
@@ -23,6 +23,20 @@
 
 ![](assets/docs/streams.png)
 
+```
+<body class="theme-goldilocks theme-allmono-font">
+<div class="reveal pattern--stars">
+```
+
+![](assets/docs/streams.png)
+
+
+```
+<body class="theme-seacalm theme-leafy-font">
+<div class="reveal pattern--flowers">
+```
+
+![](assets/docs/streams.png)
 
 For a full demo of a light coloured slide check
 [https://bitsandchips.me/mock_full.html](https://bitsandchips.me/mock_full.html

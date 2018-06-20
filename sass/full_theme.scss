@@ -53,6 +53,13 @@ $themes: (
     'primary-light':lighten(#3A015C, 10%),
     'secondary-light' :lighten(#41ead4, 10%),
   ),
+  'goldilocks':(
+    'primary': #30638B, /* steel blue */
+    'secondary': #EDAF49, /* golden */
+    'third': #8D4593, /* plum */
+    'primary-light':lighten(#3A015C, 10%),
+    'secondary-light' :lighten(#41ead4, 10%),
+  ),
   'black':(
     'primary': #BDE16B, /*green*/
     'secondary': #C687E8, /*lilac*/
@@ -250,7 +257,11 @@ html {
 
 @media (max-width: 1200px) {
   html {
-    font-size: 18px; } }
+    font-size: 19px; } }
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 19px; } }
 
 @media (max-width: 768px) {
   html {
@@ -282,9 +293,9 @@ word-wrap: normal; }
 * ACTUAL THEMES
 *********************************************/
 
-// Stream
+// Stream now with zigzag
 .reveal.pattern--stream {
-  background-image: url("../assets/patterns/gatsbyblue.png"); }
+  background-image: url("../assets/patterns/zigzag_purple.svg"); }
 .reveal.pattern--stream .slides section.intro {
   @include themify($themes){
     background-color: themed('primary')
@@ -305,24 +316,24 @@ word-wrap: normal; }
   color: themed('third')}
  }
 
- // Lines
- .reveal.pattern--lines {
-   background-image: url("../assets/patterns/lines.png"); }
- .reveal.pattern--lines .slides section.intro {
-   @include themify($themes){
-     background-color: themed('secondary')
-   } }
- .reveal.pattern--lines .slides section.intro .logo {
-   background-image: url("../assets/Tania_logo_white.png"); }
- .reveal.pattern--lines .slides section.title {
-   @include themify($themes){
-     background-color: themed('secondary');
-     color: themed('primary')
-   }}
- .reveal.pattern--lines .progress {
-   @include themify($themes){
-     background-color: themed('third')
-   } }
+// Lines
+.reveal.pattern--lines {
+ background-image: url("../assets/patterns/lines.png"); }
+.reveal.pattern--lines .slides section.intro {
+ @include themify($themes){
+   background-color: themed('secondary')
+ } }
+.reveal.pattern--lines .slides section.intro .logo {
+ background-image: url("../assets/Tania_logo_white.png"); }
+.reveal.pattern--lines .slides section.title {
+ @include themify($themes){
+   background-color: themed('secondary');
+   color: themed('primary')
+ }}
+.reveal.pattern--lines .progress {
+ @include themify($themes){
+   background-color: themed('third')
+ } }
 
 // Hex
 .reveal.pattern--hex {
@@ -337,6 +348,41 @@ word-wrap: normal; }
    color: themed('primary')
  }}
 .reveal.pattern--hex .progress {
+ @include themify($themes){
+   background-color: themed('third')
+} }
+
+// Star
+.reveal.pattern--star {
+  background-image: url("../assets/patterns/star_pattern.svg"); }
+.reveal.pattern--star .slides section.intro {
+  @include themify($themes){
+    background-color: themed('secondary')
+  }}
+.reveal.pattern--star .slides section.title {
+ @include themify($themes){
+   background-color: themed('secondary');
+   color: themed('primary')
+ }}
+.reveal.pattern--star .progress {
+ @include themify($themes){
+   background-color: themed('third')
+} }
+
+
+// Star
+.reveal.pattern--flowers {
+  background-image: url("../assets/patterns/floral_pattern.svg"); }
+.reveal.pattern--star .slides section.intro {
+  @include themify($themes){
+    background-color: themed('secondary')
+  }}
+.reveal.pattern--flowers .slides section.title {
+ @include themify($themes){
+   background-color: themed('secondary');
+   color: themed('primary')
+ }}
+.reveal.pattern--flowers .progress {
  @include themify($themes){
    background-color: themed('third')
 } }
