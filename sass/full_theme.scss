@@ -6,6 +6,7 @@
 @import url(../../reveal.js/lib/font/poppins/poppins.css);
 @import url(../../reveal.js/lib/font/leafy/leafy.css);
 @import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Dosis:400,600|Overpass+Mono|PT+Mono');
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700|Space+Mono:400,700');
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
 
@@ -75,6 +76,10 @@ $themes: (
   'leafy-font': (
   'title-font': #{'Leafy', cursive},
   'base-font' : #{'Dosis', sans-serif},
+  ),
+  'allmono-font': (
+  'title-font': #{'Muli', sans-serif},
+  'base-font' : #{'Space Mono', monospace},
   ),
 );
 
@@ -413,18 +418,15 @@ word-wrap: normal; }
     @include themify($themes){
       font-family: themed('base-font')
     }
-
-    .single-block {
+    &.single-block {
     width: 100%;
     display: flex;
     padding: 10px;
-
-        &.single1 {
+        &.left {
             width:50%;
             color: $white;
          }
-
-        &.single2 {
+        &.right {
             width: 50%;
         }
     }
@@ -935,18 +937,28 @@ figure.code {
     font-size: 0.875em;
     // border: 1px solid #3f3f3f;
     border-bottom-width: 0;
-    background-color: #333;
+    background-color: #333;  //dark graphite grey
     text-align: left;
     border-radius: 3px;
+    color: #EEEDEF!important;
   }
   & pre + figcaption {
     border-top-width: 0;
-    border-bottom-width: 1px;
-    color: #EEEDEF; }
+    border-bottom-width: 1px;}
 }
 
-figure.code figcaption.path {
-  font-family: $code-font;
+// This is a WIP do not use
+figure.code2 {
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 20px 68px;
+  & pre{
+    border-radius: 5px;
+    & code{
+      background-color: #222;
+      margin: 0;
+      color: #d5d5d5; // default light grey
+      border-radius: 5px;
+    }
+  }
 }
 
 .reveal pre{
@@ -966,17 +978,4 @@ figure.code figcaption.path {
   padding: 2px 7px;
   border-radius: 3px;
   font-size: 0.85rem;
-}
-
-// This is a WIP do not use
-figure.code2 {
-  box-shadow: rgba(0, 0, 0, 0.55) 0px 20px 68px;
-  & pre{
-    border-radius: 12px;
-    & code{
-      background-color: #222;
-      margin: 0;
-      color: #d5d5d5;
-    }
-  }
 }

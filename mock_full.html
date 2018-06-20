@@ -26,12 +26,13 @@
 
 <!-- Need to specify the theme here: the first defines the color palette
  and the second the font theme -->
-<body class="theme-streams theme-poppins-font">
+<body class="theme-streams theme-allmono-font">
 
 <!-- Adding the background and icon theme here -->
 	<div class="reveal pattern--stream">
 		<div class="slides">
 
+			<!-- Introduction slide -->
 			<section>
 				<section class="title" id="title">
 					<div class="grid-wrapper">
@@ -39,9 +40,9 @@
 							<!-- <div class="logo logo--full"><span class="visually-hidden">Myplanet</span></div> -->
 						</div>
 						<div class="content">
-							<h1>The importance of community in Data Science</h1>
+							<h1>The main title of the presentation</h1>
 							<div class="description">
-								Her + Data International Women's Day 2018
+								Describe a bit more what this is about
 							</div>
 						</div>
 						<div class="credit">
@@ -54,7 +55,7 @@
 						</div>
 					</section>
 
-<!--About section: add name, job and handles -->
+					<!--About section: add name, job and handles -->
 					<section class="about" id="about">
 						<div class="grid-wrapper">
 							<div class="content">
@@ -63,7 +64,7 @@
 									<hr>
 									<ul class="projects">
 										<li>Research Software Engineer</li>
-										<li>at the University of Sheffield</li>
+										<li>The University of Leeds</li>
 									</ul>
 									<hr>
 									<ul class="accounts">
@@ -97,7 +98,26 @@
 							</div>
 						</section>
 
-						<!-- Uses the class comands to use the table specified in presentation -->
+						<!-- Used to introduce a subsection: you can specify
+						a slide colour here, title and description -->
+						<section class=" color--midnight">
+							<div class="grid-wrapper">
+								<div class="header">
+									<div class="logo"></div>
+									<div class="twitter"><a href="https://twitter.com/ixek">
+										<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+									</div>
+									<div class="content">
+										<h1>class = 'color--midnight'</h1>
+										<div class="description">
+											other colours are: violet, midnight, vibrant, two (white and ultraviolet),
+											gradient(grad-purple, grad-green, grad-blue)
+										</div>
+									</div>
+								</div>
+							</section>
+
+						<!-- Demo of simple unordered lists -->
 						<section class="commands">
 							<section>
 								<div class="grid-wrapper">
@@ -107,6 +127,7 @@
 											<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 										</div>
 										<div class="content">
+											<p>This is how regular lists look like:</p>
 											<ul>
 												<li>Create</li>
 												<li>Require</li>
@@ -117,7 +138,27 @@
 									</div>
 								</section>
 
-<!-- Vertical slide -->
+								<!-- Demo of custom unordered lists -->
+									<section>
+										<div class="grid-wrapper">
+											<div class="header">
+												<div class="logo"></div>
+												<div class="twitter"><a href="https://twitter.com/ixek">
+													<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+												</div>
+												<div class="content">
+													<p>This is how custom lists look like:</p>
+													<ul class='icon'>
+														<li>Create</li>
+														<li class='pinata'>Require</li>
+														<li class='skull'>Set</li>
+														<li class='cactus'>Send</li>
+													</ul>
+												</div>
+											</div>
+										</section>
+
+<!-- Vertical slide using commands class -->
 <section>
 	<div class="grid-wrapper">
 		<div class="header">
@@ -131,8 +172,8 @@
 					<tr><th>trackingId:</th><td>{string}</td></tr>
 					<tr><th>cookieDomain:</th><td>{string}</td></tr>
 				</table>
+				<!-- Using the figure class with data-markdown -->
 				<figure class='code'>
-
 					<div data-markdown>
 						```python
 						def print_hello():
@@ -147,9 +188,9 @@
 						```
 					</div>
 				</figure>
-			<pre><code>
-for i in elemt:
-			</code></pre>
+			<!-- Using only pre and code -->
+			<pre><code>for i in elements:
+	print(f'Element is {element})</code></pre>
 			</div>
 		</div>
 	</section>
@@ -166,10 +207,10 @@ for i in elemt:
 					<table>
 						<tr><th>plugin:</th><td>{string}</td></tr>
 					</table>
+					<!-- Note that here we are using the figure class codem that way we can add <figcaption></figcaption> -->
 					<figure class="code">
-						<pre><code class="lang-js">
-							ga('require', 'linker');
-						</code></pre>
+						<pre><code class="lang-js">ga('require', 'linker');</code></pre>
+						<figcaption>usr/bin</figcaption>
 					</figure>
 				</div>
 			</div>
@@ -189,9 +230,7 @@ for i in elemt:
 						<tr><th>value:</th><td>{string}</td></tr>
 					</table>
 					<figure class="code">
-						<pre><code class="lang-js">
-							ga('set', 'dimension1', 'article');
-						</code></pre>
+						<pre><code class="lang-js">ga('set', 'dimension1', 'article');</code></pre>
 					</figure>
 				</div>
 			</div>
@@ -211,80 +250,7 @@ for i in elemt:
 						<tr><th>value:</th><td>{number}</td></tr>
 					</table>
 					<figure class="code">
-						<pre><code class="lang-js">
-							ga('set', 'metric1', 2);
-						</code></pre>
-					</figure>
-				</div>
-			</div>
-		</section>
-
-		<section>
-			<div class="grid-wrapper">
-				<div class="header">
-					<div class="logo"></div>
-					<div class="twitter"><a href="https://twitter.com/ixek"><i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-				</div>
-				<div class="content">
-					<h1>Pageview</h1>
-					<h2>Send</h2>
-					<table>
-						<tr><th>title:</th><td>{string}</td><td>optional</td></tr>
-						<tr><th>location:</th><td>{string}</td><td>optional</td></tr>
-						<tr><th>page:</th><td>{string}</td><td>optional</td></tr>
-					</table>
-					<figure class="code">
-						<pre><code class="lang-js">
-							ga('send', 'pageview');
-						</code></pre>
-					</figure>
-				</div>
-			</div>
-		</section>
-
-		<section>
-			<div class="grid-wrapper">
-				<div class="header">
-					<div class="logo"></div>
-					<div class="twitter"><a href="https://twitter.com/ixek"><i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-				</div>
-				<div class="content">
-					<h1>Events</h1>
-					<h2>Send</h2>
-					<table>
-						<tr><th>category:</th><td>{string}</td></tr>
-						<tr><th>action:</th><td>{string}</td></tr>
-						<tr><th>label:</th><td>{string}</td><td>optional</td></tr>
-						<tr><th>value:</th><td>{number}</td><td>optional</td></tr>
-					</table>
-					<figure class="code">
-						<pre><code class="lang-js">
-							ga('send', 'event', 'video', 'play', 'cats.mp4');
-						</code></pre>
-					</figure>
-				</div>
-			</div>
-		</section>
-
-		<section>
-			<div class="grid-wrapper">
-				<div class="header">
-					<div class="logo"></div>
-					<div class="twitter"><a href="https://twitter.com/ixek"><i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-				</div>
-				<div class="content">
-					<h1>User Timings</h1>
-					<h2>Send</h2>
-					<table>
-						<tr><th>category:</th><td>{string}</td></tr>
-						<tr><th>var:</th><td>{string}</td></tr>
-						<tr><th>value:</th><td>{number}</td></tr>
-						<tr><th>label:</th><td>{string}</td><td>optional</td></tr>
-					</table>
-					<figure class="code">
-						<pre><code class="lang-js">
-							ga('send', 'timing', 'resource', 'get', 100);
-						</code></pre>
+						<pre><code class="lang-js">ga('set', 'metric1', 2);</code></pre>
 					</figure>
 				</div>
 			</div>
@@ -302,11 +268,11 @@ for i in elemt:
 				</div>
 				<div class="content">Notice the section title on the header
 					add this using
-<figure class="code">
-<pre><code class="lang-html">
-<div class="section"> Section </div>
-</code></pre>
-</figure>
+					<figure class="code">
+					<pre><code class="lang-html"><div class="section"> Section </div></code></pre>
+					<p>⭐ Also if you do not pass an argument to the slide section, the default
+					background color us white as in this slide</p>
+					</figure>
 				</div>
 			</div>
 		</section>
@@ -336,13 +302,21 @@ for i in elemt:
     </section>
 
 		<!-- Dark slide with code -->
-		<section class="code color--dark" id="code--path">
+		<section  id="code--path">
 			<div class="grid-wrapper">
 				<div class="header">
 					<div class="logo"></div>
 					<div class="section">Section</div>
 				</div>
+				<div class="content">
+					<figure class="code">
+						<pre><code class="lang-js">ga('require', 'linker');</code></pre>
+						<figcaption>usr/bin</figcaption>
+					</figure>
 				<figure class="code">
+
+					<!-- figcaption element is optional, can be placed above or below code  -->
+					<figcaption>usr/bin</figcaption>
 									<div data-markdown>
 					```python
 					def print_hello():
@@ -356,8 +330,6 @@ for i in elemt:
 					print(eight_plus_one)
 					```
 				</div>
-				<!-- figcaption element is optional, can be placed above or below code  -->
-				<figcaption class="path">/src/tania/planets</figcaption>
 			</figure>
 
 			<figure class="code code2">
@@ -375,12 +347,14 @@ for i in elemt:
 					```
 				</div>
 				<!-- figcaption element is optional, can be placed above or below code  -->
-				<figcaption class="path">/src/tania/planets</figcaption>
+				<figcaption class="path">Note you need to use a suitable syntax highlight for this
+				e.g. atomdark_syntax.css </figcaption>
 			</figure>
+		</div>
 		</section>
 
-		<!-- Slide with content -->
-		<section id="demo">
+		<!-- Slide with image -->
+		<section>
 			<div class="grid-wrapper">
 				<div class="header">
 					<div class="logo"></div>
@@ -388,21 +362,23 @@ for i in elemt:
 						<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 					</div>
 					<div class="content">
-						<h1>Demo</h1>
-						<a href="https://github.com/gapple/presentation-better-analytics/tree/master/demo/umami_ga">
-							umami_ga.module</a>
+						<h1>Slide with image</h1>
+						<a href="https://github.com/trallard/talks" target="_blank">
+							This is a link</a>
 							<figure class="display">
 								<img  src="./assets/herdata/puzzle.PNG" alt ="img" />
 							</figure>
+							<p>The figure uses the class <code>display</code> </p>
 						</div>
 					</div>
 				</section>
 
-				<!-- Slide with adrk background and semi transparent box -->
+				<!-- Slide with dark background and semi transparent box -->
 				<section class="dark_box">
 					<aside>
 						<h2>Title ⚡️</h2>
 						Content goes here: make it catchy
+						<code style='color: black;'>class="dark_box"</code>
 					</aside>
 				</section>
 
@@ -412,7 +388,15 @@ for i in elemt:
 						<div class="logo"></div>
 						<div class="content">
 							<h1>Hola</h1>
-							Content here
+							This is a two colour slide <code>color--two</code>
+							<div class="items_block">
+								<div class="single-block left">
+									I am on the left
+								</div>
+								<div class="single-block right">
+									I am on the right
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -429,7 +413,7 @@ for i in elemt:
 				</section>
 
 
-				<section id="end" class="color--ice">
+				<section id="end" class="color--dark">
 					<div class="grid-wrapper">
 						<div class="content">
 							<a href="https://twitter.com/ixek"><i class="fab fa-twitter-square"></i>
