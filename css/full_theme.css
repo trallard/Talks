@@ -253,7 +253,7 @@ html {
 * ACTUAL THEMES
 *********************************************/
 .reveal.pattern--stream {
-  background-image: url("../assets/patterns/stream.svg"); }
+  background-image: url("../assets/patterns/gatsbyblue.png"); }
 
 .theme-streams .reveal.pattern--stream .slides section.intro {
   background-color: #5F4B8B; }

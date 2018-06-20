@@ -284,7 +284,7 @@ word-wrap: normal; }
 
 // Stream
 .reveal.pattern--stream {
-  background-image: url("../assets/patterns/stream.svg"); }
+  background-image: url("../assets/patterns/gatsbyblue.png"); }
 .reveal.pattern--stream .slides section.intro {
   @include themify($themes){
     background-color: themed('primary')
