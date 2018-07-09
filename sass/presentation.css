@@ -256,9 +256,10 @@ div.warn {
   background-color: #fb5c6f;
   border-color: #fb5c6f;
   border-left: 5px solid #C81D25;
-  padding: 0.5em;
+  padding: 15px 15px;
   color: #fff;
-  margin: 15px 0;
+  margin: 1em;
+  margin-top: 0;
   opacity: 0.8;
 }
 
@@ -267,10 +268,11 @@ div.info {
   background-color: #208a96;
   border-color: #208a96;
   border-left: 5px solid #0B3954;
-  padding: 0.5em;
+  padding: 15px 15px;
   color: #fff;
   opacity: 0.8;
-  margin: 15px 0;
+  margin: 1em;
+  margin-top: 0;
 }
 
 .info a{
