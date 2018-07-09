@@ -8,7 +8,7 @@
 | ManchesterR user group                       | 11 Nov 2017      | [https://bitsandchips.me/Talks/ManchesteR.html ](https://bitsandchips.me/Talks/ManchesteR.html)   |
 | Her + Data                                   | 08 Mar 2018      | [https://bitsandchips.me/Talks/her+data.html ](https://bitsandchips.me/Talks/her+data.html)     |
 | PyCon                                        | 09 May 2018      | [https://bitsandchips.me/Talks/PyCon.html  ](https://bitsandchips.me/Talks/PyCon.html)       |
-| PyData Manchester                              | 12 Jun 2018      | [https://bitsandchips.me/Talks/PyData_Pyladies.html  ](https://bitsandchips.me/Talks/PyData_Pyladies.html)       |
+| PyData Manchester                              | 12 Jun 2018      | [https://bitsandchips.me/Talks/PyData_PyLadies.html  ](https://bitsandchips.me/Talks/PyData_PyLadies.html)       |
 |Women in Sage, Montreal   | 10 Jul 2018    |  [https://bitsandchips.me/Talks/WomenInSage.html  ](https://bitsandchips.me/Talks/WomenInSage.html)  |
 
 
