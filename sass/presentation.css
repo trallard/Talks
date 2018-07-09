@@ -51,9 +51,9 @@
 .slides .title .presentation-url {
     grid-area: header;
     text-align: right;
-    font-size: 0.95em;
+    font-size: 1em;
     align-self: center;
-    opacity: 0.4;
+    opacity: 0.5;
     color: black;
 }
 
@@ -365,7 +365,7 @@ ul.icon li{
 
 ul.icon li::before{
   font-family: 'flaticon';
-  content: "\f102"; /*maguey*/
+  content: "\f102"; /* maguey */
   float: left;
 	width: 1.2em;
   font-size: 1em;
@@ -375,7 +375,7 @@ ul.icon li::before{
 
 ul.icon li.pinata::before{
   content: "\f100";
-  color: #F8757F; /*salmon*/
+  color: #F8757F; /* salmon */
 }
 ul.icon li.nopal::before{
   content: "\f101";
@@ -385,5 +385,5 @@ ul.icon li.cactus::before{
 }
 ul.icon li.skull::before{
   content: "\f104";
-  color: #454545; /*darkgray*/
+  color: #454545; /* darkgray */
 }

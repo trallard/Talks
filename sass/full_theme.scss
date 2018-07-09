@@ -50,15 +50,22 @@ $themes: (
     'primary': #30638B, /* steel blue */
     'secondary': #EDAF49, /* golden */
     'third': #00798c, /* seagreen*/
-    'primary-light':lighten(#3A015C, 10%),
-    'secondary-light' :lighten(#41ead4, 10%),
+    'primary-light':lighten(#30638B, 10%),
+    'secondary-light' :lighten(#EDAF49, 10%),
   ),
   'goldilocks':(
     'primary': #30638B, /* steel blue */
     'secondary': #EDAF49, /* golden */
     'third': #8D4593, /* plum */
-    'primary-light':lighten(#3A015C, 10%),
-    'secondary-light' :lighten(#41ead4, 10%),
+    'primary-light':lighten(#30638B, 10%),
+    'secondary-light' :lighten(#EDAF49, 10%),
+  ),
+  'duotone':(
+    'secondary': #736FBA, /* lilac */
+    'primary': #CC144B, /* cherry */
+    'third': #A1AAE2, /* light lilac */
+    'primary-light':lighten(#736FBA, 10%),
+    'secondary-light' :lighten(#CC144B, 10%),
   ),
   'black':(
     'primary': #BDE16B, /*green*/
@@ -326,7 +333,8 @@ word-wrap: normal; }
 
 // Stream now with zigzag
 .reveal.pattern--stream {
-  background-image: url("../assets/patterns/zigzag_purple.svg"); }
+  background-image: url("../assets/patterns/zigzag_purple.svg");
+  background-color: white;}
 .reveal.pattern--stream .slides section.intro {
   @include themify($themes){
     background-color: themed('primary')
