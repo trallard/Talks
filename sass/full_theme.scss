@@ -67,6 +67,13 @@ $themes: (
     'primary-light':lighten(#736FBA, 10%),
     'secondary-light' :lighten(#CC144B, 10%),
   ),
+  'jewels':(
+    'secondary': #79C9E8, /*  blue topaz */
+    'primary': #4A235D, /* amethyst */
+    'third': #FF0368, /* rose */
+    'primary-light':lighten(#736FBA, 10%),
+    'secondary-light' :lighten(#CC144B, 10%),
+  ),
   'black':(
     'primary': #BDE16B, /*green*/
     'secondary': #C687E8, /*lilac*/
@@ -374,6 +381,7 @@ word-wrap: normal; }
    background-color: themed('third')
  } }
 
+
 // Hex
 .reveal.pattern--hex {
   background-image: url("../assets/patterns/hex_pattern.png"); }
@@ -409,23 +417,45 @@ word-wrap: normal; }
 } }
 
 
-// Star
+// Flowers
 .reveal.pattern--flowers {
   background-image: url("../assets/patterns/floral_pattern.svg"); }
-.reveal.pattern--star .slides section.intro {
+.reveal.pattern--flowers .slides section.intro {
   @include themify($themes){
-    background-color: themed('secondary')
+    background-color: themed('secondary');
   }}
 .reveal.pattern--flowers .slides section.title {
  @include themify($themes){
    background-color: themed('secondary');
-   color: themed('primary')
+   color: themed('primary');
  }}
 .reveal.pattern--flowers .progress {
  @include themify($themes){
-   background-color: themed('third')
+   background-color: themed('third');
 } }
 
+
+// pupilines
+.reveal.pattern--pupilines {
+  background-image: url("../assets/patterns/pupilines.svg"); }
+.reveal.pattern--pupilines .slides section.intro {
+  @include themify($themes){
+    background-color: themed('secondary')
+  }}
+.reveal.pattern--pupilines .slides section.title {
+ @include themify($themes){
+   background-color: themed('secondary');
+   color: themed('primary')
+ }}
+.reveal.pattern--pupilines .progress {
+ @include themify($themes){
+   background-color: themed('secondary')
+} }
+
+.reveal.pattern--pupilines .controls {
+@include themify($themes){
+  color: themed('secondary')}
+ }
 
 
 /*********************************************
@@ -499,6 +529,17 @@ word-wrap: normal; }
 .reveal .slides section.color--vibrant .logo {
   background-image: url("../assets/Tania_logo.png"); }
 
+
+// Topaz slide
+.reveal .slides section.color--topaz{
+  background-color: #67aeca;
+  color:$white;
+  & h1{
+    color: #675682;
+  }
+}
+.reveal .slides section.color--vibrant .logo {
+  background-image: url("../assets/Tania_logo.png"); }
 
 // Two tones slide
 .reveal .slides section.color--two{
