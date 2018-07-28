@@ -333,19 +333,113 @@
 							<div class="content">
 								<h2>Getting started with TDD (test driven development) for
 								data science</h2>
+								<h3>Prepare environment</h3>
 								<hr>
 								<ul class='icon'>
-									<li>Test the core functionalities of your code.</li>
-									<li>Consider pair programming (an extra pair of eyes can make
-										a huge difference)</li>
-									<li>Have both unit and integration tests</li>
-									<li>Mock behaviours/data when appropriate</li>
-									<li>Use CI tools to automate testing</li>
-									<li>Automate data validation</li>
+									<li>Care about tests from the start of your project</li>
+									<li>All jobs should be functions (modularized code)</li>
+									<li>Safe to rerun the job (data exists, push partial results)</li>
+									<li>No hard coded paths</li>
+									<li>Timestamp data</li>
 								</ul>
 						</div>
 					</div>
 				</section>
+
+				<section>
+					<div class="grid-wrapper">
+						<div class="header">
+							<div class="logo"></div>
+							<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+							</div>
+							<div class="content">
+								<h3>Unit test locally </h3>
+								<hr>
+								<ul class='icon'>
+									<li>Test locally each job</li>
+									<li>Overcome challenges with fake data creation</li>
+									<li>Need to identify edge cases</li>
+								</ul>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="grid-wrapper">
+						<div class="header">
+							<div class="logo"></div>
+							<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+							</div>
+							<div class="content">
+								<h3>Validation</h3>
+								<figure class="display">
+									<img  src="./assets/test/validate.PNG" alt="datascientist">
+								</figure>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="grid-wrapper">
+						<div class="header">
+							<div class="logo"></div>
+							<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+							</div>
+							<div class="content">
+								<figure class="display">
+									<img  src="./assets/test/validate2.PNG" alt="datascientist">
+								</figure>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="grid-wrapper">
+						<div class="header">
+							<div class="logo"></div>
+							<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+							</div>
+							<div class="content">
+								<h2>Input data validation</h2>
+								Bad input will degrade the output and it is likely to pass silently
+								Should:
+								<ul>
+									<li>Detect pathological data and fail early</li>
+									<li>Deal with expected data variability</li>
+									<li>Such as missing values,  endocing issues, schema changes,
+									data order changes</li>
+									<li>Validate metadata</li>
+								</ul>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="grid-wrapper">
+						<div class="header">
+							<div class="logo"></div>
+							<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+							</div>
+							<div class="content">
+								<h2>Output data validation</h2>
+								Humans make mistakes and these can be easily propagated
+								Should:
+								<ul>
+									<li>Check for anomalies</li>
+									<li>Supervised: use a validation dataset and threshold</li>
+									<li>Chec for edge cases</li>
+								</ul>
+						</div>
+					</div>
+				</section>
+
+
+
 
 				<!-- Last slide -->
 				<section id="end" class="color--violet">
