@@ -7,6 +7,7 @@
 @import url(../../reveal.js/lib/font/leafy/leafy.css);
 @import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Dosis:400,600|Overpass+Mono|PT+Mono');
 @import url('https://fonts.googleapis.com/css?family=Muli:400,700|Space+Mono:400,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito|Open+Sans');
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
 
@@ -21,6 +22,7 @@ $text-color: #737373; /* dark gray */
 $salmon: #F8757F;
 $ultraviolet: #5F4B8B;
 $seagreen:  #41ead4;
+$soda-grey: #aaabab;
 
 // Fonts used with no themes
 $code-font:  'Overpass Mono', monospace;
@@ -74,6 +76,13 @@ $themes: (
     'primary-light':lighten(#736FBA, 10%),
     'secondary-light' :lighten(#CC144B, 10%),
   ),
+  'soda':(
+    'primary': #263c80, /*dark blue*/
+    'secondary': #1073b9, /*medium blue*/
+    'third': #95d5d4, /*light aqua*/
+    'primary-light':lighten( #263c80, 10%),
+    'secondary-light' :lighten(#1073b9, 10%),
+  ),
   'black':(
     'primary': #BDE16B, /*green*/
     'secondary': #C687E8, /*lilac*/
@@ -101,6 +110,10 @@ $themes: (
   'allmono-font': (
   'title-font': #{'Muli', sans-serif},
   'base-font' : #{'Space Mono', monospace},
+  ),
+  'soda-font': (
+  'title-font': #{'Open Sans', sans-serif},
+  'base-font' : #{'Nunito', sans-serif},
   ),
 );
 
