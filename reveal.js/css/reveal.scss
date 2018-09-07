@@ -1,9 +1,9 @@
 /*!
  * reveal.js
- * http://lab.hakim.se/reveal-js
+ * http://revealjs.com
  * MIT licensed
  *
- * Copyright (C) 2017 Hakim El Hattab, http://hakim.se
+ * Copyright (C) 2018 Hakim El Hattab, http://hakim.se
  */
 
 
@@ -160,9 +160,25 @@ body {
 	}
 }
 
+.reveal .slides section .fragment.fade-in-then-out,
 .reveal .slides section .fragment.current-visible {
 	opacity: 0;
 	visibility: hidden;
+
+	&.current-fragment {
+		opacity: 1;
+		visibility: inherit;
+	}
+}
+
+.reveal .slides section .fragment.fade-in-then-semi-out {
+	opacity: 0;
+	visibility: hidden;
+
+	&.visible {
+		opacity: 0.5;
+		visibility: inherit;
+	}
 
 	&.current-fragment {
 		opacity: 1;
@@ -251,22 +267,22 @@ $controlArrowSize: 3.6em;
 $controlArrowSpacing: 1.4em;
 $controlArrowLength: 2.6em;
 $controlArrowThickness: 0.5em;
+$controlsArrowAngle: 45deg;
+$controlsArrowAngleHover: 40deg;
+$controlsArrowAngleActive: 36deg;
+
+@mixin controlsArrowTransform( $angle ) {
+	&:before {
+		transform: translateX(($controlArrowSize - $controlArrowLength)/2) translateY(($controlArrowSize - $controlArrowThickness)/2) rotate( $angle );
+	}
+
+	&:after {
+		transform: translateX(($controlArrowSize - $controlArrowLength)/2) translateY(($controlArrowSize - $controlArrowThickness)/2) rotate( -$angle );
+	}
+}
 
 .reveal .controls {
-	$angle: 45deg;
-	$angleHover: 40deg;
-	$angleActive: 36deg;
 	$spacing: 12px;
-
-	@mixin arrowTransform( $angle ) {
-		&:before {
-			transform: translateX(($controlArrowSize - $controlArrowLength)/2) translateY(($controlArrowSize - $controlArrowThickness)/2) rotate( $angle );
-		}
-
-		&:after {
-			transform: translateX(($controlArrowSize - $controlArrowLength)/2) translateY(($controlArrowSize - $controlArrowThickness)/2) rotate( -$angle );
-		}
-	}
 
 	display: none;
 	position: absolute;
@@ -275,7 +291,7 @@ $controlArrowThickness: 0.5em;
 	right: $spacing;
 	left: auto;
 	z-index: 1;
-	color: #fff;
+	color: #000;
 	pointer-events: none;
 	font-size: 10px;
 
@@ -302,8 +318,8 @@ $controlArrowThickness: 0.5em;
 		-webkit-tap-highlight-color: rgba( 0, 0, 0, 0 );
 	}
 
-	.pagination-arrow:before,
-	.pagination-arrow:after {
+	.controls-arrow:before,
+	.controls-arrow:after {
 		content: '';
 		position: absolute;
 		top: 0;
@@ -314,23 +330,23 @@ $controlArrowThickness: 0.5em;
 		background-color: currentColor;
 
 		transition: all 0.15s ease, background-color 0.8s ease;
-		transform-origin: $controlArrowThickness/2 50%;
+		transform-origin: floor(($controlArrowThickness/2)*10)/10 50%;
 		will-change: transform;
 	}
 
-	.pagination-arrow {
+	.controls-arrow {
 		position: relative;
 		width: $controlArrowSize;
 		height: $controlArrowSize;
 
-		@include arrowTransform( $angle );
+		@include controlsArrowTransform( $controlsArrowAngle );
 
 		&:hover {
-			@include arrowTransform( $angleHover );
+			@include controlsArrowTransform( $controlsArrowAngleHover );
 		}
 
 		&:active {
-			@include arrowTransform( $angleActive );
+			@include controlsArrowTransform( $controlsArrowAngleActive );
 		}
 	}
 
@@ -345,7 +361,7 @@ $controlArrowThickness: 0.5em;
 		bottom: $controlArrowSpacing + $controlArrowSize/2;
 		transform: translateX( 10px );
 
-		.pagination-arrow {
+		.controls-arrow {
 			transform: rotate( 180deg );
 		}
 
@@ -359,7 +375,7 @@ $controlArrowThickness: 0.5em;
 		bottom: $controlArrowSpacing*2 + $controlArrowSize;
 		transform: translateY( -10px );
 
-		.pagination-arrow {
+		.controls-arrow {
 			transform: rotate( 90deg );
 		}
 	}
@@ -369,7 +385,7 @@ $controlArrowThickness: 0.5em;
 		bottom: 0;
 		transform: translateY( 10px );
 
-		.pagination-arrow {
+		.controls-arrow {
 			transform: rotate( -90deg );
 		}
 
@@ -420,30 +436,37 @@ $controlArrowThickness: 0.5em;
 
 // Adjust the layout when there are no vertical slides
 .reveal:not(.has-vertical-slides) .controls .navigate-left {
-	bottom: 1.2em;
-	right: 2.2em + $controlArrowSize;
+	bottom: $controlArrowSpacing;
+	right: 0.5em + $controlArrowSpacing + $controlArrowSize;
 }
 
 .reveal:not(.has-vertical-slides) .controls .navigate-right {
-	bottom: 1.2em;
-	right: 1.2em;
+	bottom: $controlArrowSpacing;
+	right: 0.5em;
 }
 
+// Adjust the layout when there are no horizontal slides
 .reveal:not(.has-horizontal-slides) .controls .navigate-up {
-	right: 1.2em;
-	bottom: 2.2em + $controlArrowSize;
+	right: $controlArrowSpacing;
+	bottom: $controlArrowSpacing + $controlArrowSize;
 }
 .reveal:not(.has-horizontal-slides) .controls .navigate-down {
-	right: 1.2em;
-	bottom: 1.2em;
+	right: $controlArrowSpacing;
+	bottom: 0.5em;
 }
 
+// Invert arrows based on background color
 .reveal.has-dark-background .controls {
 	color: #fff;
 }
-
 .reveal.has-light-background .controls {
 	color: #000;
+}
+
+// Disable active states on touch devices
+.reveal.no-hover .controls .controls-arrow:hover,
+.reveal.no-hover .controls .controls-arrow:active {
+	@include controlsArrowTransform( $controlsArrowAngle );
 }
 
 // Edge aligned controls layout
@@ -470,21 +493,25 @@ $controlArrowThickness: 0.5em;
 		.navigate-left {
 			top: 50%;
 			left: $spacing;
+			margin-top: -$controlArrowSize/2;
 		}
 
 		.navigate-right {
 			top: 50%;
 			right: $spacing;
+			margin-top: -$controlArrowSize/2;
 		}
 
 		.navigate-up {
 			top: $spacing;
 			left: 50%;
+			margin-left: -$controlArrowSize/2;
 		}
 
 		.navigate-down {
 			bottom: $spacing;
 			left: 50%;
+			margin-left: -$controlArrowSize/2;
 		}
 	}
 
@@ -496,7 +523,7 @@ $controlArrowThickness: 0.5em;
  *********************************************/
 
 .reveal .progress {
-	position: fixed;
+	position: absolute;
 	display: none;
 	height: 3px;
 	width: 100%;
@@ -505,6 +532,7 @@ $controlArrowThickness: 0.5em;
 	z-index: 10;
 
 	background-color: rgba( 0, 0, 0, 0.2 );
+	color: #fff;
 }
 	.reveal .progress:after {
 		content: '';
@@ -519,7 +547,7 @@ $controlArrowThickness: 0.5em;
 		height: 100%;
 		width: 0px;
 
-		background-color: #000;
+		background-color: currentColor;
 		transition: width 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
 	}
 
@@ -528,7 +556,7 @@ $controlArrowThickness: 0.5em;
  *********************************************/
 
 .reveal .slide-number {
-	position: fixed;
+	position: absolute;
 	display: block;
 	right: 8px;
 	bottom: 8px;
@@ -539,6 +567,10 @@ $controlArrowThickness: 0.5em;
 	color: #fff;
 	background-color: rgba( 0, 0, 0, 0.4 );
 	padding: 5px;
+}
+
+.reveal .slide-number a {
+	color: currentColor;
 }
 
 .reveal .slide-number-delimiter {
@@ -555,6 +587,16 @@ $controlArrowThickness: 0.5em;
 	height: 100%;
 	overflow: hidden;
 	touch-action: none;
+}
+
+// Mobile Safari sometimes overlays a header at the top
+// of the page when in landscape mode. Using fixed
+// positioning ensures that reveal.js reduces its height
+// when this header is visible.
+@media only screen and (orientation : landscape) {
+	.reveal.ua-iphone {
+		position: fixed;
+	}
 }
 
 .reveal .slides {
@@ -614,6 +656,7 @@ $controlArrowThickness: 0.5em;
 .reveal .slides>section.stack {
 	padding-top: 0;
 	padding-bottom: 0;
+	pointer-events: none;
 }
 
 .reveal .slides>section.present,
@@ -991,6 +1034,25 @@ $controlArrowThickness: 0.5em;
 	z-index: 100;
 	transition: all 1s ease;
 }
+
+.reveal .pause-overlay .resume-button {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	color: #ccc;
+	border-radius: 2px;
+	padding: 6px 14px;
+	border: 2px solid #ccc;
+	font-size: 16px;
+	background: transparent;
+	cursor: pointer;
+
+	&:hover {
+		color: #fff;
+		border-color: #fff;
+	}
+}
+
 .reveal.paused .pause-overlay {
 	visibility: visible;
 	opacity: 1;
@@ -1064,11 +1126,18 @@ $controlArrowThickness: 0.5em;
 		overflow: hidden;
 
 		background-color: rgba( 0, 0, 0, 0 );
+
+		transition: all 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+	}
+
+	.reveal .slide-background-content {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+
 		background-position: 50% 50%;
 		background-repeat: no-repeat;
 		background-size: cover;
-
-		transition: all 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
 	}
 
 	.reveal .slide-background.stack {
@@ -1514,12 +1583,13 @@ $controlArrowThickness: 0.5em;
  *********************************************/
 
 .reveal .playback {
-	position: fixed;
+	position: absolute;
 	left: 15px;
 	bottom: 20px;
 	z-index: 30;
 	cursor: pointer;
 	transition: all 400ms ease;
+	-webkit-tap-highlight-color: rgba( 0, 0, 0, 0 );
 }
 
 .reveal.overview .playback {
@@ -1588,14 +1658,15 @@ $controlArrowThickness: 0.5em;
 .reveal .speaker-notes {
 	display: none;
 	position: absolute;
-	width: 20vw;
+	width: 25vw;
 	height: 100%;
 	top: 0;
 	left: 100%;
-	padding: 14px;
+	padding: 14px 18px 14px 18px;
 	z-index: 1;
 	font-size: 18px;
 	line-height: 1.4;
+	border: 1px solid rgba( 0, 0, 0, 0.05 );
 	color: #222;
 	background-color: #f5f5f5;
 	overflow: auto;
@@ -1603,6 +1674,15 @@ $controlArrowThickness: 0.5em;
 	text-align: left;
 	font-family: Helvetica, sans-serif;
 	-webkit-overflow-scrolling: touch;
+
+	.notes-placeholder {
+		color: #ccc;
+		font-style: italic;
+	}
+
+	&:focus {
+		outline: none;
+	}
 
 	&:before {
 		content: 'Speaker notes';
@@ -1612,8 +1692,9 @@ $controlArrowThickness: 0.5em;
 	}
 }
 
+
 .reveal.show-notes {
-	max-width: 80vw;
+	max-width: 75vw;
 	overflow: visible;
 }
 
@@ -1621,22 +1702,38 @@ $controlArrowThickness: 0.5em;
 	display: block;
 }
 
+@media screen and (min-width: 1600px) {
+	.reveal .speaker-notes {
+		font-size: 20px;
+	}
+}
+
 @media screen and (max-width: 1024px) {
 	.reveal.show-notes {
+		border-left: 0;
 		max-width: none;
-		max-height: 70vh;
+		max-height: 70%;
 		overflow: visible;
 	}
 
 	.reveal.show-notes .speaker-notes {
-		top: 70vh;
+		top: 100%;
 		left: 0;
 		width: 100%;
-		height: 30vh;
+		height: (30/0.7)*1%;
 	}
 }
 
 @media screen and (max-width: 600px) {
+	.reveal.show-notes {
+		max-height: 60%;
+	}
+
+	.reveal.show-notes .speaker-notes {
+		top: 100%;
+		height: (40/0.6)*1%;
+	}
+
 	.reveal .speaker-notes {
 		font-size: 14px;
 	}

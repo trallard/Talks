@@ -1,4 +1,4 @@
-### Themes images
+### Themes combinations
 
 ```
 <body class="theme-lines theme-dosis-font">

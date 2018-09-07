@@ -7,7 +7,7 @@
 @import url(../../reveal.js/lib/font/leafy/leafy.css);
 @import url("https://fonts.googleapis.com/css?family=Didact+Gothic|Dosis:400,600|Overpass+Mono|PT+Mono");
 @import url("https://fonts.googleapis.com/css?family=Muli:400,700|Space+Mono:400,700");
-@import url("https://fonts.googleapis.com/css?family=Nunito|Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Nunito|Open+Sans|Annie+Use+Your+Telescope");
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222;
 }
@@ -47,6 +47,9 @@ section.has-light-background, section.has-light-background h1, section.has-light
 }
 .theme-soda-font .reveal {
   font-family: Nunito, sans-serif;
+}
+.theme-nox-font .reveal {
+  font-family: Open-Sans, sans-serif;
 }
 
 ::selection {
@@ -234,6 +237,14 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .theme-soda-font .reveal h6 {
   font-family: Open Sans, sans-serif;
 }
+.theme-nox-font .reveal h1,
+.theme-nox-font .reveal h2,
+.theme-nox-font .reveal h3,
+.theme-nox-font .reveal h4,
+.theme-nox-font .reveal h5,
+.theme-nox-font .reveal h6 {
+  font-family: Annie Use Your Telescope, cursive;
+}
 
 /*********************************************
  * OTHER- modifications to reveal themes
@@ -355,6 +366,10 @@ section.has-light-background, section.has-light-background h1, section.has-light
   /* I prefer a thicker line */
 }
 .theme-soda-font .reveal a:hover {
+  border-bottom: 2px solid;
+  /* I prefer a thicker line */
+}
+.theme-nox-font .reveal a:hover {
   border-bottom: 2px solid;
   /* I prefer a thicker line */
 }
@@ -1189,6 +1204,9 @@ html {
 .theme-soda-font .items-block {
   font-family: Nunito, sans-serif;
 }
+.theme-nox-font .items-block {
+  font-family: Open-Sans, sans-serif;
+}
 .items-block.single-block {
   width: 100%;
   display: flex;
@@ -1374,6 +1392,9 @@ html {
 }
 .theme-soda-font .reveal .slides section .section {
   font-family: Open Sans, sans-serif;
+}
+.theme-nox-font .reveal .slides section .section {
+  font-family: Annie Use Your Telescope, cursive;
 }
 
 .reveal .slides section:not([class*=color--]) .section {
