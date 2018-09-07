@@ -18,7 +18,7 @@
 }( this, function( marked ) {
 
 	var DEFAULT_SLIDE_SEPARATOR = '^\r?\n---\r?\n$',
-		DEFAULT_NOTES_SEPARATOR = 'note:',
+		DEFAULT_NOTES_SEPARATOR = 'notes?:',
 		DEFAULT_ELEMENT_ATTRIBUTES_SEPARATOR = '\\\.element\\\s*?(.+?)$',
 		DEFAULT_SLIDE_ATTRIBUTES_SEPARATOR = '\\\.slide:\\\s*?(\\\S.+?)$';
 
@@ -127,8 +127,6 @@
 	function slidify( markdown, options ) {
 
 		options = getSlidifyOptions( options );
-
-		markdown = markdown.replace(/(\r\n|\r)/g, '\n');
 
 		var separatorRegex = new RegExp( options.separator + ( options.verticalSeparator ? '|' + options.verticalSeparator : '' ), 'mg' ),
 			horizontalSeparatorRegex = new RegExp( options.separator );
