@@ -44,6 +44,12 @@
 ```
 ![](assets/docs/soda.png)
 
+```
+<body class="theme-jewels theme-nox-font">
+<div class="reveal pattern--pupilines">
+```
+![](assets/docs/pupilines.png)
+
 ---
 
 ### Palettes
@@ -71,6 +77,45 @@ primary and secondary)
 #### streams
 ![](assets/docs/palettes/streams.png)
 
+---
+## Backgrounds
+
+- bupulines
+![](assets/patterns/bupulines.svg)
+
+- bwlines
+![](assets/patterns/bwlines.svg)
+
+- cubes
+![](assets/patterns/cubes.svg)
+
+- gatsbyblue
+![](assets/patterns/gatsbyblue.svg)
+
+- gatsby
+![](assets/patterns/gatsby.svg)
+
+- hexgray
+![](assets/patterns/hex_gray.svg)
+
+- hex
+![](assets/patterns/hex_pattern.svg)
+
+- lines
+![](assets/patterns/lines.png)
+
+- pupilines
+![](assets/patterns/pupilines.svg)
+
+- starpattern
+![](assets/patterns/star_pattern.svg
+
+- stream
+![](assets/patterns/stream.svg)
+
+
+- zigzag
+![](assets/patterns/zigzag_purple.svg
 
 ---
 
