@@ -1473,6 +1473,16 @@ html {
   width: 24vmin;
 }
 
+.reveal .slides section.title .logo--soda {
+  background-image: url("../assets/logos/Hex_logo.png");
+  width: 24vmin;
+}
+
+.reveal .slides section.title .logo--pyladies {
+  background-image: url("../assets/logos/pyladies-nwuk-nocompass-darkpink.svg");
+  width: 24vmin;
+}
+
 .reveal .slides section.title .content {
   align-self: center;
   grid-area: content;
