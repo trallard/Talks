@@ -1,13 +1,14 @@
 <!doctype html>
 <html prefix="og: http://ogp.me/ns#">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 	<title>PyData ligthning talk: PyLadies</title>
 
-  <!-- Reveal themes -->
-  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+	<!-- Reveal themes -->
+	<link rel="stylesheet" href="reveal.js/css/reveal.css">
 	<link rel="stylesheet" href="reveal.js/css/theme/black.css">
 
 	<!-- Full theme; allows for the selction of multple themes -->
@@ -18,10 +19,10 @@
 	<link rel="stylesheet" href="css/colorbrewer_syntax.css">
 
 	<!-- Favicon -->
-	<link rel="icon" href="./assets/Tania_logo.png"/>
+	<link rel="icon" href="./assets/Tania_logo.png" />
 
-  <!-- Font awesome -->
-  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" media="all">
+	<!-- Font awesome -->
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" media="all">
 
 	<!-- Tania custom icons  -->
 	<link rel="stylesheet" type="text/css" href="assets/icons_collection/font/flaticon.css">
@@ -29,22 +30,23 @@
 
 
 	<!-- Script for printing -->
-  <script src="reveal.js/js/reveal-print.js"></script>
+	<script src="reveal.js/js/reveal-print.js"></script>
 
 </head>
 
 <!-- Need to specify the theme here -->
 <!-- First theme- is for colour, theme-xxx-font is for the font -->
+
 <body class="theme-seacalm theme-dosis-font">
 
-<!-- Specify the main theme to be used here -->
-<!-- this controls the background and logos -->
-<div class="reveal pattern--hex">
+	<!-- Specify the main theme to be used here -->
+	<!-- this controls the background and logos -->
+	<div class="reveal pattern--hex">
 
-	<!-- Slides start here -->
-	<div class="slides">
+		<!-- Slides start here -->
+		<div class="slides">
 
-		<section>
+			<section>
 				<section class="title" id="title">
 					<div class="grid-wrapper">
 						<div class="header">
@@ -66,7 +68,7 @@
 							<div class="name">Tania Allard, PhD</div>
 						</div>
 						<a class="presentation-url" href="https://trallard.github.io/Talks/PyData_PyLadies">
-	            https://trallard.github.io/Talks/PyData_PyLadies</a>
+							https://trallard.github.io/Talks/PyData_PyLadies</a>
 
 					</div>
 				</section>
@@ -79,14 +81,14 @@
 								<hr>
 								<ul class="projects">
 									<li>Research Software Engineer</li>
-	                <li>at the University of Leeds</li>
+									<li>at the University of Leeds</li>
 								</ul>
 								<hr>
 								<ul class="accounts">
 									<li><a href="https://github.com/trallard">
-	                  <i class="fab fa-github social_icon"></i> <span> trallard</span></a></li>
+											<i class="fab fa-github social_icon"></i> <span> trallard</span></a></li>
 									<li><a href="https://twitter.com/ixek">
-	                  <i class="fab fa-twitter social_icon"></i><span> ixek</span></a></li>
+											<i class="fab fa-twitter social_icon"></i><span> ixek</span></a></li>
 								</ul>
 							</aside>
 						</div>
@@ -100,248 +102,247 @@
 					<div class="header">
 						<div class="logo"></div>
 						<div class="twitter"><a href="https://twitter.com/ixek">
-							<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-						</div>
-						<div class="content">
-							<h1>What is PyLadies?</h1>
-							<div class="description">
-								And why do we need another PyLadies chapter?
-							</div>
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h1>What is PyLadies?</h1>
+						<div class="description">
+							And why do we need another PyLadies chapter?
 						</div>
 					</div>
-				</section>
+				</div>
+			</section>
 
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="twitter"><a href="https://twitter.com/ixek">
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
 								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-						</div>
-						<div class="content">
-							<h2>We are...</h2>
-							A group of self-identified women 'developers' who love Python
-							programming language.
-							<br><br>
-							<figure class="display">
-							<img src="./assets/Pyladies/logo.png" alt="pyladies"
-							width="300"></figure>
-						</div>
 					</div>
-				</section>
+					<div class="content">
+						<h2>We are...</h2>
+						A group of self-identified women 'developers' who love Python
+						programming language.
+						<br><br>
+						<figure class="display">
+							<img src="./assets/Pyladies/logo.png" alt="pyladies" width="300"></figure>
+					</div>
+				</div>
+			</section>
 
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="twitter"><a href="https://twitter.com/ixek">
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
 								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-						</div>
-						<div class="content">
-							Basically any of you! But you do not need to <strong>work as a developer</strong>.
-							Maybe you: <br> <br>
-							<ul class='icon fragment'>
-								<li class="pinata fragment">Want to learn Python</li>
-								<li class="pinata fragment">Want to change careers</li>
-								<li class="pinata fragment">Want to meet like minded individuals</li>
-								<li class="pinata fragment">Want to give back to the OSS community </li>
-								<li class="pinata fragment">Want to make the tech community more
+					</div>
+					<div class="content">
+						Basically any of you! But you do not need to <strong>work as a developer</strong>.
+						Maybe you: <br> <br>
+						<ul class='icon fragment'>
+							<li class="pinata fragment">Want to learn Python</li>
+							<li class="pinata fragment">Want to change careers</li>
+							<li class="pinata fragment">Want to meet like minded individuals</li>
+							<li class="pinata fragment">Want to give back to the OSS community </li>
+							<li class="pinata fragment">Want to make the tech community more
 								welcoming and inclusive</li>
-							</ul>
-							<p class="fragment">Some of us might be hacking Python projects on the side,
+						</ul>
+						<p class="fragment">Some of us might be hacking Python projects on the side,
 							write code by day or night, but we all belong to the same community.</p>
-						</div>
 					</div>
-				</section>
+				</div>
+			</section>
 
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="twitter"><a href="https://twitter.com/ixek">
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
 								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-						</div>
-						<div class="content">
-							<h1>Why?</h1>
-							Python is one of the most welcoming communities I have ever belonged to.
-							And it is huuuge! We are over 7 million Pythonistas all over the
-							world 🐍💜
-						</div>
 					</div>
-				</section>
-
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="twitter"><a href="https://twitter.com/ixek">
-								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-						</div>
-						<div class="content">
-							<figure class="display">
-							<img src="./assets/Pyladies/pycon.jpg" alt="pyladies"
-							width="300"></figure>
-						</div>
+					<div class="content">
+						<h1>Why?</h1>
+						Python is one of the most welcoming communities I have ever belonged to.
+						And it is huuuge! We are over 7 million Pythonistas all over the
+						world 🐍💜
 					</div>
-				</section>
+				</div>
+			</section>
 
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="twitter"><a href="https://twitter.com/ixek">
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
 								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-						</div>
-						<div class="content">
-							<figure class="display">
-								<h2>There is still loads to do</h2>
-							<img src="./assets/Pyladies/core.PNG" alt="pyladies"
-							width="300"></figure>
-						</div>
 					</div>
-				</section>
-
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="twitter"><a href="https://twitter.com/ixek">
-								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-						</div>
-						<div class="content">
-							<figure class="display">
-							<img src="./assets/Pyladies/thinkme.png" alt="think"
-							width="300"></figure>
-							<h3 class="fragment">So is this only for women?</h3>
-						</div>
+					<div class="content">
+						<figure class="display">
+							<img src="./assets/Pyladies/pycon.jpg" alt="pyladies" width="300"></figure>
 					</div>
-				</section>
+				</div>
+			</section>
 
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="twitter"><a href="https://twitter.com/ixek">
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
 								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-						</div>
-						<div class="content">
-							<h3>I am glad you asked</h3>
-							The chapter will focus on underrepresented genders in our community
-							(e.g. women, agender, non-conforming, genderfluid..)
-							<p class='fragment'>But we also want to recognise those who champion
+					</div>
+					<div class="content">
+						<figure class="display">
+							<h2>There is still loads to do</h2>
+							<img src="./assets/Pyladies/core.PNG" alt="pyladies" width="300">
+						</figure>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<figure class="display">
+							<img src="./assets/Pyladies/thinkme.png" alt="think" width="300"></figure>
+						<h3 class="fragment">So is this only for women?</h3>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h3>I am glad you asked</h3>
+						The chapter will focus on underrepresented genders in our community
+						(e.g. women, agender, non-conforming, genderfluid..)
+						<p class='fragment'>But we also want to recognise those who champion
 							diversity</p>
-							<p class='fragment'>So we will organise a mixed bag of events
+						<p class='fragment'>So we will organise a mixed bag of events
 							and the target audience will be <strong>explicitly advertised
 							</strong> </p>
-						</div>
 					</div>
-				</section>
-
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="twitter"><a href="https://twitter.com/ixek">
-								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-						</div>
-						<div class="content">
-						 Also, we want this to be a safe, welcoming space for our people
-						 so we will adhere to the <a href="https://github.com/python/pycon-code-of-conduct">
-						 PSF code of conduct</a> and <strong>enforce it</strong>.
-						</div>
-					</div>
-				</section>
-
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="twitter"><a href="https://twitter.com/ixek">
-								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-						</div>
-						<div class="content">
-						 <h2>Our plans</h2>
-						 <ul class="icon">
-							 <li>Localised events: Manchester, Sheffield, Leeds, Liverpool(?)</li>
-							 <li>Sprints to give back to our favourite Python packages (
-								 in collaboration with <a href="https://twitter.com/py_sprints">
-								 Python sprints</a>)</li>
-								<li>Tutorials, workshops, mixed learning opportunities</li>
-								<li>More OSS sprints and hacks! (e.g. Hacktoberfest)...
-								and mentoring</li>
-						 </ul>
-						</div>
-					</div>
-				</section>
-
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="twitter"><a href="https://twitter.com/ixek">
-								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-						</div>
-						<div class="content">
-						 <h2>But we need you:</h2>
-							<ul class='icon'>
-								<li class='pinata'>We want to hear from you <a href="https://goo.gl/forms/70UPgqK5U6tyEUt83">
-								https://goo.gl/forms/70UPgqK5U6tyEUt83</a> </li>
-								<li class='pinata'>Follow us: <a href="https://twitter.com/PyLadiesNWUK"></a>
-								@PyLadiesNWUK </li>
-								<li class='pinata'>Suggest others to join the community</li>
-								<li class='pinata'>Sponsorship?</li>
-							</ul>
-						 </ul>
-						</div>
-					</div>
-				</section>
-
-
-				<section id="end" class="color--midnight">
-					<div class="grid-wrapper">
-						<div class="content">
-							<a href="https://twitter.com/ixek" style='color:#EEEDEF'>
-								<i class="fab fa-twitter-square"></i>
-								<span>ixek</span></a>
-							</div>
-						</div>
-					</div>
-				</section>
-
 				</div>
-			</div>
+			</section>
 
-<script src="reveal.js/lib/js/head.min.js"></script>
-<script src="reveal.js/js/reveal.js"></script>
-<script>
-Reveal.initialize({
-	center: false,
-	width: "100%",
-	height: "100%",
-	margin: 0,
-	minScale: 1,
-	maxScale: 1,
-	history: true,
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						Also, we want this to be a safe, welcoming space for our people
+						so we will adhere to the <a href="https://github.com/python/pycon-code-of-conduct">
+							PSF code of conduct</a> and <strong>enforce it</strong>.
+					</div>
+				</div>
+			</section>
 
-	// Arrow keys progress through sub-slides
-	// keyboard: {
-	// 	39: 'next', // right key
-	// 	37: 'prev'  // left key
-	// },
-	// More info about config & dependencies:
-	// - https://github.com/hakimel/reveal.js#configuration
-	// - https://github.com/hakimel/reveal.js#dependencies
-	dependencies: [
-		{ src: 'reveal.js/plugin/markdown/marked.js' },
-		{ src: 'reveal.js/plugin/markdown/markdown.js' },
-		{ src: 'reveal.js/plugin/notes/notes.js', async: true },
-		{ src: 'reveal.js/plugin/embed-tweet/embed-tweet.js' },
-		{
-			src: 'reveal.js/plugin/highlight/highlight.js',
-			async: true,
-			callback: function() { hljs.initHighlightingOnLoad(); } }
-		]
-	});
-</script>
-	</body>
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h2>Our plans</h2>
+						<ul class="icon">
+							<li>Localised events: Manchester, Sheffield, Leeds, Liverpool(?)</li>
+							<li>Sprints to give back to our favourite Python packages (
+								in collaboration with <a href="https://twitter.com/py_sprints">
+									Python sprints</a>)</li>
+							<li>Tutorials, workshops, mixed learning opportunities</li>
+							<li>More OSS sprints and hacks! (e.g. Hacktoberfest)...
+								and mentoring</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h2>But we need you:</h2>
+						<ul class='icon'>
+							<li class='pinata'>We want to hear from you <a href="https://goo.gl/forms/70UPgqK5U6tyEUt83">
+									https://goo.gl/forms/70UPgqK5U6tyEUt83</a> </li>
+							<li class='pinata'>Follow us: <a href="https://twitter.com/PyLadiesNWUK"></a>
+								@PyLadiesNWUK </li>
+							<li class='pinata'>Suggest others to join the community</li>
+							<li class='pinata'>Sponsorship?</li>
+						</ul>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+
+			<section id="end" class="color--midnight">
+				<div class="grid-wrapper">
+					<div class="content">
+						<a href="https://twitter.com/ixek" style='color:#EEEDEF'>
+							<i class="fab fa-twitter-square"></i>
+							<span>ixek</span></a>
+					</div>
+				</div>
+		</div>
+		</section>
+
+	</div>
+	</div>
+
+	<script src="reveal.js/lib/js/head.min.js"></script>
+	<script src="reveal.js/js/reveal.js"></script>
+	<script>
+		Reveal.initialize({
+			center: false,
+			width: "100%",
+			height: "100%",
+			margin: 0,
+			minScale: 1,
+			maxScale: 1,
+			history: true,
+
+			// Arrow keys progress through sub-slides
+			// keyboard: {
+			// 	39: 'next', // right key
+			// 	37: 'prev'  // left key
+			// },
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			dependencies: [
+				{ src: 'reveal.js/plugin/markdown/marked.js' },
+				{ src: 'reveal.js/plugin/markdown/markdown.js' },
+				{ src: 'reveal.js/plugin/notes/notes.js', async: true },
+				{ src: 'reveal.js/plugin/embed-tweet/embed-tweet.js' },
+				{
+					src: 'reveal.js/plugin/highlight/highlight.js',
+					async: true,
+					callback: function () { hljs.initHighlightingOnLoad(); }
+				}
+			]
+		});
+	</script>
+</body>
+
 </html>

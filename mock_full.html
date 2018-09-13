@@ -1,34 +1,36 @@
 <!doctype html>
 <html prefix="og: http://ogp.me/ns#">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<title>My awesome presentation</title>
+	<title>My awesome presentation</title>
 
-<!-- Reveal themes -->
-<link rel="stylesheet" href="reveal.js/css/reveal.css">
-<link rel="stylesheet" href="reveal.js/css/theme/white.css">
+	<!-- Reveal themes -->
+	<link rel="stylesheet" href="reveal.js/css/reveal.css">
+	<link rel="stylesheet" href="reveal.js/css/theme/white.css">
 
-<!-- Full theme -->
-<link rel="stylesheet" href="css/full_theme.css">
-<link rel="stylesheet" href="sass/presentation.css">
+	<!-- Full theme -->
+	<link rel="stylesheet" href="css/full_theme.css">
+	<link rel="stylesheet" href="sass/presentation.css">
 
-<!-- Theme used for syntax highlighting of code -->
-<link rel="stylesheet" href="css/google_syntax.css">
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="css/google_syntax.css">
 
-<!-- Font awesome -->
-<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" media="all">
+	<!-- Font awesome -->
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" media="all">
 
-<script src="reveal.js/js/reveal-print.js"></script>
+	<script src="reveal.js/js/reveal-print.js"></script>
 
 </head>
 
 <!-- Need to specify the theme here: the first defines the color palette
  and the second the font theme -->
+
 <body class="theme-jewels theme-nox-font">
 
-<!-- Adding the background and icon theme here -->
+	<!-- Adding the background and icon theme here -->
 	<div class="reveal pattern--pupilines">
 		<div class="slides">
 
@@ -52,438 +54,461 @@
 						</div>
 						<a class="presentation-url" href="https://trallard.github.io/Talks/mock_full">
 							https://trallard.github.io/Talks/mock_full</a>
-						</div>
-					</section>
-
-					<!--About section: add name, job and handles -->
-					<section class="about" id="about">
-						<div class="grid-wrapper">
-							<div class="content">
-								<aside>
-									<h2>Tania Allard</h2>
-									<hr>
-									<ul class="projects">
-										<li>Research Software Engineer</li>
-										<li>The University of Leeds</li>
-									</ul>
-									<hr>
-									<ul class="accounts">
-										<li><a href="https://github.com/trallard">
-											<i class="fab fa-github social_icon"></i> <span> trallard</span></a></li>
-											<li><a href="https://twitter.com/ixek">
-												<i class="fab fa-twitter social_icon"></i><span> ixek</span></a></li>
-											</ul>
-										</aside>
-									</div>
-								</div>
-							</section>
-					</section>
-
-
-					<!-- Used to introduce a subsection: you can specify
-					a slide colour here, title and description -->
-					<section class=" color--ice" id="subsection--ice">
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="twitter"><a href="https://twitter.com/ixek">
-									<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-								</div>
-								<div class="content">
-									<h1>class = 'color--ice'</h1>
-									<div class="description">
-										This is where the description goes. Keep it short and sweet.
-									</div>
-								</div>
-							</div>
-						</section>
-
-						<!-- Used to introduce a subsection: you can specify
-						a slide colour here, title and description -->
-						<section class=" color--midnight">
-							<div class="grid-wrapper">
-								<div class="header">
-									<div class="logo"></div>
-									<div class="twitter"><a href="https://twitter.com/ixek">
-										<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-									</div>
-									<div class="content">
-										<h1>class = 'color--midnight'</h1>
-										<div class="description">
-											other colours are: violet, midnight, vibrant, two (white and ultraviolet),
-											gradient(grad-purple, grad-green, grad-blue)
-										</div>
-									</div>
-								</div>
-							</section>
-
-						<!-- Demo of simple unordered lists -->
-						<section class="commands">
-							<section>
-								<div class="grid-wrapper">
-									<div class="header">
-										<div class="logo"></div>
-										<div class="twitter"><a href="https://twitter.com/ixek">
-											<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-										</div>
-										<div class="content">
-											<p>This is how regular lists look like:</p>
-											<ul>
-												<li>Create</li>
-												<li>Require</li>
-												<li>Set</li>
-												<li>Send</li>
-											</ul>
-										</div>
-									</div>
-								</section>
-
-								<!-- Demo of custom unordered lists -->
-									<section>
-										<div class="grid-wrapper">
-											<div class="header">
-												<div class="logo"></div>
-												<div class="twitter"><a href="https://twitter.com/ixek">
-													<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-												</div>
-												<div class="content">
-													<p>This is how custom lists look like:</p>
-													<ul class='icon'>
-														<li>Create</li>
-														<li class='pinata'>Require</li>
-														<li class='skull'>Set</li>
-														<li class='cactus'>Send</li>
-													</ul>
-												</div>
-											</div>
-										</section>
-
-<!-- Vertical slide using commands class -->
-<section>
-	<div class="grid-wrapper">
-		<div class="header">
-			<div class="logo"></div>
-			<div class="twitter"><a href="https://twitter.com/ixek">
-				<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-			</div>
-			<div class="content">
-				<h1>Create</h1>
-				<table>
-					<tr><th>trackingId:</th><td>{string}</td></tr>
-					<tr><th>cookieDomain:</th><td>{string}</td></tr>
-				</table>
-				<!-- Using the figure class with data-markdown -->
-				<figure class='code'>
-					<div data-markdown>
-						```python
-						def print_hello():
-						print("Hello world!")
-
-						def add_one(number):
-						return number + 1
-
-						print_hello()
-						eight_plus_one = add_one(8)
-						print(eight_plus_one)
-						```
 					</div>
-				</figure>
-			<!-- Using only pre and code -->
-			<pre><code>for i in elements:
+				</section>
+
+				<!--About section: add name, job and handles -->
+				<section class="about" id="about">
+					<div class="grid-wrapper">
+						<div class="content">
+							<aside>
+								<h2>Tania Allard</h2>
+								<hr>
+								<ul class="projects">
+									<li>Research Software Engineer</li>
+									<li>The University of Leeds</li>
+								</ul>
+								<hr>
+								<ul class="accounts">
+									<li><a href="https://github.com/trallard">
+											<i class="fab fa-github social_icon"></i> <span> trallard</span></a></li>
+									<li><a href="https://twitter.com/ixek">
+											<i class="fab fa-twitter social_icon"></i><span> ixek</span></a></li>
+								</ul>
+							</aside>
+						</div>
+					</div>
+				</section>
+			</section>
+
+
+			<!-- Used to introduce a subsection: you can specify
+					a slide colour here, title and description -->
+			<section class=" color--ice" id="subsection--ice">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h1>class = 'color--ice'</h1>
+						<div class="description">
+							This is where the description goes. Keep it short and sweet.
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Used to introduce a subsection: you can specify
+						a slide colour here, title and description -->
+			<section class=" color--midnight">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h1>class = 'color--midnight'</h1>
+						<div class="description">
+							other colours are: violet, midnight, vibrant, two (white and ultraviolet),
+							gradient(grad-purple, grad-green, grad-blue)
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Demo of simple unordered lists -->
+			<section class="commands">
+				<section>
+					<div class="grid-wrapper">
+						<div class="header">
+							<div class="logo"></div>
+							<div class="twitter"><a href="https://twitter.com/ixek">
+									<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+						</div>
+						<div class="content">
+							<p>This is how regular lists look like:</p>
+							<ul>
+								<li>Create</li>
+								<li>Require</li>
+								<li>Set</li>
+								<li>Send</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<!-- Demo of custom unordered lists -->
+				<section>
+					<div class="grid-wrapper">
+						<div class="header">
+							<div class="logo"></div>
+							<div class="twitter"><a href="https://twitter.com/ixek">
+									<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+						</div>
+						<div class="content">
+							<p>This is how custom lists look like:</p>
+							<ul class='icon'>
+								<li>Create</li>
+								<li class='pinata'>Require</li>
+								<li class='skull'>Set</li>
+								<li class='cactus'>Send</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<!-- Vertical slide using commands class -->
+				<section>
+					<div class="grid-wrapper">
+						<div class="header">
+							<div class="logo"></div>
+							<div class="twitter"><a href="https://twitter.com/ixek">
+									<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+						</div>
+						<div class="content">
+							<h1>Create</h1>
+							<table>
+								<tr>
+									<th>trackingId:</th>
+									<td>{string}</td>
+								</tr>
+								<tr>
+									<th>cookieDomain:</th>
+									<td>{string}</td>
+								</tr>
+							</table>
+							<!-- Using the figure class with data-markdown -->
+							<figure class='code'>
+								<div data-markdown>
+									```python
+									def print_hello():
+									print("Hello world!")
+
+									def add_one(number):
+									return number + 1
+
+									print_hello()
+									eight_plus_one = add_one(8)
+									print(eight_plus_one)
+									```
+								</div>
+							</figure>
+							<!-- Using only pre and code -->
+							<pre><code>for i in elements:
 	print(f'Element is {element})</code></pre>
-			</div>
-		</div>
-	</section>
+						</div>
+					</div>
+				</section>
 
-	<section>
-		<div class="grid-wrapper">
-			<div class="header">
-				<div class="logo"></div>
-				<div class="twitter"><a href="https://twitter.com/ixek">
-					<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+				<section>
+					<div class="grid-wrapper">
+						<div class="header">
+							<div class="logo"></div>
+							<div class="twitter"><a href="https://twitter.com/ixek">
+									<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+						</div>
+						<div class="content">
+							<h1>Require</h1>
+							<table>
+								<tr>
+									<th>plugin:</th>
+									<td>{string}</td>
+								</tr>
+							</table>
+							<!-- Note that here we are using the figure class codem that way we can add <figcaption></figcaption> -->
+							<figure class="code">
+								<pre><code class="lang-js">ga('require', 'linker');</code></pre>
+								<figcaption>usr/bin</figcaption>
+							</figure>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="grid-wrapper">
+						<div class="header">
+							<div class="logo"></div>
+							<div class="twitter"><a href="https://twitter.com/ixek"><i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+						</div>
+						<div class="content">
+							<h1>Dimensions</h1>
+							<h2>Set</h2>
+							<table>
+								<tr>
+									<th>key:</th>
+									<td>{string}</td>
+								</tr>
+								<tr>
+									<th>value:</th>
+									<td>{string}</td>
+								</tr>
+							</table>
+							<figure class="code">
+								<pre><code class="lang-js">ga('set', 'dimension1', 'article');</code></pre>
+							</figure>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="grid-wrapper">
+						<div class="header">
+							<div class="logo"></div>
+							<div class="twitter"><a href="https://twitter.com/ixek"><i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+						</div>
+						<div class="content">
+							<h1>Metrics</h1>
+							<h2>Set</h2>
+							<table>
+								<tr>
+									<th>key:</th>
+									<td>{number}</td>
+								</tr>
+								<tr>
+									<th>value:</th>
+									<td>{number}</td>
+								</tr>
+							</table>
+							<figure class="code">
+								<pre><code class="lang-js">ga('set', 'metric1', 2);</code></pre>
+							</figure>
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<!-- Subsection slide: no color  has section on the header-->
+			<section id="blank">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="section">Section</div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">Notice the section title on the header
+						add this using
+						<figure class="code">
+							<pre><code class="lang-html"><div class="section"> Section </div></code></pre>
+							<p>⭐ Also if you do not pass an argument to the slide section, the default
+								background color us white as in this slide</p>
+						</figure>
+					</div>
 				</div>
-				<div class="content">
-					<h1>Require</h1>
-					<table>
-						<tr><th>plugin:</th><td>{string}</td></tr>
-					</table>
-					<!-- Note that here we are using the figure class codem that way we can add <figcaption></figcaption> -->
-					<figure class="code">
-						<pre><code class="lang-js">ga('require', 'linker');</code></pre>
-						<figcaption>usr/bin</figcaption>
-					</figure>
+			</section>
+
+			<!-- Quote with midnight slide -->
+			<section class="quote color--midnight">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<blockquote>
+							<q class='fragment current-visible'>
+								Jack of all trades master of none
+							</q> <br>
+							<q class="fragment">
+								Jack of all trades master of <strike>none</strike>
+								<strong>some</strong>.
+							</q>
+							<hr />
+							<cite class="fragment">True at least in the (data) science community</cite>
+						</blockquote>
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<section>
-			<div class="grid-wrapper">
-				<div class="header">
-					<div class="logo"></div>
-					<div class="twitter"><a href="https://twitter.com/ixek"><i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-				</div>
-				<div class="content">
-					<h1>Dimensions</h1>
-					<h2>Set</h2>
-					<table>
-						<tr><th>key:</th><td>{string}</td></tr>
-						<tr><th>value:</th><td>{string}</td></tr>
-					</table>
-					<figure class="code">
-						<pre><code class="lang-js">ga('set', 'dimension1', 'article');</code></pre>
-					</figure>
-				</div>
-			</div>
-		</section>
+			<!-- Dark slide with code -->
+			<section id="code--path">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="section">Section</div>
+					</div>
+					<div class="content">
+						<figure class="code">
+							<pre><code class="lang-js">ga('require', 'linker');</code></pre>
+							<figcaption>usr/bin</figcaption>
+						</figure>
+						<figure class="code">
 
-		<section>
-			<div class="grid-wrapper">
-				<div class="header">
-					<div class="logo"></div>
-					<div class="twitter"><a href="https://twitter.com/ixek"><i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-				</div>
-				<div class="content">
-					<h1>Metrics</h1>
-					<h2>Set</h2>
-					<table>
-						<tr><th>key:</th><td>{number}</td></tr>
-						<tr><th>value:</th><td>{number}</td></tr>
-					</table>
-					<figure class="code">
-						<pre><code class="lang-js">ga('set', 'metric1', 2);</code></pre>
-					</figure>
-				</div>
-			</div>
-		</section>
-	</section>
+							<!-- figcaption element is optional, can be placed above or below code  -->
+							<figcaption>usr/bin</figcaption>
+							<div data-markdown>
+								```python
+								def print_hello():
+								print("Hello world!")
 
-	<!-- Subsection slide: no color  has section on the header-->
-	<section id="blank">
-		<div class="grid-wrapper">
-			<div class="header">
-				<div class="logo"></div>
-				<div class="section">Section</div>
-				<div class="twitter"><a href="https://twitter.com/ixek">
-					<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-				</div>
-				<div class="content">Notice the section title on the header
-					add this using
-					<figure class="code">
-					<pre><code class="lang-html"><div class="section"> Section </div></code></pre>
-					<p>⭐ Also if you do not pass an argument to the slide section, the default
-					background color us white as in this slide</p>
-					</figure>
-				</div>
-			</div>
-		</section>
+								def add_one(number):
+								return number + 1
 
-		<!-- Quote with midnight slide -->
-		<section class="quote color--midnight">
-      <div class="grid-wrapper">
-				<div class="header">
-					<div class="logo"></div>
-					<div class="twitter"><a href="https://twitter.com/ixek">
-						<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-				</div>
-				<div class="content">
-        <blockquote>
-          <q class='fragment current-visible'>
-            Jack of all trades master of none
-          </q> <br>
-					<q class="fragment">
-						Jack of all trades master of <strike>none</strike>
-						<strong>some</strong>.
-					</q>
-          <hr/>
-          <cite class="fragment">True at least in the (data) science community</cite>
-        </blockquote>
-			</div>
-      </div>
-    </section>
+								print_hello()
+								eight_plus_one = add_one(8)
+								print(eight_plus_one)
+								```
+							</div>
+						</figure>
 
-		<!-- Dark slide with code -->
-		<section  id="code--path">
-			<div class="grid-wrapper">
-				<div class="header">
-					<div class="logo"></div>
-					<div class="section">Section</div>
-				</div>
-				<div class="content">
-					<figure class="code">
-						<pre><code class="lang-js">ga('require', 'linker');</code></pre>
-						<figcaption>usr/bin</figcaption>
-					</figure>
-				<figure class="code">
+						<figure class="code code2">
+							<div data-markdown>
+								```python
+								def print_hello():
+								print("Hello world!")
 
-					<!-- figcaption element is optional, can be placed above or below code  -->
-					<figcaption>usr/bin</figcaption>
-									<div data-markdown>
-					```python
-					def print_hello():
-					print("Hello world!")
+								def add_one(number):
+								return number + 1
 
-					def add_one(number):
-					return number + 1
+								print_hello()
+								eight_plus_one = add_one(8)
+								print(eight_plus_one)
+								```
+							</div>
+							<!-- figcaption element is optional, can be placed above or below code  -->
+							<figcaption class="path">Note you need to use a suitable syntax highlight for this
+								e.g. atomdark_syntax.css </figcaption>
+						</figure>
+					</div>
+			</section>
 
-					print_hello()
-					eight_plus_one = add_one(8)
-					print(eight_plus_one)
-					```
-				</div>
-			</figure>
-
-			<figure class="code code2">
-				<div data-markdown>
-					```python
-					def print_hello():
-					print("Hello world!")
-
-					def add_one(number):
-					return number + 1
-
-					print_hello()
-					eight_plus_one = add_one(8)
-					print(eight_plus_one)
-					```
-				</div>
-				<!-- figcaption element is optional, can be placed above or below code  -->
-				<figcaption class="path">Note you need to use a suitable syntax highlight for this
-				e.g. atomdark_syntax.css </figcaption>
-			</figure>
-		</div>
-		</section>
-
-		<!-- Slide with image -->
-		<section>
-			<div class="grid-wrapper">
-				<div class="header">
-					<div class="logo"></div>
-					<div class="twitter"><a href="https://twitter.com/ixek">
-						<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+			<!-- Slide with image -->
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 					</div>
 					<div class="content">
 						<h1>Slide with image</h1>
 						<a href="https://github.com/trallard/talks" target="_blank">
 							This is a link</a>
-							<figure class="display">
-								<img  src="./assets/herdata/puzzle.PNG" alt ="img" />
-							</figure>
-							<p>The figure uses the class <code>display</code> </p>
-						</div>
+						<figure class="display">
+							<img src="./assets/herdata/puzzle.PNG" alt="img" />
+						</figure>
+						<p>The figure uses the class <code>display</code> </p>
 					</div>
-				</section>
-
-				<!-- Slide with image -->
-				<section class=" color--code">
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="twitter"><a href="https://twitter.com/ixek">
-								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-							</div>
-							<div class="content">
-								<h1>All code</h1>
-								For slides needing a whole load of code
-								<pre><code>for i in element</code></pre>
-								</div>
-							</div>
-						</section>
-
-				<!-- Slide with dark background and semi transparent box -->
-				<section class="dark_box">
-					<aside>
-						<h2>Title ⚡️</h2>
-						Content goes here: make it catchy
-						<code style='color: black;'>class="dark_box"</code>
-					</aside>
-				</section>
-
-				<!-- Two colour slide -->
-				<section class="color--two" >
-					<div class="grid-wrapper">
-						<div class="logo"></div>
-						<div class="content">
-							<h1>Hola</h1>
-							This is a two colour slide <code>color--two</code>
-							<div class="items_block">
-								<div class="single-block left">
-									I am on the left
-								</div>
-								<div class="single-block right">
-									I am on the right
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<!-- Gradient: purple, green, blue -->
-				<section class="color--grad-green" >
-					<div class="grid-wrapper">
-						<div class="logo"></div>
-						<div class="content">
-							<h1>Hola</h1>
-							Content here
-						</div>
-					</div>
-				</section>
-
-
-				<section id="end" class="color--dark">
-					<div class="grid-wrapper">
-						<div class="content">
-							<a href="https://twitter.com/ixek"><i class="fab fa-twitter-square"></i>
-								<span>ixek</span></a>
-							</div>
-						</div>
-					</section>
-
 				</div>
-			</div>
+			</section>
 
-			<script src="reveal.js/lib/js/head.min.js"></script>
-			<script src="reveal.js/js/reveal.js"></script>
-			<script>
-			Reveal.initialize({
-				// Show the control arrows
-				controls: true,
-				// Location of the arrows
-				controlsLayout:'bottom-right',
-				// Visibility rule for backwards navigation arrows; "faded", "hidden"
-				// or "visible"
-				controlsBackArrows: 'hidden',
-				progress: true,
-				slideNumber: true,
-				center: false,
-				width: "100%",
-				height: "100%",
-				margin: 0,
-				minScale: 1,
-				maxScale: 1,
-				history: true,
-				touch: true,
+			<!-- Slide with image -->
+			<section class=" color--code">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h1>All code</h1>
+						For slides needing a whole load of code
+						<pre><code>for i in element</code></pre>
+					</div>
+				</div>
+			</section>
 
-				// Arrow keys progress through sub-slides
-				// keyboard: {
-				// 	39: 'next', // right key
-				// 	37: 'prev'  // left key
-				// },
-				// More info about config & dependencies:
-				// - https://github.com/hakimel/reveal.js#configuration
-				// - https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'reveal.js/plugin/markdown/marked.js' },
-					{ src: 'reveal.js/plugin/markdown/markdown.js' },
-					{ src: 'reveal.js/plugin/notes/notes.js', async: true },
-					{ src: 'plugin/embed-tweet/embed-tweet.js' },
-					{
-						src: 'reveal.js/plugin/highlight/highlight.js',
-						async: true,
-						callback: function() { hljs.initHighlightingOnLoad(); } }
-					]
-				});
-			</script>
+			<!-- Slide with dark background and semi transparent box -->
+			<section class="dark_box">
+				<aside>
+					<h2>Title ⚡️</h2>
+					Content goes here: make it catchy
+					<code style='color: black;'>class="dark_box"</code>
+				</aside>
+			</section>
+
+			<!-- Two colour slide -->
+			<section class="color--two">
+				<div class="grid-wrapper">
+					<div class="logo"></div>
+					<div class="content">
+						<h1>Hola</h1>
+						This is a two colour slide <code>color--two</code>
+						<div class="items_block">
+							<div class="single-block left">
+								I am on the left
+							</div>
+							<div class="single-block right">
+								I am on the right
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Gradient: purple, green, blue -->
+			<section class="color--grad-green">
+				<div class="grid-wrapper">
+					<div class="logo"></div>
+					<div class="content">
+						<h1>Hola</h1>
+						Content here
+					</div>
+				</div>
+			</section>
 
 
-		</body>
-		</html>
+			<section id="end" class="color--dark">
+				<div class="grid-wrapper">
+					<div class="content">
+						<a href="https://twitter.com/ixek"><i class="fab fa-twitter-square"></i>
+							<span>ixek</span></a>
+					</div>
+				</div>
+			</section>
+
+		</div>
+	</div>
+
+	<script src="reveal.js/lib/js/head.min.js"></script>
+	<script src="reveal.js/js/reveal.js"></script>
+	<script>
+		Reveal.initialize({
+			// Show the control arrows
+			controls: true,
+			// Location of the arrows
+			controlsLayout: 'bottom-right',
+			// Visibility rule for backwards navigation arrows; "faded", "hidden"
+			// or "visible"
+			controlsBackArrows: 'hidden',
+			progress: true,
+			slideNumber: true,
+			center: false,
+			width: "100%",
+			height: "100%",
+			margin: 0,
+			minScale: 1,
+			maxScale: 1,
+			history: true,
+			touch: true,
+
+			// Arrow keys progress through sub-slides
+			// keyboard: {
+			// 	39: 'next', // right key
+			// 	37: 'prev'  // left key
+			// },
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			dependencies: [
+				{ src: 'reveal.js/plugin/markdown/marked.js' },
+				{ src: 'reveal.js/plugin/markdown/markdown.js' },
+				{ src: 'reveal.js/plugin/notes/notes.js', async: true },
+				{ src: 'plugin/embed-tweet/embed-tweet.js' },
+				{
+					src: 'reveal.js/plugin/highlight/highlight.js',
+					async: true,
+					callback: function () { hljs.initHighlightingOnLoad(); }
+				}
+			]
+		});
+	</script>
+
+
+</body>
+
+</html>

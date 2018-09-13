@@ -1,13 +1,14 @@
 <!doctype html>
 <html prefix="og: http://ogp.me/ns#">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 	<title>Reproducible science</title>
 
-  <!-- Reveal themes -->
-  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+	<!-- Reveal themes -->
+	<link rel="stylesheet" href="reveal.js/css/reveal.css">
 	<link rel="stylesheet" href="reveal.js/css/theme/black.css">
 
 	<!-- Full theme; allows for the selction of multple themes -->
@@ -18,10 +19,10 @@
 	<link rel="stylesheet" href="css/colorbrewer_syntax.css">
 
 	<!-- Favicon -->
-	<link rel="icon" href="./assets/Tania_logo.png"/>
+	<link rel="icon" href="./assets/Tania_logo.png" />
 
-  <!-- Font awesome -->
-  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" media="all">
+	<!-- Font awesome -->
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" media="all">
 
 	<!-- Tania custom icons  -->
 	<link rel="stylesheet" type="text/css" href="assets/icons_collection/font/flaticon.css">
@@ -29,22 +30,23 @@
 
 
 	<!-- Script for printing -->
-  <script src="reveal.js/js/reveal-print.js"></script>
+	<script src="reveal.js/js/reveal-print.js"></script>
 
 </head>
 
 <!-- Need to specify the theme here -->
 <!-- First theme- is for colour, theme-xxx-font is for the font -->
+
 <body class="theme-jewels theme-allmono-font">
 
-<!-- Specify the main theme to be used here -->
-<!-- this controls the background and logos -->
-<div class="reveal pattern--pupilines">
+	<!-- Specify the main theme to be used here -->
+	<!-- this controls the background and logos -->
+	<div class="reveal pattern--pupilines">
 
-	<!-- Slides start here -->
-	<div class="slides">
+		<!-- Slides start here -->
+		<div class="slides">
 
-		<section>
+			<section>
 				<section class="title" id="title">
 					<div class="grid-wrapper">
 						<div class="header">
@@ -55,7 +57,7 @@
 								Testing data pipelines
 							</h1>
 							<div class="description">
-							 	What matters most: The code or the data?
+								What matters most: The code or the data?
 								<br>
 								<!-- <a href="https://doi.org/cn9t">https://doi.org/cn9t</a> -->
 							</div>
@@ -65,9 +67,8 @@
 							<div class="label">Presented By</div>
 							<div class="name">Tania Allard, PhD</div>
 						</div>
-						<a class="presentation-url"
-						href="https://trallard.github.io/Talks/RAPIDS">
-	            https://trallard.github.io/Talks/Testing</a>
+						<a class="presentation-url" href="https://trallard.github.io/Talks/RAPIDS">
+							https://trallard.github.io/Talks/Testing</a>
 					</div>
 				</section>
 
@@ -83,9 +84,9 @@
 								<hr>
 								<ul class="accounts">
 									<li><a href="https://github.com/trallard">
-	                  <i class="fab fa-github social_icon"></i> <span> trallard</span></a></li>
+											<i class="fab fa-github social_icon"></i> <span> trallard</span></a></li>
 									<li><a href="https://twitter.com/ixek">
-	                  <i class="fab fa-twitter social_icon"></i><span> ixek</span></a></li>
+											<i class="fab fa-twitter social_icon"></i><span> ixek</span></a></li>
 								</ul>
 							</aside>
 						</div>
@@ -97,21 +98,21 @@
 						<div class="header">
 							<div class="logo"></div>
 							<div class="twitter"><a href="https://twitter.com/ixek">
-								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-							</div>
-							<div class="content">
-							 <h1>A bit more about me</h1>
-							 <ul class="icon">
-							 	<li class="pinata">Research Software Engineer</li>
+									<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+						</div>
+						<div class="content">
+							<h1>A bit more about me</h1>
+							<ul class="icon">
+								<li class="pinata">Research Software Engineer</li>
 								<li class="pinata">Software carpentry trainer and instructor</li>
 								<li class="pinata">Reproducibility nerd</li>
 								<li class="pinata">Founder of PyLadies NorthWest UK</li>
 								<li class="pinata">OSS advocate, community builder, and contributor</li>
 								<li class="pinata">I wear many many hats</li>
-							 </ul>
-							</div>
+							</ul>
 						</div>
-					</section>
+					</div>
+				</section>
 			</section>
 
 			<!-- What is data science -->
@@ -120,384 +121,386 @@
 					<div class="header">
 						<div class="logo"></div>
 						<div class="twitter"><a href="https://twitter.com/ixek">
-							<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-						</div>
-						<div class="content">
-							<h1>The basics</h1>
-							<div class="description">
-								Just some insights on data science
-							</div>
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h1>The basics</h1>
+						<div class="description">
+							Just some insights on data science
 						</div>
 					</div>
-				</section>
+				</div>
+			</section>
 
-				<section>
+			<section>
+				<div class="header">
+					<div class="logo"></div>
+					<div class="twitter"><a href="https://twitter.com/ixek">
+							<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+				</div>
+				<div class="content">
+					<div class="images">
+						<h2>What is data science?</h2>
+						<figure class="display">
+							<img src="./assets/test/datascience.jpg" alt="datascientist">
+						</figure>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="grid-wrapper">
 					<div class="header">
 						<div class="logo"></div>
 						<div class="twitter"><a href="https://twitter.com/ixek">
-							<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 					</div>
 					<div class="content">
-						<div class="images">
-							<h2>What is data science?</h2>
-							<figure class="display">
-								<img  src="./assets/test/datascience.jpg" alt="datascientist">
-							</figure>
+						<p class='fragment'>There is still a huge debate about what data
+							science means. </p>
+
+						<div class="float_modal fragment" style='position: relative; top:20%'>
+							<p class='modal_p'>"The dominant trait among data scientists is
+								an intense curiosity— a desire to go beneath the surface of a
+								problem, find the questions at its heart, and distill them
+								into a very clear set of hypotheses that can be tested."</p>
+							<p class='caption_p'>- DJ Patil, Chief Data Scientist of the
+								United States</p>
 						</div>
 					</div>
-				</section>
+			</section>
 
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="twitter"><a href="https://twitter.com/ixek">
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
 								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-							</div>
-							<div class="content">
-								<p class='fragment'>There is still a huge debate about what data
-								science means.  </p>
-
-								<div class="float_modal fragment" style='position: relative; top:20%'>
-								 <p class='modal_p'>"The dominant trait among data scientists is
-									 an intense curiosity— a desire to go beneath the surface of a
-									 problem, find the questions at its heart, and distill them
-									 into a very clear set of hypotheses that can be tested."</p>
-								 <p class='caption_p'>- DJ Patil, Chief Data Scientist of the
-									 United States</p>
-						</div>
 					</div>
-				</section>
-
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="twitter"><a href="https://twitter.com/ixek">
-								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-							</div>
-							<div class="content">
-								<h2>So what do data scientists really do?</h2>
-								Make discoveries while swimming in data.
-								<figure class="display">
-									<img  src="./assets/test/ds_chart.jpg" alt="datascientist">
-								</figure>
-						</div>
+					<div class="content">
+						<h2>So what do data scientists really do?</h2>
+						Make discoveries while swimming in data.
+						<figure class="display">
+							<img src="./assets/test/ds_chart.jpg" alt="datascientist">
+						</figure>
 					</div>
-				</section>
-
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="twitter"><a href="https://twitter.com/ixek">
-								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-							</div>
-							<div class="content">
-								The truth is most of the time this is not a linear process or a
-								one way cycle
-								<figure class="display">
-									<img  src="./assets/test/workflow.jpg" alt="dataworkflow">
-								</figure>
-						</div>
-					</div>
-				</section>
-
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="twitter"><a href="https://twitter.com/ixek">
-								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-							</div>
-							<div class="content">
-								<h2>Sanity checks across the pipeline</h2>
-								<p>This does not follow a sequential order either but you should
-								always be sanity checking your work.
-								</p>
-								<p>For example scraping the wrong data, or dropping useful data can
-								seriously compromise your work.</p>
-						</div>
-					</div>
-				</section>
-
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="twitter"><a href="https://twitter.com/ixek">
-								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-							</div>
-							<div class="content">
-								<h2>Basic sanity checks for some steps of the
-								data pipeline</h2>
-								<hr>
-								<h3>Transformation (data wrangling)</h3>
-								<ul class='icon'>
-									<li>Additional or loss of null values after grouping	</li>
-									<li>Dataframe dimensions did not deviate from expectations</li>
-									<li>Duplicates during aggregations</li>
-									<li>Math and statistical results from raw and transformed data</li>
-									<li>Coherent data types</li>
-									<li>Schemas deviating from the expected ones</li>
-								</ul>
-						</div>
-					</div>
-				</section>
-
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="twitter"><a href="https://twitter.com/ixek">
-								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-							</div>
-							<div class="content">
-								<h3>Analysis</h3>
-								<ul class='icon'>
-									<li>Data normalization</li>
-									<li>Residuals and residual plotting</li>
-									<li>Stationary time series</li>
-									<li>Logical order of the operations</li>
-									<li>Shallow vs deep copies of data</li>
-									<li><strong>Never touch your raw data</strong> </li>
-								</ul>
-						</div>
-					</div>
-				</section>
-
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="twitter"><a href="https://twitter.com/ixek">
-								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-							</div>
-							<div class="content">
-								<h3>Data collection and digestion</h3>
-								<ul class='icon'>
-									<li>Consistent schema</li>
-									<li>Serializing ???</li>
-									<li>Garbage in -  garbage out</li>
-								</ul>
-						</div>
-					</div>
-				</section>
-
-				<section class=" color--topaz">
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="twitter"><a href="https://twitter.com/ixek">
-								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-							</div>
-							<div class="content">
-								<h1>Sanity checks -> testing</h1>
-								<div class="description">
-									It can be tricky, but by no means impossible 👩🏻‍💻
-								</div>
-							</div>
-						</div>
-					</section>
-
-					<section>
-						<div class="grid-wrapper">
-							<div class="header">
-								<div class="logo"></div>
-								<div class="twitter"><a href="https://twitter.com/ixek">
-									<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-								</div>
-								<div class="content">
-									<h2>Why bother?</h2>
-									<ul class='icon'>
-										<li>Tested code has less bugs</li>
-										<li>Scales well</li>
-										<li>Gives the confidence to iterate quickly</li>
-										<li>Validated data avoid catastrophic failures</li>
-										<li>Reduction of manual testing</li>
-									</ul>
-
-									</ul>
-							</div>
-						</div>
-					</section>
-
-
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="twitter"><a href="https://twitter.com/ixek">
-								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-							</div>
-							<div class="content">
-								<h2>Getting started with TDD (test driven development) for
-								data science</h2>
-								<h3>Prepare environment</h3>
-								<hr>
-								<ul class='icon'>
-									<li>Care about tests from the start of your project</li>
-									<li>All jobs should be functions (modularized code)</li>
-									<li>Safe to rerun the job (data exists, push partial results)</li>
-									<li>No hard coded paths</li>
-									<li>Timestamp data</li>
-								</ul>
-						</div>
-					</div>
-				</section>
-
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="twitter"><a href="https://twitter.com/ixek">
-								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-							</div>
-							<div class="content">
-								<h3>Unit test locally </h3>
-								<hr>
-								<ul class='icon'>
-									<li>Test locally each job</li>
-									<li>Overcome challenges with fake data creation</li>
-									<li>Need to identify edge cases</li>
-								</ul>
-						</div>
-					</div>
-				</section>
-
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="twitter"><a href="https://twitter.com/ixek">
-								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-							</div>
-							<div class="content">
-								<h3>Validation</h3>
-								<figure class="display">
-									<img  src="./assets/test/validate.PNG" alt="datascientist">
-								</figure>
-						</div>
-					</div>
-				</section>
-
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="twitter"><a href="https://twitter.com/ixek">
-								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-							</div>
-							<div class="content">
-								<figure class="display">
-									<img  src="./assets/test/validate2.PNG" alt="datascientist">
-								</figure>
-						</div>
-					</div>
-				</section>
-
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="twitter"><a href="https://twitter.com/ixek">
-								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-							</div>
-							<div class="content">
-								<h2>Input data validation</h2>
-								Bad input will degrade the output and it is likely to pass silently
-								Should:
-								<ul>
-									<li>Detect pathological data and fail early</li>
-									<li>Deal with expected data variability</li>
-									<li>Such as missing values,  endocing issues, schema changes,
-									data order changes</li>
-									<li>Validate metadata</li>
-								</ul>
-						</div>
-					</div>
-				</section>
-
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="twitter"><a href="https://twitter.com/ixek">
-								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-							</div>
-							<div class="content">
-								<h2>Output data validation</h2>
-								Humans make mistakes and these can be easily propagated
-								Should:
-								<ul>
-									<li>Check for anomalies</li>
-									<li>Supervised: use a validation dataset and threshold</li>
-									<li>Check for edge cases</li>
-								</ul>
-						</div>
-					</div>
-				</section>
-
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="twitter"><a href="https://twitter.com/ixek">
-								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-							</div>
-							<div class="content">
-								<a href="https://github.com/trallard/TestingData">
-								https://github.com/trallard/TestingData</a>
-					</div>
-				</section>
-
-
-				<!-- Last slide -->
-				<section id="end" class="color--violet">
-					<div class="grid-wrapper">
-						<div class="content">
-							<a href="https://twitter.com/ixek" style='color:#EEEDEF'>
-								<i class="fab fa-twitter-square"></i>
-								<span>ixek</span></a>
-							</div>
-						</div>
-					</div>
-				</section>
-
 				</div>
-			</div>
+			</section>
 
-<script src="reveal.js/lib/js/head.min.js"></script>
-<script src="reveal.js/js/reveal.js"></script>
-<script>
-Reveal.initialize({
-	center: false,
-	width: "100%",
-	height: "100%",
-	margin: 0,
-	minScale: 1,
-	maxScale: 1,
-	history: true,
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						The truth is most of the time this is not a linear process or a
+						one way cycle
+						<figure class="display">
+							<img src="./assets/test/workflow.jpg" alt="dataworkflow">
+						</figure>
+					</div>
+				</div>
+			</section>
 
-	// Arrow keys progress through sub-slides
-	// keyboard: {
-	// 	39: 'next', // right key
-	// 	37: 'prev'  // left key
-	// },
-	// More info about config & dependencies:
-	// - https://github.com/hakimel/reveal.js#configuration
-	// - https://github.com/hakimel/reveal.js#dependencies
-	dependencies: [
-		{ src: 'reveal.js/plugin/markdown/marked.js' },
-		{ src: 'reveal.js/plugin/markdown/markdown.js' },
-		{ src: 'reveal.js/plugin/notes/notes.js', async: true },
-		{ src: 'reveal.js/plugin/embed-tweet/embed-tweet.js' },
-		{
-			src: 'reveal.js/plugin/highlight/highlight.js',
-			async: true,
-			callback: function() { hljs.initHighlightingOnLoad(); } }
-		]
-	});
-</script>
-	</body>
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h2>Sanity checks across the pipeline</h2>
+						<p>This does not follow a sequential order either but you should
+							always be sanity checking your work.
+						</p>
+						<p>For example scraping the wrong data, or dropping useful data can
+							seriously compromise your work.</p>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h2>Basic sanity checks for some steps of the
+							data pipeline</h2>
+						<hr>
+						<h3>Transformation (data wrangling)</h3>
+						<ul class='icon'>
+							<li>Additional or loss of null values after grouping </li>
+							<li>Dataframe dimensions did not deviate from expectations</li>
+							<li>Duplicates during aggregations</li>
+							<li>Math and statistical results from raw and transformed data</li>
+							<li>Coherent data types</li>
+							<li>Schemas deviating from the expected ones</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h3>Analysis</h3>
+						<ul class='icon'>
+							<li>Data normalization</li>
+							<li>Residuals and residual plotting</li>
+							<li>Stationary time series</li>
+							<li>Logical order of the operations</li>
+							<li>Shallow vs deep copies of data</li>
+							<li><strong>Never touch your raw data</strong> </li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h3>Data collection and digestion</h3>
+						<ul class='icon'>
+							<li>Consistent schema</li>
+							<li>Serializing ???</li>
+							<li>Garbage in - garbage out</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class=" color--topaz">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h1>Sanity checks -> testing</h1>
+						<div class="description">
+							It can be tricky, but by no means impossible 👩🏻‍💻
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h2>Why bother?</h2>
+						<ul class='icon'>
+							<li>Tested code has less bugs</li>
+							<li>Scales well</li>
+							<li>Gives the confidence to iterate quickly</li>
+							<li>Validated data avoid catastrophic failures</li>
+							<li>Reduction of manual testing</li>
+						</ul>
+
+						</ul>
+					</div>
+				</div>
+			</section>
+
+
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h2>Getting started with TDD (test driven development) for
+							data science</h2>
+						<h3>Prepare environment</h3>
+						<hr>
+						<ul class='icon'>
+							<li>Care about tests from the start of your project</li>
+							<li>All jobs should be functions (modularized code)</li>
+							<li>Safe to rerun the job (data exists, push partial results)</li>
+							<li>No hard coded paths</li>
+							<li>Timestamp data</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h3>Unit test locally </h3>
+						<hr>
+						<ul class='icon'>
+							<li>Test locally each job</li>
+							<li>Overcome challenges with fake data creation</li>
+							<li>Need to identify edge cases</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h3>Validation</h3>
+						<figure class="display">
+							<img src="./assets/test/validate.PNG" alt="datascientist">
+						</figure>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<figure class="display">
+							<img src="./assets/test/validate2.PNG" alt="datascientist">
+						</figure>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h2>Input data validation</h2>
+						Bad input will degrade the output and it is likely to pass silently
+						Should:
+						<ul>
+							<li>Detect pathological data and fail early</li>
+							<li>Deal with expected data variability</li>
+							<li>Such as missing values, endocing issues, schema changes,
+								data order changes</li>
+							<li>Validate metadata</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h2>Output data validation</h2>
+						Humans make mistakes and these can be easily propagated
+						Should:
+						<ul>
+							<li>Check for anomalies</li>
+							<li>Supervised: use a validation dataset and threshold</li>
+							<li>Check for edge cases</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<a href="https://github.com/trallard/TestingData">
+							https://github.com/trallard/TestingData</a>
+					</div>
+			</section>
+
+
+			<!-- Last slide -->
+			<section id="end" class="color--violet">
+				<div class="grid-wrapper">
+					<div class="content">
+						<a href="https://twitter.com/ixek" style='color:#EEEDEF'>
+							<i class="fab fa-twitter-square"></i>
+							<span>ixek</span></a>
+					</div>
+				</div>
+		</div>
+		</section>
+
+	</div>
+	</div>
+
+	<script src="reveal.js/lib/js/head.min.js"></script>
+	<script src="reveal.js/js/reveal.js"></script>
+	<script>
+		Reveal.initialize({
+			center: false,
+			width: "100%",
+			height: "100%",
+			margin: 0,
+			minScale: 1,
+			maxScale: 1,
+			history: true,
+
+			// Arrow keys progress through sub-slides
+			// keyboard: {
+			// 	39: 'next', // right key
+			// 	37: 'prev'  // left key
+			// },
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			dependencies: [
+				{ src: 'reveal.js/plugin/markdown/marked.js' },
+				{ src: 'reveal.js/plugin/markdown/markdown.js' },
+				{ src: 'reveal.js/plugin/notes/notes.js', async: true },
+				{ src: 'reveal.js/plugin/embed-tweet/embed-tweet.js' },
+				{
+					src: 'reveal.js/plugin/highlight/highlight.js',
+					async: true,
+					callback: function () { hljs.initHighlightingOnLoad(); }
+				}
+			]
+		});
+	</script>
+</body>
+
 </html>

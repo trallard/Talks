@@ -1,259 +1,262 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title> Tania A. Data Science findings </title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="reveal.js/css/reveal.css">
-		<link rel="stylesheet" href="reveal.js/css/theme/simple.css">
+	<title> Tania A. Data Science findings </title>
 
-		<!-- using Plex font -->
-		<link rel="stylesheet" href="css/trallard_plex.css">
+	<link rel="stylesheet" href="reveal.js/css/reveal.css">
+	<link rel="stylesheet" href="reveal.js/css/theme/simple.css">
+
+	<!-- using Plex font -->
+	<link rel="stylesheet" href="css/trallard_plex.css">
 
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
 
-		<div class="reveal">
-			<div class="slides">
+<body>
 
-				<section>
-					<h3>Predictive graph analysis for investment portfolio</h3>
-					<br><br>
-					<hr>
-					<p class='author'>
-						Tania Allard | 1st February 2018
-					</p>
-				</section>
+	<div class="reveal">
+		<div class="slides">
 
-				<section>
-					<h3>Problem statement</h3>
-					<i class="far fa-newspaper"></i>
-					<i class="fas fa-long-arrow-alt-right"></i>
-					<i class="far fa-frown"></i>
-					<i class="far fa-smile"></i>
-					<i class="fas fa-long-arrow-alt-right"></i>
-					<i class="fas fa-pound-sign"></i>
-					<i class="fas fa-chart-line"></i>
+			<section>
+				<h3>Predictive graph analysis for investment portfolio</h3>
+				<br><br>
+				<hr>
+				<p class='author'>
+					Tania Allard | 1st February 2018
+				</p>
+			</section>
 
-					<ul>
-						<li>How does news sentiment correlate with company stock returns</li>
-						<li>How does news sentiment propagate through the network?</li>
-						<li>Are certain relations affected more than others?</li>
-					</ul>
-				</section>
+			<section>
+				<h3>Problem statement</h3>
+				<i class="far fa-newspaper"></i>
+				<i class="fas fa-long-arrow-alt-right"></i>
+				<i class="far fa-frown"></i>
+				<i class="far fa-smile"></i>
+				<i class="fas fa-long-arrow-alt-right"></i>
+				<i class="fas fa-pound-sign"></i>
+				<i class="fas fa-chart-line"></i>
 
-				<section>
+				<ul>
+					<li>How does news sentiment correlate with company stock returns</li>
+					<li>How does news sentiment propagate through the network?</li>
+					<li>Are certain relations affected more than others?</li>
+				</ul>
+			</section>
 
-					<img src="./assets/ds/fig4.png" width="800px" />
-				</section>
+			<section>
 
-				<section>
-					<h3>Part1: Getting to know the data</h3>
-					Three different data sources were used:
-					<br>
-					<ul>
-						<li>Financial*</li>
-						<li>News sentiment**</li>
-						<li>Knowledge graph*</li>
-					</ul>
-					<br> <br>
-					<small>* Collected using the partner APIs</small>
-					<small>** Provided by the partner </small>
-				</section>
+				<img src="./assets/ds/fig4.png" width="800px" />
+			</section>
 
-				<section>
-					<h3>More about the data</h3>
-					Subsetting the data:
-					<br> <br>
-					<box-text class='fragment'>S&P 500 companies </box-text>
-					<box-text class='fragment'> 2014-2016 </box-text>
-				</section>
-				<section>
-					<h3>Financial data</h3>
-					<ul>
+			<section>
+				<h3>Part1: Getting to know the data</h3>
+				Three different data sources were used:
+				<br>
+				<ul>
+					<li>Financial*</li>
+					<li>News sentiment**</li>
+					<li>Knowledge graph*</li>
+				</ul>
+				<br> <br>
+				<small>* Collected using the partner APIs</small>
+				<small>** Provided by the partner </small>
+			</section>
+
+			<section>
+				<h3>More about the data</h3>
+				Subsetting the data:
+				<br> <br>
+				<box-text class='fragment'>S&P 500 companies </box-text>
+				<box-text class='fragment'> 2014-2016 </box-text>
+			</section>
+			<section>
+				<h3>Financial data</h3>
+				<ul>
 					<li> Date </li>
 					<li> Company ID </li>
 					<li> Open stock price </li>
 					<li> Close stock price </li>
 					<li> Volume </li>
 				</ul>
-				</section>
+			</section>
 
 
-				<section>
-					<h3>News sentiment</h3>
-					<ul>
+			<section>
+				<h3>News sentiment</h3>
+				<ul>
 					<li> Date </li>
 					<li> Company ID </li>
 					<li> Sentiment score [-1, 1] </li>
 				</ul>
-				</section>
+			</section>
 
-				<section>
-					<h3>Knowledge graph</h3>
-					<ul>
+			<section>
+				<h3>Knowledge graph</h3>
+				<ul>
 					<li> Company ID-1 </li>
 					<li> Company ID-2 </li>
 					<li> Link or relationship between companies </li>
 				</ul>
-				</section>
+			</section>
 
-				<section>
-					<h4>Exploring the data</h4>
-					Suppliers network in the S&P 500
-					<img src="./assets/ds/fig8.png" width='600px'/>
-				</section>
+			<section>
+				<h4>Exploring the data</h4>
+				Suppliers network in the S&P 500
+				<img src="./assets/ds/fig8.png" width='600px' />
+			</section>
 
-				<section>
-					<h4>Exploring the data</h4>
-					Suppliers network in the S&P 500
-					<img src="./assets/ds/fig9.png" width='500px'/>
-				</section>
+			<section>
+				<h4>Exploring the data</h4>
+				Suppliers network in the S&P 500
+				<img src="./assets/ds/fig9.png" width='500px' />
+			</section>
 
-				<section>
-					<h4>Overall sentiment</h4>
+			<section>
+				<h4>Overall sentiment</h4>
 
-					<img src="./assets/ds/fig15.png" width='500px'/>
-					<ul>
-						<li>Sentiment mostly negative at the beginning of 2015 and
+				<img src="./assets/ds/fig15.png" width='500px' />
+				<ul>
+					<li>Sentiment mostly negative at the beginning of 2015 and
 						first quarter of 2016</li>
-						<li>Mostly positive around the beginning of the fourth
+					<li>Mostly positive around the beginning of the fourth
 						quarter of 2016</li>
-					</ul>
-				</section>
+				</ul>
+			</section>
 
-				<section>
-					<h4>Overall sentiment</h4>
-					S&P500 companies in the energy sector have an overall negative
-					sentiment over the period 2015-2016
-					<br>
-					<img src="./assets/ds/fig13.png" width='500px'/>
-				</section>
+			<section>
+				<h4>Overall sentiment</h4>
+				S&P500 companies in the energy sector have an overall negative
+				sentiment over the period 2015-2016
+				<br>
+				<img src="./assets/ds/fig13.png" width='500px' />
+			</section>
 
-				<section>
-					<h4>Financial correlations</h4>
-					The competitor relationships discriminate most companies that are
-					financially related from others
-					<img src="./assets/ds/fig2.png" width='500px'/>
-				</section>
+			<section>
+				<h4>Financial correlations</h4>
+				The competitor relationships discriminate most companies that are
+				financially related from others
+				<img src="./assets/ds/fig2.png" width='500px' />
+			</section>
 
-				<section>
-					<h4>Timescale of the impact of a major news</h4>
-					Positive news have short-term and small impact
-					<br>
-					Negative news have long-term and large impact
-					<img src="./assets/ds/fig6.png" width='500px'/>
-				</section>
+			<section>
+				<h4>Timescale of the impact of a major news</h4>
+				Positive news have short-term and small impact
+				<br>
+				Negative news have long-term and large impact
+				<img src="./assets/ds/fig6.png" width='500px' />
+			</section>
 
-				<section>
-					<h4>Forecasting returns</h4>
-					<img src="./assets/ds/for.png"/>
-				</section>
+			<section>
+				<h4>Forecasting returns</h4>
+				<img src="./assets/ds/for.png" />
+			</section>
 
-				<section>
-					<h4>Propagation of news throughout the network</h4>
-					<img src="./assets/ds/fig10.png" width='700px'/>
-				</section>
+			<section>
+				<h4>Propagation of news throughout the network</h4>
+				<img src="./assets/ds/fig10.png" width='700px' />
+			</section>
 
 
-				<section>
-					<h3>Future company return prediction</h3>
-					<ul>
-						<li>One way of assessing value from the graph information is by
-							establishing a prediction task which could depend on the graph
-							 information</li>
-						<li>Understanding the effect of news on the companies for which
-							the which is relevant, as well as the rest</li>
-					</ul>
-				</section>
+			<section>
+				<h3>Future company return prediction</h3>
+				<ul>
+					<li>One way of assessing value from the graph information is by
+						establishing a prediction task which could depend on the graph
+						information</li>
+					<li>Understanding the effect of news on the companies for which
+						the which is relevant, as well as the rest</li>
+				</ul>
+			</section>
 
-				<section>
-					<h3>Future company return prediction</h3>
-					Company representation example
-					<ul>
-						<li>Fin: Only Financial Data</li>
-						<li>FFin: Financial Data Filtered</li>
-						<li>Graph: Only Graph Information</li>
-						<li>Hyb: Hybrid</li>
-					</ul>
-				</section>
+			<section>
+				<h3>Future company return prediction</h3>
+				Company representation example
+				<ul>
+					<li>Fin: Only Financial Data</li>
+					<li>FFin: Financial Data Filtered</li>
+					<li>Graph: Only Graph Information</li>
+					<li>Hyb: Hybrid</li>
+				</ul>
+			</section>
 
-				<section>
-					<img src="./assets/ds/fig11.png" width='500px'/>
-				</section>
+			<section>
+				<img src="./assets/ds/fig11.png" width='500px' />
+			</section>
 
-				<section>
-					<h3>Results</h3>
-					5-fold Cross validation
-					258,000 training examples
-					<img src="./assets/ds/fig14.png" width='700px'/>
+			<section>
+				<h3>Results</h3>
+				5-fold Cross validation
+				258,000 training examples
+				<img src="./assets/ds/fig14.png" width='700px' />
 				<ul>
 					<li>he results suggest that the graph information is
 						capturing enough and complementary information to that found
 						in the financial history</li>
-						<li>It would be interesting to find the predictions after specific
-							events and analyze the outputs for related companies</li>
+					<li>It would be interesting to find the predictions after specific
+						events and analyze the outputs for related companies</li>
 				</ul>
-				</section>
+			</section>
 
-				<section>
-					<h3>Conclusions</h3>
-					<ul>
-						<li>News sentiment can predict stock returns</li>
-						<li>The Competitor relation in the graph is associated to
-							significant increase of correlation between companies</li>
-						<li>We have found little evidence to suggest that the graph
-							information helps improve predictions based on sentiment and
-							financial data--but can substitute correlations.</li>
-						<li>A simple linear model using financial data, news sentiment
-							data and correlations among companies is a good predictor for
-							the movement of a stock.</li>
-					</ul>
-				</section>
+			<section>
+				<h3>Conclusions</h3>
+				<ul>
+					<li>News sentiment can predict stock returns</li>
+					<li>The Competitor relation in the graph is associated to
+						significant increase of correlation between companies</li>
+					<li>We have found little evidence to suggest that the graph
+						information helps improve predictions based on sentiment and
+						financial data--but can substitute correlations.</li>
+					<li>A simple linear model using financial data, news sentiment
+						data and correlations among companies is a good predictor for
+						the movement of a stock.</li>
+				</ul>
+			</section>
 
-				<section>
-					<h2>What else?</h2>
-					<ul>
-						<li>Take into account the novelty of the news (?)</li>
-						<li>Refine the classification -> are any other models more suitable</li>
-						<li>Test the classifiers on novel data</li>
-					</ul>
-				</section>
+			<section>
+				<h2>What else?</h2>
+				<ul>
+					<li>Take into account the novelty of the news (?)</li>
+					<li>Refine the classification -> are any other models more suitable</li>
+					<li>Test the classifiers on novel data</li>
+				</ul>
+			</section>
 
-			</div>
 		</div>
+	</div>
 
-		<script src="reveal.js/lib/js/head.min.js"></script>
-		<script src="reveal.js/js/reveal.js"></script>
-		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<script src="reveal.js/lib/js/head.min.js"></script>
+	<script src="reveal.js/js/reveal.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'reveal.js/plugin/markdown/marked.js' },
-					{ src: 'reveal.js/plugin/markdown/markdown.js' },
-					{ src: 'reveal.js/plugin/notes/notes.js', async: true },
-					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'reveal.js/plugin/markdown/marked.js' },
+				{ src: 'reveal.js/plugin/markdown/markdown.js' },
+				{ src: 'reveal.js/plugin/notes/notes.js', async: true },
+				{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+
 </html>
