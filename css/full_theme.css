@@ -1126,6 +1126,32 @@ html {
   background-image: url("../assets/Tania_logo.png");
 }
 
+.reveal .slides section.color--soda .logo {
+  background-image: url("../assets/logos/Hex_Logo.png");
+  width: 24vmin;
+}
+
+.reveal .slides section.color--soda {
+  background-color: #fff;
+  color: #66646B;
+}
+
+/* dark grey */
+.reveal .slides section.color--sodadark .logo {
+  background-image: url("../assets/logos/Hex_Logo.png");
+  width: 24vmin;
+}
+
+.reveal .slides section.color--sodadark {
+  background-color: #2A2A49;
+  /* navy blue */
+  color: #fff;
+}
+.reveal .slides section.color--sodadark h1, .reveal .slides section.color--sodadark h2 {
+  color: #95d5d4;
+}
+
+/* dark grey */
 .reveal .slides section.color--light {
   background-color: #fff;
   color: #66646B;
@@ -1478,6 +1504,16 @@ html {
   width: 24vmin;
 }
 
+.reveal .slides section.title .logo--sodafull {
+  background-image: url("../assets/logos/HS.png");
+  width: 24vmin;
+}
+
+.reveal .slides section.title .logo--sodafullw {
+  background-image: url("../assets/logos/HS_white.png");
+  width: 24vmin;
+}
+
 .reveal .slides section.title .logo--pyladies {
   background-image: url("../assets/logos/pyladies-nwuk-nocompass-darkpink.svg");
   width: 24vmin;
@@ -1819,7 +1855,7 @@ figure.code2 pre code {
 
 .reveal pre {
   box-shadow: none;
-  line-height: 1.1rem;
+  line-height: 1.6rem;
   width: 100%;
 }
 .reveal pre code {
@@ -1831,9 +1867,9 @@ figure.code2 pre code {
 
 .reveal code {
   background-color: #e2e6e9;
-  padding: 2px 7px;
+  padding: 3px 7px;
   border-radius: 3px;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 /*# sourceMappingURL=full_theme.css.map */
