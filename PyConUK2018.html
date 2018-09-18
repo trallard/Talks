@@ -521,8 +521,10 @@
 						🙁 Have you ever encountered any barriers to reproducibility? Of what sort?
 						<br> <br>
 						📝 Write your thoughs
-						<a href="https://public.etherpad-mozilla.org/p/ReproduciblePython" target="_blank" style='color:#F8757F;'>
-							on this Etherpad </a>
+						<a href="https://docs.google.com/document/d/1iJS5Sv6dEhePicFfJH11LMUFj5d861t005JxH4cwGf0/edit?usp=sharing" target="_blank" 
+						style='color:#F8757F;'>
+							on this Google Doc </a>
+						<a href="https://goo.gl/Zu69yM" target="_blank">https://goo.gl/Zu69yM</a>
 					</div>
 				</div>
 			</section>
@@ -608,6 +610,11 @@
 					<div class="content">
 						<h1>Got you covered 😎</h1>
 						Go to <a href="http://13.69.98.141/hub/login">http://13.69.98.141/hub/login</a>
+						<hr>
+						However you still need to download some data. Get the link from the Google doc: 
+						<a href="https://docs.google.com/document/d/1iJS5Sv6dEhePicFfJH11LMUFj5d861t005JxH4cwGf0/edit?usp=sharing">https://goo.gl/Zu69yM</a>
+						<hr>
+						And a GitHub account
 					</div>
 			</section>
 
@@ -792,25 +799,6 @@
 
 			</section>
 
-			<section class="color--sodadark">
-				<div class="grid-wrapper">
-					<div class="header">
-						<div class="logo"></div>
-						<div class="twitter"><a href="https://twitter.com/ixek">
-								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-					</div>
-					<div class="content">
-						<h1>🗳️ Quick poll: 5 mins</h1>
-						🤔 How do you start a new project? Do you have any preferred files,
-						directory, data structure or naming conventions?
-						<br><br>
-						📝 Write your ideas
-						<a href="https://public.etherpad-mozilla.org/p/ReproduciblePython" target="_blank" style='color:#F8757F; font-weight:600;'>
-							on this Etherpad </a>
-					</div>
-				</div>
-			</section>
-
 			<!-- Start project structure vertical slide -->
 			<section class='color--soda'>
 				<section>
@@ -833,8 +821,7 @@
 							we need to take advantage of the power of convention.
 							<div class="info">
 								"A place for everything, everything in its place"
-								<p class='caption_p'>- Benjamin Franklin</p>
-							</div>
+								<p class='caption_p'>- Benjamin Franklin</p></div>
 						</div>
 					</div>
 				</section>
@@ -894,14 +881,7 @@
 									Cookie cutter</a> to create our base filesystem and some support
 								documents. </p>
 							<div class="fragment">
-								Using our command line we will first activate our conda
-								environment.
-								<div data-markdown>
-									```
-									$ source activate reproPython
-									```
-								</div>
-								Now we can create our project structure
+								Let's create our project structure
 								<div data-markdown>
 									```
 									$ cookiecutter gh:mkrapp/cookiecutter-reproducible-science
@@ -1127,12 +1107,7 @@ $ git config --global user.email "taniar.allard@gmail.com"</code> </pre>
 							<h1 id="Adding-raw-data">Adding raw data</h1>
 							<p>We will be using the Kaggle <a href="https://www.kaggle.com/residentmario/renaming-combining-data/data">wine
 									review</a> dataset.
-								The first step is to download the data and store it in our <code>data/raw</code> directory.</p>
-							You should have a copy of the datasets that we will be using already if you followed the installation
-							instructions.
-
-							Otherwise you can get a copy using the link in the Etherpad.
-
+							You should now have the dataset. Make sure to place it in your raw data directory.
 						</div>
 				</section>
 
@@ -1329,7 +1304,7 @@ Collected on: 09/05/2018 by Tania Allard
 					<div class="content">
 						<p>Don't worry you do not have to generate all of the scripts... we have provided some scripts for you to get
 							started.
-							You should now have a directory called <code>SupportScripts</code></p>
+							
 						<p>You need to make sure that all the scripts and notebooks from the
 							directory are in the appropriate directory inside your newly created project.</p>
 						<ul>
