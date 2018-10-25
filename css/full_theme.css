@@ -2,6 +2,9 @@
  * Tania Allard theme for reveal.js
  * Basic reveal.js used and based on the white theme
  */
+/*********************************************
+ * VARIOUS IMPORTS
+ *********************************************/
 @import url(../../reveal.js/lib/font/source-sans-pro/source-sans-pro.css);
 @import url(../../reveal.js/lib/font/poppins/poppins.css);
 @import url(../../reveal.js/lib/font/leafy/leafy.css);
@@ -22,13 +25,319 @@ section.has-light-background h6 {
 * PERSONAL
 *********************************************/
 /*********************************************
-* DEFINING THEMES
+* DEFINING THEME PALETTES
 *********************************************/
 /*
  * Implementation of themes
  */
 /*********************************************
- * GLOBAL STYLES
+* ENABLE RESPONSIVENESS
+*********************************************/
+html {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+@media (min-width: 48em) {
+  html {
+    font-size: 1.2em;
+    line-height: 1.95;
+  }
+}
+
+@media (min-width: 64em) {
+  html {
+    font-size: 1.5em;
+    line-height: 2.1;
+  }
+}
+
+@media (min-width: 85.375em) {
+  html {
+    font-size: 1.6em;
+  }
+}
+
+@media (min-width: 120em) {
+  html {
+    font-size: 1.8em;
+  }
+}
+
+@media (min-width: 160em) {
+  html {
+    font-size: 1.9em;
+  }
+}
+
+/*********************************************
+* ADDITIONAL SLIDES CLASSES
+* THESE CAN BE USED WITH ANY THEME
+*********************************************/
+.reveal .slides section.color--code {
+  background-color: #eeeeee;
+  /* pale gray */
+  font-family: "Overpass Mono", monospace;
+}
+
+.reveal .slides section.color--code h1,
+.reveal .slides section.color--code h2,
+.reveal .slides section.color--code h3 {
+  font-family: "Overpass Mono", monospace;
+}
+
+.reveal .slides section.color--code code {
+  background-color: transparent;
+  font-size: 1.7em;
+}
+
+.reveal .slides section.color--dark {
+  background-color: #22272B;
+  color: #EEEDEF;
+}
+
+.reveal .slides section.color--dark .logo {
+  background-image: url("../assets/Tania_logo_gray2.png");
+}
+
+.reveal .slides section.color--ice {
+  background-color: #9292A8;
+  /* pale lavender gray */
+  color: #fff;
+}
+
+.reveal .slides section.color--ice .logo {
+  background-image: url("../assets/Tania_logo.png");
+}
+
+.reveal .slides section.color--violet {
+  background-color: #3A015C;
+  color: #fff;
+}
+
+.reveal .slides section.color--violet h1,
+.reveal .slides section.color--violet h2 {
+  color: #41ead4;
+}
+
+.reveal .slides section.color--violet .logo {
+  background-image: url("../assets/Tania_logo.png");
+}
+
+.reveal .slides section.color--soda .logo {
+  background-image: url("../assets/logos/Hex_Logo.png");
+  width: 24vmin;
+}
+
+.reveal .slides section.color--soda {
+  background-color: #fff;
+  color: #66646B;
+}
+
+.reveal .slides section.color--sodadark .logo {
+  background-image: url("../assets/logos/Hex_Logo.png");
+  width: 24vmin;
+}
+
+.reveal .slides section.color--sodadark {
+  background-color: #2A2A49;
+  /* navy blue */
+  color: #fff;
+}
+
+.reveal .slides section.color--sodadark h1,
+.reveal .slides section.color--sodadark h2 {
+  color: #95d5d4;
+}
+
+.reveal .slides section.color--light {
+  background-color: #fff;
+  color: #66646B;
+}
+
+.reveal .slides section.color--light .logo {
+  background-image: url("../assets/Tania_logo.png");
+}
+
+.reveal .slides section.color--midnight {
+  background-color: #2A2A49;
+  /* navy blue */
+  color: #fff;
+}
+
+.reveal .slides section.color--midnight h1,
+.reveal .slides section.color--midnight h2 {
+  color: #F8757F;
+}
+
+.reveal .slides section.color--midnight .logo {
+  background-image: url("../assets/Tania_logo_gray.png");
+}
+
+.reveal .slides section.color--vibrant {
+  background-color: #41ead4;
+  color: #fff;
+}
+
+.reveal .slides section.color--vibrant h1 {
+  color: #5F4B8B;
+}
+
+.reveal .slides section.color--vibrant .logo {
+  background-image: url("../assets/Tania_logo.png");
+}
+
+.reveal .slides section.color--topaz {
+  background-color: #67aeca;
+  color: #fff;
+}
+
+.reveal .slides section.color--topaz h1 {
+  color: #675682;
+}
+
+.reveal .slides section.color--vibrant .logo {
+  background-image: url("../assets/Tania_logo.png");
+}
+
+.reveal .slides section.color--two {
+  background-color: #fff;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #5F4B8B), color-stop(50%, #fff));
+  background: linear-gradient(to right, #5F4B8B 50%, #fff 50%);
+}
+
+.reveal .slides section.color--two .logo {
+  background-image: url("../assets/Tania_logo_gray.png");
+}
+
+.items-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.theme-streams .items-block {
+  font-family: themed("base-font");
+}
+
+.theme-lines .items-block {
+  font-family: themed("base-font");
+}
+
+.theme-seacalm .items-block {
+  font-family: themed("base-font");
+}
+
+.theme-goldilocks .items-block {
+  font-family: themed("base-font");
+}
+
+.theme-duotone .items-block {
+  font-family: themed("base-font");
+}
+
+.theme-jewels .items-block {
+  font-family: themed("base-font");
+}
+
+.theme-soda .items-block {
+  font-family: themed("base-font");
+}
+
+.theme-black .items-block {
+  font-family: themed("base-font");
+}
+
+.theme-poppins-font .items-block {
+  font-family: themed("base-font");
+}
+
+.theme-plex-font .items-block {
+  font-family: themed("base-font");
+}
+
+.theme-dosis-font .items-block {
+  font-family: themed("base-font");
+}
+
+.theme-leafy-font .items-block {
+  font-family: themed("base-font");
+}
+
+.theme-allmono-font .items-block {
+  font-family: themed("base-font");
+}
+
+.theme-soda-font .items-block {
+  font-family: themed("base-font");
+}
+
+.theme-nox-font .items-block {
+  font-family: themed("base-font");
+}
+
+.items-block.single-block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+.items-block.single-block.left {
+  width: 50%;
+  color: #fff;
+}
+
+.items-block.single-block.right {
+  width: 50%;
+}
+
+.reveal .slides section.color--grad-purple {
+  background-color: #fff;
+  background: linear-gradient(45deg, #2D266F, #7C2289);
+  color: #fff !important;
+}
+
+.reveal .slides section.color--grad-purple h1 {
+  color: #fff;
+}
+
+.reveal .slides section.color--grad-purple .logo {
+  background-image: url("../assets/Tania_logo_white.png");
+}
+
+.reveal .slides section.color--grad-green {
+  background-color: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, #90218C, #009890);
+}
+
+.reveal .slides section.color--grad-green h1 {
+  color: #fff;
+}
+
+.reveal .slides section.color--grad-green .logo {
+  background-image: url("../assets/Tania_logo_white.png");
+}
+
+.reveal .slides section.color--grad-blue {
+  background-color: #fff;
+  color: #FFFFFF;
+  background: linear-gradient(45deg, #303395, #27F0F0);
+}
+
+.reveal .slides section.color--grad-blue h1 {
+  color: #fff;
+}
+
+.reveal .slides section.color--grad-blue .logo {
+  background-image: url("../assets/Tania_logo_white.png");
+}
+
+/*********************************************
+ * GLOBAL STYLES- direct overwrites of reveal
  *********************************************/
 .reveal {
   font-size: inherit;
@@ -590,46 +899,6 @@ section.has-light-background h6 {
 .reveal .progress span {
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
-}
-
-/*********************************************
-* ENABLE RESPONSIVENESS
-*********************************************/
-html {
-  font-size: 1em;
-  line-height: 1.5;
-}
-
-@media (min-width: 48em) {
-  html {
-    font-size: 1.2em;
-    line-height: 1.95;
-  }
-}
-
-@media (min-width: 64em) {
-  html {
-    font-size: 1.5em;
-    line-height: 2.1;
-  }
-}
-
-@media (min-width: 85.375em) {
-  html {
-    font-size: 1.6em;
-  }
-}
-
-@media (min-width: 120em) {
-  html {
-    font-size: 1.8em;
-  }
-}
-
-@media (min-width: 160em) {
-  html {
-    font-size: 1.9em;
-  }
 }
 
 /*********************************************
@@ -1363,242 +1632,6 @@ html {
 
 .theme-black .reveal.pattern--pupilines .controls {
   color: #C687E8;
-}
-
-/*********************************************
-* ADDITIONAL SLIDES CLASSES
-* THESE CAN BE USED WITH ANY THEME
-*********************************************/
-.reveal .slides section.color--code {
-  background-color: #eeeeee;
-  /* pale gray */
-  font-family: "Overpass Mono", monospace;
-}
-
-.reveal .slides section.color--code h1,
-.reveal .slides section.color--code h2,
-.reveal .slides section.color--code h3 {
-  font-family: "Overpass Mono", monospace;
-}
-
-.reveal .slides section.color--code code {
-  background-color: transparent !important;
-  font-size: 1rem;
-}
-
-.reveal .slides section.color--ice .logo {
-  background-image: url("../assets/Tania_logo.png");
-}
-
-.reveal .slides section.color--dark {
-  background-color: #22272B;
-  color: #EEEDEF;
-}
-
-.reveal .slides section.color--dark .logo {
-  background-image: url("../assets/Tania_logo_gray2.png");
-}
-
-.reveal .slides section.color--ice {
-  background-color: #9292A8;
-  /* pale lavender gray */
-  color: #fff;
-}
-
-.reveal .slides section.color--ice .logo {
-  background-image: url("../assets/Tania_logo.png");
-}
-
-.reveal .slides section.color--violet {
-  background-color: #3A015C;
-  color: #fff;
-}
-
-.reveal .slides section.color--violet .logo {
-  background-image: url("../assets/Tania_logo.png");
-}
-
-.reveal .slides section.color--soda .logo {
-  background-image: url("../assets/logos/Hex_Logo.png");
-  width: 24vmin;
-}
-
-.reveal .slides section.color--soda {
-  background-color: #fff;
-  color: #66646B;
-}
-
-/* dark grey */
-.reveal .slides section.color--sodadark .logo {
-  background-image: url("../assets/logos/Hex_Logo.png");
-  width: 24vmin;
-}
-
-.reveal .slides section.color--sodadark {
-  background-color: #2A2A49;
-  /* navy blue */
-  color: #fff;
-}
-
-.reveal .slides section.color--sodadark h1,
-.reveal .slides section.color--sodadark h2 {
-  color: #95d5d4;
-}
-
-/* dark grey */
-.reveal .slides section.color--light {
-  background-color: #fff;
-  color: #66646B;
-}
-
-/* dark grey */
-.reveal .slides section.color--light .logo {
-  background-image: url("../assets/Tania_logo.png");
-}
-
-.reveal .slides section.color--midnight {
-  background-color: #2A2A49;
-  /* navy blue */
-  color: #fff;
-}
-
-.reveal .slides section.color--midnight h1,
-.reveal .slides section.color--midnight h2 {
-  color: #F8757F;
-}
-
-.reveal .slides section.color--midnight .logo {
-  background-image: url("../assets/Tania_logo_gray.png");
-}
-
-.reveal .slides section.color--vibrant {
-  background-color: #41ead4;
-  color: #fff;
-}
-
-.reveal .slides section.color--vibrant h1 {
-  color: #fff;
-}
-
-.reveal .slides section.color--vibrant .logo {
-  background-image: url("../assets/Tania_logo.png");
-}
-
-.reveal .slides section.color--topaz {
-  background-color: #67aeca;
-  color: #fff;
-}
-
-.reveal .slides section.color--topaz h1 {
-  color: #675682;
-}
-
-.reveal .slides section.color--vibrant .logo {
-  background-image: url("../assets/Tania_logo.png");
-}
-
-.reveal .slides section.color--two {
-  background-color: #fff;
-  color: #fff;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #5F4B8B), color-stop(50%, #fff));
-  background: linear-gradient(to right, #5F4B8B 50%, #fff 50%);
-}
-
-.reveal .slides section.color--two .logo {
-  background-image: url("../assets/Tania_logo_gray.png");
-}
-
-.items-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.theme-poppins-font .items-block {
-  font-family: Poppins, Helvetica, sans-serif;
-}
-
-.theme-plex-font .items-block {
-  font-family: IBMPlexSans, sans-serif;
-}
-
-.theme-dosis-font .items-block {
-  font-family: Didact Gothic, sans-serif;
-}
-
-.theme-leafy-font .items-block {
-  font-family: Dosis, sans-serif;
-}
-
-.theme-allmono-font .items-block {
-  font-family: Space Mono, monospace;
-}
-
-.theme-soda-font .items-block {
-  font-family: Nunito, sans-serif;
-}
-
-.theme-nox-font .items-block {
-  font-family: Open-Sans, sans-serif;
-}
-
-.items-block.single-block {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 10px;
-}
-
-.items-block.single-block.left {
-  width: 50%;
-  color: #fff;
-}
-
-.items-block.single-block.right {
-  width: 50%;
-}
-
-.reveal .slides section.color--grad-purple {
-  background-color: #fff;
-  background: linear-gradient(45deg, #2D266F, #7C2289);
-  color: #fff !important;
-}
-
-.reveal .slides section.color--grad-purple h1 {
-  color: #fff;
-}
-
-.reveal .slides section.color--grad-purple .logo {
-  background-image: url("../assets/Tania_logo_white.png");
-}
-
-.reveal .slides section.color--grad-green {
-  background-color: #fff;
-  color: #fff;
-  background: linear-gradient(45deg, #90218C, #009890);
-}
-
-.reveal .slides section.color--grad-green h1 {
-  color: #fff;
-}
-
-.reveal .slides section.color--grad-green .logo {
-  background-image: url("../assets/Tania_logo_white.png");
-}
-
-.reveal .slides section.color--grad-blue {
-  background-color: #fff;
-  color: #FFFFFF;
-  background: linear-gradient(45deg, #303395, #27F0F0);
-}
-
-.reveal .slides section.color--grad-blue h1 {
-  color: #fff;
-}
-
-.reveal .slides section.color--grad-blue .logo {
-  background-image: url("../assets/Tania_logo_white.png");
 }
 
 /*********************************************

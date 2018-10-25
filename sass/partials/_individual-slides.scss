@@ -1,0 +1,202 @@
+/*********************************************
+* ADDITIONAL SLIDES CLASSES
+* THESE CAN BE USED WITH ANY THEME
+*********************************************/
+
+// All code
+.reveal .slides section.color--code {
+    background-color: #eeeeee;
+    /* pale gray */
+    font-family: $code-font;
+    & h1,
+    h2,
+    h3 {
+        font-family: $code-font;
+    }
+    & code {
+        background-color: transparent;
+        font-size: 1.7em;
+    }
+}
+
+// Black slides
+.reveal .slides section.color--dark {
+    background-color: #22272B;
+    color: #EEEDEF;
+}
+
+.reveal .slides section.color--dark .logo {
+    background-image: url("../assets/Tania_logo_gray2.png");
+}
+
+// Grey lavender
+.reveal .slides section.color--ice {
+    background-color: #9292A8;
+    /* pale lavender gray */
+    color: $white;
+}
+
+.reveal .slides section.color--ice .logo {
+    background-image: url("../assets/Tania_logo.png");
+}
+
+// Violet slide
+.reveal .slides section.color--violet {
+    background-color: #3A015C;
+    color: $white;
+    & h1,
+    h2 {
+        color: $seagreen;
+    }
+}
+
+.reveal .slides section.color--violet .logo {
+    background-image: url("../assets/Tania_logo.png");
+}
+
+// Soda slide
+.reveal .slides section.color--soda .logo {
+    background-image: url("../assets/logos/Hex_Logo.png");
+    width: 24vmin;
+}
+
+.reveal .slides section.color--soda {
+    background-color: $white;
+    color: #66646B;
+}
+
+// Soda dark
+.reveal .slides section.color--sodadark .logo {
+    background-image: url("../assets/logos/Hex_Logo.png");
+    width: 24vmin;
+}
+
+.reveal .slides section.color--sodadark {
+    background-color: #2A2A49;
+    /* navy blue */
+    color: $white;
+    & h1,
+    h2 {
+        color: #95d5d4;
+    }
+}
+
+// Light slide
+.reveal .slides section.color--light {
+    background-color: $white;
+    color: #66646B;
+}
+
+.reveal .slides section.color--light .logo {
+    background-image: url("../assets/Tania_logo.png");
+}
+
+// Dark navy
+.reveal .slides section.color--midnight {
+    background-color: #2A2A49;
+    /* navy blue */
+    color: $white;
+    & h1,
+    h2 {
+        color: $salmon;
+    }
+}
+
+.reveal .slides section.color--midnight .logo {
+    background-image: url("../assets/Tania_logo_gray.png");
+}
+
+// Turquoise slide
+.reveal .slides section.color--vibrant {
+    background-color: $seagreen;
+    color: $white;
+    & h1 {
+        color: $ultraviolet;
+    }
+}
+
+.reveal .slides section.color--vibrant .logo {
+    background-image: url("../assets/Tania_logo.png");
+}
+
+// Topaz slide
+.reveal .slides section.color--topaz {
+    background-color: #67aeca;
+    color: $white;
+    & h1 {
+        color: #675682;
+    }
+}
+
+.reveal .slides section.color--vibrant .logo {
+    background-image: url("../assets/Tania_logo.png");
+}
+
+// Two tones slide
+.reveal .slides section.color--two {
+    background-color: $white;
+    color: $white;
+    background: linear-gradient(to right, $ultraviolet 50%, $white 50%)
+}
+
+.reveal .slides section.color--two .logo {
+    background-image: url("../assets/Tania_logo_gray.png");
+}
+
+// items inside the two colour slide
+// might change these for a grid in the future
+.items-block {
+    display: flex;
+    @include themify($themes) {
+        font-family: themed('base-font')
+    }
+    &.single-block {
+        width: 100%;
+        display: flex;
+        padding: 10px;
+        &.left {
+            width: 50%;
+            color: $white;
+        }
+        &.right {
+            width: 50%;
+        }
+    }
+}
+
+// Gradient colour slides
+.reveal .slides section.color--grad-purple {
+    background-color: $white;
+    background: linear-gradient(45deg, ( #2D266F, #7C2289));
+    color: $white !important;
+    & h1 {
+        color: $white;
+    }
+    & .logo {
+        background-image: url("../assets/Tania_logo_white.png");
+    }
+}
+
+.reveal .slides section.color--grad-green {
+    background-color: $white;
+    color: $white;
+    background: linear-gradient(45deg, ( #90218C, #009890));
+    & h1 {
+        color: $white;
+    }
+    & .logo {
+        background-image: url("../assets/Tania_logo_white.png");
+    }
+}
+
+.reveal .slides section.color--grad-blue {
+    background-color: $white;
+    color: #FFFFFF;
+    background: linear-gradient(45deg, ( #303395, #27F0F0));
+    & h1 {
+        color: $white;
+    }
+    & .logo {
+        background-image: url("../assets/Tania_logo_white.png");
+    }
+}
