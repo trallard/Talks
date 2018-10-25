@@ -184,7 +184,8 @@ has a background image and a box with the details */
   text-align: left;
 }
 
-#about .accounts a:hover .fab + span, #about .projects a:hover {
+#about .accounts a:hover .fab + span,
+#about .projects a:hover {
   -webkit-text-decoration: underline rgba(51, 51, 51, 0.65);
           text-decoration: underline rgba(51, 51, 51, 0.65);
 }
@@ -210,7 +211,8 @@ has a background image and a box with the details */
  * Custom classes for other items
  *********************************************/
 /* Strong text */
-.reveal strong, .reveal b {
+.reveal strong,
+.reveal b {
   font-weight: 400;
   color: #F8757F;
   /* salmon */

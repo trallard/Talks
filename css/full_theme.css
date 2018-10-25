@@ -8,14 +8,19 @@
 @import url("https://fonts.googleapis.com/css?family=Didact+Gothic|Dosis:400,600|Overpass+Mono|PT+Mono");
 @import url("https://fonts.googleapis.com/css?family=Muli:400,700|Space+Mono:400,700");
 @import url("https://fonts.googleapis.com/css?family=Nunito|Open+Sans|Annie+Use+Your+Telescope");
-section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
+section.has-light-background,
+section.has-light-background h1,
+section.has-light-background h2,
+section.has-light-background h3,
+section.has-light-background h4,
+section.has-light-background h5,
+section.has-light-background h6 {
   color: #222;
 }
 
 /*********************************************
 * PERSONAL
 *********************************************/
-/* dark gray */
 /*********************************************
 * DEFINING THEMES
 *********************************************/
@@ -1370,7 +1375,9 @@ html {
   font-family: "Overpass Mono", monospace;
 }
 
-.reveal .slides section.color--code h1, .reveal .slides section.color--code h2, .reveal .slides section.color--code h3 {
+.reveal .slides section.color--code h1,
+.reveal .slides section.color--code h2,
+.reveal .slides section.color--code h3 {
   font-family: "Overpass Mono", monospace;
 }
 
@@ -1433,7 +1440,8 @@ html {
   color: #fff;
 }
 
-.reveal .slides section.color--sodadark h1, .reveal .slides section.color--sodadark h2 {
+.reveal .slides section.color--sodadark h1,
+.reveal .slides section.color--sodadark h2 {
   color: #95d5d4;
 }
 
@@ -1454,7 +1462,8 @@ html {
   color: #fff;
 }
 
-.reveal .slides section.color--midnight h1, .reveal .slides section.color--midnight h2 {
+.reveal .slides section.color--midnight h1,
+.reveal .slides section.color--midnight h2 {
   color: #F8757F;
 }
 
@@ -1959,11 +1968,14 @@ html {
   min-height: 4em;
 }
 
-.reveal .slides section.subsection:not([class*='color--']) .logo, .reveal .slides section.subsection.color--light .logo {
+.reveal .slides section.subsection:not([class*='color--']) .logo,
+.reveal .slides section.subsection.color--light .logo {
   background-image: url("../assets/Tania_logo.png");
 }
 
-.reveal .slides section.subsection.color--midnight .description, .reveal .slides section.subsection.color--ice .description, .reveal .slides section.subsection.color--radiant .description {
+.reveal .slides section.subsection.color--midnight .description,
+.reveal .slides section.subsection.color--ice .description,
+.reveal .slides section.subsection.color--radiant .description {
   color: #EEEDEF;
 }
 
@@ -1997,15 +2009,21 @@ html {
   font-size: 1rem;
 }
 
-.reveal .slides section.quote.color--midnight blockquote, .reveal .slides section.quote.color--ice blockquote, .reveal .slides section.quote.color--radiant blockquote {
+.reveal .slides section.quote.color--midnight blockquote,
+.reveal .slides section.quote.color--ice blockquote,
+.reveal .slides section.quote.color--radiant blockquote {
   color: #FFFFFF;
 }
 
-.reveal .slides section.quote.color--midnight hr, .reveal .slides section.quote.color--ice hr, .reveal .slides section.quote.color--radiant hr {
+.reveal .slides section.quote.color--midnight hr,
+.reveal .slides section.quote.color--ice hr,
+.reveal .slides section.quote.color--radiant hr {
   border-color: #EEEDEF;
 }
 
-.reveal .slides section.quote.color--midnight cite, .reveal .slides section.quote.color--ice cite, .reveal .slides section.quote.color--radiant cite {
+.reveal .slides section.quote.color--midnight cite,
+.reveal .slides section.quote.color--ice cite,
+.reveal .slides section.quote.color--radiant cite {
   color: #EEEDEF;
 }
 
