@@ -1,7 +1,8 @@
 /** Customised template for slides  **/
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Amatic+SC:400+700");
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
-  color: #222; }
+  color: #222;
+}
 
 /*********************************************
 * PERSONAL
@@ -12,7 +13,8 @@ section.has-light-background, section.has-light-background h1, section.has-light
  * OVER WRITING
  *********************************************/
 .reveal {
-  font-family: "Josefin Sans", sans-serif; }
+  font-family: "Josefin Sans", sans-serif;
+}
 
 .reveal h1,
 .reveal h2,
@@ -22,18 +24,22 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .reveal h6 {
   color: #FF3D7F;
   font-family: "Amatic SC", cursive;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .reveal strong,
 .reveal b {
   font-weight: bold;
-  color: #3FB8AF; }
+  color: #3FB8AF;
+}
 
 .reveal .controls {
-  color: #3FB8AF; }
+  color: #3FB8AF;
+}
 
 .reveal .progress span {
-  background: #3FB8AF; }
+  background: #3FB8AF;
+}
 
 /*********************************************
  * custom components
@@ -48,39 +54,65 @@ section.has-light-background, section.has-light-background h1, section.has-light
   top: 50%;
   left: 50%;
   font-size: 5rem;
-  transform: translate(-50%, -50%); }
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
 
 .dark_box {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.5)));
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
   height: 50%;
   width: 50%;
   float: none;
-  border-radius: 5px; }
+  border-radius: 5px;
+}
 
 .two-colors {
   height: auto;
   background-color: #fff;
-  background: linear-gradient(to right, #7C77B9 50%, #fff 50%); }
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #7C77B9), color-stop(50%, #fff));
+  background: linear-gradient(to right, #7C77B9 50%, #fff 50%);
+}
 
 .items-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  font-family: "Josefin Sans", sans-serif; }
-  .items-block .single-block {
-    width: 100%;
-    display: flex;
-    padding: 10px; }
-    .items-block .single-block.single1 {
-      width: 50%; }
-    .items-block .single-block.single2 {
-      width: 50%; }
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.items-block .single-block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+.items-block .single-block.single1 {
+  width: 50%;
+}
+
+.items-block .single-block.single2 {
+  width: 50%;
+}
 
 .item-img {
   width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center; }
-  .item-img .item-img img {
-    max-width: 100%; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.item-img .item-img img {
+  max-width: 100%;
+}
 
 .sm_img {
   max-width: 400px;
@@ -88,7 +120,8 @@ section.has-light-background, section.has-light-background h1, section.has-light
   float: right;
   position: absolute;
   left: 80%;
-  display: block; }
+  display: block;
+}
 
 .float_modal {
   position: absolute;
@@ -99,20 +132,23 @@ section.has-light-background, section.has-light-background h1, section.has-light
   max-height: 600px;
   min-height: 100px;
   z-index: 2000;
-  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
   background: rgba(45, 51, 57, 0.98);
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 
 .modal_p {
   padding: 10px;
   color: #FF9E9D;
-  font-size: 0.56em; }
+  font-size: 0.56em;
+}
 
 .caption_p {
   font-weight: light;
   font-style: italic;
   font-size: 0.4em;
   color: #fff;
-  font-family: "Josefin Sans", sans-serif; }
-
+  font-family: "Josefin Sans", sans-serif;
+}
 /*# sourceMappingURL=trallard_pt.css.map */
