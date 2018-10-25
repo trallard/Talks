@@ -1,0 +1,423 @@
+/**
+ * Presentation-specific styles.
+ * These are items I generally use for my own presentations
+ * and decided to put them in a separate css
+ * These are not Reveal.js modifiers
+ */
+@import url(../../assets/icons_collection/font/flaticon.css);
+
+/* Icons in the about section */
+
+.social_icon {
+  color: #5f4b8b;
+  /*ultraviolet*/
+  padding-right: 10px;
+}
+
+/* Responsive lists */
+@media (min-width: 1280px) {
+  .reveal ul {
+    width: calc(90% - 1em);
+    /* width: calc(80% - 1em); */
+  }
+}
+
+/* Twitter icon and handle on the header */
+
+.header .twitter {
+  margin-left: auto;
+  opacity: 0.5;
+  font-size: 0.8rem;
+  text-decoration: none;
+  a {
+    color: #5f6c7a;
+    /*slate grey*/
+    text-decoration: none;
+  }
+  .fa-twitter {
+    color: #5f6c7a;
+    /*slate grey*/
+  }
+}
+
+/* Remove padding from title in the heading section */
+
+.reveal .slides section.title {
+  padding: 0;
+  .content {
+    grid-template-columns: auto;
+    grid-template-areas: "title" "description";
+  }
+}
+
+/* Add url to the intro slide header */
+
+.slides .title .presentation-url {
+  grid-area: header;
+  text-align: right;
+  font-size: 1em;
+  align-self: center;
+  opacity: 0.5;
+  color: black;
+}
+
+@media (max-width: 480px) {
+  #title .presentation-url {
+    display: none;
+  }
+}
+
+/* Table to the left: right under the content: no
+division for the cells */
+
+.reveal table th {
+  font-weight: bold;
+  color: #5F4B8B;
+}
+
+.commands table {
+  margin: 0;
+  th {
+    text-align: right;
+    border-bottom: none;
+  }
+  td {
+    border-bottom: none;
+    + td {
+      opacity: 0.5;
+    }
+  }
+  + figure {
+    margin-top: 2em;
+  }
+}
+
+/* End slide I just tend to have an empty slide
+with my Twitter handle  */
+
+#end .content {
+  margin-top: auto;
+  text-align: center;
+  font-size: 140%;
+}
+
+/*********************************************
+ * Custom slides
+ *********************************************/
+/* You can use this as 	<section class="dark_box"> */
+
+/* Slide with image background and semi-transluscent
+black box with white text (ideal for presentation sections) */
+
+/* Slide with a code background */
+
+.dark_box {
+  background-image: url('../assets/code.jpg');
+  background-size: cover;
+  background-position: center center;
+  aside {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 1.5em;
+    padding: 5vmin;
+    width: auto;
+    border-radius: 10px;
+    top: 50%;
+    display: block;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    text-align: center;
+    h2 {
+      /* font-family: $title-font; */
+      font-weight: bold;
+      font-size: 3rem;
+      display: block;
+      width: auto;
+      text-align: center;
+      color: #bbc3cc !important;
+    }
+  }
+}
+
+/* Floating semi transaprent grey box */
+
+/*
+Slide containing information about the presenter
+has a background image and a box with the details */
+
+#about {
+  background-image: url('../assets/code2.jpg');
+  background-size: cover;
+  background-position: center center;
+  a {
+    color: rgb(51, 51, 51);
+  }
+  aside {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    float: left;
+    font-size: 1.5em;
+    padding: 5vmin;
+    hr {
+      color: rgba(0, 0, 0, 0.075);
+      margin: 2.5vmin 0;
+    }
+    ul {
+      display: block;
+      font-size: inherit;
+      list-style: none;
+      margin: 2.5vmin 0 0;
+      width: auto;
+    }
+  }
+  .projects {
+    text-align: left;
+  }
+  .accounts a:hover .fab + span, .projects a:hover {
+    text-decoration: underline rgba(51, 51, 51, 0.65);
+  }
+  .accounts {
+    display: grid;
+    justify-content: center;
+    a {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+}
+
+/*********************************************
+ * Custom classes for other items
+ *********************************************/
+
+/* Strong text */
+
+.reveal {
+  strong, b {
+    font-weight: 400;
+    color: #F8757F;
+    /* salmon */
+  }
+  strong-alt {
+    font-weight: 400;
+    color: #028090;
+    /* metallic seaweed */
+  }
+  small {
+    font-size: 0.8rem;
+    padding-top: 10px;
+    line-height: 1.1rem;
+  }
+}
+
+/* Alternative strong text */
+
+/* Small text */
+
+/* Larger images */
+
+figure.display {
+  margin: auto;
+  text-align: center;
+  max-width: 100vmin;
+  width: 100% vw;
+  height: auto;
+  display: block;
+  padding: 10px;
+}
+
+/* Images caption */
+
+.display figcaption {
+  padding: 10px;
+  font-size: 0.85rem;
+  color: #121212;
+  float: left;
+  border: solid #EEEDEF;
+  border-width: 3px 0 0 0;
+  width: 100%;
+}
+
+/* Regular images that go in the center */
+
+div {
+  &.images {
+    text-align: center;
+    /* background-color: #222; */
+    margin: auto;
+    padding: 10px;
+    img {
+      padding: 10px;
+      display: block;
+      border: 0px solid #303030;
+      max-width: 100%;
+      max-height: 80vmin;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &.warn {
+    background-color: #fb5c6f;
+    border-color: #fb5c6f;
+    border-left: 5px solid #C81D25;
+    padding: 15px 15px;
+    color: #fff;
+    margin: 1em;
+    margin-top: 0;
+    opacity: 0.8;
+  }
+  &.info {
+    background-color: #208a96;
+    border-color: #208a96;
+    border-left: 5px solid #0B3954;
+    padding: 15px 15px;
+    color: #fff;
+    opacity: 0.8;
+    margin: 1em;
+    margin-top: 0;
+  }
+}
+
+/* Additional divs */
+/* Warnign div */
+
+/* Information div */
+
+.info a {
+  color: #e8f3f4 !important;
+  text-decoration: underline;
+  text-decoration-color: #e8f3f4 !important;
+}
+
+/* Floating modal */
+/* I like using this for in slide quote  */
+/* when I am not using the whole slide for quote */
+
+.float_modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 900px;
+  min-width: 100px;
+  max-height: 600px;
+  min-height: 100px;
+  z-index: 2000;
+  transform: translateX(-50%) translateY(-50%);
+  background: hsla(212, 11%, 20%, 0.98);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Text into the modal */
+
+.modal_p {
+  padding: 10px !important;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+/* Adding caption to the modal */
+
+.caption_p {
+  font-weight: light;
+  font-style: italic;
+  font-size: 0.5em;
+  color: #B2BAE5;
+  /*lavender violet*/
+  /* font-family: $base-font; */
+  padding: 10px !important;
+  a {
+    /* color:  #B2BAE5!important; /*lavender violet*/
+    font-style: italic !important;
+  }
+}
+
+/* Links inside the modal caption */
+
+/* Columns for the content */
+
+.newspaper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.left {
+  order: 1;
+  flex-basis: 100%;
+  height: auto;
+  min-height: 100px;
+}
+
+.middle {
+  order: 3;
+  flex-basis: 100%;
+  height: auto;
+}
+
+.right {
+  order: 2;
+  flex-basis: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .newspaper {
+    flex-wrap: nowrap;
+  }
+  .left {
+    flex-basis: 1;
+    order: 1;
+  }
+  .middle {
+    flex-basis: 1;
+    order: 2;
+  }
+  .right {
+    flex-basis: 1;
+    order: 3;
+  }
+}
+
+/* List using icons */
+
+.reveal ul.icon {
+  list-style-type: none;
+}
+
+ul.icon li {
+  text-indent: -1.4em;
+  margin-bottom: 0.5em;
+  &::before {
+    font-family: 'flaticon';
+    content: "\f102";
+    /* maguey */
+    float: left;
+    width: 1.2em;
+    font-size: 1em;
+    color: #028090;
+    /* sea green */
+  }
+  &.pinata::before {
+    content: "\f100";
+    color: #F8757F;
+    /* salmon */
+  }
+  &.nopal::before {
+    content: "\f101";
+  }
+  &.cactus::before {
+    content: "\f103";
+  }
+  &.skull::before {
+    content: "\f104";
+    color: #454545;
+    /* darkgray */
+  }
+}
