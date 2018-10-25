@@ -108,15 +108,18 @@ primary and secondary)
 ![](assets/patterns/pupilines.svg)
 
 - starpattern
-![](assets/patterns/star_pattern.svg
+![](assets/patterns/star_pattern.svg)
 
 - stream
 ![](assets/patterns/stream.svg)
 
 
 - zigzag
-![](assets/patterns/zigzag_purple.svg
+![](assets/patterns/zigzag_purple.svg)
 
+
+**Note** that the bullet points were imported from Flaticon and the css source is located in
+`./sass/presentation.css`
 ---
 
 
