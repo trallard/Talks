@@ -129,7 +129,7 @@ black box with white text (ideal for presentation sections) */
 }
 
 .dark_box aside h2{
-  font-family: $title-font;
+  /* font-family: $title-font; */
   font-weight: bold;
   font-size: 3rem;
   display: block;
@@ -312,7 +312,7 @@ div.info {
   font-style: italic;
   font-size: 0.5em;
   color:  #B2BAE5; /*lavender violet*/
-  font-family: $base-font;
+  /* font-family: $base-font; */
   padding: 10px!important;
 }
 
