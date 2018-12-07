@@ -3,7 +3,7 @@
 * THESE CAN BE USED WITH ANY THEME
 *********************************************/
 
-// All code
+// All code-light version
 .reveal .slides section.color--code {
     background-color: #eeeeee;
     /* pale gray */
@@ -22,7 +22,7 @@
 // Black slides
 .reveal .slides section.color--dark {
     background-color: #22272B;
-    color: #EEEDEF;
+    color: rgb(237, 231, 243);
 }
 
 .reveal .slides section.color--dark .logo {
