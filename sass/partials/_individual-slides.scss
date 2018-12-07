@@ -200,3 +200,118 @@
         background-image: url("../assets/Tania_logo_white.png");
     }
 }
+
+// terminal sytle code
+.browser-window,
+.terminal-window {
+    text-align: left;
+    margin: 20px;
+    width: 602px;
+    height: 355px;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: overlay;
+    font-family: $code-font;
+}
+
+.browser-window .top-bar,
+.terminal-window .top-bar {
+    height: 30px;
+    border-radius: 4px 4px 0 0;
+    border-top: thin solid #eaeae9;
+    border-bottom: thin solid #dfdfde;
+    background: #ebebeb;
+}
+
+.browser-window .circle,
+.terminal-window .circle {
+    height: 8px;
+    width: 8px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.browser-window .circles,
+.terminal-window .circles {
+    margin: 1px 10px;
+}
+
+.browser-window .window-content,
+.terminal-window .window-content {
+    margin: 0;
+    width: 100%;
+    min-height: 90%;
+    display: inline-block;
+    border-radius: 0 0 4px 4px;
+}
+
+.browser-window.dark,
+.terminal-window.dark {
+    background-color: #1d1941;
+    border: 1px solid #262257;
+    box-shadow: 0px 2px 10px rgba(22, 20, 50, 0.4);
+}
+
+.browser-window.dark .top-bar,
+.terminal-window.dark .top-bar {
+    border-top: thin solid #181536;
+    border-bottom: thin solid #13112b;
+    background: #161432;
+}
+
+.browser-window.dark .circle,
+.terminal-window.dark .circle {
+    background-color: #2e2969;
+}
+
+.browser-window.dark .circle.circle-red,
+.terminal-window.dark .circle.circle-red {
+    background-color: #F23969;
+}
+
+.browser-window.dark .circle.circle-yellow,
+.terminal-window.dark .circle.circle-yellow {
+    background-color: #FFC69F;
+}
+
+.browser-window.dark .circle.circle-green,
+.terminal-window.dark .circle.circle-green {
+    background-color: #6AE9F8;
+}
+
+.browser-window {
+    .window-content>pre {
+        background: #fff;
+        margin: 0;
+        border: 0;
+        padding: 4% 8%;
+    }
+    &.dark .window-content>pre {
+        background: #1d1941;
+        margin: 0;
+        border: 0;
+        padding: 4% 8%;
+    }
+}
+
+.terminal-window {
+    &.dark .window-content>pre {
+        background: #1d1941;
+        margin: 0;
+        border: 0;
+        padding: 4% 8%;
+    }
+    .window-content {
+        background: #232A35;
+        >pre {
+            background: #232A35;
+            margin: 0;
+            border: 0;
+            padding: 4% 8%;
+        }
+    }
+}
