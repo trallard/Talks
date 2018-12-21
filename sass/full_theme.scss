@@ -490,13 +490,14 @@ section.has-light-background h6 {
 // Logo in header
 .reveal .slides section .logo {
     background-image: url("../assets/Tania_logo.png");
+    background-image: url("../assets/personal/Purple.png");
     background-repeat: no-repeat;
     background-size: auto 100%;
     display: inline-block;
     grid-area: header;
     height: 5.5vmin;
     margin-right: 1.5vmin;
-    width: 4.5vmin;
+    width: 5.5vmin;
 }
 
 // Section title in header
@@ -505,11 +506,12 @@ section.has-light-background h6 {
         font-family: themed('title-font');
     }
     text-transform: uppercase;
-    line-height: 5.5vmin;
+    line-height: 6vmin;
     font-size: 0.7em;
     font-weight: 500;
 }
 
+// Enable the use of slide colours
 .reveal .slides section:not([class*="color--"]) .section {
     color: #9292A8;
 }
@@ -518,11 +520,6 @@ section.has-light-background h6 {
 .reveal .slides section .content {
     align-self: center;
     grid-area: content;
-}
-
-// Dark coloured slides
-.reveal .slides section.color--dark .section {
-    color: #EEEDEF;
 }
 
 // Intro slide
