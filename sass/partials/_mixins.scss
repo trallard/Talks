@@ -1,6 +1,6 @@
-/*
- * Implementation of themes
- */
+/*********************************************
+* THEMES
+*********************************************/
 
 @mixin themify($themes) {
     @each $theme,
@@ -18,8 +18,13 @@
     }
 }
 
+// Function to apply the themes, this is added to the items as needed 
+@function themed($key) {
+    @return map-get($theme-map, $key);
+}
+
 /*********************************************
-* ENABLE RESPONSIVENESS
+* ENABLE RESPONSIVENESS FOR THE SLIDES
 *********************************************/
 
 // Breakpoints
@@ -63,11 +68,63 @@ html {
     }
 }
 
-/* Responsive lists */
+/*********************************************
+* RESPONSIVE LISTS
+*********************************************/
 
 @media (min-width: 1280px) {
     .reveal ul {
         width: calc(90% - 1em);
         /* width: calc(80% - 1em); */
+    }
+}
+
+/*********************************************
+* INTRO SLIDE
+*********************************************/
+
+// intro url
+@media (max-width: 480px) {
+    #title .presentation-url {
+        display: none;
+    }
+}
+
+// ensure the grid is responsive
+@media (max-width: 568px) {
+    .reveal .slides section.title .grid-wrapper {
+        grid-template-areas: "header" "content" "credit";
+        grid-template-columns: auto;
+    }
+    .reveal .slides section.title .credit {
+        justify-self: end;
+    }
+}
+
+@media (min-width: 1280px) {
+    .reveal .slides section.title .content {
+        display: grid;
+        grid-template-areas: "title description";
+        grid-template-columns: auto 40%;
+        grid-column-gap: 10vmin;
+    }
+    .reveal .slides section.title h1 {
+        grid-area: title;
+    }
+    .reveal .slides section.title .description {
+        grid-area: description;
+        margin-top: 0.5em;
+    }
+}
+
+/*********************************************
+* PRESENTATION SLIDE
+*********************************************/
+
+@media (max-width: 768px) {
+    .reveal .slides section.title {
+        height: calc(100vh - 4vmin);
+        margin: 2vmin;
+        width: calc(100vw - 4vmin);
     }
 }

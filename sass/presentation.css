@@ -39,21 +39,6 @@
   grid-template-areas: "title" "description";
 }
 
-/* Add url to the intro slide header */
-.slides .title .presentation-url {
-  grid-area: header;
-  text-align: right;
-  font-size: 1em;
-  align-self: center;
-  opacity: 0.5;
-  color: black;
-}
-
-@media (max-width: 480px) {
-  #title .presentation-url {
-    display: none;
-  }
-}
 /* Table to the left: right under the content: no
 division for the cells */
 .reveal table th {

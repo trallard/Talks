@@ -31,12 +31,6 @@ section.has-light-background h6 {
 @import "partials/light-themes";
 @import "partials/mixins";
 @import "partials/individual-slides";
-// Function to apply the themes, this is added to the items as needed 
-@function themed($key) {
-    @return map-get($theme-map,
-    $key);
-}
-
 /*********************************************
  * GLOBAL STYLES- direct overwrites of reveal
  *********************************************/
@@ -64,6 +58,67 @@ section.has-light-background h6 {
     @include themify($themes) {
         background: themed('third')
     }
+}
+
+/*********************************************
+* REVEAL SPECIFICS
+*********************************************/
+
+// Note that by default in Reveal.js the text is aligned to the center
+// I prefer this to be on the left hand
+.reveal .slides {
+    text-align: left;
+}
+
+.reveal .slides>section,
+.reveal .slides>section>section {
+    padding: 0;
+}
+
+.reveal .slides>section.past,
+.reveal .slides>section.future,
+.reveal .slides>section>section.past,
+.reveal .slides>section>section.future {
+    opacity: 1;
+}
+
+.reveal .controls {
+    right: 4vmin;
+    bottom: 4vmin;
+}
+
+@media (max-width: 768px) {
+    .reveal .controls {
+        right: 2vmin;
+        bottom: 2vmin;
+    }
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    margin-bottom: 2.5vmin;
+    color: inherit;
+}
+
+.reveal .slides section {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+    display: block;
+}
+
+.reveal section img {
+    background: none;
+    border: none;
+    box-shadow: none;
+    margin: 0;
 }
 
 /*********************************************
@@ -234,8 +289,144 @@ Intro slide
     width: 33%;
 }
 
+/****************** 
+Presentation title
+******************/
+
+// Presentation title slide: this is rectangular
+.reveal .slides section.title {
+    height: calc(100vh - 8vmin);
+    margin: 4vmin;
+    width: calc(100vw - 8vmin);
+    color: $white;
+    margin-left: 14vw;
+    width: calc(100vw - 4vmin - 14vw);
+}
+
+// Grid areas for introduction title slide
+// usually contains title, presented and the event
+.reveal .slides section.title .grid-wrapper {
+    grid-template-areas: "header header2" "content content" ". credit";
+    grid-template-columns: auto 50%;
+    grid-template-rows: 6vmin 1fr auto;
+    grid-column-gap: 5vmin;
+}
+
+.reveal .slides section.title .logo {
+    background-image: url("../assets/personal/Purple.png");
+    height: 6vmin;
+    width: 6vmin;
+}
+
+.reveal .slides section.title .logo--full {
+    background-image: url("../assets/personal/Purple.png");
+    width: 24vmin;
+}
+
+.reveal .slides section.title .logo--soda {
+    background-image: url("../assets/logos/Hex_logo.png");
+    width: 24vmin;
+}
+
+.reveal .slides section.title .logo--sodafull {
+    background-image: url("../assets/logos/HS.png");
+    width: 24vmin;
+}
+
+.reveal .slides section.title .logo--sodafullw {
+    background-image: url("../assets/logos/HS_white.png");
+    width: 24vmin;
+}
+
+.reveal .slides section.title .logo--pyladies {
+    background-image: url("../assets/logos/pyladies-nwuk-nocompass-darkpink.svg");
+    width: 24vmin;
+}
+
+// ensure the content is centered
+.reveal .slides section.title .content {
+    align-self: center;
+    grid-area: content;
+}
+
+// Main slide title
+.reveal .slides section.title h1 {
+    color: $white;
+}
+
+//  Credit: the author
+.reveal .slides section.title .credit {
+    align-self: end;
+    grid-area: credit;
+    line-height: 1.8em;
+}
+
+// author line separation
+.reveal .slides section.title .credit hr {
+    border: solid #EEEDEF;
+    border-width: 2px 0 0 0;
+    margin: 0 0 .8em 0;
+    width: 35%;
+}
+
+// Label to introduce the author
+.reveal .slides section.title .credit .label {
+    font-size: 60%;
+    text-transform: uppercase;
+}
+
+// name in the credit
+.reveal .slides section.title .credit .name {
+    font-weight: bold;
+}
+
+// Add url to the intro slide header 
+.slides .title .presentation-url {
+    grid-area: header2;
+    font-size: 1em;
+    align-self: center;
+    opacity: 0.5;
+    color: black;
+}
+
+/**************
+* Subsection
+**************/
+
+// Subsection slide: header with content and description
+.reveal .slides section.subsection .grid-wrapper {
+    grid-template-areas: ". header . " ". title ." ". description .";
+    grid-template-rows: 5.5vmin 3fr 1fr;
+}
+
+// Subsection title
+.reveal .slides section.subsection h1 {
+    align-self: center;
+    grid-area: title;
+    margin: 0;
+}
+
+// Subsection description
+.reveal .slides section.subsection .description {
+    color: #9292A8;
+    grid-area: description;
+    min-height: 4em;
+}
+
+.reveal .slides section.subsection:not([class*='color--']) .logo,
+.reveal .slides section.subsection.color--light .logo {
+    background-image: url("../assets/personal/Purple.png");
+}
+
+// For midnight color subsection
+.reveal .slides section.subsection.color--midnight .description,
+.reveal .slides section.subsection.color--ice .description,
+.reveal .slides section.subsection.color--radiant .description {
+    color: #EEEDEF;
+}
+
 /*********************************************
-* FULL THEMES
+* APPLY THEMES
 *********************************************/
 
 // Used for the theming
@@ -416,67 +607,6 @@ Intro slide
     display: grid;
 }
 
-/*********************************************
-* REVEAL SPECIFICS
-*********************************************/
-
-// Note that by default in Reveal.js the text is aligned to the center
-// I prefer this to be on the left hand
-.reveal .slides {
-    text-align: left;
-}
-
-.reveal .slides>section,
-.reveal .slides>section>section {
-    padding: 0;
-}
-
-.reveal .slides>section.past,
-.reveal .slides>section.future,
-.reveal .slides>section>section.past,
-.reveal .slides>section>section.future {
-    opacity: 1;
-}
-
-.reveal .controls {
-    right: 4vmin;
-    bottom: 4vmin;
-}
-
-@media (max-width: 768px) {
-    .reveal .controls {
-        right: 2vmin;
-        bottom: 2vmin;
-    }
-}
-
-.reveal h1,
-.reveal h2,
-.reveal h3,
-.reveal h4,
-.reveal h5,
-.reveal h6 {
-    margin-bottom: 2.5vmin;
-    color: inherit;
-}
-
-.reveal .slides section {
-    box-sizing: border-box;
-    padding: 0;
-}
-
-.reveal blockquote p:first-child,
-.reveal blockquote p:last-child {
-    display: block;
-}
-
-.reveal section img {
-    background: none;
-    border: none;
-    box-shadow: none;
-    margin: 0;
-}
-
 /************************************************
 * MODIFIED SECTIONS
 * ADDS LOGO AND SPECIFICS FOR THE THEME
@@ -527,7 +657,7 @@ Intro slide
     align-items: center;
     display: flex;
     grid-area: header;
-    padding: 5px; // background-color: #121212;
+    padding: 5px;
 }
 
 // Logo in header
@@ -553,169 +683,24 @@ Intro slide
     font-weight: 500; // background-color: #121212;
 }
 
-// Enable the use of slide colours
-.reveal .slides section:not([class*="color--"]) .section {
-    color: #9292A8;
-}
-
 // Main content in slides
 .reveal .slides section .content {
     align-self: center;
     grid-area: content;
 }
 
-// Title section in intro
-.reveal .slides section.title {
-    height: calc(100vh - 8vmin);
-    margin: 4vmin;
-    width: calc(100vw - 8vmin);
-    color: $white;
-    margin-left: 22vw;
-    width: calc(100vw - 4vmin - 22vw);
-}
+/*********************************************
+* COLORIZE THE SLIDES
+*********************************************/
 
-@media (max-width: 768px) {
-    .reveal .slides section.title {
-        height: calc(100vh - 4vmin);
-        margin: 2vmin;
-        width: calc(100vw - 4vmin);
-    }
-}
-
-// Grid areas for introduction title slide
-// usually contains title, presented and the event
-.reveal .slides section.title .grid-wrapper {
-    grid-template-areas: "header header" "content content" ". credit";
-    grid-template-columns: auto 50%;
-    grid-template-rows: 6vmin 1fr auto;
-    grid-column-gap: 10vmin;
-}
-
-.reveal .slides section.title .logo {
-    background-image: url("../assets/personal/Purple.png");
-    height: 6vmin;
-    width: 6vmin;
-}
-
-.reveal .slides section.title .logo--full {
-    background-image: url("../assets/personal/Purple.png");
-    width: 24vmin;
-}
-
-.reveal .slides section.title .logo--soda {
-    background-image: url("../assets/logos/Hex_logo.png");
-    width: 24vmin;
-}
-
-.reveal .slides section.title .logo--sodafull {
-    background-image: url("../assets/logos/HS.png");
-    width: 24vmin;
-}
-
-.reveal .slides section.title .logo--sodafullw {
-    background-image: url("../assets/logos/HS_white.png");
-    width: 24vmin;
-}
-
-.reveal .slides section.title .logo--pyladies {
-    background-image: url("../assets/logos/pyladies-nwuk-nocompass-darkpink.svg");
-    width: 24vmin;
-}
-
-.reveal .slides section.title .content {
-    align-self: center;
-    grid-area: content;
-}
-
-// Main slide title
-.reveal .slides section.title h1 {
-    color: $white;
-}
-
-//  usually the author
-.reveal .slides section.title .credit {
-    align-self: end;
-    grid-area: credit;
-    line-height: 1.8em;
-}
-
-// author line separation
-.reveal .slides section.title .credit hr {
-    border: solid #EEEDEF;
-    border-width: 2px 0 0 0;
-    margin: 0 0 .8em 0;
-    width: 25%;
-}
-
-// this is usually presented by:
-.reveal .slides section.title .credit .label {
-    font-size: 60%;
-    text-transform: uppercase;
-}
-
-// name in the credit
-.reveal .slides section.title .credit .name {
-    font-weight: bold;
-}
-
-// ensure the grid is responsive
-@media (max-width: 568px) {
-    .reveal .slides section.title .grid-wrapper {
-        grid-template-areas: "header" "content" "credit";
-        grid-template-columns: auto;
-    }
-    .reveal .slides section.title .credit {
-        justify-self: end;
-    }
-}
-
-@media (min-width: 1280px) {
-    .reveal .slides section.title .content {
-        display: grid;
-        grid-template-areas: "title description";
-        grid-template-columns: auto 40%;
-        grid-column-gap: 10vmin;
-    }
-    .reveal .slides section.title h1 {
-        grid-area: title;
-    }
-    .reveal .slides section.title .description {
-        grid-area: description;
-        margin-top: 0.5em;
-    }
-}
-
-// Subsection slide: header with content and description
-.reveal .slides section.subsection .grid-wrapper {
-    grid-template-areas: "header" "title" "description";
-    grid-template-rows: 5.5vmin 3fr 1fr;
-}
-
-// Subsection title
-.reveal .slides section.subsection h1 {
-    align-self: center;
-    grid-area: title;
-    margin: 0;
-}
-
-// Subsection description
-.reveal .slides section.subsection .description {
+// Enable the use of slide colours
+.reveal .slides section:not([class*="color--"]) .section {
     color: #9292A8;
-    grid-area: description;
-    min-height: 4em;
 }
 
-.reveal .slides section.subsection:not([class*='color--']) .logo,
-.reveal .slides section.subsection.color--light .logo {
-    background-image: url("../assets/Tania_logo.png");
-}
-
-// For midnight color subsection
-.reveal .slides section.subsection.color--midnight .description,
-.reveal .slides section.subsection.color--ice .description,
-.reveal .slides section.subsection.color--radiant .description {
-    color: #EEEDEF;
-}
+/*********************************************
+*  FULL QUOTE SLIDES
+*********************************************/
 
 // Quotes
 .reveal .slides section.quote blockquote {
