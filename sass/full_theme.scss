@@ -1,6 +1,7 @@
 /**
- * Tania Allard theme for reveal.js
- * Basic reveal.js used and based on the white theme
+* My own theme for reveal.js
+* note that this originated from the many many hours
+* I spent customising the slides for my own use
  */
 
 /*********************************************
@@ -81,7 +82,7 @@ section.has-light-background h6 {
         font-family: themed('title-font');
     }
     font-weight: 400; //600 too bold for IBM plex
-    line-height: 1.2;
+    line-height: 1.5;
     letter-spacing: normal;
     text-transform: none;
     text-shadow: none;
@@ -115,7 +116,7 @@ section.has-light-background h6 {
         @include themify($themes) {
             color: themed('third');
             border-bottom: 2px solid themed('third');
-            /* I prefer a thicker line */
+            /* I prefer a thicker line than the underline */
         }
     }
 }
@@ -181,9 +182,14 @@ section.has-light-background h6 {
 }
 
 /*********************************************
-* THEME SPECIFICS: EACH PATTERN WILL BE A THEME
+* Content slides
 *********************************************/
 
+/************ 
+Intro slide
+************/
+
+// logo that goes in the intro slide
 .visually-hidden {
     position: absolute !important;
     clip: rect(1px, 1px, 1px, 1px);
@@ -191,17 +197,52 @@ section.has-light-background h6 {
     height: 1px;
     width: 1px;
     word-wrap: normal;
+    border-radius: 20px;
+    background: white;
 }
+
+// Wrapper for the logo in the intro slide
+.reveal .slides section.intro .logo-wrapper {
+    display: flex;
+    height: 100%;
+}
+
+// Intro slide
+.reveal .slides section.intro {
+    height: calc(100vh - 8vmin);
+    margin: 4vmin;
+    padding: 15px;
+    width: calc(100vw - 8vmin);
+}
+
+@media (max-width: 768px) {
+    .reveal .slides section.intro {
+        height: calc(100vh - 4vmin);
+        margin: 2vmin;
+        width: calc(100vw - 4vmin);
+    }
+}
+
+// logo that goes in the intro slide
+.reveal .slides section.intro .logo {
+    background-position: center;
+    background-size: contain;
+    height: auto;
+    margin: auto;
+    min-height: 200px;
+    min-width: 200px;
+    width: 33%;
+}
+
+/*********************************************
+* FULL THEMES
+*********************************************/
 
 // Used for the theming
 .reveal[class*="pattern--"] {
     background-position: center center;
     background-size: 133vmax auto;
 }
-
-/*********************************************
-* ACTUAL THEMES
-*********************************************/
 
 // Stream now with zigzag
 .reveal.pattern--stream {
@@ -379,9 +420,10 @@ section.has-light-background h6 {
 * REVEAL SPECIFICS
 *********************************************/
 
-// Note that by default the text is aligned to the center
+// Note that by default in Reveal.js the text is aligned to the center
+// I prefer this to be on the left hand
 .reveal .slides {
-    text-align: left; // text-align: center;
+    text-align: left;
 }
 
 .reveal .slides>section,
@@ -441,14 +483,13 @@ section.has-light-background h6 {
 * Slides have two main areas: header and contetnt
 **************************************************/
 
+// Each slide is a section
 .reveal .slides section {
     height: 100vh;
     margin: 0;
     width: 100vw;
     color: #2A2A49;
 }
-
-/* very dark purple */
 
 // If no colour is given this is white
 .reveal .slides section:not([class*='color--']) {
@@ -459,7 +500,8 @@ section.has-light-background h6 {
     background-color: transparent;
 }
 
-// Grid for the slides
+// Grid for the slides note that this leaves a gap on the sides
+// to prevent content from over flowing
 .reveal .slides section .grid-wrapper {
     box-sizing: border-box;
     grid-column-gap: 5vmin; // grid-row-gap: 5vmin;
@@ -484,12 +526,12 @@ section.has-light-background h6 {
 .reveal .slides section .header {
     align-items: center;
     display: flex;
-    grid-area: header; // background-color: #121212;
+    grid-area: header;
+    padding: 5px; // background-color: #121212;
 }
 
 // Logo in header
 .reveal .slides section .logo {
-    background-image: url("../assets/Tania_logo.png");
     background-image: url("../assets/personal/Purple.png");
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -497,7 +539,7 @@ section.has-light-background h6 {
     grid-area: header;
     height: 5.5vmin;
     margin-right: 1.5vmin;
-    width: 5.5vmin;
+    width: 5.5vmin; // background-color: #121212;
 }
 
 // Section title in header
@@ -507,8 +549,8 @@ section.has-light-background h6 {
     }
     text-transform: uppercase;
     line-height: 6vmin;
-    font-size: 0.7em;
-    font-weight: 500;
+    font-size: 0.8em;
+    font-weight: 500; // background-color: #121212;
 }
 
 // Enable the use of slide colours
@@ -520,38 +562,6 @@ section.has-light-background h6 {
 .reveal .slides section .content {
     align-self: center;
     grid-area: content;
-}
-
-// Intro slide
-.reveal .slides section.intro {
-    height: calc(100vh - 8vmin);
-    margin: 4vmin;
-    padding: 15px;
-    width: calc(100vw - 8vmin);
-}
-
-@media (max-width: 768px) {
-    .reveal .slides section.intro {
-        height: calc(100vh - 4vmin);
-        margin: 2vmin;
-        width: calc(100vw - 4vmin);
-    }
-}
-
-// Wrapper for the logo in the intro
-.reveal .slides section.intro .logo-wrapper {
-    display: flex;
-    height: 100%;
-}
-
-.reveal .slides section.intro .logo {
-    background-position: center;
-    background-size: contain;
-    height: auto;
-    margin: auto;
-    min-height: 200px;
-    min-width: 200px;
-    width: 33%;
 }
 
 // Title section in intro
@@ -572,22 +582,23 @@ section.has-light-background h6 {
     }
 }
 
-// Grid areas for intro
+// Grid areas for introduction title slide
+// usually contains title, presented and the event
 .reveal .slides section.title .grid-wrapper {
     grid-template-areas: "header header" "content content" ". credit";
-    grid-template-columns: auto 40%;
+    grid-template-columns: auto 50%;
     grid-template-rows: 6vmin 1fr auto;
     grid-column-gap: 10vmin;
 }
 
 .reveal .slides section.title .logo {
-    background-image: url("../assets/Tania_logo.png");
+    background-image: url("../assets/personal/Purple.png");
     height: 6vmin;
     width: 6vmin;
 }
 
 .reveal .slides section.title .logo--full {
-    background-image: url("../assets/Tania_logo.png");
+    background-image: url("../assets/personal/Purple.png");
     width: 24vmin;
 }
 
@@ -616,16 +627,19 @@ section.has-light-background h6 {
     grid-area: content;
 }
 
+// Main slide title
 .reveal .slides section.title h1 {
     color: $white;
 }
 
+//  usually the author
 .reveal .slides section.title .credit {
     align-self: end;
     grid-area: credit;
     line-height: 1.8em;
 }
 
+// author line separation
 .reveal .slides section.title .credit hr {
     border: solid #EEEDEF;
     border-width: 2px 0 0 0;
@@ -633,15 +647,18 @@ section.has-light-background h6 {
     width: 25%;
 }
 
+// this is usually presented by:
 .reveal .slides section.title .credit .label {
     font-size: 60%;
     text-transform: uppercase;
 }
 
+// name in the credit
 .reveal .slides section.title .credit .name {
     font-weight: bold;
 }
 
+// ensure the grid is responsive
 @media (max-width: 568px) {
     .reveal .slides section.title .grid-wrapper {
         grid-template-areas: "header" "content" "credit";
@@ -948,29 +965,17 @@ figure.code {
     }
 }
 
-// This is a WIP do not use
-figure.code2 {
-    box-shadow: rgba(0, 0, 0, 0.55) 0px 20px 68px;
-    & pre {
-        border-radius: 5px;
-        & code {
-            background-color: #222;
-            margin: 0;
-            color: #d5d5d5; // default light grey
-            border-radius: 5px;
-        }
-    }
-}
-
 .reveal pre {
     box-shadow: none;
-    line-height: 1.6rem;
+    line-height: 1.2rem;
     width: 100%;
     & code {
         -moz-tab-size: 2;
         tab-size: 2;
         box-sizing: border-box;
         font-family: $code-font;
+        font-size: 0.9rem;
+        background-color: $light-gray;
     }
 }
 
@@ -978,5 +983,5 @@ figure.code2 {
     background-color: $light-gray;
     padding: 3px 7px;
     border-radius: 3px;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
 }

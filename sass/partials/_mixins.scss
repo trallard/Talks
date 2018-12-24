@@ -62,3 +62,12 @@ html {
         font-size: $base-font-size*1.9;
     }
 }
+
+/* Responsive lists */
+
+@media (min-width: 1280px) {
+    .reveal ul {
+        width: calc(90% - 1em);
+        /* width: calc(80% - 1em); */
+    }
+}

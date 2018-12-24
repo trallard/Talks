@@ -34,6 +34,15 @@
 	<div class="reveal pattern--pupilines">
 		<div class="slides">
 
+			<!-- holding slide -->
+			<section class="intro" id="intro">
+				<div class="logo-wrapper">
+					<div class="logo">
+						<span class="visually-hidden">Tania Allard</span>
+					</div>
+				</div>
+			</section>
+
 			<!-- Introduction slide -->
 			<section>
 				<section class="title" id="title">
@@ -66,7 +75,8 @@
 								<hr>
 								<ul class="projects">
 									<li>Research Software Engineer</li>
-									<li>The University of Leeds</li>
+									<li>Data expert</li>
+									<li>Cloud developer advocate</li>
 								</ul>
 								<hr>
 								<ul class="accounts">
@@ -151,6 +161,7 @@
 						<div class="content">
 							<p>This is how custom lists look like:</p>
 							<pre><code><ul class='icon'></ul></code></pre>
+
 							<ul class='icon'>
 								<li>Create</li>
 								<li class='pinata'>Require</li>
@@ -326,12 +337,12 @@
 				</div>
 			</section>
 
-			<!-- Dark slide with code -->
+			<!-- Slide with code -->
 			<section id="code--path">
 				<div class="grid-wrapper">
 					<div class="header">
 						<div class="logo"></div>
-						<div class="section">Section</div>
+						<div class="section">Creating code sections</div>
 					</div>
 					<div class="content">
 						<figure class="code">
@@ -341,7 +352,7 @@
 						<figure class="code">
 
 							<!-- figcaption element is optional, can be placed above or below code  -->
-							<figcaption>usr/bin</figcaption>
+							<figcaption>scripts/hello</figcaption>
 							<div data-markdown>
 								```python
 								def print_hello():
@@ -355,25 +366,6 @@
 								print(eight_plus_one)
 								```
 							</div>
-						</figure>
-
-						<figure class="code code2">
-							<div data-markdown>
-								```python
-								def print_hello():
-								print("Hello world!")
-
-								def add_one(number):
-								return number + 1
-
-								print_hello()
-								eight_plus_one = add_one(8)
-								print(eight_plus_one)
-								```
-							</div>
-							<!-- figcaption element is optional, can be placed above or below code  -->
-							<figcaption class="path">Note you need to use a suitable syntax highlight for this
-								e.g. atomdark_syntax.css </figcaption>
 						</figure>
 					</div>
 			</section>
@@ -393,7 +385,9 @@
 						<figure class="display">
 							<img src="./assets/herdata/puzzle.PNG" alt="img" />
 						</figure>
-						<p>The figure uses the class <code>display</code> </p>
+						<p>Use the following code:
+							<pre><code><figure class="display"><img><img></figure></code></pre>
+						</p>
 					</div>
 				</div>
 			</section>
@@ -403,13 +397,17 @@
 				<div class="grid-wrapper">
 					<div class="header">
 						<div class="logo"></div>
+						<div class="section">Code only slides
+						</div>
 						<div class="twitter"><a href="https://twitter.com/ixek">
 								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 					</div>
 					<div class="content">
 						<h1>All code</h1>
 						For slides needing a whole load of code
-						<pre><code>for i in element</code></pre>
+						<pre><code> for i in element</code></pre>
+						Use the following section:
+						<pre><code> section class="color--code" </code></pre>
 					</div>
 				</div>
 			</section>

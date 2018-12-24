@@ -1,6 +1,7 @@
 /**
- * Tania Allard theme for reveal.js
- * Basic reveal.js used and based on the white theme
+* My own theme for reveal.js
+* note that this originated from the many many hours
+* I spent customising the slides for my own use
  */
 /*********************************************
  * VARIOUS IMPORTS
@@ -22,7 +23,7 @@ section.has-light-background h6 {
 }
 
 /*********************************************
-* PERSONAL
+* PERSONAL VARIABLES
 *********************************************/
 /*********************************************
 * DEFINING THEME PALETTES
@@ -65,6 +66,13 @@ html {
   }
 }
 
+/* Responsive lists */
+@media (min-width: 1280px) {
+  .reveal ul {
+    width: calc(90% - 1em);
+    /* width: calc(80% - 1em); */
+  }
+}
 /*********************************************
 * ADDITIONAL SLIDES CLASSES
 * THESE CAN BE USED WITH ANY THEME
@@ -97,10 +105,6 @@ html {
   background-color: #9292A8;
   /* pale lavender gray */
   color: #fff;
-}
-
-.reveal .slides section.color--ice .logo {
-  background-image: url("../assets/Tania_logo.png");
 }
 
 .reveal .slides section.color--violet {
@@ -502,7 +506,7 @@ html {
 .reveal h6 {
   margin: 0 0 20px 0;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.5;
   letter-spacing: normal;
   text-transform: none;
   text-shadow: none;
@@ -691,70 +695,70 @@ html {
 .theme-streams .reveal a:hover {
   color: #3388A6;
   border-bottom: 2px solid #3388A6;
-  /* I prefer a thicker line */
+  /* I prefer a thicker line than the underline */
 }
 .theme-lines .reveal a:hover {
   color: #ff206e;
   border-bottom: 2px solid #ff206e;
-  /* I prefer a thicker line */
+  /* I prefer a thicker line than the underline */
 }
 .theme-seacalm .reveal a:hover {
   color: #00798c;
   border-bottom: 2px solid #00798c;
-  /* I prefer a thicker line */
+  /* I prefer a thicker line than the underline */
 }
 .theme-goldilocks .reveal a:hover {
   color: #8D4593;
   border-bottom: 2px solid #8D4593;
-  /* I prefer a thicker line */
+  /* I prefer a thicker line than the underline */
 }
 .theme-duotone .reveal a:hover {
   color: #A1AAE2;
   border-bottom: 2px solid #A1AAE2;
-  /* I prefer a thicker line */
+  /* I prefer a thicker line than the underline */
 }
 .theme-jewels .reveal a:hover {
   color: #FF0368;
   border-bottom: 2px solid #FF0368;
-  /* I prefer a thicker line */
+  /* I prefer a thicker line than the underline */
 }
 .theme-soda .reveal a:hover {
   color: #95d5d4;
   border-bottom: 2px solid #95d5d4;
-  /* I prefer a thicker line */
+  /* I prefer a thicker line than the underline */
 }
 .theme-black .reveal a:hover {
   color: #F2E38A;
   border-bottom: 2px solid #F2E38A;
-  /* I prefer a thicker line */
+  /* I prefer a thicker line than the underline */
 }
 .theme-poppins-font .reveal a:hover {
   border-bottom: 2px solid;
-  /* I prefer a thicker line */
+  /* I prefer a thicker line than the underline */
 }
 .theme-plex-font .reveal a:hover {
   border-bottom: 2px solid;
-  /* I prefer a thicker line */
+  /* I prefer a thicker line than the underline */
 }
 .theme-dosis-font .reveal a:hover {
   border-bottom: 2px solid;
-  /* I prefer a thicker line */
+  /* I prefer a thicker line than the underline */
 }
 .theme-leafy-font .reveal a:hover {
   border-bottom: 2px solid;
-  /* I prefer a thicker line */
+  /* I prefer a thicker line than the underline */
 }
 .theme-allmono-font .reveal a:hover {
   border-bottom: 2px solid;
-  /* I prefer a thicker line */
+  /* I prefer a thicker line than the underline */
 }
 .theme-soda-font .reveal a:hover {
   border-bottom: 2px solid;
-  /* I prefer a thicker line */
+  /* I prefer a thicker line than the underline */
 }
 .theme-nox-font .reveal a:hover {
   border-bottom: 2px solid;
-  /* I prefer a thicker line */
+  /* I prefer a thicker line than the underline */
 }
 
 .reveal .roll span:after {
@@ -853,8 +857,11 @@ html {
 }
 
 /*********************************************
-* THEME SPECIFICS: EACH PATTERN WILL BE A THEME
+* Content slides
 *********************************************/
+/************ 
+Intro slide
+************/
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
@@ -862,16 +869,47 @@ html {
   height: 1px;
   width: 1px;
   word-wrap: normal;
+  border-radius: 20px;
+  background: white;
 }
 
+.reveal .slides section.intro .logo-wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.reveal .slides section.intro {
+  height: calc(100vh - 8vmin);
+  margin: 4vmin;
+  padding: 15px;
+  width: calc(100vw - 8vmin);
+}
+
+@media (max-width: 768px) {
+  .reveal .slides section.intro {
+    height: calc(100vh - 4vmin);
+    margin: 2vmin;
+    width: calc(100vw - 4vmin);
+  }
+}
+.reveal .slides section.intro .logo {
+  background-position: center;
+  background-size: contain;
+  height: auto;
+  margin: auto;
+  min-height: 200px;
+  min-width: 200px;
+  width: 33%;
+}
+
+/*********************************************
+* FULL THEMES
+*********************************************/
 .reveal[class*=pattern--] {
   background-position: center center;
   background-size: 133vmax auto;
 }
 
-/*********************************************
-* ACTUAL THEMES
-*********************************************/
 .reveal.pattern--stream {
   background-image: url("../assets/patterns/zigzag_purple.svg");
   background-color: white;
@@ -1501,7 +1539,6 @@ html {
   color: #2A2A49;
 }
 
-/* very dark purple */
 .reveal .slides section:not([class*=color--]) {
   background-color: #fff;
 }
@@ -1525,10 +1562,10 @@ html {
   align-items: center;
   display: flex;
   grid-area: header;
+  padding: 5px;
 }
 
 .reveal .slides section .logo {
-  background-image: url("../assets/Tania_logo.png");
   background-image: url("../assets/personal/Purple.png");
   background-repeat: no-repeat;
   background-size: auto 100%;
@@ -1542,7 +1579,7 @@ html {
 .reveal .slides section .section {
   text-transform: uppercase;
   line-height: 6vmin;
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: 500;
 }
 .theme-poppins-font .reveal .slides section .section {
@@ -1576,35 +1613,6 @@ html {
   grid-area: content;
 }
 
-.reveal .slides section.intro {
-  height: calc(100vh - 8vmin);
-  margin: 4vmin;
-  padding: 15px;
-  width: calc(100vw - 8vmin);
-}
-
-@media (max-width: 768px) {
-  .reveal .slides section.intro {
-    height: calc(100vh - 4vmin);
-    margin: 2vmin;
-    width: calc(100vw - 4vmin);
-  }
-}
-.reveal .slides section.intro .logo-wrapper {
-  display: flex;
-  height: 100%;
-}
-
-.reveal .slides section.intro .logo {
-  background-position: center;
-  background-size: contain;
-  height: auto;
-  margin: auto;
-  min-height: 200px;
-  min-width: 200px;
-  width: 33%;
-}
-
 .reveal .slides section.title {
   height: calc(100vh - 8vmin);
   margin: 4vmin;
@@ -1623,19 +1631,19 @@ html {
 }
 .reveal .slides section.title .grid-wrapper {
   grid-template-areas: "header header" "content content" ". credit";
-  grid-template-columns: auto 40%;
+  grid-template-columns: auto 50%;
   grid-template-rows: 6vmin 1fr auto;
   grid-column-gap: 10vmin;
 }
 
 .reveal .slides section.title .logo {
-  background-image: url("../assets/Tania_logo.png");
+  background-image: url("../assets/personal/Purple.png");
   height: 6vmin;
   width: 6vmin;
 }
 
 .reveal .slides section.title .logo--full {
-  background-image: url("../assets/Tania_logo.png");
+  background-image: url("../assets/personal/Purple.png");
   width: 24vmin;
 }
 
@@ -1989,22 +1997,9 @@ figure.code pre + figcaption {
   border-bottom-width: 1px;
 }
 
-figure.code2 {
-  box-shadow: rgba(0, 0, 0, 0.55) 0px 20px 68px;
-}
-figure.code2 pre {
-  border-radius: 5px;
-}
-figure.code2 pre code {
-  background-color: #222;
-  margin: 0;
-  color: #d5d5d5;
-  border-radius: 5px;
-}
-
 .reveal pre {
   box-shadow: none;
-  line-height: 1.6rem;
+  line-height: 1.2rem;
   width: 100%;
 }
 .reveal pre code {
@@ -2012,13 +2007,15 @@ figure.code2 pre code {
   tab-size: 2;
   box-sizing: border-box;
   font-family: "Overpass Mono", monospace;
+  font-size: 0.9rem;
+  background-color: #e2e6e9;
 }
 
 .reveal code {
   background-color: #e2e6e9;
   padding: 3px 7px;
   border-radius: 3px;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=full_theme.css.map */
