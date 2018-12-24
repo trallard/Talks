@@ -4,11 +4,13 @@
 
 //This section defines the many themes available
 // To define a new theme you need to create a new map
-$themes: ( // The following are colour themes
+$themes: (
+/* The following are color themes */
+
 'streams':( 'primary': #5F4B8B, // ultra violet 
 'secondary': #747CA8, //lavender violet */
 'third': #3388A6, 'primary-light':lighten(#5F4B8B, 10%), 'secondary-light' :lighten(#747CA8, 10%), ), 'lines':( 'primary': #3A015C, // violet */
-'secondary': #41ead4, // sea green */
+'secondary': #00BCD4, // turquoise surf */
 'third': #ff206e, // hot pink */
 'primary-light':lighten(#3A015C, 10%), 'secondary-light' :lighten(#41ead4, 10%), ), 'seacalm':( 'primary': #30638B, // steel blue */
 'secondary': #EDAF49, // golden */
@@ -28,5 +30,9 @@ $themes: ( // The following are colour themes
 'primary-light':lighten( #263c80, 10%), 'secondary-light' :lighten(#1073b9, 10%), ), 'black':( 'primary': #BDE16B, // green*/
 'secondary': #C687E8, // lilac*/
 'third': #F2E38A, // yellow*/
-'primary-light':lighten(#BDE16B, 10%), 'secondary-light' :lighten(#9080bc, 10%), ), // The following are font themes
+'primary-light':lighten(#BDE16B, 10%), 'secondary-light' :lighten(#9080bc, 10%), ), 'streams':( 'primary': #5F4B8B, // ultra violet 
+'secondary': #747CA8, //lavender violet */
+'third': #3388A6, 'primary-light':lighten(#5F4B8B, 10%), 'secondary-light' :lighten(#747CA8, 10%), ),
+/* The following are font themes */
+
 'poppins-font':( 'title-font': #{'IBMPlexSerif', monospace}, 'base-font': #{"Poppins", Helvetica, sans-serif}, ), 'plex-font': ( 'title-font': #{'IBMPlexSerif', monospace}, 'base-font': #{'IBMPlexSans', sans-serif}, ), 'dosis-font': ( 'title-font': #{'Dosis', sans-serif}, 'base-font': #{'Didact Gothic', sans-serif}, ), 'leafy-font': ( 'title-font': #{'Leafy', cursive}, 'base-font': #{'Dosis', sans-serif}, ), 'allmono-font': ( 'title-font': #{'Muli', sans-serif}, 'base-font': #{'Space Mono', monospace}, ), 'soda-font': ( 'title-font': #{'Open Sans', sans-serif}, 'base-font': #{'Nunito', sans-serif}, ), 'nox-font': ( 'title-font': #{'Annie Use Your Telescope', cursive}, 'base-font': #{'Open-Sans', sans-serif}, ), );

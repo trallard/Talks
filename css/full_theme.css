@@ -40,29 +40,29 @@ html {
 }
 @media (min-width: 48em) {
   html {
-    font-size: 1.2em;
-    line-height: 1.95;
+    font-size: 1.3em;
+    line-height: 2.25;
   }
 }
 @media (min-width: 64em) {
   html {
     font-size: 1.5em;
-    line-height: 2.1;
+    line-height: 2.4;
   }
 }
 @media (min-width: 85.375em) {
   html {
-    font-size: 1.6em;
+    font-size: 1.7em;
   }
 }
 @media (min-width: 120em) {
   html {
-    font-size: 1.8em;
+    font-size: 1.9em;
   }
 }
 @media (min-width: 160em) {
   html {
-    font-size: 1.9em;
+    font-size: 2em;
   }
 }
 
@@ -1223,7 +1223,7 @@ Presentation title
   background-color: #747CA8;
 }
 .theme-lines .reveal.pattern--lines .slides section.intro {
-  background-color: #41ead4;
+  background-color: #00BCD4;
 }
 .theme-seacalm .reveal.pattern--lines .slides section.intro {
   background-color: #EDAF49;
@@ -1252,7 +1252,7 @@ Presentation title
   color: #5F4B8B;
 }
 .theme-lines .reveal.pattern--lines .slides section.title {
-  background-color: #41ead4;
+  background-color: #00BCD4;
   color: #3A015C;
 }
 .theme-seacalm .reveal.pattern--lines .slides section.title {
@@ -1311,7 +1311,7 @@ Presentation title
   background-color: #747CA8;
 }
 .theme-lines .reveal.pattern--hex .slides section.intro {
-  background-color: #41ead4;
+  background-color: #00BCD4;
 }
 .theme-seacalm .reveal.pattern--hex .slides section.intro {
   background-color: #EDAF49;
@@ -1336,7 +1336,7 @@ Presentation title
   color: #5F4B8B;
 }
 .theme-lines .reveal.pattern--hex .slides section.title {
-  background-color: #41ead4;
+  background-color: #00BCD4;
   color: #3A015C;
 }
 .theme-seacalm .reveal.pattern--hex .slides section.title {
@@ -1395,7 +1395,7 @@ Presentation title
   background-color: #747CA8;
 }
 .theme-lines .reveal.pattern--star .slides section.intro {
-  background-color: #41ead4;
+  background-color: #00BCD4;
 }
 .theme-seacalm .reveal.pattern--star .slides section.intro {
   background-color: #EDAF49;
@@ -1420,7 +1420,7 @@ Presentation title
   color: #5F4B8B;
 }
 .theme-lines .reveal.pattern--star .slides section.title {
-  background-color: #41ead4;
+  background-color: #00BCD4;
   color: #3A015C;
 }
 .theme-seacalm .reveal.pattern--star .slides section.title {
@@ -1479,7 +1479,7 @@ Presentation title
   background-color: #747CA8;
 }
 .theme-lines .reveal.pattern--flowers .slides section.intro {
-  background-color: #41ead4;
+  background-color: #00BCD4;
 }
 .theme-seacalm .reveal.pattern--flowers .slides section.intro {
   background-color: #EDAF49;
@@ -1504,7 +1504,7 @@ Presentation title
   color: #5F4B8B;
 }
 .theme-lines .reveal.pattern--flowers .slides section.title {
-  background-color: #41ead4;
+  background-color: #00BCD4;
   color: #3A015C;
 }
 .theme-seacalm .reveal.pattern--flowers .slides section.title {
@@ -1563,7 +1563,7 @@ Presentation title
   background-color: #747CA8;
 }
 .theme-lines .reveal.pattern--pupilines .slides section.intro {
-  background-color: #41ead4;
+  background-color: #00BCD4;
 }
 .theme-seacalm .reveal.pattern--pupilines .slides section.intro {
   background-color: #EDAF49;
@@ -1588,7 +1588,7 @@ Presentation title
   color: #5F4B8B;
 }
 .theme-lines .reveal.pattern--pupilines .slides section.title {
-  background-color: #41ead4;
+  background-color: #00BCD4;
   color: #3A015C;
 }
 .theme-seacalm .reveal.pattern--pupilines .slides section.title {
@@ -1619,7 +1619,7 @@ Presentation title
   background-color: #747CA8;
 }
 .theme-lines .reveal.pattern--pupilines .progress {
-  background-color: #41ead4;
+  background-color: #00BCD4;
 }
 .theme-seacalm .reveal.pattern--pupilines .progress {
   background-color: #EDAF49;
@@ -1643,7 +1643,7 @@ Presentation title
   color: #747CA8;
 }
 .theme-lines .reveal.pattern--pupilines .controls {
-  color: #41ead4;
+  color: #00BCD4;
 }
 .theme-seacalm .reveal.pattern--pupilines .controls {
   color: #EDAF49;
