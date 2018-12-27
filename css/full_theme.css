@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
 * My own theme for reveal.js
 * note that this originated from the many many hours
@@ -12,6 +13,7 @@
 @import url("https://fonts.googleapis.com/css?family=Didact+Gothic|Dosis:400,600|Overpass+Mono|PT+Mono");
 @import url("https://fonts.googleapis.com/css?family=Muli:400,700|Space+Mono:400,700");
 @import url("https://fonts.googleapis.com/css?family=Nunito|Open+Sans|Annie+Use+Your+Telescope");
+@import url(../../assets/icons_collection/font/flaticon.css);
 section.has-light-background,
 section.has-light-background h1,
 section.has-light-background h2,
@@ -22,6 +24,7 @@ section.has-light-background h6 {
   color: #222;
 }
 
+/* partials */
 /*********************************************
 * PERSONAL VARIABLES
 *********************************************/
@@ -791,6 +794,181 @@ html {
   background: #C687E8;
 }
 /*********************************************
+* LISTS
+*********************************************/
+/* Custom icon list */
+.reveal ul.icon {
+  list-style-type: none;
+}
+
+ul.icon li {
+  text-indent: -1.4em;
+  margin-bottom: 0.5em;
+}
+ul.icon li::before {
+  font-family: "flaticon";
+  content: "";
+  /* maguey */
+  float: left;
+  width: 1.2em;
+  font-size: 1em;
+}
+.theme-streams ul.icon li::before {
+  color: #747CA8;
+}
+.theme-lines ul.icon li::before {
+  color: #00BCD4;
+}
+.theme-seacalm ul.icon li::before {
+  color: #EDAF49;
+}
+.theme-goldilocks ul.icon li::before {
+  color: #EDAF49;
+}
+.theme-duotone ul.icon li::before {
+  color: #736FBA;
+}
+.theme-jewels ul.icon li::before {
+  color: #79C9E8;
+}
+.theme-soda ul.icon li::before {
+  color: #1073b9;
+}
+.theme-black ul.icon li::before {
+  color: #C687E8;
+}
+ul.icon li.pinata::before {
+  content: "";
+}
+.theme-streams ul.icon li.pinata::before {
+  color: #747CA8;
+}
+.theme-lines ul.icon li.pinata::before {
+  color: #00BCD4;
+}
+.theme-seacalm ul.icon li.pinata::before {
+  color: #EDAF49;
+}
+.theme-goldilocks ul.icon li.pinata::before {
+  color: #EDAF49;
+}
+.theme-duotone ul.icon li.pinata::before {
+  color: #736FBA;
+}
+.theme-jewels ul.icon li.pinata::before {
+  color: #79C9E8;
+}
+.theme-soda ul.icon li.pinata::before {
+  color: #1073b9;
+}
+.theme-black ul.icon li.pinata::before {
+  color: #C687E8;
+}
+ul.icon li.nopal::before {
+  content: "";
+}
+.theme-streams ul.icon li.nopal::before {
+  color: #747CA8;
+}
+.theme-lines ul.icon li.nopal::before {
+  color: #00BCD4;
+}
+.theme-seacalm ul.icon li.nopal::before {
+  color: #EDAF49;
+}
+.theme-goldilocks ul.icon li.nopal::before {
+  color: #EDAF49;
+}
+.theme-duotone ul.icon li.nopal::before {
+  color: #736FBA;
+}
+.theme-jewels ul.icon li.nopal::before {
+  color: #79C9E8;
+}
+.theme-soda ul.icon li.nopal::before {
+  color: #1073b9;
+}
+.theme-black ul.icon li.nopal::before {
+  color: #C687E8;
+}
+ul.icon li.cactus::before {
+  content: "";
+}
+.theme-streams ul.icon li.cactus::before {
+  color: #747CA8;
+}
+.theme-lines ul.icon li.cactus::before {
+  color: #00BCD4;
+}
+.theme-seacalm ul.icon li.cactus::before {
+  color: #EDAF49;
+}
+.theme-goldilocks ul.icon li.cactus::before {
+  color: #EDAF49;
+}
+.theme-duotone ul.icon li.cactus::before {
+  color: #736FBA;
+}
+.theme-jewels ul.icon li.cactus::before {
+  color: #79C9E8;
+}
+.theme-soda ul.icon li.cactus::before {
+  color: #1073b9;
+}
+.theme-black ul.icon li.cactus::before {
+  color: #C687E8;
+}
+ul.icon li.skull::before {
+  content: "";
+}
+.theme-streams ul.icon li.skull::before {
+  color: #747CA8;
+}
+.theme-lines ul.icon li.skull::before {
+  color: #00BCD4;
+}
+.theme-seacalm ul.icon li.skull::before {
+  color: #EDAF49;
+}
+.theme-goldilocks ul.icon li.skull::before {
+  color: #EDAF49;
+}
+.theme-duotone ul.icon li.skull::before {
+  color: #736FBA;
+}
+.theme-jewels ul.icon li.skull::before {
+  color: #79C9E8;
+}
+.theme-soda ul.icon li.skull::before {
+  color: #1073b9;
+}
+.theme-black ul.icon li.skull::before {
+  color: #C687E8;
+}
+/* table with no divisions and with bold purple first column */
+.reveal table th {
+  font-weight: bold;
+  color: #5F4B8B;
+}
+
+.commands table {
+  margin: 0;
+}
+.commands table th {
+  text-align: right;
+  border-bottom: none;
+}
+.commands table td {
+  border-bottom: none;
+}
+.commands table td + td {
+  opacity: 0.5;
+}
+.commands table + figure {
+  margin-top: 2em;
+}
+
+/*********************************************
 * OTHER
 *********************************************/
 .reveal blockquote p:first-child,
@@ -817,6 +995,7 @@ Intro slide
   word-wrap: normal;
   border-radius: 20px;
   background: white;
+  border-radius: 50%;
 }
 
 .reveal .slides section.intro .logo-wrapper {

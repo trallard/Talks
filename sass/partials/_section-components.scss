@@ -156,6 +156,80 @@
 }
 
 /*********************************************
+* LISTS
+*********************************************/
+
+/* Custom icon list */
+
+.reveal ul.icon {
+    list-style-type: none;
+}
+
+ul.icon li {
+    text-indent: -1.4em;
+    margin-bottom: 0.5em;
+    &::before {
+        @include themify($themes) {
+            color: themed('secondary')
+        }
+        font-family: 'flaticon';
+        content: "\f102";
+        /* maguey */
+        float: left;
+        width: 1.2em;
+        font-size: 1em;
+    }
+    &.pinata::before {
+        content: "\f100";
+        @include themify($themes) {
+            color: themed('secondary')
+        }
+    }
+    &.nopal::before {
+        content: "\f101";
+        @include themify($themes) {
+            color: themed('secondary')
+        }
+    }
+    &.cactus::before {
+        content: "\f103";
+        @include themify($themes) {
+            color: themed('secondary')
+        }
+    }
+    &.skull::before {
+        content: "\f104";
+        @include themify($themes) {
+            color: themed('secondary')
+        }
+    }
+}
+
+/* table with no divisions and with bold purple first column */
+
+.reveal table th {
+    font-weight: bold;
+    color: #5F4B8B;
+}
+
+.commands table {
+    margin: 0;
+    th {
+        text-align: right;
+        border-bottom: none;
+    }
+    td {
+        border-bottom: none;
+        +td {
+            opacity: 0.5;
+        }
+    }
+    +figure {
+        margin-top: 2em;
+    }
+}
+
+/*********************************************
 * OTHER
 *********************************************/
 
