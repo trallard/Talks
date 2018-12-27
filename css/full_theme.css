@@ -83,6 +83,9 @@ html {
     display: none;
   }
 }
+/*********************************************
+* SLIDES GRID
+*********************************************/
 @media (max-width: 568px) {
   .reveal .slides section.title .grid-wrapper {
     grid-template-areas: "header" "content" "credit";
@@ -139,18 +142,16 @@ html {
   font-size: 1.7em;
 }
 
+/*********************************************
+* SINGLE COLOUR SLIDES
+*********************************************/
 .reveal .slides section.color--dark {
   background-color: #22272B;
   color: #ede7f3;
 }
 
-.reveal .slides section.color--dark .logo {
-  background-image: url("../assets/Tania_logo_gray2.png");
-}
-
 .reveal .slides section.color--ice {
   background-color: #9292A8;
-  /* pale lavender gray */
   color: #fff;
 }
 
@@ -197,10 +198,6 @@ html {
   color: #66646B;
 }
 
-.reveal .slides section.color--light .logo {
-  background-image: url("../assets/Tania_logo.png");
-}
-
 .reveal .slides section.color--midnight {
   background-color: #2A2A49;
   /* navy blue */
@@ -211,20 +208,12 @@ html {
   color: #F8757F;
 }
 
-.reveal .slides section.color--midnight .logo {
-  background-image: url("../assets/Tania_logo_gray.png");
-}
-
 .reveal .slides section.color--vibrant {
   background-color: #41ead4;
   color: #fff;
 }
 .reveal .slides section.color--vibrant h1 {
   color: #5F4B8B;
-}
-
-.reveal .slides section.color--vibrant .logo {
-  background-image: url("../assets/Tania_logo.png");
 }
 
 .reveal .slides section.color--topaz {
@@ -235,18 +224,10 @@ html {
   color: #675682;
 }
 
-.reveal .slides section.color--vibrant .logo {
-  background-image: url("../assets/Tania_logo.png");
-}
-
 .reveal .slides section.color--two {
   background-color: #fff;
   color: #fff;
   background: linear-gradient(to right, #5F4B8B 50%, #fff 50%);
-}
-
-.reveal .slides section.color--two .logo {
-  background-image: url("../assets/Tania_logo_gray.png");
 }
 
 .items-block {
@@ -286,6 +267,9 @@ html {
   width: 50%;
 }
 
+/*********************************************
+* GRADIENT SLIDES
+*********************************************/
 .reveal .slides section.color--grad-purple {
   background-color: #fff;
   background: linear-gradient(45deg, #2D266F, #7C2289);
@@ -293,9 +277,6 @@ html {
 }
 .reveal .slides section.color--grad-purple h1 {
   color: #fff;
-}
-.reveal .slides section.color--grad-purple .logo {
-  background-image: url("../assets/Tania_logo_white.png");
 }
 
 .reveal .slides section.color--grad-green {
@@ -306,9 +287,6 @@ html {
 .reveal .slides section.color--grad-green h1 {
   color: #fff;
 }
-.reveal .slides section.color--grad-green .logo {
-  background-image: url("../assets/Tania_logo_white.png");
-}
 
 .reveal .slides section.color--grad-blue {
   background-color: #fff;
@@ -318,122 +296,9 @@ html {
 .reveal .slides section.color--grad-blue h1 {
   color: #fff;
 }
-.reveal .slides section.color--grad-blue .logo {
-  background-image: url("../assets/Tania_logo_white.png");
-}
-
-.browser-window,
-.terminal-window {
-  text-align: left;
-  margin: 20px;
-  width: 602px;
-  height: 355px;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-  overflow: overlay;
-  font-family: "Overpass Mono", monospace;
-}
-
-.browser-window .top-bar,
-.terminal-window .top-bar {
-  height: 30px;
-  border-radius: 4px 4px 0 0;
-  border-top: thin solid #eaeae9;
-  border-bottom: thin solid #dfdfde;
-  background: #ebebeb;
-}
-
-.browser-window .circle,
-.terminal-window .circle {
-  height: 8px;
-  width: 8px;
-  display: inline-block;
-  border-radius: 50%;
-  background-color: white;
-}
-
-.browser-window .circles,
-.terminal-window .circles {
-  margin: 1px 10px;
-}
-
-.browser-window .window-content,
-.terminal-window .window-content {
-  margin: 0;
-  width: 100%;
-  min-height: 90%;
-  display: inline-block;
-  border-radius: 0 0 4px 4px;
-}
-
-.browser-window.dark,
-.terminal-window.dark {
-  background-color: #1d1941;
-  border: 1px solid #262257;
-  box-shadow: 0px 2px 10px rgba(22, 20, 50, 0.4);
-}
-
-.browser-window.dark .top-bar,
-.terminal-window.dark .top-bar {
-  border-top: thin solid #181536;
-  border-bottom: thin solid #13112b;
-  background: #161432;
-}
-
-.browser-window.dark .circle,
-.terminal-window.dark .circle {
-  background-color: #2e2969;
-}
-
-.browser-window.dark .circle.circle-red,
-.terminal-window.dark .circle.circle-red {
-  background-color: #F23969;
-}
-
-.browser-window.dark .circle.circle-yellow,
-.terminal-window.dark .circle.circle-yellow {
-  background-color: #FFC69F;
-}
-
-.browser-window.dark .circle.circle-green,
-.terminal-window.dark .circle.circle-green {
-  background-color: #6AE9F8;
-}
-
-.browser-window .window-content > pre {
-  background: #fff;
-  margin: 0;
-  border: 0;
-  padding: 4% 8%;
-}
-.browser-window.dark .window-content > pre {
-  background: #1d1941;
-  margin: 0;
-  border: 0;
-  padding: 4% 8%;
-}
-
-.terminal-window.dark .window-content > pre {
-  background: #1d1941;
-  margin: 0;
-  border: 0;
-  padding: 4% 8%;
-}
-.terminal-window .window-content {
-  background: #232A35;
-}
-.terminal-window .window-content > pre {
-  background: #232A35;
-  margin: 0;
-  border: 0;
-  padding: 4% 8%;
-}
 
 /*********************************************
- * GLOBAL STYLES- direct overwrites of reveal
+ * GLOBAL STYLES- go over the reveal.js 
  *********************************************/
 .reveal {
   font-size: inherit;
@@ -518,36 +383,18 @@ html {
 .theme-black ::-moz-selection {
   background: #F2E38A;
 }
-/*********************************************
-* REVEAL SPECIFICS
-*********************************************/
 .reveal .slides {
   text-align: left;
 }
 
-.reveal .slides > section,
-.reveal .slides > section > section {
+.reveal .slides section {
+  box-sizing: border-box;
   padding: 0;
 }
 
-.reveal .slides > section.past,
-.reveal .slides > section.future,
-.reveal .slides > section > section.past,
-.reveal .slides > section > section.future {
-  opacity: 1;
-}
-
-.reveal .controls {
-  right: 4vmin;
-  bottom: 4vmin;
-}
-
-@media (max-width: 768px) {
-  .reveal .controls {
-    right: 2vmin;
-    bottom: 2vmin;
-  }
-}
+/*********************************************
+* HEADERS
+*********************************************/
 .reveal h1,
 .reveal h2,
 .reveal h3,
@@ -558,26 +405,6 @@ html {
   color: inherit;
 }
 
-.reveal .slides section {
-  box-sizing: border-box;
-  padding: 0;
-}
-
-.reveal blockquote p:first-child,
-.reveal blockquote p:last-child {
-  display: block;
-}
-
-.reveal section img {
-  background: none;
-  border: none;
-  box-shadow: none;
-  margin: 0;
-}
-
-/*********************************************
-* HEADERS
-*********************************************/
 .reveal h1,
 .reveal h2,
 .reveal h3,
@@ -714,10 +541,13 @@ html {
 }
 
 /*********************************************
- * OTHER- modifications to reveal themes
- *********************************************/
-.reveal em {
-  font-style: italic;
+* IMAGES
+*********************************************/
+.reveal section img {
+  background: none;
+  border: none;
+  box-shadow: none;
+  margin: 0;
 }
 
 /*********************************************
@@ -843,36 +673,31 @@ html {
 
 .reveal .roll span:after {
   color: #fff;
-  background: #068de9;
 }
-
-/*********************************************
- * IMAGES
- *********************************************/
-.reveal section img {
-  margin: 15px 0px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #222;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+.theme-streams .reveal .roll span:after {
+  background: #3388A6;
 }
-
-.reveal section img.plain {
-  border: 0;
-  box-shadow: none;
+.theme-lines .reveal .roll span:after {
+  background: #ff206e;
 }
-
-.reveal a img {
-  -webkit-transition: all 0.15s linear;
-  -moz-transition: all 0.15s linear;
-  transition: all 0.15s linear;
+.theme-seacalm .reveal .roll span:after {
+  background: #00798c;
 }
-
-.reveal a:hover img {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: #42affa;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+.theme-goldilocks .reveal .roll span:after {
+  background: #8D4593;
 }
-
+.theme-duotone .reveal .roll span:after {
+  background: #A1AAE2;
+}
+.theme-jewels .reveal .roll span:after {
+  background: #FF0368;
+}
+.theme-soda .reveal .roll span:after {
+  background: #95d5d4;
+}
+.theme-black .reveal .roll span:after {
+  background: #F2E38A;
+}
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
@@ -900,11 +725,22 @@ html {
 .theme-black .reveal .controls {
   color: #F2E38A;
 }
+.reveal .controls {
+  right: 4vmin;
+  bottom: 4vmin;
+}
+
+@media (max-width: 768px) {
+  .reveal .controls {
+    right: 2vmin;
+    bottom: 2vmin;
+  }
+}
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(48, 40, 63, 0.2);
 }
 .theme-streams .reveal .progress {
   color: #3388A6;
@@ -930,10 +766,40 @@ html {
 .theme-black .reveal .progress {
   color: #F2E38A;
 }
-.reveal .progress span {
-  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
-  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
-  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+.theme-streams .reveal .progress span {
+  background: #747CA8;
+}
+.theme-lines .reveal .progress span {
+  background: #00BCD4;
+}
+.theme-seacalm .reveal .progress span {
+  background: #EDAF49;
+}
+.theme-goldilocks .reveal .progress span {
+  background: #EDAF49;
+}
+.theme-duotone .reveal .progress span {
+  background: #736FBA;
+}
+.theme-jewels .reveal .progress span {
+  background: #79C9E8;
+}
+.theme-soda .reveal .progress span {
+  background: #1073b9;
+}
+.theme-black .reveal .progress span {
+  background: #C687E8;
+}
+/*********************************************
+* OTHER
+*********************************************/
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+  display: block;
+}
+
+.reveal em {
+  font-style: italic;
 }
 
 /*********************************************
@@ -1244,7 +1110,7 @@ Presentation title
   background-color: #C687E8;
 }
 .reveal.pattern--lines .slides section.intro .logo {
-  background-image: url("../assets/Tania_logo_white.png");
+  background-image: url("../assets/personal/Purple.png");
 }
 
 .theme-streams .reveal.pattern--lines .slides section.title {
