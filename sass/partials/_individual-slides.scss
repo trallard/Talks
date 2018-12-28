@@ -137,7 +137,7 @@ Presentation title
     color: #2A2A49;
     border: none;
     box-shadow: none;
-    font-size: 2em;
+    font-size: 1.7em;
     font-style: normal;
     margin: 0;
     max-width: 42ex;
@@ -191,7 +191,6 @@ All code slide
     }
     & code {
         background-color: transparent;
-        font-size: 1.7em;
     }
 }
 
@@ -203,6 +202,10 @@ All code slide
 .reveal .slides section.color--dark {
     background-color: #22272B;
     color: rgb(237, 231, 243);
+    & h1,
+    h2 {
+        color: $medium-purple;
+    }
 }
 
 // Grey lavender
@@ -214,6 +217,16 @@ All code slide
 // Violet slide
 .reveal .slides section.color--violet {
     background-color: #3A015C;
+    color: $white;
+    & h1,
+    h2 {
+        color: $seagreen;
+    }
+}
+
+// Ultraviolet
+.reveal .slides section.color--violet {
+    background-color: #472C7D;
     color: $white;
     & h1,
     h2 {
@@ -266,10 +279,10 @@ All code slide
 
 // Turquoise slide
 .reveal .slides section.color--vibrant {
-    background-color: $seagreen;
+    background-color: #00BCD4;
     color: $white;
     & h1 {
-        color: $ultraviolet;
+        color: #472C7D;
     }
 }
 
@@ -278,7 +291,8 @@ All code slide
     background-color: #67aeca;
     color: $white;
     & h1 {
-        color: #675682;
+        // color: #675682;
+        color: #472C7D;
     }
 }
 

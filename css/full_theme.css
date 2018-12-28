@@ -20,7 +20,7 @@
 * feel free to change accordingly
 *********************************************/
 /* colours */
-/* Fonts*/
+/* fonts*/
 /* urls and paths */
 /* logos*/
 .reveal .slides section.title .logo--full {
@@ -45,7 +45,7 @@
 }
 
 .reveal .slides section.title .logo--pyladies {
-  background-image: url(../assets//logos/pyladies-nwuk-nocompass-darkpink.svg);
+  background-image: url(../assets/logos/pyladies-nwuk-nocompass-darkpink.svg);
   width: 24vmin;
 }
 
@@ -60,18 +60,16 @@
 *********************************************/
 html {
   font-size: 1em;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 @media (min-width: 48em) {
   html {
     font-size: 1.3em;
-    line-height: 2.25;
   }
 }
 @media (min-width: 64em) {
   html {
     font-size: 1.5em;
-    line-height: 2.4;
   }
 }
 @media (min-width: 85.375em) {
@@ -270,7 +268,7 @@ Presentation title
   color: #2A2A49;
   border: none;
   box-shadow: none;
-  font-size: 2em;
+  font-size: 1.7em;
   font-style: normal;
   margin: 0;
   max-width: 42ex;
@@ -321,7 +319,6 @@ All code slide
 }
 .reveal .slides section.color--code code {
   background-color: transparent;
-  font-size: 1.7em;
 }
 
 /*********************************************
@@ -331,6 +328,10 @@ All code slide
   background-color: #22272B;
   color: #ede7f3;
 }
+.reveal .slides section.color--dark h1,
+.reveal .slides section.color--dark h2 {
+  color: #A075FF;
+}
 
 .reveal .slides section.color--ice {
   background-color: #9292A8;
@@ -339,6 +340,15 @@ All code slide
 
 .reveal .slides section.color--violet {
   background-color: #3A015C;
+  color: #fff;
+}
+.reveal .slides section.color--violet h1,
+.reveal .slides section.color--violet h2 {
+  color: #41ead4;
+}
+
+.reveal .slides section.color--violet {
+  background-color: #472C7D;
   color: #fff;
 }
 .reveal .slides section.color--violet h1,
@@ -386,11 +396,11 @@ All code slide
 }
 
 .reveal .slides section.color--vibrant {
-  background-color: #41ead4;
+  background-color: #00BCD4;
   color: #fff;
 }
 .reveal .slides section.color--vibrant h1 {
-  color: #5F4B8B;
+  color: #472C7D;
 }
 
 .reveal .slides section.color--topaz {
@@ -398,7 +408,7 @@ All code slide
   color: #fff;
 }
 .reveal .slides section.color--topaz h1 {
-  color: #675682;
+  color: #472C7D;
 }
 
 .reveal .slides section.color--two {
@@ -620,7 +630,7 @@ has a background image and a box with the details */
 .reveal {
   font-size: inherit;
   font-weight: normal;
-  color: #737373;
+  color: #2A2A49;
 }
 .theme-poppins-font .reveal {
   font-family: Poppins, Helvetica, sans-serif;
@@ -717,7 +727,9 @@ has a background image and a box with the details */
 .reveal h3,
 .reveal h4,
 .reveal h5,
-.reveal h6 {
+.reveal h6,
+.reveal huge-font,
+.reveal big-font {
   margin-bottom: 2.5vmin;
   color: inherit;
 }
@@ -727,7 +739,9 @@ has a background image and a box with the details */
 .reveal h3,
 .reveal h4,
 .reveal h5,
-.reveal h6 {
+.reveal h6,
+.reveal huge-font,
+.reveal big-font {
   margin: 0 0 20px 0;
   font-weight: 400;
   line-height: 1.5;
@@ -741,7 +755,9 @@ has a background image and a box with the details */
 .theme-streams .reveal h3,
 .theme-streams .reveal h4,
 .theme-streams .reveal h5,
-.theme-streams .reveal h6 {
+.theme-streams .reveal h6,
+.theme-streams .reveal huge-font,
+.theme-streams .reveal big-font {
   color: #5F4B8B;
 }
 .theme-lines .reveal h1,
@@ -749,7 +765,9 @@ has a background image and a box with the details */
 .theme-lines .reveal h3,
 .theme-lines .reveal h4,
 .theme-lines .reveal h5,
-.theme-lines .reveal h6 {
+.theme-lines .reveal h6,
+.theme-lines .reveal huge-font,
+.theme-lines .reveal big-font {
   color: #3A015C;
 }
 .theme-seacalm .reveal h1,
@@ -757,7 +775,9 @@ has a background image and a box with the details */
 .theme-seacalm .reveal h3,
 .theme-seacalm .reveal h4,
 .theme-seacalm .reveal h5,
-.theme-seacalm .reveal h6 {
+.theme-seacalm .reveal h6,
+.theme-seacalm .reveal huge-font,
+.theme-seacalm .reveal big-font {
   color: #30638B;
 }
 .theme-goldilocks .reveal h1,
@@ -765,7 +785,9 @@ has a background image and a box with the details */
 .theme-goldilocks .reveal h3,
 .theme-goldilocks .reveal h4,
 .theme-goldilocks .reveal h5,
-.theme-goldilocks .reveal h6 {
+.theme-goldilocks .reveal h6,
+.theme-goldilocks .reveal huge-font,
+.theme-goldilocks .reveal big-font {
   color: #30638B;
 }
 .theme-duotone .reveal h1,
@@ -773,7 +795,9 @@ has a background image and a box with the details */
 .theme-duotone .reveal h3,
 .theme-duotone .reveal h4,
 .theme-duotone .reveal h5,
-.theme-duotone .reveal h6 {
+.theme-duotone .reveal h6,
+.theme-duotone .reveal huge-font,
+.theme-duotone .reveal big-font {
   color: #CC144B;
 }
 .theme-jewels .reveal h1,
@@ -781,7 +805,9 @@ has a background image and a box with the details */
 .theme-jewels .reveal h3,
 .theme-jewels .reveal h4,
 .theme-jewels .reveal h5,
-.theme-jewels .reveal h6 {
+.theme-jewels .reveal h6,
+.theme-jewels .reveal huge-font,
+.theme-jewels .reveal big-font {
   color: #4A235D;
 }
 .theme-soda .reveal h1,
@@ -789,7 +815,9 @@ has a background image and a box with the details */
 .theme-soda .reveal h3,
 .theme-soda .reveal h4,
 .theme-soda .reveal h5,
-.theme-soda .reveal h6 {
+.theme-soda .reveal h6,
+.theme-soda .reveal huge-font,
+.theme-soda .reveal big-font {
   color: #263c80;
 }
 .theme-black .reveal h1,
@@ -797,7 +825,9 @@ has a background image and a box with the details */
 .theme-black .reveal h3,
 .theme-black .reveal h4,
 .theme-black .reveal h5,
-.theme-black .reveal h6 {
+.theme-black .reveal h6,
+.theme-black .reveal huge-font,
+.theme-black .reveal big-font {
   color: #BDE16B;
 }
 .theme-poppins-font .reveal h1,
@@ -805,7 +835,9 @@ has a background image and a box with the details */
 .theme-poppins-font .reveal h3,
 .theme-poppins-font .reveal h4,
 .theme-poppins-font .reveal h5,
-.theme-poppins-font .reveal h6 {
+.theme-poppins-font .reveal h6,
+.theme-poppins-font .reveal huge-font,
+.theme-poppins-font .reveal big-font {
   font-family: IBMPlexSerif, monospace;
 }
 .theme-plex-font .reveal h1,
@@ -813,7 +845,9 @@ has a background image and a box with the details */
 .theme-plex-font .reveal h3,
 .theme-plex-font .reveal h4,
 .theme-plex-font .reveal h5,
-.theme-plex-font .reveal h6 {
+.theme-plex-font .reveal h6,
+.theme-plex-font .reveal huge-font,
+.theme-plex-font .reveal big-font {
   font-family: IBMPlexSerif, monospace;
 }
 .theme-dosis-font .reveal h1,
@@ -821,7 +855,9 @@ has a background image and a box with the details */
 .theme-dosis-font .reveal h3,
 .theme-dosis-font .reveal h4,
 .theme-dosis-font .reveal h5,
-.theme-dosis-font .reveal h6 {
+.theme-dosis-font .reveal h6,
+.theme-dosis-font .reveal huge-font,
+.theme-dosis-font .reveal big-font {
   font-family: Dosis, sans-serif;
 }
 .theme-leafy-font .reveal h1,
@@ -829,7 +865,9 @@ has a background image and a box with the details */
 .theme-leafy-font .reveal h3,
 .theme-leafy-font .reveal h4,
 .theme-leafy-font .reveal h5,
-.theme-leafy-font .reveal h6 {
+.theme-leafy-font .reveal h6,
+.theme-leafy-font .reveal huge-font,
+.theme-leafy-font .reveal big-font {
   font-family: Leafy, cursive;
 }
 .theme-allmono-font .reveal h1,
@@ -837,7 +875,9 @@ has a background image and a box with the details */
 .theme-allmono-font .reveal h3,
 .theme-allmono-font .reveal h4,
 .theme-allmono-font .reveal h5,
-.theme-allmono-font .reveal h6 {
+.theme-allmono-font .reveal h6,
+.theme-allmono-font .reveal huge-font,
+.theme-allmono-font .reveal big-font {
   font-family: Muli, sans-serif;
 }
 .theme-soda-font .reveal h1,
@@ -845,7 +885,9 @@ has a background image and a box with the details */
 .theme-soda-font .reveal h3,
 .theme-soda-font .reveal h4,
 .theme-soda-font .reveal h5,
-.theme-soda-font .reveal h6 {
+.theme-soda-font .reveal h6,
+.theme-soda-font .reveal huge-font,
+.theme-soda-font .reveal big-font {
   font-family: Open Sans, sans-serif;
 }
 .theme-nox-font .reveal h1,
@@ -853,7 +895,9 @@ has a background image and a box with the details */
 .theme-nox-font .reveal h3,
 .theme-nox-font .reveal h4,
 .theme-nox-font .reveal h5,
-.theme-nox-font .reveal h6 {
+.theme-nox-font .reveal h6,
+.theme-nox-font .reveal huge-font,
+.theme-nox-font .reveal big-font {
   font-family: Annie Use Your Telescope, cursive;
 }
 
@@ -900,6 +944,33 @@ div.images img {
   height: auto;
   margin-left: auto;
   margin-right: auto;
+}
+
+.img-fill img {
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-contain img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-cover img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-none img {
+  object-fit: none;
+  height: 100%;
+  width: 100%;
 }
 
 /*********************************************
@@ -1149,12 +1220,11 @@ div.images img {
 .reveal ul.icon {
   list-style-type: none;
 }
-
-ul.icon li {
+.reveal ul.icon li {
   text-indent: -1.4em;
   margin-bottom: 0.5em;
 }
-ul.icon li::before {
+.reveal ul.icon li::before {
   font-family: "flaticon";
   content: "";
   /* maguey */
@@ -1162,136 +1232,136 @@ ul.icon li::before {
   width: 1.2em;
   font-size: 1em;
 }
-.theme-streams ul.icon li::before {
+.theme-streams .reveal ul.icon li::before {
   color: #747CA8;
 }
-.theme-lines ul.icon li::before {
+.theme-lines .reveal ul.icon li::before {
   color: #00BCD4;
 }
-.theme-seacalm ul.icon li::before {
+.theme-seacalm .reveal ul.icon li::before {
   color: #EDAF49;
 }
-.theme-goldilocks ul.icon li::before {
+.theme-goldilocks .reveal ul.icon li::before {
   color: #EDAF49;
 }
-.theme-duotone ul.icon li::before {
+.theme-duotone .reveal ul.icon li::before {
   color: #736FBA;
 }
-.theme-jewels ul.icon li::before {
+.theme-jewels .reveal ul.icon li::before {
   color: #79C9E8;
 }
-.theme-soda ul.icon li::before {
+.theme-soda .reveal ul.icon li::before {
   color: #1073b9;
 }
-.theme-black ul.icon li::before {
+.theme-black .reveal ul.icon li::before {
   color: #C687E8;
 }
-ul.icon li.pinata::before {
+.reveal ul.icon li.pinata::before {
   content: "";
 }
-.theme-streams ul.icon li.pinata::before {
+.theme-streams .reveal ul.icon li.pinata::before {
   color: #747CA8;
 }
-.theme-lines ul.icon li.pinata::before {
+.theme-lines .reveal ul.icon li.pinata::before {
   color: #00BCD4;
 }
-.theme-seacalm ul.icon li.pinata::before {
+.theme-seacalm .reveal ul.icon li.pinata::before {
   color: #EDAF49;
 }
-.theme-goldilocks ul.icon li.pinata::before {
+.theme-goldilocks .reveal ul.icon li.pinata::before {
   color: #EDAF49;
 }
-.theme-duotone ul.icon li.pinata::before {
+.theme-duotone .reveal ul.icon li.pinata::before {
   color: #736FBA;
 }
-.theme-jewels ul.icon li.pinata::before {
+.theme-jewels .reveal ul.icon li.pinata::before {
   color: #79C9E8;
 }
-.theme-soda ul.icon li.pinata::before {
+.theme-soda .reveal ul.icon li.pinata::before {
   color: #1073b9;
 }
-.theme-black ul.icon li.pinata::before {
+.theme-black .reveal ul.icon li.pinata::before {
   color: #C687E8;
 }
-ul.icon li.nopal::before {
+.reveal ul.icon li.nopal::before {
   content: "";
 }
-.theme-streams ul.icon li.nopal::before {
+.theme-streams .reveal ul.icon li.nopal::before {
   color: #747CA8;
 }
-.theme-lines ul.icon li.nopal::before {
+.theme-lines .reveal ul.icon li.nopal::before {
   color: #00BCD4;
 }
-.theme-seacalm ul.icon li.nopal::before {
+.theme-seacalm .reveal ul.icon li.nopal::before {
   color: #EDAF49;
 }
-.theme-goldilocks ul.icon li.nopal::before {
+.theme-goldilocks .reveal ul.icon li.nopal::before {
   color: #EDAF49;
 }
-.theme-duotone ul.icon li.nopal::before {
+.theme-duotone .reveal ul.icon li.nopal::before {
   color: #736FBA;
 }
-.theme-jewels ul.icon li.nopal::before {
+.theme-jewels .reveal ul.icon li.nopal::before {
   color: #79C9E8;
 }
-.theme-soda ul.icon li.nopal::before {
+.theme-soda .reveal ul.icon li.nopal::before {
   color: #1073b9;
 }
-.theme-black ul.icon li.nopal::before {
+.theme-black .reveal ul.icon li.nopal::before {
   color: #C687E8;
 }
-ul.icon li.cactus::before {
+.reveal ul.icon li.cactus::before {
   content: "";
 }
-.theme-streams ul.icon li.cactus::before {
+.theme-streams .reveal ul.icon li.cactus::before {
   color: #747CA8;
 }
-.theme-lines ul.icon li.cactus::before {
+.theme-lines .reveal ul.icon li.cactus::before {
   color: #00BCD4;
 }
-.theme-seacalm ul.icon li.cactus::before {
+.theme-seacalm .reveal ul.icon li.cactus::before {
   color: #EDAF49;
 }
-.theme-goldilocks ul.icon li.cactus::before {
+.theme-goldilocks .reveal ul.icon li.cactus::before {
   color: #EDAF49;
 }
-.theme-duotone ul.icon li.cactus::before {
+.theme-duotone .reveal ul.icon li.cactus::before {
   color: #736FBA;
 }
-.theme-jewels ul.icon li.cactus::before {
+.theme-jewels .reveal ul.icon li.cactus::before {
   color: #79C9E8;
 }
-.theme-soda ul.icon li.cactus::before {
+.theme-soda .reveal ul.icon li.cactus::before {
   color: #1073b9;
 }
-.theme-black ul.icon li.cactus::before {
+.theme-black .reveal ul.icon li.cactus::before {
   color: #C687E8;
 }
-ul.icon li.skull::before {
+.reveal ul.icon li.skull::before {
   content: "";
 }
-.theme-streams ul.icon li.skull::before {
+.theme-streams .reveal ul.icon li.skull::before {
   color: #747CA8;
 }
-.theme-lines ul.icon li.skull::before {
+.theme-lines .reveal ul.icon li.skull::before {
   color: #00BCD4;
 }
-.theme-seacalm ul.icon li.skull::before {
+.theme-seacalm .reveal ul.icon li.skull::before {
   color: #EDAF49;
 }
-.theme-goldilocks ul.icon li.skull::before {
+.theme-goldilocks .reveal ul.icon li.skull::before {
   color: #EDAF49;
 }
-.theme-duotone ul.icon li.skull::before {
+.theme-duotone .reveal ul.icon li.skull::before {
   color: #736FBA;
 }
-.theme-jewels ul.icon li.skull::before {
+.theme-jewels .reveal ul.icon li.skull::before {
   color: #79C9E8;
 }
-.theme-soda ul.icon li.skull::before {
+.theme-soda .reveal ul.icon li.skull::before {
   color: #1073b9;
 }
-.theme-black ul.icon li.skull::before {
+.theme-black .reveal ul.icon li.skull::before {
   color: #C687E8;
 }
 /* table with no divisions and with bold purple first column */
@@ -1325,6 +1395,7 @@ ul.icon li.skull::before {
   display: block;
 }
 
+/* text */
 .reveal strong,
 .reveal b {
   font-weight: 400;
@@ -1358,12 +1429,106 @@ ul.icon li.skull::before {
   color: #d0ea95;
 }
 .reveal small {
-  font-size: 0.8rem;
-  padding-top: 10px;
-  line-height: 1.1rem;
+  font-size: 0.8em;
 }
 .reveal em {
   font-style: italic;
+}
+.reveal huge-font {
+  font-size: 5em;
+}
+.theme-streams .reveal huge-font {
+  color: #5F4B8B;
+}
+.theme-lines .reveal huge-font {
+  color: #3A015C;
+}
+.theme-seacalm .reveal huge-font {
+  color: #30638B;
+}
+.theme-goldilocks .reveal huge-font {
+  color: #30638B;
+}
+.theme-duotone .reveal huge-font {
+  color: #CC144B;
+}
+.theme-jewels .reveal huge-font {
+  color: #4A235D;
+}
+.theme-soda .reveal huge-font {
+  color: #263c80;
+}
+.theme-black .reveal huge-font {
+  color: #BDE16B;
+}
+.theme-poppins-font .reveal huge-font {
+  font-family: IBMPlexSerif, monospace;
+}
+.theme-plex-font .reveal huge-font {
+  font-family: IBMPlexSerif, monospace;
+}
+.theme-dosis-font .reveal huge-font {
+  font-family: Dosis, sans-serif;
+}
+.theme-leafy-font .reveal huge-font {
+  font-family: Leafy, cursive;
+}
+.theme-allmono-font .reveal huge-font {
+  font-family: Muli, sans-serif;
+}
+.theme-soda-font .reveal huge-font {
+  font-family: Open Sans, sans-serif;
+}
+.theme-nox-font .reveal huge-font {
+  font-family: Annie Use Your Telescope, cursive;
+}
+.reveal big-font {
+  font-size: 4em;
+}
+.theme-streams .reveal big-font {
+  color: #5F4B8B;
+}
+.theme-lines .reveal big-font {
+  color: #3A015C;
+}
+.theme-seacalm .reveal big-font {
+  color: #30638B;
+}
+.theme-goldilocks .reveal big-font {
+  color: #30638B;
+}
+.theme-duotone .reveal big-font {
+  color: #CC144B;
+}
+.theme-jewels .reveal big-font {
+  color: #4A235D;
+}
+.theme-soda .reveal big-font {
+  color: #263c80;
+}
+.theme-black .reveal big-font {
+  color: #BDE16B;
+}
+.theme-poppins-font .reveal big-font {
+  font-family: IBMPlexSerif, monospace;
+}
+.theme-plex-font .reveal big-font {
+  font-family: IBMPlexSerif, monospace;
+}
+.theme-dosis-font .reveal big-font {
+  font-family: Dosis, sans-serif;
+}
+.theme-leafy-font .reveal big-font {
+  font-family: Leafy, cursive;
+}
+.theme-allmono-font .reveal big-font {
+  font-family: Muli, sans-serif;
+}
+.theme-soda-font .reveal big-font {
+  font-family: Open Sans, sans-serif;
+}
+.theme-nox-font .reveal big-font {
+  font-family: Annie Use Your Telescope, cursive;
 }
 
 /* Additional divs */
@@ -1433,6 +1598,60 @@ div.info a {
   font-style: italic !important;
 }
 
+/*****************
+ * Code Segments
+ ****************/
+/* pre and code */
+.reveal pre {
+  box-shadow: none;
+  line-height: 1.2rem;
+  width: 100%;
+  font-size: 0.8em;
+}
+
+.reveal pre code {
+  -moz-tab-size: 2;
+  tab-size: 2;
+  font-family: "Overpass Mono", monospace;
+}
+
+.reveal code {
+  background-color: #e2e6e9;
+  padding: 3px 7px;
+  border-radius: 3px;
+  font-size: 1.2em;
+}
+
+figure.code {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+figure.code pre {
+  box-shadow: none;
+  line-height: 1.3rem;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 5px;
+}
+figure.code figcaption {
+  box-sizing: border-box;
+  padding: 1ex;
+  width: 100%;
+  font-size: 0.875em;
+  border-bottom-width: 0;
+  background-color: #333;
+  text-align: left;
+  border-radius: 3px;
+  color: #EEEDEF !important;
+}
+figure.code pre + figcaption {
+  border-top-width: 0;
+  border-bottom-width: 1px;
+}
+
 /*********************************************
 * APPLY THEMES
 *********************************************/
@@ -1457,7 +1676,7 @@ div.info a {
   height: 100vh;
   margin: 0;
   width: 100vw;
-  color: #737373;
+  color: #2A2A49;
 }
 
 .reveal .slides section.stack {
@@ -2055,60 +2274,6 @@ div.info a {
 
 .reveal .slides section:not([class*=color--]) {
   background-color: white;
-}
-
-/*******************************************************************************
- * Code Segments
- ******************************************************************************/
-figure.code {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-figure.code pre {
-  box-shadow: none;
-  line-height: 1.3rem;
-  margin: 0;
-  overflow: hidden;
-  border-radius: 5px;
-}
-figure.code figcaption {
-  box-sizing: border-box;
-  padding: 1ex 2ex;
-  width: 100%;
-  font-size: 0.875em;
-  border-bottom-width: 0;
-  background-color: #333;
-  text-align: left;
-  border-radius: 3px;
-  color: #EEEDEF !important;
-}
-figure.code pre + figcaption {
-  border-top-width: 0;
-  border-bottom-width: 1px;
-}
-
-.reveal pre {
-  box-shadow: none;
-  line-height: 1.2rem;
-  width: 100%;
-}
-.reveal pre code {
-  -moz-tab-size: 2;
-  tab-size: 2;
-  box-sizing: border-box;
-  font-family: "Overpass Mono", monospace;
-  font-size: 0.9rem;
-  background-color: #e2e6e9;
-}
-
-.reveal code {
-  background-color: #e2e6e9;
-  padding: 3px 7px;
-  border-radius: 3px;
-  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=full_theme.css.map */

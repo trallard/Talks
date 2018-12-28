@@ -48,7 +48,9 @@
 .reveal h3,
 .reveal h4,
 .reveal h5,
-.reveal h6 {
+.reveal h6,
+.reveal huge-font,
+.reveal big-font {
     margin-bottom: 2.5vmin;
     color: inherit;
 }
@@ -58,7 +60,9 @@
 .reveal h3,
 .reveal h4,
 .reveal h5,
-.reveal h6 {
+.reveal h6,
+.reveal huge-font,
+.reveal big-font {
     margin: 0 0 20px 0;
     @include themify($themes) {
         color: themed('primary');
@@ -121,6 +125,33 @@ div {
             margin-right: auto;
         }
     }
+}
+
+.img-fill img {
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-contain img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    overflow: hidden
+}
+
+.img-cover img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden
+}
+
+.img-none img {
+    object-fit: none;
+    height: 100%;
+    width: 100%;
 }
 
 /*********************************************
@@ -199,44 +230,43 @@ div {
 
 .reveal ul.icon {
     list-style-type: none;
-}
-
-ul.icon li {
-    text-indent: -1.4em;
-    margin-bottom: 0.5em;
-    &::before {
-        @include themify($themes) {
-            color: themed('secondary')
+    li {
+        text-indent: -1.4em;
+        margin-bottom: 0.5em;
+        &::before {
+            @include themify($themes) {
+                color: themed('secondary')
+            }
+            font-family: 'flaticon';
+            content: "\f102";
+            /* maguey */
+            float: left;
+            width: 1.2em;
+            font-size: 1em;
         }
-        font-family: 'flaticon';
-        content: "\f102";
-        /* maguey */
-        float: left;
-        width: 1.2em;
-        font-size: 1em;
-    }
-    &.pinata::before {
-        content: "\f100";
-        @include themify($themes) {
-            color: themed('secondary')
+        &.pinata::before {
+            content: "\f100";
+            @include themify($themes) {
+                color: themed('secondary')
+            }
         }
-    }
-    &.nopal::before {
-        content: "\f101";
-        @include themify($themes) {
-            color: themed('secondary')
+        &.nopal::before {
+            content: "\f101";
+            @include themify($themes) {
+                color: themed('secondary')
+            }
         }
-    }
-    &.cactus::before {
-        content: "\f103";
-        @include themify($themes) {
-            color: themed('secondary')
+        &.cactus::before {
+            content: "\f103";
+            @include themify($themes) {
+                color: themed('secondary')
+            }
         }
-    }
-    &.skull::before {
-        content: "\f104";
-        @include themify($themes) {
-            color: themed('secondary')
+        &.skull::before {
+            content: "\f104";
+            @include themify($themes) {
+                color: themed('secondary')
+            }
         }
     }
 }
@@ -274,6 +304,8 @@ ul.icon li {
     display: block;
 }
 
+/* text */
+
 .reveal {
     strong,
     b {
@@ -287,12 +319,24 @@ ul.icon li {
         }
     }
     small {
-        font-size: 0.8rem;
-        padding-top: 10px;
-        line-height: 1.1rem;
+        font-size: 0.8em;
     }
     em {
         font-style: italic;
+    }
+    huge-font {
+        font-size: 5em;
+        @include themify($themes) {
+            color: themed('primary');
+            font-family: themed('title-font');
+        }
+    }
+    big-font {
+        font-size: 4em;
+        @include themify($themes) {
+            color: themed('primary');
+            font-family: themed('title-font');
+        }
     }
 }
 
@@ -373,6 +417,65 @@ div {
     }
 }
 
+/*****************
+ * Code Segments
+ ****************/
+
+/* pre and code */
+
+.reveal pre {
+    box-shadow: none;
+    line-height: 1.2rem;
+    width: 100%;
+    font-size: 0.8em;
+}
+
+.reveal pre code {
+    -moz-tab-size: 2;
+    tab-size: 2;
+    font-family: $code-font;
+}
+
+.reveal code {
+    background-color: $light-gray;
+    padding: 3px 7px;
+    border-radius: 3px;
+    font-size: 1.2em;
+}
+
+// This gives a code within a figure element... will change in the future as this
+// is a hack copied from somewhere else and I am not happy with the way it works
+// but it allows to add captions
+figure.code {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    & pre {
+        box-shadow: none;
+        line-height: 1.3rem;
+        margin: 0;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+    & figcaption {
+        box-sizing: border-box;
+        padding: 1ex;
+        width: 100%;
+        font-size: 0.875em;
+        border-bottom-width: 0;
+        background-color: #333; //dark graphite grey
+        text-align: left;
+        border-radius: 3px;
+        color: #EEEDEF !important;
+    }
+    & pre+figcaption {
+        border-top-width: 0;
+        border-bottom-width: 1px;
+    }
+}
+
 /*********************************************
 * APPLY THEMES
 *********************************************/
@@ -403,10 +506,14 @@ div {
     margin: 0;
     width: 100vw;
     color: $text-color;
-} // ensures we can see the background
+}
+
+// ensures we can see the background
 .reveal .slides section.stack {
     background-color: transparent !important;
-} // Grid for the slides
+}
+
+// Grid for the slides
 // Nnote that this leaves a gap on the sides to prevent content from over flowing
 // to remove delete the .
 .reveal .slides section .grid-wrapper {
@@ -418,7 +525,9 @@ div {
     grid-template-areas: ". header ." ". content .";
     height: 100%;
     padding: 10vmin;
-} // Slides header
+}
+
+// Slides header
 .reveal .slides section .header {
     align-items: center;
     display: flex;
@@ -442,7 +551,9 @@ div {
         color: #5f6c7a;
         /*slate grey*/
     }
-} // Logo in header
+}
+
+// Logo in header
 .reveal .slides section .logo {
     background-image: url($logo-path);
     background-repeat: no-repeat;
@@ -452,7 +563,9 @@ div {
     height: 5.5vmin;
     margin-right: 1.5vmin;
     width: 5.5vmin;
-} // Section title in header
+}
+
+// Section title in header
 .reveal .slides section .section {
     @include themify($themes) {
         font-family: themed('title-font');
@@ -461,7 +574,9 @@ div {
     line-height: 5.5vmin;
     font-size: 0.8em;
     font-weight: 500;
-} // Main content in slides
+}
+
+// Main content in slides
 .reveal .slides section .content {
     align-self: center;
     grid-area: content;

@@ -53,14 +53,14 @@
 							</div>
 						</div>
 						<div class="content">
-							<h1>The main title of the presentation</h1>
+							<h1>My own Reveal.js theme</h1>
 							<div class="description">
-								Describe a bit more what this is about
+								A highly customised, opinionated, and responsive theme
 							</div>
 						</div>
 						<div class="credit">
 							<hr>
-							<div class="label">Presented By</div>
+							<div class="label">Created By</div>
 							<div class="name">Tania Allard, PhD</div>
 						</div>
 						<a class="presentation-url" href="https://trallard.github.io/Talks/mock_full">
@@ -99,7 +99,6 @@
 			<section class="subsection ">
 				<div class=" grid-wrapper">
 					<div class="header">
-
 						<div class="twitter"><a href="https://twitter.com/ixek">
 								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 					</div>
@@ -108,7 +107,8 @@
 						<h1>class = 'subsection'</h1>
 					</h1>
 					<div class="description">
-						This is where the description goes. Keep it short and sweet.
+						This is where the description goes. Keep it short and 🍬.
+						You can use this with a coloured slide too
 					</div>
 				</div>
 			</section>
@@ -120,6 +120,7 @@
 				<div class="grid-wrapper">
 					<div class="header">
 						<div class="logo"></div>
+						<div class="section">Subsection slides</div>
 						<div class="twitter"><a href="https://twitter.com/ixek">
 								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 					</div>
@@ -135,7 +136,7 @@
 
 			<!-- Without using the subsection class: you can specify
 									a slide colour here, title and description -->
-			<section class='color--ice'>
+			<section class='color--topaz'>
 				<div class="grid-wrapper">
 					<div class="header">
 						<div class="logo"></div>
@@ -145,7 +146,8 @@
 					<div class="content">
 						<h1>class = 'color--ice'</h1>
 						<div class="description">
-							other colours are: violet, midnight, vibrant, two (white and ultraviolet),
+							other colours are: ultraviolet,violet, midnight, vibrant,
+							topaz, two (white and ultraviolet),
 							gradient(grad-purple, grad-green, grad-blue)
 						</div>
 					</div>
@@ -159,6 +161,7 @@
 					<div class="grid-wrapper">
 						<div class="header">
 							<div class="logo"></div>
+							<div class="section">Lists</div>
 							<div class="twitter"><a href="https://twitter.com/ixek">
 									<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 						</div>
@@ -179,6 +182,7 @@
 					<div class="grid-wrapper">
 						<div class="header">
 							<div class="logo"></div>
+							<div class="section">Custom unordered lists</div>
 							<div class="twitter"><a href="https://twitter.com/ixek">
 									<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 						</div>
@@ -201,6 +205,7 @@
 					<div class="grid-wrapper">
 						<div class="header">
 							<div class="logo"></div>
+							<div class="section">Simple table</div>
 							<div class="twitter"><a href="https://twitter.com/ixek">
 									<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 						</div>
@@ -216,34 +221,17 @@
 									<td>{string}</td>
 								</tr>
 							</table>
-							<!-- Using the figure class with data-markdown -->
-							<figure class='code'>
-								<div data-markdown>
-									```python
-									def print_hello():
-									print("Hello world!")
 
-									def add_one(number):
-									return number + 1
-
-									print_hello()
-									eight_plus_one = add_one(8)
-									print(eight_plus_one)
-									```
-								</div>
-							</figure>
-							<!-- Using only pre and code -->
-							<pre><code>for i in elements:
-	print(f'Element is {element})</code></pre>
 						</div>
 					</div>
 				</section>
 
-				<!-- Example with code footnote -->
+				Example with code footnote
 				<section>
 					<div class="grid-wrapper">
 						<div class="header">
 							<div class="logo"></div>
+							<div class="section">A table and code with foot</div>
 							<div class="twitter"><a href="https://twitter.com/ixek">
 									<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 						</div>
@@ -268,6 +256,7 @@
 					<div class="grid-wrapper">
 						<div class="header">
 							<div class="logo"></div>
+							<div class="section">A table and code only</div>
 							<div class="twitter"><a href="https://twitter.com/ixek"><i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 						</div>
 						<div class="content">
@@ -289,32 +278,6 @@
 						</div>
 					</div>
 				</section>
-
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="twitter"><a href="https://twitter.com/ixek"><i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-						</div>
-						<div class="content">
-							<h1>Metrics</h1>
-							<h2>Set</h2>
-							<table>
-								<tr>
-									<th>key:</th>
-									<td>{number}</td>
-								</tr>
-								<tr>
-									<th>value:</th>
-									<td>{number}</td>
-								</tr>
-							</table>
-							<figure class="code">
-								<pre><code class="lang-js">ga('set', 'metric1', 2);</code></pre>
-							</figure>
-						</div>
-					</div>
-				</section>
 			</section>
 
 			<!-- Subsection slide: no color  has section on the header-->
@@ -327,11 +290,12 @@
 								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 					</div>
 					<div class="content">Notice the section title on the header
-						add this using
+						add this using:
+						<br><br>
 						<figure class="code">
 							<pre><code class="lang-html"><div class="section"> Section </div></code></pre>
 							<p>⭐ Also if you do not pass an argument to the slide section, the default
-								background color us white as in this slide</p>
+								background color will be used</p>
 						</figure>
 					</div>
 				</div>
@@ -342,6 +306,7 @@
 				<div class="grid-wrapper">
 					<div class="header">
 						<div class="logo"></div>
+						<div class="section">Quote slides</div>
 						<div class="twitter"><a href="https://twitter.com/ixek">
 								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 					</div>
@@ -369,6 +334,7 @@
 						<div class="section">Creating code sections</div>
 					</div>
 					<div class="content">
+						You can add code with a footnote up or down:
 						<figure class="code">
 							<pre><code class="lang-js">ga('require', 'linker');</code></pre>
 							<figcaption>usr/bin</figcaption>
@@ -399,11 +365,13 @@
 				<div class="grid-wrapper">
 					<div class="header">
 						<div class="logo"></div>
+						<div class="section">Figures</div>
 						<div class="twitter"><a href="https://twitter.com/ixek">
 								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 					</div>
 					<div class="content">
 						<h4>Figure class=display</h4>
+						<p>You can add a caption, this figure is centered</p>
 						<figure class="display">
 							<img src="./assets/herdata/puzzle.PNG" alt="img" />
 							<figcaption>
@@ -419,12 +387,13 @@
 				<div class="grid-wrapper">
 					<div class="header">
 						<div class="logo"></div>
+						<div class="section">Images</div>
 						<div class="twitter"><a href="https://twitter.com/ixek">
 								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 					</div>
 					<div class="content">
-						<h4>Figure class=display</h4>
-
+						<h4>Images</h4>
+						Larger image
 						<div class="images">
 							<img src="./assets/herdata/puzzle.PNG" alt="reproduce" style='border: 0px; height:400px; box-shadow: none;'>
 						</div>
@@ -455,25 +424,23 @@
 			</section>
 
 
-			<!-- Slide with code only -->
+			<!-- See the many font sizes -->
 			<section>
 				<div class="grid-wrapper">
 					<div class="header">
 						<div class="logo"></div>
+						<div class="section">The font sizes available</div>
 						<div class="twitter"><a href="https://twitter.com/ixek">
 								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 					</div>
 					<div class="content">
-						<div class="browser-window-dark">
-							<div class="top-bar">
-								<div class="circles">
-									<div class="circle circle-red"></div>
-									<div class="circle circle-yellow"></div>
-									<div class="circle circle-green"></div>
-								</div>
-							</div>
-							<div class="window-content">hola</div>
-						</div>
+						<huge-font>huge-font</huge-font>
+						<h1>heading 1</h1>
+						<h2>heading 2</h2>
+						<h3>heading 3</h3>
+						<h4>heading 4</h4>
+						<p>regular font</p>
+						<small>small font</small>
 					</div>
 				</div>
 			</section>
@@ -483,7 +450,7 @@
 			<section class="dark_box">
 				<aside>
 					<h2>Title ⚡️</h2>
-					Content goes here: make it catchy
+					What is this about?
 					<code style='color: black;'>class="dark_box"</code>
 				</aside>
 			</section>
@@ -508,12 +475,17 @@
 			</section>
 
 			<!-- Gradient: purple, green, blue -->
-			<section class="color--grad-green">
+			<section class="color--grad-blue">
 				<div class="grid-wrapper">
-					<div class="logo"></div>
+					<div class="header">
+						<div class="logo"></div>
+						<div class="section">Gradient slides</div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
 					<div class="content">
-						<h1>Hola</h1>
-						Content here
+						<h1>There are gradients</h1>
+						Use <code style='color: black;'>grad-blue, grad-purple, grad-green</code>
 					</div>
 				</div>
 			</section>
@@ -522,6 +494,7 @@
 			<section id="end" class="end color--dark">
 				<div class="grid-wrapper">
 					<div class="content">
+						<h2>This is the end slide</h2>
 						<a href="https://twitter.com/ixek"><i class="fab fa-twitter-square"></i>
 							<span>ixek</span></a>
 					</div>
