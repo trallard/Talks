@@ -92,30 +92,6 @@
     }
 }
 
-// Flowers
-.reveal.pattern--flowers {
-    background-image: url("../assets/patterns/floral_pattern.svg");
-}
-
-.reveal.pattern--flowers .slides section.intro {
-    @include themify($themes) {
-        background-color: themed('secondary');
-    }
-}
-
-.reveal.pattern--flowers .slides section.title {
-    @include themify($themes) {
-        background-color: themed('secondary');
-        color: themed('primary');
-    }
-}
-
-.reveal.pattern--flowers .progress {
-    @include themify($themes) {
-        background-color: themed('third');
-    }
-}
-
 // pupilines
 .reveal.pattern--pupilines {
     background-image: url("../assets/patterns/pupilines.svg");
@@ -142,6 +118,60 @@
 
 .reveal.pattern--pupilines .controls {
     @include themify($themes) {
+        color: themed('secondary')
+    }
+}
+
+// space1
+.reveal.pattern--space1 {
+    background-image: url("../assets/patterns/space2.png");
+}
+
+.reveal.pattern--space1 .slides section.intro {
+    @include themify($themes) {
+        background-color: themed('secondary')
+    }
+}
+
+.reveal.pattern--space1 .slides section.title {
+    @include themify($themes) {
+        background-color: themed('secondary');
+        color: themed('primary')
+    }
+}
+
+// space1
+.reveal.pattern--space1 {
+    background-image: url("../assets/patterns/space3.png");
+}
+
+.reveal.pattern--space1 .slides section.intro {
+    @include themify($themes) {
+        background-color: themed('primary')
+    }
+}
+
+.reveal.pattern--space1 .slides section.title {
+    @include themify($themes) {
+        background-color: themed('primary');
+        color: themed('secondary')
+    }
+}
+
+// space1
+.reveal.pattern--fox {
+    background-image: url("../assets/patterns/fox.png");
+}
+
+.reveal.pattern--fox .slides section.intro {
+    @include themify($themes) {
+        background-color: themed('primary')
+    }
+}
+
+.reveal.pattern--fox .slides section.title {
+    @include themify($themes) {
+        background-color: themed('primary');
         color: themed('secondary')
     }
 }

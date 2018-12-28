@@ -231,6 +231,7 @@ Presentation title
   font-size: 1em;
   align-self: center;
   opacity: 0.5;
+  color: #2A2A49;
 }
 
 /******************************************
@@ -330,7 +331,7 @@ All code slide
 }
 .reveal .slides section.color--dark h1,
 .reveal .slides section.color--dark h2 {
-  color: #A075FF;
+  color: #A881FF;
 }
 
 .reveal .slides section.color--ice {
@@ -2070,90 +2071,6 @@ figure.code pre + figcaption {
 .theme-black .reveal.pattern--star .progress {
   background-color: #F2E38A;
 }
-.reveal.pattern--flowers {
-  background-image: url("../assets/patterns/floral_pattern.svg");
-}
-
-.theme-streams .reveal.pattern--flowers .slides section.intro {
-  background-color: #747CA8;
-}
-.theme-lines .reveal.pattern--flowers .slides section.intro {
-  background-color: #00BCD4;
-}
-.theme-seacalm .reveal.pattern--flowers .slides section.intro {
-  background-color: #EDAF49;
-}
-.theme-goldilocks .reveal.pattern--flowers .slides section.intro {
-  background-color: #EDAF49;
-}
-.theme-duotone .reveal.pattern--flowers .slides section.intro {
-  background-color: #736FBA;
-}
-.theme-jewels .reveal.pattern--flowers .slides section.intro {
-  background-color: #79C9E8;
-}
-.theme-soda .reveal.pattern--flowers .slides section.intro {
-  background-color: #1073b9;
-}
-.theme-black .reveal.pattern--flowers .slides section.intro {
-  background-color: #C687E8;
-}
-.theme-streams .reveal.pattern--flowers .slides section.title {
-  background-color: #747CA8;
-  color: #5F4B8B;
-}
-.theme-lines .reveal.pattern--flowers .slides section.title {
-  background-color: #00BCD4;
-  color: #3A015C;
-}
-.theme-seacalm .reveal.pattern--flowers .slides section.title {
-  background-color: #EDAF49;
-  color: #30638B;
-}
-.theme-goldilocks .reveal.pattern--flowers .slides section.title {
-  background-color: #EDAF49;
-  color: #30638B;
-}
-.theme-duotone .reveal.pattern--flowers .slides section.title {
-  background-color: #736FBA;
-  color: #CC144B;
-}
-.theme-jewels .reveal.pattern--flowers .slides section.title {
-  background-color: #79C9E8;
-  color: #4A235D;
-}
-.theme-soda .reveal.pattern--flowers .slides section.title {
-  background-color: #1073b9;
-  color: #263c80;
-}
-.theme-black .reveal.pattern--flowers .slides section.title {
-  background-color: #C687E8;
-  color: #BDE16B;
-}
-.theme-streams .reveal.pattern--flowers .progress {
-  background-color: #3388A6;
-}
-.theme-lines .reveal.pattern--flowers .progress {
-  background-color: #ff206e;
-}
-.theme-seacalm .reveal.pattern--flowers .progress {
-  background-color: #00798c;
-}
-.theme-goldilocks .reveal.pattern--flowers .progress {
-  background-color: #8D4593;
-}
-.theme-duotone .reveal.pattern--flowers .progress {
-  background-color: #A1AAE2;
-}
-.theme-jewels .reveal.pattern--flowers .progress {
-  background-color: #FF0368;
-}
-.theme-soda .reveal.pattern--flowers .progress {
-  background-color: #95d5d4;
-}
-.theme-black .reveal.pattern--flowers .progress {
-  background-color: #F2E38A;
-}
 .reveal.pattern--pupilines {
   background-image: url("../assets/patterns/pupilines.svg");
 }
@@ -2260,6 +2177,186 @@ figure.code pre + figcaption {
   color: #1073b9;
 }
 .theme-black .reveal.pattern--pupilines .controls {
+  color: #C687E8;
+}
+.reveal.pattern--space1 {
+  background-image: url("../assets/patterns/space2.png");
+}
+
+.theme-streams .reveal.pattern--space1 .slides section.intro {
+  background-color: #747CA8;
+}
+.theme-lines .reveal.pattern--space1 .slides section.intro {
+  background-color: #00BCD4;
+}
+.theme-seacalm .reveal.pattern--space1 .slides section.intro {
+  background-color: #EDAF49;
+}
+.theme-goldilocks .reveal.pattern--space1 .slides section.intro {
+  background-color: #EDAF49;
+}
+.theme-duotone .reveal.pattern--space1 .slides section.intro {
+  background-color: #736FBA;
+}
+.theme-jewels .reveal.pattern--space1 .slides section.intro {
+  background-color: #79C9E8;
+}
+.theme-soda .reveal.pattern--space1 .slides section.intro {
+  background-color: #1073b9;
+}
+.theme-black .reveal.pattern--space1 .slides section.intro {
+  background-color: #C687E8;
+}
+.theme-streams .reveal.pattern--space1 .slides section.title {
+  background-color: #747CA8;
+  color: #5F4B8B;
+}
+.theme-lines .reveal.pattern--space1 .slides section.title {
+  background-color: #00BCD4;
+  color: #3A015C;
+}
+.theme-seacalm .reveal.pattern--space1 .slides section.title {
+  background-color: #EDAF49;
+  color: #30638B;
+}
+.theme-goldilocks .reveal.pattern--space1 .slides section.title {
+  background-color: #EDAF49;
+  color: #30638B;
+}
+.theme-duotone .reveal.pattern--space1 .slides section.title {
+  background-color: #736FBA;
+  color: #CC144B;
+}
+.theme-jewels .reveal.pattern--space1 .slides section.title {
+  background-color: #79C9E8;
+  color: #4A235D;
+}
+.theme-soda .reveal.pattern--space1 .slides section.title {
+  background-color: #1073b9;
+  color: #263c80;
+}
+.theme-black .reveal.pattern--space1 .slides section.title {
+  background-color: #C687E8;
+  color: #BDE16B;
+}
+.reveal.pattern--space1 {
+  background-image: url("../assets/patterns/space3.png");
+}
+
+.theme-streams .reveal.pattern--space1 .slides section.intro {
+  background-color: #5F4B8B;
+}
+.theme-lines .reveal.pattern--space1 .slides section.intro {
+  background-color: #3A015C;
+}
+.theme-seacalm .reveal.pattern--space1 .slides section.intro {
+  background-color: #30638B;
+}
+.theme-goldilocks .reveal.pattern--space1 .slides section.intro {
+  background-color: #30638B;
+}
+.theme-duotone .reveal.pattern--space1 .slides section.intro {
+  background-color: #CC144B;
+}
+.theme-jewels .reveal.pattern--space1 .slides section.intro {
+  background-color: #4A235D;
+}
+.theme-soda .reveal.pattern--space1 .slides section.intro {
+  background-color: #263c80;
+}
+.theme-black .reveal.pattern--space1 .slides section.intro {
+  background-color: #BDE16B;
+}
+.theme-streams .reveal.pattern--space1 .slides section.title {
+  background-color: #5F4B8B;
+  color: #747CA8;
+}
+.theme-lines .reveal.pattern--space1 .slides section.title {
+  background-color: #3A015C;
+  color: #00BCD4;
+}
+.theme-seacalm .reveal.pattern--space1 .slides section.title {
+  background-color: #30638B;
+  color: #EDAF49;
+}
+.theme-goldilocks .reveal.pattern--space1 .slides section.title {
+  background-color: #30638B;
+  color: #EDAF49;
+}
+.theme-duotone .reveal.pattern--space1 .slides section.title {
+  background-color: #CC144B;
+  color: #736FBA;
+}
+.theme-jewels .reveal.pattern--space1 .slides section.title {
+  background-color: #4A235D;
+  color: #79C9E8;
+}
+.theme-soda .reveal.pattern--space1 .slides section.title {
+  background-color: #263c80;
+  color: #1073b9;
+}
+.theme-black .reveal.pattern--space1 .slides section.title {
+  background-color: #BDE16B;
+  color: #C687E8;
+}
+.reveal.pattern--fox {
+  background-image: url("../assets/patterns/fox.png");
+}
+
+.theme-streams .reveal.pattern--fox .slides section.intro {
+  background-color: #5F4B8B;
+}
+.theme-lines .reveal.pattern--fox .slides section.intro {
+  background-color: #3A015C;
+}
+.theme-seacalm .reveal.pattern--fox .slides section.intro {
+  background-color: #30638B;
+}
+.theme-goldilocks .reveal.pattern--fox .slides section.intro {
+  background-color: #30638B;
+}
+.theme-duotone .reveal.pattern--fox .slides section.intro {
+  background-color: #CC144B;
+}
+.theme-jewels .reveal.pattern--fox .slides section.intro {
+  background-color: #4A235D;
+}
+.theme-soda .reveal.pattern--fox .slides section.intro {
+  background-color: #263c80;
+}
+.theme-black .reveal.pattern--fox .slides section.intro {
+  background-color: #BDE16B;
+}
+.theme-streams .reveal.pattern--fox .slides section.title {
+  background-color: #5F4B8B;
+  color: #747CA8;
+}
+.theme-lines .reveal.pattern--fox .slides section.title {
+  background-color: #3A015C;
+  color: #00BCD4;
+}
+.theme-seacalm .reveal.pattern--fox .slides section.title {
+  background-color: #30638B;
+  color: #EDAF49;
+}
+.theme-goldilocks .reveal.pattern--fox .slides section.title {
+  background-color: #30638B;
+  color: #EDAF49;
+}
+.theme-duotone .reveal.pattern--fox .slides section.title {
+  background-color: #CC144B;
+  color: #736FBA;
+}
+.theme-jewels .reveal.pattern--fox .slides section.title {
+  background-color: #4A235D;
+  color: #79C9E8;
+}
+.theme-soda .reveal.pattern--fox .slides section.title {
+  background-color: #263c80;
+  color: #1073b9;
+}
+.theme-black .reveal.pattern--fox .slides section.title {
+  background-color: #BDE16B;
   color: #C687E8;
 }
 /***********************

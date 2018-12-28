@@ -75,12 +75,6 @@ I have written the styles in such a way that you can choose a colour palette, ba
 ![](assets/docs/stars.PNG)
 
 
-```
-<body class="theme-seacalm theme-leafy-font">
-<div class="reveal pattern--flowers">
-```
-
-![](assets/docs/flower.PNG)
 
 ```
 <body class="theme-soda theme-soda-font">
