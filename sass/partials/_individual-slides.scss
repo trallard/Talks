@@ -55,12 +55,6 @@ Presentation title
     grid-column-gap: 5vmin;
 }
 
-// ensure the content is centered
-.reveal .slides section.title .content {
-    align-self: center;
-    grid-area: content;
-}
-
 // Main slide title
 .reveal .slides section.title h1 {
     color: $white;
@@ -360,6 +354,11 @@ All code slide
     height: 100vh;
     margin: 0;
     width: 100vw;
+    .content {
+        margin-top: auto;
+        text-align: center;
+        font-size: 140%;
+    }
 }
 
 .reveal .slides section.end .logo-wrapper {
@@ -376,4 +375,99 @@ All code slide
     min-height: 200px;
     min-width: 200px;
     width: 33%;
+}
+
+/*********************************************
+ * Black box slide
+ *********************************************/
+
+/* You can use this as 	<section class="dark_box"> */
+
+/* Slide with image background and semi-transluscent
+black box with white text (ideal for presentation sections) */
+
+.dark_box {
+    background-image: url(#{$assets-path}/code.jpg);
+    background-size: cover;
+    background-position: center center;
+    /* floating dark box */
+    aside {
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        font-size: 2em;
+        padding: 5vmin;
+        width: auto;
+        border-radius: 10px;
+        top: 50%;
+        display: block;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        font-size: 1.5em;
+        text-align: center;
+        h2 {
+            font-weight: bold;
+            font-size: 3.5rem;
+            display: block;
+            width: auto;
+            text-align: center;
+            color: #bbc3cc !important;
+        }
+    }
+}
+
+/*********************************************
+ * About presenter
+ *********************************************/
+
+/*
+Slide containing information about the presenter
+has a background image and a box with the details */
+
+#about {
+    background-image: url(#{$assets-path}/code2.jpg);
+    background-size: cover;
+    background-position: center center;
+    a {
+        color: #2A2A49;
+    }
+    aside {
+        background-color: hsla(214, 10%, 70%, 0.562);
+        border-radius: 10px;
+        color: #000;
+        float: left;
+        font-size: 1.5em;
+        padding: 5vmin;
+        hr {
+            margin: 2.5vmin 0;
+            border: solid;
+            border-width: 2px 0 0 0;
+        }
+        ul {
+            display: block;
+            font-size: inherit;
+            list-style: none;
+            margin: 2.5vmin 0 0;
+            width: auto;
+        }
+    }
+    .projects {
+        text-align: left;
+    }
+    .accounts {
+        display: grid;
+        justify-content: center;
+        a {
+            display: flex;
+            align-items: baseline;
+        }
+    }
+}
+
+.social_icon {
+    padding-right: 10px;
+    @include themify($themes) {
+        color: themed('primary')
+    }
 }

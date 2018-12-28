@@ -76,11 +76,51 @@
 * IMAGES
 *********************************************/
 
+// remove the shadow that comes by default
 .reveal section img {
     background: none;
     border: none;
     box-shadow: none;
     margin: 0;
+}
+
+// display images
+figure.display {
+    margin: auto;
+    text-align: center;
+    max-width: 100vmin;
+    width: 100% vw;
+    height: auto;
+    display: block;
+    padding: 10px;
+    figcaption {
+        padding: 5px;
+        font-size: 0.85rem;
+        color: #121212;
+        float: left;
+        border: solid #EEEDEF;
+        border-width: 2px 0 0 0;
+        width: 100%;
+    }
+}
+
+// larger images
+div {
+    &.images {
+        text-align: center;
+        margin: auto;
+        padding: 10px;
+        img {
+            padding: 10px;
+            display: block;
+            border: 0px solid #303030;
+            max-width: 100%;
+            max-height: 100vmin;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 }
 
 /*********************************************
@@ -122,15 +162,11 @@
     @include themify($themes) {
         color: themed('third')
     }
-}
-
-// move the controls further into the slides body
+} // move the controls further into the slides body
 .reveal .controls {
     right: 4vmin;
     bottom: 4vmin;
-}
-
-// controls further out 
+} // controls further out 
 @media (max-width: 768px) {
     .reveal .controls {
         right: 2vmin;
@@ -238,8 +274,103 @@ ul.icon li {
     display: block;
 }
 
-.reveal em {
+.reveal {
+    strong,
+    b {
+        font-weight: 400;
+        color: $salmon;
+    }
+    strong-alt {
+        font-weight: 400;
+        @include themify($themes) {
+            color: themed('primary-light')
+        }
+    }
+    small {
+        font-size: 0.8rem;
+        padding-top: 10px;
+        line-height: 1.1rem;
+    }
+    em {
+        font-style: italic;
+    }
+}
+
+/* Additional divs */
+
+div {
+    &.warn {
+        // warning div
+        background-color: #fb5c6f;
+        border-color: #fb5c6f;
+        border-left: 5px solid #C81D25;
+        padding: 15px 15px;
+        color: #fff;
+        margin: 1em;
+        margin-top: 0;
+        opacity: 0.8;
+    }
+    &.info {
+        // info div
+        background-color: #208a96;
+        border-color: #208a96;
+        border-left: 5px solid #0B3954;
+        padding: 15px 15px;
+        color: #fff;
+        opacity: 0.8;
+        margin: 1em;
+        margin-top: 0;
+        a {
+            color: #e8f3f4 !important;
+            text-decoration: underline;
+            text-decoration-color: #e8f3f4 !important;
+        }
+    }
+}
+
+/* Floating modal */
+
+/* I like using this for in slide quote  */
+
+/* when I am not using the whole slide for quote */
+
+.float_modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 900px;
+    min-width: 100px;
+    max-height: 600px;
+    min-height: 100px;
+    z-index: 2000;
+    transform: translateX(-50%) translateY(-50%);
+    background: hsla(212, 11%, 20%, 0.98);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Text into the modal */
+
+.modal_p {
+    padding: 10px !important;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+/* Adding caption to the modal */
+
+.caption_p {
+    font-weight: light;
     font-style: italic;
+    font-size: 0.5em;
+    color: #B2BAE5;
+    /*lavender violet*/
+    /* font-family: $base-font; */
+    padding: 10px !important;
+    a {
+        /* color:  #B2BAE5!important; /*lavender violet*/
+        font-style: italic !important;
+    }
 }
 
 /*********************************************
@@ -272,14 +403,10 @@ ul.icon li {
     margin: 0;
     width: 100vw;
     color: $text-color;
-}
-
-// ensures we can see the background
+} // ensures we can see the background
 .reveal .slides section.stack {
-    background-color: transparent;
-}
-
-// Grid for the slides
+    background-color: transparent !important;
+} // Grid for the slides
 // Nnote that this leaves a gap on the sides to prevent content from over flowing
 // to remove delete the .
 .reveal .slides section .grid-wrapper {
@@ -291,9 +418,7 @@ ul.icon li {
     grid-template-areas: ". header ." ". content .";
     height: 100%;
     padding: 10vmin;
-}
-
-// Slides header
+} // Slides header
 .reveal .slides section .header {
     align-items: center;
     display: flex;
@@ -301,7 +426,23 @@ ul.icon li {
     padding: 5px;
 }
 
-// Logo in header
+/* Twitter icon and handle on the header */
+
+.header .twitter {
+    margin-left: auto;
+    opacity: 0.7;
+    font-size: 0.8rem;
+    text-decoration: none;
+    a {
+        color: #5f6c7a;
+        /*slate grey*/
+        text-decoration: none;
+    }
+    .fa-twitter {
+        color: #5f6c7a;
+        /*slate grey*/
+    }
+} // Logo in header
 .reveal .slides section .logo {
     background-image: url($logo-path);
     background-repeat: no-repeat;
@@ -311,9 +452,7 @@ ul.icon li {
     height: 5.5vmin;
     margin-right: 1.5vmin;
     width: 5.5vmin;
-}
-
-// Section title in header
+} // Section title in header
 .reveal .slides section .section {
     @include themify($themes) {
         font-family: themed('title-font');
@@ -322,9 +461,7 @@ ul.icon li {
     line-height: 5.5vmin;
     font-size: 0.8em;
     font-weight: 500;
-}
-
-// Main content in slides
+} // Main content in slides
 .reveal .slides section .content {
     align-self: center;
     grid-area: content;

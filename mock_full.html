@@ -13,7 +13,7 @@
 
 	<!-- Full theme:light version -->
 	<link rel="stylesheet" href="css/full_theme.css">
-	<link rel="stylesheet" href="sass/presentation.css">
+	<!-- <link rel="stylesheet" href="sass/presentation.css"> -->
 
 	<!-- Theme used for syntax highlighting of code -->
 	<link rel="stylesheet" href="css/google_syntax.css">
@@ -96,16 +96,16 @@
 
 			<!-- Used to introduce a subsection: you can specify
 					a slide colour here, title and description -->
-			<section class="subsection color--ice">
-				<div class="grid-wrapper">
+			<section class="subsection ">
+				<div class=" grid-wrapper">
 					<div class="header">
-						<div class="logo"></div>
+
 						<div class="twitter"><a href="https://twitter.com/ixek">
 								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 					</div>
 					<div class="logo"></div>
 					<h1>
-						<h1>class = 'subsection color--ice'</h1>
+						<h1>class = 'subsection'</h1>
 					</h1>
 					<div class="description">
 						This is where the description goes. Keep it short and sweet.
@@ -135,7 +135,7 @@
 
 			<!-- Without using the subsection class: you can specify
 									a slide colour here, title and description -->
-			<section>
+			<section class='color--ice'>
 				<div class="grid-wrapper">
 					<div class="header">
 						<div class="logo"></div>
@@ -143,7 +143,7 @@
 								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 					</div>
 					<div class="content">
-						<h1>class = 'color--midnight'</h1>
+						<h1>class = 'color--ice'</h1>
 						<div class="description">
 							other colours are: violet, midnight, vibrant, two (white and ultraviolet),
 							gradient(grad-purple, grad-green, grad-blue)
@@ -403,18 +403,36 @@
 								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 					</div>
 					<div class="content">
-						<h1>Slide with image</h1>
-						<a href="https://github.com/trallard/talks" target="_blank">
-							This is a link</a>
+						<h4>Figure class=display</h4>
 						<figure class="display">
 							<img src="./assets/herdata/puzzle.PNG" alt="img" />
+							<figcaption>
+								<pre><code><figure class="display"><img><img></figure></code></pre>
+							</figcaption>
 						</figure>
-						<p>Use the following code:
-							<pre><code><figure class="display"><img><img></figure></code></pre>
-						</p>
 					</div>
 				</div>
 			</section>
+
+			<!-- Slide with image -->
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h4>Figure class=display</h4>
+
+						<div class="images">
+							<img src="./assets/herdata/puzzle.PNG" alt="reproduce" style='border: 0px; height:400px; box-shadow: none;'>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
 
 			<!-- Slide with code only -->
 			<section class=" color--code">
@@ -501,7 +519,7 @@
 			</section>
 
 
-			<section id="end" class="color--dark">
+			<section id="end" class="end color--dark">
 				<div class="grid-wrapper">
 					<div class="content">
 						<a href="https://twitter.com/ixek"><i class="fab fa-twitter-square"></i>
