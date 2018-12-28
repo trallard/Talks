@@ -55,35 +55,131 @@ Presentation title
     grid-column-gap: 5vmin;
 }
 
-// logo on the top left corner
-.reveal .slides section.title .logo {
-    background-image: url($logo-path);
-    height: 6.5vmin;
-    width: 6.5vmin;
+// ensure the content is centered
+.reveal .slides section.title .content {
+    align-self: center;
+    grid-area: content;
 }
 
-// larger version of the logo TODO
-.reveal .slides section.title .logo--full {
-    background-image: url($logo-path);
-    width: 24vmin;
+// Main slide title
+.reveal .slides section.title h1 {
+    color: $white;
 }
 
-// hellosoda logo
-.reveal .slides section.title .logo--soda {
-    background-image: url(#{$assets-path}/logos/Hex_logo.png);
-    width: 24vmin;
+//  Credit: the author
+.reveal .slides section.title .credit {
+    align-self: end;
+    grid-area: credit;
+    line-height: 1.8em;
 }
 
-// full hellosoda logo
-.reveal .slides section.title .logo--sodafull {
-    background-image: url("../assets/logos/HS.png");
-    width: 24vmin;
+// author line separation
+.reveal .slides section.title .credit hr {
+    border: solid #EEEDEF;
+    border-width: 2px 0 0 0;
+    margin: 0 0 .8em 0;
+    width: 35%;
 }
 
-// pyladies logo
-.reveal .slides section.title .logo--pyladies {
-    background-image: url("../assets/logos/pyladies-nwuk-nocompass-darkpink.svg");
-    width: 24vmin;
+// Label to introduce the author
+.reveal .slides section.title .credit .label {
+    font-size: 60%;
+    text-transform: uppercase;
+}
+
+// name in the credit
+.reveal .slides section.title .credit .name {
+    font-weight: bold;
+}
+
+// Add url to the intro slide header 
+.slides .title .presentation-url {
+    grid-area: header2;
+    font-size: 1em;
+    align-self: center;
+    opacity: 0.5;
+}
+
+/******************************************
+* Subsection: used to introduce a topic
+******************************************/
+
+// Subsection slide: header with content and description
+// similar to the main section grid areas
+.reveal .slides section.subsection .grid-wrapper {
+    grid-template-areas: ". header . " ". title ." ". description .";
+    grid-template-rows: 5.5vmin 3fr 1fr;
+}
+
+// Subsection title
+.reveal .slides section.subsection h1 {
+    align-self: center;
+    grid-area: title;
+    margin: 0;
+}
+
+// Subsection description
+.reveal .slides section.subsection .description {
+    color: #9292A8;
+    grid-area: description;
+    min-height: 4em;
+}
+
+// For midnight color subsection
+.reveal .slides section.subsection.color--midnight .description,
+.reveal .slides section.subsection.color--ice .description,
+.reveal .slides section.subsection.color--vibrant .description {
+    color: #EEEDEF;
+}
+
+/*********************************************
+*  FULL QUOTE SLIDES
+*********************************************/
+
+// Quotes
+.reveal .slides section.quote blockquote {
+    align-self: center;
+    background: none;
+    color: #2A2A49;
+    border: none;
+    box-shadow: none;
+    font-size: 2em;
+    font-style: normal;
+    margin: 0;
+    max-width: 42ex;
+    padding: 0;
+    width: 100%;
+}
+
+// line separating the quote and the author
+.reveal .slides section.quote hr {
+    border: solid #9292A8;
+    border-width: 1px 0 0 0;
+    margin: .8em 0;
+    width: 15%;
+}
+
+// author
+.reveal .slides section.quote cite {
+    color: #9292A8;
+    display: block;
+    font-size: 1rem;
+}
+
+// Quotes in dark coloured slides
+.reveal .slides section.quote.color--midnight blockquote,
+.reveal .slides section.quote.color--ice blockquote {
+    color: #FFFFFF;
+}
+
+.reveal .slides section.quote.color--midnight hr,
+.reveal .slides section.quote.color--ice hr {
+    border-color: #EEEDEF;
+}
+
+.reveal .slides section.quote.color--midnight cite,
+.reveal .slides section.quote.color--ice cite {
+    color: #EEEDEF;
 }
 
 /************ 
@@ -131,13 +227,9 @@ All code slide
     }
 }
 
-.reveal .slides section.color--violet .logo {
-    background-image: url("../assets/Tania_logo.png");
-}
-
 // Soda slide
 .reveal .slides section.color--soda .logo {
-    background-image: url("../assets/logos/Hex_Logo.png");
+    background-image: url(#{$assets-path}/logos/Hex_Logo.png);
     width: 24vmin;
 }
 
@@ -148,7 +240,7 @@ All code slide
 
 // Soda dark
 .reveal .slides section.color--sodadark .logo {
-    background-image: url("../assets/logos/Hex_Logo.png");
+    background-image: url(#{$assets-path}/logos/Hex_Logo.png);
     width: 24vmin;
 }
 
@@ -165,7 +257,6 @@ All code slide
 // Light slide
 .reveal .slides section.color--light {
     background-color: $white;
-    color: #66646B;
 }
 
 // Dark navy
@@ -259,4 +350,30 @@ All code slide
     & h1 {
         color: $white;
     }
+}
+
+/*****************************
+* ENDING SLIDE
+******************************/
+
+.reveal .slides section.end {
+    height: 100vh;
+    margin: 0;
+    width: 100vw;
+}
+
+.reveal .slides section.end .logo-wrapper {
+    display: flex;
+    height: 100%;
+}
+
+.reveal .slides section.end .logo {
+    background-image: url($logo-path);
+    background-position: center;
+    background-size: contain;
+    height: auto;
+    margin: auto;
+    min-height: 200px;
+    min-width: 200px;
+    width: 33%;
 }

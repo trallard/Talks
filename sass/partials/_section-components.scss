@@ -241,3 +241,91 @@ ul.icon li {
 .reveal em {
     font-style: italic;
 }
+
+/*********************************************
+* APPLY THEMES
+*********************************************/
+
+// Use the desired patter on the background
+.reveal[class*="pattern--"] {
+    background-position: center center;
+    background-size: 133vmax auto;
+}
+
+/*********************************************
+* CSS GRID USE
+*********************************************/
+
+.grid-wrapper {
+    display: grid;
+}
+
+/************************************************
+* MODIFIED SECTIONS
+* ADDS LOGO AND SPECIFICS FOR THE THEME
+* Slides have two main areas: header and contetnt
+**************************************************/
+
+// Each slide is a section in reveal.js
+.reveal .slides section {
+    height: 100vh;
+    margin: 0;
+    width: 100vw;
+    color: $text-color;
+}
+
+// ensures we can see the background
+.reveal .slides section.stack {
+    background-color: transparent;
+}
+
+// Grid for the slides
+// Nnote that this leaves a gap on the sides to prevent content from over flowing
+// to remove delete the .
+.reveal .slides section .grid-wrapper {
+    box-sizing: border-box;
+    grid-column-gap: 5vmin; // grid-row-gap: 5vmin;
+    grid-row-gap: 2vmin;
+    grid-template-rows: 5.5vmin 1fr;
+    grid-template-columns: 1fr 90% 1fr;
+    grid-template-areas: ". header ." ". content .";
+    height: 100%;
+    padding: 10vmin;
+}
+
+// Slides header
+.reveal .slides section .header {
+    align-items: center;
+    display: flex;
+    grid-area: header;
+    padding: 5px;
+}
+
+// Logo in header
+.reveal .slides section .logo {
+    background-image: url($logo-path);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    display: inline-block;
+    grid-area: header;
+    height: 5.5vmin;
+    margin-right: 1.5vmin;
+    width: 5.5vmin;
+}
+
+// Section title in header
+.reveal .slides section .section {
+    @include themify($themes) {
+        font-family: themed('title-font');
+    }
+    text-transform: uppercase;
+    line-height: 5.5vmin;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+// Main content in slides
+.reveal .slides section .content {
+    align-self: center;
+    grid-area: content;
+}

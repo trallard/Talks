@@ -1,0 +1,147 @@
+/*********************************************
+* PATTERS USED FOR THE SLIDES BACKGROUNDS
+*********************************************/
+
+// zigzag
+.reveal.pattern--stream {
+    background-image: url(#{$patterns-path}/zigzag_purple.svg);
+    background-color: white;
+}
+
+.reveal.pattern--stream .slides section.intro {
+    @include themify($themes) {
+        background-color: themed('primary')
+    }
+}
+
+.reveal.pattern--stream .slides section.title {
+    @include themify($themes) {
+        background-color: themed('primary')
+    }
+}
+
+// Lines
+.reveal.pattern--lines {
+    background-image: url(#{$patterns-path}//lines.png);
+}
+
+.reveal.pattern--lines .slides section.intro {
+    @include themify($themes) {
+        background-color: themed('secondary')
+    }
+}
+
+.reveal.pattern--lines .slides section.title {
+    @include themify($themes) {
+        background-color: themed('secondary');
+        color: themed('primary')
+    }
+}
+
+.reveal.pattern--lines .progress {
+    @include themify($themes) {
+        background-color: themed('third')
+    }
+}
+
+// Hex
+.reveal.pattern--hex {
+    background-image: url("../assets/patterns/hex_pattern.png");
+}
+
+.reveal.pattern--hex .slides section.intro {
+    @include themify($themes) {
+        background-color: themed('secondary')
+    }
+}
+
+.reveal.pattern--hex .slides section.title {
+    @include themify($themes) {
+        background-color: themed('secondary');
+        color: themed('primary')
+    }
+}
+
+.reveal.pattern--hex .progress {
+    @include themify($themes) {
+        background-color: themed('third')
+    }
+}
+
+// Star
+.reveal.pattern--star {
+    background-image: url("../assets/patterns/star_pattern.svg");
+}
+
+.reveal.pattern--star .slides section.intro {
+    @include themify($themes) {
+        background-color: themed('secondary')
+    }
+}
+
+.reveal.pattern--star .slides section.title {
+    @include themify($themes) {
+        background-color: themed('secondary');
+        color: themed('primary')
+    }
+}
+
+.reveal.pattern--star .progress {
+    @include themify($themes) {
+        background-color: themed('third')
+    }
+}
+
+// Flowers
+.reveal.pattern--flowers {
+    background-image: url("../assets/patterns/floral_pattern.svg");
+}
+
+.reveal.pattern--flowers .slides section.intro {
+    @include themify($themes) {
+        background-color: themed('secondary');
+    }
+}
+
+.reveal.pattern--flowers .slides section.title {
+    @include themify($themes) {
+        background-color: themed('secondary');
+        color: themed('primary');
+    }
+}
+
+.reveal.pattern--flowers .progress {
+    @include themify($themes) {
+        background-color: themed('third');
+    }
+}
+
+// pupilines
+.reveal.pattern--pupilines {
+    background-image: url("../assets/patterns/pupilines.svg");
+}
+
+.reveal.pattern--pupilines .slides section.intro {
+    @include themify($themes) {
+        background-color: themed('secondary')
+    }
+}
+
+.reveal.pattern--pupilines .slides section.title {
+    @include themify($themes) {
+        background-color: themed('secondary');
+        color: themed('primary')
+    }
+}
+
+.reveal.pattern--pupilines .progress {
+    @include themify($themes) {
+        background-color: themed('secondary')
+    }
+}
+
+.reveal.pattern--pupilines .controls {
+    @include themify($themes) {
+        color: themed('secondary')
+    }
+}
