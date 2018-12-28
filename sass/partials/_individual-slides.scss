@@ -3,7 +3,93 @@
 * THESE CAN BE USED WITH ANY THEME
 *********************************************/
 
-// All code-light version
+/************ 
+Intro slide
+************/
+
+// Intro slide: this fills almost all the background
+.reveal .slides section.intro {
+    height: calc(100vh - 8vmin);
+    margin: 4vmin;
+    padding: 15px;
+    width: calc(100vw - 8vmin);
+}
+
+// Wrapper for the logo in the intro slide
+.reveal .slides section.intro .logo-wrapper {
+    display: flex;
+    height: 100%;
+}
+
+// logo that goes in the intro slide
+.reveal .slides section.intro .logo {
+    background-position: center;
+    background-size: contain;
+    height: auto;
+    margin: auto;
+    min-height: 200px;
+    min-width: 200px;
+    width: 33%; // border-radius: 50%;
+}
+
+/****************** 
+Presentation title
+******************/
+
+// Presentation title slide: this covers less than the intro slide
+.reveal .slides section.title {
+    height: calc(100vh - 8vmin);
+    margin: 4vmin;
+    width: calc(100vw - 8vmin);
+    color: $white;
+    margin-left: 14vw;
+    width: calc(100vw - 4vmin - 14vw);
+}
+
+// Grid areas for introduction title slide
+// usually contains title, presented and the event
+.reveal .slides section.title .grid-wrapper {
+    grid-template-areas: "header header2" "content content" ". credit";
+    grid-template-columns: auto 50%;
+    grid-template-rows: 6vmin 1fr auto;
+    grid-column-gap: 5vmin;
+}
+
+// logo on the top left corner
+.reveal .slides section.title .logo {
+    background-image: url($logo-path);
+    height: 6.5vmin;
+    width: 6.5vmin;
+}
+
+// larger version of the logo TODO
+.reveal .slides section.title .logo--full {
+    background-image: url($logo-path);
+    width: 24vmin;
+}
+
+// hellosoda logo
+.reveal .slides section.title .logo--soda {
+    background-image: url(#{$assets-path}/logos/Hex_logo.png);
+    width: 24vmin;
+}
+
+// full hellosoda logo
+.reveal .slides section.title .logo--sodafull {
+    background-image: url("../assets/logos/HS.png");
+    width: 24vmin;
+}
+
+// pyladies logo
+.reveal .slides section.title .logo--pyladies {
+    background-image: url("../assets/logos/pyladies-nwuk-nocompass-darkpink.svg");
+    width: 24vmin;
+}
+
+/************ 
+All code slide
+************/
+
 .reveal .slides section.color--code {
     background-color: #eeeeee;
     /* pale gray */

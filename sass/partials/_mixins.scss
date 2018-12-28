@@ -90,6 +90,15 @@ html {
     }
 }
 
+// intro slide mixin
+@media (max-width: 768px) {
+    .reveal .slides section.intro {
+        height: calc(100vh - 4vmin);
+        margin: 2vmin;
+        width: calc(100vw - 4vmin);
+    }
+}
+
 /*********************************************
 * SLIDES GRID
 *********************************************/
