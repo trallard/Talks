@@ -13,16 +13,25 @@
 | RAPIDS: A crazy little thing called reproducible science | 18 July 2018    | [https://bitsandchips.me/Talks/RAPIDS.html  ](https://bitsandchips.me/Talks/RAPIDS.html)                   |
 | PyCon UK                                                 | 16 Sep 2018     | [https://bitsandchips.me/Talks/PyConUK2018.html  ](https://bitsandchips.me/Talks/PyConUK2018.html)         |
 
-⭐⭐ I have started collating some info on the themes in the slides... I plan to add more information on how these are structured and how to properly use the slides... bare with me.
+## :unicorn: About the theme
 
-[Tania slides themes info](Themes_docs.md)
+ I have started collating some info on the themes in the slides... I plan to add more information on how these are structured and how to properly use the slides... bare with me.
+
+The themes used in these slides is a hihgly customised, opinionated theme. basically this includes:
+- highlight js themes I like
+- responsive slides and fonts
+- a number of slides elements I often use for my presentations
+- light and dark slides themes
+- a number of fonts combinations
+
+👾 More information on the fonts, themes and background patterns available can be found [here](Themes_docs.md)
 
 
-For a full demo of a light coloured slide check
+For a full demo of a light coloured slide check:
 [https://bitsandchips.me/mock_full.html](https://bitsandchips.me/mock_full.html)
 
 
   ---
-  This work is licensed under the creative Commons, meanign that this can be used, modified and remixed while granting credit to the original source (this repo).
+  This work is licensed under the creative Commons, meaning that this can be used, modified and remixed while granting credit to the original source (this repo and me, the author).
   
   <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
