@@ -622,9 +622,6 @@ has a background image and a box with the details */
 .theme-soda .social_icon {
   color: #263c80;
 }
-.theme-black .social_icon {
-  color: #BDE16B;
-}
 /*********************************************
  * GLOBAL STYLES- go over the reveal.js 
  *********************************************/
@@ -680,9 +677,6 @@ has a background image and a box with the details */
 .theme-soda ::selection {
   background: #1490e8;
 }
-.theme-black ::selection {
-  background: #ada1ce;
-}
 ::-moz-selection {
   color: #fff;
   text-shadow: none;
@@ -707,9 +701,6 @@ has a background image and a box with the details */
 }
 .theme-soda ::-moz-selection {
   background: #95d5d4;
-}
-.theme-black ::-moz-selection {
-  background: #F2E38A;
 }
 .reveal .slides {
   text-align: left;
@@ -820,16 +811,6 @@ has a background image and a box with the details */
 .theme-soda .reveal huge-font,
 .theme-soda .reveal big-font {
   color: #263c80;
-}
-.theme-black .reveal h1,
-.theme-black .reveal h2,
-.theme-black .reveal h3,
-.theme-black .reveal h4,
-.theme-black .reveal h5,
-.theme-black .reveal h6,
-.theme-black .reveal huge-font,
-.theme-black .reveal big-font {
-  color: #BDE16B;
 }
 .theme-poppins-font .reveal h1,
 .theme-poppins-font .reveal h2,
@@ -1017,11 +998,6 @@ div.images img {
   -webkit-text-decoration-color: #95d5d4;
   color: #95d5d4;
 }
-.theme-black .reveal a {
-  text-decoration-color: #F2E38A;
-  -webkit-text-decoration-color: #F2E38A;
-  color: #F2E38A;
-}
 .reveal a:hover {
   text-shadow: none;
   border: none;
@@ -1059,11 +1035,6 @@ div.images img {
 .theme-soda .reveal a:hover {
   color: #95d5d4;
   border-bottom: 2px solid #95d5d4;
-  /* I prefer a thicker line than the underline */
-}
-.theme-black .reveal a:hover {
-  color: #F2E38A;
-  border-bottom: 2px solid #F2E38A;
   /* I prefer a thicker line than the underline */
 }
 .theme-poppins-font .reveal a:hover {
@@ -1119,9 +1090,6 @@ div.images img {
 .theme-soda .reveal .roll span:after {
   background: #95d5d4;
 }
-.theme-black .reveal .roll span:after {
-  background: #F2E38A;
-}
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
@@ -1145,9 +1113,6 @@ div.images img {
 }
 .theme-soda .reveal .controls {
   color: #95d5d4;
-}
-.theme-black .reveal .controls {
-  color: #F2E38A;
 }
 .reveal .controls {
   right: 4vmin;
@@ -1187,9 +1152,6 @@ div.images img {
 .theme-soda .reveal .progress {
   color: #95d5d4;
 }
-.theme-black .reveal .progress {
-  color: #F2E38A;
-}
 .theme-streams .reveal .progress span {
   background: #747CA8;
 }
@@ -1210,9 +1172,6 @@ div.images img {
 }
 .theme-soda .reveal .progress span {
   background: #1073b9;
-}
-.theme-black .reveal .progress span {
-  background: #C687E8;
 }
 /*********************************************
 * LISTS
@@ -1254,9 +1213,6 @@ div.images img {
 .theme-soda .reveal ul.icon li::before {
   color: #1073b9;
 }
-.theme-black .reveal ul.icon li::before {
-  color: #C687E8;
-}
 .reveal ul.icon li.pinata::before {
   content: "";
 }
@@ -1280,9 +1236,6 @@ div.images img {
 }
 .theme-soda .reveal ul.icon li.pinata::before {
   color: #1073b9;
-}
-.theme-black .reveal ul.icon li.pinata::before {
-  color: #C687E8;
 }
 .reveal ul.icon li.nopal::before {
   content: "";
@@ -1308,9 +1261,6 @@ div.images img {
 .theme-soda .reveal ul.icon li.nopal::before {
   color: #1073b9;
 }
-.theme-black .reveal ul.icon li.nopal::before {
-  color: #C687E8;
-}
 .reveal ul.icon li.cactus::before {
   content: "";
 }
@@ -1335,9 +1285,6 @@ div.images img {
 .theme-soda .reveal ul.icon li.cactus::before {
   color: #1073b9;
 }
-.theme-black .reveal ul.icon li.cactus::before {
-  color: #C687E8;
-}
 .reveal ul.icon li.skull::before {
   content: "";
 }
@@ -1361,9 +1308,6 @@ div.images img {
 }
 .theme-soda .reveal ul.icon li.skull::before {
   color: #1073b9;
-}
-.theme-black .reveal ul.icon li.skull::before {
-  color: #C687E8;
 }
 /* table with no divisions and with bold purple first column */
 .reveal table th {
@@ -1426,9 +1370,6 @@ div.images img {
 .theme-soda .reveal strong-alt {
   color: #324ea7;
 }
-.theme-black .reveal strong-alt {
-  color: #d0ea95;
-}
 .reveal small {
   font-size: 0.8em;
 }
@@ -1458,9 +1399,6 @@ div.images img {
 }
 .theme-soda .reveal huge-font {
   color: #263c80;
-}
-.theme-black .reveal huge-font {
-  color: #BDE16B;
 }
 .theme-poppins-font .reveal huge-font {
   font-family: IBMPlexSerif, monospace;
@@ -1506,9 +1444,6 @@ div.images img {
 }
 .theme-soda .reveal big-font {
   color: #263c80;
-}
-.theme-black .reveal big-font {
-  color: #BDE16B;
 }
 .theme-poppins-font .reveal big-font {
   font-family: IBMPlexSerif, monospace;
@@ -1792,9 +1727,6 @@ figure.code pre + figcaption {
 .theme-soda .reveal.pattern--stream .slides section.intro {
   background-color: #263c80;
 }
-.theme-black .reveal.pattern--stream .slides section.intro {
-  background-color: #BDE16B;
-}
 .theme-streams .reveal.pattern--stream .slides section.title {
   background-color: #5F4B8B;
 }
@@ -1815,9 +1747,6 @@ figure.code pre + figcaption {
 }
 .theme-soda .reveal.pattern--stream .slides section.title {
   background-color: #263c80;
-}
-.theme-black .reveal.pattern--stream .slides section.title {
-  background-color: #BDE16B;
 }
 .reveal.pattern--lines {
   background-image: url(../assets/patterns///lines.png);
@@ -1843,9 +1772,6 @@ figure.code pre + figcaption {
 }
 .theme-soda .reveal.pattern--lines .slides section.intro {
   background-color: #1073b9;
-}
-.theme-black .reveal.pattern--lines .slides section.intro {
-  background-color: #C687E8;
 }
 .theme-streams .reveal.pattern--lines .slides section.title {
   background-color: #747CA8;
@@ -1875,10 +1801,6 @@ figure.code pre + figcaption {
   background-color: #1073b9;
   color: #263c80;
 }
-.theme-black .reveal.pattern--lines .slides section.title {
-  background-color: #C687E8;
-  color: #BDE16B;
-}
 .theme-streams .reveal.pattern--lines .progress {
   background-color: #3388A6;
 }
@@ -1899,9 +1821,6 @@ figure.code pre + figcaption {
 }
 .theme-soda .reveal.pattern--lines .progress {
   background-color: #95d5d4;
-}
-.theme-black .reveal.pattern--lines .progress {
-  background-color: #F2E38A;
 }
 .reveal.pattern--hex {
   background-image: url("../assets/patterns/hex_pattern.png");
@@ -1927,9 +1846,6 @@ figure.code pre + figcaption {
 }
 .theme-soda .reveal.pattern--hex .slides section.intro {
   background-color: #1073b9;
-}
-.theme-black .reveal.pattern--hex .slides section.intro {
-  background-color: #C687E8;
 }
 .theme-streams .reveal.pattern--hex .slides section.title {
   background-color: #747CA8;
@@ -1959,10 +1875,6 @@ figure.code pre + figcaption {
   background-color: #1073b9;
   color: #263c80;
 }
-.theme-black .reveal.pattern--hex .slides section.title {
-  background-color: #C687E8;
-  color: #BDE16B;
-}
 .theme-streams .reveal.pattern--hex .progress {
   background-color: #3388A6;
 }
@@ -1983,9 +1895,6 @@ figure.code pre + figcaption {
 }
 .theme-soda .reveal.pattern--hex .progress {
   background-color: #95d5d4;
-}
-.theme-black .reveal.pattern--hex .progress {
-  background-color: #F2E38A;
 }
 .reveal.pattern--star {
   background-image: url("../assets/patterns/star_pattern.svg");
@@ -2011,9 +1920,6 @@ figure.code pre + figcaption {
 }
 .theme-soda .reveal.pattern--star .slides section.intro {
   background-color: #1073b9;
-}
-.theme-black .reveal.pattern--star .slides section.intro {
-  background-color: #C687E8;
 }
 .theme-streams .reveal.pattern--star .slides section.title {
   background-color: #747CA8;
@@ -2043,10 +1949,6 @@ figure.code pre + figcaption {
   background-color: #1073b9;
   color: #263c80;
 }
-.theme-black .reveal.pattern--star .slides section.title {
-  background-color: #C687E8;
-  color: #BDE16B;
-}
 .theme-streams .reveal.pattern--star .progress {
   background-color: #3388A6;
 }
@@ -2067,9 +1969,6 @@ figure.code pre + figcaption {
 }
 .theme-soda .reveal.pattern--star .progress {
   background-color: #95d5d4;
-}
-.theme-black .reveal.pattern--star .progress {
-  background-color: #F2E38A;
 }
 .reveal.pattern--pupilines {
   background-image: url("../assets/patterns/pupilines.svg");
@@ -2095,9 +1994,6 @@ figure.code pre + figcaption {
 }
 .theme-soda .reveal.pattern--pupilines .slides section.intro {
   background-color: #1073b9;
-}
-.theme-black .reveal.pattern--pupilines .slides section.intro {
-  background-color: #C687E8;
 }
 .theme-streams .reveal.pattern--pupilines .slides section.title {
   background-color: #747CA8;
@@ -2127,10 +2023,6 @@ figure.code pre + figcaption {
   background-color: #1073b9;
   color: #263c80;
 }
-.theme-black .reveal.pattern--pupilines .slides section.title {
-  background-color: #C687E8;
-  color: #BDE16B;
-}
 .theme-streams .reveal.pattern--pupilines .progress {
   background-color: #747CA8;
 }
@@ -2152,9 +2044,6 @@ figure.code pre + figcaption {
 .theme-soda .reveal.pattern--pupilines .progress {
   background-color: #1073b9;
 }
-.theme-black .reveal.pattern--pupilines .progress {
-  background-color: #C687E8;
-}
 .theme-streams .reveal.pattern--pupilines .controls {
   color: #747CA8;
 }
@@ -2175,9 +2064,6 @@ figure.code pre + figcaption {
 }
 .theme-soda .reveal.pattern--pupilines .controls {
   color: #1073b9;
-}
-.theme-black .reveal.pattern--pupilines .controls {
-  color: #C687E8;
 }
 .reveal.pattern--space1 {
   background-image: url("../assets/patterns/space2.png");
@@ -2203,9 +2089,6 @@ figure.code pre + figcaption {
 }
 .theme-soda .reveal.pattern--space1 .slides section.intro {
   background-color: #1073b9;
-}
-.theme-black .reveal.pattern--space1 .slides section.intro {
-  background-color: #C687E8;
 }
 .theme-streams .reveal.pattern--space1 .slides section.title {
   background-color: #747CA8;
@@ -2235,10 +2118,6 @@ figure.code pre + figcaption {
   background-color: #1073b9;
   color: #263c80;
 }
-.theme-black .reveal.pattern--space1 .slides section.title {
-  background-color: #C687E8;
-  color: #BDE16B;
-}
 .reveal.pattern--space1 {
   background-image: url("../assets/patterns/space3.png");
 }
@@ -2263,9 +2142,6 @@ figure.code pre + figcaption {
 }
 .theme-soda .reveal.pattern--space1 .slides section.intro {
   background-color: #263c80;
-}
-.theme-black .reveal.pattern--space1 .slides section.intro {
-  background-color: #BDE16B;
 }
 .theme-streams .reveal.pattern--space1 .slides section.title {
   background-color: #5F4B8B;
@@ -2295,10 +2171,6 @@ figure.code pre + figcaption {
   background-color: #263c80;
   color: #1073b9;
 }
-.theme-black .reveal.pattern--space1 .slides section.title {
-  background-color: #BDE16B;
-  color: #C687E8;
-}
 .reveal.pattern--fox {
   background-image: url("../assets/patterns/fox.png");
 }
@@ -2323,9 +2195,6 @@ figure.code pre + figcaption {
 }
 .theme-soda .reveal.pattern--fox .slides section.intro {
   background-color: #263c80;
-}
-.theme-black .reveal.pattern--fox .slides section.intro {
-  background-color: #BDE16B;
 }
 .theme-streams .reveal.pattern--fox .slides section.title {
   background-color: #5F4B8B;
@@ -2354,10 +2223,6 @@ figure.code pre + figcaption {
 .theme-soda .reveal.pattern--fox .slides section.title {
   background-color: #263c80;
   color: #1073b9;
-}
-.theme-black .reveal.pattern--fox .slides section.title {
-  background-color: #BDE16B;
-  color: #C687E8;
 }
 /***********************
 * VARIABLES FOR LIGHT-THEME
