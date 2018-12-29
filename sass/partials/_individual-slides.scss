@@ -441,7 +441,7 @@ Slide containing information about the presenter
 has a background image and a box with the details */
 
 #about {
-    background-image: url(#{$assets-path}/code2.jpg);
+    background-image: url($about-img);
     background-size: cover;
     background-position: center center;
     a {

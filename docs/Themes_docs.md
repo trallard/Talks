@@ -21,12 +21,12 @@ You will notice that inside the `<head>` class of the `html` files I add the fol
 These are the stylesheets needed for the slides, depending on the colour schemes you want you should use the `href="css/light_theme.css"` or the `href="css/dark_theme.css"`.
 
 
-The syntax highlight style is defined as:
+The syntax highlighting style is defined as:
 ```html
 <!-- Theme used for syntax highlighting of code -->
 <link rel="stylesheet" href="css/google_syntax.css">
 ```
-I use a number of styles, all which come from [highlight.js](https://highlightjs.org/)
+I use a number of styles depending on what I want to achieve, all which come from [highlight.js](https://highlightjs.org/)
 
 ### Parts forming the themes
 I have written the styles in such a way that you can choose a colour palette, background pattern, and font combinations independently. To do so you need to specify the appropriate values within the html as:
@@ -42,14 +42,14 @@ I have written the styles in such a way that you can choose a colour palette, ba
 	<div class="reveal pattern--lines">
 ```
 
-### Themes combinations
+### Sample themes combinations
 
 ```
 <body class="theme-lines theme-dosis-font">
-<div class="reveal pattern--lines">
+<div class="reveal pattern--fox">
 ```
 
-![](assets/docs/lines_theme.png)
+![](./images/lines_theme.png)
 
 
 ```
@@ -57,7 +57,7 @@ I have written the styles in such a way that you can choose a colour palette, ba
 <div class="reveal pattern--stream">
 ```
 
-![](assets/docs/streams.png)
+![](./images/streams.png)
 
 
 ```

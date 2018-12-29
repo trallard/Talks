@@ -2,7 +2,8 @@
 /*
 * Tania's theme for Reveal.js, this is a highly customised very opinionated
 * theme originated from the many many hours I have spent customising 
-* my themes
+* my themes. 
+* This allows you to use the light colour themes
  */
 /*********************************************
  * VARIOUS IMPORTS
@@ -559,7 +560,7 @@ black box with white text (ideal for presentation sections) */
 Slide containing information about the presenter
 has a background image and a box with the details */
 #about {
-  background-image: url(../assets/code2.jpg);
+  background-image: url("../assets/code2.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -2238,4 +2239,4 @@ figure.code pre + figcaption {
   background-color: white;
 }
 
-/*# sourceMappingURL=full_theme.css.map */
+/*# sourceMappingURL=light_theme.css.map */
