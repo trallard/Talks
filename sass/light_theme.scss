@@ -9,16 +9,6 @@
  * VARIOUS IMPORTS
  *********************************************/
 
-// import fonts 
-@import url(../../reveal.js/lib/font/source-sans-pro/source-sans-pro.css);
-@import url(../../reveal.js/lib/font/poppins/poppins.css);
-@import url(../../reveal.js/lib/font/leafy/leafy.css);
-// Google fonts imports here
-@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Dosis:400,600|Overpass+Mono|PT+Mono');
-@import url('https://fonts.googleapis.com/css?family=Muli:400,700|Space+Mono:400,700');
-@import url('https://fonts.googleapis.com/css?family=Nunito|Open+Sans|Annie+Use+Your+Telescope');
-// custom icons
-@import url(../../assets/icons_collection/font/flaticon.css);
 /* partials */
 
 // colour variables
@@ -33,6 +23,8 @@
 @import "partials/section-components";
 // patterns
 @import "partials/patterns";
+// fonts
+@import "partials/fonts";
 /***********************
 * VARIABLES FOR LIGHT-THEME
 ************************/

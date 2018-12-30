@@ -8,13 +8,6 @@
 /*********************************************
  * VARIOUS IMPORTS
  *********************************************/
-@import url(../../reveal.js/lib/font/source-sans-pro/source-sans-pro.css);
-@import url(../../reveal.js/lib/font/poppins/poppins.css);
-@import url(../../reveal.js/lib/font/leafy/leafy.css);
-@import url("https://fonts.googleapis.com/css?family=Didact+Gothic|Dosis:400,600|Overpass+Mono|PT+Mono");
-@import url("https://fonts.googleapis.com/css?family=Muli:400,700|Space+Mono:400,700");
-@import url("https://fonts.googleapis.com/css?family=Nunito|Open+Sans|Annie+Use+Your+Telescope");
-@import url(../../assets/icons_collection/font/flaticon.css);
 /* partials */
 /*********************************************
 * PERSONAL VARIABLES
@@ -24,6 +17,12 @@
 /* fonts*/
 /* urls and paths */
 /* logos*/
+@import url(../../reveal.js/lib/font/source-sans-pro/source-sans-pro.css);
+@import url("https://fonts.googleapis.com/css?family=Didact+Gothic|Dosis:400,600|Overpass+Mono|PT+Mono");
+@import url("https://fonts.googleapis.com/css?family=Muli:400,700|Space+Mono:400,700");
+@import url("https://fonts.googleapis.com/css?family=Nunito|Open+Sans|Annie+Use+Your+Telescope");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+@import url(../../assets/icons_collection/font/flaticon.css);
 .reveal .slides section.title .logo--full {
   background-image: url("../assets/personal/Purple.png");
   width: 24vmin;
@@ -425,6 +424,9 @@ All code slide
 .theme-poppins-font .items-block {
   font-family: Poppins, Helvetica, sans-serif;
 }
+.theme-cunia-font .items-block {
+  font-family: Coves, Helvetica, sans-serif;
+}
 .theme-plex-font .items-block {
   font-family: IBMPlexSans, sans-serif;
 }
@@ -634,6 +636,9 @@ has a background image and a box with the details */
 .theme-poppins-font .reveal {
   font-family: Poppins, Helvetica, sans-serif;
 }
+.theme-cunia-font .reveal {
+  font-family: Coves, Helvetica, sans-serif;
+}
 .theme-plex-font .reveal {
   font-family: IBMPlexSans, sans-serif;
 }
@@ -822,6 +827,16 @@ has a background image and a box with the details */
 .theme-poppins-font .reveal huge-font,
 .theme-poppins-font .reveal big-font {
   font-family: IBMPlexSerif, monospace;
+}
+.theme-cunia-font .reveal h1,
+.theme-cunia-font .reveal h2,
+.theme-cunia-font .reveal h3,
+.theme-cunia-font .reveal h4,
+.theme-cunia-font .reveal h5,
+.theme-cunia-font .reveal h6,
+.theme-cunia-font .reveal huge-font,
+.theme-cunia-font .reveal big-font {
+  font-family: Cunia, sans-serif;
 }
 .theme-plex-font .reveal h1,
 .theme-plex-font .reveal h2,
@@ -1039,6 +1054,10 @@ div.images img {
   /* I prefer a thicker line than the underline */
 }
 .theme-poppins-font .reveal a:hover {
+  border-bottom: 2px solid;
+  /* I prefer a thicker line than the underline */
+}
+.theme-cunia-font .reveal a:hover {
   border-bottom: 2px solid;
   /* I prefer a thicker line than the underline */
 }
@@ -1404,6 +1423,9 @@ div.images img {
 .theme-poppins-font .reveal huge-font {
   font-family: IBMPlexSerif, monospace;
 }
+.theme-cunia-font .reveal huge-font {
+  font-family: Cunia, sans-serif;
+}
 .theme-plex-font .reveal huge-font {
   font-family: IBMPlexSerif, monospace;
 }
@@ -1448,6 +1470,9 @@ div.images img {
 }
 .theme-poppins-font .reveal big-font {
   font-family: IBMPlexSerif, monospace;
+}
+.theme-cunia-font .reveal big-font {
+  font-family: Cunia, sans-serif;
 }
 .theme-plex-font .reveal big-font {
   font-family: IBMPlexSerif, monospace;
@@ -1674,6 +1699,9 @@ figure.code pre + figcaption {
 }
 .theme-poppins-font .reveal .slides section .section {
   font-family: IBMPlexSerif, monospace;
+}
+.theme-cunia-font .reveal .slides section .section {
+  font-family: Cunia, sans-serif;
 }
 .theme-plex-font .reveal .slides section .section {
   font-family: IBMPlexSerif, monospace;
@@ -2066,109 +2094,134 @@ figure.code pre + figcaption {
 .theme-soda .reveal.pattern--pupilines .controls {
   color: #1073b9;
 }
-.reveal.pattern--space1 {
+.reveal.pattern--space2 {
   background-image: url("../assets/patterns/space2.png");
 }
 
-.theme-streams .reveal.pattern--space1 .slides section.intro {
+.theme-streams .reveal.pattern--space2 .slides section.intro {
   background-color: #747CA8;
 }
-.theme-lines .reveal.pattern--space1 .slides section.intro {
+.theme-lines .reveal.pattern--space2 .slides section.intro {
   background-color: #00BCD4;
 }
-.theme-seacalm .reveal.pattern--space1 .slides section.intro {
+.theme-seacalm .reveal.pattern--space2 .slides section.intro {
   background-color: #EDAF49;
 }
-.theme-goldilocks .reveal.pattern--space1 .slides section.intro {
+.theme-goldilocks .reveal.pattern--space2 .slides section.intro {
   background-color: #EDAF49;
 }
-.theme-duotone .reveal.pattern--space1 .slides section.intro {
+.theme-duotone .reveal.pattern--space2 .slides section.intro {
   background-color: #736FBA;
 }
-.theme-jewels .reveal.pattern--space1 .slides section.intro {
+.theme-jewels .reveal.pattern--space2 .slides section.intro {
   background-color: #79C9E8;
 }
-.theme-soda .reveal.pattern--space1 .slides section.intro {
+.theme-soda .reveal.pattern--space2 .slides section.intro {
   background-color: #1073b9;
 }
-.theme-streams .reveal.pattern--space1 .slides section.title {
+.theme-streams .reveal.pattern--space2 .slides section.title {
   background-color: #747CA8;
   color: #5F4B8B;
 }
-.theme-lines .reveal.pattern--space1 .slides section.title {
+.theme-lines .reveal.pattern--space2 .slides section.title {
   background-color: #00BCD4;
   color: #3A015C;
 }
-.theme-seacalm .reveal.pattern--space1 .slides section.title {
+.theme-seacalm .reveal.pattern--space2 .slides section.title {
   background-color: #EDAF49;
   color: #30638B;
 }
-.theme-goldilocks .reveal.pattern--space1 .slides section.title {
+.theme-goldilocks .reveal.pattern--space2 .slides section.title {
   background-color: #EDAF49;
   color: #30638B;
 }
-.theme-duotone .reveal.pattern--space1 .slides section.title {
+.theme-duotone .reveal.pattern--space2 .slides section.title {
   background-color: #736FBA;
   color: #CC144B;
 }
-.theme-jewels .reveal.pattern--space1 .slides section.title {
+.theme-jewels .reveal.pattern--space2 .slides section.title {
   background-color: #79C9E8;
   color: #4A235D;
 }
-.theme-soda .reveal.pattern--space1 .slides section.title {
+.theme-soda .reveal.pattern--space2 .slides section.title {
   background-color: #1073b9;
   color: #263c80;
 }
-.reveal.pattern--space1 {
+.reveal.pattern--space3 {
   background-image: url("../assets/patterns/space3.png");
 }
 
-.theme-streams .reveal.pattern--space1 .slides section.intro {
+.theme-streams .reveal.pattern--space3 .slides section.intro {
   background-color: #5F4B8B;
 }
-.theme-lines .reveal.pattern--space1 .slides section.intro {
+.theme-lines .reveal.pattern--space3 .slides section.intro {
   background-color: #3A015C;
 }
-.theme-seacalm .reveal.pattern--space1 .slides section.intro {
+.theme-seacalm .reveal.pattern--space3 .slides section.intro {
   background-color: #30638B;
 }
-.theme-goldilocks .reveal.pattern--space1 .slides section.intro {
+.theme-goldilocks .reveal.pattern--space3 .slides section.intro {
   background-color: #30638B;
 }
-.theme-duotone .reveal.pattern--space1 .slides section.intro {
+.theme-duotone .reveal.pattern--space3 .slides section.intro {
   background-color: #CC144B;
 }
-.theme-jewels .reveal.pattern--space1 .slides section.intro {
+.theme-jewels .reveal.pattern--space3 .slides section.intro {
   background-color: #4A235D;
 }
-.theme-soda .reveal.pattern--space1 .slides section.intro {
+.theme-soda .reveal.pattern--space3 .slides section.intro {
   background-color: #263c80;
 }
-.theme-streams .reveal.pattern--space1 .slides section.title {
+.reveal.pattern--trooper {
+  background-image: url("../assets/patterns/trooper.jpg");
+}
+
+.theme-streams .reveal.pattern--trooper .slides section.intro {
+  background-color: #5F4B8B;
+}
+.theme-lines .reveal.pattern--trooper .slides section.intro {
+  background-color: #3A015C;
+}
+.theme-seacalm .reveal.pattern--trooper .slides section.intro {
+  background-color: #30638B;
+}
+.theme-goldilocks .reveal.pattern--trooper .slides section.intro {
+  background-color: #30638B;
+}
+.theme-duotone .reveal.pattern--trooper .slides section.intro {
+  background-color: #CC144B;
+}
+.theme-jewels .reveal.pattern--trooper .slides section.intro {
+  background-color: #4A235D;
+}
+.theme-soda .reveal.pattern--trooper .slides section.intro {
+  background-color: #263c80;
+}
+.theme-streams .reveal.pattern--trooper .slides section.title {
   background-color: #5F4B8B;
   color: #747CA8;
 }
-.theme-lines .reveal.pattern--space1 .slides section.title {
+.theme-lines .reveal.pattern--trooper .slides section.title {
   background-color: #3A015C;
   color: #00BCD4;
 }
-.theme-seacalm .reveal.pattern--space1 .slides section.title {
+.theme-seacalm .reveal.pattern--trooper .slides section.title {
   background-color: #30638B;
   color: #EDAF49;
 }
-.theme-goldilocks .reveal.pattern--space1 .slides section.title {
+.theme-goldilocks .reveal.pattern--trooper .slides section.title {
   background-color: #30638B;
   color: #EDAF49;
 }
-.theme-duotone .reveal.pattern--space1 .slides section.title {
+.theme-duotone .reveal.pattern--trooper .slides section.title {
   background-color: #CC144B;
   color: #736FBA;
 }
-.theme-jewels .reveal.pattern--space1 .slides section.title {
+.theme-jewels .reveal.pattern--trooper .slides section.title {
   background-color: #4A235D;
   color: #79C9E8;
 }
-.theme-soda .reveal.pattern--space1 .slides section.title {
+.theme-soda .reveal.pattern--trooper .slides section.title {
   background-color: #263c80;
   color: #1073b9;
 }
@@ -2224,6 +2277,30 @@ figure.code pre + figcaption {
 .theme-soda .reveal.pattern--fox .slides section.title {
   background-color: #263c80;
   color: #1073b9;
+}
+/*********************************************
+ * IMPORT FONTS
+ *********************************************/
+@font-face {
+  font-family: "Leafy";
+  src: url("../../fonts/leafy/leafy.woff") format("woff");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cunia";
+  src: url("../../fonts/Cunia.woff") format("woff");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("poppins-light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Coves";
+  src: url("../../fonts/Coves.woff") format("woff");
+  font-style: normal;
 }
 /***********************
 * VARIABLES FOR LIGHT-THEME

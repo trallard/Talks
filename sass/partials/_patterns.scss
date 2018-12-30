@@ -122,43 +122,54 @@
     }
 }
 
-// space1
-.reveal.pattern--space1 {
+// space2
+.reveal.pattern--space2 {
     background-image: url("../assets/patterns/space2.png");
 }
 
-.reveal.pattern--space1 .slides section.intro {
+.reveal.pattern--space2 .slides section.intro {
     @include themify($themes) {
         background-color: themed('secondary')
     }
 }
 
-.reveal.pattern--space1 .slides section.title {
+.reveal.pattern--space2 .slides section.title {
     @include themify($themes) {
         background-color: themed('secondary');
         color: themed('primary')
     }
 }
 
-// space1
-.reveal.pattern--space1 {
+// space3
+.reveal.pattern--space3 {
     background-image: url("../assets/patterns/space3.png");
 }
 
-.reveal.pattern--space1 .slides section.intro {
+.reveal.pattern--space3 .slides section.intro {
     @include themify($themes) {
         background-color: themed('primary')
     }
 }
 
-.reveal.pattern--space1 .slides section.title {
+// trooper
+.reveal.pattern--trooper {
+    background-image: url("../assets/patterns/trooper.jpg");
+}
+
+.reveal.pattern--trooper .slides section.intro {
+    @include themify($themes) {
+        background-color: themed('primary')
+    }
+}
+
+.reveal.pattern--trooper .slides section.title {
     @include themify($themes) {
         background-color: themed('primary');
         color: themed('secondary')
     }
 }
 
-// space1
+// fox
 .reveal.pattern--fox {
     background-image: url("../assets/patterns/fox.png");
 }

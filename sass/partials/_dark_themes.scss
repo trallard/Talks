@@ -22,7 +22,21 @@ $themes: (
 'black':( 'primary': #BDE16B, // green*/
 'secondary': #C687E8, // lilac*/
 'third': #F2E38A, // yellow*/
-'primary-light':lighten(#BDE16B, 10%), 'secondary-light' :lighten(#9080bc, 10%), ),
+'primary-light':lighten(#BDE16B, 10%), 'secondary-light' :lighten(#9080bc, 10%),
+/* candy */
+
+'candy':( 'primary': #bd3563, //cherry
+'secondary': #d3b71f, //yellow
+'third': #dbc486, //yellow
+'primary-light':lighten(#bd3563, 10%), 'secondary-light' :lighten(#3d3e4d, 10%), // 'dark-col': #3d3e4d,
+'dark-col': #211a38, ),
+/* skeletor */
+
+'skeletor':( 'primary': #f0bb5a, //ronchi
+'secondary': #987cb0, //lavender
+'third': #3de8eb, //picton blue
+'primary-light':lighten(#f0bb5a, 10%), 'secondary-light' :lighten(#987cb0, 10%), 'dark-col': #21122c, // revolver
+),
 /* The following are font themes */
 
 /* poppins*/

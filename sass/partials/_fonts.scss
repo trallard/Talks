@@ -1,0 +1,39 @@
+/*********************************************
+ * IMPORT FONTS
+ *********************************************/
+
+// import fonts 
+@import url(../../reveal.js/lib/font/source-sans-pro/source-sans-pro.css);
+// Google fonts imports here
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Dosis:400,600|Overpass+Mono|PT+Mono');
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700|Space+Mono:400,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito|Open+Sans|Annie+Use+Your+Telescope');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+//icons used for the bullet lists
+@import url(../../assets/icons_collection/font/flaticon.css);
+// add fonts
+@font-face {
+    font-family: 'Leafy';
+    src: url('../../fonts/leafy/leafy.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cunia';
+    src: url('../../fonts/Cunia.woff') format('woff');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Cunia';
+    src: url('../../fonts/Cunia_bold.woff') format('woff');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Coves';
+    src: url('../../fonts/Coves.woff') format('woff');
+    font-style: normal;
+}
