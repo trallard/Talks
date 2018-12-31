@@ -11,10 +11,10 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 //icons used for the bullet lists
 @import url(../../assets/icons_collection/font/flaticon.css);
-// add fonts
+// local fonts
 @font-face {
     font-family: 'Leafy';
-    src: url('../../fonts/leafy/leafy.woff') format('woff');
+    src: url('../../fonts/leafy.woff') format('woff');
     font-style: normal;
 }
 
@@ -22,12 +22,11 @@
     font-family: 'Cunia';
     src: url('../../fonts/Cunia.woff') format('woff');
     font-style: normal;
-    font-weight: 300;
 }
 
 @font-face {
-    font-family: 'Cunia';
-    src: url('../../fonts/Cunia_bold.woff') format('woff');
+    font-family: 'Coves';
+    src: url('../../fonts/Coves_Bold.woff') format('woff');
     font-style: normal;
     font-weight: 500;
 }
@@ -35,5 +34,24 @@
 @font-face {
     font-family: 'Coves';
     src: url('../../fonts/Coves.woff') format('woff');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'NeoNeon';
+    src: url('../../fonts/Neoneon.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Klasik';
+    src: url('../../fonts/Klasik_Regular.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Klasik-Rough';
+    src: url('../../fonts/Klasik_Rough.woff') format('woff');
     font-style: normal;
 }
