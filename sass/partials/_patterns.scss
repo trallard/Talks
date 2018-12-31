@@ -122,6 +122,24 @@
     }
 }
 
+// bwlines
+.reveal.pattern--bwlines {
+    background-image: url("../assets/patterns/bwlines.svg");
+}
+
+.reveal.pattern--bwlines .slides section.intro {
+    @include themify($themes) {
+        background-color: themed('secondary')
+    }
+}
+
+.reveal.pattern--bwlines .slides section.title {
+    @include themify($themes) {
+        background-color: themed('secondary');
+        color: themed('primary')
+    }
+}
+
 // space2
 .reveal.pattern--space2 {
     background-image: url("../assets/patterns/space2.png");

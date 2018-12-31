@@ -441,9 +441,7 @@ div {
     padding: 3px 7px;
     border-radius: 3px;
     font-size: 1.2em;
-}
-
-// This gives a code within a figure element... will change in the future as this
+} // This gives a code within a figure element... will change in the future as this
 // is a hack copied from somewhere else and I am not happy with the way it works
 // but it allows to add captions
 figure.code {
@@ -506,14 +504,10 @@ figure.code {
     margin: 0;
     width: 100vw;
     color: $text-color;
-}
-
-// ensures we can see the background
+} // ensures we can see the background
 .reveal .slides section.stack {
     background-color: transparent !important;
-}
-
-// Grid for the slides
+} // Grid for the slides
 // Nnote that this leaves a gap on the sides to prevent content from over flowing
 // to remove delete the .
 .reveal .slides section .grid-wrapper {
@@ -525,9 +519,7 @@ figure.code {
     grid-template-areas: ". header ." ". content .";
     height: 100%;
     padding: 10vmin;
-}
-
-// Slides header
+} // Slides header
 .reveal .slides section .header {
     align-items: center;
     display: flex;
@@ -551,9 +543,7 @@ figure.code {
         color: #5f6c7a;
         /*slate grey*/
     }
-}
-
-// Logo in header
+} // Logo in header
 .reveal .slides section .logo {
     background-image: url($logo-path);
     background-repeat: no-repeat;
@@ -563,9 +553,7 @@ figure.code {
     height: 5.5vmin;
     margin-right: 1.5vmin;
     width: 5.5vmin;
-}
-
-// Section title in header
+} // Section title in header
 .reveal .slides section .section {
     @include themify($themes) {
         font-family: themed('title-font');
@@ -574,9 +562,7 @@ figure.code {
     line-height: 5.5vmin;
     font-size: 0.8em;
     font-weight: 500;
-}
-
-// Main content in slides
+} // Main content in slides
 .reveal .slides section .content {
     align-self: center;
     grid-area: content;

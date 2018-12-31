@@ -607,26 +607,26 @@ has a background image and a box with the details */
 .social_icon {
   padding-right: 10px;
 }
-.theme-streams .social_icon {
-  color: #5F4B8B;
+.theme-sedona .social_icon {
+  color: #802bb1;
 }
-.theme-lines .social_icon {
-  color: #3A015C;
+.theme-bright-blue .social_icon {
+  color: #f64c72;
 }
-.theme-seacalm .social_icon {
-  color: #30638B;
+.theme-black .social_icon {
+  color: #BDE16B;
 }
-.theme-goldilocks .social_icon {
-  color: #30638B;
+.theme-candy .social_icon {
+  color: #bd3563;
 }
-.theme-duotone .social_icon {
-  color: #CC144B;
+.theme-skeletor .social_icon {
+  color: #f0bb5a;
 }
-.theme-jewels .social_icon {
-  color: #4A235D;
+.theme-honey .social_icon {
+  color: #F2B632;
 }
-.theme-soda .social_icon {
-  color: #263c80;
+.theme-ultra .social_icon {
+  color: #E55982;
 }
 /*********************************************
  * GLOBAL STYLES- go over the reveal.js 
@@ -668,51 +668,51 @@ has a background image and a box with the details */
   color: #151515;
   text-shadow: none;
 }
-.theme-streams ::selection {
+.theme-sedona ::selection {
   background: #939abc;
 }
-.theme-lines ::selection {
-  background: #6fefde;
+.theme-bright-blue ::selection {
+  background: #f87d98;
 }
-.theme-seacalm ::selection {
-  background: #f2c377;
+.theme-black ::selection {
+  background: #ada1ce;
 }
-.theme-goldilocks ::selection {
-  background: #f2c377;
+.theme-candy ::selection {
+  background: #545569;
 }
-.theme-duotone ::selection {
-  background: #ea2963;
+.theme-skeletor ::selection {
+  background: #b19cc3;
 }
-.theme-jewels ::selection {
-  background: #ea2963;
+.theme-honey ::selection {
+  background: #cfcfd0;
 }
-.theme-soda ::selection {
-  background: #1490e8;
+.theme-ultra ::selection {
+  background: #b6a6d1;
 }
 ::-moz-selection {
   color: #fff;
   text-shadow: none;
 }
-.theme-streams ::-moz-selection {
-  background: #3388A6;
+.theme-sedona ::-moz-selection {
+  background: #d1d7e0;
 }
-.theme-lines ::-moz-selection {
-  background: #ff206e;
+.theme-bright-blue ::-moz-selection {
+  background: #99738e;
 }
-.theme-seacalm ::-moz-selection {
-  background: #00798c;
+.theme-black ::-moz-selection {
+  background: #F2E38A;
 }
-.theme-goldilocks ::-moz-selection {
-  background: #8D4593;
+.theme-candy ::-moz-selection {
+  background: #dbc486;
 }
-.theme-duotone ::-moz-selection {
-  background: #A1AAE2;
+.theme-skeletor ::-moz-selection {
+  background: #3de8eb;
 }
-.theme-jewels ::-moz-selection {
-  background: #FF0368;
+.theme-honey ::-moz-selection {
+  background: #B5B5B7;
 }
-.theme-soda ::-moz-selection {
-  background: #95d5d4;
+.theme-ultra ::-moz-selection {
+  background: #FAC668;
 }
 .reveal .slides {
   text-align: left;
@@ -754,75 +754,75 @@ has a background image and a box with the details */
   text-shadow: none;
   word-wrap: break-word;
 }
-.theme-streams .reveal h1,
-.theme-streams .reveal h2,
-.theme-streams .reveal h3,
-.theme-streams .reveal h4,
-.theme-streams .reveal h5,
-.theme-streams .reveal h6,
-.theme-streams .reveal huge-font,
-.theme-streams .reveal big-font {
-  color: #5F4B8B;
+.theme-sedona .reveal h1,
+.theme-sedona .reveal h2,
+.theme-sedona .reveal h3,
+.theme-sedona .reveal h4,
+.theme-sedona .reveal h5,
+.theme-sedona .reveal h6,
+.theme-sedona .reveal huge-font,
+.theme-sedona .reveal big-font {
+  color: #802bb1;
 }
-.theme-lines .reveal h1,
-.theme-lines .reveal h2,
-.theme-lines .reveal h3,
-.theme-lines .reveal h4,
-.theme-lines .reveal h5,
-.theme-lines .reveal h6,
-.theme-lines .reveal huge-font,
-.theme-lines .reveal big-font {
-  color: #3A015C;
+.theme-bright-blue .reveal h1,
+.theme-bright-blue .reveal h2,
+.theme-bright-blue .reveal h3,
+.theme-bright-blue .reveal h4,
+.theme-bright-blue .reveal h5,
+.theme-bright-blue .reveal h6,
+.theme-bright-blue .reveal huge-font,
+.theme-bright-blue .reveal big-font {
+  color: #f64c72;
 }
-.theme-seacalm .reveal h1,
-.theme-seacalm .reveal h2,
-.theme-seacalm .reveal h3,
-.theme-seacalm .reveal h4,
-.theme-seacalm .reveal h5,
-.theme-seacalm .reveal h6,
-.theme-seacalm .reveal huge-font,
-.theme-seacalm .reveal big-font {
-  color: #30638B;
+.theme-black .reveal h1,
+.theme-black .reveal h2,
+.theme-black .reveal h3,
+.theme-black .reveal h4,
+.theme-black .reveal h5,
+.theme-black .reveal h6,
+.theme-black .reveal huge-font,
+.theme-black .reveal big-font {
+  color: #BDE16B;
 }
-.theme-goldilocks .reveal h1,
-.theme-goldilocks .reveal h2,
-.theme-goldilocks .reveal h3,
-.theme-goldilocks .reveal h4,
-.theme-goldilocks .reveal h5,
-.theme-goldilocks .reveal h6,
-.theme-goldilocks .reveal huge-font,
-.theme-goldilocks .reveal big-font {
-  color: #30638B;
+.theme-candy .reveal h1,
+.theme-candy .reveal h2,
+.theme-candy .reveal h3,
+.theme-candy .reveal h4,
+.theme-candy .reveal h5,
+.theme-candy .reveal h6,
+.theme-candy .reveal huge-font,
+.theme-candy .reveal big-font {
+  color: #bd3563;
 }
-.theme-duotone .reveal h1,
-.theme-duotone .reveal h2,
-.theme-duotone .reveal h3,
-.theme-duotone .reveal h4,
-.theme-duotone .reveal h5,
-.theme-duotone .reveal h6,
-.theme-duotone .reveal huge-font,
-.theme-duotone .reveal big-font {
-  color: #CC144B;
+.theme-skeletor .reveal h1,
+.theme-skeletor .reveal h2,
+.theme-skeletor .reveal h3,
+.theme-skeletor .reveal h4,
+.theme-skeletor .reveal h5,
+.theme-skeletor .reveal h6,
+.theme-skeletor .reveal huge-font,
+.theme-skeletor .reveal big-font {
+  color: #f0bb5a;
 }
-.theme-jewels .reveal h1,
-.theme-jewels .reveal h2,
-.theme-jewels .reveal h3,
-.theme-jewels .reveal h4,
-.theme-jewels .reveal h5,
-.theme-jewels .reveal h6,
-.theme-jewels .reveal huge-font,
-.theme-jewels .reveal big-font {
-  color: #4A235D;
+.theme-honey .reveal h1,
+.theme-honey .reveal h2,
+.theme-honey .reveal h3,
+.theme-honey .reveal h4,
+.theme-honey .reveal h5,
+.theme-honey .reveal h6,
+.theme-honey .reveal huge-font,
+.theme-honey .reveal big-font {
+  color: #F2B632;
 }
-.theme-soda .reveal h1,
-.theme-soda .reveal h2,
-.theme-soda .reveal h3,
-.theme-soda .reveal h4,
-.theme-soda .reveal h5,
-.theme-soda .reveal h6,
-.theme-soda .reveal huge-font,
-.theme-soda .reveal big-font {
-  color: #263c80;
+.theme-ultra .reveal h1,
+.theme-ultra .reveal h2,
+.theme-ultra .reveal h3,
+.theme-ultra .reveal h4,
+.theme-ultra .reveal h5,
+.theme-ultra .reveal h6,
+.theme-ultra .reveal huge-font,
+.theme-ultra .reveal big-font {
+  color: #E55982;
 }
 .theme-poppins-font .reveal h1,
 .theme-poppins-font .reveal h2,
@@ -995,78 +995,78 @@ div.images img {
   -moz-transition: color 0.15s ease;
   transition: color 0.15s ease;
 }
-.theme-streams .reveal a {
-  text-decoration-color: #3388A6;
-  -webkit-text-decoration-color: #3388A6;
-  color: #3388A6;
+.theme-sedona .reveal a {
+  text-decoration-color: #d1d7e0;
+  -webkit-text-decoration-color: #d1d7e0;
+  color: #d1d7e0;
 }
-.theme-lines .reveal a {
-  text-decoration-color: #ff206e;
-  -webkit-text-decoration-color: #ff206e;
-  color: #ff206e;
+.theme-bright-blue .reveal a {
+  text-decoration-color: #99738e;
+  -webkit-text-decoration-color: #99738e;
+  color: #99738e;
 }
-.theme-seacalm .reveal a {
-  text-decoration-color: #00798c;
-  -webkit-text-decoration-color: #00798c;
-  color: #00798c;
+.theme-black .reveal a {
+  text-decoration-color: #F2E38A;
+  -webkit-text-decoration-color: #F2E38A;
+  color: #F2E38A;
 }
-.theme-goldilocks .reveal a {
-  text-decoration-color: #8D4593;
-  -webkit-text-decoration-color: #8D4593;
-  color: #8D4593;
+.theme-candy .reveal a {
+  text-decoration-color: #dbc486;
+  -webkit-text-decoration-color: #dbc486;
+  color: #dbc486;
 }
-.theme-duotone .reveal a {
-  text-decoration-color: #A1AAE2;
-  -webkit-text-decoration-color: #A1AAE2;
-  color: #A1AAE2;
+.theme-skeletor .reveal a {
+  text-decoration-color: #3de8eb;
+  -webkit-text-decoration-color: #3de8eb;
+  color: #3de8eb;
 }
-.theme-jewels .reveal a {
-  text-decoration-color: #FF0368;
-  -webkit-text-decoration-color: #FF0368;
-  color: #FF0368;
+.theme-honey .reveal a {
+  text-decoration-color: #B5B5B7;
+  -webkit-text-decoration-color: #B5B5B7;
+  color: #B5B5B7;
 }
-.theme-soda .reveal a {
-  text-decoration-color: #95d5d4;
-  -webkit-text-decoration-color: #95d5d4;
-  color: #95d5d4;
+.theme-ultra .reveal a {
+  text-decoration-color: #FAC668;
+  -webkit-text-decoration-color: #FAC668;
+  color: #FAC668;
 }
 .reveal a:hover {
   text-shadow: none;
   border: none;
 }
-.theme-streams .reveal a:hover {
-  color: #3388A6;
-  border-bottom: 2px solid #3388A6;
+.theme-sedona .reveal a:hover {
+  color: #d1d7e0;
+  border-bottom: 2px solid #d1d7e0;
   /* I prefer a thicker line than the underline */
 }
-.theme-lines .reveal a:hover {
-  color: #ff206e;
-  border-bottom: 2px solid #ff206e;
+.theme-bright-blue .reveal a:hover {
+  color: #99738e;
+  border-bottom: 2px solid #99738e;
   /* I prefer a thicker line than the underline */
 }
-.theme-seacalm .reveal a:hover {
-  color: #00798c;
-  border-bottom: 2px solid #00798c;
+.theme-black .reveal a:hover {
+  color: #F2E38A;
+  border-bottom: 2px solid #F2E38A;
   /* I prefer a thicker line than the underline */
 }
-.theme-goldilocks .reveal a:hover {
-  color: #8D4593;
-  border-bottom: 2px solid #8D4593;
+.theme-candy .reveal a:hover {
+  color: #dbc486;
+  border-bottom: 2px solid #dbc486;
   /* I prefer a thicker line than the underline */
 }
-.theme-duotone .reveal a:hover {
-  color: #A1AAE2;
-  border-bottom: 2px solid #A1AAE2;
+.theme-skeletor .reveal a:hover {
+  color: #3de8eb;
+  border-bottom: 2px solid #3de8eb;
   /* I prefer a thicker line than the underline */
 }
-.theme-jewels .reveal a:hover {
-  color: #FF0368;
-  border-bottom: 2px solid #FF0368;
+.theme-honey .reveal a:hover {
+  color: #B5B5B7;
+  border-bottom: 2px solid #B5B5B7;
   /* I prefer a thicker line than the underline */
 }
-.theme-soda .reveal a:hover {
-  color: #95d5d4;
-  border-bottom: 2px solid #95d5d4;
+.theme-ultra .reveal a:hover {
+  color: #FAC668;
+  border-bottom: 2px solid #FAC668;
   /* I prefer a thicker line than the underline */
 }
 .theme-poppins-font .reveal a:hover {
@@ -1109,50 +1109,50 @@ div.images img {
 .reveal .roll span:after {
   color: #fff;
 }
-.theme-streams .reveal .roll span:after {
-  background: #3388A6;
+.theme-sedona .reveal .roll span:after {
+  background: #d1d7e0;
 }
-.theme-lines .reveal .roll span:after {
-  background: #ff206e;
+.theme-bright-blue .reveal .roll span:after {
+  background: #99738e;
 }
-.theme-seacalm .reveal .roll span:after {
-  background: #00798c;
+.theme-black .reveal .roll span:after {
+  background: #F2E38A;
 }
-.theme-goldilocks .reveal .roll span:after {
-  background: #8D4593;
+.theme-candy .reveal .roll span:after {
+  background: #dbc486;
 }
-.theme-duotone .reveal .roll span:after {
-  background: #A1AAE2;
+.theme-skeletor .reveal .roll span:after {
+  background: #3de8eb;
 }
-.theme-jewels .reveal .roll span:after {
-  background: #FF0368;
+.theme-honey .reveal .roll span:after {
+  background: #B5B5B7;
 }
-.theme-soda .reveal .roll span:after {
-  background: #95d5d4;
+.theme-ultra .reveal .roll span:after {
+  background: #FAC668;
 }
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
-.theme-streams .reveal .controls {
-  color: #3388A6;
+.theme-sedona .reveal .controls {
+  color: #d1d7e0;
 }
-.theme-lines .reveal .controls {
-  color: #ff206e;
+.theme-bright-blue .reveal .controls {
+  color: #99738e;
 }
-.theme-seacalm .reveal .controls {
-  color: #00798c;
+.theme-black .reveal .controls {
+  color: #F2E38A;
 }
-.theme-goldilocks .reveal .controls {
-  color: #8D4593;
+.theme-candy .reveal .controls {
+  color: #dbc486;
 }
-.theme-duotone .reveal .controls {
-  color: #A1AAE2;
+.theme-skeletor .reveal .controls {
+  color: #3de8eb;
 }
-.theme-jewels .reveal .controls {
-  color: #FF0368;
+.theme-honey .reveal .controls {
+  color: #B5B5B7;
 }
-.theme-soda .reveal .controls {
-  color: #95d5d4;
+.theme-ultra .reveal .controls {
+  color: #FAC668;
 }
 .reveal .controls {
   right: 4vmin;
@@ -1171,47 +1171,47 @@ div.images img {
 .reveal .progress {
   background: rgba(48, 40, 63, 0.2);
 }
-.theme-streams .reveal .progress {
-  color: #3388A6;
+.theme-sedona .reveal .progress {
+  color: #d1d7e0;
 }
-.theme-lines .reveal .progress {
-  color: #ff206e;
+.theme-bright-blue .reveal .progress {
+  color: #99738e;
 }
-.theme-seacalm .reveal .progress {
-  color: #00798c;
+.theme-black .reveal .progress {
+  color: #F2E38A;
 }
-.theme-goldilocks .reveal .progress {
-  color: #8D4593;
+.theme-candy .reveal .progress {
+  color: #dbc486;
 }
-.theme-duotone .reveal .progress {
-  color: #A1AAE2;
+.theme-skeletor .reveal .progress {
+  color: #3de8eb;
 }
-.theme-jewels .reveal .progress {
-  color: #FF0368;
+.theme-honey .reveal .progress {
+  color: #B5B5B7;
 }
-.theme-soda .reveal .progress {
-  color: #95d5d4;
+.theme-ultra .reveal .progress {
+  color: #FAC668;
 }
-.theme-streams .reveal .progress span {
+.theme-sedona .reveal .progress span {
   background: #747CA8;
 }
-.theme-lines .reveal .progress span {
-  background: #00BCD4;
+.theme-bright-blue .reveal .progress span {
+  background: #553d67;
 }
-.theme-seacalm .reveal .progress span {
-  background: #EDAF49;
+.theme-black .reveal .progress span {
+  background: #C687E8;
 }
-.theme-goldilocks .reveal .progress span {
-  background: #EDAF49;
+.theme-candy .reveal .progress span {
+  background: #d3b71f;
 }
-.theme-duotone .reveal .progress span {
-  background: #736FBA;
+.theme-skeletor .reveal .progress span {
+  background: #987cb0;
 }
-.theme-jewels .reveal .progress span {
-  background: #79C9E8;
+.theme-honey .reveal .progress span {
+  background: #677077;
 }
-.theme-soda .reveal .progress span {
-  background: #1073b9;
+.theme-ultra .reveal .progress span {
+  background: #9B84C0;
 }
 /*********************************************
 * LISTS
@@ -1232,122 +1232,122 @@ div.images img {
   width: 1.2em;
   font-size: 1em;
 }
-.theme-streams .reveal ul.icon li::before {
+.theme-sedona .reveal ul.icon li::before {
   color: #747CA8;
 }
-.theme-lines .reveal ul.icon li::before {
-  color: #00BCD4;
+.theme-bright-blue .reveal ul.icon li::before {
+  color: #553d67;
 }
-.theme-seacalm .reveal ul.icon li::before {
-  color: #EDAF49;
+.theme-black .reveal ul.icon li::before {
+  color: #C687E8;
 }
-.theme-goldilocks .reveal ul.icon li::before {
-  color: #EDAF49;
+.theme-candy .reveal ul.icon li::before {
+  color: #d3b71f;
 }
-.theme-duotone .reveal ul.icon li::before {
-  color: #736FBA;
+.theme-skeletor .reveal ul.icon li::before {
+  color: #987cb0;
 }
-.theme-jewels .reveal ul.icon li::before {
-  color: #79C9E8;
+.theme-honey .reveal ul.icon li::before {
+  color: #677077;
 }
-.theme-soda .reveal ul.icon li::before {
-  color: #1073b9;
+.theme-ultra .reveal ul.icon li::before {
+  color: #9B84C0;
 }
 .reveal ul.icon li.pinata::before {
   content: "";
 }
-.theme-streams .reveal ul.icon li.pinata::before {
+.theme-sedona .reveal ul.icon li.pinata::before {
   color: #747CA8;
 }
-.theme-lines .reveal ul.icon li.pinata::before {
-  color: #00BCD4;
+.theme-bright-blue .reveal ul.icon li.pinata::before {
+  color: #553d67;
 }
-.theme-seacalm .reveal ul.icon li.pinata::before {
-  color: #EDAF49;
+.theme-black .reveal ul.icon li.pinata::before {
+  color: #C687E8;
 }
-.theme-goldilocks .reveal ul.icon li.pinata::before {
-  color: #EDAF49;
+.theme-candy .reveal ul.icon li.pinata::before {
+  color: #d3b71f;
 }
-.theme-duotone .reveal ul.icon li.pinata::before {
-  color: #736FBA;
+.theme-skeletor .reveal ul.icon li.pinata::before {
+  color: #987cb0;
 }
-.theme-jewels .reveal ul.icon li.pinata::before {
-  color: #79C9E8;
+.theme-honey .reveal ul.icon li.pinata::before {
+  color: #677077;
 }
-.theme-soda .reveal ul.icon li.pinata::before {
-  color: #1073b9;
+.theme-ultra .reveal ul.icon li.pinata::before {
+  color: #9B84C0;
 }
 .reveal ul.icon li.nopal::before {
   content: "";
 }
-.theme-streams .reveal ul.icon li.nopal::before {
+.theme-sedona .reveal ul.icon li.nopal::before {
   color: #747CA8;
 }
-.theme-lines .reveal ul.icon li.nopal::before {
-  color: #00BCD4;
+.theme-bright-blue .reveal ul.icon li.nopal::before {
+  color: #553d67;
 }
-.theme-seacalm .reveal ul.icon li.nopal::before {
-  color: #EDAF49;
+.theme-black .reveal ul.icon li.nopal::before {
+  color: #C687E8;
 }
-.theme-goldilocks .reveal ul.icon li.nopal::before {
-  color: #EDAF49;
+.theme-candy .reveal ul.icon li.nopal::before {
+  color: #d3b71f;
 }
-.theme-duotone .reveal ul.icon li.nopal::before {
-  color: #736FBA;
+.theme-skeletor .reveal ul.icon li.nopal::before {
+  color: #987cb0;
 }
-.theme-jewels .reveal ul.icon li.nopal::before {
-  color: #79C9E8;
+.theme-honey .reveal ul.icon li.nopal::before {
+  color: #677077;
 }
-.theme-soda .reveal ul.icon li.nopal::before {
-  color: #1073b9;
+.theme-ultra .reveal ul.icon li.nopal::before {
+  color: #9B84C0;
 }
 .reveal ul.icon li.cactus::before {
   content: "";
 }
-.theme-streams .reveal ul.icon li.cactus::before {
+.theme-sedona .reveal ul.icon li.cactus::before {
   color: #747CA8;
 }
-.theme-lines .reveal ul.icon li.cactus::before {
-  color: #00BCD4;
+.theme-bright-blue .reveal ul.icon li.cactus::before {
+  color: #553d67;
 }
-.theme-seacalm .reveal ul.icon li.cactus::before {
-  color: #EDAF49;
+.theme-black .reveal ul.icon li.cactus::before {
+  color: #C687E8;
 }
-.theme-goldilocks .reveal ul.icon li.cactus::before {
-  color: #EDAF49;
+.theme-candy .reveal ul.icon li.cactus::before {
+  color: #d3b71f;
 }
-.theme-duotone .reveal ul.icon li.cactus::before {
-  color: #736FBA;
+.theme-skeletor .reveal ul.icon li.cactus::before {
+  color: #987cb0;
 }
-.theme-jewels .reveal ul.icon li.cactus::before {
-  color: #79C9E8;
+.theme-honey .reveal ul.icon li.cactus::before {
+  color: #677077;
 }
-.theme-soda .reveal ul.icon li.cactus::before {
-  color: #1073b9;
+.theme-ultra .reveal ul.icon li.cactus::before {
+  color: #9B84C0;
 }
 .reveal ul.icon li.skull::before {
   content: "";
 }
-.theme-streams .reveal ul.icon li.skull::before {
+.theme-sedona .reveal ul.icon li.skull::before {
   color: #747CA8;
 }
-.theme-lines .reveal ul.icon li.skull::before {
-  color: #00BCD4;
+.theme-bright-blue .reveal ul.icon li.skull::before {
+  color: #553d67;
 }
-.theme-seacalm .reveal ul.icon li.skull::before {
-  color: #EDAF49;
+.theme-black .reveal ul.icon li.skull::before {
+  color: #C687E8;
 }
-.theme-goldilocks .reveal ul.icon li.skull::before {
-  color: #EDAF49;
+.theme-candy .reveal ul.icon li.skull::before {
+  color: #d3b71f;
 }
-.theme-duotone .reveal ul.icon li.skull::before {
-  color: #736FBA;
+.theme-skeletor .reveal ul.icon li.skull::before {
+  color: #987cb0;
 }
-.theme-jewels .reveal ul.icon li.skull::before {
-  color: #79C9E8;
+.theme-honey .reveal ul.icon li.skull::before {
+  color: #677077;
 }
-.theme-soda .reveal ul.icon li.skull::before {
-  color: #1073b9;
+.theme-ultra .reveal ul.icon li.skull::before {
+  color: #9B84C0;
 }
 /* table with no divisions and with bold purple first column */
 .reveal table th {
@@ -1389,26 +1389,26 @@ div.images img {
 .reveal strong-alt {
   font-weight: 400;
 }
-.theme-streams .reveal strong-alt {
-  color: #7760a9;
+.theme-sedona .reveal strong-alt {
+  color: #9b3fd0;
 }
-.theme-lines .reveal strong-alt {
-  color: #5a028e;
+.theme-bright-blue .reveal strong-alt {
+  color: #f87d98;
 }
-.theme-seacalm .reveal strong-alt {
-  color: #3d7eb1;
+.theme-black .reveal strong-alt {
+  color: #d0ea95;
 }
-.theme-goldilocks .reveal strong-alt {
-  color: #3d7eb1;
+.theme-candy .reveal strong-alt {
+  color: #cf567f;
 }
-.theme-duotone .reveal strong-alt {
-  color: #9591cb;
+.theme-skeletor .reveal strong-alt {
+  color: #f4ce89;
 }
-.theme-jewels .reveal strong-alt {
-  color: #9591cb;
+.theme-honey .reveal strong-alt {
+  color: #808a91;
 }
-.theme-soda .reveal strong-alt {
-  color: #324ea7;
+.theme-ultra .reveal strong-alt {
+  color: #fcd999;
 }
 .reveal small {
   font-size: 0.8em;
@@ -1419,26 +1419,26 @@ div.images img {
 .reveal huge-font {
   font-size: 5em;
 }
-.theme-streams .reveal huge-font {
-  color: #5F4B8B;
+.theme-sedona .reveal huge-font {
+  color: #802bb1;
 }
-.theme-lines .reveal huge-font {
-  color: #3A015C;
+.theme-bright-blue .reveal huge-font {
+  color: #f64c72;
 }
-.theme-seacalm .reveal huge-font {
-  color: #30638B;
+.theme-black .reveal huge-font {
+  color: #BDE16B;
 }
-.theme-goldilocks .reveal huge-font {
-  color: #30638B;
+.theme-candy .reveal huge-font {
+  color: #bd3563;
 }
-.theme-duotone .reveal huge-font {
-  color: #CC144B;
+.theme-skeletor .reveal huge-font {
+  color: #f0bb5a;
 }
-.theme-jewels .reveal huge-font {
-  color: #4A235D;
+.theme-honey .reveal huge-font {
+  color: #F2B632;
 }
-.theme-soda .reveal huge-font {
-  color: #263c80;
+.theme-ultra .reveal huge-font {
+  color: #E55982;
 }
 .theme-poppins-font .reveal huge-font {
   font-family: IBMPlexSerif, monospace;
@@ -1470,26 +1470,26 @@ div.images img {
 .reveal big-font {
   font-size: 4em;
 }
-.theme-streams .reveal big-font {
-  color: #5F4B8B;
+.theme-sedona .reveal big-font {
+  color: #802bb1;
 }
-.theme-lines .reveal big-font {
-  color: #3A015C;
+.theme-bright-blue .reveal big-font {
+  color: #f64c72;
 }
-.theme-seacalm .reveal big-font {
-  color: #30638B;
+.theme-black .reveal big-font {
+  color: #BDE16B;
 }
-.theme-goldilocks .reveal big-font {
-  color: #30638B;
+.theme-candy .reveal big-font {
+  color: #bd3563;
 }
-.theme-duotone .reveal big-font {
-  color: #CC144B;
+.theme-skeletor .reveal big-font {
+  color: #f0bb5a;
 }
-.theme-jewels .reveal big-font {
-  color: #4A235D;
+.theme-honey .reveal big-font {
+  color: #F2B632;
 }
-.theme-soda .reveal big-font {
-  color: #263c80;
+.theme-ultra .reveal big-font {
+  color: #E55982;
 }
 .theme-poppins-font .reveal big-font {
   font-family: IBMPlexSerif, monospace;
@@ -1764,601 +1764,601 @@ figure.code pre + figcaption {
   background-color: white;
 }
 
-.theme-streams .reveal.pattern--stream .slides section.intro {
-  background-color: #5F4B8B;
+.theme-sedona .reveal.pattern--stream .slides section.intro {
+  background-color: #802bb1;
 }
-.theme-lines .reveal.pattern--stream .slides section.intro {
-  background-color: #3A015C;
+.theme-bright-blue .reveal.pattern--stream .slides section.intro {
+  background-color: #f64c72;
 }
-.theme-seacalm .reveal.pattern--stream .slides section.intro {
-  background-color: #30638B;
+.theme-black .reveal.pattern--stream .slides section.intro {
+  background-color: #BDE16B;
 }
-.theme-goldilocks .reveal.pattern--stream .slides section.intro {
-  background-color: #30638B;
+.theme-candy .reveal.pattern--stream .slides section.intro {
+  background-color: #bd3563;
 }
-.theme-duotone .reveal.pattern--stream .slides section.intro {
-  background-color: #CC144B;
+.theme-skeletor .reveal.pattern--stream .slides section.intro {
+  background-color: #f0bb5a;
 }
-.theme-jewels .reveal.pattern--stream .slides section.intro {
-  background-color: #4A235D;
+.theme-honey .reveal.pattern--stream .slides section.intro {
+  background-color: #F2B632;
 }
-.theme-soda .reveal.pattern--stream .slides section.intro {
-  background-color: #263c80;
+.theme-ultra .reveal.pattern--stream .slides section.intro {
+  background-color: #E55982;
 }
-.theme-streams .reveal.pattern--stream .slides section.title {
-  background-color: #5F4B8B;
+.theme-sedona .reveal.pattern--stream .slides section.title {
+  background-color: #802bb1;
 }
-.theme-lines .reveal.pattern--stream .slides section.title {
-  background-color: #3A015C;
+.theme-bright-blue .reveal.pattern--stream .slides section.title {
+  background-color: #f64c72;
 }
-.theme-seacalm .reveal.pattern--stream .slides section.title {
-  background-color: #30638B;
+.theme-black .reveal.pattern--stream .slides section.title {
+  background-color: #BDE16B;
 }
-.theme-goldilocks .reveal.pattern--stream .slides section.title {
-  background-color: #30638B;
+.theme-candy .reveal.pattern--stream .slides section.title {
+  background-color: #bd3563;
 }
-.theme-duotone .reveal.pattern--stream .slides section.title {
-  background-color: #CC144B;
+.theme-skeletor .reveal.pattern--stream .slides section.title {
+  background-color: #f0bb5a;
 }
-.theme-jewels .reveal.pattern--stream .slides section.title {
-  background-color: #4A235D;
+.theme-honey .reveal.pattern--stream .slides section.title {
+  background-color: #F2B632;
 }
-.theme-soda .reveal.pattern--stream .slides section.title {
-  background-color: #263c80;
+.theme-ultra .reveal.pattern--stream .slides section.title {
+  background-color: #E55982;
 }
 .reveal.pattern--lines {
   background-image: url(../assets/patterns///lines.png);
 }
 
-.theme-streams .reveal.pattern--lines .slides section.intro {
+.theme-sedona .reveal.pattern--lines .slides section.intro {
   background-color: #747CA8;
 }
-.theme-lines .reveal.pattern--lines .slides section.intro {
-  background-color: #00BCD4;
+.theme-bright-blue .reveal.pattern--lines .slides section.intro {
+  background-color: #553d67;
 }
-.theme-seacalm .reveal.pattern--lines .slides section.intro {
-  background-color: #EDAF49;
+.theme-black .reveal.pattern--lines .slides section.intro {
+  background-color: #C687E8;
 }
-.theme-goldilocks .reveal.pattern--lines .slides section.intro {
-  background-color: #EDAF49;
+.theme-candy .reveal.pattern--lines .slides section.intro {
+  background-color: #d3b71f;
 }
-.theme-duotone .reveal.pattern--lines .slides section.intro {
-  background-color: #736FBA;
+.theme-skeletor .reveal.pattern--lines .slides section.intro {
+  background-color: #987cb0;
 }
-.theme-jewels .reveal.pattern--lines .slides section.intro {
-  background-color: #79C9E8;
+.theme-honey .reveal.pattern--lines .slides section.intro {
+  background-color: #677077;
 }
-.theme-soda .reveal.pattern--lines .slides section.intro {
-  background-color: #1073b9;
+.theme-ultra .reveal.pattern--lines .slides section.intro {
+  background-color: #9B84C0;
 }
-.theme-streams .reveal.pattern--lines .slides section.title {
+.theme-sedona .reveal.pattern--lines .slides section.title {
   background-color: #747CA8;
-  color: #5F4B8B;
+  color: #802bb1;
 }
-.theme-lines .reveal.pattern--lines .slides section.title {
-  background-color: #00BCD4;
-  color: #3A015C;
+.theme-bright-blue .reveal.pattern--lines .slides section.title {
+  background-color: #553d67;
+  color: #f64c72;
 }
-.theme-seacalm .reveal.pattern--lines .slides section.title {
-  background-color: #EDAF49;
-  color: #30638B;
+.theme-black .reveal.pattern--lines .slides section.title {
+  background-color: #C687E8;
+  color: #BDE16B;
 }
-.theme-goldilocks .reveal.pattern--lines .slides section.title {
-  background-color: #EDAF49;
-  color: #30638B;
+.theme-candy .reveal.pattern--lines .slides section.title {
+  background-color: #d3b71f;
+  color: #bd3563;
 }
-.theme-duotone .reveal.pattern--lines .slides section.title {
-  background-color: #736FBA;
-  color: #CC144B;
+.theme-skeletor .reveal.pattern--lines .slides section.title {
+  background-color: #987cb0;
+  color: #f0bb5a;
 }
-.theme-jewels .reveal.pattern--lines .slides section.title {
-  background-color: #79C9E8;
-  color: #4A235D;
+.theme-honey .reveal.pattern--lines .slides section.title {
+  background-color: #677077;
+  color: #F2B632;
 }
-.theme-soda .reveal.pattern--lines .slides section.title {
-  background-color: #1073b9;
-  color: #263c80;
+.theme-ultra .reveal.pattern--lines .slides section.title {
+  background-color: #9B84C0;
+  color: #E55982;
 }
-.theme-streams .reveal.pattern--lines .progress {
-  background-color: #3388A6;
+.theme-sedona .reveal.pattern--lines .progress {
+  background-color: #d1d7e0;
 }
-.theme-lines .reveal.pattern--lines .progress {
-  background-color: #ff206e;
+.theme-bright-blue .reveal.pattern--lines .progress {
+  background-color: #99738e;
 }
-.theme-seacalm .reveal.pattern--lines .progress {
-  background-color: #00798c;
+.theme-black .reveal.pattern--lines .progress {
+  background-color: #F2E38A;
 }
-.theme-goldilocks .reveal.pattern--lines .progress {
-  background-color: #8D4593;
+.theme-candy .reveal.pattern--lines .progress {
+  background-color: #dbc486;
 }
-.theme-duotone .reveal.pattern--lines .progress {
-  background-color: #A1AAE2;
+.theme-skeletor .reveal.pattern--lines .progress {
+  background-color: #3de8eb;
 }
-.theme-jewels .reveal.pattern--lines .progress {
-  background-color: #FF0368;
+.theme-honey .reveal.pattern--lines .progress {
+  background-color: #B5B5B7;
 }
-.theme-soda .reveal.pattern--lines .progress {
-  background-color: #95d5d4;
+.theme-ultra .reveal.pattern--lines .progress {
+  background-color: #FAC668;
 }
 .reveal.pattern--hex {
   background-image: url("../assets/patterns/hex_pattern.png");
 }
 
-.theme-streams .reveal.pattern--hex .slides section.intro {
+.theme-sedona .reveal.pattern--hex .slides section.intro {
   background-color: #747CA8;
 }
-.theme-lines .reveal.pattern--hex .slides section.intro {
-  background-color: #00BCD4;
+.theme-bright-blue .reveal.pattern--hex .slides section.intro {
+  background-color: #553d67;
 }
-.theme-seacalm .reveal.pattern--hex .slides section.intro {
-  background-color: #EDAF49;
+.theme-black .reveal.pattern--hex .slides section.intro {
+  background-color: #C687E8;
 }
-.theme-goldilocks .reveal.pattern--hex .slides section.intro {
-  background-color: #EDAF49;
+.theme-candy .reveal.pattern--hex .slides section.intro {
+  background-color: #d3b71f;
 }
-.theme-duotone .reveal.pattern--hex .slides section.intro {
-  background-color: #736FBA;
+.theme-skeletor .reveal.pattern--hex .slides section.intro {
+  background-color: #987cb0;
 }
-.theme-jewels .reveal.pattern--hex .slides section.intro {
-  background-color: #79C9E8;
+.theme-honey .reveal.pattern--hex .slides section.intro {
+  background-color: #677077;
 }
-.theme-soda .reveal.pattern--hex .slides section.intro {
-  background-color: #1073b9;
+.theme-ultra .reveal.pattern--hex .slides section.intro {
+  background-color: #9B84C0;
 }
-.theme-streams .reveal.pattern--hex .slides section.title {
+.theme-sedona .reveal.pattern--hex .slides section.title {
   background-color: #747CA8;
-  color: #5F4B8B;
+  color: #802bb1;
 }
-.theme-lines .reveal.pattern--hex .slides section.title {
-  background-color: #00BCD4;
-  color: #3A015C;
+.theme-bright-blue .reveal.pattern--hex .slides section.title {
+  background-color: #553d67;
+  color: #f64c72;
 }
-.theme-seacalm .reveal.pattern--hex .slides section.title {
-  background-color: #EDAF49;
-  color: #30638B;
+.theme-black .reveal.pattern--hex .slides section.title {
+  background-color: #C687E8;
+  color: #BDE16B;
 }
-.theme-goldilocks .reveal.pattern--hex .slides section.title {
-  background-color: #EDAF49;
-  color: #30638B;
+.theme-candy .reveal.pattern--hex .slides section.title {
+  background-color: #d3b71f;
+  color: #bd3563;
 }
-.theme-duotone .reveal.pattern--hex .slides section.title {
-  background-color: #736FBA;
-  color: #CC144B;
+.theme-skeletor .reveal.pattern--hex .slides section.title {
+  background-color: #987cb0;
+  color: #f0bb5a;
 }
-.theme-jewels .reveal.pattern--hex .slides section.title {
-  background-color: #79C9E8;
-  color: #4A235D;
+.theme-honey .reveal.pattern--hex .slides section.title {
+  background-color: #677077;
+  color: #F2B632;
 }
-.theme-soda .reveal.pattern--hex .slides section.title {
-  background-color: #1073b9;
-  color: #263c80;
+.theme-ultra .reveal.pattern--hex .slides section.title {
+  background-color: #9B84C0;
+  color: #E55982;
 }
-.theme-streams .reveal.pattern--hex .progress {
-  background-color: #3388A6;
+.theme-sedona .reveal.pattern--hex .progress {
+  background-color: #d1d7e0;
 }
-.theme-lines .reveal.pattern--hex .progress {
-  background-color: #ff206e;
+.theme-bright-blue .reveal.pattern--hex .progress {
+  background-color: #99738e;
 }
-.theme-seacalm .reveal.pattern--hex .progress {
-  background-color: #00798c;
+.theme-black .reveal.pattern--hex .progress {
+  background-color: #F2E38A;
 }
-.theme-goldilocks .reveal.pattern--hex .progress {
-  background-color: #8D4593;
+.theme-candy .reveal.pattern--hex .progress {
+  background-color: #dbc486;
 }
-.theme-duotone .reveal.pattern--hex .progress {
-  background-color: #A1AAE2;
+.theme-skeletor .reveal.pattern--hex .progress {
+  background-color: #3de8eb;
 }
-.theme-jewels .reveal.pattern--hex .progress {
-  background-color: #FF0368;
+.theme-honey .reveal.pattern--hex .progress {
+  background-color: #B5B5B7;
 }
-.theme-soda .reveal.pattern--hex .progress {
-  background-color: #95d5d4;
+.theme-ultra .reveal.pattern--hex .progress {
+  background-color: #FAC668;
 }
 .reveal.pattern--star {
   background-image: url("../assets/patterns/star_pattern.svg");
 }
 
-.theme-streams .reveal.pattern--star .slides section.intro {
+.theme-sedona .reveal.pattern--star .slides section.intro {
   background-color: #747CA8;
 }
-.theme-lines .reveal.pattern--star .slides section.intro {
-  background-color: #00BCD4;
+.theme-bright-blue .reveal.pattern--star .slides section.intro {
+  background-color: #553d67;
 }
-.theme-seacalm .reveal.pattern--star .slides section.intro {
-  background-color: #EDAF49;
+.theme-black .reveal.pattern--star .slides section.intro {
+  background-color: #C687E8;
 }
-.theme-goldilocks .reveal.pattern--star .slides section.intro {
-  background-color: #EDAF49;
+.theme-candy .reveal.pattern--star .slides section.intro {
+  background-color: #d3b71f;
 }
-.theme-duotone .reveal.pattern--star .slides section.intro {
-  background-color: #736FBA;
+.theme-skeletor .reveal.pattern--star .slides section.intro {
+  background-color: #987cb0;
 }
-.theme-jewels .reveal.pattern--star .slides section.intro {
-  background-color: #79C9E8;
+.theme-honey .reveal.pattern--star .slides section.intro {
+  background-color: #677077;
 }
-.theme-soda .reveal.pattern--star .slides section.intro {
-  background-color: #1073b9;
+.theme-ultra .reveal.pattern--star .slides section.intro {
+  background-color: #9B84C0;
 }
-.theme-streams .reveal.pattern--star .slides section.title {
+.theme-sedona .reveal.pattern--star .slides section.title {
   background-color: #747CA8;
-  color: #5F4B8B;
+  color: #802bb1;
 }
-.theme-lines .reveal.pattern--star .slides section.title {
-  background-color: #00BCD4;
-  color: #3A015C;
+.theme-bright-blue .reveal.pattern--star .slides section.title {
+  background-color: #553d67;
+  color: #f64c72;
 }
-.theme-seacalm .reveal.pattern--star .slides section.title {
-  background-color: #EDAF49;
-  color: #30638B;
+.theme-black .reveal.pattern--star .slides section.title {
+  background-color: #C687E8;
+  color: #BDE16B;
 }
-.theme-goldilocks .reveal.pattern--star .slides section.title {
-  background-color: #EDAF49;
-  color: #30638B;
+.theme-candy .reveal.pattern--star .slides section.title {
+  background-color: #d3b71f;
+  color: #bd3563;
 }
-.theme-duotone .reveal.pattern--star .slides section.title {
-  background-color: #736FBA;
-  color: #CC144B;
+.theme-skeletor .reveal.pattern--star .slides section.title {
+  background-color: #987cb0;
+  color: #f0bb5a;
 }
-.theme-jewels .reveal.pattern--star .slides section.title {
-  background-color: #79C9E8;
-  color: #4A235D;
+.theme-honey .reveal.pattern--star .slides section.title {
+  background-color: #677077;
+  color: #F2B632;
 }
-.theme-soda .reveal.pattern--star .slides section.title {
-  background-color: #1073b9;
-  color: #263c80;
+.theme-ultra .reveal.pattern--star .slides section.title {
+  background-color: #9B84C0;
+  color: #E55982;
 }
-.theme-streams .reveal.pattern--star .progress {
-  background-color: #3388A6;
+.theme-sedona .reveal.pattern--star .progress {
+  background-color: #d1d7e0;
 }
-.theme-lines .reveal.pattern--star .progress {
-  background-color: #ff206e;
+.theme-bright-blue .reveal.pattern--star .progress {
+  background-color: #99738e;
 }
-.theme-seacalm .reveal.pattern--star .progress {
-  background-color: #00798c;
+.theme-black .reveal.pattern--star .progress {
+  background-color: #F2E38A;
 }
-.theme-goldilocks .reveal.pattern--star .progress {
-  background-color: #8D4593;
+.theme-candy .reveal.pattern--star .progress {
+  background-color: #dbc486;
 }
-.theme-duotone .reveal.pattern--star .progress {
-  background-color: #A1AAE2;
+.theme-skeletor .reveal.pattern--star .progress {
+  background-color: #3de8eb;
 }
-.theme-jewels .reveal.pattern--star .progress {
-  background-color: #FF0368;
+.theme-honey .reveal.pattern--star .progress {
+  background-color: #B5B5B7;
 }
-.theme-soda .reveal.pattern--star .progress {
-  background-color: #95d5d4;
+.theme-ultra .reveal.pattern--star .progress {
+  background-color: #FAC668;
 }
 .reveal.pattern--pupilines {
   background-image: url("../assets/patterns/pupilines.svg");
 }
 
-.theme-streams .reveal.pattern--pupilines .slides section.intro {
+.theme-sedona .reveal.pattern--pupilines .slides section.intro {
   background-color: #747CA8;
 }
-.theme-lines .reveal.pattern--pupilines .slides section.intro {
-  background-color: #00BCD4;
+.theme-bright-blue .reveal.pattern--pupilines .slides section.intro {
+  background-color: #553d67;
 }
-.theme-seacalm .reveal.pattern--pupilines .slides section.intro {
-  background-color: #EDAF49;
+.theme-black .reveal.pattern--pupilines .slides section.intro {
+  background-color: #C687E8;
 }
-.theme-goldilocks .reveal.pattern--pupilines .slides section.intro {
-  background-color: #EDAF49;
+.theme-candy .reveal.pattern--pupilines .slides section.intro {
+  background-color: #d3b71f;
 }
-.theme-duotone .reveal.pattern--pupilines .slides section.intro {
-  background-color: #736FBA;
+.theme-skeletor .reveal.pattern--pupilines .slides section.intro {
+  background-color: #987cb0;
 }
-.theme-jewels .reveal.pattern--pupilines .slides section.intro {
-  background-color: #79C9E8;
+.theme-honey .reveal.pattern--pupilines .slides section.intro {
+  background-color: #677077;
 }
-.theme-soda .reveal.pattern--pupilines .slides section.intro {
-  background-color: #1073b9;
+.theme-ultra .reveal.pattern--pupilines .slides section.intro {
+  background-color: #9B84C0;
 }
-.theme-streams .reveal.pattern--pupilines .slides section.title {
+.theme-sedona .reveal.pattern--pupilines .slides section.title {
   background-color: #747CA8;
-  color: #5F4B8B;
+  color: #802bb1;
 }
-.theme-lines .reveal.pattern--pupilines .slides section.title {
-  background-color: #00BCD4;
-  color: #3A015C;
+.theme-bright-blue .reveal.pattern--pupilines .slides section.title {
+  background-color: #553d67;
+  color: #f64c72;
 }
-.theme-seacalm .reveal.pattern--pupilines .slides section.title {
-  background-color: #EDAF49;
-  color: #30638B;
+.theme-black .reveal.pattern--pupilines .slides section.title {
+  background-color: #C687E8;
+  color: #BDE16B;
 }
-.theme-goldilocks .reveal.pattern--pupilines .slides section.title {
-  background-color: #EDAF49;
-  color: #30638B;
+.theme-candy .reveal.pattern--pupilines .slides section.title {
+  background-color: #d3b71f;
+  color: #bd3563;
 }
-.theme-duotone .reveal.pattern--pupilines .slides section.title {
-  background-color: #736FBA;
-  color: #CC144B;
+.theme-skeletor .reveal.pattern--pupilines .slides section.title {
+  background-color: #987cb0;
+  color: #f0bb5a;
 }
-.theme-jewels .reveal.pattern--pupilines .slides section.title {
-  background-color: #79C9E8;
-  color: #4A235D;
+.theme-honey .reveal.pattern--pupilines .slides section.title {
+  background-color: #677077;
+  color: #F2B632;
 }
-.theme-soda .reveal.pattern--pupilines .slides section.title {
-  background-color: #1073b9;
-  color: #263c80;
+.theme-ultra .reveal.pattern--pupilines .slides section.title {
+  background-color: #9B84C0;
+  color: #E55982;
 }
-.theme-streams .reveal.pattern--pupilines .progress {
+.theme-sedona .reveal.pattern--pupilines .progress {
   background-color: #747CA8;
 }
-.theme-lines .reveal.pattern--pupilines .progress {
-  background-color: #00BCD4;
+.theme-bright-blue .reveal.pattern--pupilines .progress {
+  background-color: #553d67;
 }
-.theme-seacalm .reveal.pattern--pupilines .progress {
-  background-color: #EDAF49;
+.theme-black .reveal.pattern--pupilines .progress {
+  background-color: #C687E8;
 }
-.theme-goldilocks .reveal.pattern--pupilines .progress {
-  background-color: #EDAF49;
+.theme-candy .reveal.pattern--pupilines .progress {
+  background-color: #d3b71f;
 }
-.theme-duotone .reveal.pattern--pupilines .progress {
-  background-color: #736FBA;
+.theme-skeletor .reveal.pattern--pupilines .progress {
+  background-color: #987cb0;
 }
-.theme-jewels .reveal.pattern--pupilines .progress {
-  background-color: #79C9E8;
+.theme-honey .reveal.pattern--pupilines .progress {
+  background-color: #677077;
 }
-.theme-soda .reveal.pattern--pupilines .progress {
-  background-color: #1073b9;
+.theme-ultra .reveal.pattern--pupilines .progress {
+  background-color: #9B84C0;
 }
-.theme-streams .reveal.pattern--pupilines .controls {
+.theme-sedona .reveal.pattern--pupilines .controls {
   color: #747CA8;
 }
-.theme-lines .reveal.pattern--pupilines .controls {
-  color: #00BCD4;
+.theme-bright-blue .reveal.pattern--pupilines .controls {
+  color: #553d67;
 }
-.theme-seacalm .reveal.pattern--pupilines .controls {
-  color: #EDAF49;
+.theme-black .reveal.pattern--pupilines .controls {
+  color: #C687E8;
 }
-.theme-goldilocks .reveal.pattern--pupilines .controls {
-  color: #EDAF49;
+.theme-candy .reveal.pattern--pupilines .controls {
+  color: #d3b71f;
 }
-.theme-duotone .reveal.pattern--pupilines .controls {
-  color: #736FBA;
+.theme-skeletor .reveal.pattern--pupilines .controls {
+  color: #987cb0;
 }
-.theme-jewels .reveal.pattern--pupilines .controls {
-  color: #79C9E8;
+.theme-honey .reveal.pattern--pupilines .controls {
+  color: #677077;
 }
-.theme-soda .reveal.pattern--pupilines .controls {
-  color: #1073b9;
+.theme-ultra .reveal.pattern--pupilines .controls {
+  color: #9B84C0;
 }
 .reveal.pattern--bwlines {
   background-image: url("../assets/patterns/bwlines.svg");
 }
 
-.theme-streams .reveal.pattern--bwlines .slides section.intro {
+.theme-sedona .reveal.pattern--bwlines .slides section.intro {
   background-color: #747CA8;
 }
-.theme-lines .reveal.pattern--bwlines .slides section.intro {
-  background-color: #00BCD4;
+.theme-bright-blue .reveal.pattern--bwlines .slides section.intro {
+  background-color: #553d67;
 }
-.theme-seacalm .reveal.pattern--bwlines .slides section.intro {
-  background-color: #EDAF49;
+.theme-black .reveal.pattern--bwlines .slides section.intro {
+  background-color: #C687E8;
 }
-.theme-goldilocks .reveal.pattern--bwlines .slides section.intro {
-  background-color: #EDAF49;
+.theme-candy .reveal.pattern--bwlines .slides section.intro {
+  background-color: #d3b71f;
 }
-.theme-duotone .reveal.pattern--bwlines .slides section.intro {
-  background-color: #736FBA;
+.theme-skeletor .reveal.pattern--bwlines .slides section.intro {
+  background-color: #987cb0;
 }
-.theme-jewels .reveal.pattern--bwlines .slides section.intro {
-  background-color: #79C9E8;
+.theme-honey .reveal.pattern--bwlines .slides section.intro {
+  background-color: #677077;
 }
-.theme-soda .reveal.pattern--bwlines .slides section.intro {
-  background-color: #1073b9;
+.theme-ultra .reveal.pattern--bwlines .slides section.intro {
+  background-color: #9B84C0;
 }
-.theme-streams .reveal.pattern--bwlines .slides section.title {
+.theme-sedona .reveal.pattern--bwlines .slides section.title {
   background-color: #747CA8;
-  color: #5F4B8B;
+  color: #802bb1;
 }
-.theme-lines .reveal.pattern--bwlines .slides section.title {
-  background-color: #00BCD4;
-  color: #3A015C;
+.theme-bright-blue .reveal.pattern--bwlines .slides section.title {
+  background-color: #553d67;
+  color: #f64c72;
 }
-.theme-seacalm .reveal.pattern--bwlines .slides section.title {
-  background-color: #EDAF49;
-  color: #30638B;
+.theme-black .reveal.pattern--bwlines .slides section.title {
+  background-color: #C687E8;
+  color: #BDE16B;
 }
-.theme-goldilocks .reveal.pattern--bwlines .slides section.title {
-  background-color: #EDAF49;
-  color: #30638B;
+.theme-candy .reveal.pattern--bwlines .slides section.title {
+  background-color: #d3b71f;
+  color: #bd3563;
 }
-.theme-duotone .reveal.pattern--bwlines .slides section.title {
-  background-color: #736FBA;
-  color: #CC144B;
+.theme-skeletor .reveal.pattern--bwlines .slides section.title {
+  background-color: #987cb0;
+  color: #f0bb5a;
 }
-.theme-jewels .reveal.pattern--bwlines .slides section.title {
-  background-color: #79C9E8;
-  color: #4A235D;
+.theme-honey .reveal.pattern--bwlines .slides section.title {
+  background-color: #677077;
+  color: #F2B632;
 }
-.theme-soda .reveal.pattern--bwlines .slides section.title {
-  background-color: #1073b9;
-  color: #263c80;
+.theme-ultra .reveal.pattern--bwlines .slides section.title {
+  background-color: #9B84C0;
+  color: #E55982;
 }
 .reveal.pattern--space2 {
   background-image: url("../assets/patterns/space2.png");
 }
 
-.theme-streams .reveal.pattern--space2 .slides section.intro {
+.theme-sedona .reveal.pattern--space2 .slides section.intro {
   background-color: #747CA8;
 }
-.theme-lines .reveal.pattern--space2 .slides section.intro {
-  background-color: #00BCD4;
+.theme-bright-blue .reveal.pattern--space2 .slides section.intro {
+  background-color: #553d67;
 }
-.theme-seacalm .reveal.pattern--space2 .slides section.intro {
-  background-color: #EDAF49;
+.theme-black .reveal.pattern--space2 .slides section.intro {
+  background-color: #C687E8;
 }
-.theme-goldilocks .reveal.pattern--space2 .slides section.intro {
-  background-color: #EDAF49;
+.theme-candy .reveal.pattern--space2 .slides section.intro {
+  background-color: #d3b71f;
 }
-.theme-duotone .reveal.pattern--space2 .slides section.intro {
-  background-color: #736FBA;
+.theme-skeletor .reveal.pattern--space2 .slides section.intro {
+  background-color: #987cb0;
 }
-.theme-jewels .reveal.pattern--space2 .slides section.intro {
-  background-color: #79C9E8;
+.theme-honey .reveal.pattern--space2 .slides section.intro {
+  background-color: #677077;
 }
-.theme-soda .reveal.pattern--space2 .slides section.intro {
-  background-color: #1073b9;
+.theme-ultra .reveal.pattern--space2 .slides section.intro {
+  background-color: #9B84C0;
 }
-.theme-streams .reveal.pattern--space2 .slides section.title {
+.theme-sedona .reveal.pattern--space2 .slides section.title {
   background-color: #747CA8;
-  color: #5F4B8B;
+  color: #802bb1;
 }
-.theme-lines .reveal.pattern--space2 .slides section.title {
-  background-color: #00BCD4;
-  color: #3A015C;
+.theme-bright-blue .reveal.pattern--space2 .slides section.title {
+  background-color: #553d67;
+  color: #f64c72;
 }
-.theme-seacalm .reveal.pattern--space2 .slides section.title {
-  background-color: #EDAF49;
-  color: #30638B;
+.theme-black .reveal.pattern--space2 .slides section.title {
+  background-color: #C687E8;
+  color: #BDE16B;
 }
-.theme-goldilocks .reveal.pattern--space2 .slides section.title {
-  background-color: #EDAF49;
-  color: #30638B;
+.theme-candy .reveal.pattern--space2 .slides section.title {
+  background-color: #d3b71f;
+  color: #bd3563;
 }
-.theme-duotone .reveal.pattern--space2 .slides section.title {
-  background-color: #736FBA;
-  color: #CC144B;
+.theme-skeletor .reveal.pattern--space2 .slides section.title {
+  background-color: #987cb0;
+  color: #f0bb5a;
 }
-.theme-jewels .reveal.pattern--space2 .slides section.title {
-  background-color: #79C9E8;
-  color: #4A235D;
+.theme-honey .reveal.pattern--space2 .slides section.title {
+  background-color: #677077;
+  color: #F2B632;
 }
-.theme-soda .reveal.pattern--space2 .slides section.title {
-  background-color: #1073b9;
-  color: #263c80;
+.theme-ultra .reveal.pattern--space2 .slides section.title {
+  background-color: #9B84C0;
+  color: #E55982;
 }
 .reveal.pattern--space3 {
   background-image: url("../assets/patterns/space3.png");
 }
 
-.theme-streams .reveal.pattern--space3 .slides section.intro {
-  background-color: #5F4B8B;
+.theme-sedona .reveal.pattern--space3 .slides section.intro {
+  background-color: #802bb1;
 }
-.theme-lines .reveal.pattern--space3 .slides section.intro {
-  background-color: #3A015C;
+.theme-bright-blue .reveal.pattern--space3 .slides section.intro {
+  background-color: #f64c72;
 }
-.theme-seacalm .reveal.pattern--space3 .slides section.intro {
-  background-color: #30638B;
+.theme-black .reveal.pattern--space3 .slides section.intro {
+  background-color: #BDE16B;
 }
-.theme-goldilocks .reveal.pattern--space3 .slides section.intro {
-  background-color: #30638B;
+.theme-candy .reveal.pattern--space3 .slides section.intro {
+  background-color: #bd3563;
 }
-.theme-duotone .reveal.pattern--space3 .slides section.intro {
-  background-color: #CC144B;
+.theme-skeletor .reveal.pattern--space3 .slides section.intro {
+  background-color: #f0bb5a;
 }
-.theme-jewels .reveal.pattern--space3 .slides section.intro {
-  background-color: #4A235D;
+.theme-honey .reveal.pattern--space3 .slides section.intro {
+  background-color: #F2B632;
 }
-.theme-soda .reveal.pattern--space3 .slides section.intro {
-  background-color: #263c80;
+.theme-ultra .reveal.pattern--space3 .slides section.intro {
+  background-color: #E55982;
 }
 .reveal.pattern--trooper {
   background-image: url("../assets/patterns/trooper.jpg");
 }
 
-.theme-streams .reveal.pattern--trooper .slides section.intro {
-  background-color: #5F4B8B;
+.theme-sedona .reveal.pattern--trooper .slides section.intro {
+  background-color: #802bb1;
 }
-.theme-lines .reveal.pattern--trooper .slides section.intro {
-  background-color: #3A015C;
+.theme-bright-blue .reveal.pattern--trooper .slides section.intro {
+  background-color: #f64c72;
 }
-.theme-seacalm .reveal.pattern--trooper .slides section.intro {
-  background-color: #30638B;
+.theme-black .reveal.pattern--trooper .slides section.intro {
+  background-color: #BDE16B;
 }
-.theme-goldilocks .reveal.pattern--trooper .slides section.intro {
-  background-color: #30638B;
+.theme-candy .reveal.pattern--trooper .slides section.intro {
+  background-color: #bd3563;
 }
-.theme-duotone .reveal.pattern--trooper .slides section.intro {
-  background-color: #CC144B;
+.theme-skeletor .reveal.pattern--trooper .slides section.intro {
+  background-color: #f0bb5a;
 }
-.theme-jewels .reveal.pattern--trooper .slides section.intro {
-  background-color: #4A235D;
+.theme-honey .reveal.pattern--trooper .slides section.intro {
+  background-color: #F2B632;
 }
-.theme-soda .reveal.pattern--trooper .slides section.intro {
-  background-color: #263c80;
+.theme-ultra .reveal.pattern--trooper .slides section.intro {
+  background-color: #E55982;
 }
-.theme-streams .reveal.pattern--trooper .slides section.title {
-  background-color: #5F4B8B;
+.theme-sedona .reveal.pattern--trooper .slides section.title {
+  background-color: #802bb1;
   color: #747CA8;
 }
-.theme-lines .reveal.pattern--trooper .slides section.title {
-  background-color: #3A015C;
-  color: #00BCD4;
+.theme-bright-blue .reveal.pattern--trooper .slides section.title {
+  background-color: #f64c72;
+  color: #553d67;
 }
-.theme-seacalm .reveal.pattern--trooper .slides section.title {
-  background-color: #30638B;
-  color: #EDAF49;
+.theme-black .reveal.pattern--trooper .slides section.title {
+  background-color: #BDE16B;
+  color: #C687E8;
 }
-.theme-goldilocks .reveal.pattern--trooper .slides section.title {
-  background-color: #30638B;
-  color: #EDAF49;
+.theme-candy .reveal.pattern--trooper .slides section.title {
+  background-color: #bd3563;
+  color: #d3b71f;
 }
-.theme-duotone .reveal.pattern--trooper .slides section.title {
-  background-color: #CC144B;
-  color: #736FBA;
+.theme-skeletor .reveal.pattern--trooper .slides section.title {
+  background-color: #f0bb5a;
+  color: #987cb0;
 }
-.theme-jewels .reveal.pattern--trooper .slides section.title {
-  background-color: #4A235D;
-  color: #79C9E8;
+.theme-honey .reveal.pattern--trooper .slides section.title {
+  background-color: #F2B632;
+  color: #677077;
 }
-.theme-soda .reveal.pattern--trooper .slides section.title {
-  background-color: #263c80;
-  color: #1073b9;
+.theme-ultra .reveal.pattern--trooper .slides section.title {
+  background-color: #E55982;
+  color: #9B84C0;
 }
 .reveal.pattern--fox {
   background-image: url("../assets/patterns/fox.png");
 }
 
-.theme-streams .reveal.pattern--fox .slides section.intro {
-  background-color: #5F4B8B;
+.theme-sedona .reveal.pattern--fox .slides section.intro {
+  background-color: #802bb1;
 }
-.theme-lines .reveal.pattern--fox .slides section.intro {
-  background-color: #3A015C;
+.theme-bright-blue .reveal.pattern--fox .slides section.intro {
+  background-color: #f64c72;
 }
-.theme-seacalm .reveal.pattern--fox .slides section.intro {
-  background-color: #30638B;
+.theme-black .reveal.pattern--fox .slides section.intro {
+  background-color: #BDE16B;
 }
-.theme-goldilocks .reveal.pattern--fox .slides section.intro {
-  background-color: #30638B;
+.theme-candy .reveal.pattern--fox .slides section.intro {
+  background-color: #bd3563;
 }
-.theme-duotone .reveal.pattern--fox .slides section.intro {
-  background-color: #CC144B;
+.theme-skeletor .reveal.pattern--fox .slides section.intro {
+  background-color: #f0bb5a;
 }
-.theme-jewels .reveal.pattern--fox .slides section.intro {
-  background-color: #4A235D;
+.theme-honey .reveal.pattern--fox .slides section.intro {
+  background-color: #F2B632;
 }
-.theme-soda .reveal.pattern--fox .slides section.intro {
-  background-color: #263c80;
+.theme-ultra .reveal.pattern--fox .slides section.intro {
+  background-color: #E55982;
 }
-.theme-streams .reveal.pattern--fox .slides section.title {
-  background-color: #5F4B8B;
+.theme-sedona .reveal.pattern--fox .slides section.title {
+  background-color: #802bb1;
   color: #747CA8;
 }
-.theme-lines .reveal.pattern--fox .slides section.title {
-  background-color: #3A015C;
-  color: #00BCD4;
+.theme-bright-blue .reveal.pattern--fox .slides section.title {
+  background-color: #f64c72;
+  color: #553d67;
 }
-.theme-seacalm .reveal.pattern--fox .slides section.title {
-  background-color: #30638B;
-  color: #EDAF49;
+.theme-black .reveal.pattern--fox .slides section.title {
+  background-color: #BDE16B;
+  color: #C687E8;
 }
-.theme-goldilocks .reveal.pattern--fox .slides section.title {
-  background-color: #30638B;
-  color: #EDAF49;
+.theme-candy .reveal.pattern--fox .slides section.title {
+  background-color: #bd3563;
+  color: #d3b71f;
 }
-.theme-duotone .reveal.pattern--fox .slides section.title {
-  background-color: #CC144B;
-  color: #736FBA;
+.theme-skeletor .reveal.pattern--fox .slides section.title {
+  background-color: #f0bb5a;
+  color: #987cb0;
 }
-.theme-jewels .reveal.pattern--fox .slides section.title {
-  background-color: #4A235D;
-  color: #79C9E8;
+.theme-honey .reveal.pattern--fox .slides section.title {
+  background-color: #F2B632;
+  color: #677077;
 }
-.theme-soda .reveal.pattern--fox .slides section.title {
-  background-color: #263c80;
-  color: #1073b9;
+.theme-ultra .reveal.pattern--fox .slides section.title {
+  background-color: #E55982;
+  color: #9B84C0;
 }
 /*********************************************
  * IMPORT FONTS
@@ -2401,11 +2401,89 @@ figure.code pre + figcaption {
 * USE DEFAULT COLOR FOR SLIDES
 ******************************/
 .reveal .slides section.subsection:not([class*=color--]) {
-  background-color: #fff;
+  color: #c5c2c2;
 }
-
+.theme-sedona .reveal .slides section.subsection:not([class*=color--]) {
+  background-color: #2A2A49;
+}
+.theme-bright-blue .reveal .slides section.subsection:not([class*=color--]) {
+  background-color: #2f2fa2;
+}
+.theme-black .reveal .slides section.subsection:not([class*=color--]) {
+  background-color: #2A2A49;
+}
+.theme-candy .reveal .slides section.subsection:not([class*=color--]) {
+  background-color: #211a38;
+}
+.theme-skeletor .reveal .slides section.subsection:not([class*=color--]) {
+  background-color: #21122c;
+}
+.theme-honey .reveal .slides section.subsection:not([class*=color--]) {
+  background-color: #252839;
+}
+.theme-ultra .reveal .slides section.subsection:not([class*=color--]) {
+  background-color: #5F4B8B;
+}
 .reveal .slides section:not([class*=color--]) {
-  background-color: white;
+  color: #c5c2c2;
+}
+.theme-sedona .reveal .slides section:not([class*=color--]) {
+  background-color: #2A2A49;
+}
+.theme-bright-blue .reveal .slides section:not([class*=color--]) {
+  background-color: #2f2fa2;
+}
+.theme-black .reveal .slides section:not([class*=color--]) {
+  background-color: #2A2A49;
+}
+.theme-candy .reveal .slides section:not([class*=color--]) {
+  background-color: #211a38;
+}
+.theme-skeletor .reveal .slides section:not([class*=color--]) {
+  background-color: #21122c;
+}
+.theme-honey .reveal .slides section:not([class*=color--]) {
+  background-color: #252839;
+}
+.theme-ultra .reveal .slides section:not([class*=color--]) {
+  background-color: #5F4B8B;
+}
+.reveal {
+  color: white !important;
 }
 
-/*# sourceMappingURL=light_theme.css.map */
+/*********************************************
+ * About presenter
+ *********************************************/
+/*
+Slide containing information about the presenter
+has a background image and a box with the details */
+#about a {
+  color: #c5c2c2;
+}
+#about aside {
+  background-color: rgba(17, 18, 19, 0.85) !important;
+  color: #c5c2c2 !important;
+}
+#about .accounts a {
+  color: #c5c2c2 !important;
+}
+
+.slides .title .presentation-url {
+  opacity: 0.8;
+  color: #c5c2c2;
+}
+
+.header .twitter {
+  opacity: 0.8;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+.header .twitter a {
+  color: #d5d5d5 !important;
+}
+.header .twitter .fa-twitter {
+  color: #d5d5d5 !important;
+}
+
+/*# sourceMappingURL=dark_theme.css.map */
