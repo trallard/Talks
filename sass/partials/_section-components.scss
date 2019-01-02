@@ -49,10 +49,12 @@
 .reveal h4,
 .reveal h5,
 .reveal h6,
+.reveal mega-font,
 .reveal huge-font,
 .reveal big-font {
     margin-bottom: 2.5vmin;
     color: inherit;
+    line-height: 1.2;
 }
 
 .reveal h1,
@@ -61,6 +63,7 @@
 .reveal h4,
 .reveal h5,
 .reveal h6,
+.reveal mega-font,
 .reveal huge-font,
 .reveal big-font {
     margin: 0 0 20px 0;
@@ -324,11 +327,22 @@ div {
     em {
         font-style: italic;
     }
+    mega-font {
+        font-size: 6.5em;
+        @include themify($themes) {
+            color: themed('primary');
+            font-family: themed('title-font');
+            line-height: 1.2;
+            word-wrap: break-word;
+        }
+    }
     huge-font {
         font-size: 5em;
         @include themify($themes) {
             color: themed('primary');
             font-family: themed('title-font');
+            line-height: 1.2;
+            word-wrap: break-word;
         }
     }
     big-font {
@@ -336,6 +350,9 @@ div {
         @include themify($themes) {
             color: themed('primary');
             font-family: themed('title-font');
+            line-height: 1.2;
+            word-wrap: break-word;
+            letter-spacing: normal;
         }
     }
 }

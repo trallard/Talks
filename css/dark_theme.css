@@ -60,7 +60,9 @@
 *********************************************/
 html {
   font-size: 1em;
-  line-height: 1.2;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 @media (min-width: 48em) {
   html {
@@ -732,10 +734,12 @@ has a background image and a box with the details */
 .reveal h4,
 .reveal h5,
 .reveal h6,
+.reveal mega-font,
 .reveal huge-font,
 .reveal big-font {
   margin-bottom: 2.5vmin;
   color: inherit;
+  line-height: 1.2;
 }
 
 .reveal h1,
@@ -744,6 +748,7 @@ has a background image and a box with the details */
 .reveal h4,
 .reveal h5,
 .reveal h6,
+.reveal mega-font,
 .reveal huge-font,
 .reveal big-font {
   margin: 0 0 20px 0;
@@ -760,6 +765,7 @@ has a background image and a box with the details */
 .theme-sedona .reveal h4,
 .theme-sedona .reveal h5,
 .theme-sedona .reveal h6,
+.theme-sedona .reveal mega-font,
 .theme-sedona .reveal huge-font,
 .theme-sedona .reveal big-font {
   color: #802bb1;
@@ -770,6 +776,7 @@ has a background image and a box with the details */
 .theme-bright-blue .reveal h4,
 .theme-bright-blue .reveal h5,
 .theme-bright-blue .reveal h6,
+.theme-bright-blue .reveal mega-font,
 .theme-bright-blue .reveal huge-font,
 .theme-bright-blue .reveal big-font {
   color: #f64c72;
@@ -780,6 +787,7 @@ has a background image and a box with the details */
 .theme-black .reveal h4,
 .theme-black .reveal h5,
 .theme-black .reveal h6,
+.theme-black .reveal mega-font,
 .theme-black .reveal huge-font,
 .theme-black .reveal big-font {
   color: #BDE16B;
@@ -790,6 +798,7 @@ has a background image and a box with the details */
 .theme-candy .reveal h4,
 .theme-candy .reveal h5,
 .theme-candy .reveal h6,
+.theme-candy .reveal mega-font,
 .theme-candy .reveal huge-font,
 .theme-candy .reveal big-font {
   color: #bd3563;
@@ -800,6 +809,7 @@ has a background image and a box with the details */
 .theme-skeletor .reveal h4,
 .theme-skeletor .reveal h5,
 .theme-skeletor .reveal h6,
+.theme-skeletor .reveal mega-font,
 .theme-skeletor .reveal huge-font,
 .theme-skeletor .reveal big-font {
   color: #f0bb5a;
@@ -810,6 +820,7 @@ has a background image and a box with the details */
 .theme-honey .reveal h4,
 .theme-honey .reveal h5,
 .theme-honey .reveal h6,
+.theme-honey .reveal mega-font,
 .theme-honey .reveal huge-font,
 .theme-honey .reveal big-font {
   color: #F2B632;
@@ -820,6 +831,7 @@ has a background image and a box with the details */
 .theme-ultra .reveal h4,
 .theme-ultra .reveal h5,
 .theme-ultra .reveal h6,
+.theme-ultra .reveal mega-font,
 .theme-ultra .reveal huge-font,
 .theme-ultra .reveal big-font {
   color: #E55982;
@@ -830,6 +842,7 @@ has a background image and a box with the details */
 .theme-poppins-font .reveal h4,
 .theme-poppins-font .reveal h5,
 .theme-poppins-font .reveal h6,
+.theme-poppins-font .reveal mega-font,
 .theme-poppins-font .reveal huge-font,
 .theme-poppins-font .reveal big-font {
   font-family: IBMPlexSerif, monospace;
@@ -840,6 +853,7 @@ has a background image and a box with the details */
 .theme-cunia-font .reveal h4,
 .theme-cunia-font .reveal h5,
 .theme-cunia-font .reveal h6,
+.theme-cunia-font .reveal mega-font,
 .theme-cunia-font .reveal huge-font,
 .theme-cunia-font .reveal big-font {
   font-family: Cunia, sans-serif;
@@ -850,6 +864,7 @@ has a background image and a box with the details */
 .theme-plex-font .reveal h4,
 .theme-plex-font .reveal h5,
 .theme-plex-font .reveal h6,
+.theme-plex-font .reveal mega-font,
 .theme-plex-font .reveal huge-font,
 .theme-plex-font .reveal big-font {
   font-family: IBMPlexSerif, monospace;
@@ -860,6 +875,7 @@ has a background image and a box with the details */
 .theme-dosis-font .reveal h4,
 .theme-dosis-font .reveal h5,
 .theme-dosis-font .reveal h6,
+.theme-dosis-font .reveal mega-font,
 .theme-dosis-font .reveal huge-font,
 .theme-dosis-font .reveal big-font {
   font-family: Dosis, sans-serif;
@@ -870,6 +886,7 @@ has a background image and a box with the details */
 .theme-leafy-font .reveal h4,
 .theme-leafy-font .reveal h5,
 .theme-leafy-font .reveal h6,
+.theme-leafy-font .reveal mega-font,
 .theme-leafy-font .reveal huge-font,
 .theme-leafy-font .reveal big-font {
   font-family: Leafy, cursive;
@@ -880,6 +897,7 @@ has a background image and a box with the details */
 .theme-allmono-font .reveal h4,
 .theme-allmono-font .reveal h5,
 .theme-allmono-font .reveal h6,
+.theme-allmono-font .reveal mega-font,
 .theme-allmono-font .reveal huge-font,
 .theme-allmono-font .reveal big-font {
   font-family: Muli, sans-serif;
@@ -890,6 +908,7 @@ has a background image and a box with the details */
 .theme-soda-font .reveal h4,
 .theme-soda-font .reveal h5,
 .theme-soda-font .reveal h6,
+.theme-soda-font .reveal mega-font,
 .theme-soda-font .reveal huge-font,
 .theme-soda-font .reveal big-font {
   font-family: Open Sans, sans-serif;
@@ -900,6 +919,7 @@ has a background image and a box with the details */
 .theme-klasik-font .reveal h4,
 .theme-klasik-font .reveal h5,
 .theme-klasik-font .reveal h6,
+.theme-klasik-font .reveal mega-font,
 .theme-klasik-font .reveal huge-font,
 .theme-klasik-font .reveal big-font {
   font-family: Klasik, sans-serif;
@@ -910,6 +930,7 @@ has a background image and a box with the details */
 .theme-nox-font .reveal h4,
 .theme-nox-font .reveal h5,
 .theme-nox-font .reveal h6,
+.theme-nox-font .reveal mega-font,
 .theme-nox-font .reveal huge-font,
 .theme-nox-font .reveal big-font {
   font-family: Annie Use Your Telescope, cursive;
@@ -1416,107 +1437,270 @@ div.images img {
 .reveal em {
   font-style: italic;
 }
+.reveal mega-font {
+  font-size: 6.5em;
+}
+.theme-sedona .reveal mega-font {
+  color: #802bb1;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-bright-blue .reveal mega-font {
+  color: #f64c72;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-black .reveal mega-font {
+  color: #BDE16B;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-candy .reveal mega-font {
+  color: #bd3563;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-skeletor .reveal mega-font {
+  color: #f0bb5a;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-honey .reveal mega-font {
+  color: #F2B632;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-ultra .reveal mega-font {
+  color: #E55982;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-poppins-font .reveal mega-font {
+  font-family: IBMPlexSerif, monospace;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-cunia-font .reveal mega-font {
+  font-family: Cunia, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-plex-font .reveal mega-font {
+  font-family: IBMPlexSerif, monospace;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-dosis-font .reveal mega-font {
+  font-family: Dosis, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-leafy-font .reveal mega-font {
+  font-family: Leafy, cursive;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-allmono-font .reveal mega-font {
+  font-family: Muli, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-soda-font .reveal mega-font {
+  font-family: Open Sans, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-klasik-font .reveal mega-font {
+  font-family: Klasik, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-nox-font .reveal mega-font {
+  font-family: Annie Use Your Telescope, cursive;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
 .reveal huge-font {
   font-size: 5em;
 }
 .theme-sedona .reveal huge-font {
   color: #802bb1;
+  line-height: 1.2;
+  word-wrap: break-word;
 }
 .theme-bright-blue .reveal huge-font {
   color: #f64c72;
+  line-height: 1.2;
+  word-wrap: break-word;
 }
 .theme-black .reveal huge-font {
   color: #BDE16B;
+  line-height: 1.2;
+  word-wrap: break-word;
 }
 .theme-candy .reveal huge-font {
   color: #bd3563;
+  line-height: 1.2;
+  word-wrap: break-word;
 }
 .theme-skeletor .reveal huge-font {
   color: #f0bb5a;
+  line-height: 1.2;
+  word-wrap: break-word;
 }
 .theme-honey .reveal huge-font {
   color: #F2B632;
+  line-height: 1.2;
+  word-wrap: break-word;
 }
 .theme-ultra .reveal huge-font {
   color: #E55982;
+  line-height: 1.2;
+  word-wrap: break-word;
 }
 .theme-poppins-font .reveal huge-font {
   font-family: IBMPlexSerif, monospace;
+  line-height: 1.2;
+  word-wrap: break-word;
 }
 .theme-cunia-font .reveal huge-font {
   font-family: Cunia, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
 }
 .theme-plex-font .reveal huge-font {
   font-family: IBMPlexSerif, monospace;
+  line-height: 1.2;
+  word-wrap: break-word;
 }
 .theme-dosis-font .reveal huge-font {
   font-family: Dosis, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
 }
 .theme-leafy-font .reveal huge-font {
   font-family: Leafy, cursive;
+  line-height: 1.2;
+  word-wrap: break-word;
 }
 .theme-allmono-font .reveal huge-font {
   font-family: Muli, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
 }
 .theme-soda-font .reveal huge-font {
   font-family: Open Sans, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
 }
 .theme-klasik-font .reveal huge-font {
   font-family: Klasik, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
 }
 .theme-nox-font .reveal huge-font {
   font-family: Annie Use Your Telescope, cursive;
+  line-height: 1.2;
+  word-wrap: break-word;
 }
 .reveal big-font {
   font-size: 4em;
 }
 .theme-sedona .reveal big-font {
   color: #802bb1;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
 }
 .theme-bright-blue .reveal big-font {
   color: #f64c72;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
 }
 .theme-black .reveal big-font {
   color: #BDE16B;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
 }
 .theme-candy .reveal big-font {
   color: #bd3563;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
 }
 .theme-skeletor .reveal big-font {
   color: #f0bb5a;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
 }
 .theme-honey .reveal big-font {
   color: #F2B632;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
 }
 .theme-ultra .reveal big-font {
   color: #E55982;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
 }
 .theme-poppins-font .reveal big-font {
   font-family: IBMPlexSerif, monospace;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
 }
 .theme-cunia-font .reveal big-font {
   font-family: Cunia, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
 }
 .theme-plex-font .reveal big-font {
   font-family: IBMPlexSerif, monospace;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
 }
 .theme-dosis-font .reveal big-font {
   font-family: Dosis, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
 }
 .theme-leafy-font .reveal big-font {
   font-family: Leafy, cursive;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
 }
 .theme-allmono-font .reveal big-font {
   font-family: Muli, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
 }
 .theme-soda-font .reveal big-font {
   font-family: Open Sans, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
 }
 .theme-klasik-font .reveal big-font {
   font-family: Klasik, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
 }
 .theme-nox-font .reveal big-font {
   font-family: Annie Use Your Telescope, cursive;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
 }
 
 /* Additional divs */
