@@ -636,6 +636,9 @@ has a background image and a box with the details */
 .theme-borealis .social_icon {
   color: #00DFB4;
 }
+.theme-python .social_icon {
+  color: #569CCB;
+}
 /*********************************************
  * GLOBAL STYLES- go over the reveal.js 
  *********************************************/
@@ -703,6 +706,9 @@ has a background image and a box with the details */
 .theme-borealis ::selection {
   background: #ced2e9;
 }
+.theme-python ::selection {
+  background: #fee190;
+}
 ::-moz-selection {
   color: #fff;
   text-shadow: none;
@@ -730,6 +736,9 @@ has a background image and a box with the details */
 }
 .theme-borealis ::-moz-selection {
   background: #7489C7;
+}
+.theme-python ::-moz-selection {
+  background: #EC9B5F;
 }
 .reveal .slides {
   text-align: left;
@@ -861,6 +870,17 @@ has a background image and a box with the details */
 .theme-borealis .reveal huge-font,
 .theme-borealis .reveal big-font {
   color: #00DFB4;
+}
+.theme-python .reveal h1,
+.theme-python .reveal h2,
+.theme-python .reveal h3,
+.theme-python .reveal h4,
+.theme-python .reveal h5,
+.theme-python .reveal h6,
+.theme-python .reveal mega-font,
+.theme-python .reveal huge-font,
+.theme-python .reveal big-font {
+  color: #569CCB;
 }
 .theme-poppins-font .reveal h1,
 .theme-poppins-font .reveal h2,
@@ -1093,6 +1113,11 @@ div.images img {
   -webkit-text-decoration-color: #7489C7;
   color: #7489C7;
 }
+.theme-python .reveal a {
+  text-decoration-color: #EC9B5F;
+  -webkit-text-decoration-color: #EC9B5F;
+  color: #EC9B5F;
+}
 .reveal a:hover {
   text-shadow: none;
   border: none;
@@ -1135,6 +1160,11 @@ div.images img {
 .theme-borealis .reveal a:hover {
   color: #7489C7;
   border-bottom: 2px solid #7489C7;
+  /* I prefer a thicker line than the underline */
+}
+.theme-python .reveal a:hover {
+  color: #EC9B5F;
+  border-bottom: 2px solid #EC9B5F;
   /* I prefer a thicker line than the underline */
 }
 .theme-poppins-font .reveal a:hover {
@@ -1205,6 +1235,9 @@ div.images img {
 .theme-borealis .reveal .roll span:after {
   background: #7489C7;
 }
+.theme-python .reveal .roll span:after {
+  background: #EC9B5F;
+}
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
@@ -1231,6 +1264,9 @@ div.images img {
 }
 .theme-borealis .reveal .controls {
   color: #7489C7;
+}
+.theme-python .reveal .controls {
+  color: #EC9B5F;
 }
 .reveal .controls {
   right: 4vmin;
@@ -1273,6 +1309,9 @@ div.images img {
 .theme-borealis .reveal .progress {
   color: #7489C7;
 }
+.theme-python .reveal .progress {
+  color: #EC9B5F;
+}
 .theme-sedona .reveal .progress span {
   background: #747CA8;
 }
@@ -1296,6 +1335,9 @@ div.images img {
 }
 .theme-borealis .reveal .progress span {
   background: #ABB1D9;
+}
+.theme-python .reveal .progress span {
+  background: #FDD45E;
 }
 /*********************************************
 * LISTS
@@ -1340,6 +1382,9 @@ div.images img {
 .theme-borealis .reveal ul.icon li::before {
   color: #ABB1D9;
 }
+.theme-python .reveal ul.icon li::before {
+  color: #FDD45E;
+}
 .reveal ul.icon li.pinata::before {
   content: "";
 }
@@ -1366,6 +1411,9 @@ div.images img {
 }
 .theme-borealis .reveal ul.icon li.pinata::before {
   color: #ABB1D9;
+}
+.theme-python .reveal ul.icon li.pinata::before {
+  color: #FDD45E;
 }
 .reveal ul.icon li.nopal::before {
   content: "";
@@ -1394,6 +1442,9 @@ div.images img {
 .theme-borealis .reveal ul.icon li.nopal::before {
   color: #ABB1D9;
 }
+.theme-python .reveal ul.icon li.nopal::before {
+  color: #FDD45E;
+}
 .reveal ul.icon li.cactus::before {
   content: "";
 }
@@ -1421,6 +1472,9 @@ div.images img {
 .theme-borealis .reveal ul.icon li.cactus::before {
   color: #ABB1D9;
 }
+.theme-python .reveal ul.icon li.cactus::before {
+  color: #FDD45E;
+}
 .reveal ul.icon li.skull::before {
   content: "";
 }
@@ -1447,6 +1501,9 @@ div.images img {
 }
 .theme-borealis .reveal ul.icon li.skull::before {
   color: #ABB1D9;
+}
+.theme-python .reveal ul.icon li.skull::before {
+  color: #FDD45E;
 }
 /* table with no divisions and with bold purple first column */
 .reveal table th {
@@ -1512,6 +1569,9 @@ div.images img {
 .theme-borealis .reveal strong-alt {
   color: #13ffd1;
 }
+.theme-python .reveal strong-alt {
+  color: #7db3d7;
+}
 .reveal small {
   font-size: 0.8em;
 }
@@ -1558,6 +1618,11 @@ div.images img {
 }
 .theme-borealis .reveal mega-font {
   color: #00DFB4;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-python .reveal mega-font {
+  color: #569CCB;
   line-height: 1.2;
   word-wrap: break-word;
 }
@@ -1651,6 +1716,11 @@ div.images img {
 }
 .theme-borealis .reveal huge-font {
   color: #00DFB4;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-python .reveal huge-font {
+  color: #569CCB;
   line-height: 1.2;
   word-wrap: break-word;
 }
@@ -1751,6 +1821,12 @@ div.images img {
 }
 .theme-borealis .reveal big-font {
   color: #00DFB4;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-python .reveal big-font {
+  color: #569CCB;
   line-height: 1.2;
   word-wrap: break-word;
   letter-spacing: normal;
@@ -2088,6 +2164,9 @@ figure.code pre + figcaption {
 .theme-borealis .reveal.pattern--stream .slides section.intro {
   background-color: #00DFB4;
 }
+.theme-python .reveal.pattern--stream .slides section.intro {
+  background-color: #569CCB;
+}
 .theme-sedona .reveal.pattern--stream .slides section.title {
   background-color: #802bb1;
 }
@@ -2111,6 +2190,9 @@ figure.code pre + figcaption {
 }
 .theme-borealis .reveal.pattern--stream .slides section.title {
   background-color: #00DFB4;
+}
+.theme-python .reveal.pattern--stream .slides section.title {
+  background-color: #569CCB;
 }
 .reveal.pattern--lines {
   background-image: url(../assets/patterns///lines.png);
@@ -2139,6 +2221,9 @@ figure.code pre + figcaption {
 }
 .theme-borealis .reveal.pattern--lines .slides section.intro {
   background-color: #ABB1D9;
+}
+.theme-python .reveal.pattern--lines .slides section.intro {
+  background-color: #FDD45E;
 }
 .theme-sedona .reveal.pattern--lines .slides section.title {
   background-color: #747CA8;
@@ -2172,6 +2257,10 @@ figure.code pre + figcaption {
   background-color: #ABB1D9;
   color: #00DFB4;
 }
+.theme-python .reveal.pattern--lines .slides section.title {
+  background-color: #FDD45E;
+  color: #569CCB;
+}
 .theme-sedona .reveal.pattern--lines .progress {
   background-color: #d1d7e0;
 }
@@ -2195,6 +2284,9 @@ figure.code pre + figcaption {
 }
 .theme-borealis .reveal.pattern--lines .progress {
   background-color: #7489C7;
+}
+.theme-python .reveal.pattern--lines .progress {
+  background-color: #EC9B5F;
 }
 .reveal.pattern--hex {
   background-image: url("../assets/patterns/hex_pattern.png");
@@ -2223,6 +2315,9 @@ figure.code pre + figcaption {
 }
 .theme-borealis .reveal.pattern--hex .slides section.intro {
   background-color: #ABB1D9;
+}
+.theme-python .reveal.pattern--hex .slides section.intro {
+  background-color: #FDD45E;
 }
 .theme-sedona .reveal.pattern--hex .slides section.title {
   background-color: #747CA8;
@@ -2256,6 +2351,10 @@ figure.code pre + figcaption {
   background-color: #ABB1D9;
   color: #00DFB4;
 }
+.theme-python .reveal.pattern--hex .slides section.title {
+  background-color: #FDD45E;
+  color: #569CCB;
+}
 .theme-sedona .reveal.pattern--hex .progress {
   background-color: #d1d7e0;
 }
@@ -2279,6 +2378,9 @@ figure.code pre + figcaption {
 }
 .theme-borealis .reveal.pattern--hex .progress {
   background-color: #7489C7;
+}
+.theme-python .reveal.pattern--hex .progress {
+  background-color: #EC9B5F;
 }
 .reveal.pattern--star {
   background-image: url("../assets/patterns/star_pattern.svg");
@@ -2307,6 +2409,9 @@ figure.code pre + figcaption {
 }
 .theme-borealis .reveal.pattern--star .slides section.intro {
   background-color: #ABB1D9;
+}
+.theme-python .reveal.pattern--star .slides section.intro {
+  background-color: #FDD45E;
 }
 .theme-sedona .reveal.pattern--star .slides section.title {
   background-color: #747CA8;
@@ -2340,6 +2445,10 @@ figure.code pre + figcaption {
   background-color: #ABB1D9;
   color: #00DFB4;
 }
+.theme-python .reveal.pattern--star .slides section.title {
+  background-color: #FDD45E;
+  color: #569CCB;
+}
 .theme-sedona .reveal.pattern--star .progress {
   background-color: #d1d7e0;
 }
@@ -2363,6 +2472,9 @@ figure.code pre + figcaption {
 }
 .theme-borealis .reveal.pattern--star .progress {
   background-color: #7489C7;
+}
+.theme-python .reveal.pattern--star .progress {
+  background-color: #EC9B5F;
 }
 .reveal.pattern--pupilines {
   background-image: url("../assets/patterns/pupilines.svg");
@@ -2391,6 +2503,9 @@ figure.code pre + figcaption {
 }
 .theme-borealis .reveal.pattern--pupilines .slides section.intro {
   background-color: #ABB1D9;
+}
+.theme-python .reveal.pattern--pupilines .slides section.intro {
+  background-color: #FDD45E;
 }
 .theme-sedona .reveal.pattern--pupilines .slides section.title {
   background-color: #747CA8;
@@ -2424,6 +2539,10 @@ figure.code pre + figcaption {
   background-color: #ABB1D9;
   color: #00DFB4;
 }
+.theme-python .reveal.pattern--pupilines .slides section.title {
+  background-color: #FDD45E;
+  color: #569CCB;
+}
 .theme-sedona .reveal.pattern--pupilines .progress {
   background-color: #747CA8;
 }
@@ -2448,6 +2567,9 @@ figure.code pre + figcaption {
 .theme-borealis .reveal.pattern--pupilines .progress {
   background-color: #ABB1D9;
 }
+.theme-python .reveal.pattern--pupilines .progress {
+  background-color: #FDD45E;
+}
 .theme-sedona .reveal.pattern--pupilines .controls {
   color: #747CA8;
 }
@@ -2471,6 +2593,9 @@ figure.code pre + figcaption {
 }
 .theme-borealis .reveal.pattern--pupilines .controls {
   color: #ABB1D9;
+}
+.theme-python .reveal.pattern--pupilines .controls {
+  color: #FDD45E;
 }
 .reveal.pattern--bwlines {
   background-image: url("../assets/patterns/bwlines.svg");
@@ -2499,6 +2624,9 @@ figure.code pre + figcaption {
 }
 .theme-borealis .reveal.pattern--bwlines .slides section.intro {
   background-color: #ABB1D9;
+}
+.theme-python .reveal.pattern--bwlines .slides section.intro {
+  background-color: #FDD45E;
 }
 .theme-sedona .reveal.pattern--bwlines .slides section.title {
   background-color: #747CA8;
@@ -2532,6 +2660,10 @@ figure.code pre + figcaption {
   background-color: #ABB1D9;
   color: #00DFB4;
 }
+.theme-python .reveal.pattern--bwlines .slides section.title {
+  background-color: #FDD45E;
+  color: #569CCB;
+}
 .reveal.pattern--space2 {
   background-image: url("../assets/patterns/space2.png");
 }
@@ -2559,6 +2691,9 @@ figure.code pre + figcaption {
 }
 .theme-borealis .reveal.pattern--space2 .slides section.intro {
   background-color: #ABB1D9;
+}
+.theme-python .reveal.pattern--space2 .slides section.intro {
+  background-color: #FDD45E;
 }
 .theme-sedona .reveal.pattern--space2 .slides section.title {
   background-color: #747CA8;
@@ -2592,6 +2727,10 @@ figure.code pre + figcaption {
   background-color: #ABB1D9;
   color: #00DFB4;
 }
+.theme-python .reveal.pattern--space2 .slides section.title {
+  background-color: #FDD45E;
+  color: #569CCB;
+}
 .reveal.pattern--space3 {
   background-image: url("../assets/patterns/space3.png");
 }
@@ -2620,6 +2759,9 @@ figure.code pre + figcaption {
 .theme-borealis .reveal.pattern--space3 .slides section.intro {
   background-color: #00DFB4;
 }
+.theme-python .reveal.pattern--space3 .slides section.intro {
+  background-color: #569CCB;
+}
 .reveal.pattern--trooper {
   background-image: url("../assets/patterns/trooper.jpg");
 }
@@ -2647,6 +2789,9 @@ figure.code pre + figcaption {
 }
 .theme-borealis .reveal.pattern--trooper .slides section.intro {
   background-color: #00DFB4;
+}
+.theme-python .reveal.pattern--trooper .slides section.intro {
+  background-color: #569CCB;
 }
 .theme-sedona .reveal.pattern--trooper .slides section.title {
   background-color: #802bb1;
@@ -2680,6 +2825,10 @@ figure.code pre + figcaption {
   background-color: #00DFB4;
   color: #ABB1D9;
 }
+.theme-python .reveal.pattern--trooper .slides section.title {
+  background-color: #569CCB;
+  color: #FDD45E;
+}
 .reveal.pattern--fox {
   background-image: url("../assets/patterns/fox.png");
 }
@@ -2707,6 +2856,9 @@ figure.code pre + figcaption {
 }
 .theme-borealis .reveal.pattern--fox .slides section.intro {
   background-color: #00DFB4;
+}
+.theme-python .reveal.pattern--fox .slides section.intro {
+  background-color: #569CCB;
 }
 .theme-sedona .reveal.pattern--fox .slides section.title {
   background-color: #802bb1;
@@ -2739,6 +2891,10 @@ figure.code pre + figcaption {
 .theme-borealis .reveal.pattern--fox .slides section.title {
   background-color: #00DFB4;
   color: #ABB1D9;
+}
+.theme-python .reveal.pattern--fox .slides section.title {
+  background-color: #569CCB;
+  color: #FDD45E;
 }
 /*********************************************
  * IMPORT FONTS
@@ -2808,6 +2964,9 @@ figure.code pre + figcaption {
 .theme-borealis .reveal .slides section.subsection:not([class*=color--]) {
   background-color: #08142F;
 }
+.theme-python .reveal .slides section.subsection:not([class*=color--]) {
+  background-color: #282d32;
+}
 .reveal .slides section:not([class*=color--]) {
   color: #c5c2c2;
 }
@@ -2834,6 +2993,9 @@ figure.code pre + figcaption {
 }
 .theme-borealis .reveal .slides section:not([class*=color--]) {
   background-color: #08142F;
+}
+.theme-python .reveal .slides section:not([class*=color--]) {
+  background-color: #282d32;
 }
 .reveal {
   color: white !important;

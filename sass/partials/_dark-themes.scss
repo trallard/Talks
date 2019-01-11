@@ -59,6 +59,13 @@ $themes: (
 'third': #7489C7, // dark pastel blue
 'primary-light':lighten(#00DFB4, 10%), 'secondary-light' :lighten(#ABB1D9, 10%), 'dark-col': #08142F, // gunmetal
 ),
+/* python */
+
+'python':( 'primary': #569CCB, // blue
+'secondary': #FDD45E, // python yellow
+'third': #EC9B5F, // dark pastel blue
+'primary-light':lighten(#569CCB, 10%), 'secondary-light' :lighten(#FDD45E, 10%), 'dark-col': #282d32, // gunmetal
+),
 /* The following are font themes */
 
 /* poppins*/
