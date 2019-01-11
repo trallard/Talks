@@ -447,6 +447,9 @@ All code slide
 .theme-klasik-font .items-block {
   font-family: Nunito, sans-serif;
 }
+.theme-klasik-rough-font .items-block {
+  font-family: Nunito, sans-serif;
+}
 .theme-nox-font .items-block {
   font-family: Open-Sans, sans-serif;
 }
@@ -660,6 +663,9 @@ has a background image and a box with the details */
   font-family: Nunito, sans-serif;
 }
 .theme-klasik-font .reveal {
+  font-family: Nunito, sans-serif;
+}
+.theme-klasik-rough-font .reveal {
   font-family: Nunito, sans-serif;
 }
 .theme-nox-font .reveal {
@@ -924,6 +930,17 @@ has a background image and a box with the details */
 .theme-klasik-font .reveal big-font {
   font-family: Klasik, sans-serif;
 }
+.theme-klasik-rough-font .reveal h1,
+.theme-klasik-rough-font .reveal h2,
+.theme-klasik-rough-font .reveal h3,
+.theme-klasik-rough-font .reveal h4,
+.theme-klasik-rough-font .reveal h5,
+.theme-klasik-rough-font .reveal h6,
+.theme-klasik-rough-font .reveal mega-font,
+.theme-klasik-rough-font .reveal huge-font,
+.theme-klasik-rough-font .reveal big-font {
+  font-family: Klasik-Rough, sans-serif;
+}
 .theme-nox-font .reveal h1,
 .theme-nox-font .reveal h2,
 .theme-nox-font .reveal h3,
@@ -1119,6 +1136,10 @@ div.images img {
   /* I prefer a thicker line than the underline */
 }
 .theme-klasik-font .reveal a:hover {
+  border-bottom: 2px solid;
+  /* I prefer a thicker line than the underline */
+}
+.theme-klasik-rough-font .reveal a:hover {
   border-bottom: 2px solid;
   /* I prefer a thicker line than the underline */
 }
@@ -1515,6 +1536,11 @@ div.images img {
   line-height: 1.2;
   word-wrap: break-word;
 }
+.theme-klasik-rough-font .reveal mega-font {
+  font-family: Klasik-Rough, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
 .theme-nox-font .reveal mega-font {
   font-family: Annie Use Your Telescope, cursive;
   line-height: 1.2;
@@ -1595,6 +1621,11 @@ div.images img {
 }
 .theme-klasik-font .reveal huge-font {
   font-family: Klasik, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-klasik-rough-font .reveal huge-font {
+  font-family: Klasik-Rough, sans-serif;
   line-height: 1.2;
   word-wrap: break-word;
 }
@@ -1692,6 +1723,12 @@ div.images img {
 }
 .theme-klasik-font .reveal big-font {
   font-family: Klasik, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-klasik-rough-font .reveal big-font {
+  font-family: Klasik-Rough, sans-serif;
   line-height: 1.2;
   word-wrap: break-word;
   letter-spacing: normal;
@@ -1930,6 +1967,9 @@ figure.code pre + figcaption {
 }
 .theme-klasik-font .reveal .slides section .section {
   font-family: Klasik, sans-serif;
+}
+.theme-klasik-rough-font .reveal .slides section .section {
+  font-family: Klasik-Rough, sans-serif;
 }
 .theme-nox-font .reveal .slides section .section {
   font-family: Annie Use Your Telescope, cursive;
@@ -2556,6 +2596,7 @@ figure.code pre + figcaption {
   font-family: "Cunia";
   src: url("../../fonts/Cunia.woff") format("woff");
   font-style: normal;
+  font-weight: 300;
 }
 @font-face {
   font-family: "Coves";
