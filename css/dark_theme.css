@@ -633,6 +633,9 @@ has a background image and a box with the details */
 .theme-ultra .social_icon {
   color: #E55982;
 }
+.theme-borealis .social_icon {
+  color: #00DFB4;
+}
 /*********************************************
  * GLOBAL STYLES- go over the reveal.js 
  *********************************************/
@@ -697,6 +700,9 @@ has a background image and a box with the details */
 .theme-ultra ::selection {
   background: #b6a6d1;
 }
+.theme-borealis ::selection {
+  background: #ced2e9;
+}
 ::-moz-selection {
   color: #fff;
   text-shadow: none;
@@ -721,6 +727,9 @@ has a background image and a box with the details */
 }
 .theme-ultra ::-moz-selection {
   background: #FAC668;
+}
+.theme-borealis ::-moz-selection {
+  background: #7489C7;
 }
 .reveal .slides {
   text-align: left;
@@ -841,6 +850,17 @@ has a background image and a box with the details */
 .theme-ultra .reveal huge-font,
 .theme-ultra .reveal big-font {
   color: #E55982;
+}
+.theme-borealis .reveal h1,
+.theme-borealis .reveal h2,
+.theme-borealis .reveal h3,
+.theme-borealis .reveal h4,
+.theme-borealis .reveal h5,
+.theme-borealis .reveal h6,
+.theme-borealis .reveal mega-font,
+.theme-borealis .reveal huge-font,
+.theme-borealis .reveal big-font {
+  color: #00DFB4;
 }
 .theme-poppins-font .reveal h1,
 .theme-poppins-font .reveal h2,
@@ -1068,6 +1088,11 @@ div.images img {
   -webkit-text-decoration-color: #FAC668;
   color: #FAC668;
 }
+.theme-borealis .reveal a {
+  text-decoration-color: #7489C7;
+  -webkit-text-decoration-color: #7489C7;
+  color: #7489C7;
+}
 .reveal a:hover {
   text-shadow: none;
   border: none;
@@ -1105,6 +1130,11 @@ div.images img {
 .theme-ultra .reveal a:hover {
   color: #FAC668;
   border-bottom: 2px solid #FAC668;
+  /* I prefer a thicker line than the underline */
+}
+.theme-borealis .reveal a:hover {
+  color: #7489C7;
+  border-bottom: 2px solid #7489C7;
   /* I prefer a thicker line than the underline */
 }
 .theme-poppins-font .reveal a:hover {
@@ -1172,6 +1202,9 @@ div.images img {
 .theme-ultra .reveal .roll span:after {
   background: #FAC668;
 }
+.theme-borealis .reveal .roll span:after {
+  background: #7489C7;
+}
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
@@ -1195,6 +1228,9 @@ div.images img {
 }
 .theme-ultra .reveal .controls {
   color: #FAC668;
+}
+.theme-borealis .reveal .controls {
+  color: #7489C7;
 }
 .reveal .controls {
   right: 4vmin;
@@ -1234,6 +1270,9 @@ div.images img {
 .theme-ultra .reveal .progress {
   color: #FAC668;
 }
+.theme-borealis .reveal .progress {
+  color: #7489C7;
+}
 .theme-sedona .reveal .progress span {
   background: #747CA8;
 }
@@ -1254,6 +1293,9 @@ div.images img {
 }
 .theme-ultra .reveal .progress span {
   background: #9B84C0;
+}
+.theme-borealis .reveal .progress span {
+  background: #ABB1D9;
 }
 /*********************************************
 * LISTS
@@ -1295,6 +1337,9 @@ div.images img {
 .theme-ultra .reveal ul.icon li::before {
   color: #9B84C0;
 }
+.theme-borealis .reveal ul.icon li::before {
+  color: #ABB1D9;
+}
 .reveal ul.icon li.pinata::before {
   content: "";
 }
@@ -1318,6 +1363,9 @@ div.images img {
 }
 .theme-ultra .reveal ul.icon li.pinata::before {
   color: #9B84C0;
+}
+.theme-borealis .reveal ul.icon li.pinata::before {
+  color: #ABB1D9;
 }
 .reveal ul.icon li.nopal::before {
   content: "";
@@ -1343,6 +1391,9 @@ div.images img {
 .theme-ultra .reveal ul.icon li.nopal::before {
   color: #9B84C0;
 }
+.theme-borealis .reveal ul.icon li.nopal::before {
+  color: #ABB1D9;
+}
 .reveal ul.icon li.cactus::before {
   content: "";
 }
@@ -1367,6 +1418,9 @@ div.images img {
 .theme-ultra .reveal ul.icon li.cactus::before {
   color: #9B84C0;
 }
+.theme-borealis .reveal ul.icon li.cactus::before {
+  color: #ABB1D9;
+}
 .reveal ul.icon li.skull::before {
   content: "";
 }
@@ -1390,6 +1444,9 @@ div.images img {
 }
 .theme-ultra .reveal ul.icon li.skull::before {
   color: #9B84C0;
+}
+.theme-borealis .reveal ul.icon li.skull::before {
+  color: #ABB1D9;
 }
 /* table with no divisions and with bold purple first column */
 .reveal table th {
@@ -1452,6 +1509,9 @@ div.images img {
 .theme-ultra .reveal strong-alt {
   color: #fcd999;
 }
+.theme-borealis .reveal strong-alt {
+  color: #13ffd1;
+}
 .reveal small {
   font-size: 0.8em;
 }
@@ -1493,6 +1553,11 @@ div.images img {
 }
 .theme-ultra .reveal mega-font {
   color: #E55982;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-borealis .reveal mega-font {
+  color: #00DFB4;
   line-height: 1.2;
   word-wrap: break-word;
 }
@@ -1581,6 +1646,11 @@ div.images img {
 }
 .theme-ultra .reveal huge-font {
   color: #E55982;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-borealis .reveal huge-font {
+  color: #00DFB4;
   line-height: 1.2;
   word-wrap: break-word;
 }
@@ -1675,6 +1745,12 @@ div.images img {
 }
 .theme-ultra .reveal big-font {
   color: #E55982;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-borealis .reveal big-font {
+  color: #00DFB4;
   line-height: 1.2;
   word-wrap: break-word;
   letter-spacing: normal;
@@ -2009,6 +2085,9 @@ figure.code pre + figcaption {
 .theme-ultra .reveal.pattern--stream .slides section.intro {
   background-color: #E55982;
 }
+.theme-borealis .reveal.pattern--stream .slides section.intro {
+  background-color: #00DFB4;
+}
 .theme-sedona .reveal.pattern--stream .slides section.title {
   background-color: #802bb1;
 }
@@ -2029,6 +2108,9 @@ figure.code pre + figcaption {
 }
 .theme-ultra .reveal.pattern--stream .slides section.title {
   background-color: #E55982;
+}
+.theme-borealis .reveal.pattern--stream .slides section.title {
+  background-color: #00DFB4;
 }
 .reveal.pattern--lines {
   background-image: url(../assets/patterns///lines.png);
@@ -2054,6 +2136,9 @@ figure.code pre + figcaption {
 }
 .theme-ultra .reveal.pattern--lines .slides section.intro {
   background-color: #9B84C0;
+}
+.theme-borealis .reveal.pattern--lines .slides section.intro {
+  background-color: #ABB1D9;
 }
 .theme-sedona .reveal.pattern--lines .slides section.title {
   background-color: #747CA8;
@@ -2083,6 +2168,10 @@ figure.code pre + figcaption {
   background-color: #9B84C0;
   color: #E55982;
 }
+.theme-borealis .reveal.pattern--lines .slides section.title {
+  background-color: #ABB1D9;
+  color: #00DFB4;
+}
 .theme-sedona .reveal.pattern--lines .progress {
   background-color: #d1d7e0;
 }
@@ -2103,6 +2192,9 @@ figure.code pre + figcaption {
 }
 .theme-ultra .reveal.pattern--lines .progress {
   background-color: #FAC668;
+}
+.theme-borealis .reveal.pattern--lines .progress {
+  background-color: #7489C7;
 }
 .reveal.pattern--hex {
   background-image: url("../assets/patterns/hex_pattern.png");
@@ -2128,6 +2220,9 @@ figure.code pre + figcaption {
 }
 .theme-ultra .reveal.pattern--hex .slides section.intro {
   background-color: #9B84C0;
+}
+.theme-borealis .reveal.pattern--hex .slides section.intro {
+  background-color: #ABB1D9;
 }
 .theme-sedona .reveal.pattern--hex .slides section.title {
   background-color: #747CA8;
@@ -2157,6 +2252,10 @@ figure.code pre + figcaption {
   background-color: #9B84C0;
   color: #E55982;
 }
+.theme-borealis .reveal.pattern--hex .slides section.title {
+  background-color: #ABB1D9;
+  color: #00DFB4;
+}
 .theme-sedona .reveal.pattern--hex .progress {
   background-color: #d1d7e0;
 }
@@ -2177,6 +2276,9 @@ figure.code pre + figcaption {
 }
 .theme-ultra .reveal.pattern--hex .progress {
   background-color: #FAC668;
+}
+.theme-borealis .reveal.pattern--hex .progress {
+  background-color: #7489C7;
 }
 .reveal.pattern--star {
   background-image: url("../assets/patterns/star_pattern.svg");
@@ -2202,6 +2304,9 @@ figure.code pre + figcaption {
 }
 .theme-ultra .reveal.pattern--star .slides section.intro {
   background-color: #9B84C0;
+}
+.theme-borealis .reveal.pattern--star .slides section.intro {
+  background-color: #ABB1D9;
 }
 .theme-sedona .reveal.pattern--star .slides section.title {
   background-color: #747CA8;
@@ -2231,6 +2336,10 @@ figure.code pre + figcaption {
   background-color: #9B84C0;
   color: #E55982;
 }
+.theme-borealis .reveal.pattern--star .slides section.title {
+  background-color: #ABB1D9;
+  color: #00DFB4;
+}
 .theme-sedona .reveal.pattern--star .progress {
   background-color: #d1d7e0;
 }
@@ -2251,6 +2360,9 @@ figure.code pre + figcaption {
 }
 .theme-ultra .reveal.pattern--star .progress {
   background-color: #FAC668;
+}
+.theme-borealis .reveal.pattern--star .progress {
+  background-color: #7489C7;
 }
 .reveal.pattern--pupilines {
   background-image: url("../assets/patterns/pupilines.svg");
@@ -2276,6 +2388,9 @@ figure.code pre + figcaption {
 }
 .theme-ultra .reveal.pattern--pupilines .slides section.intro {
   background-color: #9B84C0;
+}
+.theme-borealis .reveal.pattern--pupilines .slides section.intro {
+  background-color: #ABB1D9;
 }
 .theme-sedona .reveal.pattern--pupilines .slides section.title {
   background-color: #747CA8;
@@ -2305,6 +2420,10 @@ figure.code pre + figcaption {
   background-color: #9B84C0;
   color: #E55982;
 }
+.theme-borealis .reveal.pattern--pupilines .slides section.title {
+  background-color: #ABB1D9;
+  color: #00DFB4;
+}
 .theme-sedona .reveal.pattern--pupilines .progress {
   background-color: #747CA8;
 }
@@ -2326,6 +2445,9 @@ figure.code pre + figcaption {
 .theme-ultra .reveal.pattern--pupilines .progress {
   background-color: #9B84C0;
 }
+.theme-borealis .reveal.pattern--pupilines .progress {
+  background-color: #ABB1D9;
+}
 .theme-sedona .reveal.pattern--pupilines .controls {
   color: #747CA8;
 }
@@ -2346,6 +2468,9 @@ figure.code pre + figcaption {
 }
 .theme-ultra .reveal.pattern--pupilines .controls {
   color: #9B84C0;
+}
+.theme-borealis .reveal.pattern--pupilines .controls {
+  color: #ABB1D9;
 }
 .reveal.pattern--bwlines {
   background-image: url("../assets/patterns/bwlines.svg");
@@ -2371,6 +2496,9 @@ figure.code pre + figcaption {
 }
 .theme-ultra .reveal.pattern--bwlines .slides section.intro {
   background-color: #9B84C0;
+}
+.theme-borealis .reveal.pattern--bwlines .slides section.intro {
+  background-color: #ABB1D9;
 }
 .theme-sedona .reveal.pattern--bwlines .slides section.title {
   background-color: #747CA8;
@@ -2400,6 +2528,10 @@ figure.code pre + figcaption {
   background-color: #9B84C0;
   color: #E55982;
 }
+.theme-borealis .reveal.pattern--bwlines .slides section.title {
+  background-color: #ABB1D9;
+  color: #00DFB4;
+}
 .reveal.pattern--space2 {
   background-image: url("../assets/patterns/space2.png");
 }
@@ -2424,6 +2556,9 @@ figure.code pre + figcaption {
 }
 .theme-ultra .reveal.pattern--space2 .slides section.intro {
   background-color: #9B84C0;
+}
+.theme-borealis .reveal.pattern--space2 .slides section.intro {
+  background-color: #ABB1D9;
 }
 .theme-sedona .reveal.pattern--space2 .slides section.title {
   background-color: #747CA8;
@@ -2453,6 +2588,10 @@ figure.code pre + figcaption {
   background-color: #9B84C0;
   color: #E55982;
 }
+.theme-borealis .reveal.pattern--space2 .slides section.title {
+  background-color: #ABB1D9;
+  color: #00DFB4;
+}
 .reveal.pattern--space3 {
   background-image: url("../assets/patterns/space3.png");
 }
@@ -2478,6 +2617,9 @@ figure.code pre + figcaption {
 .theme-ultra .reveal.pattern--space3 .slides section.intro {
   background-color: #E55982;
 }
+.theme-borealis .reveal.pattern--space3 .slides section.intro {
+  background-color: #00DFB4;
+}
 .reveal.pattern--trooper {
   background-image: url("../assets/patterns/trooper.jpg");
 }
@@ -2502,6 +2644,9 @@ figure.code pre + figcaption {
 }
 .theme-ultra .reveal.pattern--trooper .slides section.intro {
   background-color: #E55982;
+}
+.theme-borealis .reveal.pattern--trooper .slides section.intro {
+  background-color: #00DFB4;
 }
 .theme-sedona .reveal.pattern--trooper .slides section.title {
   background-color: #802bb1;
@@ -2531,6 +2676,10 @@ figure.code pre + figcaption {
   background-color: #E55982;
   color: #9B84C0;
 }
+.theme-borealis .reveal.pattern--trooper .slides section.title {
+  background-color: #00DFB4;
+  color: #ABB1D9;
+}
 .reveal.pattern--fox {
   background-image: url("../assets/patterns/fox.png");
 }
@@ -2555,6 +2704,9 @@ figure.code pre + figcaption {
 }
 .theme-ultra .reveal.pattern--fox .slides section.intro {
   background-color: #E55982;
+}
+.theme-borealis .reveal.pattern--fox .slides section.intro {
+  background-color: #00DFB4;
 }
 .theme-sedona .reveal.pattern--fox .slides section.title {
   background-color: #802bb1;
@@ -2583,6 +2735,10 @@ figure.code pre + figcaption {
 .theme-ultra .reveal.pattern--fox .slides section.title {
   background-color: #E55982;
   color: #9B84C0;
+}
+.theme-borealis .reveal.pattern--fox .slides section.title {
+  background-color: #00DFB4;
+  color: #ABB1D9;
 }
 /*********************************************
  * IMPORT FONTS
@@ -2649,6 +2805,9 @@ figure.code pre + figcaption {
 .theme-ultra .reveal .slides section.subsection:not([class*=color--]) {
   background-color: #5F4B8B;
 }
+.theme-borealis .reveal .slides section.subsection:not([class*=color--]) {
+  background-color: #08142F;
+}
 .reveal .slides section:not([class*=color--]) {
   color: #c5c2c2;
 }
@@ -2672,6 +2831,9 @@ figure.code pre + figcaption {
 }
 .theme-ultra .reveal .slides section:not([class*=color--]) {
   background-color: #5F4B8B;
+}
+.theme-borealis .reveal .slides section:not([class*=color--]) {
+  background-color: #08142F;
 }
 .reveal {
   color: white !important;

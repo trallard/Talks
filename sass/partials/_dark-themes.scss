@@ -52,6 +52,13 @@ $themes: (
 'secondary': #9B84C0, // bougainvillea
 'primary-light':lighten(#FAC668, 10%), 'secondary-light' :lighten(#9B84C0, 10%), 'dark-col': #5F4B8B, // gunmetal
 ),
+/* borealis */
+
+'borealis':( 'primary': #00DFB4, // amazonite
+'secondary': #ABB1D9, // maximum purple blue
+'third': #7489C7, // dark pastel blue
+'primary-light':lighten(#00DFB4, 10%), 'secondary-light' :lighten(#ABB1D9, 10%), 'dark-col': #08142F, // gunmetal
+),
 /* The following are font themes */
 
 /* poppins*/
