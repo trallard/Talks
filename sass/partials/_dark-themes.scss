@@ -9,9 +9,14 @@ $themes: (
 
 /* sedona */
 
-'sedona':( 'primary': #802bb1, // ultra violet 
+'sedona':( 'primary': #BD80E0, // light-violet
 'secondary': #747CA8, //lavender violet */
-'third': #d1d7e0, 'primary-light':lighten(#802bb1, 10%), 'secondary-light' :lighten(#747CA8, 10%), dark-col:#2A2A49, ),
+'third': #d1d7e0, 'primary-light':lighten(#BD80E0, 10%), 'secondary-light' :lighten(#747CA8, 10%), dark-col:#2A2A49, ),
+/* sedona */
+
+'cyber':( 'primary': #0abdc6, // turquoise
+'secondary': #ea00d9, //lavender violet */
+'third': #711c91, 'primary-light':lighten(#0abdc6, 10%), 'secondary-light' :lighten(#ea00d9, 10%), dark-col:#091833, ),
 /* bright-blue*/
 
 'bright-blue':( 'dark-col': #2f2fa2, // royal blue
@@ -28,14 +33,14 @@ $themes: (
 
 'candy':( 'primary': #bd3563, //cherry
 'secondary': #d3b71f, //yellow
-'third': #dbc486, //yellow
-'primary-light':lighten(#bd3563, 10%), 'secondary-light' :lighten(#3d3e4d, 10%), // 'dark-col': #3d3e4d,
+'third': #22c4ec, //picton blue
+'primary-light':lighten(#bd3563, 10%), 'secondary-light' :lighten(#d3b71f, 10%), // 'dark-col': #3d3e4d,
 'dark-col': #211a38, ),
 /* skeletor */
 
 'skeletor':( 'primary': #f0bb5a, //ronchi
 'secondary': #987cb0, //lavender
-'third': #3de8eb, //picton blue
+'third': #22c4ec, //picton blue
 'primary-light':lighten(#f0bb5a, 10%), 'secondary-light' :lighten(#987cb0, 10%), 'dark-col': #21122c, // revolver
 ),
 /* honey */
@@ -45,12 +50,12 @@ $themes: (
 'third': #B5B5B7, // ash grey
 'primary-light':lighten(#677077, 10%), 'secondary-light' :lighten(#B5B5B7, 10%), 'dark-col': #252839, // gunmetal
 ),
-/* honey */
+/* ultra*/
 
 'ultra':( 'primary': #E55982, // hot pink
 'third': #FAC668, // sunset gold
 'secondary': #9B84C0, // bougainvillea
-'primary-light':lighten(#FAC668, 10%), 'secondary-light' :lighten(#9B84C0, 10%), 'dark-col': #5F4B8B, // gunmetal
+'primary-light':lighten(#FAC668, 10%), 'secondary-light' :lighten(#9B84C0, 10%), 'dark-col': #5F4B8B, // ultraviolet
 ),
 /* borealis */
 
@@ -61,10 +66,11 @@ $themes: (
 ),
 /* python */
 
+// Inspired from https://dribbble.com/shots/3907524-The-Python-Process
 'python':( 'primary': #569CCB, // blue
 'secondary': #FDD45E, // python yellow
 'third': #EC9B5F, // dark pastel blue
-'primary-light':lighten(#569CCB, 10%), 'secondary-light' :lighten(#FDD45E, 10%), 'dark-col': #282d32, // gunmetal
+'primary-light':lighten(#569CCB, 10%), 'secondary-light' :lighten(#FDD45E, 10%), 'dark-col': #282d32, // carbon
 ),
 /* The following are font themes */
 

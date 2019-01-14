@@ -277,8 +277,10 @@ div {
 /* table with no divisions and with bold purple first column */
 
 .reveal table th {
-    font-weight: bold;
-    color: #5F4B8B;
+    font-weight: bold; // color: #5F4B8B;
+    @include themify($themes) {
+        color: themed('secondary')
+    }
 }
 
 .commands table {
@@ -355,6 +357,30 @@ div {
             letter-spacing: normal;
         }
     }
+}
+
+.reveal glow {
+    text-shadow: 0px 0px 5px #fff;
+    color: #fff;
+    padding: 0 2rem;
+}
+
+// Adding extra glow class to headings (nb this is a big glow) */ 
+.reveal h1.glow,
+.reveal h2.glow,
+.reveal h3.glow,
+.reveal h4.glow,
+.reveal h5.glow,
+.reveal big-font.glow,
+.reveal mega-font.glow,
+.reveal huge-font.glow,
+    {
+    @include themify($themes) {
+        text-shadow: 0px 0px 5px themed('primary'), 0 0 20px #fff;
+    }
+    padding: 0 2rem;
+    font-family: "Ropa Sans",
+    sans-serif;
 }
 
 /* Additional divs */
