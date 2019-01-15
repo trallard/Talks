@@ -1,0 +1,45 @@
+/*
+* Tania's theme for Reveal.js, this is a highly customised very opinionated
+* theme originated from the many many hours I have spent customising 
+* my themes. 
+* This allows you to use the light colour themes
+ */
+
+/*********************************************
+ * VARIOUS IMPORTS
+ *********************************************/
+
+/* partials */
+
+// colour variables
+@import "partials/variables";
+// light coloured slides themes
+@import "partials/light-themes";
+// multiple mixins
+@import "partials/mixins";
+// extra slides content
+@import "partials/individual-slides";
+// reveal slides items
+@import "partials/section-components";
+// patterns
+@import "partials/patterns";
+// fonts
+@import "partials/fonts";
+/***********************
+* VARIABLES FOR LIGHT-THEME
+************************/
+
+$text-color: #2A2A49;
+$default-background: white;
+/*****************************
+* USE DEFAULT COLOR FOR SLIDES
+******************************/
+
+// If no colour is given this uses the default colour
+.reveal .slides section.subsection:not([class*='color--']) {
+    background-color: $white;
+}
+
+.reveal .slides section:not([class*='color--']) {
+    background-color: $default-background;
+}

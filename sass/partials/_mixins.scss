@@ -1,0 +1,143 @@
+/*********************************************
+* THEMES: colours
+*********************************************/
+
+@mixin themify($themes) {
+    @each $theme,
+    $map in $themes {
+        .theme-#{$theme} & {
+            $theme-map: () !global;
+            @each $key,
+            $submap in $map {
+                $value: map-get(map-get($themes, $theme), '#{$key}');
+                $theme-map: map-merge($theme-map, ($key: $value)) !global;
+            }
+            @content;
+            $theme-map: null !global;
+        }
+    }
+}
+
+// Function to apply the themes, this is added to the items as needed 
+@function themed($key) {
+    @return map-get($theme-map, $key);
+}
+
+/*********************************************
+* ENABLE RESPONSIVENESS FOR THE SLIDES
+*********************************************/
+
+// Breakpoints
+$bp-xsmall: 35em; // 568px
+$bp-small: 48em; // 768px
+$bp-medium: 64em; // 1024px
+$bp-large: 85.375em; // 1366px
+$bp-xlarge: 120em; // 1920px
+$bp-xxlarge: 160em; // 2560px
+// Media Queries$bp-xsmall: 48em; // 768px
+$mq-small: "(min-width: #{$bp-small})";
+$mq-medium: "(min-width: #{$bp-medium})";
+$mq-large: "(min-width: #{$bp-large})";
+$mq-xlarge: "(min-width: #{$bp-xlarge})";
+$mq-xxlarge: "(min-width: #{$bp-xxlarge})";
+$mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
+// Font-Size
+$base-font-size: 1em;
+// Line-Height
+$base-line-height: 1.6;
+$header-line-height: 1.25;
+html {
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @media #{$mq-small} {
+        font-size: $base-font-size*1.3;
+    }
+    @media #{$mq-medium} {
+        font-size: $base-font-size*1.5;
+    }
+    @media #{$mq-large} {
+        font-size: $base-font-size*1.7;
+    }
+    @media #{$mq-xlarge} {
+        font-size: $base-font-size*1.9;
+    }
+    @media #{$mq-xxlarge} {
+        font-size: $base-font-size*2.0;
+    }
+}
+
+/*********************************************
+* RESPONSIVE LISTS
+*********************************************/
+
+@media (min-width: 1280px) {
+    .reveal ul {
+        width: calc(90% - 1em);
+        /* width: calc(80% - 1em); */
+    }
+}
+
+/*********************************************
+* INTRO SLIDE
+*********************************************/
+
+// intro url
+@media (max-width: 480px) {
+    #title .presentation-url {
+        display: none;
+    }
+}
+
+// intro slide mixin
+@media (max-width: 768px) {
+    .reveal .slides section.intro {
+        height: calc(100vh - 4vmin);
+        margin: 2vmin;
+        width: calc(100vw - 4vmin);
+    }
+}
+
+/*********************************************
+* SLIDES GRID
+*********************************************/
+
+// ensure the grid is responsive
+@media (max-width: 568px) {
+    .reveal .slides section.title .grid-wrapper {
+        grid-template-areas: "header" "content" "credit";
+        grid-template-columns: auto;
+    }
+    .reveal .slides section.title .credit {
+        justify-self: end;
+    }
+}
+
+@media (min-width: 1280px) {
+    .reveal .slides section.title .content {
+        display: grid;
+        grid-template-areas: "title description";
+        grid-template-columns: auto 40%;
+        grid-column-gap: 10vmin;
+    }
+    .reveal .slides section.title h1 {
+        grid-area: title;
+    }
+    .reveal .slides section.title .description {
+        grid-area: description;
+        margin-top: 0.5em;
+    }
+}
+
+/*********************************************
+* PRESENTATION SLIDE
+*********************************************/
+
+@media (max-width: 768px) {
+    .reveal .slides section.title {
+        height: calc(100vh - 4vmin);
+        margin: 2vmin;
+        width: calc(100vw - 4vmin);
+    }
+}

@@ -1,0 +1,92 @@
+/**
+ * Presentation-specific styles.
+ * These are items I generally use for my own presentations
+ * and decided to put them in a separate css
+ * These are not Reveal.js modifiers
+ */
+/* Remove padding from title in the heading section */
+.reveal .slides section.title {
+  padding: 0;
+}
+
+.reveal .slides section.title .content {
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+      grid-template-areas: "title" "description";
+}
+
+/* Columns for the content */
+.newspaper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.left {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: auto;
+  min-height: 100px;
+}
+
+.middle {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: auto;
+}
+
+.right {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .newspaper {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .left {
+    -ms-flex-preferred-size: 1;
+        flex-basis: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .middle {
+    -ms-flex-preferred-size: 1;
+        flex-basis: 1;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .right {
+    -ms-flex-preferred-size: 1;
+        flex-basis: 1;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+/*# sourceMappingURL=presentation.css.map */

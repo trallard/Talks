@@ -1,0 +1,3446 @@
+@charset "UTF-8";
+/*
+* Tania's theme for Reveal.js, this is a highly customised very opinionated
+* theme originated from the many many hours I have spent customising 
+* my themes. 
+* This allows you to use the light colour themes
+ */
+/*********************************************
+ * VARIOUS IMPORTS
+ *********************************************/
+/* partials */
+/*********************************************
+* PERSONAL VARIABLES
+* feel free to change accordingly
+*********************************************/
+/* colours */
+/* fonts*/
+/* urls and paths */
+/* logos*/
+@import url(../../reveal.js/lib/font/source-sans-pro/source-sans-pro.css);
+@import url("https://fonts.googleapis.com/css?family=Didact+Gothic|Dosis:400,600|Overpass+Mono|PT+Mono");
+@import url("https://fonts.googleapis.com/css?family=Muli:400,700|Space+Mono:400,700");
+@import url("https://fonts.googleapis.com/css?family=Nunito|Open+Sans|Annie+Use+Your+Telescope");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+@import url(../../assets/icons_collection/font/flaticon.css);
+.reveal .slides section.title .logo--full {
+  background-image: url("../assets/personal/Purple.png");
+  width: 24vmin;
+}
+
+.reveal .slides section.title .logo {
+  background-image: url("../assets/personal/Purple.png");
+  height: 6.5vmin;
+  width: 6.5vmin;
+}
+
+.reveal .slides section.title .logo--soda {
+  background-image: url(../assets/logos/Hex_logo.png);
+  width: 24vmin;
+}
+
+.reveal .slides section.title .logo--sodafull {
+  background-image: url(../assets/logos/HS.png);
+  width: 24vmin;
+}
+
+.reveal .slides section.title .logo--pyladies {
+  background-image: url(../assets/logos/pyladies-nwuk-nocompass-darkpink.svg);
+  width: 24vmin;
+}
+
+/*********************************************
+* DEFINING THEME PALETTES
+*********************************************/
+/*********************************************
+* THEMES: colours
+*********************************************/
+/*********************************************
+* ENABLE RESPONSIVENESS FOR THE SLIDES
+*********************************************/
+html {
+  font-size: 1em;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media (min-width: 48em) {
+  html {
+    font-size: 1.3em;
+  }
+}
+@media (min-width: 64em) {
+  html {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 85.375em) {
+  html {
+    font-size: 1.7em;
+  }
+}
+@media (min-width: 120em) {
+  html {
+    font-size: 1.9em;
+  }
+}
+@media (min-width: 160em) {
+  html {
+    font-size: 2em;
+  }
+}
+
+/*********************************************
+* RESPONSIVE LISTS
+*********************************************/
+@media (min-width: 1280px) {
+  .reveal ul {
+    width: calc(90% - 1em);
+    /* width: calc(80% - 1em); */
+  }
+}
+/*********************************************
+* INTRO SLIDE
+*********************************************/
+@media (max-width: 480px) {
+  #title .presentation-url {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .reveal .slides section.intro {
+    height: calc(100vh - 4vmin);
+    margin: 2vmin;
+    width: calc(100vw - 4vmin);
+  }
+}
+/*********************************************
+* SLIDES GRID
+*********************************************/
+@media (max-width: 568px) {
+  .reveal .slides section.title .grid-wrapper {
+    grid-template-areas: "header" "content" "credit";
+    grid-template-columns: auto;
+  }
+
+  .reveal .slides section.title .credit {
+    justify-self: end;
+  }
+}
+@media (min-width: 1280px) {
+  .reveal .slides section.title .content {
+    display: grid;
+    grid-template-areas: "title description";
+    grid-template-columns: auto 40%;
+    grid-column-gap: 10vmin;
+  }
+
+  .reveal .slides section.title h1 {
+    grid-area: title;
+  }
+
+  .reveal .slides section.title .description {
+    grid-area: description;
+    margin-top: 0.5em;
+  }
+}
+/*********************************************
+* PRESENTATION SLIDE
+*********************************************/
+@media (max-width: 768px) {
+  .reveal .slides section.title {
+    height: calc(100vh - 4vmin);
+    margin: 2vmin;
+    width: calc(100vw - 4vmin);
+  }
+}
+/*********************************************
+* ADDITIONAL SLIDES CLASSES
+* THESE CAN BE USED WITH ANY THEME
+*********************************************/
+/************ 
+Intro slide
+************/
+.reveal .slides section.intro {
+  height: calc(100vh - 8vmin);
+  margin: 4vmin;
+  padding: 15px;
+  width: calc(100vw - 8vmin);
+}
+
+.reveal .slides section.intro .logo-wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.reveal .slides section.intro .logo {
+  background-position: center;
+  background-size: contain;
+  height: auto;
+  margin: auto;
+  min-height: 200px;
+  min-width: 200px;
+  width: 33%;
+}
+
+/****************** 
+Presentation title
+******************/
+.reveal .slides section.title {
+  height: calc(100vh - 8vmin);
+  margin: 4vmin;
+  width: calc(100vw - 8vmin);
+  color: #fff;
+  margin-left: 14vw;
+  width: calc(100vw - 4vmin - 14vw);
+}
+
+.reveal .slides section.title .grid-wrapper {
+  grid-template-areas: "header header2" "content content" ". credit";
+  grid-template-columns: auto 50%;
+  grid-template-rows: 6vmin 1fr auto;
+  grid-column-gap: 5vmin;
+}
+
+.reveal .slides section.title h1 {
+  color: #fff;
+}
+
+.reveal .slides section.title .credit {
+  align-self: end;
+  grid-area: credit;
+  line-height: 1.8em;
+}
+
+.reveal .slides section.title .credit hr {
+  border: solid #EEEDEF;
+  border-width: 2px 0 0 0;
+  margin: 0 0 0.8em 0;
+  width: 35%;
+}
+
+.reveal .slides section.title .credit .label {
+  font-size: 60%;
+  text-transform: uppercase;
+}
+
+.reveal .slides section.title .credit .name {
+  font-weight: bold;
+}
+
+.slides .title .presentation-url {
+  grid-area: header2;
+  font-size: 1em;
+  align-self: center;
+  opacity: 0.5;
+  color: #2A2A49;
+}
+
+/******************************************
+* Subsection: used to introduce a topic
+******************************************/
+.reveal .slides section.subsection .grid-wrapper {
+  grid-template-areas: ". header . " ". title ." ". description .";
+  grid-template-rows: 5.5vmin 3fr 1fr;
+}
+
+.reveal .slides section.subsection h1 {
+  align-self: center;
+  grid-area: title;
+  margin: 0;
+}
+
+.reveal .slides section.subsection .description {
+  color: #9292A8;
+  grid-area: description;
+  min-height: 4em;
+}
+
+.reveal .slides section.subsection.color--midnight .description,
+.reveal .slides section.subsection.color--ice .description,
+.reveal .slides section.subsection.color--vibrant .description {
+  color: #EEEDEF;
+}
+
+/*********************************************
+*  FULL QUOTE SLIDES
+*********************************************/
+.reveal .slides section.quote blockquote {
+  align-self: center;
+  background: none;
+  color: #2A2A49;
+  border: none;
+  box-shadow: none;
+  font-size: 1.7em;
+  font-style: normal;
+  margin: 0;
+  max-width: 42ex;
+  padding: 0;
+  width: 100%;
+}
+
+.reveal .slides section.quote hr {
+  border: solid #9292A8;
+  border-width: 1px 0 0 0;
+  margin: 0.8em 0;
+  width: 15%;
+}
+
+.reveal .slides section.quote cite {
+  color: #9292A8;
+  display: block;
+  font-size: 1rem;
+}
+
+.reveal .slides section.quote.color--midnight blockquote,
+.reveal .slides section.quote.color--ice blockquote {
+  color: #FFFFFF;
+}
+
+.reveal .slides section.quote.color--midnight hr,
+.reveal .slides section.quote.color--ice hr {
+  border-color: #EEEDEF;
+}
+
+.reveal .slides section.quote.color--midnight cite,
+.reveal .slides section.quote.color--ice cite {
+  color: #EEEDEF;
+}
+
+/************ 
+All code slide
+************/
+.reveal .slides section.color--code {
+  background-color: #eeeeee;
+  /* pale gray */
+  font-family: "Overpass Mono", monospace;
+}
+.reveal .slides section.color--code h1,
+.reveal .slides section.color--code h2,
+.reveal .slides section.color--code h3 {
+  font-family: "Overpass Mono", monospace;
+}
+.reveal .slides section.color--code code {
+  background-color: transparent;
+}
+
+/*********************************************
+* SINGLE COLOUR SLIDES
+*********************************************/
+.reveal .slides section.color--dark {
+  background-color: #22272B;
+  color: #ede7f3;
+}
+.reveal .slides section.color--dark h1,
+.reveal .slides section.color--dark h2 {
+  color: #A881FF;
+}
+
+.reveal .slides section.color--ice {
+  background-color: #9292A8;
+  color: #fff;
+}
+
+.reveal .slides section.color--violet {
+  background-color: #3A015C;
+  color: #fff;
+}
+.reveal .slides section.color--violet h1,
+.reveal .slides section.color--violet h2 {
+  color: #41ead4;
+}
+
+.reveal .slides section.color--violet {
+  background-color: #472C7D;
+  color: #fff;
+}
+.reveal .slides section.color--violet h1,
+.reveal .slides section.color--violet h2 {
+  color: #41ead4;
+}
+
+.reveal .slides section.color--soda .logo {
+  background-image: url(../assets/logos/Hex_Logo.png);
+  width: 24vmin;
+}
+
+.reveal .slides section.color--soda {
+  background-color: #fff;
+  color: #66646B;
+}
+
+.reveal .slides section.color--sodadark .logo {
+  background-image: url(../assets/logos/Hex_Logo.png);
+  width: 24vmin;
+}
+
+.reveal .slides section.color--sodadark {
+  background-color: #2A2A49;
+  /* navy blue */
+  color: #fff;
+}
+.reveal .slides section.color--sodadark h1,
+.reveal .slides section.color--sodadark h2 {
+  color: #95d5d4;
+}
+
+.reveal .slides section.color--light {
+  background-color: #fff;
+}
+
+.reveal .slides section.color--midnight {
+  background-color: #2A2A49;
+  /* navy blue */
+  color: #fff;
+}
+.reveal .slides section.color--midnight h1,
+.reveal .slides section.color--midnight h2 {
+  color: #F8757F;
+}
+
+.reveal .slides section.color--vibrant {
+  background-color: #00BCD4;
+  color: #fff;
+}
+.reveal .slides section.color--vibrant h1 {
+  color: #472C7D;
+}
+
+.reveal .slides section.color--topaz {
+  background-color: #67aeca;
+  color: #fff;
+}
+.reveal .slides section.color--topaz h1 {
+  color: #472C7D;
+}
+
+.reveal .slides section.color--two {
+  background-color: #fff;
+  color: #fff;
+  background: linear-gradient(to right, #5F4B8B 50%, #fff 50%);
+}
+
+.items-block {
+  display: flex;
+}
+.theme-poppins-font .items-block {
+  font-family: Poppins, Helvetica, sans-serif;
+}
+.theme-cunia-font .items-block {
+  font-family: Coves, Helvetica, sans-serif;
+}
+.theme-plex-font .items-block {
+  font-family: IBMPlexSans, sans-serif;
+}
+.theme-dosis-font .items-block {
+  font-family: Didact Gothic, sans-serif;
+}
+.theme-leafy-font .items-block {
+  font-family: Dosis, sans-serif;
+}
+.theme-allmono-font .items-block {
+  font-family: Space Mono, monospace;
+}
+.theme-soda-font .items-block {
+  font-family: Nunito, sans-serif;
+}
+.theme-klasik-font .items-block {
+  font-family: Nunito, sans-serif;
+}
+.theme-klasik-rough-font .items-block {
+  font-family: Nunito, sans-serif;
+}
+.theme-nox-font .items-block {
+  font-family: Open-Sans, sans-serif;
+}
+.items-block.single-block {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+}
+.items-block.single-block.left {
+  width: 50%;
+  color: #fff;
+}
+.items-block.single-block.right {
+  width: 50%;
+}
+
+/*********************************************
+* GRADIENT SLIDES
+*********************************************/
+.reveal .slides section.color--grad-purple {
+  background-color: #fff;
+  background: linear-gradient(45deg, #2D266F, #7C2289);
+  color: #fff !important;
+}
+.reveal .slides section.color--grad-purple h1 {
+  color: #fff;
+}
+
+.reveal .slides section.color--grad-green {
+  background-color: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, #90218C, #009890);
+}
+.reveal .slides section.color--grad-green h1 {
+  color: #fff;
+}
+
+.reveal .slides section.color--grad-blue {
+  background-color: #fff;
+  color: #FFFFFF;
+  background: linear-gradient(45deg, #303395, #27F0F0);
+}
+.reveal .slides section.color--grad-blue h1 {
+  color: #fff;
+}
+
+/*****************************
+* ENDING SLIDE
+******************************/
+.reveal .slides section.end {
+  height: 100vh;
+  margin: 0;
+  width: 100vw;
+}
+.reveal .slides section.end .content {
+  margin-top: auto;
+  text-align: center;
+  font-size: 140%;
+}
+
+.reveal .slides section.end .logo-wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.reveal .slides section.end .logo {
+  background-image: url("../assets/personal/Purple.png");
+  background-position: center;
+  background-size: contain;
+  height: auto;
+  margin: auto;
+  min-height: 200px;
+  min-width: 200px;
+  width: 33%;
+}
+
+/*********************************************
+ * Black box slide
+ *********************************************/
+/* You can use this as 	<section class="dark_box"> */
+/* Slide with image background and semi-transluscent
+black box with white text (ideal for presentation sections) */
+.dark_box {
+  background-image: url(../assets/code.jpg);
+  background-size: cover;
+  background-position: center center;
+  /* floating dark box */
+}
+.dark_box aside {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 2em;
+  padding: 5vmin;
+  width: auto;
+  border-radius: 10px;
+  top: 50%;
+  display: block;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+  text-align: center;
+}
+.dark_box aside h2 {
+  font-weight: bold;
+  font-size: 3.5rem;
+  display: block;
+  width: auto;
+  text-align: center;
+  color: #bbc3cc !important;
+}
+
+/*********************************************
+ * About presenter
+ *********************************************/
+/*
+Slide containing information about the presenter
+has a background image and a box with the details */
+#about {
+  background-image: url("../assets/code2.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+#about a {
+  color: #2A2A49;
+}
+#about aside {
+  background-color: rgba(171, 177, 186, 0.562);
+  border-radius: 10px;
+  color: #000;
+  float: left;
+  font-size: 1.5em;
+  padding: 5vmin;
+}
+#about aside hr {
+  margin: 2.5vmin 0;
+  border: solid;
+  border-width: 2px 0 0 0;
+}
+#about aside ul {
+  display: block;
+  font-size: inherit;
+  list-style: none;
+  margin: 2.5vmin 0 0;
+  width: auto;
+}
+#about .projects {
+  text-align: left;
+}
+#about .accounts {
+  display: grid;
+  justify-content: center;
+}
+#about .accounts a {
+  display: flex;
+  align-items: baseline;
+}
+
+.social_icon {
+  padding-right: 10px;
+}
+.theme-sedona .social_icon {
+  color: #BD80E0;
+}
+.theme-cyber .social_icon {
+  color: #0abdc6;
+}
+.theme-bright-blue .social_icon {
+  color: #f64c72;
+}
+.theme-black .social_icon {
+  color: #BDE16B;
+}
+.theme-candy .social_icon {
+  color: #bd3563;
+}
+.theme-skeletor .social_icon {
+  color: #f0bb5a;
+}
+.theme-honey .social_icon {
+  color: #F2B632;
+}
+.theme-ultra .social_icon {
+  color: #E55982;
+}
+.theme-borealis .social_icon {
+  color: #00DFB4;
+}
+.theme-python .social_icon {
+  color: #569CCB;
+}
+/*********************************************
+ * GLOBAL STYLES- go over the reveal.js 
+ *********************************************/
+.reveal {
+  font-size: inherit;
+  font-weight: normal;
+  color: #2A2A49;
+}
+.theme-poppins-font .reveal {
+  font-family: Poppins, Helvetica, sans-serif;
+}
+.theme-cunia-font .reveal {
+  font-family: Coves, Helvetica, sans-serif;
+}
+.theme-plex-font .reveal {
+  font-family: IBMPlexSans, sans-serif;
+}
+.theme-dosis-font .reveal {
+  font-family: Didact Gothic, sans-serif;
+}
+.theme-leafy-font .reveal {
+  font-family: Dosis, sans-serif;
+}
+.theme-allmono-font .reveal {
+  font-family: Space Mono, monospace;
+}
+.theme-soda-font .reveal {
+  font-family: Nunito, sans-serif;
+}
+.theme-klasik-font .reveal {
+  font-family: Nunito, sans-serif;
+}
+.theme-klasik-rough-font .reveal {
+  font-family: Nunito, sans-serif;
+}
+.theme-nox-font .reveal {
+  font-family: Open-Sans, sans-serif;
+}
+
+::selection {
+  color: #151515;
+  text-shadow: none;
+}
+.theme-sedona ::selection {
+  background: #939abc;
+}
+.theme-cyber ::selection {
+  background: #ff1eef;
+}
+.theme-bright-blue ::selection {
+  background: #f87d98;
+}
+.theme-black ::selection {
+  background: #ada1ce;
+}
+.theme-candy ::selection {
+  background: #e3ca42;
+}
+.theme-skeletor ::selection {
+  background: #b19cc3;
+}
+.theme-honey ::selection {
+  background: #cfcfd0;
+}
+.theme-ultra ::selection {
+  background: #b6a6d1;
+}
+.theme-borealis ::selection {
+  background: #ced2e9;
+}
+.theme-python ::selection {
+  background: #fee190;
+}
+::-moz-selection {
+  color: #fff;
+  text-shadow: none;
+}
+.theme-sedona ::-moz-selection {
+  background: #d1d7e0;
+}
+.theme-cyber ::-moz-selection {
+  background: #711c91;
+}
+.theme-bright-blue ::-moz-selection {
+  background: #99738e;
+}
+.theme-black ::-moz-selection {
+  background: #F2E38A;
+}
+.theme-candy ::-moz-selection {
+  background: #22c4ec;
+}
+.theme-skeletor ::-moz-selection {
+  background: #22c4ec;
+}
+.theme-honey ::-moz-selection {
+  background: #B5B5B7;
+}
+.theme-ultra ::-moz-selection {
+  background: #FAC668;
+}
+.theme-borealis ::-moz-selection {
+  background: #7489C7;
+}
+.theme-python ::-moz-selection {
+  background: #EC9B5F;
+}
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal .slides section {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/*********************************************
+* HEADERS
+*********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6,
+.reveal mega-font,
+.reveal huge-font,
+.reveal big-font {
+  margin-bottom: 2.5vmin;
+  color: inherit;
+  line-height: 1.2;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6,
+.reveal mega-font,
+.reveal huge-font,
+.reveal big-font {
+  margin: 0 0 20px 0;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-transform: none;
+  text-shadow: none;
+  word-wrap: break-word;
+}
+.theme-sedona .reveal h1,
+.theme-sedona .reveal h2,
+.theme-sedona .reveal h3,
+.theme-sedona .reveal h4,
+.theme-sedona .reveal h5,
+.theme-sedona .reveal h6,
+.theme-sedona .reveal mega-font,
+.theme-sedona .reveal huge-font,
+.theme-sedona .reveal big-font {
+  color: #BD80E0;
+}
+.theme-cyber .reveal h1,
+.theme-cyber .reveal h2,
+.theme-cyber .reveal h3,
+.theme-cyber .reveal h4,
+.theme-cyber .reveal h5,
+.theme-cyber .reveal h6,
+.theme-cyber .reveal mega-font,
+.theme-cyber .reveal huge-font,
+.theme-cyber .reveal big-font {
+  color: #0abdc6;
+}
+.theme-bright-blue .reveal h1,
+.theme-bright-blue .reveal h2,
+.theme-bright-blue .reveal h3,
+.theme-bright-blue .reveal h4,
+.theme-bright-blue .reveal h5,
+.theme-bright-blue .reveal h6,
+.theme-bright-blue .reveal mega-font,
+.theme-bright-blue .reveal huge-font,
+.theme-bright-blue .reveal big-font {
+  color: #f64c72;
+}
+.theme-black .reveal h1,
+.theme-black .reveal h2,
+.theme-black .reveal h3,
+.theme-black .reveal h4,
+.theme-black .reveal h5,
+.theme-black .reveal h6,
+.theme-black .reveal mega-font,
+.theme-black .reveal huge-font,
+.theme-black .reveal big-font {
+  color: #BDE16B;
+}
+.theme-candy .reveal h1,
+.theme-candy .reveal h2,
+.theme-candy .reveal h3,
+.theme-candy .reveal h4,
+.theme-candy .reveal h5,
+.theme-candy .reveal h6,
+.theme-candy .reveal mega-font,
+.theme-candy .reveal huge-font,
+.theme-candy .reveal big-font {
+  color: #bd3563;
+}
+.theme-skeletor .reveal h1,
+.theme-skeletor .reveal h2,
+.theme-skeletor .reveal h3,
+.theme-skeletor .reveal h4,
+.theme-skeletor .reveal h5,
+.theme-skeletor .reveal h6,
+.theme-skeletor .reveal mega-font,
+.theme-skeletor .reveal huge-font,
+.theme-skeletor .reveal big-font {
+  color: #f0bb5a;
+}
+.theme-honey .reveal h1,
+.theme-honey .reveal h2,
+.theme-honey .reveal h3,
+.theme-honey .reveal h4,
+.theme-honey .reveal h5,
+.theme-honey .reveal h6,
+.theme-honey .reveal mega-font,
+.theme-honey .reveal huge-font,
+.theme-honey .reveal big-font {
+  color: #F2B632;
+}
+.theme-ultra .reveal h1,
+.theme-ultra .reveal h2,
+.theme-ultra .reveal h3,
+.theme-ultra .reveal h4,
+.theme-ultra .reveal h5,
+.theme-ultra .reveal h6,
+.theme-ultra .reveal mega-font,
+.theme-ultra .reveal huge-font,
+.theme-ultra .reveal big-font {
+  color: #E55982;
+}
+.theme-borealis .reveal h1,
+.theme-borealis .reveal h2,
+.theme-borealis .reveal h3,
+.theme-borealis .reveal h4,
+.theme-borealis .reveal h5,
+.theme-borealis .reveal h6,
+.theme-borealis .reveal mega-font,
+.theme-borealis .reveal huge-font,
+.theme-borealis .reveal big-font {
+  color: #00DFB4;
+}
+.theme-python .reveal h1,
+.theme-python .reveal h2,
+.theme-python .reveal h3,
+.theme-python .reveal h4,
+.theme-python .reveal h5,
+.theme-python .reveal h6,
+.theme-python .reveal mega-font,
+.theme-python .reveal huge-font,
+.theme-python .reveal big-font {
+  color: #569CCB;
+}
+.theme-poppins-font .reveal h1,
+.theme-poppins-font .reveal h2,
+.theme-poppins-font .reveal h3,
+.theme-poppins-font .reveal h4,
+.theme-poppins-font .reveal h5,
+.theme-poppins-font .reveal h6,
+.theme-poppins-font .reveal mega-font,
+.theme-poppins-font .reveal huge-font,
+.theme-poppins-font .reveal big-font {
+  font-family: IBMPlexSerif, monospace;
+}
+.theme-cunia-font .reveal h1,
+.theme-cunia-font .reveal h2,
+.theme-cunia-font .reveal h3,
+.theme-cunia-font .reveal h4,
+.theme-cunia-font .reveal h5,
+.theme-cunia-font .reveal h6,
+.theme-cunia-font .reveal mega-font,
+.theme-cunia-font .reveal huge-font,
+.theme-cunia-font .reveal big-font {
+  font-family: Cunia, sans-serif;
+}
+.theme-plex-font .reveal h1,
+.theme-plex-font .reveal h2,
+.theme-plex-font .reveal h3,
+.theme-plex-font .reveal h4,
+.theme-plex-font .reveal h5,
+.theme-plex-font .reveal h6,
+.theme-plex-font .reveal mega-font,
+.theme-plex-font .reveal huge-font,
+.theme-plex-font .reveal big-font {
+  font-family: IBMPlexSerif, monospace;
+}
+.theme-dosis-font .reveal h1,
+.theme-dosis-font .reveal h2,
+.theme-dosis-font .reveal h3,
+.theme-dosis-font .reveal h4,
+.theme-dosis-font .reveal h5,
+.theme-dosis-font .reveal h6,
+.theme-dosis-font .reveal mega-font,
+.theme-dosis-font .reveal huge-font,
+.theme-dosis-font .reveal big-font {
+  font-family: Dosis, sans-serif;
+}
+.theme-leafy-font .reveal h1,
+.theme-leafy-font .reveal h2,
+.theme-leafy-font .reveal h3,
+.theme-leafy-font .reveal h4,
+.theme-leafy-font .reveal h5,
+.theme-leafy-font .reveal h6,
+.theme-leafy-font .reveal mega-font,
+.theme-leafy-font .reveal huge-font,
+.theme-leafy-font .reveal big-font {
+  font-family: Leafy, cursive;
+}
+.theme-allmono-font .reveal h1,
+.theme-allmono-font .reveal h2,
+.theme-allmono-font .reveal h3,
+.theme-allmono-font .reveal h4,
+.theme-allmono-font .reveal h5,
+.theme-allmono-font .reveal h6,
+.theme-allmono-font .reveal mega-font,
+.theme-allmono-font .reveal huge-font,
+.theme-allmono-font .reveal big-font {
+  font-family: Muli, sans-serif;
+}
+.theme-soda-font .reveal h1,
+.theme-soda-font .reveal h2,
+.theme-soda-font .reveal h3,
+.theme-soda-font .reveal h4,
+.theme-soda-font .reveal h5,
+.theme-soda-font .reveal h6,
+.theme-soda-font .reveal mega-font,
+.theme-soda-font .reveal huge-font,
+.theme-soda-font .reveal big-font {
+  font-family: Open Sans, sans-serif;
+}
+.theme-klasik-font .reveal h1,
+.theme-klasik-font .reveal h2,
+.theme-klasik-font .reveal h3,
+.theme-klasik-font .reveal h4,
+.theme-klasik-font .reveal h5,
+.theme-klasik-font .reveal h6,
+.theme-klasik-font .reveal mega-font,
+.theme-klasik-font .reveal huge-font,
+.theme-klasik-font .reveal big-font {
+  font-family: Klasik, sans-serif;
+}
+.theme-klasik-rough-font .reveal h1,
+.theme-klasik-rough-font .reveal h2,
+.theme-klasik-rough-font .reveal h3,
+.theme-klasik-rough-font .reveal h4,
+.theme-klasik-rough-font .reveal h5,
+.theme-klasik-rough-font .reveal h6,
+.theme-klasik-rough-font .reveal mega-font,
+.theme-klasik-rough-font .reveal huge-font,
+.theme-klasik-rough-font .reveal big-font {
+  font-family: Klasik-Rough, sans-serif;
+}
+.theme-nox-font .reveal h1,
+.theme-nox-font .reveal h2,
+.theme-nox-font .reveal h3,
+.theme-nox-font .reveal h4,
+.theme-nox-font .reveal h5,
+.theme-nox-font .reveal h6,
+.theme-nox-font .reveal mega-font,
+.theme-nox-font .reveal huge-font,
+.theme-nox-font .reveal big-font {
+  font-family: Annie Use Your Telescope, cursive;
+}
+
+/*********************************************
+* IMAGES
+*********************************************/
+.reveal section img {
+  background: none;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+}
+
+figure.display {
+  margin: auto;
+  text-align: center;
+  max-width: 100vmin;
+  width: 100% vw;
+  height: auto;
+  display: block;
+  padding: 10px;
+}
+figure.display figcaption {
+  padding: 5px;
+  font-size: 0.85rem;
+  color: #121212;
+  float: left;
+  border: solid #EEEDEF;
+  border-width: 2px 0 0 0;
+  width: 100%;
+}
+
+div.images {
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+div.images img {
+  padding: 10px;
+  display: block;
+  border: 0px solid #303030;
+  max-width: 100%;
+  max-height: 100vmin;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-fill img {
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-contain img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-cover img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-none img {
+  object-fit: none;
+  height: 100%;
+  width: 100%;
+}
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a {
+  -webkit-transition: color 0.15s ease;
+  -moz-transition: color 0.15s ease;
+  transition: color 0.15s ease;
+}
+.theme-sedona .reveal a {
+  text-decoration-color: #d1d7e0;
+  -webkit-text-decoration-color: #d1d7e0;
+  color: #d1d7e0;
+}
+.theme-cyber .reveal a {
+  text-decoration-color: #711c91;
+  -webkit-text-decoration-color: #711c91;
+  color: #711c91;
+}
+.theme-bright-blue .reveal a {
+  text-decoration-color: #99738e;
+  -webkit-text-decoration-color: #99738e;
+  color: #99738e;
+}
+.theme-black .reveal a {
+  text-decoration-color: #F2E38A;
+  -webkit-text-decoration-color: #F2E38A;
+  color: #F2E38A;
+}
+.theme-candy .reveal a {
+  text-decoration-color: #22c4ec;
+  -webkit-text-decoration-color: #22c4ec;
+  color: #22c4ec;
+}
+.theme-skeletor .reveal a {
+  text-decoration-color: #22c4ec;
+  -webkit-text-decoration-color: #22c4ec;
+  color: #22c4ec;
+}
+.theme-honey .reveal a {
+  text-decoration-color: #B5B5B7;
+  -webkit-text-decoration-color: #B5B5B7;
+  color: #B5B5B7;
+}
+.theme-ultra .reveal a {
+  text-decoration-color: #FAC668;
+  -webkit-text-decoration-color: #FAC668;
+  color: #FAC668;
+}
+.theme-borealis .reveal a {
+  text-decoration-color: #7489C7;
+  -webkit-text-decoration-color: #7489C7;
+  color: #7489C7;
+}
+.theme-python .reveal a {
+  text-decoration-color: #EC9B5F;
+  -webkit-text-decoration-color: #EC9B5F;
+  color: #EC9B5F;
+}
+.reveal a:hover {
+  text-shadow: none;
+  border: none;
+}
+.theme-sedona .reveal a:hover {
+  color: #d1d7e0;
+  border-bottom: 2px solid #d1d7e0;
+  /* I prefer a thicker line than the underline */
+}
+.theme-cyber .reveal a:hover {
+  color: #711c91;
+  border-bottom: 2px solid #711c91;
+  /* I prefer a thicker line than the underline */
+}
+.theme-bright-blue .reveal a:hover {
+  color: #99738e;
+  border-bottom: 2px solid #99738e;
+  /* I prefer a thicker line than the underline */
+}
+.theme-black .reveal a:hover {
+  color: #F2E38A;
+  border-bottom: 2px solid #F2E38A;
+  /* I prefer a thicker line than the underline */
+}
+.theme-candy .reveal a:hover {
+  color: #22c4ec;
+  border-bottom: 2px solid #22c4ec;
+  /* I prefer a thicker line than the underline */
+}
+.theme-skeletor .reveal a:hover {
+  color: #22c4ec;
+  border-bottom: 2px solid #22c4ec;
+  /* I prefer a thicker line than the underline */
+}
+.theme-honey .reveal a:hover {
+  color: #B5B5B7;
+  border-bottom: 2px solid #B5B5B7;
+  /* I prefer a thicker line than the underline */
+}
+.theme-ultra .reveal a:hover {
+  color: #FAC668;
+  border-bottom: 2px solid #FAC668;
+  /* I prefer a thicker line than the underline */
+}
+.theme-borealis .reveal a:hover {
+  color: #7489C7;
+  border-bottom: 2px solid #7489C7;
+  /* I prefer a thicker line than the underline */
+}
+.theme-python .reveal a:hover {
+  color: #EC9B5F;
+  border-bottom: 2px solid #EC9B5F;
+  /* I prefer a thicker line than the underline */
+}
+.theme-poppins-font .reveal a:hover {
+  border-bottom: 2px solid;
+  /* I prefer a thicker line than the underline */
+}
+.theme-cunia-font .reveal a:hover {
+  border-bottom: 2px solid;
+  /* I prefer a thicker line than the underline */
+}
+.theme-plex-font .reveal a:hover {
+  border-bottom: 2px solid;
+  /* I prefer a thicker line than the underline */
+}
+.theme-dosis-font .reveal a:hover {
+  border-bottom: 2px solid;
+  /* I prefer a thicker line than the underline */
+}
+.theme-leafy-font .reveal a:hover {
+  border-bottom: 2px solid;
+  /* I prefer a thicker line than the underline */
+}
+.theme-allmono-font .reveal a:hover {
+  border-bottom: 2px solid;
+  /* I prefer a thicker line than the underline */
+}
+.theme-soda-font .reveal a:hover {
+  border-bottom: 2px solid;
+  /* I prefer a thicker line than the underline */
+}
+.theme-klasik-font .reveal a:hover {
+  border-bottom: 2px solid;
+  /* I prefer a thicker line than the underline */
+}
+.theme-klasik-rough-font .reveal a:hover {
+  border-bottom: 2px solid;
+  /* I prefer a thicker line than the underline */
+}
+.theme-nox-font .reveal a:hover {
+  border-bottom: 2px solid;
+  /* I prefer a thicker line than the underline */
+}
+
+.reveal .roll span:after {
+  color: #fff;
+}
+.theme-sedona .reveal .roll span:after {
+  background: #d1d7e0;
+}
+.theme-cyber .reveal .roll span:after {
+  background: #711c91;
+}
+.theme-bright-blue .reveal .roll span:after {
+  background: #99738e;
+}
+.theme-black .reveal .roll span:after {
+  background: #F2E38A;
+}
+.theme-candy .reveal .roll span:after {
+  background: #22c4ec;
+}
+.theme-skeletor .reveal .roll span:after {
+  background: #22c4ec;
+}
+.theme-honey .reveal .roll span:after {
+  background: #B5B5B7;
+}
+.theme-ultra .reveal .roll span:after {
+  background: #FAC668;
+}
+.theme-borealis .reveal .roll span:after {
+  background: #7489C7;
+}
+.theme-python .reveal .roll span:after {
+  background: #EC9B5F;
+}
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.theme-sedona .reveal .controls {
+  color: #d1d7e0;
+}
+.theme-cyber .reveal .controls {
+  color: #711c91;
+}
+.theme-bright-blue .reveal .controls {
+  color: #99738e;
+}
+.theme-black .reveal .controls {
+  color: #F2E38A;
+}
+.theme-candy .reveal .controls {
+  color: #22c4ec;
+}
+.theme-skeletor .reveal .controls {
+  color: #22c4ec;
+}
+.theme-honey .reveal .controls {
+  color: #B5B5B7;
+}
+.theme-ultra .reveal .controls {
+  color: #FAC668;
+}
+.theme-borealis .reveal .controls {
+  color: #7489C7;
+}
+.theme-python .reveal .controls {
+  color: #EC9B5F;
+}
+.reveal .controls {
+  right: 4vmin;
+  bottom: 4vmin;
+}
+
+@media (max-width: 768px) {
+  .reveal .controls {
+    right: 2vmin;
+    bottom: 2vmin;
+  }
+}
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress {
+  background: rgba(48, 40, 63, 0.2);
+}
+.theme-sedona .reveal .progress {
+  color: #d1d7e0;
+}
+.theme-cyber .reveal .progress {
+  color: #711c91;
+}
+.theme-bright-blue .reveal .progress {
+  color: #99738e;
+}
+.theme-black .reveal .progress {
+  color: #F2E38A;
+}
+.theme-candy .reveal .progress {
+  color: #22c4ec;
+}
+.theme-skeletor .reveal .progress {
+  color: #22c4ec;
+}
+.theme-honey .reveal .progress {
+  color: #B5B5B7;
+}
+.theme-ultra .reveal .progress {
+  color: #FAC668;
+}
+.theme-borealis .reveal .progress {
+  color: #7489C7;
+}
+.theme-python .reveal .progress {
+  color: #EC9B5F;
+}
+.theme-sedona .reveal .progress span {
+  background: #747CA8;
+}
+.theme-cyber .reveal .progress span {
+  background: #ea00d9;
+}
+.theme-bright-blue .reveal .progress span {
+  background: #553d67;
+}
+.theme-black .reveal .progress span {
+  background: #C687E8;
+}
+.theme-candy .reveal .progress span {
+  background: #d3b71f;
+}
+.theme-skeletor .reveal .progress span {
+  background: #987cb0;
+}
+.theme-honey .reveal .progress span {
+  background: #677077;
+}
+.theme-ultra .reveal .progress span {
+  background: #9B84C0;
+}
+.theme-borealis .reveal .progress span {
+  background: #ABB1D9;
+}
+.theme-python .reveal .progress span {
+  background: #FDD45E;
+}
+/*********************************************
+* LISTS
+*********************************************/
+/* Custom icon list */
+.reveal ul.icon {
+  list-style-type: none;
+}
+.reveal ul.icon li {
+  text-indent: -1.4em;
+  margin-bottom: 0.5em;
+}
+.reveal ul.icon li::before {
+  font-family: "flaticon";
+  content: "";
+  /* maguey */
+  float: left;
+  width: 1.2em;
+  font-size: 1em;
+}
+.theme-sedona .reveal ul.icon li::before {
+  color: #747CA8;
+}
+.theme-cyber .reveal ul.icon li::before {
+  color: #ea00d9;
+}
+.theme-bright-blue .reveal ul.icon li::before {
+  color: #553d67;
+}
+.theme-black .reveal ul.icon li::before {
+  color: #C687E8;
+}
+.theme-candy .reveal ul.icon li::before {
+  color: #d3b71f;
+}
+.theme-skeletor .reveal ul.icon li::before {
+  color: #987cb0;
+}
+.theme-honey .reveal ul.icon li::before {
+  color: #677077;
+}
+.theme-ultra .reveal ul.icon li::before {
+  color: #9B84C0;
+}
+.theme-borealis .reveal ul.icon li::before {
+  color: #ABB1D9;
+}
+.theme-python .reveal ul.icon li::before {
+  color: #FDD45E;
+}
+.reveal ul.icon li.pinata::before {
+  content: "";
+}
+.theme-sedona .reveal ul.icon li.pinata::before {
+  color: #747CA8;
+}
+.theme-cyber .reveal ul.icon li.pinata::before {
+  color: #ea00d9;
+}
+.theme-bright-blue .reveal ul.icon li.pinata::before {
+  color: #553d67;
+}
+.theme-black .reveal ul.icon li.pinata::before {
+  color: #C687E8;
+}
+.theme-candy .reveal ul.icon li.pinata::before {
+  color: #d3b71f;
+}
+.theme-skeletor .reveal ul.icon li.pinata::before {
+  color: #987cb0;
+}
+.theme-honey .reveal ul.icon li.pinata::before {
+  color: #677077;
+}
+.theme-ultra .reveal ul.icon li.pinata::before {
+  color: #9B84C0;
+}
+.theme-borealis .reveal ul.icon li.pinata::before {
+  color: #ABB1D9;
+}
+.theme-python .reveal ul.icon li.pinata::before {
+  color: #FDD45E;
+}
+.reveal ul.icon li.nopal::before {
+  content: "";
+}
+.theme-sedona .reveal ul.icon li.nopal::before {
+  color: #747CA8;
+}
+.theme-cyber .reveal ul.icon li.nopal::before {
+  color: #ea00d9;
+}
+.theme-bright-blue .reveal ul.icon li.nopal::before {
+  color: #553d67;
+}
+.theme-black .reveal ul.icon li.nopal::before {
+  color: #C687E8;
+}
+.theme-candy .reveal ul.icon li.nopal::before {
+  color: #d3b71f;
+}
+.theme-skeletor .reveal ul.icon li.nopal::before {
+  color: #987cb0;
+}
+.theme-honey .reveal ul.icon li.nopal::before {
+  color: #677077;
+}
+.theme-ultra .reveal ul.icon li.nopal::before {
+  color: #9B84C0;
+}
+.theme-borealis .reveal ul.icon li.nopal::before {
+  color: #ABB1D9;
+}
+.theme-python .reveal ul.icon li.nopal::before {
+  color: #FDD45E;
+}
+.reveal ul.icon li.cactus::before {
+  content: "";
+}
+.theme-sedona .reveal ul.icon li.cactus::before {
+  color: #747CA8;
+}
+.theme-cyber .reveal ul.icon li.cactus::before {
+  color: #ea00d9;
+}
+.theme-bright-blue .reveal ul.icon li.cactus::before {
+  color: #553d67;
+}
+.theme-black .reveal ul.icon li.cactus::before {
+  color: #C687E8;
+}
+.theme-candy .reveal ul.icon li.cactus::before {
+  color: #d3b71f;
+}
+.theme-skeletor .reveal ul.icon li.cactus::before {
+  color: #987cb0;
+}
+.theme-honey .reveal ul.icon li.cactus::before {
+  color: #677077;
+}
+.theme-ultra .reveal ul.icon li.cactus::before {
+  color: #9B84C0;
+}
+.theme-borealis .reveal ul.icon li.cactus::before {
+  color: #ABB1D9;
+}
+.theme-python .reveal ul.icon li.cactus::before {
+  color: #FDD45E;
+}
+.reveal ul.icon li.skull::before {
+  content: "";
+}
+.theme-sedona .reveal ul.icon li.skull::before {
+  color: #747CA8;
+}
+.theme-cyber .reveal ul.icon li.skull::before {
+  color: #ea00d9;
+}
+.theme-bright-blue .reveal ul.icon li.skull::before {
+  color: #553d67;
+}
+.theme-black .reveal ul.icon li.skull::before {
+  color: #C687E8;
+}
+.theme-candy .reveal ul.icon li.skull::before {
+  color: #d3b71f;
+}
+.theme-skeletor .reveal ul.icon li.skull::before {
+  color: #987cb0;
+}
+.theme-honey .reveal ul.icon li.skull::before {
+  color: #677077;
+}
+.theme-ultra .reveal ul.icon li.skull::before {
+  color: #9B84C0;
+}
+.theme-borealis .reveal ul.icon li.skull::before {
+  color: #ABB1D9;
+}
+.theme-python .reveal ul.icon li.skull::before {
+  color: #FDD45E;
+}
+/* table with no divisions and with bold purple first column */
+.reveal table th {
+  font-weight: bold;
+}
+.theme-sedona .reveal table th {
+  color: #747CA8;
+}
+.theme-cyber .reveal table th {
+  color: #ea00d9;
+}
+.theme-bright-blue .reveal table th {
+  color: #553d67;
+}
+.theme-black .reveal table th {
+  color: #C687E8;
+}
+.theme-candy .reveal table th {
+  color: #d3b71f;
+}
+.theme-skeletor .reveal table th {
+  color: #987cb0;
+}
+.theme-honey .reveal table th {
+  color: #677077;
+}
+.theme-ultra .reveal table th {
+  color: #9B84C0;
+}
+.theme-borealis .reveal table th {
+  color: #ABB1D9;
+}
+.theme-python .reveal table th {
+  color: #FDD45E;
+}
+.commands table {
+  margin: 0;
+}
+.commands table th {
+  text-align: right;
+  border-bottom: none;
+}
+.commands table td {
+  border-bottom: none;
+}
+.commands table td + td {
+  opacity: 0.5;
+}
+.commands table + figure {
+  margin-top: 2em;
+}
+
+/*********************************************
+* OTHER
+*********************************************/
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+  display: block;
+}
+
+/* text */
+.reveal strong,
+.reveal b {
+  font-weight: 400;
+  color: #F8757F;
+}
+.reveal strong-alt {
+  font-weight: 400;
+}
+.theme-sedona .reveal strong-alt {
+  color: #d2a9ea;
+}
+.theme-cyber .reveal strong-alt {
+  color: #10e8f3;
+}
+.theme-bright-blue .reveal strong-alt {
+  color: #f87d98;
+}
+.theme-black .reveal strong-alt {
+  color: #d0ea95;
+}
+.theme-candy .reveal strong-alt {
+  color: #cf567f;
+}
+.theme-skeletor .reveal strong-alt {
+  color: #f4ce89;
+}
+.theme-honey .reveal strong-alt {
+  color: #808a91;
+}
+.theme-ultra .reveal strong-alt {
+  color: #fcd999;
+}
+.theme-borealis .reveal strong-alt {
+  color: #13ffd1;
+}
+.theme-python .reveal strong-alt {
+  color: #7db3d7;
+}
+.reveal small {
+  font-size: 0.8em;
+}
+.reveal em {
+  font-style: italic;
+}
+.reveal mega-font {
+  font-size: 6.5em;
+}
+.theme-sedona .reveal mega-font {
+  color: #BD80E0;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-cyber .reveal mega-font {
+  color: #0abdc6;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-bright-blue .reveal mega-font {
+  color: #f64c72;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-black .reveal mega-font {
+  color: #BDE16B;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-candy .reveal mega-font {
+  color: #bd3563;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-skeletor .reveal mega-font {
+  color: #f0bb5a;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-honey .reveal mega-font {
+  color: #F2B632;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-ultra .reveal mega-font {
+  color: #E55982;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-borealis .reveal mega-font {
+  color: #00DFB4;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-python .reveal mega-font {
+  color: #569CCB;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-poppins-font .reveal mega-font {
+  font-family: IBMPlexSerif, monospace;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-cunia-font .reveal mega-font {
+  font-family: Cunia, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-plex-font .reveal mega-font {
+  font-family: IBMPlexSerif, monospace;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-dosis-font .reveal mega-font {
+  font-family: Dosis, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-leafy-font .reveal mega-font {
+  font-family: Leafy, cursive;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-allmono-font .reveal mega-font {
+  font-family: Muli, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-soda-font .reveal mega-font {
+  font-family: Open Sans, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-klasik-font .reveal mega-font {
+  font-family: Klasik, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-klasik-rough-font .reveal mega-font {
+  font-family: Klasik-Rough, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-nox-font .reveal mega-font {
+  font-family: Annie Use Your Telescope, cursive;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.reveal huge-font {
+  font-size: 5em;
+}
+.theme-sedona .reveal huge-font {
+  color: #BD80E0;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-cyber .reveal huge-font {
+  color: #0abdc6;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-bright-blue .reveal huge-font {
+  color: #f64c72;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-black .reveal huge-font {
+  color: #BDE16B;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-candy .reveal huge-font {
+  color: #bd3563;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-skeletor .reveal huge-font {
+  color: #f0bb5a;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-honey .reveal huge-font {
+  color: #F2B632;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-ultra .reveal huge-font {
+  color: #E55982;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-borealis .reveal huge-font {
+  color: #00DFB4;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-python .reveal huge-font {
+  color: #569CCB;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-poppins-font .reveal huge-font {
+  font-family: IBMPlexSerif, monospace;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-cunia-font .reveal huge-font {
+  font-family: Cunia, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-plex-font .reveal huge-font {
+  font-family: IBMPlexSerif, monospace;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-dosis-font .reveal huge-font {
+  font-family: Dosis, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-leafy-font .reveal huge-font {
+  font-family: Leafy, cursive;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-allmono-font .reveal huge-font {
+  font-family: Muli, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-soda-font .reveal huge-font {
+  font-family: Open Sans, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-klasik-font .reveal huge-font {
+  font-family: Klasik, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-klasik-rough-font .reveal huge-font {
+  font-family: Klasik-Rough, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-nox-font .reveal huge-font {
+  font-family: Annie Use Your Telescope, cursive;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.reveal big-font {
+  font-size: 4em;
+}
+.theme-sedona .reveal big-font {
+  color: #BD80E0;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-cyber .reveal big-font {
+  color: #0abdc6;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-bright-blue .reveal big-font {
+  color: #f64c72;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-black .reveal big-font {
+  color: #BDE16B;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-candy .reveal big-font {
+  color: #bd3563;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-skeletor .reveal big-font {
+  color: #f0bb5a;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-honey .reveal big-font {
+  color: #F2B632;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-ultra .reveal big-font {
+  color: #E55982;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-borealis .reveal big-font {
+  color: #00DFB4;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-python .reveal big-font {
+  color: #569CCB;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-poppins-font .reveal big-font {
+  font-family: IBMPlexSerif, monospace;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-cunia-font .reveal big-font {
+  font-family: Cunia, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-plex-font .reveal big-font {
+  font-family: IBMPlexSerif, monospace;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-dosis-font .reveal big-font {
+  font-family: Dosis, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-leafy-font .reveal big-font {
+  font-family: Leafy, cursive;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-allmono-font .reveal big-font {
+  font-family: Muli, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-soda-font .reveal big-font {
+  font-family: Open Sans, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-klasik-font .reveal big-font {
+  font-family: Klasik, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-klasik-rough-font .reveal big-font {
+  font-family: Klasik-Rough, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-nox-font .reveal big-font {
+  font-family: Annie Use Your Telescope, cursive;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+
+.reveal glow {
+  text-shadow: 0px 0px 5px #fff;
+  color: #fff;
+  padding: 0 2rem;
+}
+
+.reveal h1.glow,
+.reveal h2.glow,
+.reveal h3.glow,
+.reveal h4.glow,
+.reveal h5.glow,
+.reveal big-font.glow,
+.reveal mega-font.glow,
+.reveal huge-font.glow {
+  padding: 0 2rem;
+  font-family: "Ropa Sans", sans-serif;
+}
+.theme-sedona .reveal h1.glow,
+.theme-sedona .reveal h2.glow,
+.theme-sedona .reveal h3.glow,
+.theme-sedona .reveal h4.glow,
+.theme-sedona .reveal h5.glow,
+.theme-sedona .reveal big-font.glow,
+.theme-sedona .reveal mega-font.glow,
+.theme-sedona .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px #BD80E0, 0 0 20px #fff;
+}
+.theme-cyber .reveal h1.glow,
+.theme-cyber .reveal h2.glow,
+.theme-cyber .reveal h3.glow,
+.theme-cyber .reveal h4.glow,
+.theme-cyber .reveal h5.glow,
+.theme-cyber .reveal big-font.glow,
+.theme-cyber .reveal mega-font.glow,
+.theme-cyber .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px #0abdc6, 0 0 20px #fff;
+}
+.theme-bright-blue .reveal h1.glow,
+.theme-bright-blue .reveal h2.glow,
+.theme-bright-blue .reveal h3.glow,
+.theme-bright-blue .reveal h4.glow,
+.theme-bright-blue .reveal h5.glow,
+.theme-bright-blue .reveal big-font.glow,
+.theme-bright-blue .reveal mega-font.glow,
+.theme-bright-blue .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px #f64c72, 0 0 20px #fff;
+}
+.theme-black .reveal h1.glow,
+.theme-black .reveal h2.glow,
+.theme-black .reveal h3.glow,
+.theme-black .reveal h4.glow,
+.theme-black .reveal h5.glow,
+.theme-black .reveal big-font.glow,
+.theme-black .reveal mega-font.glow,
+.theme-black .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px #BDE16B, 0 0 20px #fff;
+}
+.theme-candy .reveal h1.glow,
+.theme-candy .reveal h2.glow,
+.theme-candy .reveal h3.glow,
+.theme-candy .reveal h4.glow,
+.theme-candy .reveal h5.glow,
+.theme-candy .reveal big-font.glow,
+.theme-candy .reveal mega-font.glow,
+.theme-candy .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px #bd3563, 0 0 20px #fff;
+}
+.theme-skeletor .reveal h1.glow,
+.theme-skeletor .reveal h2.glow,
+.theme-skeletor .reveal h3.glow,
+.theme-skeletor .reveal h4.glow,
+.theme-skeletor .reveal h5.glow,
+.theme-skeletor .reveal big-font.glow,
+.theme-skeletor .reveal mega-font.glow,
+.theme-skeletor .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px #f0bb5a, 0 0 20px #fff;
+}
+.theme-honey .reveal h1.glow,
+.theme-honey .reveal h2.glow,
+.theme-honey .reveal h3.glow,
+.theme-honey .reveal h4.glow,
+.theme-honey .reveal h5.glow,
+.theme-honey .reveal big-font.glow,
+.theme-honey .reveal mega-font.glow,
+.theme-honey .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px #F2B632, 0 0 20px #fff;
+}
+.theme-ultra .reveal h1.glow,
+.theme-ultra .reveal h2.glow,
+.theme-ultra .reveal h3.glow,
+.theme-ultra .reveal h4.glow,
+.theme-ultra .reveal h5.glow,
+.theme-ultra .reveal big-font.glow,
+.theme-ultra .reveal mega-font.glow,
+.theme-ultra .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px #E55982, 0 0 20px #fff;
+}
+.theme-borealis .reveal h1.glow,
+.theme-borealis .reveal h2.glow,
+.theme-borealis .reveal h3.glow,
+.theme-borealis .reveal h4.glow,
+.theme-borealis .reveal h5.glow,
+.theme-borealis .reveal big-font.glow,
+.theme-borealis .reveal mega-font.glow,
+.theme-borealis .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px #00DFB4, 0 0 20px #fff;
+}
+.theme-python .reveal h1.glow,
+.theme-python .reveal h2.glow,
+.theme-python .reveal h3.glow,
+.theme-python .reveal h4.glow,
+.theme-python .reveal h5.glow,
+.theme-python .reveal big-font.glow,
+.theme-python .reveal mega-font.glow,
+.theme-python .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px #569CCB, 0 0 20px #fff;
+}
+.theme-poppins-font .reveal h1.glow,
+.theme-poppins-font .reveal h2.glow,
+.theme-poppins-font .reveal h3.glow,
+.theme-poppins-font .reveal h4.glow,
+.theme-poppins-font .reveal h5.glow,
+.theme-poppins-font .reveal big-font.glow,
+.theme-poppins-font .reveal mega-font.glow,
+.theme-poppins-font .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px, 0 0 20px #fff;
+}
+.theme-cunia-font .reveal h1.glow,
+.theme-cunia-font .reveal h2.glow,
+.theme-cunia-font .reveal h3.glow,
+.theme-cunia-font .reveal h4.glow,
+.theme-cunia-font .reveal h5.glow,
+.theme-cunia-font .reveal big-font.glow,
+.theme-cunia-font .reveal mega-font.glow,
+.theme-cunia-font .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px, 0 0 20px #fff;
+}
+.theme-plex-font .reveal h1.glow,
+.theme-plex-font .reveal h2.glow,
+.theme-plex-font .reveal h3.glow,
+.theme-plex-font .reveal h4.glow,
+.theme-plex-font .reveal h5.glow,
+.theme-plex-font .reveal big-font.glow,
+.theme-plex-font .reveal mega-font.glow,
+.theme-plex-font .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px, 0 0 20px #fff;
+}
+.theme-dosis-font .reveal h1.glow,
+.theme-dosis-font .reveal h2.glow,
+.theme-dosis-font .reveal h3.glow,
+.theme-dosis-font .reveal h4.glow,
+.theme-dosis-font .reveal h5.glow,
+.theme-dosis-font .reveal big-font.glow,
+.theme-dosis-font .reveal mega-font.glow,
+.theme-dosis-font .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px, 0 0 20px #fff;
+}
+.theme-leafy-font .reveal h1.glow,
+.theme-leafy-font .reveal h2.glow,
+.theme-leafy-font .reveal h3.glow,
+.theme-leafy-font .reveal h4.glow,
+.theme-leafy-font .reveal h5.glow,
+.theme-leafy-font .reveal big-font.glow,
+.theme-leafy-font .reveal mega-font.glow,
+.theme-leafy-font .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px, 0 0 20px #fff;
+}
+.theme-allmono-font .reveal h1.glow,
+.theme-allmono-font .reveal h2.glow,
+.theme-allmono-font .reveal h3.glow,
+.theme-allmono-font .reveal h4.glow,
+.theme-allmono-font .reveal h5.glow,
+.theme-allmono-font .reveal big-font.glow,
+.theme-allmono-font .reveal mega-font.glow,
+.theme-allmono-font .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px, 0 0 20px #fff;
+}
+.theme-soda-font .reveal h1.glow,
+.theme-soda-font .reveal h2.glow,
+.theme-soda-font .reveal h3.glow,
+.theme-soda-font .reveal h4.glow,
+.theme-soda-font .reveal h5.glow,
+.theme-soda-font .reveal big-font.glow,
+.theme-soda-font .reveal mega-font.glow,
+.theme-soda-font .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px, 0 0 20px #fff;
+}
+.theme-klasik-font .reveal h1.glow,
+.theme-klasik-font .reveal h2.glow,
+.theme-klasik-font .reveal h3.glow,
+.theme-klasik-font .reveal h4.glow,
+.theme-klasik-font .reveal h5.glow,
+.theme-klasik-font .reveal big-font.glow,
+.theme-klasik-font .reveal mega-font.glow,
+.theme-klasik-font .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px, 0 0 20px #fff;
+}
+.theme-klasik-rough-font .reveal h1.glow,
+.theme-klasik-rough-font .reveal h2.glow,
+.theme-klasik-rough-font .reveal h3.glow,
+.theme-klasik-rough-font .reveal h4.glow,
+.theme-klasik-rough-font .reveal h5.glow,
+.theme-klasik-rough-font .reveal big-font.glow,
+.theme-klasik-rough-font .reveal mega-font.glow,
+.theme-klasik-rough-font .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px, 0 0 20px #fff;
+}
+.theme-nox-font .reveal h1.glow,
+.theme-nox-font .reveal h2.glow,
+.theme-nox-font .reveal h3.glow,
+.theme-nox-font .reveal h4.glow,
+.theme-nox-font .reveal h5.glow,
+.theme-nox-font .reveal big-font.glow,
+.theme-nox-font .reveal mega-font.glow,
+.theme-nox-font .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px, 0 0 20px #fff;
+}
+
+/* Additional divs */
+div.warn {
+  background-color: #fb5c6f;
+  border-color: #fb5c6f;
+  border-left: 5px solid #C81D25;
+  padding: 15px 15px;
+  color: #fff;
+  margin: 1em;
+  margin-top: 0;
+  opacity: 0.8;
+}
+div.info {
+  background-color: #208a96;
+  border-color: #208a96;
+  border-left: 5px solid #0B3954;
+  padding: 15px 15px;
+  color: #fff;
+  opacity: 0.8;
+  margin: 1em;
+  margin-top: 0;
+}
+div.info a {
+  color: #e8f3f4 !important;
+  text-decoration: underline;
+  text-decoration-color: #e8f3f4 !important;
+}
+
+/* Floating modal */
+/* I like using this for in slide quote  */
+/* when I am not using the whole slide for quote */
+.float_modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 900px;
+  min-width: 100px;
+  max-height: 600px;
+  min-height: 100px;
+  z-index: 2000;
+  transform: translateX(-50%) translateY(-50%);
+  background: rgba(45, 51, 57, 0.98);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Text into the modal */
+.modal_p {
+  padding: 10px !important;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+/* Adding caption to the modal */
+.caption_p {
+  font-weight: light;
+  font-style: italic;
+  font-size: 0.5em;
+  color: #B2BAE5;
+  /*lavender violet*/
+  /* font-family: $base-font; */
+  padding: 10px !important;
+}
+.caption_p a {
+  /* color:  #B2BAE5!important; /*lavender violet*/
+  font-style: italic !important;
+}
+
+/*****************
+ * Code Segments
+ ****************/
+/* pre and code */
+.reveal pre {
+  box-shadow: none;
+  line-height: 1.2rem;
+  width: 100%;
+  font-size: 0.8em;
+}
+
+.reveal pre code {
+  -moz-tab-size: 2;
+  tab-size: 2;
+  font-family: "Overpass Mono", monospace;
+}
+
+.reveal code {
+  background-color: #e2e6e9;
+  padding: 3px 7px;
+  border-radius: 3px;
+  font-size: 1.2em;
+}
+
+figure.code {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+figure.code pre {
+  box-shadow: none;
+  line-height: 1.3rem;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 5px;
+}
+figure.code figcaption {
+  box-sizing: border-box;
+  padding: 1ex;
+  width: 100%;
+  font-size: 0.875em;
+  border-bottom-width: 0;
+  background-color: #333;
+  text-align: left;
+  border-radius: 3px;
+  color: #EEEDEF !important;
+}
+figure.code pre + figcaption {
+  border-top-width: 0;
+  border-bottom-width: 1px;
+}
+
+/*********************************************
+* APPLY THEMES
+*********************************************/
+.reveal[class*=pattern--] {
+  background-position: center center;
+  background-size: 133vmax auto;
+}
+
+/*********************************************
+* CSS GRID USE
+*********************************************/
+.grid-wrapper {
+  display: grid;
+}
+
+/************************************************
+* MODIFIED SECTIONS
+* ADDS LOGO AND SPECIFICS FOR THE THEME
+* Slides have two main areas: header and contetnt
+**************************************************/
+.reveal .slides section {
+  height: 100vh;
+  margin: 0;
+  width: 100vw;
+  color: #2A2A49;
+}
+
+.reveal .slides section.stack {
+  background-color: transparent !important;
+}
+
+.reveal .slides section .grid-wrapper {
+  box-sizing: border-box;
+  grid-column-gap: 5vmin;
+  grid-row-gap: 2vmin;
+  grid-template-rows: 5.5vmin 1fr;
+  grid-template-columns: 1fr 90% 1fr;
+  grid-template-areas: ". header ." ". content .";
+  height: 100%;
+  padding: 10vmin;
+}
+
+.reveal .slides section .header {
+  align-items: center;
+  display: flex;
+  grid-area: header;
+  padding: 5px;
+}
+
+/* Twitter icon and handle on the header */
+.header .twitter {
+  margin-left: auto;
+  opacity: 0.7;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+.header .twitter a {
+  color: #5f6c7a;
+  /*slate grey*/
+  text-decoration: none;
+}
+.header .twitter .fa-twitter {
+  color: #5f6c7a;
+  /*slate grey*/
+}
+
+.reveal .slides section .logo {
+  background-image: url("../assets/personal/Purple.png");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  display: inline-block;
+  grid-area: header;
+  height: 5.5vmin;
+  margin-right: 1.5vmin;
+  width: 5.5vmin;
+}
+
+.reveal .slides section .section {
+  text-transform: uppercase;
+  line-height: 5.5vmin;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+.theme-poppins-font .reveal .slides section .section {
+  font-family: IBMPlexSerif, monospace;
+}
+.theme-cunia-font .reveal .slides section .section {
+  font-family: Cunia, sans-serif;
+}
+.theme-plex-font .reveal .slides section .section {
+  font-family: IBMPlexSerif, monospace;
+}
+.theme-dosis-font .reveal .slides section .section {
+  font-family: Dosis, sans-serif;
+}
+.theme-leafy-font .reveal .slides section .section {
+  font-family: Leafy, cursive;
+}
+.theme-allmono-font .reveal .slides section .section {
+  font-family: Muli, sans-serif;
+}
+.theme-soda-font .reveal .slides section .section {
+  font-family: Open Sans, sans-serif;
+}
+.theme-klasik-font .reveal .slides section .section {
+  font-family: Klasik, sans-serif;
+}
+.theme-klasik-rough-font .reveal .slides section .section {
+  font-family: Klasik-Rough, sans-serif;
+}
+.theme-nox-font .reveal .slides section .section {
+  font-family: Annie Use Your Telescope, cursive;
+}
+
+.reveal .slides section .content {
+  align-self: center;
+  grid-area: content;
+}
+
+/*********************************************
+* PATTERS USED FOR THE SLIDES BACKGROUNDS
+*********************************************/
+.reveal.pattern--stream {
+  background-image: url(../assets/patterns//zigzag_purple.svg);
+  background-color: white;
+}
+
+.theme-sedona .reveal.pattern--stream .slides section.intro {
+  background-color: #BD80E0;
+}
+.theme-cyber .reveal.pattern--stream .slides section.intro {
+  background-color: #0abdc6;
+}
+.theme-bright-blue .reveal.pattern--stream .slides section.intro {
+  background-color: #f64c72;
+}
+.theme-black .reveal.pattern--stream .slides section.intro {
+  background-color: #BDE16B;
+}
+.theme-candy .reveal.pattern--stream .slides section.intro {
+  background-color: #bd3563;
+}
+.theme-skeletor .reveal.pattern--stream .slides section.intro {
+  background-color: #f0bb5a;
+}
+.theme-honey .reveal.pattern--stream .slides section.intro {
+  background-color: #F2B632;
+}
+.theme-ultra .reveal.pattern--stream .slides section.intro {
+  background-color: #E55982;
+}
+.theme-borealis .reveal.pattern--stream .slides section.intro {
+  background-color: #00DFB4;
+}
+.theme-python .reveal.pattern--stream .slides section.intro {
+  background-color: #569CCB;
+}
+.theme-sedona .reveal.pattern--stream .slides section.title {
+  background-color: #BD80E0;
+}
+.theme-cyber .reveal.pattern--stream .slides section.title {
+  background-color: #0abdc6;
+}
+.theme-bright-blue .reveal.pattern--stream .slides section.title {
+  background-color: #f64c72;
+}
+.theme-black .reveal.pattern--stream .slides section.title {
+  background-color: #BDE16B;
+}
+.theme-candy .reveal.pattern--stream .slides section.title {
+  background-color: #bd3563;
+}
+.theme-skeletor .reveal.pattern--stream .slides section.title {
+  background-color: #f0bb5a;
+}
+.theme-honey .reveal.pattern--stream .slides section.title {
+  background-color: #F2B632;
+}
+.theme-ultra .reveal.pattern--stream .slides section.title {
+  background-color: #E55982;
+}
+.theme-borealis .reveal.pattern--stream .slides section.title {
+  background-color: #00DFB4;
+}
+.theme-python .reveal.pattern--stream .slides section.title {
+  background-color: #569CCB;
+}
+.reveal.pattern--lines {
+  background-image: url(../assets/patterns///lines.png);
+}
+
+.theme-sedona .reveal.pattern--lines .slides section.intro {
+  background-color: #747CA8;
+}
+.theme-cyber .reveal.pattern--lines .slides section.intro {
+  background-color: #ea00d9;
+}
+.theme-bright-blue .reveal.pattern--lines .slides section.intro {
+  background-color: #553d67;
+}
+.theme-black .reveal.pattern--lines .slides section.intro {
+  background-color: #C687E8;
+}
+.theme-candy .reveal.pattern--lines .slides section.intro {
+  background-color: #d3b71f;
+}
+.theme-skeletor .reveal.pattern--lines .slides section.intro {
+  background-color: #987cb0;
+}
+.theme-honey .reveal.pattern--lines .slides section.intro {
+  background-color: #677077;
+}
+.theme-ultra .reveal.pattern--lines .slides section.intro {
+  background-color: #9B84C0;
+}
+.theme-borealis .reveal.pattern--lines .slides section.intro {
+  background-color: #ABB1D9;
+}
+.theme-python .reveal.pattern--lines .slides section.intro {
+  background-color: #FDD45E;
+}
+.theme-sedona .reveal.pattern--lines .slides section.title {
+  background-color: #747CA8;
+  color: #BD80E0;
+}
+.theme-cyber .reveal.pattern--lines .slides section.title {
+  background-color: #ea00d9;
+  color: #0abdc6;
+}
+.theme-bright-blue .reveal.pattern--lines .slides section.title {
+  background-color: #553d67;
+  color: #f64c72;
+}
+.theme-black .reveal.pattern--lines .slides section.title {
+  background-color: #C687E8;
+  color: #BDE16B;
+}
+.theme-candy .reveal.pattern--lines .slides section.title {
+  background-color: #d3b71f;
+  color: #bd3563;
+}
+.theme-skeletor .reveal.pattern--lines .slides section.title {
+  background-color: #987cb0;
+  color: #f0bb5a;
+}
+.theme-honey .reveal.pattern--lines .slides section.title {
+  background-color: #677077;
+  color: #F2B632;
+}
+.theme-ultra .reveal.pattern--lines .slides section.title {
+  background-color: #9B84C0;
+  color: #E55982;
+}
+.theme-borealis .reveal.pattern--lines .slides section.title {
+  background-color: #ABB1D9;
+  color: #00DFB4;
+}
+.theme-python .reveal.pattern--lines .slides section.title {
+  background-color: #FDD45E;
+  color: #569CCB;
+}
+.theme-sedona .reveal.pattern--lines .progress {
+  background-color: #d1d7e0;
+}
+.theme-cyber .reveal.pattern--lines .progress {
+  background-color: #711c91;
+}
+.theme-bright-blue .reveal.pattern--lines .progress {
+  background-color: #99738e;
+}
+.theme-black .reveal.pattern--lines .progress {
+  background-color: #F2E38A;
+}
+.theme-candy .reveal.pattern--lines .progress {
+  background-color: #22c4ec;
+}
+.theme-skeletor .reveal.pattern--lines .progress {
+  background-color: #22c4ec;
+}
+.theme-honey .reveal.pattern--lines .progress {
+  background-color: #B5B5B7;
+}
+.theme-ultra .reveal.pattern--lines .progress {
+  background-color: #FAC668;
+}
+.theme-borealis .reveal.pattern--lines .progress {
+  background-color: #7489C7;
+}
+.theme-python .reveal.pattern--lines .progress {
+  background-color: #EC9B5F;
+}
+.reveal.pattern--hex {
+  background-image: url("../assets/patterns/hex_pattern.png");
+}
+
+.theme-sedona .reveal.pattern--hex .slides section.intro {
+  background-color: #747CA8;
+}
+.theme-cyber .reveal.pattern--hex .slides section.intro {
+  background-color: #ea00d9;
+}
+.theme-bright-blue .reveal.pattern--hex .slides section.intro {
+  background-color: #553d67;
+}
+.theme-black .reveal.pattern--hex .slides section.intro {
+  background-color: #C687E8;
+}
+.theme-candy .reveal.pattern--hex .slides section.intro {
+  background-color: #d3b71f;
+}
+.theme-skeletor .reveal.pattern--hex .slides section.intro {
+  background-color: #987cb0;
+}
+.theme-honey .reveal.pattern--hex .slides section.intro {
+  background-color: #677077;
+}
+.theme-ultra .reveal.pattern--hex .slides section.intro {
+  background-color: #9B84C0;
+}
+.theme-borealis .reveal.pattern--hex .slides section.intro {
+  background-color: #ABB1D9;
+}
+.theme-python .reveal.pattern--hex .slides section.intro {
+  background-color: #FDD45E;
+}
+.theme-sedona .reveal.pattern--hex .slides section.title {
+  background-color: #747CA8;
+  color: #BD80E0;
+}
+.theme-cyber .reveal.pattern--hex .slides section.title {
+  background-color: #ea00d9;
+  color: #0abdc6;
+}
+.theme-bright-blue .reveal.pattern--hex .slides section.title {
+  background-color: #553d67;
+  color: #f64c72;
+}
+.theme-black .reveal.pattern--hex .slides section.title {
+  background-color: #C687E8;
+  color: #BDE16B;
+}
+.theme-candy .reveal.pattern--hex .slides section.title {
+  background-color: #d3b71f;
+  color: #bd3563;
+}
+.theme-skeletor .reveal.pattern--hex .slides section.title {
+  background-color: #987cb0;
+  color: #f0bb5a;
+}
+.theme-honey .reveal.pattern--hex .slides section.title {
+  background-color: #677077;
+  color: #F2B632;
+}
+.theme-ultra .reveal.pattern--hex .slides section.title {
+  background-color: #9B84C0;
+  color: #E55982;
+}
+.theme-borealis .reveal.pattern--hex .slides section.title {
+  background-color: #ABB1D9;
+  color: #00DFB4;
+}
+.theme-python .reveal.pattern--hex .slides section.title {
+  background-color: #FDD45E;
+  color: #569CCB;
+}
+.theme-sedona .reveal.pattern--hex .progress {
+  background-color: #d1d7e0;
+}
+.theme-cyber .reveal.pattern--hex .progress {
+  background-color: #711c91;
+}
+.theme-bright-blue .reveal.pattern--hex .progress {
+  background-color: #99738e;
+}
+.theme-black .reveal.pattern--hex .progress {
+  background-color: #F2E38A;
+}
+.theme-candy .reveal.pattern--hex .progress {
+  background-color: #22c4ec;
+}
+.theme-skeletor .reveal.pattern--hex .progress {
+  background-color: #22c4ec;
+}
+.theme-honey .reveal.pattern--hex .progress {
+  background-color: #B5B5B7;
+}
+.theme-ultra .reveal.pattern--hex .progress {
+  background-color: #FAC668;
+}
+.theme-borealis .reveal.pattern--hex .progress {
+  background-color: #7489C7;
+}
+.theme-python .reveal.pattern--hex .progress {
+  background-color: #EC9B5F;
+}
+.reveal.pattern--star {
+  background-image: url("../assets/patterns/star_pattern.svg");
+}
+
+.theme-sedona .reveal.pattern--star .slides section.intro {
+  background-color: #747CA8;
+}
+.theme-cyber .reveal.pattern--star .slides section.intro {
+  background-color: #ea00d9;
+}
+.theme-bright-blue .reveal.pattern--star .slides section.intro {
+  background-color: #553d67;
+}
+.theme-black .reveal.pattern--star .slides section.intro {
+  background-color: #C687E8;
+}
+.theme-candy .reveal.pattern--star .slides section.intro {
+  background-color: #d3b71f;
+}
+.theme-skeletor .reveal.pattern--star .slides section.intro {
+  background-color: #987cb0;
+}
+.theme-honey .reveal.pattern--star .slides section.intro {
+  background-color: #677077;
+}
+.theme-ultra .reveal.pattern--star .slides section.intro {
+  background-color: #9B84C0;
+}
+.theme-borealis .reveal.pattern--star .slides section.intro {
+  background-color: #ABB1D9;
+}
+.theme-python .reveal.pattern--star .slides section.intro {
+  background-color: #FDD45E;
+}
+.theme-sedona .reveal.pattern--star .slides section.title {
+  background-color: #747CA8;
+  color: #BD80E0;
+}
+.theme-cyber .reveal.pattern--star .slides section.title {
+  background-color: #ea00d9;
+  color: #0abdc6;
+}
+.theme-bright-blue .reveal.pattern--star .slides section.title {
+  background-color: #553d67;
+  color: #f64c72;
+}
+.theme-black .reveal.pattern--star .slides section.title {
+  background-color: #C687E8;
+  color: #BDE16B;
+}
+.theme-candy .reveal.pattern--star .slides section.title {
+  background-color: #d3b71f;
+  color: #bd3563;
+}
+.theme-skeletor .reveal.pattern--star .slides section.title {
+  background-color: #987cb0;
+  color: #f0bb5a;
+}
+.theme-honey .reveal.pattern--star .slides section.title {
+  background-color: #677077;
+  color: #F2B632;
+}
+.theme-ultra .reveal.pattern--star .slides section.title {
+  background-color: #9B84C0;
+  color: #E55982;
+}
+.theme-borealis .reveal.pattern--star .slides section.title {
+  background-color: #ABB1D9;
+  color: #00DFB4;
+}
+.theme-python .reveal.pattern--star .slides section.title {
+  background-color: #FDD45E;
+  color: #569CCB;
+}
+.theme-sedona .reveal.pattern--star .progress {
+  background-color: #d1d7e0;
+}
+.theme-cyber .reveal.pattern--star .progress {
+  background-color: #711c91;
+}
+.theme-bright-blue .reveal.pattern--star .progress {
+  background-color: #99738e;
+}
+.theme-black .reveal.pattern--star .progress {
+  background-color: #F2E38A;
+}
+.theme-candy .reveal.pattern--star .progress {
+  background-color: #22c4ec;
+}
+.theme-skeletor .reveal.pattern--star .progress {
+  background-color: #22c4ec;
+}
+.theme-honey .reveal.pattern--star .progress {
+  background-color: #B5B5B7;
+}
+.theme-ultra .reveal.pattern--star .progress {
+  background-color: #FAC668;
+}
+.theme-borealis .reveal.pattern--star .progress {
+  background-color: #7489C7;
+}
+.theme-python .reveal.pattern--star .progress {
+  background-color: #EC9B5F;
+}
+.reveal.pattern--pupilines {
+  background-image: url("../assets/patterns/pupilines.svg");
+}
+
+.theme-sedona .reveal.pattern--pupilines .slides section.intro {
+  background-color: #747CA8;
+}
+.theme-cyber .reveal.pattern--pupilines .slides section.intro {
+  background-color: #ea00d9;
+}
+.theme-bright-blue .reveal.pattern--pupilines .slides section.intro {
+  background-color: #553d67;
+}
+.theme-black .reveal.pattern--pupilines .slides section.intro {
+  background-color: #C687E8;
+}
+.theme-candy .reveal.pattern--pupilines .slides section.intro {
+  background-color: #d3b71f;
+}
+.theme-skeletor .reveal.pattern--pupilines .slides section.intro {
+  background-color: #987cb0;
+}
+.theme-honey .reveal.pattern--pupilines .slides section.intro {
+  background-color: #677077;
+}
+.theme-ultra .reveal.pattern--pupilines .slides section.intro {
+  background-color: #9B84C0;
+}
+.theme-borealis .reveal.pattern--pupilines .slides section.intro {
+  background-color: #ABB1D9;
+}
+.theme-python .reveal.pattern--pupilines .slides section.intro {
+  background-color: #FDD45E;
+}
+.theme-sedona .reveal.pattern--pupilines .slides section.title {
+  background-color: #747CA8;
+  color: #BD80E0;
+}
+.theme-cyber .reveal.pattern--pupilines .slides section.title {
+  background-color: #ea00d9;
+  color: #0abdc6;
+}
+.theme-bright-blue .reveal.pattern--pupilines .slides section.title {
+  background-color: #553d67;
+  color: #f64c72;
+}
+.theme-black .reveal.pattern--pupilines .slides section.title {
+  background-color: #C687E8;
+  color: #BDE16B;
+}
+.theme-candy .reveal.pattern--pupilines .slides section.title {
+  background-color: #d3b71f;
+  color: #bd3563;
+}
+.theme-skeletor .reveal.pattern--pupilines .slides section.title {
+  background-color: #987cb0;
+  color: #f0bb5a;
+}
+.theme-honey .reveal.pattern--pupilines .slides section.title {
+  background-color: #677077;
+  color: #F2B632;
+}
+.theme-ultra .reveal.pattern--pupilines .slides section.title {
+  background-color: #9B84C0;
+  color: #E55982;
+}
+.theme-borealis .reveal.pattern--pupilines .slides section.title {
+  background-color: #ABB1D9;
+  color: #00DFB4;
+}
+.theme-python .reveal.pattern--pupilines .slides section.title {
+  background-color: #FDD45E;
+  color: #569CCB;
+}
+.theme-sedona .reveal.pattern--pupilines .progress {
+  background-color: #747CA8;
+}
+.theme-cyber .reveal.pattern--pupilines .progress {
+  background-color: #ea00d9;
+}
+.theme-bright-blue .reveal.pattern--pupilines .progress {
+  background-color: #553d67;
+}
+.theme-black .reveal.pattern--pupilines .progress {
+  background-color: #C687E8;
+}
+.theme-candy .reveal.pattern--pupilines .progress {
+  background-color: #d3b71f;
+}
+.theme-skeletor .reveal.pattern--pupilines .progress {
+  background-color: #987cb0;
+}
+.theme-honey .reveal.pattern--pupilines .progress {
+  background-color: #677077;
+}
+.theme-ultra .reveal.pattern--pupilines .progress {
+  background-color: #9B84C0;
+}
+.theme-borealis .reveal.pattern--pupilines .progress {
+  background-color: #ABB1D9;
+}
+.theme-python .reveal.pattern--pupilines .progress {
+  background-color: #FDD45E;
+}
+.theme-sedona .reveal.pattern--pupilines .controls {
+  color: #747CA8;
+}
+.theme-cyber .reveal.pattern--pupilines .controls {
+  color: #ea00d9;
+}
+.theme-bright-blue .reveal.pattern--pupilines .controls {
+  color: #553d67;
+}
+.theme-black .reveal.pattern--pupilines .controls {
+  color: #C687E8;
+}
+.theme-candy .reveal.pattern--pupilines .controls {
+  color: #d3b71f;
+}
+.theme-skeletor .reveal.pattern--pupilines .controls {
+  color: #987cb0;
+}
+.theme-honey .reveal.pattern--pupilines .controls {
+  color: #677077;
+}
+.theme-ultra .reveal.pattern--pupilines .controls {
+  color: #9B84C0;
+}
+.theme-borealis .reveal.pattern--pupilines .controls {
+  color: #ABB1D9;
+}
+.theme-python .reveal.pattern--pupilines .controls {
+  color: #FDD45E;
+}
+.reveal.pattern--bwlines {
+  background-image: url("../assets/patterns/bwlines.svg");
+}
+
+.theme-sedona .reveal.pattern--bwlines .slides section.intro {
+  background-color: #747CA8;
+}
+.theme-cyber .reveal.pattern--bwlines .slides section.intro {
+  background-color: #ea00d9;
+}
+.theme-bright-blue .reveal.pattern--bwlines .slides section.intro {
+  background-color: #553d67;
+}
+.theme-black .reveal.pattern--bwlines .slides section.intro {
+  background-color: #C687E8;
+}
+.theme-candy .reveal.pattern--bwlines .slides section.intro {
+  background-color: #d3b71f;
+}
+.theme-skeletor .reveal.pattern--bwlines .slides section.intro {
+  background-color: #987cb0;
+}
+.theme-honey .reveal.pattern--bwlines .slides section.intro {
+  background-color: #677077;
+}
+.theme-ultra .reveal.pattern--bwlines .slides section.intro {
+  background-color: #9B84C0;
+}
+.theme-borealis .reveal.pattern--bwlines .slides section.intro {
+  background-color: #ABB1D9;
+}
+.theme-python .reveal.pattern--bwlines .slides section.intro {
+  background-color: #FDD45E;
+}
+.theme-sedona .reveal.pattern--bwlines .slides section.title {
+  background-color: #747CA8;
+  color: #BD80E0;
+}
+.theme-cyber .reveal.pattern--bwlines .slides section.title {
+  background-color: #ea00d9;
+  color: #0abdc6;
+}
+.theme-bright-blue .reveal.pattern--bwlines .slides section.title {
+  background-color: #553d67;
+  color: #f64c72;
+}
+.theme-black .reveal.pattern--bwlines .slides section.title {
+  background-color: #C687E8;
+  color: #BDE16B;
+}
+.theme-candy .reveal.pattern--bwlines .slides section.title {
+  background-color: #d3b71f;
+  color: #bd3563;
+}
+.theme-skeletor .reveal.pattern--bwlines .slides section.title {
+  background-color: #987cb0;
+  color: #f0bb5a;
+}
+.theme-honey .reveal.pattern--bwlines .slides section.title {
+  background-color: #677077;
+  color: #F2B632;
+}
+.theme-ultra .reveal.pattern--bwlines .slides section.title {
+  background-color: #9B84C0;
+  color: #E55982;
+}
+.theme-borealis .reveal.pattern--bwlines .slides section.title {
+  background-color: #ABB1D9;
+  color: #00DFB4;
+}
+.theme-python .reveal.pattern--bwlines .slides section.title {
+  background-color: #FDD45E;
+  color: #569CCB;
+}
+.reveal.pattern--space2 {
+  background-image: url("../assets/patterns/space2.png");
+}
+
+.theme-sedona .reveal.pattern--space2 .slides section.intro {
+  background-color: #747CA8;
+}
+.theme-cyber .reveal.pattern--space2 .slides section.intro {
+  background-color: #ea00d9;
+}
+.theme-bright-blue .reveal.pattern--space2 .slides section.intro {
+  background-color: #553d67;
+}
+.theme-black .reveal.pattern--space2 .slides section.intro {
+  background-color: #C687E8;
+}
+.theme-candy .reveal.pattern--space2 .slides section.intro {
+  background-color: #d3b71f;
+}
+.theme-skeletor .reveal.pattern--space2 .slides section.intro {
+  background-color: #987cb0;
+}
+.theme-honey .reveal.pattern--space2 .slides section.intro {
+  background-color: #677077;
+}
+.theme-ultra .reveal.pattern--space2 .slides section.intro {
+  background-color: #9B84C0;
+}
+.theme-borealis .reveal.pattern--space2 .slides section.intro {
+  background-color: #ABB1D9;
+}
+.theme-python .reveal.pattern--space2 .slides section.intro {
+  background-color: #FDD45E;
+}
+.theme-sedona .reveal.pattern--space2 .slides section.title {
+  background-color: #747CA8;
+  color: #BD80E0;
+}
+.theme-cyber .reveal.pattern--space2 .slides section.title {
+  background-color: #ea00d9;
+  color: #0abdc6;
+}
+.theme-bright-blue .reveal.pattern--space2 .slides section.title {
+  background-color: #553d67;
+  color: #f64c72;
+}
+.theme-black .reveal.pattern--space2 .slides section.title {
+  background-color: #C687E8;
+  color: #BDE16B;
+}
+.theme-candy .reveal.pattern--space2 .slides section.title {
+  background-color: #d3b71f;
+  color: #bd3563;
+}
+.theme-skeletor .reveal.pattern--space2 .slides section.title {
+  background-color: #987cb0;
+  color: #f0bb5a;
+}
+.theme-honey .reveal.pattern--space2 .slides section.title {
+  background-color: #677077;
+  color: #F2B632;
+}
+.theme-ultra .reveal.pattern--space2 .slides section.title {
+  background-color: #9B84C0;
+  color: #E55982;
+}
+.theme-borealis .reveal.pattern--space2 .slides section.title {
+  background-color: #ABB1D9;
+  color: #00DFB4;
+}
+.theme-python .reveal.pattern--space2 .slides section.title {
+  background-color: #FDD45E;
+  color: #569CCB;
+}
+.reveal.pattern--space3 {
+  background-image: url("../assets/patterns/space3.png");
+}
+
+.theme-sedona .reveal.pattern--space3 .slides section.intro {
+  background-color: #BD80E0;
+}
+.theme-cyber .reveal.pattern--space3 .slides section.intro {
+  background-color: #0abdc6;
+}
+.theme-bright-blue .reveal.pattern--space3 .slides section.intro {
+  background-color: #f64c72;
+}
+.theme-black .reveal.pattern--space3 .slides section.intro {
+  background-color: #BDE16B;
+}
+.theme-candy .reveal.pattern--space3 .slides section.intro {
+  background-color: #bd3563;
+}
+.theme-skeletor .reveal.pattern--space3 .slides section.intro {
+  background-color: #f0bb5a;
+}
+.theme-honey .reveal.pattern--space3 .slides section.intro {
+  background-color: #F2B632;
+}
+.theme-ultra .reveal.pattern--space3 .slides section.intro {
+  background-color: #E55982;
+}
+.theme-borealis .reveal.pattern--space3 .slides section.intro {
+  background-color: #00DFB4;
+}
+.theme-python .reveal.pattern--space3 .slides section.intro {
+  background-color: #569CCB;
+}
+.reveal.pattern--trooper {
+  background-image: url("../assets/patterns/trooper.jpg");
+}
+
+.theme-sedona .reveal.pattern--trooper .slides section.intro {
+  background-color: #BD80E0;
+}
+.theme-cyber .reveal.pattern--trooper .slides section.intro {
+  background-color: #0abdc6;
+}
+.theme-bright-blue .reveal.pattern--trooper .slides section.intro {
+  background-color: #f64c72;
+}
+.theme-black .reveal.pattern--trooper .slides section.intro {
+  background-color: #BDE16B;
+}
+.theme-candy .reveal.pattern--trooper .slides section.intro {
+  background-color: #bd3563;
+}
+.theme-skeletor .reveal.pattern--trooper .slides section.intro {
+  background-color: #f0bb5a;
+}
+.theme-honey .reveal.pattern--trooper .slides section.intro {
+  background-color: #F2B632;
+}
+.theme-ultra .reveal.pattern--trooper .slides section.intro {
+  background-color: #E55982;
+}
+.theme-borealis .reveal.pattern--trooper .slides section.intro {
+  background-color: #00DFB4;
+}
+.theme-python .reveal.pattern--trooper .slides section.intro {
+  background-color: #569CCB;
+}
+.theme-sedona .reveal.pattern--trooper .slides section.title {
+  background-color: #BD80E0;
+  color: #747CA8;
+}
+.theme-cyber .reveal.pattern--trooper .slides section.title {
+  background-color: #0abdc6;
+  color: #ea00d9;
+}
+.theme-bright-blue .reveal.pattern--trooper .slides section.title {
+  background-color: #f64c72;
+  color: #553d67;
+}
+.theme-black .reveal.pattern--trooper .slides section.title {
+  background-color: #BDE16B;
+  color: #C687E8;
+}
+.theme-candy .reveal.pattern--trooper .slides section.title {
+  background-color: #bd3563;
+  color: #d3b71f;
+}
+.theme-skeletor .reveal.pattern--trooper .slides section.title {
+  background-color: #f0bb5a;
+  color: #987cb0;
+}
+.theme-honey .reveal.pattern--trooper .slides section.title {
+  background-color: #F2B632;
+  color: #677077;
+}
+.theme-ultra .reveal.pattern--trooper .slides section.title {
+  background-color: #E55982;
+  color: #9B84C0;
+}
+.theme-borealis .reveal.pattern--trooper .slides section.title {
+  background-color: #00DFB4;
+  color: #ABB1D9;
+}
+.theme-python .reveal.pattern--trooper .slides section.title {
+  background-color: #569CCB;
+  color: #FDD45E;
+}
+.reveal.pattern--fox {
+  background-image: url("../assets/patterns/fox.png");
+}
+
+.theme-sedona .reveal.pattern--fox .slides section.intro {
+  background-color: #BD80E0;
+}
+.theme-cyber .reveal.pattern--fox .slides section.intro {
+  background-color: #0abdc6;
+}
+.theme-bright-blue .reveal.pattern--fox .slides section.intro {
+  background-color: #f64c72;
+}
+.theme-black .reveal.pattern--fox .slides section.intro {
+  background-color: #BDE16B;
+}
+.theme-candy .reveal.pattern--fox .slides section.intro {
+  background-color: #bd3563;
+}
+.theme-skeletor .reveal.pattern--fox .slides section.intro {
+  background-color: #f0bb5a;
+}
+.theme-honey .reveal.pattern--fox .slides section.intro {
+  background-color: #F2B632;
+}
+.theme-ultra .reveal.pattern--fox .slides section.intro {
+  background-color: #E55982;
+}
+.theme-borealis .reveal.pattern--fox .slides section.intro {
+  background-color: #00DFB4;
+}
+.theme-python .reveal.pattern--fox .slides section.intro {
+  background-color: #569CCB;
+}
+.theme-sedona .reveal.pattern--fox .slides section.title {
+  background-color: #BD80E0;
+  color: #747CA8;
+}
+.theme-cyber .reveal.pattern--fox .slides section.title {
+  background-color: #0abdc6;
+  color: #ea00d9;
+}
+.theme-bright-blue .reveal.pattern--fox .slides section.title {
+  background-color: #f64c72;
+  color: #553d67;
+}
+.theme-black .reveal.pattern--fox .slides section.title {
+  background-color: #BDE16B;
+  color: #C687E8;
+}
+.theme-candy .reveal.pattern--fox .slides section.title {
+  background-color: #bd3563;
+  color: #d3b71f;
+}
+.theme-skeletor .reveal.pattern--fox .slides section.title {
+  background-color: #f0bb5a;
+  color: #987cb0;
+}
+.theme-honey .reveal.pattern--fox .slides section.title {
+  background-color: #F2B632;
+  color: #677077;
+}
+.theme-ultra .reveal.pattern--fox .slides section.title {
+  background-color: #E55982;
+  color: #9B84C0;
+}
+.theme-borealis .reveal.pattern--fox .slides section.title {
+  background-color: #00DFB4;
+  color: #ABB1D9;
+}
+.theme-python .reveal.pattern--fox .slides section.title {
+  background-color: #569CCB;
+  color: #FDD45E;
+}
+/*********************************************
+ * IMPORT FONTS
+ *********************************************/
+@font-face {
+  font-family: "Leafy";
+  src: url("../../fonts/leafy.woff") format("woff");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cunia";
+  src: url("../../fonts/Cunia.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Coves";
+  src: url("../../fonts/Coves.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "NeoNeon";
+  src: url("../../fonts/Neoneon.woff") format("woff");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Klasik";
+  src: url("../../fonts/Klasik_Regular.woff") format("woff");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Klasik-Rough";
+  src: url("../../fonts/Klasik_Rough.woff") format("woff");
+  font-style: normal;
+}
+/***********************
+* VARIABLES FOR LIGHT-THEME
+************************/
+/*****************************
+* USE DEFAULT COLOR FOR SLIDES
+******************************/
+.reveal .slides section.subsection:not([class*=color--]) {
+  color: #c5c2c2;
+}
+.theme-sedona .reveal .slides section.subsection:not([class*=color--]) {
+  background-color: #2A2A49;
+}
+.theme-cyber .reveal .slides section.subsection:not([class*=color--]) {
+  background-color: #091833;
+}
+.theme-bright-blue .reveal .slides section.subsection:not([class*=color--]) {
+  background-color: #2f2fa2;
+}
+.theme-black .reveal .slides section.subsection:not([class*=color--]) {
+  background-color: #2A2A49;
+}
+.theme-candy .reveal .slides section.subsection:not([class*=color--]) {
+  background-color: #211a38;
+}
+.theme-skeletor .reveal .slides section.subsection:not([class*=color--]) {
+  background-color: #21122c;
+}
+.theme-honey .reveal .slides section.subsection:not([class*=color--]) {
+  background-color: #252839;
+}
+.theme-ultra .reveal .slides section.subsection:not([class*=color--]) {
+  background-color: #5F4B8B;
+}
+.theme-borealis .reveal .slides section.subsection:not([class*=color--]) {
+  background-color: #08142F;
+}
+.theme-python .reveal .slides section.subsection:not([class*=color--]) {
+  background-color: #282d32;
+}
+.reveal .slides section:not([class*=color--]) {
+  color: #c5c2c2;
+}
+.theme-sedona .reveal .slides section:not([class*=color--]) {
+  background-color: #2A2A49;
+}
+.theme-cyber .reveal .slides section:not([class*=color--]) {
+  background-color: #091833;
+}
+.theme-bright-blue .reveal .slides section:not([class*=color--]) {
+  background-color: #2f2fa2;
+}
+.theme-black .reveal .slides section:not([class*=color--]) {
+  background-color: #2A2A49;
+}
+.theme-candy .reveal .slides section:not([class*=color--]) {
+  background-color: #211a38;
+}
+.theme-skeletor .reveal .slides section:not([class*=color--]) {
+  background-color: #21122c;
+}
+.theme-honey .reveal .slides section:not([class*=color--]) {
+  background-color: #252839;
+}
+.theme-ultra .reveal .slides section:not([class*=color--]) {
+  background-color: #5F4B8B;
+}
+.theme-borealis .reveal .slides section:not([class*=color--]) {
+  background-color: #08142F;
+}
+.theme-python .reveal .slides section:not([class*=color--]) {
+  background-color: #282d32;
+}
+.reveal {
+  color: white !important;
+}
+
+/*********************************************
+ * About presenter
+ *********************************************/
+/*
+Slide containing information about the presenter
+has a background image and a box with the details */
+#about a {
+  color: #c5c2c2;
+}
+#about aside {
+  background-color: rgba(17, 18, 19, 0.85) !important;
+  color: #c5c2c2 !important;
+}
+#about .accounts a {
+  color: #c5c2c2 !important;
+}
+
+.slides .title .presentation-url {
+  opacity: 0.8;
+  color: #c5c2c2;
+}
+
+.header .twitter {
+  opacity: 0.8;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+.header .twitter a {
+  color: #d5d5d5 !important;
+}
+.header .twitter .fa-twitter {
+  color: #d5d5d5 !important;
+}
+
+/*# sourceMappingURL=dark_theme.css.map */

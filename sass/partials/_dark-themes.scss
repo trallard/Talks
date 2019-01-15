@@ -1,0 +1,106 @@
+/*********************************************
+* DEFINING THEME PALETTES
+*********************************************/
+
+//This section defines the many themes available
+// To define a new theme you need to create a new map
+$themes: (
+/* The following are color themes */
+
+/* sedona */
+
+'sedona':( 'primary': #BD80E0, // light-violet
+'secondary': #747CA8, //lavender violet */
+'third': #d1d7e0, 'primary-light':lighten(#BD80E0, 10%), 'secondary-light' :lighten(#747CA8, 10%), dark-col:#2A2A49, ),
+/* sedona */
+
+'cyber':( 'primary': #0abdc6, // turquoise
+'secondary': #ea00d9, //lavender violet */
+'third': #711c91, 'primary-light':lighten(#0abdc6, 10%), 'secondary-light' :lighten(#ea00d9, 10%), dark-col:#091833, ),
+/* bright-blue*/
+
+'bright-blue':( 'dark-col': #2f2fa2, // royal blue
+'primary': #f64c72, //hot-pink,
+'secondary': #553d67, //pineapple
+'third': #99738e, 'primary-light':lighten(#f64c72, 10%), 'secondary-light' :lighten(#f64c72, 10%), ),
+/* black*/
+
+'black':( 'primary': #BDE16B, // green*/
+'secondary': #C687E8, // lilac*/
+'third': #F2E38A, // yellow*/
+'primary-light':lighten(#BDE16B, 10%), 'secondary-light' :lighten(#9080bc, 10%), 'dark-col':#2A2A49, ),
+/* candy */
+
+'candy':( 'primary': #bd3563, //cherry
+'secondary': #d3b71f, //yellow
+'third': #22c4ec, //picton blue
+'primary-light':lighten(#bd3563, 10%), 'secondary-light' :lighten(#d3b71f, 10%), // 'dark-col': #3d3e4d,
+'dark-col': #211a38, ),
+/* skeletor */
+
+'skeletor':( 'primary': #f0bb5a, //ronchi
+'secondary': #987cb0, //lavender
+'third': #22c4ec, //picton blue
+'primary-light':lighten(#f0bb5a, 10%), 'secondary-light' :lighten(#987cb0, 10%), 'dark-col': #21122c, // revolver
+),
+/* honey */
+
+'honey':( 'primary': #F2B632, //saffron
+'secondary': #677077, //nickel
+'third': #B5B5B7, // ash grey
+'primary-light':lighten(#677077, 10%), 'secondary-light' :lighten(#B5B5B7, 10%), 'dark-col': #252839, // gunmetal
+),
+/* ultra*/
+
+'ultra':( 'primary': #E55982, // hot pink
+'third': #FAC668, // sunset gold
+'secondary': #9B84C0, // bougainvillea
+'primary-light':lighten(#FAC668, 10%), 'secondary-light' :lighten(#9B84C0, 10%), 'dark-col': #5F4B8B, // ultraviolet
+),
+/* borealis */
+
+'borealis':( 'primary': #00DFB4, // amazonite
+'secondary': #ABB1D9, // maximum purple blue
+'third': #7489C7, // dark pastel blue
+'primary-light':lighten(#00DFB4, 10%), 'secondary-light' :lighten(#ABB1D9, 10%), 'dark-col': #08142F, // gunmetal
+),
+/* python */
+
+// Inspired from https://dribbble.com/shots/3907524-The-Python-Process
+'python':( 'primary': #569CCB, // blue
+'secondary': #FDD45E, // python yellow
+'third': #EC9B5F, // dark pastel blue
+'primary-light':lighten(#569CCB, 10%), 'secondary-light' :lighten(#FDD45E, 10%), 'dark-col': #282d32, // carbon
+),
+/* The following are font themes */
+
+/* poppins*/
+
+'poppins-font':( 'title-font': #{'IBMPlexSerif', monospace}, 'base-font': #{"Poppins", Helvetica, sans-serif}, ),
+/* cunia */
+
+'cunia-font':( 'title-font': #{'Cunia', sans-serif}, 'base-font': #{"Coves", Helvetica, sans-serif}, ),
+/* plex*/
+
+'plex-font': ( 'title-font': #{'IBMPlexSerif', monospace}, 'base-font': #{'IBMPlexSans', sans-serif}, ),
+/* dosis */
+
+'dosis-font': ( 'title-font': #{'Dosis', sans-serif}, 'base-font': #{'Didact Gothic', sans-serif}, ),
+/* leafy */
+
+'leafy-font': ( 'title-font': #{'Leafy', cursive}, 'base-font': #{'Dosis', sans-serif}, ),
+/* allmono */
+
+'allmono-font': ( 'title-font': #{'Muli', sans-serif}, 'base-font': #{'Space Mono', monospace}, ),
+/* soda  */
+
+'soda-font': ( 'title-font': #{'Open Sans', sans-serif}, 'base-font': #{'Nunito', sans-serif}, ),
+/* klasik  */
+
+'klasik-font': ( 'title-font': #{'Klasik', sans-serif}, 'base-font': #{'Nunito', sans-serif}, ),
+/* klasik-rough  */
+
+'klasik-rough-font': ( 'title-font': #{'Klasik-Rough', sans-serif}, 'base-font': #{'Nunito', sans-serif}, ),
+/* nox*/
+
+'nox-font': ( 'title-font': #{'Annie Use Your Telescope', cursive}, 'base-font': #{'Open-Sans', sans-serif}, ), );

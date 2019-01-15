@@ -11,12 +11,15 @@
 	<link rel="stylesheet" href="reveal.js/css/reveal.css">
 	<link rel="stylesheet" href="reveal.js/css/theme/white.css">
 
-	<!-- Full theme -->
-	<link rel="stylesheet" href="css/full_theme.css">
+	<!-- Full theme:light version -->
+	<link rel="stylesheet" href="css/dark_theme.css">
 	<link rel="stylesheet" href="sass/presentation.css">
 
 	<!-- Theme used for syntax highlighting of code -->
 	<link rel="stylesheet" href="css/google_syntax.css">
+
+	<!-- Favicon -->
+	<link rel="icon" href="./assets/personal/Purple.png" />
 
 	<!-- Font awesome -->
 	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" media="all">
@@ -25,31 +28,42 @@
 
 </head>
 
-<!-- Need to specify the theme here: the first defines the color palette
- and the second the font theme -->
+<!-- Need to specify the theme here: the first defines the color palette and the 
+	second the font theme -->
 
-<body class="theme-jewels theme-nox-font">
+<body class="theme-cyber theme-klasik-rough-font">
 
 	<!-- Adding the background and icon theme here -->
-	<div class="reveal pattern--pupilines">
+
+	<div class="reveal pattern--trooper">
 		<div class="slides">
+
+			<!-- Intro slide, this is only the logo in a squared slide -->
+			<section class="intro" id="intro">
+				<div class="logo-wrapper">
+					<div class="logo">
+					</div>
+				</div>
+			</section>
 
 			<!-- Introduction slide -->
 			<section>
 				<section class="title" id="title">
 					<div class="grid-wrapper">
 						<div class="header">
-							<!-- <div class="logo logo--full"><span class="visually-hidden">Myplanet</span></div> -->
+							<!-- Remove logo--full class to only show brand mark -->
+							<div class="logo logo--full">
+							</div>
 						</div>
 						<div class="content">
-							<h1>The main title of the presentation</h1>
+							<h1>My own Reveal.js theme</h1>
 							<div class="description">
-								Describe a bit more what this is about
+								A highly customised, opinionated, and responsive theme
 							</div>
 						</div>
 						<div class="credit">
 							<hr>
-							<div class="label">Presented By</div>
+							<div class="label">Created By</div>
 							<div class="name">Tania Allard, PhD</div>
 						</div>
 						<a class="presentation-url" href="https://trallard.github.io/Talks/mock_full">
@@ -66,7 +80,8 @@
 								<hr>
 								<ul class="projects">
 									<li>Research Software Engineer</li>
-									<li>The University of Leeds</li>
+									<li>Data expert</li>
+									<li>Cloud developer advocate</li>
 								</ul>
 								<hr>
 								<ul class="accounts">
@@ -84,28 +99,31 @@
 
 			<!-- Used to introduce a subsection: you can specify
 					a slide colour here, title and description -->
-			<section class=" color--ice" id="subsection--ice">
-				<div class="grid-wrapper">
+			<section class="subsection ">
+				<div class=" grid-wrapper">
 					<div class="header">
-						<div class="logo"></div>
 						<div class="twitter"><a href="https://twitter.com/ixek">
 								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 					</div>
-					<div class="content">
-						<h1>class = 'color--ice'</h1>
-						<div class="description">
-							This is where the description goes. Keep it short and sweet.
-						</div>
+					<div class="logo"></div>
+					<h1>
+						<h1>class = 'subsection'</h1>
+					</h1>
+					<div class="description">
+						This is where the description goes. Keep it short and 🍬.
+						You can use this with a coloured slide too
 					</div>
 				</div>
 			</section>
 
-			<!-- Used to introduce a subsection: you can specify
+
+			<!-- Without using the subsection class: you can specify
 						a slide colour here, title and description -->
-			<section class=" color--midnight">
+			<section class="color--midnight">
 				<div class="grid-wrapper">
 					<div class="header">
 						<div class="logo"></div>
+						<div class="section">Subsection slides</div>
 						<div class="twitter"><a href="https://twitter.com/ixek">
 								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 					</div>
@@ -119,16 +137,39 @@
 				</div>
 			</section>
 
+			<!-- Without using the subsection class: you can specify
+									a slide colour here, title and description -->
+			<section class='color--topaz'>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h1>class = 'color--topaz'</h1>
+						<div class="description">
+							other colours are: ultraviolet,violet, midnight, vibrant,
+							topaz, two (white and ultraviolet),
+							gradient(grad-purple, grad-green, grad-blue)
+						</div>
+					</div>
+				</div>
+			</section>
+
+
 			<!-- Demo of simple unordered lists -->
 			<section class="commands">
 				<section>
 					<div class="grid-wrapper">
 						<div class="header">
 							<div class="logo"></div>
+							<div class="section">Lists</div>
 							<div class="twitter"><a href="https://twitter.com/ixek">
 									<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 						</div>
 						<div class="content">
+							<h1>Lists</h1>
 							<p>This is how regular lists look like:</p>
 							<ul>
 								<li>Create</li>
@@ -145,11 +186,14 @@
 					<div class="grid-wrapper">
 						<div class="header">
 							<div class="logo"></div>
+							<div class="section">Custom unordered lists</div>
 							<div class="twitter"><a href="https://twitter.com/ixek">
 									<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 						</div>
 						<div class="content">
 							<p>This is how custom lists look like:</p>
+							<pre><code><ul class='icon'></ul></code></pre>
+
 							<ul class='icon'>
 								<li>Create</li>
 								<li class='pinata'>Require</li>
@@ -165,11 +209,12 @@
 					<div class="grid-wrapper">
 						<div class="header">
 							<div class="logo"></div>
+							<div class="section">Simple table</div>
 							<div class="twitter"><a href="https://twitter.com/ixek">
 									<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 						</div>
 						<div class="content">
-							<h1>Create</h1>
+							<h1>Simple table</h1>
 							<table>
 								<tr>
 									<th>trackingId:</th>
@@ -180,33 +225,17 @@
 									<td>{string}</td>
 								</tr>
 							</table>
-							<!-- Using the figure class with data-markdown -->
-							<figure class='code'>
-								<div data-markdown>
-									```python
-									def print_hello():
-									print("Hello world!")
 
-									def add_one(number):
-									return number + 1
-
-									print_hello()
-									eight_plus_one = add_one(8)
-									print(eight_plus_one)
-									```
-								</div>
-							</figure>
-							<!-- Using only pre and code -->
-							<pre><code>for i in elements:
-	print(f'Element is {element})</code></pre>
 						</div>
 					</div>
 				</section>
 
+				Example with code footnote
 				<section>
 					<div class="grid-wrapper">
 						<div class="header">
 							<div class="logo"></div>
+							<div class="section">A table and code with foot</div>
 							<div class="twitter"><a href="https://twitter.com/ixek">
 									<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 						</div>
@@ -231,6 +260,7 @@
 					<div class="grid-wrapper">
 						<div class="header">
 							<div class="logo"></div>
+							<div class="section">A table and code only</div>
 							<div class="twitter"><a href="https://twitter.com/ixek"><i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 						</div>
 						<div class="content">
@@ -252,32 +282,6 @@
 						</div>
 					</div>
 				</section>
-
-				<section>
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="twitter"><a href="https://twitter.com/ixek"><i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-						</div>
-						<div class="content">
-							<h1>Metrics</h1>
-							<h2>Set</h2>
-							<table>
-								<tr>
-									<th>key:</th>
-									<td>{number}</td>
-								</tr>
-								<tr>
-									<th>value:</th>
-									<td>{number}</td>
-								</tr>
-							</table>
-							<figure class="code">
-								<pre><code class="lang-js">ga('set', 'metric1', 2);</code></pre>
-							</figure>
-						</div>
-					</div>
-				</section>
 			</section>
 
 			<!-- Subsection slide: no color  has section on the header-->
@@ -290,12 +294,14 @@
 								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 					</div>
 					<div class="content">Notice the section title on the header
-						add this using
+						add this using:
+						<br><br>
 						<figure class="code">
 							<pre><code class="lang-html"><div class="section"> Section </div></code></pre>
 							<p>⭐ Also if you do not pass an argument to the slide section, the default
-								background color us white as in this slide</p>
+								background color will be used</p>
 						</figure>
+						<a href="http://bitsandchips.me">This is a link</a>
 					</div>
 				</div>
 			</section>
@@ -305,6 +311,7 @@
 				<div class="grid-wrapper">
 					<div class="header">
 						<div class="logo"></div>
+						<div class="section">Quote slides</div>
 						<div class="twitter"><a href="https://twitter.com/ixek">
 								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 					</div>
@@ -324,14 +331,16 @@
 				</div>
 			</section>
 
-			<!-- Dark slide with code -->
+
+			<!-- Slide with code -->
 			<section id="code--path">
 				<div class="grid-wrapper">
 					<div class="header">
 						<div class="logo"></div>
-						<div class="section">Section</div>
+						<div class="section">Creating code sections</div>
 					</div>
 					<div class="content">
+						You can add code with a footnote up or down:
 						<figure class="code">
 							<pre><code class="lang-js">ga('require', 'linker');</code></pre>
 							<figcaption>usr/bin</figcaption>
@@ -339,7 +348,7 @@
 						<figure class="code">
 
 							<!-- figcaption element is optional, can be placed above or below code  -->
-							<figcaption>usr/bin</figcaption>
+							<figcaption>scripts/hello</figcaption>
 							<div data-markdown>
 								```python
 								def print_hello():
@@ -353,25 +362,6 @@
 								print(eight_plus_one)
 								```
 							</div>
-						</figure>
-
-						<figure class="code code2">
-							<div data-markdown>
-								```python
-								def print_hello():
-								print("Hello world!")
-
-								def add_one(number):
-								return number + 1
-
-								print_hello()
-								eight_plus_one = add_one(8)
-								print(eight_plus_one)
-								```
-							</div>
-							<!-- figcaption element is optional, can be placed above or below code  -->
-							<figcaption class="path">Note you need to use a suitable syntax highlight for this
-								e.g. atomdark_syntax.css </figcaption>
 						</figure>
 					</div>
 			</section>
@@ -381,42 +371,126 @@
 				<div class="grid-wrapper">
 					<div class="header">
 						<div class="logo"></div>
+						<div class="section">Figures</div>
 						<div class="twitter"><a href="https://twitter.com/ixek">
 								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 					</div>
 					<div class="content">
-						<h1>Slide with image</h1>
-						<a href="https://github.com/trallard/talks" target="_blank">
-							This is a link</a>
+						<h4>Figure class=display</h4>
+						<p>You can add a caption, this figure is centered</p>
 						<figure class="display">
 							<img src="./assets/herdata/puzzle.PNG" alt="img" />
+							<figcaption>
+								<pre><code><figure class="display"><img><img></figure></code></pre>
+							</figcaption>
 						</figure>
-						<p>The figure uses the class <code>display</code> </p>
 					</div>
 				</div>
 			</section>
 
 			<!-- Slide with image -->
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="section">Images</div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h4>Images</h4>
+						Larger image
+						<div class="images">
+							<img src="./assets/herdata/puzzle.PNG" alt="reproduce" style='border: 0px; height:400px; box-shadow: none;'>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+
+			<!-- Slide with code only -->
 			<section class=" color--code">
 				<div class="grid-wrapper">
 					<div class="header">
 						<div class="logo"></div>
+						<div class="section">Code only slides
+						</div>
 						<div class="twitter"><a href="https://twitter.com/ixek">
 								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
 					</div>
 					<div class="content">
 						<h1>All code</h1>
 						For slides needing a whole load of code
-						<pre><code>for i in element</code></pre>
+						<pre><code> for i in element</code></pre>
+						Use the following section:
+						<pre><code> section class="color--code" </code></pre>
 					</div>
 				</div>
 			</section>
+
+
+			<!-- See the many font sizes -->
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="section">The font sizes available</div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<big-font>big-font</big-font>
+						<h1>heading 1</h1>
+						<h2>heading 2</h2>
+						<h3>heading 3</h3>
+						<h4>heading 4</h4>
+						<p>regular font</p>
+						<small>small font</small>
+					</div>
+				</div>
+			</section>
+
+			<!-- larger font sizes -->
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="section">The font sizes available</div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<big-font>big-font</big-font><br>
+						<huge-font>huge-font</huge-font>
+						<mega-font>mega-font</big-font><br>
+
+					</div>
+				</div>
+			</section>
+
+			<!-- glow!!! -->
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="section">The font sizes available</div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<big-font class='glow'>This glows</big-font>
+						Add a `class='glow'` to the headings or focus large fonts
+					</div>
+				</div>
+			</section>
+
 
 			<!-- Slide with dark background and semi transparent box -->
 			<section class="dark_box">
 				<aside>
 					<h2>Title ⚡️</h2>
-					Content goes here: make it catchy
+					What is this about?
 					<code style='color: black;'>class="dark_box"</code>
 				</aside>
 			</section>
@@ -441,20 +515,46 @@
 			</section>
 
 			<!-- Gradient: purple, green, blue -->
-			<section class="color--grad-green">
+			<section class="color--grad-blue">
 				<div class="grid-wrapper">
-					<div class="logo"></div>
+					<div class="header">
+						<div class="logo"></div>
+						<div class="section">Gradient slides</div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
 					<div class="content">
-						<h1>Hola</h1>
-						Content here
+						<h1>There are gradients</h1>
+						Use <code style='color: black;'>grad-blue, grad-purple, grad-green</code>
 					</div>
 				</div>
 			</section>
 
+			<!-- Add modal -->
+			<section>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h1> Using floating modals </h1>
+						<div class="float_modal" style='position: relative; top:20%'>
+							<p class='modal_p'>"It is like agreeing that we will all drive on the left or
+								the right. A hallmark of civilization is following conventions
+								that constrain your behaviour a little, in the name of public safety"</p>
+							<p class='caption_p'>- Jenny Brian on <a href="https://www.tidyverse.org/articles/2017/12/workflow-vs-script/">
+									Project oriented workflows</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-			<section id="end" class="color--dark">
+			<section id="end" class="end color--dark">
 				<div class="grid-wrapper">
 					<div class="content">
+						<h2>This is the end slide</h2>
 						<a href="https://twitter.com/ixek"><i class="fab fa-twitter-square"></i>
 							<span>ixek</span></a>
 					</div>

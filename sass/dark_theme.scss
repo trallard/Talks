@@ -1,0 +1,98 @@
+/*
+* Tania's theme for Reveal.js, this is a highly customised very opinionated
+* theme originated from the many many hours I have spent customising 
+* my themes. 
+* This allows you to use the light colour themes
+ */
+
+/*********************************************
+ * VARIOUS IMPORTS
+ *********************************************/
+
+/* partials */
+
+// colour variables
+@import "partials/variables";
+// dark coloured slides themes
+@import "partials/dark-themes";
+// multiple mixins
+@import "partials/mixins";
+// extra slides content
+@import "partials/individual-slides";
+// reveal slides items
+@import "partials/section-components";
+// patterns
+@import "partials/patterns";
+// fonts
+@import "partials/fonts";
+/***********************
+* VARIABLES FOR LIGHT-THEME
+************************/
+
+$text-color: #c5c2c2;
+$default-background: #2A2A49;
+/*****************************
+* USE DEFAULT COLOR FOR SLIDES
+******************************/
+
+// If no colour is given this uses the default colour
+.reveal .slides section.subsection:not([class*='color--']) {
+    // background-color: $default-background;
+    @include themify($themes) {
+        background-color: themed('dark-col')
+    }
+    color: $text-color;
+}
+
+.reveal .slides section:not([class*='color--']) {
+    // background-color: $default-background;
+    @include themify($themes) {
+        background-color: themed('dark-col')
+    }
+    color: $text-color;
+}
+
+.reveal {
+    color: white !important;
+}
+
+/*********************************************
+ * About presenter
+ *********************************************/
+
+/*
+Slide containing information about the presenter
+has a background image and a box with the details */
+
+#about {
+    a {
+        color: $text-color;
+    }
+    aside {
+        background-color: hsla(210, 6%, 7%, 0.85) !important;
+        color: $text-color !important;
+    }
+    .accounts {
+        a {
+            color: $text-color !important;
+        }
+    }
+}
+
+// Add url to the intro slide header 
+.slides .title .presentation-url {
+    opacity: 0.8;
+    color: $text-color;
+}
+
+.header .twitter {
+    opacity: 0.8;
+    font-size: 0.8rem;
+    text-decoration: none;
+    a {
+        color: #d5d5d5 !important;
+    }
+    .fa-twitter {
+        color: #d5d5d5 !important;
+    }
+}

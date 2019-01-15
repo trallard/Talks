@@ -1,0 +1,63 @@
+/**
+ * Presentation-specific styles.
+ * These are items I generally use for my own presentations
+ * and decided to put them in a separate css
+ * These are not Reveal.js modifiers
+ */
+
+/* Remove padding from title in the heading section */
+
+.reveal .slides section.title {
+    padding: 0;
+    .content {
+        grid-template-columns: auto;
+        grid-template-areas: "title" "description";
+    }
+}
+
+/* Columns for the content */
+
+.newspaper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.left {
+    order: 1;
+    flex-basis: 100%;
+    height: auto;
+    min-height: 100px;
+}
+
+.middle {
+    order: 3;
+    flex-basis: 100%;
+    height: auto;
+}
+
+.right {
+    order: 2;
+    flex-basis: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 600px) {
+    .newspaper {
+        flex-wrap: nowrap;
+    }
+    .left {
+        flex-basis: 1;
+        order: 1;
+    }
+    .middle {
+        flex-basis: 1;
+        order: 2;
+    }
+    .right {
+        flex-basis: 1;
+        order: 3;
+    }
+}

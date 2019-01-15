@@ -1,0 +1,612 @@
+/*********************************************
+ * GLOBAL STYLES- go over the reveal.js 
+ *********************************************/
+
+.reveal {
+    font-size: inherit;
+    font-weight: normal;
+    color: $text-color;
+    @include themify($themes) {
+        font-family: themed('base-font')
+    }
+}
+
+// selection will be coloured with the theme colour
+::selection {
+    color: #151515;
+    text-shadow: none;
+    @include themify($themes) {
+        background: themed('secondary-light')
+    }
+}
+
+::-moz-selection {
+    color: $white;
+    text-shadow: none;
+    @include themify($themes) {
+        background: themed('third')
+    }
+}
+
+// Note that by default in Reveal.js the text is aligned to the center
+// I prefer this to be on the left hand
+.reveal .slides {
+    text-align: left;
+}
+
+.reveal .slides section {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/*********************************************
+* HEADERS
+*********************************************/
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6,
+.reveal mega-font,
+.reveal huge-font,
+.reveal big-font {
+    margin-bottom: 2.5vmin;
+    color: inherit;
+    line-height: 1.2;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6,
+.reveal mega-font,
+.reveal huge-font,
+.reveal big-font {
+    margin: 0 0 20px 0;
+    @include themify($themes) {
+        color: themed('primary');
+        font-family: themed('title-font');
+    }
+    font-weight: 400; //600 too bold for IBM plex
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-transform: none;
+    text-shadow: none;
+    word-wrap: break-word;
+}
+
+/*********************************************
+* IMAGES
+*********************************************/
+
+// remove the shadow that comes by default
+.reveal section img {
+    background: none;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+}
+
+// display images
+figure.display {
+    margin: auto;
+    text-align: center;
+    max-width: 100vmin;
+    width: 100% vw;
+    height: auto;
+    display: block;
+    padding: 10px;
+    figcaption {
+        padding: 5px;
+        font-size: 0.85rem;
+        color: #121212;
+        float: left;
+        border: solid #EEEDEF;
+        border-width: 2px 0 0 0;
+        width: 100%;
+    }
+}
+
+// larger images
+div {
+    &.images {
+        text-align: center;
+        margin: auto;
+        padding: 10px;
+        img {
+            padding: 10px;
+            display: block;
+            border: 0px solid #303030;
+            max-width: 100%;
+            max-height: 100vmin;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+.img-fill img {
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-contain img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    overflow: hidden
+}
+
+.img-cover img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden
+}
+
+.img-none img {
+    object-fit: none;
+    height: 100%;
+    width: 100%;
+}
+
+/*********************************************
+ * LINKS
+ *********************************************/
+
+.reveal a {
+    @include themify($themes) {
+        text-decoration-color: themed('third');
+        -webkit-text-decoration-color: themed('third');
+        color: themed('third')
+    }
+    -webkit-transition: color .15s ease;
+    -moz-transition: color .15s ease;
+    transition: color .15s ease;
+    &:hover {
+        text-shadow: none;
+        border: none; // text-decoration: underline;
+        @include themify($themes) {
+            color: themed('third');
+            border-bottom: 2px solid themed('third');
+            /* I prefer a thicker line than the underline */
+        }
+    }
+}
+
+.reveal .roll span:after {
+    color: $white;
+    @include themify($themes) {
+        background: themed('third')
+    }
+}
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+
+.reveal .controls {
+    @include themify($themes) {
+        color: themed('third')
+    }
+} // move the controls further into the slides body
+.reveal .controls {
+    right: 4vmin;
+    bottom: 4vmin;
+} // controls further out 
+@media (max-width: 768px) {
+    .reveal .controls {
+        right: 2vmin;
+        bottom: 2vmin;
+    }
+}
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+
+.reveal .progress {
+    background: rgba(48, 40, 63, 0.2);
+    @include themify($themes) {
+        color: themed('third')
+    }
+}
+
+.reveal .progress span {
+    @include themify($themes) {
+        background: themed('secondary')
+    }
+}
+
+/*********************************************
+* LISTS
+*********************************************/
+
+/* Custom icon list */
+
+.reveal ul.icon {
+    list-style-type: none;
+    li {
+        text-indent: -1.4em;
+        margin-bottom: 0.5em;
+        &::before {
+            @include themify($themes) {
+                color: themed('secondary')
+            }
+            font-family: 'flaticon';
+            content: "\f102";
+            /* maguey */
+            float: left;
+            width: 1.2em;
+            font-size: 1em;
+        }
+        &.pinata::before {
+            content: "\f100";
+            @include themify($themes) {
+                color: themed('secondary')
+            }
+        }
+        &.nopal::before {
+            content: "\f101";
+            @include themify($themes) {
+                color: themed('secondary')
+            }
+        }
+        &.cactus::before {
+            content: "\f103";
+            @include themify($themes) {
+                color: themed('secondary')
+            }
+        }
+        &.skull::before {
+            content: "\f104";
+            @include themify($themes) {
+                color: themed('secondary')
+            }
+        }
+    }
+}
+
+/* table with no divisions and with bold purple first column */
+
+.reveal table th {
+    font-weight: bold; // color: #5F4B8B;
+    @include themify($themes) {
+        color: themed('secondary')
+    }
+}
+
+.commands table {
+    margin: 0;
+    th {
+        text-align: right;
+        border-bottom: none;
+    }
+    td {
+        border-bottom: none;
+        +td {
+            opacity: 0.5;
+        }
+    }
+    +figure {
+        margin-top: 2em;
+    }
+}
+
+/*********************************************
+* OTHER
+*********************************************/
+
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+    display: block;
+}
+
+/* text */
+
+.reveal {
+    strong,
+    b {
+        font-weight: 400;
+        color: $salmon;
+    }
+    strong-alt {
+        font-weight: 400;
+        @include themify($themes) {
+            color: themed('primary-light')
+        }
+    }
+    small {
+        font-size: 0.8em;
+    }
+    em {
+        font-style: italic;
+    }
+    mega-font {
+        font-size: 6.5em;
+        @include themify($themes) {
+            color: themed('primary');
+            font-family: themed('title-font');
+            line-height: 1.2;
+            word-wrap: break-word;
+        }
+    }
+    huge-font {
+        font-size: 5em;
+        @include themify($themes) {
+            color: themed('primary');
+            font-family: themed('title-font');
+            line-height: 1.2;
+            word-wrap: break-word;
+        }
+    }
+    big-font {
+        font-size: 4em;
+        @include themify($themes) {
+            color: themed('primary');
+            font-family: themed('title-font');
+            line-height: 1.2;
+            word-wrap: break-word;
+            letter-spacing: normal;
+        }
+    }
+}
+
+.reveal glow {
+    text-shadow: 0px 0px 5px #fff;
+    color: #fff;
+    padding: 0 2rem;
+}
+
+// Adding extra glow class to headings (nb this is a big glow) */ 
+.reveal h1.glow,
+.reveal h2.glow,
+.reveal h3.glow,
+.reveal h4.glow,
+.reveal h5.glow,
+.reveal big-font.glow,
+.reveal mega-font.glow,
+.reveal huge-font.glow,
+    {
+    @include themify($themes) {
+        text-shadow: 0px 0px 5px themed('primary'), 0 0 20px #fff;
+    }
+    padding: 0 2rem;
+    font-family: "Ropa Sans",
+    sans-serif;
+}
+
+/* Additional divs */
+
+div {
+    &.warn {
+        // warning div
+        background-color: #fb5c6f;
+        border-color: #fb5c6f;
+        border-left: 5px solid #C81D25;
+        padding: 15px 15px;
+        color: #fff;
+        margin: 1em;
+        margin-top: 0;
+        opacity: 0.8;
+    }
+    &.info {
+        // info div
+        background-color: #208a96;
+        border-color: #208a96;
+        border-left: 5px solid #0B3954;
+        padding: 15px 15px;
+        color: #fff;
+        opacity: 0.8;
+        margin: 1em;
+        margin-top: 0;
+        a {
+            color: #e8f3f4 !important;
+            text-decoration: underline;
+            text-decoration-color: #e8f3f4 !important;
+        }
+    }
+}
+
+/* Floating modal */
+
+/* I like using this for in slide quote  */
+
+/* when I am not using the whole slide for quote */
+
+.float_modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 900px;
+    min-width: 100px;
+    max-height: 600px;
+    min-height: 100px;
+    z-index: 2000;
+    transform: translateX(-50%) translateY(-50%);
+    background: hsla(212, 11%, 20%, 0.98);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Text into the modal */
+
+.modal_p {
+    padding: 10px !important;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+/* Adding caption to the modal */
+
+.caption_p {
+    font-weight: light;
+    font-style: italic;
+    font-size: 0.5em;
+    color: #B2BAE5;
+    /*lavender violet*/
+    /* font-family: $base-font; */
+    padding: 10px !important;
+    a {
+        /* color:  #B2BAE5!important; /*lavender violet*/
+        font-style: italic !important;
+    }
+}
+
+/*****************
+ * Code Segments
+ ****************/
+
+/* pre and code */
+
+.reveal pre {
+    box-shadow: none;
+    line-height: 1.2rem;
+    width: 100%;
+    font-size: 0.8em;
+}
+
+.reveal pre code {
+    -moz-tab-size: 2;
+    tab-size: 2;
+    font-family: $code-font;
+}
+
+.reveal code {
+    background-color: $light-gray;
+    padding: 3px 7px;
+    border-radius: 3px;
+    font-size: 1.2em;
+} // This gives a code within a figure element... will change in the future as this
+// is a hack copied from somewhere else and I am not happy with the way it works
+// but it allows to add captions
+figure.code {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    & pre {
+        box-shadow: none;
+        line-height: 1.3rem;
+        margin: 0;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+    & figcaption {
+        box-sizing: border-box;
+        padding: 1ex;
+        width: 100%;
+        font-size: 0.875em;
+        border-bottom-width: 0;
+        background-color: #333; //dark graphite grey
+        text-align: left;
+        border-radius: 3px;
+        color: #EEEDEF !important;
+    }
+    & pre+figcaption {
+        border-top-width: 0;
+        border-bottom-width: 1px;
+    }
+}
+
+/*********************************************
+* APPLY THEMES
+*********************************************/
+
+// Use the desired patter on the background
+.reveal[class*="pattern--"] {
+    background-position: center center;
+    background-size: 133vmax auto;
+}
+
+/*********************************************
+* CSS GRID USE
+*********************************************/
+
+.grid-wrapper {
+    display: grid;
+}
+
+/************************************************
+* MODIFIED SECTIONS
+* ADDS LOGO AND SPECIFICS FOR THE THEME
+* Slides have two main areas: header and contetnt
+**************************************************/
+
+// Each slide is a section in reveal.js
+.reveal .slides section {
+    height: 100vh;
+    margin: 0;
+    width: 100vw;
+    color: $text-color;
+} // ensures we can see the background
+.reveal .slides section.stack {
+    background-color: transparent !important;
+} // Grid for the slides
+// Nnote that this leaves a gap on the sides to prevent content from over flowing
+// to remove delete the .
+.reveal .slides section .grid-wrapper {
+    box-sizing: border-box;
+    grid-column-gap: 5vmin; // grid-row-gap: 5vmin;
+    grid-row-gap: 2vmin;
+    grid-template-rows: 5.5vmin 1fr;
+    grid-template-columns: 1fr 90% 1fr;
+    grid-template-areas: ". header ." ". content .";
+    height: 100%;
+    padding: 10vmin;
+} // Slides header
+.reveal .slides section .header {
+    align-items: center;
+    display: flex;
+    grid-area: header;
+    padding: 5px;
+}
+
+/* Twitter icon and handle on the header */
+
+.header .twitter {
+    margin-left: auto;
+    opacity: 0.7;
+    font-size: 0.8rem;
+    text-decoration: none;
+    a {
+        color: #5f6c7a;
+        /*slate grey*/
+        text-decoration: none;
+    }
+    .fa-twitter {
+        color: #5f6c7a;
+        /*slate grey*/
+    }
+} // Logo in header
+.reveal .slides section .logo {
+    background-image: url($logo-path);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    display: inline-block;
+    grid-area: header;
+    height: 5.5vmin;
+    margin-right: 1.5vmin;
+    width: 5.5vmin;
+} // Section title in header
+.reveal .slides section .section {
+    @include themify($themes) {
+        font-family: themed('title-font');
+    }
+    text-transform: uppercase;
+    line-height: 5.5vmin;
+    font-size: 0.8em;
+    font-weight: 500;
+} // Main content in slides
+.reveal .slides section .content {
+    align-self: center;
+    grid-area: content;
+}

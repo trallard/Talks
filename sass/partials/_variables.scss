@@ -1,0 +1,62 @@
+/*********************************************
+* PERSONAL VARIABLES
+* feel free to change accordingly
+*********************************************/
+
+/* colours */
+
+$light-gray: #e2e6e9;
+$white: #fff;
+// $text-color: #737373; //dark gray 
+$text-color: #2A2A49;
+$salmon: #F8757F;
+$ultraviolet: #5F4B8B;
+$seagreen: #41ead4;
+$soda-grey: #aaabab;
+$medium-purple: #A881FF;
+/* fonts*/
+
+$code-font: 'Overpass Mono',
+monospace;
+/* urls and paths */
+
+$twitter: "https://twitter.com/ixek";
+$github: "https://github.com/trallard";
+$logo-path:"../assets/personal/Purple.png";
+$assets-path:"../assets";
+$patterns-path:"../assets/patterns/";
+/* logos*/
+
+// larger version of the logo TODO
+.reveal .slides section.title .logo--full {
+    background-image: url($logo-path);
+    width: 24vmin;
+}
+
+// logo on the top left corner
+.reveal .slides section.title .logo {
+    background-image: url($logo-path);
+    height: 6.5vmin;
+    width: 6.5vmin;
+}
+
+// hellosoda logo
+.reveal .slides section.title .logo--soda {
+    background-image: url(#{$assets-path}/logos/Hex_logo.png);
+    width: 24vmin;
+}
+
+// full hellosoda logo
+.reveal .slides section.title .logo--sodafull {
+    background-image: url(#{$assets-path}/logos/HS.png);
+    width: 24vmin;
+}
+
+// pyladies logo
+.reveal .slides section.title .logo--pyladies {
+    background-image: url(#{$assets-path}/logos/pyladies-nwuk-nocompass-darkpink.svg);
+    width: 24vmin;
+}
+
+//image for the about section
+$about-img:"../assets/code2.jpg";
