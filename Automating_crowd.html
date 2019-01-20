@@ -1,0 +1,191 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>My awesome presentation</title>
+
+    <!-- Reveal themes -->
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/white.css">
+
+    <!-- Full theme:light version -->
+    <link rel="stylesheet" href="css/dark_theme.css">
+    <link rel="stylesheet" href="sass/presentation.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="css/google_syntax.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/personal/Purple.png" />
+
+    <!-- Font awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" media="all">
+
+    <script src="reveal.js/js/reveal-print.js"></script>
+
+</head>
+
+
+<!-- to do ensure the url is visible -->
+
+<!-- Need to specify the theme here: the first defines the color palette and the 
+	second the font theme -->
+
+<body class="theme-python theme-klasik-rough-font">
+
+    <!-- Adding the background and icon theme here -->
+
+    <div class="reveal pattern--fox">
+        <div class="slides">
+
+            <!-- Intro slide, this is only the logo in a squared slide -->
+            <section class="intro" id="intro">
+                <div class="logo-wrapper">
+                    <div class="logo">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Introduction slide -->
+            <section>
+                <section class="title" id="title">
+                    <div class="grid-wrapper">
+                        <div class="header">
+                            <!-- Remove logo--full class to only show brand mark -->
+                            <div class="logo logo--full">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h1>Open source: the good the bad and the ugly</h1>
+                            <div class="description">
+                                Automating the crowd. The Alan Turing Institute
+                            </div>
+                        </div>
+                        <div class="credit">
+                            <hr>
+                            <div class="label">Created By</div>
+                            <div class="name">Tania Allard, PhD</div>
+                        </div>
+                        <a class="presentation-url" href="https://trallard.github.io/Talks/Automating_crowd">
+                            https://trallard.github.io/Talks/Automating_crowd</a>
+                    </div>
+                </section>
+
+                <!--About section: add name, job and handles -->
+                <section class="about" id="about">
+                    <div class="grid-wrapper">
+                        <div class="content">
+                            <aside>
+                                <h2>Tania Allard</h2>
+                                <hr>
+                                <ul class="projects">
+                                    <li>Research Software Engineer</li>
+                                    <li>Data expert</li>
+                                    <li>Open source nerd/advocate</li>
+                                    <!-- <li>Cloud developer advocate</li> -->
+                                </ul>
+                                <hr>
+                                <ul class="accounts">
+                                    <li><a href="https://github.com/trallard">
+                                            <i class="fab fa-github social_icon"></i> <span> trallard</span></a></li>
+                                    <li><a href="https://twitter.com/ixek">
+                                            <i class="fab fa-twitter social_icon"></i><span> ixek</span></a></li>
+                                </ul>
+                            </aside>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+
+            <!-- Used to introduce a subsection: you can specify
+					a slide colour here, title and description -->
+            <section class="subsection ">
+                <div class=" grid-wrapper">
+                    <div class="header">
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="logo"></div>
+                    <h1>
+                        <h1>class = 'subsection'</h1>
+                    </h1>
+                    <div class="description">
+                        This is where the description goes. Keep it short and 🍬.
+                        You can use this with a coloured slide too
+                        <ul class-'icon'>
+                            <li>hola</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+            <section data-markdown="./md_sources/mock.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"
+                data-separator-notes="^Note:" data-charset="iso-8859-15">
+            </section>
+
+            <section id="end" class="end color--dark">
+                <div class="grid-wrapper">
+                    <div class="content">
+                        <h2>This is the end slide</h2>
+                        <a href="https://twitter.com/ixek"><i class="fab fa-twitter-square"></i>
+                            <span>ixek</span></a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="reveal.js/lib/js/head.min.js"></script>
+    <script src="reveal.js/js/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            // Show the control arrows
+            controls: true,
+            // Location of the arrows
+            controlsLayout: 'bottom-right',
+            // Visibility rule for backwards navigation arrows; "faded", "hidden"
+            // or "visible"
+            controlsBackArrows: 'hidden',
+            progress: true,
+            slideNumber: true,
+            center: false,
+            width: "100%",
+            height: "100%",
+            margin: 0,
+            minScale: 1,
+            maxScale: 1,
+            history: true,
+            touch: true,
+
+            // Arrow keys progress through sub-slides
+            // keyboard: {
+            // 	39: 'next', // right key
+            // 	37: 'prev'  // left key
+            // },
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [
+                { src: 'reveal.js/plugin/markdown/marked.js' },
+                { src: 'reveal.js/plugin/markdown/markdown.js' },
+                { src: 'reveal.js/plugin/notes/notes.js', async: true },
+                { src: 'plugin/embed-tweet/embed-tweet.js' },
+                {
+                    src: 'reveal.js/plugin/highlight/highlight.js',
+                    async: true,
+                    callback: function () { hljs.initHighlightingOnLoad(); }
+                }
+            ]
+        });
+    </script>
+
+
+</body>
+
+</html>
