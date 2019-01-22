@@ -610,3 +610,46 @@ figure.code {
     align-self: center;
     grid-area: content;
 }
+
+//double
+.reveal .slides section .double-grid {
+    position: relative;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-area: content;
+}
+
+.reveal .slides section .double-grid .column {
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    text-align: center;
+    margin: 0%;
+}
+
+.reveal .slides section .double-grid .column img {
+    position: relative;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.reveal .slides section .double-grid .column .textcontent {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}

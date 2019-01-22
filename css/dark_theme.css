@@ -2454,6 +2454,24 @@ figure.code pre + figcaption {
   grid-area: content;
 }
 
+.reveal .slides section .column {
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.reveal .slides section .column img {
+  position: relative;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  opacity: 0.8;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/927610/man_guy_jumping_levitate_railing-1407739.jpg) no-repeat center top;
+}
+
 /*********************************************
 * PATTERS USED FOR THE SLIDES BACKGROUNDS
 *********************************************/
