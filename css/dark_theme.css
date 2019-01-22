@@ -2454,22 +2454,45 @@ figure.code pre + figcaption {
   grid-area: content;
 }
 
-.reveal .slides section .column {
-  position: relative;
-  overflow: hidden;
-  width: 50%;
-  text-align: left;
-  cursor: pointer;
+.doublegrid {
+  display: grid;
 }
 
-.reveal .slides section .column img {
+.reveal .slides section .doublegrid {
+  box-sizing: border-box;
+  grid-column-gap: 1vmin;
+  grid-row-gap: 2vmin;
+  grid-template-rows: 5.5vmin 1fr;
+  grid-template-columns: 1fr 50%;
+  grid-template-areas: "header header" "east west ";
+  height: 100%;
+  padding: 10vmin;
+  background: linear-gradient(to right, #5F4B8B 50%, #fff 50%);
+}
+
+.reveal .slides section .east {
+  align-self: center;
+  text-align: center;
+  grid-area: east;
+  height: 100%;
+  position: relative;
+}
+
+.reveal .slides section .west {
+  align-self: center;
+  text-align: center;
+  grid-area: west;
+  height: 100%;
+}
+
+.west,
+.east img {
   position: relative;
   display: block;
   height: 100%;
   object-fit: cover;
   width: 100%;
   opacity: 0.8;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/927610/man_guy_jumping_levitate_railing-1407739.jpg) no-repeat center top;
 }
 
 /*********************************************
