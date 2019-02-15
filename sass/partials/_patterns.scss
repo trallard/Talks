@@ -204,3 +204,22 @@
         color: themed('secondary')
     }
 }
+
+
+// fox
+.reveal.pattern--quetzal {
+    background-image: url("../assets/patters/corazon.jpg");
+}
+
+.reveal.pattern--quetzal .slides section.intro {
+    @include themify($themes) {
+        background-color: themed('primary')
+    }
+}
+
+.reveal.pattern--quetzal .slides section.title {
+    @include themify($themes) {
+        background-color: themed('primary');
+        color: themed('secondary')
+    }
+}
