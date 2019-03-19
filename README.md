@@ -12,6 +12,8 @@
 | Women in Sage, Montreal                                  | 10 Jul 2018     | [https://bitsandchips.me/Talks/WomenInSage.html  ](https://bitsandchips.me/Talks/WomenInSage.html)         |
 | RAPIDS: A crazy little thing called reproducible science | 18 July 2018    | [https://bitsandchips.me/Talks/RAPIDS.html  ](https://bitsandchips.me/Talks/RAPIDS.html)                   |
 | PyCon UK                                                 | 16 Sep 2018     | [https://bitsandchips.me/Talks/PyConUK2018.html  ](https://bitsandchips.me/Talks/PyConUK2018.html)         |
+| Automating the crowd                                               | 16 Feb 2019     | [https://bitsandchips.me/Talks/Automating_crowd.html  ](https://bitsandchips.me/Talks/Automating_crowd.html)         |
+| PyCon Belarus                                                | 16 Feb 2019     | [https://bitsandchips.me/Talks/PyConBy.html  ](https://bitsandchips.me/Talks/PyConBy.html)         |
 
 ## :unicorn: About the theme
 
