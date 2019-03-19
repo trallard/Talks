@@ -206,20 +206,28 @@
 }
 
 
-// fox
+// quetzal
 .reveal.pattern--quetzal {
-    background-image: url("../assets/patters/corazon.jpg");
+    background-image: url("../assets/patterns/corazon.jpg");
 }
 
 .reveal.pattern--quetzal .slides section.intro {
     @include themify($themes) {
-        background-color: themed('primary')
+        background-color: themed('dark-col')
     }
 }
 
 .reveal.pattern--quetzal .slides section.title {
     @include themify($themes) {
         background-color: themed('primary');
-        color: themed('secondary')
+        color: themed('third')
+    }
+}
+
+// Add url to the intro slide header 
+
+.reveal.pattern--quetzal .slides section.title .presentation-url {
+   @include themify($themes) {
+        color: themed('dark-col')
     }
 }

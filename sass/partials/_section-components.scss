@@ -234,7 +234,7 @@ div {
 .reveal ul.icon {
     list-style-type: none;
     li {
-        text-indent: -1.4em;
+        text-indent: -1.3em;
         margin-bottom: 0.5em;
         &::before {
             @include themify($themes) {
@@ -246,6 +246,7 @@ div {
             float: left;
             width: 1.2em;
             font-size: 1em;
+            padding-right: 0.5em;
         }
         &.pinata::before {
             content: "\f100";

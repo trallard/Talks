@@ -970,7 +970,7 @@ div.images {
 .reveal ul.icon {
   list-style-type: none; }
   .reveal ul.icon li {
-    text-indent: -1.4em;
+    text-indent: -1.3em;
     margin-bottom: 0.5em; }
     .reveal ul.icon li::before {
       font-family: 'flaticon';
@@ -978,7 +978,8 @@ div.images {
       /* maguey */
       float: left;
       width: 1.2em;
-      font-size: 1em; }
+      font-size: 1em;
+      padding-right: 0.5em; }
       .theme-sedona .reveal ul.icon li::before {
         color: #747CA8; }
       .theme-cyber .reveal ul.icon li::before {
@@ -2341,59 +2342,80 @@ figure.code {
   color: #FDD45E; }
 
 .reveal.pattern--quetzal {
-  background-image: url("../assets/patterns/quetzalcoat.png"); }
+  background-image: url("../assets/patterns/corazon.jpg"); }
 
 .theme-sedona .reveal.pattern--quetzal .slides section.intro {
-  background-color: #BD80E0; }
+  background-color: #2A2A49; }
 .theme-cyber .reveal.pattern--quetzal .slides section.intro {
-  background-color: #0abdc6; }
+  background-color: #091833; }
 .theme-bright-blue .reveal.pattern--quetzal .slides section.intro {
-  background-color: #f64c72; }
+  background-color: #2f2fa2; }
 .theme-black .reveal.pattern--quetzal .slides section.intro {
-  background-color: #BDE16B; }
+  background-color: #2A2A49; }
 .theme-candy .reveal.pattern--quetzal .slides section.intro {
-  background-color: #bd3563; }
+  background-color: #211a38; }
 .theme-skeletor .reveal.pattern--quetzal .slides section.intro {
-  background-color: #f0bb5a; }
+  background-color: #21122c; }
 .theme-honey .reveal.pattern--quetzal .slides section.intro {
-  background-color: #F2B632; }
+  background-color: #252839; }
 .theme-ultra .reveal.pattern--quetzal .slides section.intro {
-  background-color: #E55982; }
+  background-color: #5F4B8B; }
 .theme-borealis .reveal.pattern--quetzal .slides section.intro {
-  background-color: #00DFB4; }
+  background-color: #08142F; }
 .theme-python .reveal.pattern--quetzal .slides section.intro {
-  background-color: #569CCB; }
+  background-color: #282d32; }
 
 .theme-sedona .reveal.pattern--quetzal .slides section.title {
   background-color: #BD80E0;
-  color: #747CA8; }
+  color: #d1d7e0; }
 .theme-cyber .reveal.pattern--quetzal .slides section.title {
   background-color: #0abdc6;
-  color: #ea00d9; }
+  color: #711c91; }
 .theme-bright-blue .reveal.pattern--quetzal .slides section.title {
   background-color: #f64c72;
-  color: #553d67; }
+  color: #99738e; }
 .theme-black .reveal.pattern--quetzal .slides section.title {
   background-color: #BDE16B;
-  color: #C687E8; }
+  color: #F2E38A; }
 .theme-candy .reveal.pattern--quetzal .slides section.title {
   background-color: #bd3563;
-  color: #d3b71f; }
+  color: #22c4ec; }
 .theme-skeletor .reveal.pattern--quetzal .slides section.title {
   background-color: #f0bb5a;
-  color: #987cb0; }
+  color: #22c4ec; }
 .theme-honey .reveal.pattern--quetzal .slides section.title {
   background-color: #F2B632;
-  color: #677077; }
+  color: #B5B5B7; }
 .theme-ultra .reveal.pattern--quetzal .slides section.title {
   background-color: #E55982;
-  color: #9B84C0; }
+  color: #FAC668; }
 .theme-borealis .reveal.pattern--quetzal .slides section.title {
   background-color: #00DFB4;
-  color: #ABB1D9; }
+  color: #7489C7; }
 .theme-python .reveal.pattern--quetzal .slides section.title {
   background-color: #569CCB;
-  color: #FDD45E; }
+  color: #EC9B5F; }
+
+.theme-sedona .reveal.pattern--quetzal .slides section.title .presentation-url {
+  color: #2A2A49; }
+.theme-cyber .reveal.pattern--quetzal .slides section.title .presentation-url {
+  color: #091833; }
+.theme-bright-blue .reveal.pattern--quetzal .slides section.title .presentation-url {
+  color: #2f2fa2; }
+.theme-black .reveal.pattern--quetzal .slides section.title .presentation-url {
+  color: #2A2A49; }
+.theme-candy .reveal.pattern--quetzal .slides section.title .presentation-url {
+  color: #211a38; }
+.theme-skeletor .reveal.pattern--quetzal .slides section.title .presentation-url {
+  color: #21122c; }
+.theme-honey .reveal.pattern--quetzal .slides section.title .presentation-url {
+  color: #252839; }
+.theme-ultra .reveal.pattern--quetzal .slides section.title .presentation-url {
+  color: #5F4B8B; }
+.theme-borealis .reveal.pattern--quetzal .slides section.title .presentation-url {
+  color: #08142F; }
+.theme-python .reveal.pattern--quetzal .slides section.title .presentation-url {
+  color: #282d32; }
 
 /*********************************************
  * IMPORT FONTS
