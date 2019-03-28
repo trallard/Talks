@@ -365,7 +365,7 @@ All code slide
   .theme-klasik-rough-font .items-block {
     font-family: Nunito, sans-serif; }
   .theme-nox-font .items-block {
-    font-family: Open-Sans, sans-serif; }
+    font-family: Poppins, Helvetica, sans-serif; }
   .items-block.single-block {
     width: 100%;
     display: flex;
@@ -547,7 +547,7 @@ has a background image and a box with the details */
   .theme-klasik-rough-font .reveal {
     font-family: Nunito, sans-serif; }
   .theme-nox-font .reveal {
-    font-family: Open-Sans, sans-serif; }
+    font-family: Poppins, Helvetica, sans-serif; }
 
 ::selection {
   color: #151515;
@@ -579,7 +579,7 @@ has a background image and a box with the details */
   .theme-sedona ::-moz-selection {
     background: #d1d7e0; }
   .theme-cyber ::-moz-selection {
-    background: #711c91; }
+    background: #a240c5; }
   .theme-bright-blue ::-moz-selection {
     background: #99738e; }
   .theme-black ::-moz-selection {
@@ -752,9 +752,9 @@ div.images {
     -webkit-text-decoration-color: #d1d7e0;
     color: #d1d7e0; }
   .theme-cyber .reveal a {
-    text-decoration-color: #711c91;
-    -webkit-text-decoration-color: #711c91;
-    color: #711c91; }
+    text-decoration-color: #a240c5;
+    -webkit-text-decoration-color: #a240c5;
+    color: #a240c5; }
   .theme-bright-blue .reveal a {
     text-decoration-color: #99738e;
     -webkit-text-decoration-color: #99738e;
@@ -795,8 +795,8 @@ div.images {
       border-bottom: 2px solid #d1d7e0;
       /* I prefer a thicker line than the underline */ }
     .theme-cyber .reveal a:hover {
-      color: #711c91;
-      border-bottom: 2px solid #711c91;
+      color: #a240c5;
+      border-bottom: 2px solid #a240c5;
       /* I prefer a thicker line than the underline */ }
     .theme-bright-blue .reveal a:hover {
       color: #99738e;
@@ -866,7 +866,7 @@ div.images {
   .theme-sedona .reveal .roll span:after {
     background: #d1d7e0; }
   .theme-cyber .reveal .roll span:after {
-    background: #711c91; }
+    background: #a240c5; }
   .theme-bright-blue .reveal .roll span:after {
     background: #99738e; }
   .theme-black .reveal .roll span:after {
@@ -890,7 +890,7 @@ div.images {
 .theme-sedona .reveal .controls {
   color: #d1d7e0; }
 .theme-cyber .reveal .controls {
-  color: #711c91; }
+  color: #a240c5; }
 .theme-bright-blue .reveal .controls {
   color: #99738e; }
 .theme-black .reveal .controls {
@@ -924,7 +924,7 @@ div.images {
   .theme-sedona .reveal .progress {
     color: #d1d7e0; }
   .theme-cyber .reveal .progress {
-    color: #711c91; }
+    color: #a240c5; }
   .theme-bright-blue .reveal .progress {
     color: #99738e; }
   .theme-black .reveal .progress {
@@ -1830,7 +1830,7 @@ figure.code {
 .theme-sedona .reveal.pattern--lines .progress {
   background-color: #d1d7e0; }
 .theme-cyber .reveal.pattern--lines .progress {
-  background-color: #711c91; }
+  background-color: #a240c5; }
 .theme-bright-blue .reveal.pattern--lines .progress {
   background-color: #99738e; }
 .theme-black .reveal.pattern--lines .progress {
@@ -1906,7 +1906,7 @@ figure.code {
 .theme-sedona .reveal.pattern--hex .progress {
   background-color: #d1d7e0; }
 .theme-cyber .reveal.pattern--hex .progress {
-  background-color: #711c91; }
+  background-color: #a240c5; }
 .theme-bright-blue .reveal.pattern--hex .progress {
   background-color: #99738e; }
 .theme-black .reveal.pattern--hex .progress {
@@ -1982,7 +1982,7 @@ figure.code {
 .theme-sedona .reveal.pattern--star .progress {
   background-color: #d1d7e0; }
 .theme-cyber .reveal.pattern--star .progress {
-  background-color: #711c91; }
+  background-color: #a240c5; }
 .theme-bright-blue .reveal.pattern--star .progress {
   background-color: #99738e; }
 .theme-black .reveal.pattern--star .progress {
@@ -2370,7 +2370,7 @@ figure.code {
   color: #d1d7e0; }
 .theme-cyber .reveal.pattern--quetzal .slides section.title {
   background-color: #0abdc6;
-  color: #711c91; }
+  color: #a240c5; }
 .theme-bright-blue .reveal.pattern--quetzal .slides section.title {
   background-color: #f64c72;
   color: #99738e; }

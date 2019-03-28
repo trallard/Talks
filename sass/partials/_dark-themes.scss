@@ -16,7 +16,7 @@ $themes: (
 
 'cyber':( 'primary': #0abdc6, // turquoise
 'secondary': #ea00d9, //lavender violet */
-'third': #711c91, 'primary-light':lighten(#0abdc6, 10%), 'secondary-light' :lighten(#ea00d9, 10%), dark-col:#091833, ),
+'third': #a240c5, 'primary-light':lighten(#0abdc6, 10%), 'secondary-light' :lighten(#ea00d9, 10%), dark-col:#091833, ),
 /* bright-blue*/
 
 'bright-blue':( 'dark-col': #2f2fa2, // royal blue
@@ -103,4 +103,4 @@ $themes: (
 'klasik-rough-font': ( 'title-font': #{'Klasik-Rough', sans-serif}, 'base-font': #{'Nunito', sans-serif}, ),
 /* nox*/
 
-'nox-font': ( 'title-font': #{'Annie Use Your Telescope', cursive}, 'base-font': #{'Open-Sans', sans-serif}, ), );
+'nox-font': ( 'title-font': #{'Annie Use Your Telescope', cursive}, 'base-font': #{'Poppins', Helvetica, sans-serif}, ), );
