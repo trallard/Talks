@@ -12,7 +12,8 @@ $themes: (
 'sedona':( 'primary': #BD80E0, // light-violet
 'secondary': #747CA8, //lavender violet */
 'third': #d1d7e0, 'primary-light':lighten(#BD80E0, 10%), 'secondary-light' :lighten(#747CA8, 10%), dark-col:#2A2A49, ),
-/* sedona */
+
+// cyber
 
 'cyber':( 'primary': #0abdc6, // turquoise
 'secondary': #ea00d9, //lavender violet */
@@ -71,6 +72,15 @@ $themes: (
 'secondary': #FDD45E, // python yellow
 'third': #EC9B5F, // dark pastel blue
 'primary-light':lighten(#569CCB, 10%), 'secondary-light' :lighten(#FDD45E, 10%), 'dark-col': #282d32, // carbon
+),
+/* tank */
+
+// Inspired from https://dribbble.com/shots/4945195-Trundling-Tank-Sketches
+'tank':( 'primary': #9366DA, // lilac
+'secondary': #354E6C, // steel blue
+'third':  #A8ACBF , // grey
+'primary-light':lighten(#9366DA, 10%), 
+'secondary-light' :lighten(#354E6C, 10%), 'dark-col':  #080D15, // carbon
 ),
 /* The following are font themes */
 

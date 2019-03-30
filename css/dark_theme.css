@@ -59,19 +59,19 @@ html {
   -moz-osx-font-smoothing: grayscale; }
   @media (min-width: 48em) {
     html {
-      font-size: 1.3em; } }
+      font-size: 1.5em; } }
   @media (min-width: 64em) {
     html {
-      font-size: 1.5em; } }
+      font-size: 1.7em; } }
   @media (min-width: 85.375em) {
     html {
-      font-size: 1.7em; } }
+      font-size: 1.9em; } }
   @media (min-width: 120em) {
     html {
-      font-size: 1.9em; } }
+      font-size: 2em; } }
   @media (min-width: 160em) {
     html {
-      font-size: 2em; } }
+      font-size: 2.2em; } }
 
 /*********************************************
 * RESPONSIVE LISTS
@@ -122,6 +122,21 @@ html {
     height: calc(100vh - 4vmin);
     margin: 2vmin;
     width: calc(100vw - 4vmin); } }
+/*********************************************
+* HEADIINGS
+*********************************************/
+.reveal h1 {
+  font-size: 3.77em; }
+
+.reveal h2 {
+  font-size: 2.11em; }
+
+.reveal h3 {
+  font-size: 1.55em; }
+
+.reveal h4 {
+  font-size: 1em; }
+
 /*********************************************
 * ADDITIONAL SLIDES CLASSES
 * THESE CAN BE USED WITH ANY THEME
@@ -444,9 +459,8 @@ black box with white text (ideal for presentation sections) */
     padding: 5vmin;
     width: auto;
     border-radius: 10px;
-    top: 50%;
     display: block;
-    top: 50%;
+    top: 30%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -520,6 +534,8 @@ has a background image and a box with the details */
     color: #00DFB4; }
   .theme-python .social_icon {
     color: #569CCB; }
+  .theme-tank .social_icon {
+    color: #9366DA; }
 
 /*********************************************
  * GLOBAL STYLES- go over the reveal.js 
@@ -572,6 +588,8 @@ has a background image and a box with the details */
     background: #ced2e9; }
   .theme-python ::selection {
     background: #fee190; }
+  .theme-tank ::selection {
+    background: #46678e; }
 
 ::-moz-selection {
   color: #fff;
@@ -596,6 +614,8 @@ has a background image and a box with the details */
     background: #7489C7; }
   .theme-python ::-moz-selection {
     background: #EC9B5F; }
+  .theme-tank ::-moz-selection {
+    background: #A8ACBF; }
 
 .reveal .slides {
   text-align: left; }
@@ -656,6 +676,8 @@ has a background image and a box with the details */
     color: #00DFB4; }
   .theme-python .reveal h1, .theme-python .reveal h2, .theme-python .reveal h3, .theme-python .reveal h4, .theme-python .reveal h5, .theme-python .reveal h6, .theme-python .reveal mega-font, .theme-python .reveal huge-font, .theme-python .reveal big-font {
     color: #569CCB; }
+  .theme-tank .reveal h1, .theme-tank .reveal h2, .theme-tank .reveal h3, .theme-tank .reveal h4, .theme-tank .reveal h5, .theme-tank .reveal h6, .theme-tank .reveal mega-font, .theme-tank .reveal huge-font, .theme-tank .reveal big-font {
+    color: #9366DA; }
   .theme-poppins-font .reveal h1, .theme-poppins-font .reveal h2, .theme-poppins-font .reveal h3, .theme-poppins-font .reveal h4, .theme-poppins-font .reveal h5, .theme-poppins-font .reveal h6, .theme-poppins-font .reveal mega-font, .theme-poppins-font .reveal huge-font, .theme-poppins-font .reveal big-font {
     font-family: IBMPlexSerif, monospace; }
   .theme-cunia-font .reveal h1, .theme-cunia-font .reveal h2, .theme-cunia-font .reveal h3, .theme-cunia-font .reveal h4, .theme-cunia-font .reveal h5, .theme-cunia-font .reveal h6, .theme-cunia-font .reveal mega-font, .theme-cunia-font .reveal huge-font, .theme-cunia-font .reveal big-font {
@@ -685,6 +707,13 @@ has a background image and a box with the details */
   border: none;
   box-shadow: none;
   margin: 0; }
+
+.reveal section img.right {
+  position: fixed;
+  right: 10%;
+  top: 50%;
+  padding: 5px;
+  z-index: 1000; }
 
 figure.display {
   margin: auto;
@@ -787,6 +816,10 @@ div.images {
     text-decoration-color: #EC9B5F;
     -webkit-text-decoration-color: #EC9B5F;
     color: #EC9B5F; }
+  .theme-tank .reveal a {
+    text-decoration-color: #A8ACBF;
+    -webkit-text-decoration-color: #A8ACBF;
+    color: #A8ACBF; }
   .reveal a:hover {
     text-shadow: none;
     border: none; }
@@ -829,6 +862,10 @@ div.images {
     .theme-python .reveal a:hover {
       color: #EC9B5F;
       border-bottom: 2px solid #EC9B5F;
+      /* I prefer a thicker line than the underline */ }
+    .theme-tank .reveal a:hover {
+      color: #A8ACBF;
+      border-bottom: 2px solid #A8ACBF;
       /* I prefer a thicker line than the underline */ }
     .theme-poppins-font .reveal a:hover {
       border-bottom: 2px solid;
@@ -883,6 +920,8 @@ div.images {
     background: #7489C7; }
   .theme-python .reveal .roll span:after {
     background: #EC9B5F; }
+  .theme-tank .reveal .roll span:after {
+    background: #A8ACBF; }
 
 /*********************************************
  * NAVIGATION CONTROLS
@@ -907,6 +946,8 @@ div.images {
   color: #7489C7; }
 .theme-python .reveal .controls {
   color: #EC9B5F; }
+.theme-tank .reveal .controls {
+  color: #A8ACBF; }
 
 .reveal .controls {
   right: 4vmin;
@@ -941,6 +982,8 @@ div.images {
     color: #7489C7; }
   .theme-python .reveal .progress {
     color: #EC9B5F; }
+  .theme-tank .reveal .progress {
+    color: #A8ACBF; }
 
 .theme-sedona .reveal .progress span {
   background: #747CA8; }
@@ -962,6 +1005,8 @@ div.images {
   background: #ABB1D9; }
 .theme-python .reveal .progress span {
   background: #FDD45E; }
+.theme-tank .reveal .progress span {
+  background: #354E6C; }
 
 /*********************************************
 * LISTS
@@ -1000,6 +1045,8 @@ div.images {
         color: #ABB1D9; }
       .theme-python .reveal ul.icon li::before {
         color: #FDD45E; }
+      .theme-tank .reveal ul.icon li::before {
+        color: #354E6C; }
     .reveal ul.icon li.pinata::before {
       content: "\f100"; }
       .theme-sedona .reveal ul.icon li.pinata::before {
@@ -1022,6 +1069,8 @@ div.images {
         color: #ABB1D9; }
       .theme-python .reveal ul.icon li.pinata::before {
         color: #FDD45E; }
+      .theme-tank .reveal ul.icon li.pinata::before {
+        color: #354E6C; }
     .reveal ul.icon li.nopal::before {
       content: "\f101"; }
       .theme-sedona .reveal ul.icon li.nopal::before {
@@ -1044,6 +1093,8 @@ div.images {
         color: #ABB1D9; }
       .theme-python .reveal ul.icon li.nopal::before {
         color: #FDD45E; }
+      .theme-tank .reveal ul.icon li.nopal::before {
+        color: #354E6C; }
     .reveal ul.icon li.cactus::before {
       content: "\f103"; }
       .theme-sedona .reveal ul.icon li.cactus::before {
@@ -1066,6 +1117,8 @@ div.images {
         color: #ABB1D9; }
       .theme-python .reveal ul.icon li.cactus::before {
         color: #FDD45E; }
+      .theme-tank .reveal ul.icon li.cactus::before {
+        color: #354E6C; }
     .reveal ul.icon li.skull::before {
       content: "\f104"; }
       .theme-sedona .reveal ul.icon li.skull::before {
@@ -1088,6 +1141,8 @@ div.images {
         color: #ABB1D9; }
       .theme-python .reveal ul.icon li.skull::before {
         color: #FDD45E; }
+      .theme-tank .reveal ul.icon li.skull::before {
+        color: #354E6C; }
 
 /* table with no divisions and with bold purple first column */
 .reveal table th {
@@ -1112,6 +1167,8 @@ div.images {
     color: #ABB1D9; }
   .theme-python .reveal table th {
     color: #FDD45E; }
+  .theme-tank .reveal table th {
+    color: #354E6C; }
 
 .commands table {
   margin: 0; }
@@ -1159,12 +1216,14 @@ div.images {
     color: #13ffd1; }
   .theme-python .reveal strong-alt {
     color: #7db3d7; }
+  .theme-tank .reveal strong-alt {
+    color: #b08fe4; }
 .reveal small {
   font-size: 0.8em; }
 .reveal em {
   font-style: italic; }
 .reveal mega-font {
-  font-size: 6.5em; }
+  font-size: 6.583em; }
   .theme-sedona .reveal mega-font {
     color: #BD80E0;
     line-height: 1.2;
@@ -1203,6 +1262,10 @@ div.images {
     word-wrap: break-word; }
   .theme-python .reveal mega-font {
     color: #569CCB;
+    line-height: 1.2;
+    word-wrap: break-word; }
+  .theme-tank .reveal mega-font {
+    color: #9366DA;
     line-height: 1.2;
     word-wrap: break-word; }
   .theme-poppins-font .reveal mega-font {
@@ -1246,7 +1309,7 @@ div.images {
     line-height: 1.2;
     word-wrap: break-word; }
 .reveal huge-font {
-  font-size: 5em; }
+  font-size: 5.202em; }
   .theme-sedona .reveal huge-font {
     color: #BD80E0;
     line-height: 1.2;
@@ -1285,6 +1348,10 @@ div.images {
     word-wrap: break-word; }
   .theme-python .reveal huge-font {
     color: #569CCB;
+    line-height: 1.2;
+    word-wrap: break-word; }
+  .theme-tank .reveal huge-font {
+    color: #9366DA;
     line-height: 1.2;
     word-wrap: break-word; }
   .theme-poppins-font .reveal huge-font {
@@ -1328,7 +1395,7 @@ div.images {
     line-height: 1.2;
     word-wrap: break-word; }
 .reveal big-font {
-  font-size: 4em; }
+  font-size: 4.624em; }
   .theme-sedona .reveal big-font {
     color: #BD80E0;
     line-height: 1.2;
@@ -1376,6 +1443,11 @@ div.images {
     letter-spacing: normal; }
   .theme-python .reveal big-font {
     color: #569CCB;
+    line-height: 1.2;
+    word-wrap: break-word;
+    letter-spacing: normal; }
+  .theme-tank .reveal big-font {
+    color: #9366DA;
     line-height: 1.2;
     word-wrap: break-word;
     letter-spacing: normal; }
@@ -1465,6 +1537,8 @@ div.images {
     text-shadow: 0px 0px 5px #00DFB4, 0 0 20px #fff; }
   .theme-python .reveal h1.glow, .theme-python .reveal h2.glow, .theme-python .reveal h3.glow, .theme-python .reveal h4.glow, .theme-python .reveal h5.glow, .theme-python .reveal big-font.glow, .theme-python .reveal mega-font.glow, .theme-python .reveal huge-font.glow {
     text-shadow: 0px 0px 5px #569CCB, 0 0 20px #fff; }
+  .theme-tank .reveal h1.glow, .theme-tank .reveal h2.glow, .theme-tank .reveal h3.glow, .theme-tank .reveal h4.glow, .theme-tank .reveal h5.glow, .theme-tank .reveal big-font.glow, .theme-tank .reveal mega-font.glow, .theme-tank .reveal huge-font.glow {
+    text-shadow: 0px 0px 5px #9366DA, 0 0 20px #fff; }
   .theme-poppins-font .reveal h1.glow, .theme-poppins-font .reveal h2.glow, .theme-poppins-font .reveal h3.glow, .theme-poppins-font .reveal h4.glow, .theme-poppins-font .reveal h5.glow, .theme-poppins-font .reveal big-font.glow, .theme-poppins-font .reveal mega-font.glow, .theme-poppins-font .reveal huge-font.glow {
     text-shadow: 0px 0px 5px, 0 0 20px #fff; }
   .theme-cunia-font .reveal h1.glow, .theme-cunia-font .reveal h2.glow, .theme-cunia-font .reveal h3.glow, .theme-cunia-font .reveal h4.glow, .theme-cunia-font .reveal h5.glow, .theme-cunia-font .reveal big-font.glow, .theme-cunia-font .reveal mega-font.glow, .theme-cunia-font .reveal huge-font.glow {
@@ -1750,6 +1824,8 @@ figure.code {
   background-color: #00DFB4; }
 .theme-python .reveal.pattern--stream .slides section.intro {
   background-color: #569CCB; }
+.theme-tank .reveal.pattern--stream .slides section.intro {
+  background-color: #9366DA; }
 
 .theme-sedona .reveal.pattern--stream .slides section.title {
   background-color: #BD80E0; }
@@ -1771,6 +1847,8 @@ figure.code {
   background-color: #00DFB4; }
 .theme-python .reveal.pattern--stream .slides section.title {
   background-color: #569CCB; }
+.theme-tank .reveal.pattern--stream .slides section.title {
+  background-color: #9366DA; }
 
 .reveal.pattern--lines {
   background-image: url(../assets/patterns///lines.png); }
@@ -1795,6 +1873,8 @@ figure.code {
   background-color: #ABB1D9; }
 .theme-python .reveal.pattern--lines .slides section.intro {
   background-color: #FDD45E; }
+.theme-tank .reveal.pattern--lines .slides section.intro {
+  background-color: #354E6C; }
 
 .theme-sedona .reveal.pattern--lines .slides section.title {
   background-color: #747CA8;
@@ -1826,6 +1906,9 @@ figure.code {
 .theme-python .reveal.pattern--lines .slides section.title {
   background-color: #FDD45E;
   color: #569CCB; }
+.theme-tank .reveal.pattern--lines .slides section.title {
+  background-color: #354E6C;
+  color: #9366DA; }
 
 .theme-sedona .reveal.pattern--lines .progress {
   background-color: #d1d7e0; }
@@ -1847,6 +1930,8 @@ figure.code {
   background-color: #7489C7; }
 .theme-python .reveal.pattern--lines .progress {
   background-color: #EC9B5F; }
+.theme-tank .reveal.pattern--lines .progress {
+  background-color: #A8ACBF; }
 
 .reveal.pattern--hex {
   background-image: url("../assets/patterns/hex_pattern.png"); }
@@ -1871,6 +1956,8 @@ figure.code {
   background-color: #ABB1D9; }
 .theme-python .reveal.pattern--hex .slides section.intro {
   background-color: #FDD45E; }
+.theme-tank .reveal.pattern--hex .slides section.intro {
+  background-color: #354E6C; }
 
 .theme-sedona .reveal.pattern--hex .slides section.title {
   background-color: #747CA8;
@@ -1902,6 +1989,9 @@ figure.code {
 .theme-python .reveal.pattern--hex .slides section.title {
   background-color: #FDD45E;
   color: #569CCB; }
+.theme-tank .reveal.pattern--hex .slides section.title {
+  background-color: #354E6C;
+  color: #9366DA; }
 
 .theme-sedona .reveal.pattern--hex .progress {
   background-color: #d1d7e0; }
@@ -1923,6 +2013,8 @@ figure.code {
   background-color: #7489C7; }
 .theme-python .reveal.pattern--hex .progress {
   background-color: #EC9B5F; }
+.theme-tank .reveal.pattern--hex .progress {
+  background-color: #A8ACBF; }
 
 .reveal.pattern--star {
   background-image: url("../assets/patterns/star_pattern.svg"); }
@@ -1947,6 +2039,8 @@ figure.code {
   background-color: #ABB1D9; }
 .theme-python .reveal.pattern--star .slides section.intro {
   background-color: #FDD45E; }
+.theme-tank .reveal.pattern--star .slides section.intro {
+  background-color: #354E6C; }
 
 .theme-sedona .reveal.pattern--star .slides section.title {
   background-color: #747CA8;
@@ -1978,6 +2072,9 @@ figure.code {
 .theme-python .reveal.pattern--star .slides section.title {
   background-color: #FDD45E;
   color: #569CCB; }
+.theme-tank .reveal.pattern--star .slides section.title {
+  background-color: #354E6C;
+  color: #9366DA; }
 
 .theme-sedona .reveal.pattern--star .progress {
   background-color: #d1d7e0; }
@@ -1999,6 +2096,8 @@ figure.code {
   background-color: #7489C7; }
 .theme-python .reveal.pattern--star .progress {
   background-color: #EC9B5F; }
+.theme-tank .reveal.pattern--star .progress {
+  background-color: #A8ACBF; }
 
 .reveal.pattern--pupilines {
   background-image: url("../assets/patterns/pupilines.svg"); }
@@ -2023,6 +2122,8 @@ figure.code {
   background-color: #ABB1D9; }
 .theme-python .reveal.pattern--pupilines .slides section.intro {
   background-color: #FDD45E; }
+.theme-tank .reveal.pattern--pupilines .slides section.intro {
+  background-color: #354E6C; }
 
 .theme-sedona .reveal.pattern--pupilines .slides section.title {
   background-color: #747CA8;
@@ -2054,6 +2155,9 @@ figure.code {
 .theme-python .reveal.pattern--pupilines .slides section.title {
   background-color: #FDD45E;
   color: #569CCB; }
+.theme-tank .reveal.pattern--pupilines .slides section.title {
+  background-color: #354E6C;
+  color: #9366DA; }
 
 .theme-sedona .reveal.pattern--pupilines .progress {
   background-color: #747CA8; }
@@ -2075,6 +2179,8 @@ figure.code {
   background-color: #ABB1D9; }
 .theme-python .reveal.pattern--pupilines .progress {
   background-color: #FDD45E; }
+.theme-tank .reveal.pattern--pupilines .progress {
+  background-color: #354E6C; }
 
 .theme-sedona .reveal.pattern--pupilines .controls {
   color: #747CA8; }
@@ -2096,6 +2202,8 @@ figure.code {
   color: #ABB1D9; }
 .theme-python .reveal.pattern--pupilines .controls {
   color: #FDD45E; }
+.theme-tank .reveal.pattern--pupilines .controls {
+  color: #354E6C; }
 
 .reveal.pattern--bwlines {
   background-image: url("../assets/patterns/bwlines.svg"); }
@@ -2120,6 +2228,8 @@ figure.code {
   background-color: #ABB1D9; }
 .theme-python .reveal.pattern--bwlines .slides section.intro {
   background-color: #FDD45E; }
+.theme-tank .reveal.pattern--bwlines .slides section.intro {
+  background-color: #354E6C; }
 
 .theme-sedona .reveal.pattern--bwlines .slides section.title {
   background-color: #747CA8;
@@ -2151,6 +2261,9 @@ figure.code {
 .theme-python .reveal.pattern--bwlines .slides section.title {
   background-color: #FDD45E;
   color: #569CCB; }
+.theme-tank .reveal.pattern--bwlines .slides section.title {
+  background-color: #354E6C;
+  color: #9366DA; }
 
 .reveal.pattern--space2 {
   background-image: url("../assets/patterns/space2.png"); }
@@ -2175,6 +2288,8 @@ figure.code {
   background-color: #ABB1D9; }
 .theme-python .reveal.pattern--space2 .slides section.intro {
   background-color: #FDD45E; }
+.theme-tank .reveal.pattern--space2 .slides section.intro {
+  background-color: #354E6C; }
 
 .theme-sedona .reveal.pattern--space2 .slides section.title {
   background-color: #747CA8;
@@ -2206,6 +2321,9 @@ figure.code {
 .theme-python .reveal.pattern--space2 .slides section.title {
   background-color: #FDD45E;
   color: #569CCB; }
+.theme-tank .reveal.pattern--space2 .slides section.title {
+  background-color: #354E6C;
+  color: #9366DA; }
 
 .reveal.pattern--space3 {
   background-image: url("../assets/patterns/space3.png"); }
@@ -2230,6 +2348,8 @@ figure.code {
   background-color: #00DFB4; }
 .theme-python .reveal.pattern--space3 .slides section.intro {
   background-color: #569CCB; }
+.theme-tank .reveal.pattern--space3 .slides section.intro {
+  background-color: #9366DA; }
 
 .reveal.pattern--trooper {
   background-image: url("../assets/patterns/trooper.jpg"); }
@@ -2254,6 +2374,8 @@ figure.code {
   background-color: #00DFB4; }
 .theme-python .reveal.pattern--trooper .slides section.intro {
   background-color: #569CCB; }
+.theme-tank .reveal.pattern--trooper .slides section.intro {
+  background-color: #9366DA; }
 
 .theme-sedona .reveal.pattern--trooper .slides section.title {
   background-color: #BD80E0;
@@ -2285,6 +2407,9 @@ figure.code {
 .theme-python .reveal.pattern--trooper .slides section.title {
   background-color: #569CCB;
   color: #FDD45E; }
+.theme-tank .reveal.pattern--trooper .slides section.title {
+  background-color: #9366DA;
+  color: #354E6C; }
 
 .reveal.pattern--fox {
   background-image: url("../assets/patterns/fox.png"); }
@@ -2309,6 +2434,8 @@ figure.code {
   background-color: #00DFB4; }
 .theme-python .reveal.pattern--fox .slides section.intro {
   background-color: #569CCB; }
+.theme-tank .reveal.pattern--fox .slides section.intro {
+  background-color: #9366DA; }
 
 .theme-sedona .reveal.pattern--fox .slides section.title {
   background-color: #BD80E0;
@@ -2340,6 +2467,9 @@ figure.code {
 .theme-python .reveal.pattern--fox .slides section.title {
   background-color: #569CCB;
   color: #FDD45E; }
+.theme-tank .reveal.pattern--fox .slides section.title {
+  background-color: #9366DA;
+  color: #354E6C; }
 
 .reveal.pattern--quetzal {
   background-image: url("../assets/patterns/corazon.jpg"); }
@@ -2364,6 +2494,8 @@ figure.code {
   background-color: #08142F; }
 .theme-python .reveal.pattern--quetzal .slides section.intro {
   background-color: #282d32; }
+.theme-tank .reveal.pattern--quetzal .slides section.intro {
+  background-color: #080D15; }
 
 .theme-sedona .reveal.pattern--quetzal .slides section.title {
   background-color: #BD80E0;
@@ -2395,6 +2527,9 @@ figure.code {
 .theme-python .reveal.pattern--quetzal .slides section.title {
   background-color: #569CCB;
   color: #EC9B5F; }
+.theme-tank .reveal.pattern--quetzal .slides section.title {
+  background-color: #9366DA;
+  color: #A8ACBF; }
 
 .theme-sedona .reveal.pattern--quetzal .slides section.title .presentation-url {
   color: #2A2A49; }
@@ -2416,6 +2551,8 @@ figure.code {
   color: #08142F; }
 .theme-python .reveal.pattern--quetzal .slides section.title .presentation-url {
   color: #282d32; }
+.theme-tank .reveal.pattern--quetzal .slides section.title .presentation-url {
+  color: #080D15; }
 
 /*********************************************
  * IMPORT FONTS
@@ -2474,6 +2611,8 @@ figure.code {
     background-color: #08142F; }
   .theme-python .reveal .slides section.subsection:not([class*='color--']) {
     background-color: #282d32; }
+  .theme-tank .reveal .slides section.subsection:not([class*='color--']) {
+    background-color: #080D15; }
 
 .reveal .slides section:not([class*='color--']) {
   color: #c5c2c2; }
@@ -2497,6 +2636,8 @@ figure.code {
     background-color: #08142F; }
   .theme-python .reveal .slides section:not([class*='color--']) {
     background-color: #282d32; }
+  .theme-tank .reveal .slides section:not([class*='color--']) {
+    background-color: #080D15; }
 
 .reveal {
   color: white !important; }

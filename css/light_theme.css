@@ -367,7 +367,7 @@ All code slide
   .theme-klasik-rough-font .items-block {
     font-family: Nunito, sans-serif; }
   .theme-nox-font .items-block {
-    font-family: Open-Sans, sans-serif; }
+    font-family: Poppins, Helvetica, sans-serif; }
   .items-block.single-block {
     width: 100%;
     display: flex;
@@ -545,7 +545,7 @@ has a background image and a box with the details */
   .theme-klasik-rough-font .reveal {
     font-family: Nunito, sans-serif; }
   .theme-nox-font .reveal {
-    font-family: Open-Sans, sans-serif; }
+    font-family: Poppins, Helvetica, sans-serif; }
 
 ::selection {
   color: #151515;
@@ -667,6 +667,13 @@ has a background image and a box with the details */
   border: none;
   box-shadow: none;
   margin: 0; }
+
+.reveal section img.right {
+  position: fixed;
+  right: 10%;
+  top: 50%;
+  padding: 5px;
+  z-index: 1000; }
 
 figure.display {
   margin: auto;
@@ -907,7 +914,7 @@ div.images {
 .reveal ul.icon {
   list-style-type: none; }
   .reveal ul.icon li {
-    text-indent: -1.4em;
+    text-indent: -1.3em;
     margin-bottom: 0.5em; }
     .reveal ul.icon li::before {
       font-family: 'flaticon';
@@ -915,7 +922,8 @@ div.images {
       /* maguey */
       float: left;
       width: 1.2em;
-      font-size: 1em; }
+      font-size: 1em;
+      padding-right: 0.5em; }
       .theme-streams .reveal ul.icon li::before {
         color: #747CA8; }
       .theme-lines .reveal ul.icon li::before {
@@ -2042,42 +2050,27 @@ figure.code {
 .reveal.pattern--quetzal {
   background-image: url("../assets/patterns/corazon.jpg"); }
 
-.theme-streams .reveal.pattern--quetzal .slides section.intro {
-  background-color: #5F4B8B; }
-.theme-lines .reveal.pattern--quetzal .slides section.intro {
-  background-color: #3A015C; }
-.theme-seacalm .reveal.pattern--quetzal .slides section.intro {
-  background-color: #30638B; }
-.theme-goldilocks .reveal.pattern--quetzal .slides section.intro {
-  background-color: #30638B; }
-.theme-duotone .reveal.pattern--quetzal .slides section.intro {
-  background-color: #CC144B; }
-.theme-jewels .reveal.pattern--quetzal .slides section.intro {
-  background-color: #4A235D; }
-.theme-soda .reveal.pattern--quetzal .slides section.intro {
-  background-color: #263c80; }
-
 .theme-streams .reveal.pattern--quetzal .slides section.title {
   background-color: #5F4B8B;
-  color: #747CA8; }
+  color: #3388A6; }
 .theme-lines .reveal.pattern--quetzal .slides section.title {
   background-color: #3A015C;
-  color: #00BCD4; }
+  color: #ff206e; }
 .theme-seacalm .reveal.pattern--quetzal .slides section.title {
   background-color: #30638B;
-  color: #EDAF49; }
+  color: #00798c; }
 .theme-goldilocks .reveal.pattern--quetzal .slides section.title {
   background-color: #30638B;
-  color: #EDAF49; }
+  color: #8D4593; }
 .theme-duotone .reveal.pattern--quetzal .slides section.title {
   background-color: #CC144B;
-  color: #736FBA; }
+  color: #A1AAE2; }
 .theme-jewels .reveal.pattern--quetzal .slides section.title {
   background-color: #4A235D;
-  color: #79C9E8; }
+  color: #FF0368; }
 .theme-soda .reveal.pattern--quetzal .slides section.title {
   background-color: #263c80;
-  color: #1073b9; }
+  color: #95d5d4; }
 
 /*********************************************
  * IMPORT FONTS
