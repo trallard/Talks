@@ -24,7 +24,8 @@
 	<!-- Font awesome -->
 	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" media="all">
 
-	<script src="reveal.js/js/reveal-print.js"></script>
+	<!-- Uncomment for printing -->
+	<!-- <script src="reveal.js/js/reveal-print.js"></script> -->
 
 </head>
 
@@ -261,7 +262,8 @@
 						<div class="header">
 							<div class="logo"></div>
 							<div class="section">A table and code only</div>
-							<div class="twitter"><a href="https://twitter.com/ixek"><i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+							<div class="twitter"><a href="https://twitter.com/ixek"><i class="fab fa-twitter"></i>
+									<span>ixek</span></a></div>
 						</div>
 						<div class="content">
 							<h1>Dimensions</h1>
@@ -365,6 +367,33 @@
 						</figure>
 					</div>
 			</section>
+			<!-- Slide with code -->
+			<section id="code--path">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="section">Creating code sections</div>
+					</div>
+					<div class="content">
+						Now with line numbers and lines syntax!
+						<pre><code class="hljs" data-line-numbers="4-8">
+import React, { useState } from 'react';
+	
+function Example() {
+	const [count, setCount] = useState(0);
+	
+	return (
+	<div>
+		<p>You clicked {count} times</p>
+		<button onClick={() => setCount(count + 1)}>
+		Click me
+		</button>
+	</div>
+	);
+}
+						</code></pre>
+					</div>
+			</section>
 
 			<!-- Slide with image -->
 			<section>
@@ -401,7 +430,8 @@
 						<h4>Images</h4>
 						Larger image
 						<div class="images">
-							<img src="./assets/herdata/puzzle.PNG" alt="reproduce" style='border: 0px; height:400px; box-shadow: none;'>
+							<img src="./assets/herdata/puzzle.PNG" alt="reproduce"
+								style='border: 0px; height:400px; box-shadow: none;'>
 						</div>
 
 					</div>
@@ -544,7 +574,8 @@
 							<p class='modal_p'>"It is like agreeing that we will all drive on the left or
 								the right. A hallmark of civilization is following conventions
 								that constrain your behaviour a little, in the name of public safety"</p>
-							<p class='caption_p'>- Jenny Brian on <a href="https://www.tidyverse.org/articles/2017/12/workflow-vs-script/">
+							<p class='caption_p'>- Jenny Brian on <a
+									href="https://www.tidyverse.org/articles/2017/12/workflow-vs-script/">
 									Project oriented workflows</p>
 						</div>
 					</div>
