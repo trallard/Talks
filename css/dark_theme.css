@@ -60,34 +60,34 @@
 * ENABLE RESPONSIVENESS FOR THE SLIDES
 *********************************************/
 html {
-  font-size: 1.2em;
+  font-size: 1.3em;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 @media (min-width: 48em) {
   html {
-    font-size: 1.8em;
+    font-size: 1.95em;
   }
 }
 @media (min-width: 64em) {
   html {
-    font-size: 2.04em;
+    font-size: 2.21em;
   }
 }
 @media (min-width: 85.375em) {
   html {
-    font-size: 2.28em;
+    font-size: 2.47em;
   }
 }
 @media (min-width: 120em) {
   html {
-    font-size: 2.4em;
+    font-size: 2.6em;
   }
 }
 @media (min-width: 160em) {
   html {
-    font-size: 2.64em;
+    font-size: 2.86em;
   }
 }
 
@@ -156,22 +156,22 @@ html {
   }
 }
 /*********************************************
-* HEADIINGS
+* HEADINGS
 *********************************************/
 .reveal h1 {
-  font-size: 3.77em;
+  font-size: 3.052em;
 }
 
 .reveal h2 {
-  font-size: 2.11em;
+  font-size: 2.44em;
 }
 
 .reveal h3 {
-  font-size: 1.55em;
+  font-size: 1.5em;
 }
 
 .reveal h4 {
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 /*********************************************

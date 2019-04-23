@@ -42,7 +42,7 @@ $mq-xlarge: "(min-width: #{$bp-xlarge})";
 $mq-xxlarge: "(min-width: #{$bp-xxlarge})";
 $mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 // Font-Size
-$base-font-size: 1.2em;
+$base-font-size: 1.3em;
 // Line-Height
 $base-line-height: 1.6;
 $header-line-height: 1.25;
@@ -144,13 +144,15 @@ html {
 
 
 /*********************************************
-* HEADIINGS
+* HEADINGS
 *********************************************/
 
-$heading1Size: 3.77em;
-$heading2Size: 2.11em;
-$heading3Size: 1.55em;
-$heading4Size: 1.00em;
+// Check https://www.modularscale.com/?1.2&em&1.25 
+
+$heading1Size: 3.052em;
+$heading2Size: 2.44em;
+$heading3Size: 1.5em;
+$heading4Size: 1.2em;
 
 .reveal h1 {font-size: $heading1Size; }
 .reveal h2 {font-size: $heading2Size; }

@@ -22,7 +22,8 @@
     <link rel="icon" href="./assets/personal/Purple.png" />
 
     <!-- Font awesome -->
-    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- Tania custom icons  -->
     <link rel="stylesheet" type="text/css" href="assets/icons_collection/font/flaticon.css">
@@ -32,23 +33,22 @@
 
 </head>
 
-
 <!-- to do ensure the url is visible -->
 
 <!-- Need to specify the theme here: the first defines the color palette and the 
 	second the font theme -->
 
-<body class="theme-lines theme-cunia">
+<body class="theme-tank theme-klasik-font">
 
     <!-- Adding the background and icon theme here -->
 
-    <div class="reveal pattern--space2">
+    <div class="reveal pattern--bwlines">
         <div class="slides">
 
             <!-- Intro slide, this is only the logo in a squared slide -->
             <section class="intro" id="intro">
                 <div class="logo-wrapper">
-                    <div class="logo">
+                    <div class="logo" style="background-image: url('./assets/logos/BIT_LINUX.png');">
                     </div>
                 </div>
             </section>
@@ -63,18 +63,19 @@
                             </div>
                         </div>
                         <div class="content">
-                            <h1>Open source: the good the bad and the ugly</h1>
-                            <div class="description">
-                                Automating the crowd. The Alan Turing Institute
+                            <h1>The state of machine learning</h1>
+                            <div class="description" style="color:white;">
+                                RSE seminar, University of Sheffield
                             </div>
                         </div>
                         <div class="credit">
                             <hr>
-                            <div class="label">Created By</div>
-                            <div class="name">Tania Allard, PhD</div>
+                            <!-- <div class="label">Created By</div> -->
+                            <div class="name" style="color:white;">
+                                Tania Allard, PhD</div>
                         </div>
-                        <a class="presentation-url" href="https://trallard.github.io/Talks/Automating_crowd">
-                            https://trallard.github.io/Talks/Automating_crowd</a>
+                        <a class=" presentation-url" href="https://trallard.github.io/Talks/RSE-sheffield">
+                            https://trallard.github.io/Talks/RSE-sheffield</a>
                     </div>
                 </section>
 
@@ -86,10 +87,9 @@
                                 <h2>Tania Allard</h2>
                                 <hr>
                                 <ul class="projects">
+                                    <li>Developer advocate</li>
                                     <li>Research Software Engineer</li>
                                     <li>Data expert</li>
-                                    <li>Open source nerd/advocate</li>
-                                    <!-- <li>Cloud developer advocate</li> -->
                                 </ul>
                                 <hr>
                                 <ul class="accounts">
@@ -105,24 +105,20 @@
             </section>
 
 
-            <!-- Used to introduce a subsection: you can specify
-					a slide colour here, title and description -->
-            <section class="subsection ">
-                <div class=" grid-wrapper">
+            <!-- Machine learning in scale -->
+            <section>
+                <div class="grid-wrapper">
                     <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
                         <div class="twitter"><a href="https://twitter.com/ixek">
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
-                    <div class="logo"></div>
-                    <h1>
-                        <h1>class = 'subsection'</h1>
-                    </h1>
-                    <div class="description">
-                        This is where the description goes. Keep it short and 🍬.
-                        You can use this with a coloured slide too
-                        <ul class='icon'>
-                            <li class='pinata'>hola</li>
-                        </ul>
+                    <div class="content">
+                        <h1>Machine learning everywhere</h1>
+                        <p class='fragment'>So much that it is starting to not make
+                            sense anymore... like when you say a word 50 times in a row
+                        </p>
                     </div>
                 </div>
             </section>
@@ -136,24 +132,241 @@
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        <div class="images">
-                            <img src="./assets/DevOps/devops1.jpg" alt="what is devops" height="70%" />
-                        </div>
+                        <p>For good or for bad <strong-alt>it is everywhere</strong-alt>:</p>
+                        <br>
+                        <ul class="icon">
+                            <li class='fragment'>Deployed in healthcare and warfare</li>
+                            <li class='fragment'>In the creative realm (from music to books)</li>
+                            <li class='fragment'>Reading CVs and judjing your creditworthiness</li>
+                            <li class='fragment'>Making us more Instagram worthy</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class='color--violet'>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h2>What is then the true state of all the ML, AI, DL everyone is talking about?</h2>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        The big players: <br><br>
+                        <ul>
+                            <li><i class="fab fa-apple"></i> Apple</li>
+                            <li><i class="fab fa-facebook-f"></i> Facebook</li>
+                            <li><i class="fab fa-google"></i> Google</li>
+                            <li>IBM</li>
+                            <li>Intel</li>
+                            <li><i class="fab fa-microsoft"></i> Microsoft</li>
+                            <li>Nvidia</li>
+                            <li>Open AI</li>
+                            <li><i class="fab fa-twitter"></i> Twitter</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="color--light">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h4>Meta-learning</h4>
+                        <img src="./" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+
                     </div>
                 </div>
             </section>
 
 
-            <section data-markdown="./md_sources/mock.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"
-                data-separator-notes="^Note:" data-charset="iso-8859-15">
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+
+                    </div>
+                </div>
             </section>
 
+            <!-- Academia to the win -->
+            <section class="subsection ">
+                <div class=" grid-wrapper">
+                    <div class="header">
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="logo"></div>
+                    <h1>
+                        <h1>What doe academia have to offer?</h1>
+                    </h1>
+                    <div class="description">
+                        <i class="fas fa-jedi"></i> Much more than you think
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- End slide -->
             <section id="end" class="end color--dark">
                 <div class="grid-wrapper">
                     <div class="content">
-                        <h2>This is the end slide</h2>
-                        <a href="https://twitter.com/ixek"><i class="fab fa-twitter-square"></i>
-                            <span>ixek</span></a>
+                        <h2>Thank you</h2><br><br>
+                        <p style="text-align:left;"><a href="https://twitter.com/ixek"><i
+                                    class="fab fa-twitter-square"></i>
+                                <span></span>ixek</span></a><br>
+                            <a href="https://twitter.com/ixek"><i class="fas fa-envelope"></i>
+                                <span>tania.allard@microsoft.com</span>
+                            </a></p>
                     </div>
                 </div>
             </section>
