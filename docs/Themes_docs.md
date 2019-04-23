@@ -10,7 +10,7 @@ You will notice that inside the `<head>` class of the `html` files I add the fol
 <link rel="stylesheet" href="css/light_theme.css">
 
 <!-- Theme used for syntax highlighting of code -->
-<link rel="stylesheet" href="css/google_syntax.css">
+<link rel="stylesheet" href="css/syntax/google_syntax.css">
 
 <!-- Font awesome -->
 <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" media="all">
@@ -24,7 +24,7 @@ These are the stylesheets needed for the slides, depending on the colour schemes
 The syntax highlighting style is defined as:
 ```html
 <!-- Theme used for syntax highlighting of code -->
-<link rel="stylesheet" href="css/google_syntax.css">
+<link rel="stylesheet" href="css/syntax/google_syntax.css">
 ```
 I use a number of styles depending on what I want to achieve, all which come from [highlight.js](https://highlightjs.org/)
 

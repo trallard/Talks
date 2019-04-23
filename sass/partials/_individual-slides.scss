@@ -194,6 +194,21 @@ All code slide
         background-color: transparent;
     }
 }
+.reveal .slides section.color--code-dark {
+    background-color: #1d1941;
+    font-family: $code-font;
+    & h1,
+    h2,
+    h3 {
+        font-family: $code-font;
+    }
+    & code {
+        background-color: transparent;
+    }
+    & pre{
+        color: #C2CAFD!important;
+    }
+}
 
 /*********************************************
 * SINGLE COLOUR SLIDES

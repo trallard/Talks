@@ -15,7 +15,7 @@
 | Automating the crowd                                               | 16 Feb 2019     | [https://bitsandchips.me/Talks/Automating_crowd.html  ](https://bitsandchips.me/Talks/Automating_crowd.html)         |
 | PyCon Belarus                                                | 16 Feb 2019     | [https://bitsandchips.me/Talks/PyConBy.html  ](https://bitsandchips.me/Talks/PyConBy.html)         |
 
-## :unicorn: About the theme
+## :unicorn: About the _theme_
 
  I have started collating some info on the themes in the slides... I plan to add more information on how these are structured and how to properly use the slides... bare with me.
 
