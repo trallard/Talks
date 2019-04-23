@@ -2,20 +2,33 @@
 
 You will notice that inside the `<head>` class of the `html` files I add the following:
 ```html
-<!-- Reveal themes -->
-<link rel="stylesheet" href="reveal.js/css/reveal.css">
-<link rel="stylesheet" href="reveal.js/css/theme/white.css">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<!-- Full theme:light version -->
-<link rel="stylesheet" href="css/light_theme.css">
+	<title>My awesome presentation</title>
 
-<!-- Theme used for syntax highlighting of code -->
-<link rel="stylesheet" href="css/syntax/google_syntax.css">
+	<!-- Reveal themes -->
+	<link rel="stylesheet" href="reveal.js/css/reveal.css">
+	<link rel="stylesheet" href="reveal.js/css/theme/white.css">
 
-<!-- Font awesome -->
-<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" media="all">
+	<!-- Full theme:light version -->
+	<link rel="stylesheet" href="css/dark_theme.css">
+	<link rel="stylesheet" href="sass/presentation.css">
 
-<script src="reveal.js/js/reveal-print.js"></script>
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="css/syntax/colorbrewer_syntax.css">
+
+	<!-- Favicon -->
+	<link rel="icon" href="./assets/personal/Purple.png" />
+
+	<!-- Font awesome -->
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" media="all">
+
+	<!-- Uncomment for printing -->
+	<!-- <script src="reveal.js/js/reveal-print.js"></script> -->
+
+</head>
 ```
 
 These are the stylesheets needed for the slides, depending on the colour schemes you want you should use the `href="css/light_theme.css"` or the `href="css/dark_theme.css"`.
@@ -90,30 +103,48 @@ I have written the styles in such a way that you can choose a colour palette, ba
 
 ---
 
-### Palettes
+## Palettes
 Each colour palette has a primary, secondary, and third colour (as well as a lighter version of the 
 primary and secondary)
 
+### Light themes palettes
+These have a white base for the slides background  and the accent colours as shown in the images
+
 #### duotone
-![](../assets/docs/palettes/duotone.png)
+![](./images/palettes/duotone.png)
 
 #### goldilocks
-![](../assets/docs/palettes/goldilocks.png)
+![](./images/palettes//goldilocks.png)
 
 #### jewels
-![](../assets/docs/palettes/jewels.png)
+![](./images/palettes/jewels.png)
 
 #### lines
-![](../assets/docs/palettes/lines.png)
+![](./images/palettes/lines.png)
 
 #### seacalm
-![](../assets/docs/palettes/seacalm.png)
+![](./images/palettes/seacalm.png)
 
 #### soda
-![](../assets/docs/palettes/soda.png)
+![](./images/palettes/soda.png)
 
 #### streams
-![](../assets/docs/palettes/streams.png)
+![](./images/palettes/streams.png)
+
+
+### Dark themes palettes
+
+#### sedona
+![](./images/palettes/sedona.png)
+
+#### cyber
+![](./images/palettes/cyber.png)
+
+#### bright-blue
+![](./images/palettes/brightblue.png)
+
+#### candy
+![](./images/palettes/candy.png)
 
 ---
 ## Backgrounds

@@ -32,12 +32,20 @@ $themes: (
 'primary-light':lighten(#BDE16B, 10%), 'secondary-light' :lighten(#9080bc, 10%), 'dark-col':#2A2A49, ),
 /* candy */
 
-'candy':( 'primary': #bd3563, //cherry
-'secondary': #d3b71f, //yellow
-'third': #22c4ec, //picton blue
-'primary-light':lighten(#bd3563, 10%), 'secondary-light' :lighten(#d3b71f, 10%), // 'dark-col': #3d3e4d,
-'dark-col': #211a38, ),
-/* skeletor */
+'candy':(
+      "primary": #f45368,
+      //fiery rose
+        "secondary": #e5e338,
+      //dandelion
+        "third": #4ec5c1,
+      //sea serpent
+        "primary-light": lighten(#f45368, 10%),
+      "secondary-light": lighten(#e5e338, 10%),
+      // 'dark-col': #3d3e4d,
+        "dark-col": #211a38
+),
+    
+    /* skeletor */
 
 'skeletor':( 'primary': #f0bb5a, //ronchi
 'secondary': #987cb0, //lavender

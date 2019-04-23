@@ -1,49 +1,39 @@
 /*********************************************
  * IMPORT FONTS
  *********************************************/
-
 @import url(../../reveal.js/lib/font/source-sans-pro/source-sans-pro.css);
 @import url("https://fonts.googleapis.com/css?family=Didact+Gothic|Dosis:400,600|Overpass+Mono|PT+Mono");
 @import url("https://fonts.googleapis.com/css?family=Muli:400,700|Space+Mono:400,700");
 @import url("https://fonts.googleapis.com/css?family=Nunito|Open+Sans|Annie+Use+Your+Telescope");
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+@import url("https://use.typekit.net/rhs6psu.css");
 @import url(../../assets/icons_collection/font/flaticon.css);
 @font-face {
-    font-family: "Leafy";
-    src: url("../fonts/leafy.woff") format("woff");
-    font-style: normal;
+  font-family: "Cunia";
+  src: url("../../fonts/Cunia.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
 }
-
 @font-face {
-    font-family: "Cunia";
-    src: url("../fonts/Cunia.woff") format("woff");
-    font-style: normal;
-    font-weight: 300;
+  font-family: "Coves";
+  src: url("../../fonts/Coves.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
 }
-
 @font-face {
-    font-family: "Coves";
-    src: url("../fonts/Coves.woff") format("woff");
-    font-style: normal;
-    font-weight: 300;
+  font-family: "NeoNeon";
+  src: url("../../fonts/Neoneon.woff") format("woff");
+  font-style: normal;
 }
-
 @font-face {
-    font-family: "NeoNeon";
-    src: url("../fonts/Neoneon.woff") format("woff");
-    font-style: normal;
+  font-family: "Klasik";
+  src: url("../../fonts/Klasik_Regular.woff") format("woff");
+  font-style: normal;
 }
-
 @font-face {
-    font-family: "Klasik";
-    src: url("../fonts/Klasik_Regular.woff") format("woff");
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Klasik-Rough";
-    src: url("../fonts/Klasik_Rough.woff") format("woff");
-    font-style: normal;
+  font-family: "Klasik-Rough";
+  src: url("../../fonts/Klasik_Rough.woff") format("woff");
+  font-style: normal;
 }
 
 /*# sourceMappingURL=fonts.css.map */
