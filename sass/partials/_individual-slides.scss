@@ -107,7 +107,7 @@ Presentation title
 }
 
 // Subsection title
-.reveal .slides section.subsection h1 {
+.reveal .slides section.subsection h1,h2,h3,h4 {
     align-self: center;
     grid-area: title;
     margin: 0;
@@ -120,7 +120,7 @@ Presentation title
     min-height: 4em;
 }
 
-// For midnight color subsection
+// For certain sections color subsection
 .reveal .slides section.subsection.color--midnight .description,
 .reveal .slides section.subsection.color--ice .description,
 .reveal .slides section.subsection.color--vibrant .description {
@@ -181,6 +181,8 @@ Presentation title
 All code slide
 ************/
 
+// Light coloured all code slide
+
 .reveal .slides section.color--code {
     background-color: #eeeeee;
     /* pale gray */
@@ -194,6 +196,9 @@ All code slide
         background-color: transparent;
     }
 }
+
+// Dark coloured all code slides
+
 .reveal .slides section.color--code-dark {
     background-color: #1d1941;
     font-family: $code-font;
@@ -407,6 +412,14 @@ All code slide
     width: 33%;
 }
 
+
+/* End slide I just tend to have an empty slide
+with my Twitter handle  */
+#end .content {
+  margin-top: auto;
+  text-align: center;
+  font-size: 140%;
+}
 /*********************************************
  * Black box slide
  *********************************************/
@@ -420,6 +433,7 @@ black box with white text (ideal for presentation sections) */
     background-image: url(#{$assets-path}/code.jpg);
     background-size: cover;
     background-position: center center;
+
     /* floating dark box */
     aside {
         background-color: rgba(0, 0, 0, 0.7);
@@ -466,12 +480,14 @@ has a background image and a box with the details */
         border-radius: 10px;
         color: #000;
         float: left;
-        font-size: 1.5em;
-        padding: 5vmin;
+        padding: 3vmin;
         hr {
-            margin: 2.5vmin 0;
+            margin: 2vmin 0;
             border: solid;
             border-width: 2px 0 0 0;
+            @include themify($themes) {
+                color: themed('primary-light')
+            }
         }
         ul {
             display: block;
@@ -500,3 +516,4 @@ has a background image and a box with the details */
         color: themed('primary')
     }
 }
+

@@ -85,7 +85,7 @@ $themes: (
 
 // Inspired from https://dribbble.com/shots/4945195-Trundling-Tank-Sketches
 'tank':( 'primary': #9366DA, // lilac
-'secondary': #354E6C, // steel blue
+'secondary': rgb(81, 99, 122), // steel blue
 'third':  #A8ACBF , // grey
 'primary-light':lighten(#9366DA, 10%), 
 'secondary-light' :lighten(#354E6C, 10%), 'dark-col':  #080D15, // carbon
