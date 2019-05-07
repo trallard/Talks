@@ -44,7 +44,13 @@ Presentation title
     color: $white;
     margin-left: 14vw;
     width: calc(100vw - 4vmin - 14vw);
+    padding: 0;
 }
+
+// .reveal .slides section.title .content {
+//   grid-template-columns: auto;
+//   grid-template-areas: "title" "description";
+// }
 
 // Grid areas for introduction title slide
 // usually contains title, presented and the event
@@ -56,8 +62,9 @@ Presentation title
 }
 
 // Main slide title
-.reveal .slides section.title h1 {
+.reveal .slides section.title h1{
     color: $white;
+    font-size: 1.5em;
 }
 
 //  Credit: the author
@@ -89,7 +96,7 @@ Presentation title
 // Add url to the intro slide header 
 .slides .title .presentation-url {
     grid-area: header2;
-    font-size: 1em;
+    font-size: 0.8em;
     align-self: center;
     opacity: 0.5;
     color: $text-color;
@@ -472,6 +479,7 @@ has a background image and a box with the details */
     background-image: url($about-img);
     background-size: cover;
     background-position: center center;
+    
     a {
         color: #2A2A49;
     }
@@ -496,6 +504,7 @@ has a background image and a box with the details */
             margin: 2.5vmin 0 0;
             width: auto;
         }
+      
     }
     .projects {
         text-align: left;
@@ -516,4 +525,3 @@ has a background image and a box with the details */
         color: themed('primary')
     }
 }
-

@@ -588,18 +588,19 @@ figure.code {
 .header .twitter {
     margin-left: auto;
     opacity: 0.7;
-    font-size: 0.8rem;
     text-decoration: none;
     a {
         color: #5f6c7a;
         /*slate grey*/
         text-decoration: none;
+        font-size: 0.5em!important;
     }
     .fa-twitter {
         color: #5f6c7a;
         /*slate grey*/
     }
-} // Logo in header
+} 
+/* Logo in header */
 .reveal .slides section .logo {
     background-image: url($logo-path);
     background-repeat: no-repeat;
