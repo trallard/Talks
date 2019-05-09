@@ -47,6 +47,7 @@ Presentation title
     padding: 0;
 }
 
+// this layout places title and description side by side
 // .reveal .slides section.title .content {
 //   grid-template-columns: auto;
 //   grid-template-areas: "title" "description";
@@ -145,7 +146,7 @@ Presentation title
     color: #2A2A49;
     border: none;
     box-shadow: none;
-    font-size: 1.7em;
+    font-size: 1.2em;
     font-style: normal;
     margin: 0;
     max-width: 42ex;
@@ -170,11 +171,13 @@ Presentation title
 
 // Quotes in dark coloured slides
 .reveal .slides section.quote.color--midnight blockquote,
+.reveal .slides section.quote.color--violet blockquote,
 .reveal .slides section.quote.color--ice blockquote {
     color: #FFFFFF;
 }
 
 .reveal .slides section.quote.color--midnight hr,
+.reveal .slides section.quote.color--violet hr,
 .reveal .slides section.quote.color--ice hr {
     border-color: #EEEDEF;
 }
@@ -504,7 +507,6 @@ has a background image and a box with the details */
             margin: 2.5vmin 0 0;
             width: auto;
         }
-      
     }
     .projects {
         text-align: left;
