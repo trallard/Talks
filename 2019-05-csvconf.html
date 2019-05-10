@@ -26,6 +26,16 @@
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
 
 
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+
 </head>
 
 <!-- to do ensure the url is visible -->
@@ -61,6 +71,9 @@
                             <h1>Where has your data come from?</h1>
                             <div class="description">
                                 Data ancestry and other tales
+                                <br><br>
+                                <small><a href="https://doi.org/10.5281/zenodo.2697992">
+                                        10.5281/zenodo.2697993</a></small>
                             </div>
                         </div>
                         <div class="credit">
@@ -68,8 +81,8 @@
                             <div class="label">Presented by</div>
                             <div class="name">Tania Allard, PhD</div>
                         </div>
-                        <a class="presentation-url" href="https://trallard.github.io/Talks/csv_conf">
-                            https://bitsandchips.me/Talks/csv_conf</a>
+                        <a class="presentation-url" href="https://trallard.github.io/Talks/2019-05-csvconf">
+                            https://trallard.github.io/Talks/2019-05-csvconf</a>
                     </div>
                 </section>
 
@@ -620,6 +633,7 @@
                         <div class='images'>
                             <img src="./assets/lineage/bh.png" alt="lineage">
                         </div>
+                        <small>Katie Bouman, 2019</small>
                     </div>
                 </div>
             </section>

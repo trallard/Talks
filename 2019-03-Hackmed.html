@@ -24,8 +24,14 @@
     <!-- Font awesome -->
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" media="all">
 
-    <script src="reveal.js/js/reveal-print.js"></script>
-
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
 </head>
 
 <!-- to do ensure the url is visible -->
@@ -68,8 +74,8 @@
                             <div class="label">Created By</div>
                             <div class="name">Tania Allard, PhD</div>
                         </div>
-                        <a class="presentation-url" href="http://bit.ly/HackMed2019">
-                            http://bit.ly/HackMed2019</a>
+                        <a class="presentation-url" href="https://trallard.github.io/Talks/2019-03-Hackmed">
+                            https://trallard.github.io/Talks/2019-03-Hackmed</a>
                     </div>
                 </section>
 

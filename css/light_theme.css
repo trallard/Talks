@@ -597,7 +597,7 @@ black box with white text (ideal for presentation sections) */
   width: auto;
   border-radius: 10px;
   display: block;
-  top: 30%;
+  top: 50%;
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
