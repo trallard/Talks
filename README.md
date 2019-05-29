@@ -6,15 +6,16 @@
 | Sheffield Machine Learning retreat                           | 02 Jun 2017     | [https://bitsandchips.me/ML_retreat_presentation/ ](https://bitsandchips.me/ML_retreat_presentation/)                      |
 | 2nd Research Software Engineering conference                 | 07-08 Sept 2018 | [https://bitsandchips.me/JNB_reproducible/  ](https://bitsandchips.me/JNB_reproducible/)                                   |
 | ManchesterR user group                                       | 11 Nov 2017     | [https://bitsandchips.me/Talks/2017-11-ManchesteR.html ](https://bitsandchips.me/Talks/2017-11-ManchesteR.html)            |
-| Her + Data                                                   | 08 Mar 2018     | [https://bitsandchips.me/Talks/her+data.html ](https://bitsandchips.me/Talks/her+data.html)                                |
-| PyCon                                                        | 09 May 2018     | [https://bitsandchips.me/Talks/PyCon.html  ](https://bitsandchips.me/Talks/PyCon.html)                                     |
+| Her + Data                                                   | 08 Mar 2018     | [https://bitsandchips.me/Talks/2018-03-08-her+data.html ](https://bitsandchips.me/Talks/h2018-03-08-her+data.html)         |
+| PyCon                                                        | 09 May 2018     | [https://bitsandchips.me/Talks/2018-05-06-PyCon.html  ](https://bitsandchips.me/Talks/2018-05-06-PyCon.html)               |
 | PyData Manchester                                            | 12 Jun 2018     | [https://bitsandchips.me/Talks/PyData_PyLadies.html  ](https://bitsandchips.me/Talks/PyData_PyLadies.html)                 |
-| Women in Sage, Montreal                                      | 10 Jul 2018     | [https://bitsandchips.me/Talks/WomenInSage.html  ](https://bitsandchips.me/Talks/WomenInSage.html)                         |
-| RAPIDS: A crazy little thing called reproducible science     | 18 July 2018    | [https://bitsandchips.me/Talks/RAPIDS.html  ](https://bitsandchips.me/Talks/RAPIDS.html)                                   |
-| PyCon UK                                                     | 16 Sep 2018     | [https://bitsandchips.me/Talks/PyConUK2018.html  ](https://bitsandchips.me/Talks/PyConUK2018.html)                         |
+| Women in Sage, Montreal                                      | 10 Jul 2018     | [https://bitsandchips.me/Talks/2018-07-10-WomenInSage.html](https://bitsandchips.me/Talks/2018-07-10-WomenInSage.html)     |
+| RAPIDS: A crazy little thing called reproducible science     | 18 July 2018    | [https://bitsandchips.me/Talks/2018-07-18-RAPIDS.html  ](https://bitsandchips.me/Talks/2018-07-18-RAPIDS.html)             |
+| PyCon UK                                                     | 16 Sep 2018     | [https://bitsandchips.me/Talks/2018-09-16-PyConUK2018.html  ](https://bitsandchips.me/Talks/2018-09-16-PyConUK2018.html)   |
 | Automating the crowd                                         | 16 Feb 2019     | [https://bitsandchips.me/Talks/2019-02-Automating_crowd.html](https://bitsandchips.me/Talks/2019-02-Automating_crowd.html) |
-| PyCon Belarus                                                | 16 Feb 2019     | [https://bitsandchips.me/Talks/PyConBy.html  ](https://bitsandchips.me/Talks/PyConBy.html)                                 |
+| PyCon Belarus                                                | 16 Feb 2019     | [https://bitsandchips.me/Talks/2019-02-19-PyConBy.html  ](https://bitsandchips.me/Talks/2019-02-19-PyConBy.html)           |
 | Hackmed Sheffield                                            | 30 Mar 2019     | [https://trallard.github.io/Talks/2019-03-Hackmed](https://trallard.github.io/Talks/2019-03-Hackmed)                       |
+| RSE seminar Sheffield - ML industry vs academia              | 24 April 2019   | [https://trallard.github.io/Talks/2019-04-24-RSE-seffield](https://trallard.github.io/Talks/2019-04-24-RSE-seffield)       |
 | Where has your data come from? Data ancestry and other tales | 08 May 2019     | [https://trallard.github.io/Talks/2019-05-csvconf](https://trallard.github.io/Talks/2019-05-csvconf)                       |
 
 ## :unicorn: About the _theme_

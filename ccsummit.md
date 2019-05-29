@@ -12,7 +12,7 @@ slideOptions:
 
 #### Bringing the commons to research: democratizing software outputs for the common good
 
-you can follow the slides/notes at 👉🏽 https://hackmd.io/p/template-talk-slide
+you can follow the slides/notes at 👉🏽[http://bit.ly/ccsummit-2019](http://bit.ly/ccsummit-2019)
 
 ---
 
@@ -53,9 +53,7 @@ You can use your laptop and/or your phone to join! 💻📱
 Let's draw the parallels between open source and research software
 
 Rubric:
-<br>
 ⭐️ General open source principles
-<br>
 📖 Research software outputs
 
 ---
@@ -63,21 +61,22 @@ Rubric:
 ## OSS as a positive agent of change
 ⭐️Open source should enrich the lives of human beings and broader communities.
 
-<p class='fragment> 📖 Research software should support the research community to do better researchand the wider population. </p>
+<p class='fragment'> 📖 Research software should support the research community to do better researchand the wider population. </p>
 
 ---
 
 ## Building for participation
 ⭐️ Open source is a community effort by the community. It should aim to lower the entry and participation barriers.
 
-<p class='fragment> 📖 Should enable collaborative work (reproducibility and replication) </p>
+<p class='fragment'> 📖 Should enable collaborative work (reproducibility and replication) </p>
 
 ---
+
 ## Free access
 
 ⭐️ The code should be open and freely accesible (freely available to the world).
 
-<p class='fragment> 📖 Should be made public/freely available at publication time </p>
+<p class='fragment'> 📖 Should be made public/freely available at publication time </p>
 
 ---
 
@@ -85,7 +84,7 @@ Rubric:
 
 ⭐️ Transparent governance model: support both the project and its community. 
 
-<p class='fragment>📖 When public funds are used the code should be public too...</p>
+<p class='fragment'>📖 When public funds are used the code should be public too...</p>
 
 ---
 
@@ -93,7 +92,7 @@ Rubric:
 
 ⭐️ Include the commonly margninalized voices in the community and amplify them. Build a supportive, equalitarian space for each individual to thrive in.
 
-<p class='fragment> 📖 Should not discriminate against groups or technologies. </p>
+<p class='fragment'> 📖 Should not discriminate against groups or technologies. </p>
 
 ---
 
@@ -101,7 +100,7 @@ Rubric:
 
 ⭐️ Buiding communities help ensure sustainability, liaise with organisations across the world and draw a roadmap.
 
-<p class='fragment> 📖 ????? Survive the grant  </p>
+<p class='fragment'> 📖 ????? Survive the grant  </p>
 
 ---
 
