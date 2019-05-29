@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 * Tania's theme for Reveal.js, this is a highly customised very opinionated
 * theme originated from the many many hours I have spent customising 
@@ -21,27 +22,33 @@
 @import url("https://fonts.googleapis.com/css?family=Muli:400,700|Space+Mono:400,700");
 @import url("https://fonts.googleapis.com/css?family=Nunito|Open+Sans|Annie+Use+Your+Telescope");
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+@import url("https://use.typekit.net/rhs6psu.css");
 @import url(../../assets/icons_collection/font/flaticon.css);
 .reveal .slides section.title .logo--full {
   background-image: url("../assets/personal/Purple.png");
-  width: 24vmin; }
+  width: 24vmin;
+}
 
 .reveal .slides section.title .logo {
   background-image: url("../assets/personal/Purple.png");
   height: 6.5vmin;
-  width: 6.5vmin; }
+  width: 6.5vmin;
+}
 
 .reveal .slides section.title .logo--soda {
   background-image: url(../assets/logos/Hex_logo.png);
-  width: 24vmin; }
+  width: 24vmin;
+}
 
 .reveal .slides section.title .logo--sodafull {
   background-image: url(../assets/logos/HS.png);
-  width: 24vmin; }
+  width: 24vmin;
+}
 
 .reveal .slides section.title .logo--pyladies {
   background-image: url(../assets/logos/pyladies-nwuk-nocompass-darkpink.svg);
-  width: 24vmin; }
+  width: 24vmin;
+}
 
 /*********************************************
 * DEFINING THEME PALETTES
@@ -53,25 +60,36 @@
 * ENABLE RESPONSIVENESS FOR THE SLIDES
 *********************************************/
 html {
-  font-size: 1em;
+  font-size: 1.5em;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-  @media (min-width: 48em) {
-    html {
-      font-size: 1.3em; } }
-  @media (min-width: 64em) {
-    html {
-      font-size: 1.5em; } }
-  @media (min-width: 85.375em) {
-    html {
-      font-size: 1.7em; } }
-  @media (min-width: 120em) {
-    html {
-      font-size: 1.9em; } }
-  @media (min-width: 160em) {
-    html {
-      font-size: 2em; } }
+  -moz-osx-font-smoothing: grayscale;
+}
+@media (min-width: 48em) {
+  html {
+    font-size: 2.25em;
+  }
+}
+@media (min-width: 64em) {
+  html {
+    font-size: 2.55em;
+  }
+}
+@media (min-width: 85.375em) {
+  html {
+    font-size: 2.85em;
+  }
+}
+@media (min-width: 120em) {
+  html {
+    font-size: 3em;
+  }
+}
+@media (min-width: 160em) {
+  html {
+    font-size: 3.3em;
+  }
+}
 
 /*********************************************
 * RESPONSIVE LISTS
@@ -79,41 +97,54 @@ html {
 @media (min-width: 1280px) {
   .reveal ul {
     width: calc(90% - 1em);
-    /* width: calc(80% - 1em); */ } }
+    /* width: calc(80% - 1em); */
+  }
+}
 /*********************************************
 * INTRO SLIDE
 *********************************************/
 @media (max-width: 480px) {
   #title .presentation-url {
-    display: none; } }
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   .reveal .slides section.intro {
     height: calc(100vh - 4vmin);
     margin: 2vmin;
-    width: calc(100vw - 4vmin); } }
+    width: calc(100vw - 4vmin);
+  }
+}
 /*********************************************
 * SLIDES GRID
 *********************************************/
 @media (max-width: 568px) {
   .reveal .slides section.title .grid-wrapper {
     grid-template-areas: "header" "content" "credit";
-    grid-template-columns: auto; }
+    grid-template-columns: auto;
+  }
 
   .reveal .slides section.title .credit {
-    justify-self: end; } }
+    justify-self: end;
+  }
+}
 @media (min-width: 1280px) {
   .reveal .slides section.title .content {
     display: grid;
     grid-template-areas: "title description";
     grid-template-columns: auto 40%;
-    grid-column-gap: 10vmin; }
+    grid-column-gap: 10vmin;
+  }
 
   .reveal .slides section.title h1 {
-    grid-area: title; }
+    grid-area: title;
+  }
 
   .reveal .slides section.title .description {
     grid-area: description;
-    margin-top: 0.5em; } }
+    margin-top: 0.5em;
+  }
+}
 /*********************************************
 * PRESENTATION SLIDE
 *********************************************/
@@ -121,7 +152,28 @@ html {
   .reveal .slides section.title {
     height: calc(100vh - 4vmin);
     margin: 2vmin;
-    width: calc(100vw - 4vmin); } }
+    width: calc(100vw - 4vmin);
+  }
+}
+/*********************************************
+* HEADINGS
+*********************************************/
+.reveal h1 {
+  font-size: 3.052em;
+}
+
+.reveal h2 {
+  font-size: 2.11em;
+}
+
+.reveal h3 {
+  font-size: 1.3em;
+}
+
+.reveal h4 {
+  font-size: 1em;
+}
+
 /*********************************************
 * ADDITIONAL SLIDES CLASSES
 * THESE CAN BE USED WITH ANY THEME
@@ -133,11 +185,13 @@ Intro slide
   height: calc(100vh - 8vmin);
   margin: 4vmin;
   padding: 15px;
-  width: calc(100vw - 8vmin); }
+  width: calc(100vw - 8vmin);
+}
 
 .reveal .slides section.intro .logo-wrapper {
   display: flex;
-  height: 100%; }
+  height: 100%;
+}
 
 .reveal .slides section.intro .logo {
   background-position: center;
@@ -146,7 +200,8 @@ Intro slide
   margin: auto;
   min-height: 200px;
   min-width: 200px;
-  width: 33%; }
+  width: 33%;
+}
 
 /****************** 
 Presentation title
@@ -157,63 +212,77 @@ Presentation title
   width: calc(100vw - 8vmin);
   color: #fff;
   margin-left: 14vw;
-  width: calc(100vw - 4vmin - 14vw); }
+  width: calc(100vw - 4vmin - 14vw);
+  padding: 0;
+}
 
 .reveal .slides section.title .grid-wrapper {
   grid-template-areas: "header header2" "content content" ". credit";
   grid-template-columns: auto 50%;
   grid-template-rows: 6vmin 1fr auto;
-  grid-column-gap: 5vmin; }
+  grid-column-gap: 5vmin;
+}
 
 .reveal .slides section.title h1 {
-  color: #fff; }
+  color: #fff;
+  font-size: 1.5em;
+}
 
 .reveal .slides section.title .credit {
   align-self: end;
   grid-area: credit;
-  line-height: 1.8em; }
+  line-height: 1.8em;
+}
 
 .reveal .slides section.title .credit hr {
   border: solid #EEEDEF;
   border-width: 2px 0 0 0;
-  margin: 0 0 .8em 0;
-  width: 35%; }
+  margin: 0 0 0.8em 0;
+  width: 35%;
+}
 
 .reveal .slides section.title .credit .label {
   font-size: 60%;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 .reveal .slides section.title .credit .name {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .slides .title .presentation-url {
   grid-area: header2;
-  font-size: 1em;
+  font-size: 0.8em;
   align-self: center;
   opacity: 0.5;
-  color: #2A2A49; }
+  color: #2A2A49;
+}
 
 /******************************************
 * Subsection: used to introduce a topic
 ******************************************/
 .reveal .slides section.subsection .grid-wrapper {
   grid-template-areas: ". header . " ". title ." ". description .";
-  grid-template-rows: 5.5vmin 3fr 1fr; }
+  grid-template-rows: 5.5vmin 3fr 1fr;
+}
 
-.reveal .slides section.subsection h1 {
+.reveal .slides section.subsection h1, h2, h3, h4 {
   align-self: center;
   grid-area: title;
-  margin: 0; }
+  margin: 0;
+}
 
 .reveal .slides section.subsection .description {
   color: #9292A8;
   grid-area: description;
-  min-height: 4em; }
+  min-height: 4em;
+}
 
 .reveal .slides section.subsection.color--midnight .description,
 .reveal .slides section.subsection.color--ice .description,
 .reveal .slides section.subsection.color--vibrant .description {
-  color: #EEEDEF; }
+  color: #EEEDEF;
+}
 
 /*********************************************
 *  FULL QUOTE SLIDES
@@ -224,35 +293,43 @@ Presentation title
   color: #2A2A49;
   border: none;
   box-shadow: none;
-  font-size: 1.7em;
+  font-size: 1.2em;
   font-style: normal;
   margin: 0;
   max-width: 42ex;
   padding: 0;
-  width: 100%; }
+  width: 100%;
+}
 
 .reveal .slides section.quote hr {
   border: solid #9292A8;
   border-width: 1px 0 0 0;
-  margin: .8em 0;
-  width: 15%; }
+  margin: 0.8em 0;
+  width: 15%;
+}
 
 .reveal .slides section.quote cite {
   color: #9292A8;
   display: block;
-  font-size: 1rem; }
+  font-size: 1rem;
+}
 
 .reveal .slides section.quote.color--midnight blockquote,
+.reveal .slides section.quote.color--violet blockquote,
 .reveal .slides section.quote.color--ice blockquote {
-  color: #FFFFFF; }
+  color: #FFFFFF;
+}
 
 .reveal .slides section.quote.color--midnight hr,
+.reveal .slides section.quote.color--violet hr,
 .reveal .slides section.quote.color--ice hr {
-  border-color: #EEEDEF; }
+  border-color: #EEEDEF;
+}
 
 .reveal .slides section.quote.color--midnight cite,
 .reveal .slides section.quote.color--ice cite {
-  color: #EEEDEF; }
+  color: #EEEDEF;
+}
 
 /************ 
 All code slide
@@ -260,123 +337,177 @@ All code slide
 .reveal .slides section.color--code {
   background-color: #eeeeee;
   /* pale gray */
-  font-family: "Overpass Mono", monospace; }
-  .reveal .slides section.color--code h1,
-  .reveal .slides section.color--code h2,
-  .reveal .slides section.color--code h3 {
-    font-family: "Overpass Mono", monospace; }
-  .reveal .slides section.color--code code {
-    background-color: transparent; }
+  font-family: "Overpass Mono", monospace;
+}
+.reveal .slides section.color--code h1,
+.reveal .slides section.color--code h2,
+.reveal .slides section.color--code h3 {
+  font-family: "Overpass Mono", monospace;
+}
+.reveal .slides section.color--code code {
+  background-color: transparent;
+}
+
+.reveal .slides section.color--code-dark {
+  background-color: #1d1941;
+  font-family: "Overpass Mono", monospace;
+}
+.reveal .slides section.color--code-dark h1,
+.reveal .slides section.color--code-dark h2,
+.reveal .slides section.color--code-dark h3 {
+  font-family: "Overpass Mono", monospace;
+}
+.reveal .slides section.color--code-dark code {
+  background-color: transparent;
+}
+.reveal .slides section.color--code-dark pre {
+  color: #C2CAFD !important;
+}
 
 /*********************************************
 * SINGLE COLOUR SLIDES
 *********************************************/
 .reveal .slides section.color--dark {
   background-color: #22272B;
-  color: #ede7f3; }
-  .reveal .slides section.color--dark h1,
-  .reveal .slides section.color--dark h2 {
-    color: #A881FF; }
+  color: #ede7f3;
+}
+.reveal .slides section.color--dark h1,
+.reveal .slides section.color--dark h2 {
+  color: #A881FF;
+}
 
 .reveal .slides section.color--ice {
   background-color: #9292A8;
-  color: #fff; }
+  color: #fff;
+}
 
 .reveal .slides section.color--violet {
   background-color: #3A015C;
-  color: #fff; }
-  .reveal .slides section.color--violet h1,
-  .reveal .slides section.color--violet h2 {
-    color: #41ead4; }
+  color: #fff;
+}
+.reveal .slides section.color--violet h1,
+.reveal .slides section.color--violet h2 {
+  color: #41ead4;
+}
 
 .reveal .slides section.color--violet {
   background-color: #472C7D;
-  color: #fff; }
-  .reveal .slides section.color--violet h1,
-  .reveal .slides section.color--violet h2 {
-    color: #41ead4; }
+  color: #fff;
+}
+.reveal .slides section.color--violet h1,
+.reveal .slides section.color--violet h2 {
+  color: #41ead4;
+}
 
 .reveal .slides section.color--soda .logo {
   background-image: url(../assets/logos/Hex_Logo.png);
-  width: 24vmin; }
+  width: 24vmin;
+}
 
 .reveal .slides section.color--soda {
   background-color: #fff;
-  color: #66646B; }
+  color: #66646B;
+}
 
 .reveal .slides section.color--sodadark .logo {
   background-image: url(../assets/logos/Hex_Logo.png);
-  width: 24vmin; }
+  width: 24vmin;
+}
 
 .reveal .slides section.color--sodadark {
   background-color: #2A2A49;
   /* navy blue */
-  color: #fff; }
-  .reveal .slides section.color--sodadark h1,
-  .reveal .slides section.color--sodadark h2 {
-    color: #95d5d4; }
+  color: #fff;
+}
+.reveal .slides section.color--sodadark h1,
+.reveal .slides section.color--sodadark h2 {
+  color: #95d5d4;
+}
 
 .reveal .slides section.color--light {
-  background-color: #fff; }
+  background-color: #fff;
+}
 
 .reveal .slides section.color--midnight {
   background-color: #2A2A49;
   /* navy blue */
-  color: #fff; }
-  .reveal .slides section.color--midnight h1,
-  .reveal .slides section.color--midnight h2 {
-    color: #F8757F; }
+  color: #fff;
+}
+.reveal .slides section.color--midnight h1,
+.reveal .slides section.color--midnight h2 {
+  color: #F8757F;
+}
 
 .reveal .slides section.color--vibrant {
   background-color: #00BCD4;
-  color: #fff; }
-  .reveal .slides section.color--vibrant h1 {
-    color: #472C7D; }
+  color: #fff;
+}
+.reveal .slides section.color--vibrant h1 {
+  color: #472C7D;
+}
 
 .reveal .slides section.color--topaz {
   background-color: #67aeca;
-  color: #fff; }
-  .reveal .slides section.color--topaz h1 {
-    color: #472C7D; }
+  color: #fff;
+}
+.reveal .slides section.color--topaz h1 {
+  color: #472C7D;
+}
 
 .reveal .slides section.color--two {
   background-color: #fff;
   color: #fff;
-  background: linear-gradient(to right, #5F4B8B 50%, #fff 50%); }
+  background: linear-gradient(to right, #5F4B8B 50%, #fff 50%);
+}
 
 .items-block {
-  display: flex; }
-  .theme-poppins-font .items-block {
-    font-family: Poppins, Helvetica, sans-serif; }
-  .theme-cunia-font .items-block {
-    font-family: Coves, Helvetica, sans-serif; }
-  .theme-cunia2-font .items-block {
-    font-family: Poppins, Helvetica, sans-serif; }
-  .theme-plex-font .items-block {
-    font-family: IBMPlexSans, sans-serif; }
-  .theme-dosis-font .items-block {
-    font-family: Didact Gothic, sans-serif; }
-  .theme-leafy-font .items-block {
-    font-family: Dosis, sans-serif; }
-  .theme-allmono-font .items-block {
-    font-family: Space Mono, monospace; }
-  .theme-soda-font .items-block {
-    font-family: Nunito, sans-serif; }
-  .theme-klasik-font .items-block {
-    font-family: Nunito, sans-serif; }
-  .theme-klasik-rough-font .items-block {
-    font-family: Nunito, sans-serif; }
-  .theme-nox-font .items-block {
-    font-family: Poppins, Helvetica, sans-serif; }
-  .items-block.single-block {
-    width: 100%;
-    display: flex;
-    padding: 10px; }
-    .items-block.single-block.left {
-      width: 50%;
-      color: #fff; }
-    .items-block.single-block.right {
-      width: 50%; }
+  display: flex;
+}
+.theme-poppins-font .items-block {
+  font-family: Poppins, Helvetica, sans-serif;
+}
+.theme-cunia-font .items-block {
+  font-family: Coves, Helvetica, sans-serif;
+}
+.theme-cunia2-font .items-block {
+  font-family: Poppins, Helvetica, sans-serif;
+}
+.theme-plex-font .items-block {
+  font-family: IBMPlexSans, sans-serif;
+}
+.theme-dosis-font .items-block {
+  font-family: Didact Gothic, sans-serif;
+}
+.theme-leafy-font .items-block {
+  font-family: Dosis, sans-serif;
+}
+.theme-allmono-font .items-block {
+  font-family: Space Mono, monospace;
+}
+.theme-soda-font .items-block {
+  font-family: Nunito, sans-serif;
+}
+.theme-klasik-font .items-block {
+  font-family: Nunito, sans-serif;
+}
+.theme-klasik-rough-font .items-block {
+  font-family: Nunito, sans-serif;
+}
+.theme-nox-font .items-block {
+  font-family: Poppins, Helvetica, sans-serif;
+}
+.items-block.single-block {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+}
+.items-block.single-block.left {
+  width: 50%;
+  color: #fff;
+}
+.items-block.single-block.right {
+  width: 50%;
+}
 
 /*********************************************
 * GRADIENT SLIDES
@@ -384,23 +515,29 @@ All code slide
 .reveal .slides section.color--grad-purple {
   background-color: #fff;
   background: linear-gradient(45deg, #2D266F, #7C2289);
-  color: #fff !important; }
-  .reveal .slides section.color--grad-purple h1 {
-    color: #fff; }
+  color: #fff !important;
+}
+.reveal .slides section.color--grad-purple h1 {
+  color: #fff;
+}
 
 .reveal .slides section.color--grad-green {
   background-color: #fff;
   color: #fff;
-  background: linear-gradient(45deg, #90218C, #009890); }
-  .reveal .slides section.color--grad-green h1 {
-    color: #fff; }
+  background: linear-gradient(45deg, #90218C, #009890);
+}
+.reveal .slides section.color--grad-green h1 {
+  color: #fff;
+}
 
 .reveal .slides section.color--grad-blue {
   background-color: #fff;
   color: #FFFFFF;
-  background: linear-gradient(45deg, #303395, #27F0F0); }
-  .reveal .slides section.color--grad-blue h1 {
-    color: #fff; }
+  background: linear-gradient(45deg, #303395, #27F0F0);
+}
+.reveal .slides section.color--grad-blue h1 {
+  color: #fff;
+}
 
 /*****************************
 * ENDING SLIDE
@@ -408,15 +545,18 @@ All code slide
 .reveal .slides section.end {
   height: 100vh;
   margin: 0;
-  width: 100vw; }
-  .reveal .slides section.end .content {
-    margin-top: auto;
-    text-align: center;
-    font-size: 140%; }
+  width: 100vw;
+}
+.reveal .slides section.end .content {
+  margin-top: auto;
+  text-align: center;
+  font-size: 140%;
+}
 
 .reveal .slides section.end .logo-wrapper {
   display: flex;
-  height: 100%; }
+  height: 100%;
+}
 
 .reveal .slides section.end .logo {
   background-image: url("../assets/personal/Purple.png");
@@ -426,7 +566,16 @@ All code slide
   margin: auto;
   min-height: 200px;
   min-width: 200px;
-  width: 33%; }
+  width: 33%;
+}
+
+/* End slide I just tend to have an empty slide
+with my Twitter handle  */
+#end .content {
+  margin-top: auto;
+  text-align: center;
+  font-size: 140%;
+}
 
 /*********************************************
  * Black box slide
@@ -438,29 +587,31 @@ black box with white text (ideal for presentation sections) */
   background-image: url(../assets/code.jpg);
   background-size: cover;
   background-position: center center;
-  /* floating dark box */ }
-  .dark_box aside {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    font-size: 2em;
-    padding: 5vmin;
-    width: auto;
-    border-radius: 10px;
-    top: 50%;
-    display: block;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    font-size: 1.5em;
-    text-align: center; }
-    .dark_box aside h2 {
-      font-weight: bold;
-      font-size: 3.5rem;
-      display: block;
-      width: auto;
-      text-align: center;
-      color: #bbc3cc !important; }
+  /* floating dark box */
+}
+.dark_box aside {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 2em;
+  padding: 5vmin;
+  width: auto;
+  border-radius: 10px;
+  display: block;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+  text-align: center;
+}
+.dark_box aside h2 {
+  font-weight: bold;
+  font-size: 3.5rem;
+  display: block;
+  width: auto;
+  text-align: center;
+  color: #bbc3cc !important;
+}
 
 /*********************************************
  * About presenter
@@ -471,124 +622,187 @@ has a background image and a box with the details */
 #about {
   background-image: url("../assets/code2.jpg");
   background-size: cover;
-  background-position: center center; }
-  #about a {
-    color: #2A2A49; }
-  #about aside {
-    background-color: rgba(171, 177, 186, 0.562);
-    border-radius: 10px;
-    color: #000;
-    float: left;
-    font-size: 1.5em;
-    padding: 5vmin; }
-    #about aside hr {
-      margin: 2.5vmin 0;
-      border: solid;
-      border-width: 2px 0 0 0; }
-    #about aside ul {
-      display: block;
-      font-size: inherit;
-      list-style: none;
-      margin: 2.5vmin 0 0;
-      width: auto; }
-  #about .projects {
-    text-align: left; }
-  #about .accounts {
-    display: grid;
-    justify-content: center; }
-    #about .accounts a {
-      display: flex;
-      align-items: baseline; }
+  background-position: center center;
+}
+#about a {
+  color: #2A2A49;
+}
+#about aside {
+  background-color: rgba(171, 177, 186, 0.562);
+  border-radius: 10px;
+  color: #000;
+  float: left;
+  padding: 3vmin;
+}
+#about aside hr {
+  margin: 2vmin 0;
+  border: solid;
+  border-width: 2px 0 0 0;
+}
+.theme-streams #about aside hr {
+  color: #7760a9;
+}
+.theme-lines #about aside hr {
+  color: #5a028e;
+}
+.theme-seacalm #about aside hr {
+  color: #3d7eb1;
+}
+.theme-goldilocks #about aside hr {
+  color: #3d7eb1;
+}
+.theme-duotone #about aside hr {
+  color: #9591cb;
+}
+.theme-jewels #about aside hr {
+  color: #9591cb;
+}
+.theme-soda #about aside hr {
+  color: #324ea7;
+}
+#about aside ul {
+  display: block;
+  font-size: inherit;
+  list-style: none;
+  margin: 2.5vmin 0 0;
+  width: auto;
+}
+#about .projects {
+  text-align: left;
+}
+#about .accounts {
+  display: grid;
+  justify-content: center;
+}
+#about .accounts a {
+  display: flex;
+  align-items: baseline;
+}
 
 .social_icon {
-  padding-right: 10px; }
-  .theme-streams .social_icon {
-    color: #5F4B8B; }
-  .theme-lines .social_icon {
-    color: #3A015C; }
-  .theme-seacalm .social_icon {
-    color: #30638B; }
-  .theme-goldilocks .social_icon {
-    color: #30638B; }
-  .theme-duotone .social_icon {
-    color: #CC144B; }
-  .theme-jewels .social_icon {
-    color: #4A235D; }
-  .theme-soda .social_icon {
-    color: #263c80; }
-
+  padding-right: 10px;
+}
+.theme-streams .social_icon {
+  color: #5F4B8B;
+}
+.theme-lines .social_icon {
+  color: #3A015C;
+}
+.theme-seacalm .social_icon {
+  color: #30638B;
+}
+.theme-goldilocks .social_icon {
+  color: #30638B;
+}
+.theme-duotone .social_icon {
+  color: #CC144B;
+}
+.theme-jewels .social_icon {
+  color: #4A235D;
+}
+.theme-soda .social_icon {
+  color: #263c80;
+}
 /*********************************************
  * GLOBAL STYLES- go over the reveal.js 
  *********************************************/
 .reveal {
   font-size: inherit;
   font-weight: normal;
-  color: #2A2A49; }
-  .theme-poppins-font .reveal {
-    font-family: Poppins, Helvetica, sans-serif; }
-  .theme-cunia-font .reveal {
-    font-family: Coves, Helvetica, sans-serif; }
-  .theme-cunia2-font .reveal {
-    font-family: Poppins, Helvetica, sans-serif; }
-  .theme-plex-font .reveal {
-    font-family: IBMPlexSans, sans-serif; }
-  .theme-dosis-font .reveal {
-    font-family: Didact Gothic, sans-serif; }
-  .theme-leafy-font .reveal {
-    font-family: Dosis, sans-serif; }
-  .theme-allmono-font .reveal {
-    font-family: Space Mono, monospace; }
-  .theme-soda-font .reveal {
-    font-family: Nunito, sans-serif; }
-  .theme-klasik-font .reveal {
-    font-family: Nunito, sans-serif; }
-  .theme-klasik-rough-font .reveal {
-    font-family: Nunito, sans-serif; }
-  .theme-nox-font .reveal {
-    font-family: Poppins, Helvetica, sans-serif; }
+  color: #2A2A49;
+}
+.theme-poppins-font .reveal {
+  font-family: Poppins, Helvetica, sans-serif;
+}
+.theme-cunia-font .reveal {
+  font-family: Coves, Helvetica, sans-serif;
+}
+.theme-cunia2-font .reveal {
+  font-family: Poppins, Helvetica, sans-serif;
+}
+.theme-plex-font .reveal {
+  font-family: IBMPlexSans, sans-serif;
+}
+.theme-dosis-font .reveal {
+  font-family: Didact Gothic, sans-serif;
+}
+.theme-leafy-font .reveal {
+  font-family: Dosis, sans-serif;
+}
+.theme-allmono-font .reveal {
+  font-family: Space Mono, monospace;
+}
+.theme-soda-font .reveal {
+  font-family: Nunito, sans-serif;
+}
+.theme-klasik-font .reveal {
+  font-family: Nunito, sans-serif;
+}
+.theme-klasik-rough-font .reveal {
+  font-family: Nunito, sans-serif;
+}
+.theme-nox-font .reveal {
+  font-family: Poppins, Helvetica, sans-serif;
+}
 
 ::selection {
   color: #151515;
-  text-shadow: none; }
-  .theme-streams ::selection {
-    background: #939abc; }
-  .theme-lines ::selection {
-    background: #6fefde; }
-  .theme-seacalm ::selection {
-    background: #f2c377; }
-  .theme-goldilocks ::selection {
-    background: #f2c377; }
-  .theme-duotone ::selection {
-    background: #ea2963; }
-  .theme-jewels ::selection {
-    background: #ea2963; }
-  .theme-soda ::selection {
-    background: #1490e8; }
-
+  text-shadow: none;
+}
+.theme-streams ::selection {
+  background: #939abc;
+}
+.theme-lines ::selection {
+  background: #6fefde;
+}
+.theme-seacalm ::selection {
+  background: #f2c377;
+}
+.theme-goldilocks ::selection {
+  background: #f2c377;
+}
+.theme-duotone ::selection {
+  background: #ea2963;
+}
+.theme-jewels ::selection {
+  background: #ea2963;
+}
+.theme-soda ::selection {
+  background: #1490e8;
+}
 ::-moz-selection {
   color: #fff;
-  text-shadow: none; }
-  .theme-streams ::-moz-selection {
-    background: #3388A6; }
-  .theme-lines ::-moz-selection {
-    background: #ff206e; }
-  .theme-seacalm ::-moz-selection {
-    background: #00798c; }
-  .theme-goldilocks ::-moz-selection {
-    background: #8D4593; }
-  .theme-duotone ::-moz-selection {
-    background: #A1AAE2; }
-  .theme-jewels ::-moz-selection {
-    background: #FF0368; }
-  .theme-soda ::-moz-selection {
-    background: #95d5d4; }
-
+  text-shadow: none;
+}
+.theme-streams ::-moz-selection {
+  background: #3388A6;
+}
+.theme-lines ::-moz-selection {
+  background: #ff206e;
+}
+.theme-seacalm ::-moz-selection {
+  background: #00798c;
+}
+.theme-goldilocks ::-moz-selection {
+  background: #8D4593;
+}
+.theme-duotone ::-moz-selection {
+  background: #A1AAE2;
+}
+.theme-jewels ::-moz-selection {
+  background: #FF0368;
+}
+.theme-soda ::-moz-selection {
+  background: #95d5d4;
+}
 .reveal .slides {
-  text-align: left; }
+  text-align: left;
+}
 
 .reveal .slides section {
   box-sizing: border-box;
-  padding: 0; }
+  padding: 0;
+}
 
 /*********************************************
 * HEADERS
@@ -604,60 +818,224 @@ has a background image and a box with the details */
 .reveal big-font {
   margin-bottom: 2.5vmin;
   color: inherit;
-  line-height: 1.2; }
+  line-height: 1.2;
+}
 
-.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6, .reveal mega-font, .reveal huge-font, .reveal big-font {
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6,
+.reveal mega-font,
+.reveal huge-font,
+.reveal big-font {
   margin: 0 0 20px 0;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: normal;
   text-transform: none;
   text-shadow: none;
-  word-wrap: break-word; }
-  .theme-streams .reveal h1,
-  .theme-streams .reveal h2,
-  .theme-streams .reveal h3,
-  .theme-streams .reveal h4,
-  .theme-streams .reveal h5,
-  .theme-streams .reveal h6,
-  .theme-streams .reveal mega-font,
-  .theme-streams .reveal huge-font,
-  .theme-streams .reveal big-font {
-    color: #5F4B8B; }
-  .theme-lines .reveal h1, .theme-lines .reveal h2, .theme-lines .reveal h3, .theme-lines .reveal h4, .theme-lines .reveal h5, .theme-lines .reveal h6, .theme-lines .reveal mega-font, .theme-lines .reveal huge-font, .theme-lines .reveal big-font {
-    color: #3A015C; }
-  .theme-seacalm .reveal h1, .theme-seacalm .reveal h2, .theme-seacalm .reveal h3, .theme-seacalm .reveal h4, .theme-seacalm .reveal h5, .theme-seacalm .reveal h6, .theme-seacalm .reveal mega-font, .theme-seacalm .reveal huge-font, .theme-seacalm .reveal big-font {
-    color: #30638B; }
-  .theme-goldilocks .reveal h1, .theme-goldilocks .reveal h2, .theme-goldilocks .reveal h3, .theme-goldilocks .reveal h4, .theme-goldilocks .reveal h5, .theme-goldilocks .reveal h6, .theme-goldilocks .reveal mega-font, .theme-goldilocks .reveal huge-font, .theme-goldilocks .reveal big-font {
-    color: #30638B; }
-  .theme-duotone .reveal h1, .theme-duotone .reveal h2, .theme-duotone .reveal h3, .theme-duotone .reveal h4, .theme-duotone .reveal h5, .theme-duotone .reveal h6, .theme-duotone .reveal mega-font, .theme-duotone .reveal huge-font, .theme-duotone .reveal big-font {
-    color: #CC144B; }
-  .theme-jewels .reveal h1, .theme-jewels .reveal h2, .theme-jewels .reveal h3, .theme-jewels .reveal h4, .theme-jewels .reveal h5, .theme-jewels .reveal h6, .theme-jewels .reveal mega-font, .theme-jewels .reveal huge-font, .theme-jewels .reveal big-font {
-    color: #4A235D; }
-  .theme-soda .reveal h1, .theme-soda .reveal h2, .theme-soda .reveal h3, .theme-soda .reveal h4, .theme-soda .reveal h5, .theme-soda .reveal h6, .theme-soda .reveal mega-font, .theme-soda .reveal huge-font, .theme-soda .reveal big-font {
-    color: #263c80; }
-  .theme-poppins-font .reveal h1, .theme-poppins-font .reveal h2, .theme-poppins-font .reveal h3, .theme-poppins-font .reveal h4, .theme-poppins-font .reveal h5, .theme-poppins-font .reveal h6, .theme-poppins-font .reveal mega-font, .theme-poppins-font .reveal huge-font, .theme-poppins-font .reveal big-font {
-    font-family: IBMPlexSerif, monospace; }
-  .theme-cunia-font .reveal h1, .theme-cunia-font .reveal h2, .theme-cunia-font .reveal h3, .theme-cunia-font .reveal h4, .theme-cunia-font .reveal h5, .theme-cunia-font .reveal h6, .theme-cunia-font .reveal mega-font, .theme-cunia-font .reveal huge-font, .theme-cunia-font .reveal big-font {
-    font-family: Cunia, sans-serif; }
-  .theme-cunia2-font .reveal h1, .theme-cunia2-font .reveal h2, .theme-cunia2-font .reveal h3, .theme-cunia2-font .reveal h4, .theme-cunia2-font .reveal h5, .theme-cunia2-font .reveal h6, .theme-cunia2-font .reveal mega-font, .theme-cunia2-font .reveal huge-font, .theme-cunia2-font .reveal big-font {
-    font-family: Cunia, sans-serif; }
-  .theme-plex-font .reveal h1, .theme-plex-font .reveal h2, .theme-plex-font .reveal h3, .theme-plex-font .reveal h4, .theme-plex-font .reveal h5, .theme-plex-font .reveal h6, .theme-plex-font .reveal mega-font, .theme-plex-font .reveal huge-font, .theme-plex-font .reveal big-font {
-    font-family: IBMPlexSerif, monospace; }
-  .theme-dosis-font .reveal h1, .theme-dosis-font .reveal h2, .theme-dosis-font .reveal h3, .theme-dosis-font .reveal h4, .theme-dosis-font .reveal h5, .theme-dosis-font .reveal h6, .theme-dosis-font .reveal mega-font, .theme-dosis-font .reveal huge-font, .theme-dosis-font .reveal big-font {
-    font-family: Dosis, sans-serif; }
-  .theme-leafy-font .reveal h1, .theme-leafy-font .reveal h2, .theme-leafy-font .reveal h3, .theme-leafy-font .reveal h4, .theme-leafy-font .reveal h5, .theme-leafy-font .reveal h6, .theme-leafy-font .reveal mega-font, .theme-leafy-font .reveal huge-font, .theme-leafy-font .reveal big-font {
-    font-family: Leafy, cursive; }
-  .theme-allmono-font .reveal h1, .theme-allmono-font .reveal h2, .theme-allmono-font .reveal h3, .theme-allmono-font .reveal h4, .theme-allmono-font .reveal h5, .theme-allmono-font .reveal h6, .theme-allmono-font .reveal mega-font, .theme-allmono-font .reveal huge-font, .theme-allmono-font .reveal big-font {
-    font-family: Muli, sans-serif; }
-  .theme-soda-font .reveal h1, .theme-soda-font .reveal h2, .theme-soda-font .reveal h3, .theme-soda-font .reveal h4, .theme-soda-font .reveal h5, .theme-soda-font .reveal h6, .theme-soda-font .reveal mega-font, .theme-soda-font .reveal huge-font, .theme-soda-font .reveal big-font {
-    font-family: Open Sans, sans-serif; }
-  .theme-klasik-font .reveal h1, .theme-klasik-font .reveal h2, .theme-klasik-font .reveal h3, .theme-klasik-font .reveal h4, .theme-klasik-font .reveal h5, .theme-klasik-font .reveal h6, .theme-klasik-font .reveal mega-font, .theme-klasik-font .reveal huge-font, .theme-klasik-font .reveal big-font {
-    font-family: Klasik, sans-serif; }
-  .theme-klasik-rough-font .reveal h1, .theme-klasik-rough-font .reveal h2, .theme-klasik-rough-font .reveal h3, .theme-klasik-rough-font .reveal h4, .theme-klasik-rough-font .reveal h5, .theme-klasik-rough-font .reveal h6, .theme-klasik-rough-font .reveal mega-font, .theme-klasik-rough-font .reveal huge-font, .theme-klasik-rough-font .reveal big-font {
-    font-family: Klasik-Rough, sans-serif; }
-  .theme-nox-font .reveal h1, .theme-nox-font .reveal h2, .theme-nox-font .reveal h3, .theme-nox-font .reveal h4, .theme-nox-font .reveal h5, .theme-nox-font .reveal h6, .theme-nox-font .reveal mega-font, .theme-nox-font .reveal huge-font, .theme-nox-font .reveal big-font {
-    font-family: Annie Use Your Telescope, cursive; }
+  word-wrap: break-word;
+}
+.theme-streams .reveal h1,
+.theme-streams .reveal h2,
+.theme-streams .reveal h3,
+.theme-streams .reveal h4,
+.theme-streams .reveal h5,
+.theme-streams .reveal h6,
+.theme-streams .reveal mega-font,
+.theme-streams .reveal huge-font,
+.theme-streams .reveal big-font {
+  color: #5F4B8B;
+}
+.theme-lines .reveal h1,
+.theme-lines .reveal h2,
+.theme-lines .reveal h3,
+.theme-lines .reveal h4,
+.theme-lines .reveal h5,
+.theme-lines .reveal h6,
+.theme-lines .reveal mega-font,
+.theme-lines .reveal huge-font,
+.theme-lines .reveal big-font {
+  color: #3A015C;
+}
+.theme-seacalm .reveal h1,
+.theme-seacalm .reveal h2,
+.theme-seacalm .reveal h3,
+.theme-seacalm .reveal h4,
+.theme-seacalm .reveal h5,
+.theme-seacalm .reveal h6,
+.theme-seacalm .reveal mega-font,
+.theme-seacalm .reveal huge-font,
+.theme-seacalm .reveal big-font {
+  color: #30638B;
+}
+.theme-goldilocks .reveal h1,
+.theme-goldilocks .reveal h2,
+.theme-goldilocks .reveal h3,
+.theme-goldilocks .reveal h4,
+.theme-goldilocks .reveal h5,
+.theme-goldilocks .reveal h6,
+.theme-goldilocks .reveal mega-font,
+.theme-goldilocks .reveal huge-font,
+.theme-goldilocks .reveal big-font {
+  color: #30638B;
+}
+.theme-duotone .reveal h1,
+.theme-duotone .reveal h2,
+.theme-duotone .reveal h3,
+.theme-duotone .reveal h4,
+.theme-duotone .reveal h5,
+.theme-duotone .reveal h6,
+.theme-duotone .reveal mega-font,
+.theme-duotone .reveal huge-font,
+.theme-duotone .reveal big-font {
+  color: #CC144B;
+}
+.theme-jewels .reveal h1,
+.theme-jewels .reveal h2,
+.theme-jewels .reveal h3,
+.theme-jewels .reveal h4,
+.theme-jewels .reveal h5,
+.theme-jewels .reveal h6,
+.theme-jewels .reveal mega-font,
+.theme-jewels .reveal huge-font,
+.theme-jewels .reveal big-font {
+  color: #4A235D;
+}
+.theme-soda .reveal h1,
+.theme-soda .reveal h2,
+.theme-soda .reveal h3,
+.theme-soda .reveal h4,
+.theme-soda .reveal h5,
+.theme-soda .reveal h6,
+.theme-soda .reveal mega-font,
+.theme-soda .reveal huge-font,
+.theme-soda .reveal big-font {
+  color: #263c80;
+}
+.theme-poppins-font .reveal h1,
+.theme-poppins-font .reveal h2,
+.theme-poppins-font .reveal h3,
+.theme-poppins-font .reveal h4,
+.theme-poppins-font .reveal h5,
+.theme-poppins-font .reveal h6,
+.theme-poppins-font .reveal mega-font,
+.theme-poppins-font .reveal huge-font,
+.theme-poppins-font .reveal big-font {
+  font-family: IBMPlexSerif, monospace;
+}
+.theme-cunia-font .reveal h1,
+.theme-cunia-font .reveal h2,
+.theme-cunia-font .reveal h3,
+.theme-cunia-font .reveal h4,
+.theme-cunia-font .reveal h5,
+.theme-cunia-font .reveal h6,
+.theme-cunia-font .reveal mega-font,
+.theme-cunia-font .reveal huge-font,
+.theme-cunia-font .reveal big-font {
+  font-family: Cunia, sans-serif;
+}
+.theme-cunia2-font .reveal h1,
+.theme-cunia2-font .reveal h2,
+.theme-cunia2-font .reveal h3,
+.theme-cunia2-font .reveal h4,
+.theme-cunia2-font .reveal h5,
+.theme-cunia2-font .reveal h6,
+.theme-cunia2-font .reveal mega-font,
+.theme-cunia2-font .reveal huge-font,
+.theme-cunia2-font .reveal big-font {
+  font-family: Cunia, sans-serif;
+}
+.theme-plex-font .reveal h1,
+.theme-plex-font .reveal h2,
+.theme-plex-font .reveal h3,
+.theme-plex-font .reveal h4,
+.theme-plex-font .reveal h5,
+.theme-plex-font .reveal h6,
+.theme-plex-font .reveal mega-font,
+.theme-plex-font .reveal huge-font,
+.theme-plex-font .reveal big-font {
+  font-family: IBMPlexSerif, monospace;
+}
+.theme-dosis-font .reveal h1,
+.theme-dosis-font .reveal h2,
+.theme-dosis-font .reveal h3,
+.theme-dosis-font .reveal h4,
+.theme-dosis-font .reveal h5,
+.theme-dosis-font .reveal h6,
+.theme-dosis-font .reveal mega-font,
+.theme-dosis-font .reveal huge-font,
+.theme-dosis-font .reveal big-font {
+  font-family: Dosis, sans-serif;
+}
+.theme-leafy-font .reveal h1,
+.theme-leafy-font .reveal h2,
+.theme-leafy-font .reveal h3,
+.theme-leafy-font .reveal h4,
+.theme-leafy-font .reveal h5,
+.theme-leafy-font .reveal h6,
+.theme-leafy-font .reveal mega-font,
+.theme-leafy-font .reveal huge-font,
+.theme-leafy-font .reveal big-font {
+  font-family: Leafy, cursive;
+}
+.theme-allmono-font .reveal h1,
+.theme-allmono-font .reveal h2,
+.theme-allmono-font .reveal h3,
+.theme-allmono-font .reveal h4,
+.theme-allmono-font .reveal h5,
+.theme-allmono-font .reveal h6,
+.theme-allmono-font .reveal mega-font,
+.theme-allmono-font .reveal huge-font,
+.theme-allmono-font .reveal big-font {
+  font-family: Muli, sans-serif;
+}
+.theme-soda-font .reveal h1,
+.theme-soda-font .reveal h2,
+.theme-soda-font .reveal h3,
+.theme-soda-font .reveal h4,
+.theme-soda-font .reveal h5,
+.theme-soda-font .reveal h6,
+.theme-soda-font .reveal mega-font,
+.theme-soda-font .reveal huge-font,
+.theme-soda-font .reveal big-font {
+  font-family: Open Sans, sans-serif;
+}
+.theme-klasik-font .reveal h1,
+.theme-klasik-font .reveal h2,
+.theme-klasik-font .reveal h3,
+.theme-klasik-font .reveal h4,
+.theme-klasik-font .reveal h5,
+.theme-klasik-font .reveal h6,
+.theme-klasik-font .reveal mega-font,
+.theme-klasik-font .reveal huge-font,
+.theme-klasik-font .reveal big-font {
+  font-family: Klasik, sans-serif;
+}
+.theme-klasik-rough-font .reveal h1,
+.theme-klasik-rough-font .reveal h2,
+.theme-klasik-rough-font .reveal h3,
+.theme-klasik-rough-font .reveal h4,
+.theme-klasik-rough-font .reveal h5,
+.theme-klasik-rough-font .reveal h6,
+.theme-klasik-rough-font .reveal mega-font,
+.theme-klasik-rough-font .reveal huge-font,
+.theme-klasik-rough-font .reveal big-font {
+  font-family: Klasik-Rough, sans-serif;
+}
+.theme-nox-font .reveal h1,
+.theme-nox-font .reveal h2,
+.theme-nox-font .reveal h3,
+.theme-nox-font .reveal h4,
+.theme-nox-font .reveal h5,
+.theme-nox-font .reveal h6,
+.theme-nox-font .reveal mega-font,
+.theme-nox-font .reveal huge-font,
+.theme-nox-font .reveal big-font {
+  font-family: Annie Use Your Telescope, cursive;
+}
 
 /*********************************************
 * IMAGES
@@ -666,14 +1044,16 @@ has a background image and a box with the details */
   background: none;
   border: none;
   box-shadow: none;
-  margin: 0; }
+  margin: 0;
+}
 
 .reveal section img.right {
   position: fixed;
   right: 10%;
   top: 50%;
   padding: 5px;
-  z-index: 1000; }
+  z-index: 1000;
+}
 
 figure.display {
   margin: auto;
@@ -682,681 +1062,1014 @@ figure.display {
   width: 100% vw;
   height: auto;
   display: block;
-  padding: 10px; }
-  figure.display figcaption {
-    padding: 5px;
-    font-size: 0.85rem;
-    color: #121212;
-    float: left;
-    border: solid #EEEDEF;
-    border-width: 2px 0 0 0;
-    width: 100%; }
+  padding: 10px;
+}
+figure.display figcaption {
+  padding: 5px;
+  font-size: 0.85rem;
+  color: #121212;
+  float: left;
+  border: solid #EEEDEF;
+  border-width: 2px 0 0 0;
+  width: 100%;
+}
 
 div.images {
   text-align: center;
   margin: auto;
-  padding: 10px; }
-  div.images img {
-    padding: 10px;
-    display: block;
-    border: 0px solid #303030;
-    max-width: 100%;
-    max-height: 100vmin;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto; }
+  padding: 10px;
+}
+div.images img {
+  padding: 10px;
+  display: block;
+  border: 0px solid #303030;
+  max-width: 100%;
+  max-height: 100vmin;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .img-fill img {
   object-fit: fill;
   height: 100%;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .img-contain img {
   object-fit: contain;
   height: 100%;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .img-cover img {
   object-fit: cover;
   height: 100%;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .img-none img {
   object-fit: none;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+}
 
 /*********************************************
  * LINKS
  *********************************************/
 .reveal a {
-  -webkit-transition: color .15s ease;
-  -moz-transition: color .15s ease;
-  transition: color .15s ease; }
-  .theme-streams .reveal a {
-    text-decoration-color: #3388A6;
-    -webkit-text-decoration-color: #3388A6;
-    color: #3388A6; }
-  .theme-lines .reveal a {
-    text-decoration-color: #ff206e;
-    -webkit-text-decoration-color: #ff206e;
-    color: #ff206e; }
-  .theme-seacalm .reveal a {
-    text-decoration-color: #00798c;
-    -webkit-text-decoration-color: #00798c;
-    color: #00798c; }
-  .theme-goldilocks .reveal a {
-    text-decoration-color: #8D4593;
-    -webkit-text-decoration-color: #8D4593;
-    color: #8D4593; }
-  .theme-duotone .reveal a {
-    text-decoration-color: #A1AAE2;
-    -webkit-text-decoration-color: #A1AAE2;
-    color: #A1AAE2; }
-  .theme-jewels .reveal a {
-    text-decoration-color: #FF0368;
-    -webkit-text-decoration-color: #FF0368;
-    color: #FF0368; }
-  .theme-soda .reveal a {
-    text-decoration-color: #95d5d4;
-    -webkit-text-decoration-color: #95d5d4;
-    color: #95d5d4; }
-  .reveal a:hover {
-    text-shadow: none;
-    border: none; }
-    .theme-streams .reveal a:hover {
-      color: #3388A6;
-      border-bottom: 2px solid #3388A6;
-      /* I prefer a thicker line than the underline */ }
-    .theme-lines .reveal a:hover {
-      color: #ff206e;
-      border-bottom: 2px solid #ff206e;
-      /* I prefer a thicker line than the underline */ }
-    .theme-seacalm .reveal a:hover {
-      color: #00798c;
-      border-bottom: 2px solid #00798c;
-      /* I prefer a thicker line than the underline */ }
-    .theme-goldilocks .reveal a:hover {
-      color: #8D4593;
-      border-bottom: 2px solid #8D4593;
-      /* I prefer a thicker line than the underline */ }
-    .theme-duotone .reveal a:hover {
-      color: #A1AAE2;
-      border-bottom: 2px solid #A1AAE2;
-      /* I prefer a thicker line than the underline */ }
-    .theme-jewels .reveal a:hover {
-      color: #FF0368;
-      border-bottom: 2px solid #FF0368;
-      /* I prefer a thicker line than the underline */ }
-    .theme-soda .reveal a:hover {
-      color: #95d5d4;
-      border-bottom: 2px solid #95d5d4;
-      /* I prefer a thicker line than the underline */ }
-    .theme-poppins-font .reveal a:hover {
-      border-bottom: 2px solid;
-      /* I prefer a thicker line than the underline */ }
-    .theme-cunia-font .reveal a:hover {
-      border-bottom: 2px solid;
-      /* I prefer a thicker line than the underline */ }
-    .theme-cunia2-font .reveal a:hover {
-      border-bottom: 2px solid;
-      /* I prefer a thicker line than the underline */ }
-    .theme-plex-font .reveal a:hover {
-      border-bottom: 2px solid;
-      /* I prefer a thicker line than the underline */ }
-    .theme-dosis-font .reveal a:hover {
-      border-bottom: 2px solid;
-      /* I prefer a thicker line than the underline */ }
-    .theme-leafy-font .reveal a:hover {
-      border-bottom: 2px solid;
-      /* I prefer a thicker line than the underline */ }
-    .theme-allmono-font .reveal a:hover {
-      border-bottom: 2px solid;
-      /* I prefer a thicker line than the underline */ }
-    .theme-soda-font .reveal a:hover {
-      border-bottom: 2px solid;
-      /* I prefer a thicker line than the underline */ }
-    .theme-klasik-font .reveal a:hover {
-      border-bottom: 2px solid;
-      /* I prefer a thicker line than the underline */ }
-    .theme-klasik-rough-font .reveal a:hover {
-      border-bottom: 2px solid;
-      /* I prefer a thicker line than the underline */ }
-    .theme-nox-font .reveal a:hover {
-      border-bottom: 2px solid;
-      /* I prefer a thicker line than the underline */ }
+  -webkit-transition: color 0.15s ease;
+  -moz-transition: color 0.15s ease;
+  transition: color 0.15s ease;
+}
+.theme-streams .reveal a {
+  text-decoration-color: #3388A6;
+  -webkit-text-decoration-color: #3388A6;
+  color: #3388A6;
+}
+.theme-lines .reveal a {
+  text-decoration-color: #ff206e;
+  -webkit-text-decoration-color: #ff206e;
+  color: #ff206e;
+}
+.theme-seacalm .reveal a {
+  text-decoration-color: #00798c;
+  -webkit-text-decoration-color: #00798c;
+  color: #00798c;
+}
+.theme-goldilocks .reveal a {
+  text-decoration-color: #8D4593;
+  -webkit-text-decoration-color: #8D4593;
+  color: #8D4593;
+}
+.theme-duotone .reveal a {
+  text-decoration-color: #A1AAE2;
+  -webkit-text-decoration-color: #A1AAE2;
+  color: #A1AAE2;
+}
+.theme-jewels .reveal a {
+  text-decoration-color: #FF0368;
+  -webkit-text-decoration-color: #FF0368;
+  color: #FF0368;
+}
+.theme-soda .reveal a {
+  text-decoration-color: #95d5d4;
+  -webkit-text-decoration-color: #95d5d4;
+  color: #95d5d4;
+}
+.reveal a:hover {
+  text-shadow: none;
+  border: none;
+}
+.theme-streams .reveal a:hover {
+  color: #3388A6;
+  border-bottom: 2px solid #3388A6;
+  /* I prefer a thicker line than the underline */
+}
+.theme-lines .reveal a:hover {
+  color: #ff206e;
+  border-bottom: 2px solid #ff206e;
+  /* I prefer a thicker line than the underline */
+}
+.theme-seacalm .reveal a:hover {
+  color: #00798c;
+  border-bottom: 2px solid #00798c;
+  /* I prefer a thicker line than the underline */
+}
+.theme-goldilocks .reveal a:hover {
+  color: #8D4593;
+  border-bottom: 2px solid #8D4593;
+  /* I prefer a thicker line than the underline */
+}
+.theme-duotone .reveal a:hover {
+  color: #A1AAE2;
+  border-bottom: 2px solid #A1AAE2;
+  /* I prefer a thicker line than the underline */
+}
+.theme-jewels .reveal a:hover {
+  color: #FF0368;
+  border-bottom: 2px solid #FF0368;
+  /* I prefer a thicker line than the underline */
+}
+.theme-soda .reveal a:hover {
+  color: #95d5d4;
+  border-bottom: 2px solid #95d5d4;
+  /* I prefer a thicker line than the underline */
+}
+.theme-poppins-font .reveal a:hover {
+  border-bottom: 2px solid;
+  /* I prefer a thicker line than the underline */
+}
+.theme-cunia-font .reveal a:hover {
+  border-bottom: 2px solid;
+  /* I prefer a thicker line than the underline */
+}
+.theme-cunia2-font .reveal a:hover {
+  border-bottom: 2px solid;
+  /* I prefer a thicker line than the underline */
+}
+.theme-plex-font .reveal a:hover {
+  border-bottom: 2px solid;
+  /* I prefer a thicker line than the underline */
+}
+.theme-dosis-font .reveal a:hover {
+  border-bottom: 2px solid;
+  /* I prefer a thicker line than the underline */
+}
+.theme-leafy-font .reveal a:hover {
+  border-bottom: 2px solid;
+  /* I prefer a thicker line than the underline */
+}
+.theme-allmono-font .reveal a:hover {
+  border-bottom: 2px solid;
+  /* I prefer a thicker line than the underline */
+}
+.theme-soda-font .reveal a:hover {
+  border-bottom: 2px solid;
+  /* I prefer a thicker line than the underline */
+}
+.theme-klasik-font .reveal a:hover {
+  border-bottom: 2px solid;
+  /* I prefer a thicker line than the underline */
+}
+.theme-klasik-rough-font .reveal a:hover {
+  border-bottom: 2px solid;
+  /* I prefer a thicker line than the underline */
+}
+.theme-nox-font .reveal a:hover {
+  border-bottom: 2px solid;
+  /* I prefer a thicker line than the underline */
+}
 
 .reveal .roll span:after {
-  color: #fff; }
-  .theme-streams .reveal .roll span:after {
-    background: #3388A6; }
-  .theme-lines .reveal .roll span:after {
-    background: #ff206e; }
-  .theme-seacalm .reveal .roll span:after {
-    background: #00798c; }
-  .theme-goldilocks .reveal .roll span:after {
-    background: #8D4593; }
-  .theme-duotone .reveal .roll span:after {
-    background: #A1AAE2; }
-  .theme-jewels .reveal .roll span:after {
-    background: #FF0368; }
-  .theme-soda .reveal .roll span:after {
-    background: #95d5d4; }
-
+  color: #fff;
+}
+.theme-streams .reveal .roll span:after {
+  background: #3388A6;
+}
+.theme-lines .reveal .roll span:after {
+  background: #ff206e;
+}
+.theme-seacalm .reveal .roll span:after {
+  background: #00798c;
+}
+.theme-goldilocks .reveal .roll span:after {
+  background: #8D4593;
+}
+.theme-duotone .reveal .roll span:after {
+  background: #A1AAE2;
+}
+.theme-jewels .reveal .roll span:after {
+  background: #FF0368;
+}
+.theme-soda .reveal .roll span:after {
+  background: #95d5d4;
+}
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
 .theme-streams .reveal .controls {
-  color: #3388A6; }
+  color: #3388A6;
+}
 .theme-lines .reveal .controls {
-  color: #ff206e; }
+  color: #ff206e;
+}
 .theme-seacalm .reveal .controls {
-  color: #00798c; }
+  color: #00798c;
+}
 .theme-goldilocks .reveal .controls {
-  color: #8D4593; }
+  color: #8D4593;
+}
 .theme-duotone .reveal .controls {
-  color: #A1AAE2; }
+  color: #A1AAE2;
+}
 .theme-jewels .reveal .controls {
-  color: #FF0368; }
+  color: #FF0368;
+}
 .theme-soda .reveal .controls {
-  color: #95d5d4; }
-
+  color: #95d5d4;
+}
 .reveal .controls {
   right: 4vmin;
-  bottom: 4vmin; }
+  bottom: 4vmin;
+}
 
 @media (max-width: 768px) {
   .reveal .controls {
     right: 2vmin;
-    bottom: 2vmin; } }
+    bottom: 2vmin;
+  }
+}
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
-  background: rgba(48, 40, 63, 0.2); }
-  .theme-streams .reveal .progress {
-    color: #3388A6; }
-  .theme-lines .reveal .progress {
-    color: #ff206e; }
-  .theme-seacalm .reveal .progress {
-    color: #00798c; }
-  .theme-goldilocks .reveal .progress {
-    color: #8D4593; }
-  .theme-duotone .reveal .progress {
-    color: #A1AAE2; }
-  .theme-jewels .reveal .progress {
-    color: #FF0368; }
-  .theme-soda .reveal .progress {
-    color: #95d5d4; }
-
+  background: rgba(48, 40, 63, 0.2);
+}
+.theme-streams .reveal .progress {
+  color: #3388A6;
+}
+.theme-lines .reveal .progress {
+  color: #ff206e;
+}
+.theme-seacalm .reveal .progress {
+  color: #00798c;
+}
+.theme-goldilocks .reveal .progress {
+  color: #8D4593;
+}
+.theme-duotone .reveal .progress {
+  color: #A1AAE2;
+}
+.theme-jewels .reveal .progress {
+  color: #FF0368;
+}
+.theme-soda .reveal .progress {
+  color: #95d5d4;
+}
 .theme-streams .reveal .progress span {
-  background: #747CA8; }
+  background: #747CA8;
+}
 .theme-lines .reveal .progress span {
-  background: #00BCD4; }
+  background: #00BCD4;
+}
 .theme-seacalm .reveal .progress span {
-  background: #EDAF49; }
+  background: #EDAF49;
+}
 .theme-goldilocks .reveal .progress span {
-  background: #EDAF49; }
+  background: #EDAF49;
+}
 .theme-duotone .reveal .progress span {
-  background: #736FBA; }
+  background: #736FBA;
+}
 .theme-jewels .reveal .progress span {
-  background: #79C9E8; }
+  background: #79C9E8;
+}
 .theme-soda .reveal .progress span {
-  background: #1073b9; }
-
+  background: #1073b9;
+}
 /*********************************************
 * LISTS
 *********************************************/
 /* Custom icon list */
 .reveal ul.icon {
-  list-style-type: none; }
-  .reveal ul.icon li {
-    text-indent: -1.3em;
-    margin-bottom: 0.5em; }
-    .reveal ul.icon li::before {
-      font-family: 'flaticon';
-      content: "\f102";
-      /* maguey */
-      float: left;
-      width: 1.2em;
-      font-size: 1em;
-      padding-right: 0.5em; }
-      .theme-streams .reveal ul.icon li::before {
-        color: #747CA8; }
-      .theme-lines .reveal ul.icon li::before {
-        color: #00BCD4; }
-      .theme-seacalm .reveal ul.icon li::before {
-        color: #EDAF49; }
-      .theme-goldilocks .reveal ul.icon li::before {
-        color: #EDAF49; }
-      .theme-duotone .reveal ul.icon li::before {
-        color: #736FBA; }
-      .theme-jewels .reveal ul.icon li::before {
-        color: #79C9E8; }
-      .theme-soda .reveal ul.icon li::before {
-        color: #1073b9; }
-    .reveal ul.icon li.pinata::before {
-      content: "\f100"; }
-      .theme-streams .reveal ul.icon li.pinata::before {
-        color: #747CA8; }
-      .theme-lines .reveal ul.icon li.pinata::before {
-        color: #00BCD4; }
-      .theme-seacalm .reveal ul.icon li.pinata::before {
-        color: #EDAF49; }
-      .theme-goldilocks .reveal ul.icon li.pinata::before {
-        color: #EDAF49; }
-      .theme-duotone .reveal ul.icon li.pinata::before {
-        color: #736FBA; }
-      .theme-jewels .reveal ul.icon li.pinata::before {
-        color: #79C9E8; }
-      .theme-soda .reveal ul.icon li.pinata::before {
-        color: #1073b9; }
-    .reveal ul.icon li.nopal::before {
-      content: "\f101"; }
-      .theme-streams .reveal ul.icon li.nopal::before {
-        color: #747CA8; }
-      .theme-lines .reveal ul.icon li.nopal::before {
-        color: #00BCD4; }
-      .theme-seacalm .reveal ul.icon li.nopal::before {
-        color: #EDAF49; }
-      .theme-goldilocks .reveal ul.icon li.nopal::before {
-        color: #EDAF49; }
-      .theme-duotone .reveal ul.icon li.nopal::before {
-        color: #736FBA; }
-      .theme-jewels .reveal ul.icon li.nopal::before {
-        color: #79C9E8; }
-      .theme-soda .reveal ul.icon li.nopal::before {
-        color: #1073b9; }
-    .reveal ul.icon li.cactus::before {
-      content: "\f103"; }
-      .theme-streams .reveal ul.icon li.cactus::before {
-        color: #747CA8; }
-      .theme-lines .reveal ul.icon li.cactus::before {
-        color: #00BCD4; }
-      .theme-seacalm .reveal ul.icon li.cactus::before {
-        color: #EDAF49; }
-      .theme-goldilocks .reveal ul.icon li.cactus::before {
-        color: #EDAF49; }
-      .theme-duotone .reveal ul.icon li.cactus::before {
-        color: #736FBA; }
-      .theme-jewels .reveal ul.icon li.cactus::before {
-        color: #79C9E8; }
-      .theme-soda .reveal ul.icon li.cactus::before {
-        color: #1073b9; }
-    .reveal ul.icon li.skull::before {
-      content: "\f104"; }
-      .theme-streams .reveal ul.icon li.skull::before {
-        color: #747CA8; }
-      .theme-lines .reveal ul.icon li.skull::before {
-        color: #00BCD4; }
-      .theme-seacalm .reveal ul.icon li.skull::before {
-        color: #EDAF49; }
-      .theme-goldilocks .reveal ul.icon li.skull::before {
-        color: #EDAF49; }
-      .theme-duotone .reveal ul.icon li.skull::before {
-        color: #736FBA; }
-      .theme-jewels .reveal ul.icon li.skull::before {
-        color: #79C9E8; }
-      .theme-soda .reveal ul.icon li.skull::before {
-        color: #1073b9; }
-
+  list-style-type: none;
+}
+.reveal ul.icon li {
+  text-indent: -1.3em;
+  margin-bottom: 0.5em;
+}
+.reveal ul.icon li::before {
+  font-family: "flaticon";
+  content: "";
+  /* maguey */
+  float: left;
+  width: 1.2em;
+  font-size: 1em;
+  padding-right: 0.5em;
+}
+.theme-streams .reveal ul.icon li::before {
+  color: #747CA8;
+}
+.theme-lines .reveal ul.icon li::before {
+  color: #00BCD4;
+}
+.theme-seacalm .reveal ul.icon li::before {
+  color: #EDAF49;
+}
+.theme-goldilocks .reveal ul.icon li::before {
+  color: #EDAF49;
+}
+.theme-duotone .reveal ul.icon li::before {
+  color: #736FBA;
+}
+.theme-jewels .reveal ul.icon li::before {
+  color: #79C9E8;
+}
+.theme-soda .reveal ul.icon li::before {
+  color: #1073b9;
+}
+.reveal ul.icon li.pinata::before {
+  content: "";
+}
+.theme-streams .reveal ul.icon li.pinata::before {
+  color: #747CA8;
+}
+.theme-lines .reveal ul.icon li.pinata::before {
+  color: #00BCD4;
+}
+.theme-seacalm .reveal ul.icon li.pinata::before {
+  color: #EDAF49;
+}
+.theme-goldilocks .reveal ul.icon li.pinata::before {
+  color: #EDAF49;
+}
+.theme-duotone .reveal ul.icon li.pinata::before {
+  color: #736FBA;
+}
+.theme-jewels .reveal ul.icon li.pinata::before {
+  color: #79C9E8;
+}
+.theme-soda .reveal ul.icon li.pinata::before {
+  color: #1073b9;
+}
+.reveal ul.icon li.nopal::before {
+  content: "";
+}
+.theme-streams .reveal ul.icon li.nopal::before {
+  color: #747CA8;
+}
+.theme-lines .reveal ul.icon li.nopal::before {
+  color: #00BCD4;
+}
+.theme-seacalm .reveal ul.icon li.nopal::before {
+  color: #EDAF49;
+}
+.theme-goldilocks .reveal ul.icon li.nopal::before {
+  color: #EDAF49;
+}
+.theme-duotone .reveal ul.icon li.nopal::before {
+  color: #736FBA;
+}
+.theme-jewels .reveal ul.icon li.nopal::before {
+  color: #79C9E8;
+}
+.theme-soda .reveal ul.icon li.nopal::before {
+  color: #1073b9;
+}
+.reveal ul.icon li.cactus::before {
+  content: "";
+}
+.theme-streams .reveal ul.icon li.cactus::before {
+  color: #747CA8;
+}
+.theme-lines .reveal ul.icon li.cactus::before {
+  color: #00BCD4;
+}
+.theme-seacalm .reveal ul.icon li.cactus::before {
+  color: #EDAF49;
+}
+.theme-goldilocks .reveal ul.icon li.cactus::before {
+  color: #EDAF49;
+}
+.theme-duotone .reveal ul.icon li.cactus::before {
+  color: #736FBA;
+}
+.theme-jewels .reveal ul.icon li.cactus::before {
+  color: #79C9E8;
+}
+.theme-soda .reveal ul.icon li.cactus::before {
+  color: #1073b9;
+}
+.reveal ul.icon li.skull::before {
+  content: "";
+}
+.theme-streams .reveal ul.icon li.skull::before {
+  color: #747CA8;
+}
+.theme-lines .reveal ul.icon li.skull::before {
+  color: #00BCD4;
+}
+.theme-seacalm .reveal ul.icon li.skull::before {
+  color: #EDAF49;
+}
+.theme-goldilocks .reveal ul.icon li.skull::before {
+  color: #EDAF49;
+}
+.theme-duotone .reveal ul.icon li.skull::before {
+  color: #736FBA;
+}
+.theme-jewels .reveal ul.icon li.skull::before {
+  color: #79C9E8;
+}
+.theme-soda .reveal ul.icon li.skull::before {
+  color: #1073b9;
+}
 /* table with no divisions and with bold purple first column */
 .reveal table th {
-  font-weight: bold; }
-  .theme-streams .reveal table th {
-    color: #747CA8; }
-  .theme-lines .reveal table th {
-    color: #00BCD4; }
-  .theme-seacalm .reveal table th {
-    color: #EDAF49; }
-  .theme-goldilocks .reveal table th {
-    color: #EDAF49; }
-  .theme-duotone .reveal table th {
-    color: #736FBA; }
-  .theme-jewels .reveal table th {
-    color: #79C9E8; }
-  .theme-soda .reveal table th {
-    color: #1073b9; }
-
+  font-weight: bold;
+}
+.theme-streams .reveal table th {
+  color: #747CA8;
+}
+.theme-lines .reveal table th {
+  color: #00BCD4;
+}
+.theme-seacalm .reveal table th {
+  color: #EDAF49;
+}
+.theme-goldilocks .reveal table th {
+  color: #EDAF49;
+}
+.theme-duotone .reveal table th {
+  color: #736FBA;
+}
+.theme-jewels .reveal table th {
+  color: #79C9E8;
+}
+.theme-soda .reveal table th {
+  color: #1073b9;
+}
 .commands table {
-  margin: 0; }
-  .commands table th {
-    text-align: right;
-    border-bottom: none; }
-  .commands table td {
-    border-bottom: none; }
-    .commands table td + td {
-      opacity: 0.5; }
-  .commands table + figure {
-    margin-top: 2em; }
+  margin: 0;
+}
+.commands table th {
+  text-align: right;
+  border-bottom: none;
+}
+.commands table td {
+  border-bottom: none;
+}
+.commands table td + td {
+  opacity: 0.5;
+}
+.commands table + figure {
+  margin-top: 2em;
+}
 
 /*********************************************
 * OTHER
 *********************************************/
 .reveal blockquote p:first-child,
 .reveal blockquote p:last-child {
-  display: block; }
+  display: block;
+}
 
 /* text */
 .reveal strong,
 .reveal b {
   font-weight: 400;
-  color: #F8757F; }
+  color: #F8757F;
+}
 .reveal strong-alt {
-  font-weight: 400; }
-  .theme-streams .reveal strong-alt {
-    color: #7760a9; }
-  .theme-lines .reveal strong-alt {
-    color: #5a028e; }
-  .theme-seacalm .reveal strong-alt {
-    color: #3d7eb1; }
-  .theme-goldilocks .reveal strong-alt {
-    color: #3d7eb1; }
-  .theme-duotone .reveal strong-alt {
-    color: #9591cb; }
-  .theme-jewels .reveal strong-alt {
-    color: #9591cb; }
-  .theme-soda .reveal strong-alt {
-    color: #324ea7; }
+  font-weight: 400;
+}
+.theme-streams .reveal strong-alt {
+  color: #7760a9;
+}
+.theme-lines .reveal strong-alt {
+  color: #5a028e;
+}
+.theme-seacalm .reveal strong-alt {
+  color: #3d7eb1;
+}
+.theme-goldilocks .reveal strong-alt {
+  color: #3d7eb1;
+}
+.theme-duotone .reveal strong-alt {
+  color: #9591cb;
+}
+.theme-jewels .reveal strong-alt {
+  color: #9591cb;
+}
+.theme-soda .reveal strong-alt {
+  color: #324ea7;
+}
 .reveal small {
-  font-size: 0.8em; }
+  font-size: 0.8em;
+}
 .reveal em {
-  font-style: italic; }
+  font-style: italic;
+}
 .reveal mega-font {
-  font-size: 6.5em; }
-  .theme-streams .reveal mega-font {
-    color: #5F4B8B;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-lines .reveal mega-font {
-    color: #3A015C;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-seacalm .reveal mega-font {
-    color: #30638B;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-goldilocks .reveal mega-font {
-    color: #30638B;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-duotone .reveal mega-font {
-    color: #CC144B;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-jewels .reveal mega-font {
-    color: #4A235D;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-soda .reveal mega-font {
-    color: #263c80;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-poppins-font .reveal mega-font {
-    font-family: IBMPlexSerif, monospace;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-cunia-font .reveal mega-font {
-    font-family: Cunia, sans-serif;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-cunia2-font .reveal mega-font {
-    font-family: Cunia, sans-serif;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-plex-font .reveal mega-font {
-    font-family: IBMPlexSerif, monospace;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-dosis-font .reveal mega-font {
-    font-family: Dosis, sans-serif;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-leafy-font .reveal mega-font {
-    font-family: Leafy, cursive;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-allmono-font .reveal mega-font {
-    font-family: Muli, sans-serif;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-soda-font .reveal mega-font {
-    font-family: Open Sans, sans-serif;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-klasik-font .reveal mega-font {
-    font-family: Klasik, sans-serif;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-klasik-rough-font .reveal mega-font {
-    font-family: Klasik-Rough, sans-serif;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-nox-font .reveal mega-font {
-    font-family: Annie Use Your Telescope, cursive;
-    line-height: 1.2;
-    word-wrap: break-word; }
+  font-size: 6.583em;
+}
+.theme-streams .reveal mega-font {
+  color: #5F4B8B;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-lines .reveal mega-font {
+  color: #3A015C;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-seacalm .reveal mega-font {
+  color: #30638B;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-goldilocks .reveal mega-font {
+  color: #30638B;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-duotone .reveal mega-font {
+  color: #CC144B;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-jewels .reveal mega-font {
+  color: #4A235D;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-soda .reveal mega-font {
+  color: #263c80;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-poppins-font .reveal mega-font {
+  font-family: IBMPlexSerif, monospace;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-cunia-font .reveal mega-font {
+  font-family: Cunia, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-cunia2-font .reveal mega-font {
+  font-family: Cunia, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-plex-font .reveal mega-font {
+  font-family: IBMPlexSerif, monospace;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-dosis-font .reveal mega-font {
+  font-family: Dosis, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-leafy-font .reveal mega-font {
+  font-family: Leafy, cursive;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-allmono-font .reveal mega-font {
+  font-family: Muli, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-soda-font .reveal mega-font {
+  font-family: Open Sans, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-klasik-font .reveal mega-font {
+  font-family: Klasik, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-klasik-rough-font .reveal mega-font {
+  font-family: Klasik-Rough, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-nox-font .reveal mega-font {
+  font-family: Annie Use Your Telescope, cursive;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
 .reveal huge-font {
-  font-size: 5em; }
-  .theme-streams .reveal huge-font {
-    color: #5F4B8B;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-lines .reveal huge-font {
-    color: #3A015C;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-seacalm .reveal huge-font {
-    color: #30638B;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-goldilocks .reveal huge-font {
-    color: #30638B;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-duotone .reveal huge-font {
-    color: #CC144B;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-jewels .reveal huge-font {
-    color: #4A235D;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-soda .reveal huge-font {
-    color: #263c80;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-poppins-font .reveal huge-font {
-    font-family: IBMPlexSerif, monospace;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-cunia-font .reveal huge-font {
-    font-family: Cunia, sans-serif;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-cunia2-font .reveal huge-font {
-    font-family: Cunia, sans-serif;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-plex-font .reveal huge-font {
-    font-family: IBMPlexSerif, monospace;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-dosis-font .reveal huge-font {
-    font-family: Dosis, sans-serif;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-leafy-font .reveal huge-font {
-    font-family: Leafy, cursive;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-allmono-font .reveal huge-font {
-    font-family: Muli, sans-serif;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-soda-font .reveal huge-font {
-    font-family: Open Sans, sans-serif;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-klasik-font .reveal huge-font {
-    font-family: Klasik, sans-serif;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-klasik-rough-font .reveal huge-font {
-    font-family: Klasik-Rough, sans-serif;
-    line-height: 1.2;
-    word-wrap: break-word; }
-  .theme-nox-font .reveal huge-font {
-    font-family: Annie Use Your Telescope, cursive;
-    line-height: 1.2;
-    word-wrap: break-word; }
+  font-size: 5.202em;
+}
+.theme-streams .reveal huge-font {
+  color: #5F4B8B;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-lines .reveal huge-font {
+  color: #3A015C;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-seacalm .reveal huge-font {
+  color: #30638B;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-goldilocks .reveal huge-font {
+  color: #30638B;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-duotone .reveal huge-font {
+  color: #CC144B;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-jewels .reveal huge-font {
+  color: #4A235D;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-soda .reveal huge-font {
+  color: #263c80;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-poppins-font .reveal huge-font {
+  font-family: IBMPlexSerif, monospace;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-cunia-font .reveal huge-font {
+  font-family: Cunia, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-cunia2-font .reveal huge-font {
+  font-family: Cunia, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-plex-font .reveal huge-font {
+  font-family: IBMPlexSerif, monospace;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-dosis-font .reveal huge-font {
+  font-family: Dosis, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-leafy-font .reveal huge-font {
+  font-family: Leafy, cursive;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-allmono-font .reveal huge-font {
+  font-family: Muli, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-soda-font .reveal huge-font {
+  font-family: Open Sans, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-klasik-font .reveal huge-font {
+  font-family: Klasik, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-klasik-rough-font .reveal huge-font {
+  font-family: Klasik-Rough, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-nox-font .reveal huge-font {
+  font-family: Annie Use Your Telescope, cursive;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
 .reveal big-font {
-  font-size: 4em; }
-  .theme-streams .reveal big-font {
-    color: #5F4B8B;
-    line-height: 1.2;
-    word-wrap: break-word;
-    letter-spacing: normal; }
-  .theme-lines .reveal big-font {
-    color: #3A015C;
-    line-height: 1.2;
-    word-wrap: break-word;
-    letter-spacing: normal; }
-  .theme-seacalm .reveal big-font {
-    color: #30638B;
-    line-height: 1.2;
-    word-wrap: break-word;
-    letter-spacing: normal; }
-  .theme-goldilocks .reveal big-font {
-    color: #30638B;
-    line-height: 1.2;
-    word-wrap: break-word;
-    letter-spacing: normal; }
-  .theme-duotone .reveal big-font {
-    color: #CC144B;
-    line-height: 1.2;
-    word-wrap: break-word;
-    letter-spacing: normal; }
-  .theme-jewels .reveal big-font {
-    color: #4A235D;
-    line-height: 1.2;
-    word-wrap: break-word;
-    letter-spacing: normal; }
-  .theme-soda .reveal big-font {
-    color: #263c80;
-    line-height: 1.2;
-    word-wrap: break-word;
-    letter-spacing: normal; }
-  .theme-poppins-font .reveal big-font {
-    font-family: IBMPlexSerif, monospace;
-    line-height: 1.2;
-    word-wrap: break-word;
-    letter-spacing: normal; }
-  .theme-cunia-font .reveal big-font {
-    font-family: Cunia, sans-serif;
-    line-height: 1.2;
-    word-wrap: break-word;
-    letter-spacing: normal; }
-  .theme-cunia2-font .reveal big-font {
-    font-family: Cunia, sans-serif;
-    line-height: 1.2;
-    word-wrap: break-word;
-    letter-spacing: normal; }
-  .theme-plex-font .reveal big-font {
-    font-family: IBMPlexSerif, monospace;
-    line-height: 1.2;
-    word-wrap: break-word;
-    letter-spacing: normal; }
-  .theme-dosis-font .reveal big-font {
-    font-family: Dosis, sans-serif;
-    line-height: 1.2;
-    word-wrap: break-word;
-    letter-spacing: normal; }
-  .theme-leafy-font .reveal big-font {
-    font-family: Leafy, cursive;
-    line-height: 1.2;
-    word-wrap: break-word;
-    letter-spacing: normal; }
-  .theme-allmono-font .reveal big-font {
-    font-family: Muli, sans-serif;
-    line-height: 1.2;
-    word-wrap: break-word;
-    letter-spacing: normal; }
-  .theme-soda-font .reveal big-font {
-    font-family: Open Sans, sans-serif;
-    line-height: 1.2;
-    word-wrap: break-word;
-    letter-spacing: normal; }
-  .theme-klasik-font .reveal big-font {
-    font-family: Klasik, sans-serif;
-    line-height: 1.2;
-    word-wrap: break-word;
-    letter-spacing: normal; }
-  .theme-klasik-rough-font .reveal big-font {
-    font-family: Klasik-Rough, sans-serif;
-    line-height: 1.2;
-    word-wrap: break-word;
-    letter-spacing: normal; }
-  .theme-nox-font .reveal big-font {
-    font-family: Annie Use Your Telescope, cursive;
-    line-height: 1.2;
-    word-wrap: break-word;
-    letter-spacing: normal; }
+  font-size: 4.624em;
+}
+.theme-streams .reveal big-font {
+  color: #5F4B8B;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-lines .reveal big-font {
+  color: #3A015C;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-seacalm .reveal big-font {
+  color: #30638B;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-goldilocks .reveal big-font {
+  color: #30638B;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-duotone .reveal big-font {
+  color: #CC144B;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-jewels .reveal big-font {
+  color: #4A235D;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-soda .reveal big-font {
+  color: #263c80;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-poppins-font .reveal big-font {
+  font-family: IBMPlexSerif, monospace;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-cunia-font .reveal big-font {
+  font-family: Cunia, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-cunia2-font .reveal big-font {
+  font-family: Cunia, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-plex-font .reveal big-font {
+  font-family: IBMPlexSerif, monospace;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-dosis-font .reveal big-font {
+  font-family: Dosis, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-leafy-font .reveal big-font {
+  font-family: Leafy, cursive;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-allmono-font .reveal big-font {
+  font-family: Muli, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-soda-font .reveal big-font {
+  font-family: Open Sans, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-klasik-font .reveal big-font {
+  font-family: Klasik, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-klasik-rough-font .reveal big-font {
+  font-family: Klasik-Rough, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-nox-font .reveal big-font {
+  font-family: Annie Use Your Telescope, cursive;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
 
 .reveal glow {
   text-shadow: 0px 0px 5px #fff;
   color: #fff;
-  padding: 0 2rem; }
-
-.reveal h1.glow, .reveal h2.glow, .reveal h3.glow, .reveal h4.glow, .reveal h5.glow, .reveal big-font.glow, .reveal mega-font.glow, .reveal huge-font.glow {
   padding: 0 2rem;
-  font-family: "Ropa Sans", sans-serif; }
-  .theme-streams .reveal h1.glow,
-  .theme-streams .reveal h2.glow,
-  .theme-streams .reveal h3.glow,
-  .theme-streams .reveal h4.glow,
-  .theme-streams .reveal h5.glow,
-  .theme-streams .reveal big-font.glow,
-  .theme-streams .reveal mega-font.glow,
-  .theme-streams .reveal huge-font.glow {
-    text-shadow: 0px 0px 5px #5F4B8B, 0 0 20px #fff; }
-  .theme-lines .reveal h1.glow, .theme-lines .reveal h2.glow, .theme-lines .reveal h3.glow, .theme-lines .reveal h4.glow, .theme-lines .reveal h5.glow, .theme-lines .reveal big-font.glow, .theme-lines .reveal mega-font.glow, .theme-lines .reveal huge-font.glow {
-    text-shadow: 0px 0px 5px #3A015C, 0 0 20px #fff; }
-  .theme-seacalm .reveal h1.glow, .theme-seacalm .reveal h2.glow, .theme-seacalm .reveal h3.glow, .theme-seacalm .reveal h4.glow, .theme-seacalm .reveal h5.glow, .theme-seacalm .reveal big-font.glow, .theme-seacalm .reveal mega-font.glow, .theme-seacalm .reveal huge-font.glow {
-    text-shadow: 0px 0px 5px #30638B, 0 0 20px #fff; }
-  .theme-goldilocks .reveal h1.glow, .theme-goldilocks .reveal h2.glow, .theme-goldilocks .reveal h3.glow, .theme-goldilocks .reveal h4.glow, .theme-goldilocks .reveal h5.glow, .theme-goldilocks .reveal big-font.glow, .theme-goldilocks .reveal mega-font.glow, .theme-goldilocks .reveal huge-font.glow {
-    text-shadow: 0px 0px 5px #30638B, 0 0 20px #fff; }
-  .theme-duotone .reveal h1.glow, .theme-duotone .reveal h2.glow, .theme-duotone .reveal h3.glow, .theme-duotone .reveal h4.glow, .theme-duotone .reveal h5.glow, .theme-duotone .reveal big-font.glow, .theme-duotone .reveal mega-font.glow, .theme-duotone .reveal huge-font.glow {
-    text-shadow: 0px 0px 5px #CC144B, 0 0 20px #fff; }
-  .theme-jewels .reveal h1.glow, .theme-jewels .reveal h2.glow, .theme-jewels .reveal h3.glow, .theme-jewels .reveal h4.glow, .theme-jewels .reveal h5.glow, .theme-jewels .reveal big-font.glow, .theme-jewels .reveal mega-font.glow, .theme-jewels .reveal huge-font.glow {
-    text-shadow: 0px 0px 5px #4A235D, 0 0 20px #fff; }
-  .theme-soda .reveal h1.glow, .theme-soda .reveal h2.glow, .theme-soda .reveal h3.glow, .theme-soda .reveal h4.glow, .theme-soda .reveal h5.glow, .theme-soda .reveal big-font.glow, .theme-soda .reveal mega-font.glow, .theme-soda .reveal huge-font.glow {
-    text-shadow: 0px 0px 5px #263c80, 0 0 20px #fff; }
-  .theme-poppins-font .reveal h1.glow, .theme-poppins-font .reveal h2.glow, .theme-poppins-font .reveal h3.glow, .theme-poppins-font .reveal h4.glow, .theme-poppins-font .reveal h5.glow, .theme-poppins-font .reveal big-font.glow, .theme-poppins-font .reveal mega-font.glow, .theme-poppins-font .reveal huge-font.glow {
-    text-shadow: 0px 0px 5px, 0 0 20px #fff; }
-  .theme-cunia-font .reveal h1.glow, .theme-cunia-font .reveal h2.glow, .theme-cunia-font .reveal h3.glow, .theme-cunia-font .reveal h4.glow, .theme-cunia-font .reveal h5.glow, .theme-cunia-font .reveal big-font.glow, .theme-cunia-font .reveal mega-font.glow, .theme-cunia-font .reveal huge-font.glow {
-    text-shadow: 0px 0px 5px, 0 0 20px #fff; }
-  .theme-cunia2-font .reveal h1.glow, .theme-cunia2-font .reveal h2.glow, .theme-cunia2-font .reveal h3.glow, .theme-cunia2-font .reveal h4.glow, .theme-cunia2-font .reveal h5.glow, .theme-cunia2-font .reveal big-font.glow, .theme-cunia2-font .reveal mega-font.glow, .theme-cunia2-font .reveal huge-font.glow {
-    text-shadow: 0px 0px 5px, 0 0 20px #fff; }
-  .theme-plex-font .reveal h1.glow, .theme-plex-font .reveal h2.glow, .theme-plex-font .reveal h3.glow, .theme-plex-font .reveal h4.glow, .theme-plex-font .reveal h5.glow, .theme-plex-font .reveal big-font.glow, .theme-plex-font .reveal mega-font.glow, .theme-plex-font .reveal huge-font.glow {
-    text-shadow: 0px 0px 5px, 0 0 20px #fff; }
-  .theme-dosis-font .reveal h1.glow, .theme-dosis-font .reveal h2.glow, .theme-dosis-font .reveal h3.glow, .theme-dosis-font .reveal h4.glow, .theme-dosis-font .reveal h5.glow, .theme-dosis-font .reveal big-font.glow, .theme-dosis-font .reveal mega-font.glow, .theme-dosis-font .reveal huge-font.glow {
-    text-shadow: 0px 0px 5px, 0 0 20px #fff; }
-  .theme-leafy-font .reveal h1.glow, .theme-leafy-font .reveal h2.glow, .theme-leafy-font .reveal h3.glow, .theme-leafy-font .reveal h4.glow, .theme-leafy-font .reveal h5.glow, .theme-leafy-font .reveal big-font.glow, .theme-leafy-font .reveal mega-font.glow, .theme-leafy-font .reveal huge-font.glow {
-    text-shadow: 0px 0px 5px, 0 0 20px #fff; }
-  .theme-allmono-font .reveal h1.glow, .theme-allmono-font .reveal h2.glow, .theme-allmono-font .reveal h3.glow, .theme-allmono-font .reveal h4.glow, .theme-allmono-font .reveal h5.glow, .theme-allmono-font .reveal big-font.glow, .theme-allmono-font .reveal mega-font.glow, .theme-allmono-font .reveal huge-font.glow {
-    text-shadow: 0px 0px 5px, 0 0 20px #fff; }
-  .theme-soda-font .reveal h1.glow, .theme-soda-font .reveal h2.glow, .theme-soda-font .reveal h3.glow, .theme-soda-font .reveal h4.glow, .theme-soda-font .reveal h5.glow, .theme-soda-font .reveal big-font.glow, .theme-soda-font .reveal mega-font.glow, .theme-soda-font .reveal huge-font.glow {
-    text-shadow: 0px 0px 5px, 0 0 20px #fff; }
-  .theme-klasik-font .reveal h1.glow, .theme-klasik-font .reveal h2.glow, .theme-klasik-font .reveal h3.glow, .theme-klasik-font .reveal h4.glow, .theme-klasik-font .reveal h5.glow, .theme-klasik-font .reveal big-font.glow, .theme-klasik-font .reveal mega-font.glow, .theme-klasik-font .reveal huge-font.glow {
-    text-shadow: 0px 0px 5px, 0 0 20px #fff; }
-  .theme-klasik-rough-font .reveal h1.glow, .theme-klasik-rough-font .reveal h2.glow, .theme-klasik-rough-font .reveal h3.glow, .theme-klasik-rough-font .reveal h4.glow, .theme-klasik-rough-font .reveal h5.glow, .theme-klasik-rough-font .reveal big-font.glow, .theme-klasik-rough-font .reveal mega-font.glow, .theme-klasik-rough-font .reveal huge-font.glow {
-    text-shadow: 0px 0px 5px, 0 0 20px #fff; }
-  .theme-nox-font .reveal h1.glow, .theme-nox-font .reveal h2.glow, .theme-nox-font .reveal h3.glow, .theme-nox-font .reveal h4.glow, .theme-nox-font .reveal h5.glow, .theme-nox-font .reveal big-font.glow, .theme-nox-font .reveal mega-font.glow, .theme-nox-font .reveal huge-font.glow {
-    text-shadow: 0px 0px 5px, 0 0 20px #fff; }
+  font-family: in;
+}
+
+.reveal h1.glow,
+.reveal h2.glow,
+.reveal h3.glow,
+.reveal h4.glow,
+.reveal h5.glow,
+.reveal big-font.glow,
+.reveal mega-font.glow,
+.reveal huge-font.glow {
+  padding: 0 2rem;
+  font-family: "Ropa Sans", sans-serif;
+}
+.theme-streams .reveal h1.glow,
+.theme-streams .reveal h2.glow,
+.theme-streams .reveal h3.glow,
+.theme-streams .reveal h4.glow,
+.theme-streams .reveal h5.glow,
+.theme-streams .reveal big-font.glow,
+.theme-streams .reveal mega-font.glow,
+.theme-streams .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px #5F4B8B, 0 0 20px #fff;
+}
+.theme-lines .reveal h1.glow,
+.theme-lines .reveal h2.glow,
+.theme-lines .reveal h3.glow,
+.theme-lines .reveal h4.glow,
+.theme-lines .reveal h5.glow,
+.theme-lines .reveal big-font.glow,
+.theme-lines .reveal mega-font.glow,
+.theme-lines .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px #3A015C, 0 0 20px #fff;
+}
+.theme-seacalm .reveal h1.glow,
+.theme-seacalm .reveal h2.glow,
+.theme-seacalm .reveal h3.glow,
+.theme-seacalm .reveal h4.glow,
+.theme-seacalm .reveal h5.glow,
+.theme-seacalm .reveal big-font.glow,
+.theme-seacalm .reveal mega-font.glow,
+.theme-seacalm .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px #30638B, 0 0 20px #fff;
+}
+.theme-goldilocks .reveal h1.glow,
+.theme-goldilocks .reveal h2.glow,
+.theme-goldilocks .reveal h3.glow,
+.theme-goldilocks .reveal h4.glow,
+.theme-goldilocks .reveal h5.glow,
+.theme-goldilocks .reveal big-font.glow,
+.theme-goldilocks .reveal mega-font.glow,
+.theme-goldilocks .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px #30638B, 0 0 20px #fff;
+}
+.theme-duotone .reveal h1.glow,
+.theme-duotone .reveal h2.glow,
+.theme-duotone .reveal h3.glow,
+.theme-duotone .reveal h4.glow,
+.theme-duotone .reveal h5.glow,
+.theme-duotone .reveal big-font.glow,
+.theme-duotone .reveal mega-font.glow,
+.theme-duotone .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px #CC144B, 0 0 20px #fff;
+}
+.theme-jewels .reveal h1.glow,
+.theme-jewels .reveal h2.glow,
+.theme-jewels .reveal h3.glow,
+.theme-jewels .reveal h4.glow,
+.theme-jewels .reveal h5.glow,
+.theme-jewels .reveal big-font.glow,
+.theme-jewels .reveal mega-font.glow,
+.theme-jewels .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px #4A235D, 0 0 20px #fff;
+}
+.theme-soda .reveal h1.glow,
+.theme-soda .reveal h2.glow,
+.theme-soda .reveal h3.glow,
+.theme-soda .reveal h4.glow,
+.theme-soda .reveal h5.glow,
+.theme-soda .reveal big-font.glow,
+.theme-soda .reveal mega-font.glow,
+.theme-soda .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px #263c80, 0 0 20px #fff;
+}
+.theme-poppins-font .reveal h1.glow,
+.theme-poppins-font .reveal h2.glow,
+.theme-poppins-font .reveal h3.glow,
+.theme-poppins-font .reveal h4.glow,
+.theme-poppins-font .reveal h5.glow,
+.theme-poppins-font .reveal big-font.glow,
+.theme-poppins-font .reveal mega-font.glow,
+.theme-poppins-font .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px, 0 0 20px #fff;
+}
+.theme-cunia-font .reveal h1.glow,
+.theme-cunia-font .reveal h2.glow,
+.theme-cunia-font .reveal h3.glow,
+.theme-cunia-font .reveal h4.glow,
+.theme-cunia-font .reveal h5.glow,
+.theme-cunia-font .reveal big-font.glow,
+.theme-cunia-font .reveal mega-font.glow,
+.theme-cunia-font .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px, 0 0 20px #fff;
+}
+.theme-cunia2-font .reveal h1.glow,
+.theme-cunia2-font .reveal h2.glow,
+.theme-cunia2-font .reveal h3.glow,
+.theme-cunia2-font .reveal h4.glow,
+.theme-cunia2-font .reveal h5.glow,
+.theme-cunia2-font .reveal big-font.glow,
+.theme-cunia2-font .reveal mega-font.glow,
+.theme-cunia2-font .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px, 0 0 20px #fff;
+}
+.theme-plex-font .reveal h1.glow,
+.theme-plex-font .reveal h2.glow,
+.theme-plex-font .reveal h3.glow,
+.theme-plex-font .reveal h4.glow,
+.theme-plex-font .reveal h5.glow,
+.theme-plex-font .reveal big-font.glow,
+.theme-plex-font .reveal mega-font.glow,
+.theme-plex-font .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px, 0 0 20px #fff;
+}
+.theme-dosis-font .reveal h1.glow,
+.theme-dosis-font .reveal h2.glow,
+.theme-dosis-font .reveal h3.glow,
+.theme-dosis-font .reveal h4.glow,
+.theme-dosis-font .reveal h5.glow,
+.theme-dosis-font .reveal big-font.glow,
+.theme-dosis-font .reveal mega-font.glow,
+.theme-dosis-font .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px, 0 0 20px #fff;
+}
+.theme-leafy-font .reveal h1.glow,
+.theme-leafy-font .reveal h2.glow,
+.theme-leafy-font .reveal h3.glow,
+.theme-leafy-font .reveal h4.glow,
+.theme-leafy-font .reveal h5.glow,
+.theme-leafy-font .reveal big-font.glow,
+.theme-leafy-font .reveal mega-font.glow,
+.theme-leafy-font .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px, 0 0 20px #fff;
+}
+.theme-allmono-font .reveal h1.glow,
+.theme-allmono-font .reveal h2.glow,
+.theme-allmono-font .reveal h3.glow,
+.theme-allmono-font .reveal h4.glow,
+.theme-allmono-font .reveal h5.glow,
+.theme-allmono-font .reveal big-font.glow,
+.theme-allmono-font .reveal mega-font.glow,
+.theme-allmono-font .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px, 0 0 20px #fff;
+}
+.theme-soda-font .reveal h1.glow,
+.theme-soda-font .reveal h2.glow,
+.theme-soda-font .reveal h3.glow,
+.theme-soda-font .reveal h4.glow,
+.theme-soda-font .reveal h5.glow,
+.theme-soda-font .reveal big-font.glow,
+.theme-soda-font .reveal mega-font.glow,
+.theme-soda-font .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px, 0 0 20px #fff;
+}
+.theme-klasik-font .reveal h1.glow,
+.theme-klasik-font .reveal h2.glow,
+.theme-klasik-font .reveal h3.glow,
+.theme-klasik-font .reveal h4.glow,
+.theme-klasik-font .reveal h5.glow,
+.theme-klasik-font .reveal big-font.glow,
+.theme-klasik-font .reveal mega-font.glow,
+.theme-klasik-font .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px, 0 0 20px #fff;
+}
+.theme-klasik-rough-font .reveal h1.glow,
+.theme-klasik-rough-font .reveal h2.glow,
+.theme-klasik-rough-font .reveal h3.glow,
+.theme-klasik-rough-font .reveal h4.glow,
+.theme-klasik-rough-font .reveal h5.glow,
+.theme-klasik-rough-font .reveal big-font.glow,
+.theme-klasik-rough-font .reveal mega-font.glow,
+.theme-klasik-rough-font .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px, 0 0 20px #fff;
+}
+.theme-nox-font .reveal h1.glow,
+.theme-nox-font .reveal h2.glow,
+.theme-nox-font .reveal h3.glow,
+.theme-nox-font .reveal h4.glow,
+.theme-nox-font .reveal h5.glow,
+.theme-nox-font .reveal big-font.glow,
+.theme-nox-font .reveal mega-font.glow,
+.theme-nox-font .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px, 0 0 20px #fff;
+}
 
 /* Additional divs */
 div.warn {
@@ -1367,7 +2080,8 @@ div.warn {
   color: #fff;
   margin: 1em;
   margin-top: 0;
-  opacity: 0.8; }
+  opacity: 0.8;
+}
 div.info {
   background-color: #208a96;
   border-color: #208a96;
@@ -1376,11 +2090,13 @@ div.info {
   color: #fff;
   opacity: 0.8;
   margin: 1em;
-  margin-top: 0; }
-  div.info a {
-    color: #e8f3f4 !important;
-    text-decoration: underline;
-    text-decoration-color: #e8f3f4 !important; }
+  margin-top: 0;
+}
+div.info a {
+  color: #e8f3f4 !important;
+  text-decoration: underline;
+  text-decoration-color: #e8f3f4 !important;
+}
 
 /* Floating modal */
 /* I like using this for in slide quote  */
@@ -1397,13 +2113,15 @@ div.info {
   transform: translateX(-50%) translateY(-50%);
   background: rgba(45, 51, 57, 0.98);
   border-radius: 10px;
-  text-align: center; }
+  text-align: center;
+}
 
 /* Text into the modal */
 .modal_p {
   padding: 10px !important;
   color: #fff;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+}
 
 /* Adding caption to the modal */
 .caption_p {
@@ -1413,10 +2131,12 @@ div.info {
   color: #B2BAE5;
   /*lavender violet*/
   /* font-family: $base-font; */
-  padding: 10px !important; }
-  .caption_p a {
-    /* color:  #B2BAE5!important; /*lavender violet*/
-    font-style: italic !important; }
+  padding: 10px !important;
+}
+.caption_p a {
+  /* color:  #B2BAE5!important; /*lavender violet*/
+  font-style: italic !important;
+}
 
 /*****************
  * Code Segments
@@ -1426,57 +2146,66 @@ div.info {
   box-shadow: none;
   line-height: 1.2rem;
   width: 100%;
-  font-size: 0.8em; }
+  font-size: 0.8em;
+}
 
 .reveal pre code {
   -moz-tab-size: 2;
   tab-size: 2;
-  font-family: "Overpass Mono", monospace; }
+  font-family: "Overpass Mono", monospace;
+}
 
 .reveal code {
   background-color: #e2e6e9;
   padding: 3px 7px;
   border-radius: 3px;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+}
 
 figure.code {
   display: flex;
   flex-direction: column;
   overflow: hidden;
   margin-top: 10px;
-  margin-bottom: 10px; }
-  figure.code pre {
-    box-shadow: none;
-    line-height: 1.3rem;
-    margin: 0;
-    overflow: hidden;
-    border-radius: 5px; }
-  figure.code figcaption {
-    box-sizing: border-box;
-    padding: 1ex;
-    width: 100%;
-    font-size: 0.875em;
-    border-bottom-width: 0;
-    background-color: #333;
-    text-align: left;
-    border-radius: 3px;
-    color: #EEEDEF !important; }
-  figure.code pre + figcaption {
-    border-top-width: 0;
-    border-bottom-width: 1px; }
+  margin-bottom: 10px;
+}
+figure.code pre {
+  box-shadow: none;
+  line-height: 1.3rem;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 5px;
+}
+figure.code figcaption {
+  box-sizing: border-box;
+  padding: 1ex;
+  width: 100%;
+  font-size: 0.875em;
+  border-bottom-width: 0;
+  background-color: #333;
+  text-align: left;
+  border-radius: 3px;
+  color: #EEEDEF !important;
+}
+figure.code pre + figcaption {
+  border-top-width: 0;
+  border-bottom-width: 1px;
+}
 
 /*********************************************
 * APPLY THEMES
 *********************************************/
-.reveal[class*="pattern--"] {
+.reveal[class*=pattern--] {
   background-position: center center;
-  background-size: 133vmax auto; }
+  background-size: 133vmax auto;
+}
 
 /*********************************************
 * CSS GRID USE
 *********************************************/
 .grid-wrapper {
-  display: grid; }
+  display: grid;
+}
 
 /************************************************
 * MODIFIED SECTIONS
@@ -1487,10 +2216,12 @@ figure.code {
   height: 100vh;
   margin: 0;
   width: 100vw;
-  color: #2A2A49; }
+  color: #2A2A49;
+}
 
 .reveal .slides section.stack {
-  background-color: transparent !important; }
+  background-color: transparent !important;
+}
 
 .reveal .slides section .grid-wrapper {
   box-sizing: border-box;
@@ -1500,28 +2231,34 @@ figure.code {
   grid-template-columns: 1fr 90% 1fr;
   grid-template-areas: ". header ." ". content .";
   height: 100%;
-  padding: 10vmin; }
+  padding: 10vmin;
+}
 
 .reveal .slides section .header {
   align-items: center;
   display: flex;
   grid-area: header;
-  padding: 5px; }
+  padding: 5px;
+}
 
 /* Twitter icon and handle on the header */
 .header .twitter {
   margin-left: auto;
   opacity: 0.7;
-  font-size: 0.8rem;
-  text-decoration: none; }
-  .header .twitter a {
-    color: #5f6c7a;
-    /*slate grey*/
-    text-decoration: none; }
-  .header .twitter .fa-twitter {
-    color: #5f6c7a;
-    /*slate grey*/ }
+  text-decoration: none;
+}
+.header .twitter a {
+  color: #5f6c7a;
+  /*slate grey*/
+  text-decoration: none;
+  font-size: 0.5em !important;
+}
+.header .twitter .fa-twitter {
+  color: #5f6c7a;
+  /*slate grey*/
+}
 
+/* Logo in header */
 .reveal .slides section .logo {
   background-image: url("../assets/personal/Purple.png");
   background-repeat: no-repeat;
@@ -1530,42 +2267,57 @@ figure.code {
   grid-area: header;
   height: 5.5vmin;
   margin-right: 1.5vmin;
-  width: 5.5vmin; }
+  width: 5.5vmin;
+}
 
 .reveal .slides section .section {
   text-transform: uppercase;
   line-height: 5.5vmin;
   font-size: 0.8em;
-  font-weight: 500; }
-  .theme-poppins-font .reveal .slides section .section {
-    font-family: IBMPlexSerif, monospace; }
-  .theme-cunia-font .reveal .slides section .section {
-    font-family: Cunia, sans-serif; }
-  .theme-cunia2-font .reveal .slides section .section {
-    font-family: Cunia, sans-serif; }
-  .theme-plex-font .reveal .slides section .section {
-    font-family: IBMPlexSerif, monospace; }
-  .theme-dosis-font .reveal .slides section .section {
-    font-family: Dosis, sans-serif; }
-  .theme-leafy-font .reveal .slides section .section {
-    font-family: Leafy, cursive; }
-  .theme-allmono-font .reveal .slides section .section {
-    font-family: Muli, sans-serif; }
-  .theme-soda-font .reveal .slides section .section {
-    font-family: Open Sans, sans-serif; }
-  .theme-klasik-font .reveal .slides section .section {
-    font-family: Klasik, sans-serif; }
-  .theme-klasik-rough-font .reveal .slides section .section {
-    font-family: Klasik-Rough, sans-serif; }
-  .theme-nox-font .reveal .slides section .section {
-    font-family: Annie Use Your Telescope, cursive; }
+  font-weight: 500;
+}
+.theme-poppins-font .reveal .slides section .section {
+  font-family: IBMPlexSerif, monospace;
+}
+.theme-cunia-font .reveal .slides section .section {
+  font-family: Cunia, sans-serif;
+}
+.theme-cunia2-font .reveal .slides section .section {
+  font-family: Cunia, sans-serif;
+}
+.theme-plex-font .reveal .slides section .section {
+  font-family: IBMPlexSerif, monospace;
+}
+.theme-dosis-font .reveal .slides section .section {
+  font-family: Dosis, sans-serif;
+}
+.theme-leafy-font .reveal .slides section .section {
+  font-family: Leafy, cursive;
+}
+.theme-allmono-font .reveal .slides section .section {
+  font-family: Muli, sans-serif;
+}
+.theme-soda-font .reveal .slides section .section {
+  font-family: Open Sans, sans-serif;
+}
+.theme-klasik-font .reveal .slides section .section {
+  font-family: Klasik, sans-serif;
+}
+.theme-klasik-rough-font .reveal .slides section .section {
+  font-family: Klasik-Rough, sans-serif;
+}
+.theme-nox-font .reveal .slides section .section {
+  font-family: Annie Use Your Telescope, cursive;
+}
 
 .reveal .slides section .content {
   align-self: center;
-  grid-area: content; }
+  grid-area: content;
+}
 
 .doublegrid {
-  display: grid; }
+  display: grid;
+}
 
 .reveal .slides section .doublegrid {
   box-sizing: border-box;
@@ -1576,17 +2328,20 @@ figure.code {
   grid-template-areas: "header header" "east west ";
   height: 100%;
   padding: 10vmin;
-  background: linear-gradient(to right, #5F4B8B 50%, #fff 50%); }
+  background: linear-gradient(to right, #5F4B8B 50%, #fff 50%);
+}
 
 .reveal .slides section .east {
   align-self: center;
   text-align: center;
-  grid-area: east; }
+  grid-area: east;
+}
 
 .reveal .slides section .west {
   align-self: center;
   text-align: center;
-  grid-area: west; }
+  grid-area: west;
+}
 
 .west,
 .east img {
@@ -1595,522 +2350,687 @@ figure.code {
   height: 100%;
   object-fit: cover;
   width: 100%;
-  opacity: 0.8; }
+  opacity: 0.8;
+}
 
 /*********************************************
 * PATTERS USED FOR THE SLIDES BACKGROUNDS
 *********************************************/
 .reveal.pattern--stream {
   background-image: url(../assets/patterns//zigzag_purple.svg);
-  background-color: white; }
+  background-color: white;
+}
 
 .theme-streams .reveal.pattern--stream .slides section.intro {
-  background-color: #5F4B8B; }
+  background-color: #5F4B8B;
+}
 .theme-lines .reveal.pattern--stream .slides section.intro {
-  background-color: #3A015C; }
+  background-color: #3A015C;
+}
 .theme-seacalm .reveal.pattern--stream .slides section.intro {
-  background-color: #30638B; }
+  background-color: #30638B;
+}
 .theme-goldilocks .reveal.pattern--stream .slides section.intro {
-  background-color: #30638B; }
+  background-color: #30638B;
+}
 .theme-duotone .reveal.pattern--stream .slides section.intro {
-  background-color: #CC144B; }
+  background-color: #CC144B;
+}
 .theme-jewels .reveal.pattern--stream .slides section.intro {
-  background-color: #4A235D; }
+  background-color: #4A235D;
+}
 .theme-soda .reveal.pattern--stream .slides section.intro {
-  background-color: #263c80; }
-
+  background-color: #263c80;
+}
 .theme-streams .reveal.pattern--stream .slides section.title {
-  background-color: #5F4B8B; }
+  background-color: #5F4B8B;
+}
 .theme-lines .reveal.pattern--stream .slides section.title {
-  background-color: #3A015C; }
+  background-color: #3A015C;
+}
 .theme-seacalm .reveal.pattern--stream .slides section.title {
-  background-color: #30638B; }
+  background-color: #30638B;
+}
 .theme-goldilocks .reveal.pattern--stream .slides section.title {
-  background-color: #30638B; }
+  background-color: #30638B;
+}
 .theme-duotone .reveal.pattern--stream .slides section.title {
-  background-color: #CC144B; }
+  background-color: #CC144B;
+}
 .theme-jewels .reveal.pattern--stream .slides section.title {
-  background-color: #4A235D; }
+  background-color: #4A235D;
+}
 .theme-soda .reveal.pattern--stream .slides section.title {
-  background-color: #263c80; }
-
+  background-color: #263c80;
+}
 .reveal.pattern--lines {
-  background-image: url(../assets/patterns///lines.png); }
+  background-image: url(../assets/patterns//lines.png);
+}
 
 .theme-streams .reveal.pattern--lines .slides section.intro {
-  background-color: #747CA8; }
+  background-color: #747CA8;
+}
 .theme-lines .reveal.pattern--lines .slides section.intro {
-  background-color: #00BCD4; }
+  background-color: #00BCD4;
+}
 .theme-seacalm .reveal.pattern--lines .slides section.intro {
-  background-color: #EDAF49; }
+  background-color: #EDAF49;
+}
 .theme-goldilocks .reveal.pattern--lines .slides section.intro {
-  background-color: #EDAF49; }
+  background-color: #EDAF49;
+}
 .theme-duotone .reveal.pattern--lines .slides section.intro {
-  background-color: #736FBA; }
+  background-color: #736FBA;
+}
 .theme-jewels .reveal.pattern--lines .slides section.intro {
-  background-color: #79C9E8; }
+  background-color: #79C9E8;
+}
 .theme-soda .reveal.pattern--lines .slides section.intro {
-  background-color: #1073b9; }
-
+  background-color: #1073b9;
+}
 .theme-streams .reveal.pattern--lines .slides section.title {
   background-color: #747CA8;
-  color: #5F4B8B; }
+  color: #5F4B8B;
+}
 .theme-lines .reveal.pattern--lines .slides section.title {
   background-color: #00BCD4;
-  color: #3A015C; }
+  color: #3A015C;
+}
 .theme-seacalm .reveal.pattern--lines .slides section.title {
   background-color: #EDAF49;
-  color: #30638B; }
+  color: #30638B;
+}
 .theme-goldilocks .reveal.pattern--lines .slides section.title {
   background-color: #EDAF49;
-  color: #30638B; }
+  color: #30638B;
+}
 .theme-duotone .reveal.pattern--lines .slides section.title {
   background-color: #736FBA;
-  color: #CC144B; }
+  color: #CC144B;
+}
 .theme-jewels .reveal.pattern--lines .slides section.title {
   background-color: #79C9E8;
-  color: #4A235D; }
+  color: #4A235D;
+}
 .theme-soda .reveal.pattern--lines .slides section.title {
   background-color: #1073b9;
-  color: #263c80; }
-
+  color: #263c80;
+}
 .theme-streams .reveal.pattern--lines .progress {
-  background-color: #3388A6; }
+  background-color: #3388A6;
+}
 .theme-lines .reveal.pattern--lines .progress {
-  background-color: #ff206e; }
+  background-color: #ff206e;
+}
 .theme-seacalm .reveal.pattern--lines .progress {
-  background-color: #00798c; }
+  background-color: #00798c;
+}
 .theme-goldilocks .reveal.pattern--lines .progress {
-  background-color: #8D4593; }
+  background-color: #8D4593;
+}
 .theme-duotone .reveal.pattern--lines .progress {
-  background-color: #A1AAE2; }
+  background-color: #A1AAE2;
+}
 .theme-jewels .reveal.pattern--lines .progress {
-  background-color: #FF0368; }
+  background-color: #FF0368;
+}
 .theme-soda .reveal.pattern--lines .progress {
-  background-color: #95d5d4; }
-
+  background-color: #95d5d4;
+}
 .reveal.pattern--hex {
-  background-image: url("../assets/patterns/hex_pattern.png"); }
+  background-image: url("../assets/patterns/hex_pattern.png");
+}
 
 .theme-streams .reveal.pattern--hex .slides section.intro {
-  background-color: #747CA8; }
+  background-color: #747CA8;
+}
 .theme-lines .reveal.pattern--hex .slides section.intro {
-  background-color: #00BCD4; }
+  background-color: #00BCD4;
+}
 .theme-seacalm .reveal.pattern--hex .slides section.intro {
-  background-color: #EDAF49; }
+  background-color: #EDAF49;
+}
 .theme-goldilocks .reveal.pattern--hex .slides section.intro {
-  background-color: #EDAF49; }
+  background-color: #EDAF49;
+}
 .theme-duotone .reveal.pattern--hex .slides section.intro {
-  background-color: #736FBA; }
+  background-color: #736FBA;
+}
 .theme-jewels .reveal.pattern--hex .slides section.intro {
-  background-color: #79C9E8; }
+  background-color: #79C9E8;
+}
 .theme-soda .reveal.pattern--hex .slides section.intro {
-  background-color: #1073b9; }
-
+  background-color: #1073b9;
+}
 .theme-streams .reveal.pattern--hex .slides section.title {
   background-color: #747CA8;
-  color: #5F4B8B; }
+  color: #5F4B8B;
+}
 .theme-lines .reveal.pattern--hex .slides section.title {
   background-color: #00BCD4;
-  color: #3A015C; }
+  color: #3A015C;
+}
 .theme-seacalm .reveal.pattern--hex .slides section.title {
   background-color: #EDAF49;
-  color: #30638B; }
+  color: #30638B;
+}
 .theme-goldilocks .reveal.pattern--hex .slides section.title {
   background-color: #EDAF49;
-  color: #30638B; }
+  color: #30638B;
+}
 .theme-duotone .reveal.pattern--hex .slides section.title {
   background-color: #736FBA;
-  color: #CC144B; }
+  color: #CC144B;
+}
 .theme-jewels .reveal.pattern--hex .slides section.title {
   background-color: #79C9E8;
-  color: #4A235D; }
+  color: #4A235D;
+}
 .theme-soda .reveal.pattern--hex .slides section.title {
   background-color: #1073b9;
-  color: #263c80; }
-
+  color: #263c80;
+}
 .theme-streams .reveal.pattern--hex .progress {
-  background-color: #3388A6; }
+  background-color: #3388A6;
+}
 .theme-lines .reveal.pattern--hex .progress {
-  background-color: #ff206e; }
+  background-color: #ff206e;
+}
 .theme-seacalm .reveal.pattern--hex .progress {
-  background-color: #00798c; }
+  background-color: #00798c;
+}
 .theme-goldilocks .reveal.pattern--hex .progress {
-  background-color: #8D4593; }
+  background-color: #8D4593;
+}
 .theme-duotone .reveal.pattern--hex .progress {
-  background-color: #A1AAE2; }
+  background-color: #A1AAE2;
+}
 .theme-jewels .reveal.pattern--hex .progress {
-  background-color: #FF0368; }
+  background-color: #FF0368;
+}
 .theme-soda .reveal.pattern--hex .progress {
-  background-color: #95d5d4; }
-
+  background-color: #95d5d4;
+}
 .reveal.pattern--star {
-  background-image: url("../assets/patterns/star_pattern.svg"); }
+  background-image: url("../assets/patterns/star_pattern.svg");
+}
 
 .theme-streams .reveal.pattern--star .slides section.intro {
-  background-color: #747CA8; }
+  background-color: #747CA8;
+}
 .theme-lines .reveal.pattern--star .slides section.intro {
-  background-color: #00BCD4; }
+  background-color: #00BCD4;
+}
 .theme-seacalm .reveal.pattern--star .slides section.intro {
-  background-color: #EDAF49; }
+  background-color: #EDAF49;
+}
 .theme-goldilocks .reveal.pattern--star .slides section.intro {
-  background-color: #EDAF49; }
+  background-color: #EDAF49;
+}
 .theme-duotone .reveal.pattern--star .slides section.intro {
-  background-color: #736FBA; }
+  background-color: #736FBA;
+}
 .theme-jewels .reveal.pattern--star .slides section.intro {
-  background-color: #79C9E8; }
+  background-color: #79C9E8;
+}
 .theme-soda .reveal.pattern--star .slides section.intro {
-  background-color: #1073b9; }
-
+  background-color: #1073b9;
+}
 .theme-streams .reveal.pattern--star .slides section.title {
   background-color: #747CA8;
-  color: #5F4B8B; }
+  color: #5F4B8B;
+}
 .theme-lines .reveal.pattern--star .slides section.title {
   background-color: #00BCD4;
-  color: #3A015C; }
+  color: #3A015C;
+}
 .theme-seacalm .reveal.pattern--star .slides section.title {
   background-color: #EDAF49;
-  color: #30638B; }
+  color: #30638B;
+}
 .theme-goldilocks .reveal.pattern--star .slides section.title {
   background-color: #EDAF49;
-  color: #30638B; }
+  color: #30638B;
+}
 .theme-duotone .reveal.pattern--star .slides section.title {
   background-color: #736FBA;
-  color: #CC144B; }
+  color: #CC144B;
+}
 .theme-jewels .reveal.pattern--star .slides section.title {
   background-color: #79C9E8;
-  color: #4A235D; }
+  color: #4A235D;
+}
 .theme-soda .reveal.pattern--star .slides section.title {
   background-color: #1073b9;
-  color: #263c80; }
-
+  color: #263c80;
+}
 .theme-streams .reveal.pattern--star .progress {
-  background-color: #3388A6; }
+  background-color: #3388A6;
+}
 .theme-lines .reveal.pattern--star .progress {
-  background-color: #ff206e; }
+  background-color: #ff206e;
+}
 .theme-seacalm .reveal.pattern--star .progress {
-  background-color: #00798c; }
+  background-color: #00798c;
+}
 .theme-goldilocks .reveal.pattern--star .progress {
-  background-color: #8D4593; }
+  background-color: #8D4593;
+}
 .theme-duotone .reveal.pattern--star .progress {
-  background-color: #A1AAE2; }
+  background-color: #A1AAE2;
+}
 .theme-jewels .reveal.pattern--star .progress {
-  background-color: #FF0368; }
+  background-color: #FF0368;
+}
 .theme-soda .reveal.pattern--star .progress {
-  background-color: #95d5d4; }
-
+  background-color: #95d5d4;
+}
 .reveal.pattern--pupilines {
-  background-image: url("../assets/patterns/pupilines.svg"); }
+  background-image: url("../assets/patterns/pupilines.svg");
+}
 
 .theme-streams .reveal.pattern--pupilines .slides section.intro {
-  background-color: #747CA8; }
+  background-color: #747CA8;
+}
 .theme-lines .reveal.pattern--pupilines .slides section.intro {
-  background-color: #00BCD4; }
+  background-color: #00BCD4;
+}
 .theme-seacalm .reveal.pattern--pupilines .slides section.intro {
-  background-color: #EDAF49; }
+  background-color: #EDAF49;
+}
 .theme-goldilocks .reveal.pattern--pupilines .slides section.intro {
-  background-color: #EDAF49; }
+  background-color: #EDAF49;
+}
 .theme-duotone .reveal.pattern--pupilines .slides section.intro {
-  background-color: #736FBA; }
+  background-color: #736FBA;
+}
 .theme-jewels .reveal.pattern--pupilines .slides section.intro {
-  background-color: #79C9E8; }
+  background-color: #79C9E8;
+}
 .theme-soda .reveal.pattern--pupilines .slides section.intro {
-  background-color: #1073b9; }
-
+  background-color: #1073b9;
+}
 .theme-streams .reveal.pattern--pupilines .slides section.title {
   background-color: #747CA8;
-  color: #5F4B8B; }
+  color: #5F4B8B;
+}
 .theme-lines .reveal.pattern--pupilines .slides section.title {
   background-color: #00BCD4;
-  color: #3A015C; }
+  color: #3A015C;
+}
 .theme-seacalm .reveal.pattern--pupilines .slides section.title {
   background-color: #EDAF49;
-  color: #30638B; }
+  color: #30638B;
+}
 .theme-goldilocks .reveal.pattern--pupilines .slides section.title {
   background-color: #EDAF49;
-  color: #30638B; }
+  color: #30638B;
+}
 .theme-duotone .reveal.pattern--pupilines .slides section.title {
   background-color: #736FBA;
-  color: #CC144B; }
+  color: #CC144B;
+}
 .theme-jewels .reveal.pattern--pupilines .slides section.title {
   background-color: #79C9E8;
-  color: #4A235D; }
+  color: #4A235D;
+}
 .theme-soda .reveal.pattern--pupilines .slides section.title {
   background-color: #1073b9;
-  color: #263c80; }
-
+  color: #263c80;
+}
 .theme-streams .reveal.pattern--pupilines .progress {
-  background-color: #747CA8; }
+  background-color: #747CA8;
+}
 .theme-lines .reveal.pattern--pupilines .progress {
-  background-color: #00BCD4; }
+  background-color: #00BCD4;
+}
 .theme-seacalm .reveal.pattern--pupilines .progress {
-  background-color: #EDAF49; }
+  background-color: #EDAF49;
+}
 .theme-goldilocks .reveal.pattern--pupilines .progress {
-  background-color: #EDAF49; }
+  background-color: #EDAF49;
+}
 .theme-duotone .reveal.pattern--pupilines .progress {
-  background-color: #736FBA; }
+  background-color: #736FBA;
+}
 .theme-jewels .reveal.pattern--pupilines .progress {
-  background-color: #79C9E8; }
+  background-color: #79C9E8;
+}
 .theme-soda .reveal.pattern--pupilines .progress {
-  background-color: #1073b9; }
-
+  background-color: #1073b9;
+}
 .theme-streams .reveal.pattern--pupilines .controls {
-  color: #747CA8; }
+  color: #747CA8;
+}
 .theme-lines .reveal.pattern--pupilines .controls {
-  color: #00BCD4; }
+  color: #00BCD4;
+}
 .theme-seacalm .reveal.pattern--pupilines .controls {
-  color: #EDAF49; }
+  color: #EDAF49;
+}
 .theme-goldilocks .reveal.pattern--pupilines .controls {
-  color: #EDAF49; }
+  color: #EDAF49;
+}
 .theme-duotone .reveal.pattern--pupilines .controls {
-  color: #736FBA; }
+  color: #736FBA;
+}
 .theme-jewels .reveal.pattern--pupilines .controls {
-  color: #79C9E8; }
+  color: #79C9E8;
+}
 .theme-soda .reveal.pattern--pupilines .controls {
-  color: #1073b9; }
-
+  color: #1073b9;
+}
 .reveal.pattern--bwlines {
-  background-image: url("../assets/patterns/bwlines.svg"); }
+  background-image: url("../assets/patterns/bwlines.svg");
+}
 
 .theme-streams .reveal.pattern--bwlines .slides section.intro {
-  background-color: #747CA8; }
+  background-color: #747CA8;
+}
 .theme-lines .reveal.pattern--bwlines .slides section.intro {
-  background-color: #00BCD4; }
+  background-color: #00BCD4;
+}
 .theme-seacalm .reveal.pattern--bwlines .slides section.intro {
-  background-color: #EDAF49; }
+  background-color: #EDAF49;
+}
 .theme-goldilocks .reveal.pattern--bwlines .slides section.intro {
-  background-color: #EDAF49; }
+  background-color: #EDAF49;
+}
 .theme-duotone .reveal.pattern--bwlines .slides section.intro {
-  background-color: #736FBA; }
+  background-color: #736FBA;
+}
 .theme-jewels .reveal.pattern--bwlines .slides section.intro {
-  background-color: #79C9E8; }
+  background-color: #79C9E8;
+}
 .theme-soda .reveal.pattern--bwlines .slides section.intro {
-  background-color: #1073b9; }
-
+  background-color: #1073b9;
+}
 .theme-streams .reveal.pattern--bwlines .slides section.title {
   background-color: #747CA8;
-  color: #5F4B8B; }
+  color: #5F4B8B;
+}
 .theme-lines .reveal.pattern--bwlines .slides section.title {
   background-color: #00BCD4;
-  color: #3A015C; }
+  color: #3A015C;
+}
 .theme-seacalm .reveal.pattern--bwlines .slides section.title {
   background-color: #EDAF49;
-  color: #30638B; }
+  color: #30638B;
+}
 .theme-goldilocks .reveal.pattern--bwlines .slides section.title {
   background-color: #EDAF49;
-  color: #30638B; }
+  color: #30638B;
+}
 .theme-duotone .reveal.pattern--bwlines .slides section.title {
   background-color: #736FBA;
-  color: #CC144B; }
+  color: #CC144B;
+}
 .theme-jewels .reveal.pattern--bwlines .slides section.title {
   background-color: #79C9E8;
-  color: #4A235D; }
+  color: #4A235D;
+}
 .theme-soda .reveal.pattern--bwlines .slides section.title {
   background-color: #1073b9;
-  color: #263c80; }
-
+  color: #263c80;
+}
 .reveal.pattern--space2 {
-  background-image: url("../assets/patterns/space2.png"); }
+  background-image: url("../assets/patterns/space2.png");
+}
 
 .theme-streams .reveal.pattern--space2 .slides section.intro {
-  background-color: #747CA8; }
+  background-color: #747CA8;
+}
 .theme-lines .reveal.pattern--space2 .slides section.intro {
-  background-color: #00BCD4; }
+  background-color: #00BCD4;
+}
 .theme-seacalm .reveal.pattern--space2 .slides section.intro {
-  background-color: #EDAF49; }
+  background-color: #EDAF49;
+}
 .theme-goldilocks .reveal.pattern--space2 .slides section.intro {
-  background-color: #EDAF49; }
+  background-color: #EDAF49;
+}
 .theme-duotone .reveal.pattern--space2 .slides section.intro {
-  background-color: #736FBA; }
+  background-color: #736FBA;
+}
 .theme-jewels .reveal.pattern--space2 .slides section.intro {
-  background-color: #79C9E8; }
+  background-color: #79C9E8;
+}
 .theme-soda .reveal.pattern--space2 .slides section.intro {
-  background-color: #1073b9; }
-
+  background-color: #1073b9;
+}
 .theme-streams .reveal.pattern--space2 .slides section.title {
   background-color: #747CA8;
-  color: #5F4B8B; }
+  color: #5F4B8B;
+}
 .theme-lines .reveal.pattern--space2 .slides section.title {
   background-color: #00BCD4;
-  color: #3A015C; }
+  color: #3A015C;
+}
 .theme-seacalm .reveal.pattern--space2 .slides section.title {
   background-color: #EDAF49;
-  color: #30638B; }
+  color: #30638B;
+}
 .theme-goldilocks .reveal.pattern--space2 .slides section.title {
   background-color: #EDAF49;
-  color: #30638B; }
+  color: #30638B;
+}
 .theme-duotone .reveal.pattern--space2 .slides section.title {
   background-color: #736FBA;
-  color: #CC144B; }
+  color: #CC144B;
+}
 .theme-jewels .reveal.pattern--space2 .slides section.title {
   background-color: #79C9E8;
-  color: #4A235D; }
+  color: #4A235D;
+}
 .theme-soda .reveal.pattern--space2 .slides section.title {
   background-color: #1073b9;
-  color: #263c80; }
-
+  color: #263c80;
+}
 .reveal.pattern--space3 {
-  background-image: url("../assets/patterns/space3.png"); }
+  background-image: url("../assets/patterns/space3.png");
+}
 
 .theme-streams .reveal.pattern--space3 .slides section.intro {
-  background-color: #5F4B8B; }
+  background-color: #5F4B8B;
+}
 .theme-lines .reveal.pattern--space3 .slides section.intro {
-  background-color: #3A015C; }
+  background-color: #3A015C;
+}
 .theme-seacalm .reveal.pattern--space3 .slides section.intro {
-  background-color: #30638B; }
+  background-color: #30638B;
+}
 .theme-goldilocks .reveal.pattern--space3 .slides section.intro {
-  background-color: #30638B; }
+  background-color: #30638B;
+}
 .theme-duotone .reveal.pattern--space3 .slides section.intro {
-  background-color: #CC144B; }
+  background-color: #CC144B;
+}
 .theme-jewels .reveal.pattern--space3 .slides section.intro {
-  background-color: #4A235D; }
+  background-color: #4A235D;
+}
 .theme-soda .reveal.pattern--space3 .slides section.intro {
-  background-color: #263c80; }
-
+  background-color: #263c80;
+}
 .reveal.pattern--trooper {
-  background-image: url("../assets/patterns/trooper.jpg"); }
+  background-image: url("../assets/patterns/trooper.jpg");
+}
 
 .theme-streams .reveal.pattern--trooper .slides section.intro {
-  background-color: #5F4B8B; }
+  background-color: #5F4B8B;
+}
 .theme-lines .reveal.pattern--trooper .slides section.intro {
-  background-color: #3A015C; }
+  background-color: #3A015C;
+}
 .theme-seacalm .reveal.pattern--trooper .slides section.intro {
-  background-color: #30638B; }
+  background-color: #30638B;
+}
 .theme-goldilocks .reveal.pattern--trooper .slides section.intro {
-  background-color: #30638B; }
+  background-color: #30638B;
+}
 .theme-duotone .reveal.pattern--trooper .slides section.intro {
-  background-color: #CC144B; }
+  background-color: #CC144B;
+}
 .theme-jewels .reveal.pattern--trooper .slides section.intro {
-  background-color: #4A235D; }
+  background-color: #4A235D;
+}
 .theme-soda .reveal.pattern--trooper .slides section.intro {
-  background-color: #263c80; }
-
+  background-color: #263c80;
+}
 .theme-streams .reveal.pattern--trooper .slides section.title {
   background-color: #5F4B8B;
-  color: #747CA8; }
+  color: #747CA8;
+}
 .theme-lines .reveal.pattern--trooper .slides section.title {
   background-color: #3A015C;
-  color: #00BCD4; }
+  color: #00BCD4;
+}
 .theme-seacalm .reveal.pattern--trooper .slides section.title {
   background-color: #30638B;
-  color: #EDAF49; }
+  color: #EDAF49;
+}
 .theme-goldilocks .reveal.pattern--trooper .slides section.title {
   background-color: #30638B;
-  color: #EDAF49; }
+  color: #EDAF49;
+}
 .theme-duotone .reveal.pattern--trooper .slides section.title {
   background-color: #CC144B;
-  color: #736FBA; }
+  color: #736FBA;
+}
 .theme-jewels .reveal.pattern--trooper .slides section.title {
   background-color: #4A235D;
-  color: #79C9E8; }
+  color: #79C9E8;
+}
 .theme-soda .reveal.pattern--trooper .slides section.title {
   background-color: #263c80;
-  color: #1073b9; }
-
+  color: #1073b9;
+}
 .reveal.pattern--fox {
-  background-image: url("../assets/patterns/fox.png"); }
+  background-image: url("../assets/patterns/fox.png");
+}
 
 .theme-streams .reveal.pattern--fox .slides section.intro {
-  background-color: #5F4B8B; }
+  background-color: #5F4B8B;
+}
 .theme-lines .reveal.pattern--fox .slides section.intro {
-  background-color: #3A015C; }
+  background-color: #3A015C;
+}
 .theme-seacalm .reveal.pattern--fox .slides section.intro {
-  background-color: #30638B; }
+  background-color: #30638B;
+}
 .theme-goldilocks .reveal.pattern--fox .slides section.intro {
-  background-color: #30638B; }
+  background-color: #30638B;
+}
 .theme-duotone .reveal.pattern--fox .slides section.intro {
-  background-color: #CC144B; }
+  background-color: #CC144B;
+}
 .theme-jewels .reveal.pattern--fox .slides section.intro {
-  background-color: #4A235D; }
+  background-color: #4A235D;
+}
 .theme-soda .reveal.pattern--fox .slides section.intro {
-  background-color: #263c80; }
-
+  background-color: #263c80;
+}
 .theme-streams .reveal.pattern--fox .slides section.title {
   background-color: #5F4B8B;
-  color: #747CA8; }
+  color: #747CA8;
+}
 .theme-lines .reveal.pattern--fox .slides section.title {
   background-color: #3A015C;
-  color: #00BCD4; }
+  color: #00BCD4;
+}
 .theme-seacalm .reveal.pattern--fox .slides section.title {
   background-color: #30638B;
-  color: #EDAF49; }
+  color: #EDAF49;
+}
 .theme-goldilocks .reveal.pattern--fox .slides section.title {
   background-color: #30638B;
-  color: #EDAF49; }
+  color: #EDAF49;
+}
 .theme-duotone .reveal.pattern--fox .slides section.title {
   background-color: #CC144B;
-  color: #736FBA; }
+  color: #736FBA;
+}
 .theme-jewels .reveal.pattern--fox .slides section.title {
   background-color: #4A235D;
-  color: #79C9E8; }
+  color: #79C9E8;
+}
 .theme-soda .reveal.pattern--fox .slides section.title {
   background-color: #263c80;
-  color: #1073b9; }
-
+  color: #1073b9;
+}
 .reveal.pattern--quetzal {
-  background-image: url("../assets/patterns/corazon.jpg"); }
+  background-image: url("../assets/patterns/corazon.jpg");
+}
 
 .theme-streams .reveal.pattern--quetzal .slides section.title {
   background-color: #5F4B8B;
-  color: #3388A6; }
+  color: #3388A6;
+}
 .theme-lines .reveal.pattern--quetzal .slides section.title {
   background-color: #3A015C;
-  color: #ff206e; }
+  color: #ff206e;
+}
 .theme-seacalm .reveal.pattern--quetzal .slides section.title {
   background-color: #30638B;
-  color: #00798c; }
+  color: #00798c;
+}
 .theme-goldilocks .reveal.pattern--quetzal .slides section.title {
   background-color: #30638B;
-  color: #8D4593; }
+  color: #8D4593;
+}
 .theme-duotone .reveal.pattern--quetzal .slides section.title {
   background-color: #CC144B;
-  color: #A1AAE2; }
+  color: #A1AAE2;
+}
 .theme-jewels .reveal.pattern--quetzal .slides section.title {
   background-color: #4A235D;
-  color: #FF0368; }
+  color: #FF0368;
+}
 .theme-soda .reveal.pattern--quetzal .slides section.title {
   background-color: #263c80;
-  color: #95d5d4; }
-
+  color: #95d5d4;
+}
 /*********************************************
  * IMPORT FONTS
  *********************************************/
 @font-face {
-  font-family: 'Leafy';
-  src: url("../../fonts/leafy.woff") format("woff");
-  font-style: normal; }
-@font-face {
-  font-family: 'Cunia';
+  font-family: "Cunia";
   src: url("../../fonts/Cunia.woff") format("woff");
   font-style: normal;
-  font-weight: 300; }
+  font-weight: 300;
+}
 @font-face {
-  font-family: 'Coves';
+  font-family: "Coves";
   src: url("../../fonts/Coves.woff") format("woff");
   font-style: normal;
-  font-weight: 300; }
+  font-weight: 300;
+}
 @font-face {
-  font-family: 'NeoNeon';
+  font-family: "NeoNeon";
   src: url("../../fonts/Neoneon.woff") format("woff");
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
-  font-family: 'Klasik';
+  font-family: "Klasik";
   src: url("../../fonts/Klasik_Regular.woff") format("woff");
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
-  font-family: 'Klasik-Rough';
+  font-family: "Klasik-Rough";
   src: url("../../fonts/Klasik_Rough.woff") format("woff");
-  font-style: normal; }
+  font-style: normal;
+}
 /***********************
 * VARIABLES FOR LIGHT-THEME
 ************************/
 /*****************************
 * USE DEFAULT COLOR FOR SLIDES
 ******************************/
-.reveal .slides section.subsection:not([class*='color--']) {
-  background-color: #fff; }
+.reveal .slides section.subsection:not([class*=color--]) {
+  background-color: #fff;
+}
 
-.reveal .slides section:not([class*='color--']) {
-  background-color: white; }
+.reveal .slides section:not([class*=color--]) {
+  background-color: white;
+}
 
 /*# sourceMappingURL=light_theme.css.map */

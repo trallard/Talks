@@ -1,0 +1,777 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>csv conf 2019</title>
+
+    <!-- Reveal themes -->
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/white.css">
+
+    <!-- Full theme:light version -->
+    <link rel="stylesheet" href="css/light_theme.css">
+    <link rel="stylesheet" href="sass/presentation.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/personal/Purple.png" />
+
+    <!-- Font awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" media="all">
+
+    <!-- Tania custom icons  -->
+    <link rel="stylesheet" type="text/css" href="assets/icons_collection/font/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+
+</head>
+
+<!-- to do ensure the url is visible -->
+
+<!-- Need to specify the theme here: the first defines the color palette and the 
+	second the font theme -->
+
+<body class="theme-jewels theme-dosis-font">
+
+    <!-- Adding the background and icon theme here -->
+
+    <div class="reveal pattern--bwlines">
+        <div class="slides">
+
+            <!-- Intro slide, this is only the logo in a squared slide -->
+            <section class="intro" id="intro">
+                <div class="logo-wrapper">
+                    <div class="logo" style="background-image: url('./assets/logos/BIT_LINUX.png');">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Introduction slide -->
+            <section>
+                <section class="title" id="title">
+                    <div class="grid-wrapper">
+                        <div class="header">
+                            <!-- Remove logo--full class to only show brand mark -->
+                            <div class="logo logo--full">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h1>Where has your data come from?</h1>
+                            <div class="description">
+                                Data ancestry and other tales
+                                <br><br>
+                                <small><a href="https://doi.org/10.5281/zenodo.2697992">
+                                        10.5281/zenodo.2697993</a></small>
+                            </div>
+                        </div>
+                        <div class="credit">
+                            <hr>
+                            <div class="label">Presented by</div>
+                            <div class="name">Tania Allard, PhD</div>
+                        </div>
+                        <a class="presentation-url" href="https://trallard.github.io/Talks/2019-05-csvconf">
+                            https://trallard.github.io/Talks/2019-05-csvconf</a>
+                    </div>
+                </section>
+
+                <!--About section: add name, job and handles -->
+                <section class="about" id="about">
+                    <div class="grid-wrapper">
+                        <div class="content">
+                            <aside>
+                                <h2>Tania Allard</h2>
+                                <hr>
+                                <ul class="projects">
+                                    <li>Developer advocate @Microsoft</li>
+                                    <li>Research Software Engineer</li>
+                                    <li>Open source nerd/advocate</li>
+                                </ul>
+                                <hr>
+                                <ul class="accounts">
+                                    <li><a href="https://github.com/trallard">
+                                            <i class="fab fa-github social_icon"></i> <span> trallard</span></a></li>
+                                    <li><a href="https://twitter.com/ixek">
+                                            <i class="fab fa-twitter social_icon"></i><span> ixek</span></a></li>
+                                </ul>
+                            </aside>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Introduction -->
+            <section class="subsection color--topaz">
+                <div class=" grid-wrapper">
+                    <div class="header">
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="logo"></div>
+                    <h1>
+                        Where are we standing?
+                    </h1>
+                    <div class="description" style="color:blanchedalmond;">
+                        A little bit of background
+                    </div>
+                </div>
+            </section>
+
+            <section class="dark_box" style="background-image:url('./assets/lineage/crisis.png');">
+
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Science and research have changed</h3>
+                        <ul class="icon">
+                            <li class="fragment nopal">Access to more data and data sources</li>
+                            <li class="fragment nopal">Better collection tools/approaches</li>
+                            <li class="fragment nopal">Better and cheaper compute</li>
+                            <li class="fragment nopal">Compute driven research</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        This change in research helped shed light on the
+                        reproducibility <strike>crisis</strike>
+                        <strong-alt>
+                            chronic problem
+                        </strong-alt>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class=" grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h2>The 'reproducibility crisis' led to some good
+                            outcomes
+                        </h2>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        Adversity as an agent of change
+                        <br>
+                        <br>
+                        ✊🏿✊🏻✊🏾
+                    </div>
+                </div>
+            </section>
+
+            <!-- Changes -->
+            <section class="subsection color--topaz">
+                <div class=" grid-wrapper">
+                    <div class="header">
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="logo"></div>
+                    <h1>
+                        What has happened since then?
+                    </h1>
+                </div>
+            </section>
+
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Increased awareness on reproducibility matters</h3>
+                        <figure class="display">
+                            <img src="./assets/lineage/lbarba.png" alt="Lorena Barba tweet" />
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <figure class="display">
+                            <h3>Digital assets are finally gaining some recognition</h3>
+                            <img src="./assets/lineage/lbarba2.png" alt="lorena barba 2" />
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <figure class="display">
+                            <img src="./assets/lineage/rse.png" alt="rse" width="120%;" />
+                            <figcaption><a href="https://rse.ac.uk">https://rse.ac.uk</a></figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <figure class="display">
+                            <img src="https://media.giphy.com/media/KZ5Iry5jeUEiGhG5ia/giphy.gif" alt="rse"
+                                width="120%;" />
+                            <figcaption><a
+                                    href="https://www.theatlantic.com/science/archive/2018/04/the-scientific-paper-is-obsolete/556676/">
+                                    Courtesy of the Atlantic</a></figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <figure class="display">
+                            <img src="/assets/lineage/elife.png" alt="elife article" width="120%;" />
+                            <figcaption><a
+                                    href="https://elifesciences.org/labs/ad58f08d/introducing-elife-s-first-computationally-reproducible-article">
+                                    Courtesy of eLife</a></figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bases -->
+            <section class="subsection color--topaz">
+                <div class=" grid-wrapper">
+                    <div class="header">
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="logo"></div>
+                    <h1>
+                        Nailing the basics </h1>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>What do we need to take care of?</h3>
+                        <ul class="icon">
+                            <li class="fragment nopal">Code / software</li>
+                            <li class="fragment nopal">Computational environment</li>
+                            <li class="fragment nopal">Data</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h2>Code</h2>
+                        <div class='images'>
+                            <img src="./assets/lineage/code.svg" alt="ninja">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <div class='images' style="width:60%;">
+                            <img src="./assets/lineage/carpentries.png" alt="carpentries">
+                        </div>
+                        Democratizing the use of software and building <strong-alt>communities of practice</strong-alt>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <div class='images' style="width:70%;">
+                            <img src="./assets/lineage/ssi.png" alt="ssi">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        Widespread introduction of best practices and peer review processes.
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h2>Infrastructure</h2>
+                        <div class='images'>
+                            <img src="./assets/lineage/container.svg" alt="containers">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h2>We're getting there</h2>
+                        <ul class="icon">
+                            <li class="nopal">Institutional buy-in</li>
+                            <li class="nopal">HPC infrastructure- PI level buy-in</li>
+                            <li class="nopal">OSS- Binder/Jupyter</li>
+                            <li class="nopal">Adapt to change</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h2>Data</h2>
+                        <div class='images'>
+                            <img src="./assets/lineage/infra.svg" alt="infra">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h2>Some good...</h2>
+                        <ul class="icon">
+                            <li class="nopal">Data management and archiving</li>
+                            <li class="nopal">Funding agencies are requesting open data sets</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h2>But it is not enough</h2>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h2>Metadata</h2>
+                        <ul class="icon">
+                            <li class="nopal">Mandatory information about the data set</li>
+                            <li class="nopal">Should answer: who, what, when, why?</li>
+                        </ul>
+                        <hr>
+                        <small>Check <a href="http://www.dcc.ac.uk/resources/metadata-standards/list">
+                                http://www.dcc.ac.uk/resources/metadata-standards/list</a></small>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="dark_box" style="background-image:url('./assets/lineage/meerkats.jpeg');">
+
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        Everyone and everything has a history...
+                        <br><br>
+                        <p class="fragment">Even your data</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h2>Data lineage</h2>
+                        Reference to the data origins, what happens to it and where it moves over time.
+
+                        <p class="fragment">Gives visibility and the ability to trace back to errors in the data
+                            pipeline.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        This is not data lineage...
+                        <br><br>
+                        <div class='images'>
+                            <img src="./assets/lineage/lineage 3.png" alt="lineage 1">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        Not only we have an overview of the data path but also of the processes and metadata
+                        <div class='images'>
+                            <img src="./assets/lineage/lineage2.png" alt="lineage">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        We establish a contract with the data across every single step of the pipeline.
+                        <br> <br>
+                        <p class='fragment'>We always know what we are expecting of the data at a given point.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h2>How is this different from provenance?</h2>
+                        Provenance refers to the combination of data lineage (origin, traceability, schemas/metadata)
+                        plus
+                        inputs and outputs that allow for reproducibility of the pipeline.
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>What can be achieved with multiple data sources?</h3>
+                        <div class='images'>
+                            <img src="./assets/lineage/bh.png" alt="lineage">
+                        </div>
+                        <small>Katie Bouman, 2019</small>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h2>A real-life use case</h2>
+                        Driving intelligence from multi-trust data sources using a Data Lake and Machine Learning.
+                        <br> <br>
+                        Collaboration among Imperial College London, Microsoft, and the NHS.
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h2>What does this entail?</h2>
+                        <ul class="icon">
+                            <li>Provenance first approach</li>
+                            <li>Fully indexable and searchable</li>
+                            <li>Integration of a schema registry alongside the data</li>
+                        </ul>
+                        <p class="fragment">👉🏽 Pre-print soon to come </p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        Over 20 projects will be using the generated data lake for multiple purposes:
+                        from early sepsis diagnosis to better utilization of hospital resources.
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        Contracts are good...
+                        <figure class="display" style="max-width:50%;">
+                            <img src="/assets/lineage/trust.jpg" alt="elife article" width="120%;" />
+                        </figure>
+                        <p>It's time we start writing more contracts ✍️</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- End slide -->
+            <section id="end" class="end color--dark">
+                <div class="grid-wrapper">
+                    <div class="content">
+                        <h2>Thank you</h2><br><br>
+                        <p style="text-align:left;"><a href="https://twitter.com/ixek"><i
+                                    class="fab fa-twitter-square"></i>
+                                <span></span>ixek</span></a><br>
+                            <a href="https://twitter.com/ixek"><i class="fas fa-envelope"></i></i>
+                                <span>tania.allard@microsoft.com</span></a></p>
+                        <hr>
+                        <small>Illustrations from undraw.co</small>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- <script src="reveal.js/lib/js/head.min.js"></script> -->
+    <script src="reveal.js/js/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            // Show the control arrows
+            controls: true,
+            // Location of the arrows
+            controlsLayout: 'bottom-right',
+            // Visibility rule for backwards navigation arrows; "faded", "hidden"
+            // or "visible"
+            controlsBackArrows: 'hidden',
+            progress: true,
+            slideNumber: false,
+            center: false,
+            width: "100%",
+            height: "100%",
+            margin: 0,
+            minScale: 1,
+            maxScale: 1,
+            history: true,
+            touch: true,
+
+            // Arrow keys progress through sub-slides
+            // keyboard: {
+            // 	39: 'next', // right key
+            // 	37: 'prev'  // left key
+            // },
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [
+                { src: 'reveal.js/plugin/markdown/marked.js' },
+                { src: 'reveal.js/plugin/markdown/markdown.js' },
+                { src: 'reveal.js/plugin/notes/notes.js', async: true },
+                { src: 'plugin/embed-tweet/embed-tweet.js' },
+                {
+                    src: 'reveal.js/plugin/highlight/highlight.js',
+                    async: true,
+                    callback: function () { hljs.initHighlightingOnLoad(); }
+                }
+            ]
+        });
+    </script>
+
+
+</body>
+
+</html>

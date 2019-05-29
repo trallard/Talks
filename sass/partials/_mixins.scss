@@ -34,7 +34,8 @@ $bp-medium: 64em; // 1024px
 $bp-large: 85.375em; // 1366px
 $bp-xlarge: 120em; // 1920px
 $bp-xxlarge: 160em; // 2560px
-// Media Queries$bp-xsmall: 48em; // 768px
+// Media Queries
+$mq-xsmall: "(min-width: #{$bp-xsmall})";
 $mq-small: "(min-width: #{$bp-small})";
 $mq-medium: "(min-width: #{$bp-medium})";
 $mq-large: "(min-width: #{$bp-large})";
@@ -42,7 +43,7 @@ $mq-xlarge: "(min-width: #{$bp-xlarge})";
 $mq-xxlarge: "(min-width: #{$bp-xxlarge})";
 $mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 // Font-Size
-$base-font-size: 1em;
+$base-font-size: 1.5em;
 // Line-Height
 $base-line-height: 1.6;
 $header-line-height: 1.25;
@@ -144,13 +145,15 @@ html {
 
 
 /*********************************************
-* HEADIINGS
+* HEADINGS
 *********************************************/
 
-$heading1Size: 3.77em;
+// Check https://www.modularscale.com/?1.2&em&1.25 
+
+$heading1Size: 3.052em;
 $heading2Size: 2.11em;
-$heading3Size: 1.55em;
-$heading4Size: 1.00em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
 
 .reveal h1 {font-size: $heading1Size; }
 .reveal h2 {font-size: $heading2Size; }

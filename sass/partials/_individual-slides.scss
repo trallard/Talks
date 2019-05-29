@@ -44,7 +44,14 @@ Presentation title
     color: $white;
     margin-left: 14vw;
     width: calc(100vw - 4vmin - 14vw);
+    padding: 0;
 }
+
+// this layout places title and description side by side
+// .reveal .slides section.title .content {
+//   grid-template-columns: auto;
+//   grid-template-areas: "title" "description";
+// }
 
 // Grid areas for introduction title slide
 // usually contains title, presented and the event
@@ -56,8 +63,9 @@ Presentation title
 }
 
 // Main slide title
-.reveal .slides section.title h1 {
+.reveal .slides section.title h1{
     color: $white;
+    font-size: 1.5em;
 }
 
 //  Credit: the author
@@ -89,7 +97,7 @@ Presentation title
 // Add url to the intro slide header 
 .slides .title .presentation-url {
     grid-area: header2;
-    font-size: 1em;
+    font-size: 0.8em;
     align-self: center;
     opacity: 0.5;
     color: $text-color;
@@ -107,7 +115,7 @@ Presentation title
 }
 
 // Subsection title
-.reveal .slides section.subsection h1 {
+.reveal .slides section.subsection h1,h2,h3,h4 {
     align-self: center;
     grid-area: title;
     margin: 0;
@@ -120,7 +128,7 @@ Presentation title
     min-height: 4em;
 }
 
-// For midnight color subsection
+// For certain sections color subsection
 .reveal .slides section.subsection.color--midnight .description,
 .reveal .slides section.subsection.color--ice .description,
 .reveal .slides section.subsection.color--vibrant .description {
@@ -138,7 +146,7 @@ Presentation title
     color: #2A2A49;
     border: none;
     box-shadow: none;
-    font-size: 1.7em;
+    font-size: 1.2em;
     font-style: normal;
     margin: 0;
     max-width: 42ex;
@@ -163,11 +171,13 @@ Presentation title
 
 // Quotes in dark coloured slides
 .reveal .slides section.quote.color--midnight blockquote,
+.reveal .slides section.quote.color--violet blockquote,
 .reveal .slides section.quote.color--ice blockquote {
     color: #FFFFFF;
 }
 
 .reveal .slides section.quote.color--midnight hr,
+.reveal .slides section.quote.color--violet hr,
 .reveal .slides section.quote.color--ice hr {
     border-color: #EEEDEF;
 }
@@ -181,6 +191,8 @@ Presentation title
 All code slide
 ************/
 
+// Light coloured all code slide
+
 .reveal .slides section.color--code {
     background-color: #eeeeee;
     /* pale gray */
@@ -192,6 +204,24 @@ All code slide
     }
     & code {
         background-color: transparent;
+    }
+}
+
+// Dark coloured all code slides
+
+.reveal .slides section.color--code-dark {
+    background-color: #1d1941;
+    font-family: $code-font;
+    & h1,
+    h2,
+    h3 {
+        font-family: $code-font;
+    }
+    & code {
+        background-color: transparent;
+    }
+    & pre{
+        color: #C2CAFD!important;
     }
 }
 
@@ -392,6 +422,14 @@ All code slide
     width: 33%;
 }
 
+
+/* End slide I just tend to have an empty slide
+with my Twitter handle  */
+#end .content {
+  margin-top: auto;
+  text-align: center;
+  font-size: 140%;
+}
 /*********************************************
  * Black box slide
  *********************************************/
@@ -405,6 +443,7 @@ black box with white text (ideal for presentation sections) */
     background-image: url(#{$assets-path}/code.jpg);
     background-size: cover;
     background-position: center center;
+
     /* floating dark box */
     aside {
         background-color: rgba(0, 0, 0, 0.7);
@@ -414,7 +453,7 @@ black box with white text (ideal for presentation sections) */
         width: auto;
         border-radius: 10px;
         display: block;
-        top: 30%;
+        top: 50%;
         left: 50%;
         position: absolute;
         transform: translate(-50%, -50%);
@@ -443,6 +482,7 @@ has a background image and a box with the details */
     background-image: url($about-img);
     background-size: cover;
     background-position: center center;
+    
     a {
         color: #2A2A49;
     }
@@ -451,12 +491,14 @@ has a background image and a box with the details */
         border-radius: 10px;
         color: #000;
         float: left;
-        font-size: 1.5em;
-        padding: 5vmin;
+        padding: 3vmin;
         hr {
-            margin: 2.5vmin 0;
+            margin: 2vmin 0;
             border: solid;
             border-width: 2px 0 0 0;
+            @include themify($themes) {
+                color: themed('primary-light')
+            }
         }
         ul {
             display: block;

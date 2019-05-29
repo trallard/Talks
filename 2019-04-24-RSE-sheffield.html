@@ -1,0 +1,809 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>RSE seminar Sheffield</title>
+
+    <!-- Reveal themes -->
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/white.css">
+
+    <!-- Full theme:light version -->
+    <link rel="stylesheet" href="css/dark_theme.css">
+    <!-- <link rel="stylesheet" href="sass/presentation.css"> -->
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="css/syntax/google_syntax.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/personal/Purple.png" />
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Tania custom icons  -->
+    <link rel="stylesheet" type="text/css" href="assets/icons_collection/font/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+
+    <script src="reveal.js/js/reveal-print.js"></script>
+
+</head>
+
+<!-- to do ensure the url is visible -->
+
+<!-- Need to specify the theme here: the first defines the color palette and the 
+	second the font theme -->
+
+<body class="theme-tank theme-klasik-font">
+
+    <!-- Adding the background and icon theme here -->
+
+    <div class="reveal pattern--bwlines">
+        <div class="slides">
+
+            <!-- Intro slide, this is only the logo in a squared slide -->
+            <section class="intro" id="intro">
+                <div class="logo-wrapper">
+                    <div class="logo" style="background-image: url('./assets/logos/BIT_LINUX.png');">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Introduction slide -->
+            <section>
+                <section class="title" id="title">
+                    <div class="grid-wrapper">
+                        <div class="header">
+                            <!-- Remove logo--full class to only show brand mark -->
+                            <div class="logo logo--full">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h1>The state of machine learning</h1>
+                            <div class="description" style="color:white;">
+                                RSE seminar, University of Sheffield
+                            </div>
+                        </div>
+                        <div class="credit">
+                            <hr>
+                            <!-- <div class="label">Created By</div> -->
+                            <div class="name" style="color:white;">
+                                Tania Allard, PhD</div>
+                        </div>
+                        <a class=" presentation-url" href="https://trallard.github.io/Talks/RSE-sheffield">
+                            https://trallard.github.io/Talks/RSE-sheffield</a>
+                    </div>
+                </section>
+
+                <!--About section: add name, job and handles -->
+                <section class="about" id="about">
+                    <div class="grid-wrapper">
+                        <div class="content">
+                            <aside>
+                                <h2>Tania Allard</h2>
+                                <hr>
+                                <ul class="projects">
+                                    <li>Developer advocate</li>
+                                    <li>Research Software Engineer</li>
+                                    <li>Data expert</li>
+                                </ul>
+                                <hr>
+                                <ul class="accounts">
+                                    <li><a href="https://github.com/trallard">
+                                            <i class="fab fa-github social_icon"></i> <span> trallard</span></a></li>
+                                    <li><a href="https://twitter.com/ixek">
+                                            <i class="fab fa-twitter social_icon"></i><span> ixek</span></a></li>
+                                </ul>
+                            </aside>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+
+            <!-- Machine learning in scale -->
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h1>Machine learning everywhere</h1>
+                        <p class='fragment'>So much that it is starting to not make
+                            sense anymore... like when you say a word 50 times in a row
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <p>For good or for bad <strong-alt>it is everywhere</strong-alt>:</p>
+                        <br>
+                        <ul class="icon">
+                            <li class='fragment'>Deployed in healthcare and warfare</li>
+                            <li class='fragment'>In the creative industry (from music to books)</li>
+                            <li class='fragment'>Reading CVs and judging your creditworthiness</li>
+                            <li class='fragment'>Making us more Instagram worthy</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        The big players: <br><br>
+                        <ul>
+                            <li><i class="fab fa-apple"></i> Apple</li>
+                            <li><i class="fab fa-facebook-f"></i> Facebook</li>
+                            <li><i class="fab fa-google"></i> Google</li>
+                            <li>IBM</li>
+                            <li>Intel</li>
+                            <li><i class="fab fa-microsoft"></i> Microsoft</li>
+                            <li>Nvidia</li>
+                            <li>Open AI</li>
+                            <li><i class="fab fa-twitter"></i> Twitter</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Machine learning generalised in two workflows</h3>
+                        <ul>
+                            <li>Model development (R&D)</li>
+                            <li>Model serving (production for customers consumption)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="color--light">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <div class="images">
+                            <img src="./assets/MLstate/mlwfpng.png" alt="workflow">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>What are these giants' issues?</h3>
+                        <p class="fragment">Mainly scale...in multiple areas</p>
+
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        If we have a small team we have a smaller number of issues... right?
+                        <ul class="icon">
+                            <li class="fragment pinata">Small number of models to maintain</li>
+                            <li class="fragment pinata">People have the knowledge in their heads</li>
+                            <li class="fragment pinata">They have their own methods to track progress</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>That is the small team performance fallacy</h3>
+                        We still need processes and best practices in place... so let me
+                        get back at this later
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>As the team <strong>demand</strong> grows the problems grow</h3>
+                        <ul class="icon">
+                            <li>Increased complexity of data flow</li>
+                            <li>Larger number of workflows</li>
+                            <li>Managing complexity of flows and scheduling becomes a nightmare</li>
+                            <li>Resource allocation has to be on point</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h4>Serving models becomes harder</h4>
+                        <div class="images">
+                            <img src="./assets/MLstate/models.png" alt="models">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <div class="images">
+                            <img src="./assets/MLstate/infra.png" alt="alpha go">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="subsection color--violet">
+                <div class=" grid-wrapper">
+                    <div class="header">
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="logo"></div>
+                    <h1>How do they serve millions of customers across the globe?</h1>
+
+                </div>
+            </section>
+
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        Three main players:
+                        <br><br>
+                        <ul class="icon">
+                            <li>Infrastructure / resources</li>
+                            <li>Processes </li>
+                            <li>People</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class='color--light'>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <div class="images">
+                            <img src="./assets/MLstate/infra2.png" alt="alpha go">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class='color--light'>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <div class="images">
+                            <img src="./assets/MLstate/infra3.jpg" alt="alpha go">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='color--light'>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h4>Infrastructure as a code</h4>
+                        <div class="images">
+                            <img src="./assets/MLstate/infra4.png" alt="alpha go">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class='color--light'>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <div class="images">
+                            <img src="./assets/MLstate/terraform.png" alt="alpha go">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Everything as a code</h3>
+                        <ul>
+                            <li>Version control</li>
+                            <li>Less ambiguity on the configurations</li>
+                            <li>Shorter turnarounds</li>
+                            <li>Deterministic environments</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="color--light">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h4>Processes</h4>
+                        <div class="images">
+                            <img src="./assets/MLstate/exp.png" alt="alpha go">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='color--light'>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <div class="images">
+                            <img src="./assets/MLstate/cloud.png" alt="alpha go">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="color--light">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Data and code as first class citizens</h3>
+                        <div class="images">
+                            <img src="./assets/MLstate/dvc.png" alt="alpha go">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='color--light'>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <div class="images">
+                            <img src="./assets/MLstate/ml-cd2.png" alt="alpha go">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>People</h3>
+                        <ul>
+                            <li>Data scientist</li>
+                            <li>Data engineer</li>
+                            <li>ML Engineer</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Academia to the win -->
+            <section class="subsection ">
+                <div class=" grid-wrapper">
+                    <div class="header">
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="logo"></div>
+
+                    <h2>What does academia have to offer?</h2>
+
+                    <div class="description">
+                        <i class="fas fa-jedi"></i> Much more than you think
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>People</h3>
+                        <ul>
+                            <li>Researchers</li>
+                            <li>Research software engineers</li>
+                            <li>Librarians</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Resources and Infrastructure</h3>
+                        We still need to figure this out... it is pretty much an ad-hoc case
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Processes</h3>
+                        <ul>
+                            <li>Scientific rigour</li>
+                            <li>Peer review</li>
+                            <li>Data management</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Which areas could benefit from academic collaborations?</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="color--light">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h4>Meta-learning</h4>
+                        Humans learn across tasks (learn from experience)
+                        <div class="images">
+                            <img src="./assets/MLstate/meta-learning.png" alt="meta learning">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="color--light">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        If prior tasks are similar then we can carry prior knowledge
+                        <div class="images">
+                            <img src="./assets/MLstate/meta-learnign2.png" alt="meta learning">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="color--light">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        AlphaGo uses some sort of meta-learning
+                        <div class="images">
+                            <img src="./assets/MLstate/alpha.jpg" alt="alpha go">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h2>Algorithmic fairness</h2>
+                        It has become increasingly important to ensure that models are making justified calls
+                        that are free from unintended bias.
+                        <br>
+                        <br>
+                        <p class='fragment'>The one way to make progress is <strong-alt>
+                                through interdisciplinary collaboration </strong-atl>
+                        </p>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class='color--light'>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Towards model explainability</h3>
+                        Address the trade-off between performance and interpretability
+                        <div class="images">
+                            <img src="./assets/MLstate/explainable.png" alt="alpha go">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Reinforcement learning deadly triad</h3>
+                        Following nature's paradigms RL agents receive awards and then learn
+                        to maximise success by performing optimal actions.
+
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        How to keep an algorithm learning if there are far too many potential
+                        variables or outcomes to be evaluated without being fed ridiculous amounts of data.
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>In brief</h3>
+                        Focus on the 3 pillars:
+                        <br><br>
+                        <ul class="icon">
+                            <li>People</li>
+                            <li>Infrastructure</li>
+                            <li>Processes</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- End slide -->
+            <section id="end" class="end color--dark">
+                <div class="grid-wrapper">
+                    <div class="content">
+                        <h2>Thank you</h2><br><br>
+                        <p style="text-align:left;"><a href="https://twitter.com/ixek"><i
+                                    class="fab fa-twitter-square"></i>
+                                <span></span>ixek</span></a><br>
+                            <a href="https://twitter.com/ixek"><i class="fas fa-envelope"></i>
+                                <span>tania.allard@microsoft.com</span>
+                            </a></p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="reveal.js/lib/js/head.min.js"></script>
+    <script src="reveal.js/js/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            // Show the control arrows
+            controls: true,
+            // Location of the arrows
+            controlsLayout: 'bottom-right',
+            // Visibility rule for backwards navigation arrows; "faded", "hidden"
+            // or "visible"
+            controlsBackArrows: 'hidden',
+            progress: true,
+            slideNumber: true,
+            center: false,
+            width: "100%",
+            height: "100%",
+            margin: 0,
+            minScale: 1,
+            maxScale: 1,
+            history: true,
+            touch: true,
+
+            // Arrow keys progress through sub-slides
+            // keyboard: {
+            // 	39: 'next', // right key
+            // 	37: 'prev'  // left key
+            // },
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [
+                { src: 'reveal.js/plugin/markdown/marked.js' },
+                { src: 'reveal.js/plugin/markdown/markdown.js' },
+                { src: 'reveal.js/plugin/notes/notes.js', async: true },
+                { src: 'plugin/embed-tweet/embed-tweet.js' },
+                {
+                    src: 'reveal.js/plugin/highlight/highlight.js',
+                    async: true,
+                    callback: function () { hljs.initHighlightingOnLoad(); }
+                }
+            ]
+        });
+    </script>
+
+
+</body>
+
+</html>
