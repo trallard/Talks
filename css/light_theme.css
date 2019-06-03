@@ -1488,6 +1488,9 @@ div.images img {
 .theme-soda .reveal ul.icon li.skull::before {
   color: #1073b9;
 }
+/*********************************************
+* TABLES
+*********************************************/
 /* table with no divisions and with bold purple first column */
 .reveal table th {
   font-weight: bold;
@@ -1569,7 +1572,7 @@ div.images img {
   color: #324ea7;
 }
 .reveal small {
-  font-size: 0.8em;
+  font-size: 0.6em;
 }
 .reveal em {
   font-style: italic;
@@ -1876,7 +1879,7 @@ div.images img {
   text-shadow: 0px 0px 5px #fff;
   color: #fff;
   padding: 0 2rem;
-  font-family: in;
+  font-family: inherit;
 }
 
 .reveal h1.glow,
@@ -1888,7 +1891,6 @@ div.images img {
 .reveal mega-font.glow,
 .reveal huge-font.glow {
   padding: 0 2rem;
-  font-family: "Ropa Sans", sans-serif;
 }
 .theme-streams .reveal h1.glow,
 .theme-streams .reveal h2.glow,
@@ -2071,7 +2073,9 @@ div.images img {
   text-shadow: 0px 0px 5px, 0 0 20px #fff;
 }
 
-/* Additional divs */
+/*********************************************
+* ADDITIONAL DIVS
+*********************************************/
 div.warn {
   background-color: #fb5c6f;
   border-color: #fb5c6f;
@@ -2097,9 +2101,43 @@ div.info a {
   text-decoration: underline;
   text-decoration-color: #e8f3f4 !important;
 }
-
+div.default {
+  padding: 15px 15px;
+  color: #fff;
+  margin: 1em;
+  margin-top: 0;
+  opacity: 0.8;
+}
+.theme-streams div.default {
+  background-color: #7760a9;
+  border-left: #5F4B8B;
+}
+.theme-lines div.default {
+  background-color: #5a028e;
+  border-left: #3A015C;
+}
+.theme-seacalm div.default {
+  background-color: #3d7eb1;
+  border-left: #30638B;
+}
+.theme-goldilocks div.default {
+  background-color: #3d7eb1;
+  border-left: #30638B;
+}
+.theme-duotone div.default {
+  background-color: #9591cb;
+  border-left: #CC144B;
+}
+.theme-jewels div.default {
+  background-color: #9591cb;
+  border-left: #4A235D;
+}
+.theme-soda div.default {
+  background-color: #324ea7;
+  border-left: #263c80;
+}
 /* Floating modal */
-/* I like using this for in slide quote  */
+/* I like using this to add quotes in slides  */
 /* when I am not using the whole slide for quote */
 .float_modal {
   position: absolute;
@@ -2120,7 +2158,7 @@ div.info a {
 .modal_p {
   padding: 10px !important;
   color: #fff;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 /* Adding caption to the modal */

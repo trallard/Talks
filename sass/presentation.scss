@@ -11,11 +11,9 @@
     padding: 0;
 }
 
-.reveal .slides section.title content{
-        .content {
+.reveal .slides section.title .content {
         grid-template-columns: auto;
         grid-template-areas: "title" "description";
-    }
 }
 
 /* Columns for the content */

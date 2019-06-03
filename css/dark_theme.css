@@ -1707,6 +1707,9 @@ div.images img {
 .theme-tank .reveal ul.icon li.skull::before {
   color: #51637a;
 }
+/*********************************************
+* TABLES
+*********************************************/
 /* table with no divisions and with bold purple first column */
 .reveal table th {
   font-weight: bold;
@@ -1812,7 +1815,7 @@ div.images img {
   color: #b08fe4;
 }
 .reveal small {
-  font-size: 0.8em;
+  font-size: 0.6em;
 }
 .reveal em {
   font-style: italic;
@@ -2167,7 +2170,7 @@ div.images img {
   text-shadow: 0px 0px 5px #fff;
   color: #fff;
   padding: 0 2rem;
-  font-family: in;
+  font-family: inherit;
 }
 
 .reveal h1.glow,
@@ -2179,7 +2182,6 @@ div.images img {
 .reveal mega-font.glow,
 .reveal huge-font.glow {
   padding: 0 2rem;
-  font-family: "Ropa Sans", sans-serif;
 }
 .theme-sedona .reveal h1.glow,
 .theme-sedona .reveal h2.glow,
@@ -2392,7 +2394,9 @@ div.images img {
   text-shadow: 0px 0px 5px, 0 0 20px #fff;
 }
 
-/* Additional divs */
+/*********************************************
+* ADDITIONAL DIVS
+*********************************************/
 div.warn {
   background-color: #fb5c6f;
   border-color: #fb5c6f;
@@ -2418,9 +2422,59 @@ div.info a {
   text-decoration: underline;
   text-decoration-color: #e8f3f4 !important;
 }
-
+div.default {
+  padding: 15px 15px;
+  color: #fff;
+  margin: 1em;
+  margin-top: 0;
+  opacity: 0.8;
+}
+.theme-sedona div.default {
+  background-color: #d2a9ea;
+  border-left: #BD80E0;
+}
+.theme-cyber div.default {
+  background-color: #10e8f3;
+  border-left: #0abdc6;
+}
+.theme-bright-blue div.default {
+  background-color: #f87d98;
+  border-left: #f64c72;
+}
+.theme-black div.default {
+  background-color: #d0ea95;
+  border-left: #BDE16B;
+}
+.theme-candy div.default {
+  background-color: #f78392;
+  border-left: #f45368;
+}
+.theme-skeletor div.default {
+  background-color: #f4ce89;
+  border-left: #f0bb5a;
+}
+.theme-honey div.default {
+  background-color: #808a91;
+  border-left: #F2B632;
+}
+.theme-ultra div.default {
+  background-color: #fcd999;
+  border-left: #E55982;
+}
+.theme-borealis div.default {
+  background-color: #13ffd1;
+  border-left: #00DFB4;
+}
+.theme-python div.default {
+  background-color: #7db3d7;
+  border-left: #569CCB;
+}
+.theme-tank div.default {
+  background-color: #b08fe4;
+  border-left: #9366DA;
+}
 /* Floating modal */
-/* I like using this for in slide quote  */
+/* I like using this to add quotes in slides  */
 /* when I am not using the whole slide for quote */
 .float_modal {
   position: absolute;
@@ -2441,7 +2495,7 @@ div.info a {
 .modal_p {
   padding: 10px !important;
   color: #fff;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 /* Adding caption to the modal */
