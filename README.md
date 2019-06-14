@@ -17,6 +17,8 @@
 | Hackmed Sheffield                                            | 30 Mar 2019     | [https://trallard.github.io/Talks/2019-03-Hackmed](https://trallard.github.io/Talks/2019-03-Hackmed)                       |
 | RSE seminar Sheffield - ML industry vs academia              | 24 April 2019   | [https://trallard.github.io/Talks/2019-04-24-RSE-seffield](https://trallard.github.io/Talks/2019-04-24-RSE-seffield)       |
 | Where has your data come from? Data ancestry and other tales | 08 May 2019     | [https://trallard.github.io/Talks/2019-05-csvconf](https://trallard.github.io/Talks/2019-05-csvconf)                       |
+| Help me help you - Creatihng value as an RSE                 | 04 Jun 2019     | [10.6084/m9.figshare.8234303](10.6084/m9.figshare.8234303)                                                                 |
+| Jupyter notebooks: Friends or foes?                          | 14 Jun 2019     | [http://bit.ly/PyConCZ-Jupyter](http://bit.ly/PyConCZ-Jupyter)                                                             |
 
 ## :unicorn: About the _theme_
 
