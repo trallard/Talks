@@ -2,6 +2,7 @@
  * GLOBAL STYLES- go over the reveal.js 
  *********************************************/
 
+ // change base font
 .reveal {
     font-size: inherit;
     font-weight: normal;
@@ -285,6 +286,10 @@ div {
     }
 }
 
+/*********************************************
+* TABLES
+*********************************************/
+
 /* table with no divisions and with bold purple first column */
 
 .reveal table th {
@@ -335,7 +340,7 @@ div {
         }
     }
     small {
-        font-size: 0.8em;
+        font-size: 0.6em;
     }
     em {
         font-style: italic;
@@ -374,6 +379,7 @@ div {
     text-shadow: 0px 0px 5px #fff;
     color: #fff;
     padding: 0 2rem;
+    font-family: inherit;
 }
 
 // Adding extra glow class to headings (nb this is a big glow) */ 
@@ -384,18 +390,18 @@ div {
 .reveal h5.glow,
 .reveal big-font.glow,
 .reveal mega-font.glow,
-.reveal huge-font.glow,
-    {
+.reveal huge-font.glow,{
     @include themify($themes) {
         text-shadow: 0px 0px 5px themed('primary'), 0 0 20px #fff;
     }
     padding: 0 2rem;
-    font-family: "Ropa Sans",
-    sans-serif;
 }
 
-/* Additional divs */
+/*********************************************
+* ADDITIONAL DIVS
+*********************************************/
 
+// warning
 div {
     &.warn {
         // warning div
@@ -424,11 +430,23 @@ div {
             text-decoration-color: #e8f3f4 !important;
         }
     }
+    &.default {
+        // default for the theme
+        @include themify($themes) {
+            background-color: themed('primary-light');
+            border-left: themed('primary');
+        }
+        padding: 15px 15px;
+        color: #fff;
+        margin: 1em;
+        margin-top: 0;
+        opacity: 0.8;
+    }
 }
 
 /* Floating modal */
 
-/* I like using this for in slide quote  */
+/* I like using this to add quotes in slides  */
 
 /* when I am not using the whole slide for quote */
 
@@ -452,7 +470,7 @@ div {
 .modal_p {
     padding: 10px !important;
     color: #fff;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 /* Adding caption to the modal */
@@ -588,18 +606,19 @@ figure.code {
 .header .twitter {
     margin-left: auto;
     opacity: 0.7;
-    font-size: 0.8rem;
     text-decoration: none;
     a {
         color: #5f6c7a;
         /*slate grey*/
         text-decoration: none;
+        font-size: 0.5em!important;
     }
     .fa-twitter {
         color: #5f6c7a;
         /*slate grey*/
     }
-} // Logo in header
+} 
+/* Logo in header */
 .reveal .slides section .logo {
     background-image: url($logo-path);
     background-repeat: no-repeat;
@@ -624,7 +643,7 @@ figure.code {
     grid-area: content;
 }
 
-//double
+//two sides slides
 .doublegrid {
     display: grid;
 }

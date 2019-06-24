@@ -9,10 +9,11 @@
 
 .reveal .slides section.title {
     padding: 0;
-    .content {
+}
+
+.reveal .slides section.title .content {
         grid-template-columns: auto;
         grid-template-areas: "title" "description";
-    }
 }
 
 /* Columns for the content */

@@ -1,0 +1,1116 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Jupyter notebooks</title>
+
+    <!-- Reveal themes -->
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/white.css">
+
+    <!-- Full theme:light version -->
+    <link rel="stylesheet" href="css/light_theme.css">
+    <link rel="stylesheet" href="sass/presentation.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="css/syntax/google_syntax.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/personal/Purple.png" />
+
+    <!-- Font awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" media="all">
+
+    <!-- Tania custom icons  -->
+    <link rel="stylesheet" type="text/css" href="assets/icons_collection/font/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+
+    <script src="reveal.js/js/reveal-print.js"></script>
+
+</head>
+
+
+<!-- to do ensure the url is visible -->
+
+<!-- Need to specify the theme here: the first defines the color palette and the 
+    second the font theme -->
+
+<body class="theme-lines theme-cunia2-font">
+
+    <!-- Adding the background and icon theme here -->
+
+    <div class="reveal pattern--space2">
+        <div class="slides">
+
+            <!-- Intro slide, this is only the logo in a squared slide -->
+            <section class="intro" id="intro">
+                <div class="logo-wrapper">
+                    <div class="logo">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Introduction slide -->
+            <section>
+                <section class="title" id="title">
+                    <div class="grid-wrapper">
+                        <div class="header">
+                            <!-- Remove logo--full class to only show brand mark -->
+                            <div class="logo logo--full">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h1>Jupyter notebooks:friends or foes?</h1>
+                            <div class="description">
+                                PyCon Belarus 16th February 2019.
+                            </div>
+                        </div>
+                        <div class="credit">
+                            <hr>
+                            <div class="label">Created By</div>
+                            <div class="name">Tania Allard, PhD</div>
+                        </div>
+                        <a class="presentation-url" href="https://trallard.github.io/Talks/PyConBy">
+                            https://trallard.github.io/Talks/PyConBy</a>
+                    </div>
+                </section>
+
+                <!--About section: add name, job and handles -->
+                <section class="about" id="about">
+                    <div class="grid-wrapper">
+                        <div class="content">
+                            <aside>
+                                <h2>Tania Allard</h2>
+                                <hr>
+                                <ul class="projects">
+                                    <li>Research Software Engineer</li>
+                                    <li>Data engineer</li>
+                                    <li>Open source nerd/advocate</li>
+                                    <li>Soon -> Cloud developer advocate</li>
+                                </ul>
+                                <hr>
+                                <ul class="accounts">
+                                    <li><a href="https://github.com/trallard">
+                                            <i class="fab fa-github social_icon"></i> <span> trallard</span></a></li>
+                                    <li><a href="https://twitter.com/ixek">
+                                            <i class="fab fa-twitter social_icon"></i><span> ixek</span></a></li>
+                                </ul>
+                            </aside>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+
+            <!-- What are the notebooks -->
+            <section class="subsection color--topaz">
+                <div class=" grid-wrapper">
+                    <div class="header">
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="logo"></div>
+                    <h1>
+                        <h1>What are the Jupyter notebooks?</h1>
+                    </h1>
+                    <div class="description" style="color:white;">
+                        And why is there so much fuzz around them?
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        Notebooks are documents containing both code and rich text elements
+                        (i.e. figures, equations, widgets, equations)
+                        <p class='fragment'>Which makes them ideal to bring together an analysis and
+                            its description and results.
+                        </p>
+                    </div>
+            </section>
+
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h4>Those familiar with notebooks might think of something like this</h4>
+                        <figure class="display" style="max-width:110vmin;">
+                            <img src="./assets/jupyter/notebook1.PNG" alt="jupyterlab" />
+                        </figure>
+                    </div>
+            </section>
+
+            <section>
+                <div class="doublegrid">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="east" style='color:#fff;'>
+                        <h3><strong>The notebook document</strong></h3>
+                        Self-contained json object with:
+                        <br><br>
+                        <ul class='icon'>
+                            <li>metadata</li>
+                            <li>data</li>
+                            <li>code</li>
+                            <li>generated objects</li>
+                        </ul>
+                    </div>
+                    <div class='west' style="padding-left:20px; top:10%;">
+                        <div data-markdown>
+                            ```json
+                            "metadata": {
+                            "kernelspec": {
+                            "display_name": "Python 3",
+                            "language": "python",
+                            "name": "python3"
+                            },
+                            "language_info": {
+                            "codemirror_mode": {
+                            "name": "ipython",
+                            "version": 3
+                            },
+                            "file_extension": ".py",
+                            "mimetype": "text/x-python",
+                            "name": "python",
+                            "nbconvert_exporter": "python",
+                            "pygments_lexer": "ipython3",
+                            "version": "3.6.5"
+                            },}
+                            ```
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>The Notebook app</h3>
+                        A server-client application which allows you to serve, edit and run the notebooks.
+                        Formed by a kernel and a dashboard.
+                        <br><br>
+                        <h5 class='fragment'>Some interfaces:</h5>
+                        <ul class='icon'>
+                            <li class="fragment">JupyterLab</li>
+                            <li class="fragment">Microsoft Azure notebooks</li>
+                            <li class="fragment">Google Colab</li>
+                            <li class="fragment">Stencila</li>
+                            <li class="fragment">nteract</li>
+                        </ul>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h4>JupyterLab</h4>
+                        <figure class="display" style="max-width:130vmin;">
+                            <img src="./assets/jupyter/jupyterlab.png" alt="jupyterlab" />
+                        </figure>
+                    </div>
+            </section>
+
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h4>Colab</h4>
+                        <figure class="display" style="max-width:130vmin;">
+                            <img src="./assets/jupyter/colab.PNG" alt="colab" />
+                        </figure>
+                    </div>
+            </section>
+
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h4>Hydrogen</h4>
+                        <figure class="display" style="max-width:90vmin;">
+                            <img src="./assets/jupyter/nteract.png" alt="nteract" />
+                        </figure>
+                    </div>
+            </section>
+
+            <!-- Awesome features -->
+            <section class="color--topaz">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <big-font>The notebooks are awesome!!!</big-font>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Notebooks are fantastic for prototyping</h3>
+                        Data scientists can do quick data explorations, generate and train models
+                        and see the outputs straightaway.
+
+                        <p class="fragment">Plus who does not like to have well documented code?</p>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <figure class="display" style="max-width:130vmin;">
+                            <img src="./assets/jupyter/R.PNG" alt="python" />
+                        </figure>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Notebooks are inherently polyglot</h3>
+                        (Their name is a reference to Julia, Python, and R)
+
+                        <br><br>
+                        There are more than 80 kernels and you can use multiple programming languages
+                        in a single document with relatively minimal fuzz.
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h4>A great example: starting with Python</h4>
+                        <figure class="display" style="max-width:130vmin;">
+                            <img src="./assets/jupyter/python.PNG" alt="python" />
+                            <figcaption><a href="https://gist.github.com/fperez/5b49246af4e340c37549265a90894ce6">
+                                    Fernando Perez</a></figcaption>
+                        </figure>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h4>Some Julia and FORTRAN for good measure</h4>
+                        <figure class="display" style="max-width:130vmin;">
+                            <img src="./assets/jupyter/julia.PNG" alt="python" />
+
+                        </figure>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h4>and sprinkle some R</h4>
+                        <figure class="display" style="max-width:130vmin;">
+                            <img src="./assets/jupyter/all.PNG" alt="python" />
+                        </figure>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Working on a code heavy presentation?</h3>
+                        No problem! Use the native nbconvert capabilities
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Need interactive presentations?: RISE</h3>
+                        <figure class="display" style="max-width:160vmin;">
+                            <img src="./assets/jupyter/rise.gif" alt="python" />
+                            <figcaption><a href="https://github.com/damianavila/RISE">RISE on GitHub</a></figcaption>
+                        </figure>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Adding interactivity to the notebooks</h3>
+                        <a
+                            href="https://ipywidgets.readthedocs.io/en/stable/examples/Widget%20Basics.html#What-are-widgets?">iPywidgets</a>
+                        allow you to add a number of interactive features to your notebooks
+                        from radial buttons,to sliders, date pickers, tabs and many many more.
+
+                        <pre><code>conda install -c conda-forge ipywidgets</code></pre>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <figure class="display" style="max-width:150vmin;">
+                            <img src="./assets/jupyter/qgrid.gif" alt="python" />
+                        </figure>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h4>They now support Async! 🎉</h4>
+                        IPython 7.0 now suports AsyncIO so you can now natively use it
+                        with the IPython REPL and the notebooks (and should also work with all the
+                        other interfaces).
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <figure class="display" style="max-width:150vmin;">
+                            <img src="./assets/jupyter/async.png" alt="python" />
+                        </figure>
+                    </div>
+            </section>
+
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>There is a vast ecosystem</h3>
+                        <figure class="display" style="max-width:150vmin;">
+                            <img src="./assets/jupyter/ecosystem.PNG" alt="python" />
+                        </figure>
+                    </div>
+            </section>
+
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>With an engaged community</h3>
+                        <figure class="display" style="max-width:150vmin;">
+                            <img src="./assets/jupyter/extensions.png" alt=" python" />
+                        </figure>
+                    </div>
+            </section>
+
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>And new features... all the time</h3>
+                        <figure class="display" style="max-width:150vmin;">
+                            <img src="./assets/jupyter/snippets.gif" alt=" python" />
+                        </figure>
+                    </div>
+            </section>
+
+
+            <section class="subsection color--violet">
+                <div class=" grid-wrapper">
+                    <div class="header">
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="logo"></div>
+                    <h1>
+                        <h1>It is all good fun until...</h1>
+                    </h1>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>There is a vast ecosystem... too vast</h3>
+                        <figure class="display" style="max-width:150vmin;">
+                            <img src="./assets/jupyter/miss.jpg" alt=" python" />
+                        </figure>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>I sometimes cannot keep up</h3>
+                        <figure class="display" style="max-width:150vmin;">
+                            <img src="./assets/jupyter/discourse.PNG" alt=" python" />
+                        </figure>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <figure class="display" style="max-width:150vmin;">
+                            <img src="./assets/jupyter/tracking.PNG" alt=" python" />
+                        </figure>
+                    </div>
+            </section>
+
+
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>So many things are hidden!</h3>
+                        Have you run the cells in order?
+                        <p class="fragment">Should this even matter?</p>
+                        <figure class=" fragment display " style="max-width:150vmin;">
+                            <img src="./assets/jupyter/order.PNG" alt="python" />
+                        </figure>
+                        <figure class=" fragment display" style="max-width:150vmin; position:absolute; top: 60%;">
+                            <img src="./assets/jupyter/why.gif" alt="python" />
+                        </figure>
+
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>This might be obvious to the experienced ones<h3>
+                                <figure class="display" style="max-width:150vmin;">
+                                    <img src="./assets/jupyter/history.PNG" alt="python" />
+                                </figure>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>This might be obvious to the experienced ones<h3>
+                                <figure class="display" style="max-width:150vmin;">
+                                    <img src="./assets/jupyter/badcolab.PNG" alt="python" />
+                                </figure>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>I spend sooooo much time reviewing code</h3>
+                        <figure class="display" style="max-width:150vmin;">
+                            <img src="./assets/jupyter/diff_example.png" alt="python" />
+                        </figure>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h4>What about modules and more traditional software development?</h4>
+                        <figure class="display" style="max-width:150vmin;">
+                            <img src="./assets/jupyter/class.PNG" alt="python" />
+                        </figure>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <figure class="display" style="max-width:150vmin;">
+                            <img src="./assets/jupyter/class2.PNG" alt="python" />
+                        </figure>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <figure class="display" style="max-width:150vmin;">
+                            <img src="./assets/jupyter/import.PNG" alt="python" />
+                        </figure>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <figure class="display" style="max-width:150vmin;">
+                            <img src="./assets/jupyter/test.PNG" alt="python" />
+                        </figure>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <figure class="display" style="max-width:150vmin;">
+                            <img src="./assets/jupyter/hpc.jpg" alt="hpc" />
+                        </figure>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <figure class="display" style="max-width:150vmin;">
+                            <img src="./assets/jupyter/whattywhat.PNG" alt="python" />
+                        </figure>
+                    </div>
+            </section>
+
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <figure class="display" style="max-width:150vmin;">
+                            <img src="./assets/jupyter/surprise.jpg" alt="python" />
+                        </figure>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h2>Things people say about notebooks....</h2>
+                        <ul class="icon">
+                            <li>they encourage bad habits</li>
+                            <li>hinder reproducibility</li>
+                            <li>they are anti-patterns</li>
+                            <li>they should be burnt to a crisp</li>
+                        </ul>
+                    </div>
+            </section>
+
+
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <figure class="display" style="max-width:190vmin;">
+                            <img src="./assets/jupyter/repro.PNG" alt="python" />
+                        </figure>
+                    </div>
+            </section>
+
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <figure class="display" style="max-width:150vmin;">
+                            <img src="./assets/jupyter/force.PNG" alt="python" />
+                        </figure>
+                    </div>
+            </section>
+
+            <section class='color--topaz'>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h1>What I say</h1>
+                        <description> A lightly opinionated approach</description>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h2>The key is to identify when and how to use them</h2>
+                        <figure class="display" style="max-width:90vmin;">
+                            <img src="./assets/jupyter/allcode.PNG" alt="python" />
+                        </figure>
+            </section>
+
+            <section class='color--topaz'>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        They are great for exploratory and narrative work.... but they are perhaps not
+                        the best tool to build libraries and other production level objects
+
+                        <p class="fragment">At least on their own</p>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Dissemination </h3>
+                        Notebooks are excellent for dissemination, paired up with Binder are better
+                        <figure class="display" style="max-width:130vmin;">
+                            <img src="./assets/jupyter/binder.jpg" alt="python" />
+                            <figcaption>OpenDreamKit</figcaption>
+                        </figure>
+
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Dissemination </h3>
+                        Notebooks are excellent for dissemination, paired up with Binder are better
+                        <figure class="display" style="max-width:130vmin;">
+                            <img src="./assets/jupyter/binder2.webp" alt="python" />
+                        </figure>
+
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Validation </h3>
+                        NBVAL allows to VALidate NoteBooks -- comparing the computed output from executing the notebook
+                        with the output stored in the file. Each cell is a test.
+
+                        <figure class="display" style="max-width:150vmin;">
+                            <img src="./assets/jupyter/nbval.jpg" alt="python" />
+                            <figcaption>https://readthedocs.io/nbval</figcaption>
+                        </figure>
+
+                    </div>
+            </section>
+
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Reproducible environments</h3>
+
+                        <figure class="display" style="max-width:130vmin;">
+                            <img src="./assets/jupyter/docker.PNG" alt="python" />
+                            <figcaption>https://github.com/jupyter/repo2docker</figcaption>
+                        </figure>
+
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Find ways to make your life easier</h3>
+
+                        <figure class="display" style="max-width:130vmin;">
+                            <img src="./assets/jupyter/nbdime.png" alt="python" />
+                            <figcaption>https://nbdime.readthedocs.io/en/latest/</figcaption>
+                        </figure>
+
+                    </div>
+            </section>
+
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Delegate responsibilities</h3>
+
+                        <figure class="display" style="max-width:130vmin;">
+                            <img src="./assets/jupyter/schedulers.PNG" alt="python" />
+
+                    </div>
+            </section>
+
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Choose the right tooling</h3>
+
+                        <figure class="display" style="max-width:130vmin;">
+                            <img src="./assets/jupyter/papermill.png" alt="python" />
+                            <figcaption>NETFLIX using notebooks</figcaption>
+                        </figure>
+
+                    </div>
+            </section>
+
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h5>And common sense</h5>
+
+                        <figure class="display" style="max-width:130vmin;">
+                            <img src="./assets/jupyter/guidelines.PNG" alt="python" />
+                            <figcaption>NETFLIX using notebooks</figcaption>
+                        </figure>
+
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h5>It is all about context</h5>
+
+                        Questions to ask:
+                        <ul class='icon'>
+                            <li>Who is going to consume this?</li>
+                            <li>How is this going to be consumed?</li>
+                            <li>How many moving parts are there?</li>
+                            <li>Am I reiventing the wheel?</li>
+                        </ul>
+
+                    </div>
+            </section>
+
+
+            <section id="end" class="end color--dark">
+                <div class="grid-wrapper">
+                    <div class="content">
+                        <h2>Thank you</h2>
+                        <a href="https://twitter.com/ixek"><i class="fab fa-twitter-square"></i>
+                            <span>ixek</span></a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="reveal.js/lib/js/head.min.js"></script>
+    <script src="reveal.js/js/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            // Show the control arrows
+            controls: true,
+            // Location of the arrows
+            controlsLayout: 'bottom-right',
+            // Visibility rule for backwards navigation arrows; "faded", "hidden"
+            // or "visible"
+            controlsBackArrows: 'hidden',
+            progress: true,
+            slideNumber: false,
+            center: false,
+            width: "100%",
+            height: "100%",
+            margin: 0,
+            minScale: 1,
+            maxScale: 1,
+            history: true,
+            touch: true,
+
+            // Arrow keys progress through sub-slides
+            // keyboard: {
+            //     39: 'next', // right key
+            //     37: 'prev'  // left key
+            // },
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [
+                { src: 'reveal.js/plugin/markdown/marked.js' },
+                { src: 'reveal.js/plugin/markdown/markdown.js' },
+                { src: 'reveal.js/plugin/notes/notes.js', async: true },
+                { src: 'plugin/embed-tweet/embed-tweet.js' },
+                {
+                    src: 'reveal.js/plugin/highlight/highlight.js',
+                    async: true,
+                    callback: function () { hljs.initHighlightingOnLoad(); }
+                }
+            ]
+        });
+    </script>
+
+
+</body>
+
+</html>

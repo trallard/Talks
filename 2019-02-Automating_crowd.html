@@ -1,0 +1,733 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Automating the crowd</title>
+
+    <!-- Reveal themes -->
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/white.css">
+
+    <!-- Full theme:light version -->
+    <link rel="stylesheet" href="css/dark_theme.css">
+    <link rel="stylesheet" href="sass/presentation.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="css/syntax/google_syntax.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/personal/Purple.png" />
+
+    <!-- Font awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" media="all">
+
+    <!-- Tania custom icons  -->
+    <link rel="stylesheet" type="text/css" href="assets/icons_collection/font/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+
+    <script src="reveal.js/js/reveal-print.js"></script>
+
+</head>
+
+
+<!-- to do ensure the url is visible -->
+
+<!-- Need to specify the theme here: the first defines the color palette and the 
+	second the font theme -->
+
+<body class="theme-borealis theme-klasik-rough-font">
+
+    <!-- Adding the background and icon theme here -->
+
+    <div class="reveal pattern--space3">
+        <div class="slides">
+
+            <!-- Intro slide, this is only the logo in a squared slide -->
+            <section class="intro" id="intro">
+                <div class="logo-wrapper">
+                    <div class="logo">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Introduction slide -->
+            <section>
+                <section class="title" id="title">
+                    <div class="grid-wrapper">
+                        <div class="header">
+                            <!-- Remove logo--full class to only show brand mark -->
+                            <div class="logo logo--full">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h1>Open source: the good the bad and the ugly</h1>
+                            <div class="description">
+                                Automating the crowd. The Alan Turing Institute
+                            </div>
+                        </div>
+                        <div class="credit">
+                            <hr>
+                            <div class="label">Presented by</div>
+                            <div class="name">Tania Allard, PhD (<strong-alt>she/her</strong-alt>)</div>
+                        </div>
+                        <a class="presentation-url" href="https://trallard.github.io/Talks/2019-02-Automating_crowd">
+                            https://trallard.github.io/Talks/2019-02-Automating_crowd</a>
+                    </div>
+                </section>
+
+                <!--About section: add name, job and handles -->
+                <section class="about" id="about">
+                    <div class="grid-wrapper">
+                        <div class="content">
+                            <aside>
+                                <h3>Tania Allard</h3>
+                                <hr>
+                                <ul class="projects">
+                                    <li>Research Software/Data Engineer</li>
+                                    <li>Mentor, community builder</li>
+                                    <li>Open source nerd/advocate</li>
+                                    <!-- <li>Cloud developer advocate</li> -->
+                                </ul>
+                                <hr>
+                                <ul class="accounts">
+                                    <li><a href="https://github.com/trallard">
+                                            <i class="fab fa-github social_icon"></i> <span> trallard</span></a></li>
+                                    <li><a href="https://twitter.com/ixek">
+                                            <i class="fab fa-twitter social_icon"></i><span> ixek</span></a></li>
+                                </ul>
+                            </aside>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+
+            <!-- what is open source -->
+            <section class="subsection ">
+                <div class=" grid-wrapper">
+                    <div class="header">
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="logo"></div>
+                    <h1>
+                        <h1>What is open source?</h1>
+                    </h1>
+                    <div class="description">
+                        Let's start with a standard definition
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>In the context of open source software</h3>
+                        It is software for which its source (code) is freely
+                        available to the world. (It also means
+                        there should be
+                        free redistribution, and should not discriminate against
+                        groups or technologies).
+
+                        <p class='fragment'>👉🏽 Meaning that it can be used, remix,
+                            licensed, and distributed at will.</p>
+
+                        <p class='fragment'>The term open [source] can be
+                            extended to many other things: hardware,
+                            design, scholarship.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Meet grandma Mae</h3>
+                        <div class="images">
+                            <img src="./assets/automating/baking.png" alt="baking grandma Mae" height="70%" />
+                        </div>
+                        <p class='fragment'>What is going to happen when she is not around?</p>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>What can she do?</h3>
+                        <ul class='icon'>
+                            <li class='fragment'> Sell the recipe and make £££</li>
+                            <li class='fragment'> Start her own business (every employee has to sign an NDA)</li>
+                            <li class='fragment'> Share her recipe with the world</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>She has decided to open source her recipe</h3>
+                        But she has added the following clauses: <br><br>
+                        <ul class='icon'>
+                            <li>People can use the recipe as they please (use, remix, modify)</li>
+                            <li>She has to be given credit (using original grandma Mae's recipe)</li>
+                            <li>It can be distributed through any means (blog, email, cookbook)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="doublegrid">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="west">
+                        <img src="./assets/automating/chocolate.jpg" alt="chocchips" height="70%" />
+                    </div>
+                    <div class="east">
+                        <h3>Adding new features</h3>
+                        <small>
+                            <ol>
+                                <li>A user suggest the feature (chocolate chips)</li>
+                                <li>The maintainer (grandma Mae) receives the request for approval</li>
+                                <li>The maintainer tests the feature</li>
+                                <li>The maintainer incorporates the feature if the tests are good</li>
+                                <li class="fragment">Or not if she believes this is not the right thing to do
+                                    (i.e. add nuts and allergic people cannot eat her cookies)
+                                </li>
+                            </ol>
+                        </small>
+                        <br>
+                        <br>
+                        <h4 class="fragment">And the cookies recipe becomes an open source project.
+                        </h4>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class='content'>
+                        <h3>With this increased responsibility grandma Mae has less time to bake</h3>
+                        <div class="images">
+                            <img src="./assets/automating/hacking_grandma.png" alt="hacker" height="70%" />
+                        </div>
+                    </div>
+            </section>
+            <!-- intro ends -->
+
+            <!-- The good about opne source -->
+            <section class='color--violet'>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <huge-font>The good</huge-font>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Open source has an incredble potential</h3>
+                        It is a very powerful means to empower communities and improve their life quality
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Open communities fighting harassment</h3>
+                        <figure class="display">
+                            <img src="./assets/automating/blanknoise.png" alt="blank noise" />
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Improving the life quality of the community</h3>
+                        <figure class="display">
+                            <img src="./assets/automating/invisible.png" alt="invisible" />
+
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>As an opportunity to challenge the status quo</h3>
+                        <figure class="display">
+                            <img src="./assets/automating/scholarship.png" alt="open scholarship" />
+                            <figcaption>
+                                <pre><code>Denisse Albornoz- OCSDNet</code></pre>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <!-- end the good -->
+
+            <!-- start the bad -->
+            <section class="color--violet">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <huge-font>The bad</huge-font>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>The vast majority of open source relies on voluntary work</h3>
+                        <ul class="icon">
+                            <li class='pinata fragment'>Projects are developed on free-time</li>
+                            <li class='pinata fragment'>Unpaid (overworked, stressed) labour</li>
+                            <li class='pinata fragment'>Favours the priviledged</li>
+                            <li class='pinata fragment'>Segregates a significant portion of the community (care
+                                responsibilities, low income)</li>
+                            <li class='pinata fragment'>Reinforces the falacy of meritocracy</li>
+                            <li class='pinata fragment'>Low inclusive onboarding efforts (i.e. language barriers)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="doublegrid">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="east">
+                        <h4>Before</h4>
+                        Companies would only use software that was developed and
+                        maintained <strong-alt>
+                            in house
+                        </strong-alt> <br>
+                        They relied on their own resources and capacity to drive business and R&D
+                    </div>
+                    <div class="west">
+                        <h4>Now</h4>
+                        <p style="color:#151515;">Corporations make billions of pounds (trillions even) solely using
+                            open source software maintained by a handful of <strong>unpaid</strong>
+                            volunteers <br><br></p>
+                        <p class="fragment" style="color:#151515;">AI, Machine learning, and many other disciplines
+                            would not exist
+                            without
+                            open source!<br><br></p>
+                        <p class='fragment' style="color:#151515;">
+                            In perspective: the Python community is over 8 million people globally:
+                            809 contributors, 80 core maintainers, 4 female core maintainers </p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <figure class="display">
+                            <img src="./assets/automating/payme.png" alt="pay me" />
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+
+            <section>
+                <div class="
+                            grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>open source has a diversity problem... yes yes we know</h3>
+                        <figure class="display">
+                            <img src="./assets/automating/nondiverse.png" alt="open scholarship" />
+                        </figure>
+                        <h4>but we are not great at inclusion</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="
+                            grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>What is the difference anyway?</h3>
+                        <strong>Diversity</strong> refers to the mix of people and views/opinions
+                        <br> <br> <br>
+                        <strong-alt>Inclusion</strong-alt> is how we enable this mix to work together, and how we make
+                        sure
+                        all the voices are brought to the table
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Inclusive leadership in open source is not taught to maintainers</h3>
+                        <figure class="display">
+                            <img src="./assets/automating/inclusive_leadership.png" alt="open scholarship" />
+
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>The lifecycle should be organic</h3>
+                        But how can we do that when we cannot provide protected time, recognition, training, tools, and
+                        lower the barriers (language,
+                        economic, professional, racism, ableism, ageism, etc )
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>But we keep shutting down members in our community</h3>
+                        <figure class="display">
+                            <img src="./assets/automating/shameonyou.png" alt="shame on you" />
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>And setting unrealistic standards</h3>
+                        <figure class="display">
+                            <img src="./assets/automating/barrier.png" alt="barriers" />
+
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class='color--violet'>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <huge-font>The ugly</huge-font>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Open source is hard... really</h3>
+                        It is more than the code/hardware... it is about the people.
+
+                        Things people do not want to talk about: <br><br>
+                        <ul class='icon'>
+                            <li>Harassment/stalking</li>
+                            <li>Mental health (burnout,stress, depression)</li>
+                            <li>Imposter syndrome</li>
+                            <li>Additional pressure due to lack of accountability and support</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <figure class="display">
+                            <img src="./assets/automating/pandas.png" alt="open scholarship" />
+
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Underrepresented groups are expected to solve the issue</h3>
+                        <figure class="display">
+                            <img src="./assets/automating/underrep.png" alt="open scholarship" />
+
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <figure class="display">
+                            <img src="./assets/automating/sage.png" alt="open scholarship" />
+                            <figcaption>
+                                <pre><code>Sage Sharp- Otter consulting</code></pre>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>What can we do?</h3>
+                        <ul class='icon'>
+                            <li>Demand fair pay, use, acknowledgement</li>
+                            <li>Speak out and make everyone accountable (have mechanisms in place)</li>
+                            <li>Make responsibilities explicit</li>
+                            <li>Look after ourselves</li>
+                            <li>Reach out to diverse voices</li>
+                            <li>Work on your governance and policies</li>
+                            <li>Analyse our role and power in the community</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Challenge the conventional roles</h3>
+                        <figure class="display">
+                            <img src="./assets/automating/pins.jpeg" alt="open scholarship" />
+
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="end" class="end color--dark">
+                <div class="grid-wrapper">
+                    <div class="content">
+                        <h3>Thank you</h3>
+                        <a href="https://twitter.com/ixek"><i class="fab fa-twitter-square"></i>
+                            <span>ixek</span></a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="reveal.js/lib/js/head.min.js"></script>
+    <script src="reveal.js/js/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            // Show the control arrows
+            controls: true,
+            // Location of the arrows
+            controlsLayout: 'bottom-right',
+            // Visibility rule for backwards navigation arrows; "faded", "hidden"
+            // or "visible"
+            controlsBackArrows: 'hidden',
+            progress: true,
+            slideNumber: true,
+            center: false,
+            width: "100%",
+            height: "100%",
+            margin: 0,
+            minScale: 1,
+            maxScale: 1,
+            history: true,
+            touch: true,
+
+            // Arrow keys progress through sub-slides
+            // keyboard: {
+            // 	39: 'next', // right key
+            // 	37: 'prev'  // left key
+            // },
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [
+                { src: 'reveal.js/plugin/markdown/marked.js' },
+                { src: 'reveal.js/plugin/markdown/markdown.js' },
+                { src: 'reveal.js/plugin/notes/notes.js', async: true },
+                { src: 'plugin/embed-tweet/embed-tweet.js' },
+                {
+                    src: 'reveal.js/plugin/highlight/highlight.js',
+                    async: true,
+                    callback: function () { hljs.initHighlightingOnLoad(); }
+                }
+            ]
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>My awesome presentation</title>
+	<title>Automating the crowd</title>
 
 	<!-- Reveal themes -->
 	<link rel="stylesheet" href="reveal.js/css/reveal.css">
@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="sass/presentation.css">
 
 	<!-- Theme used for syntax highlighting of code -->
-	<link rel="stylesheet" href="css/google_syntax.css">
+	<link rel="stylesheet" href="css/syntax/google_syntax.css">
 
 	<!-- Favicon -->
 	<link rel="icon" href="./assets/personal/Purple.png" />
@@ -24,14 +24,19 @@
 	<!-- Font awesome -->
 	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" media="all">
 
+	<!-- Tania custom icons  -->
+	<link rel="stylesheet" type="text/css" href="assets/icons_collection/font/flaticon.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+
 	<script src="reveal.js/js/reveal-print.js"></script>
 
 </head>
 
+
 <!-- Need to specify the theme here: the first defines the color palette and the 
 	second the font theme -->
 
-<body class="theme-cyber theme-klasik-rough-font">
+<body class="theme-tank theme-klasik-font">
 
 	<!-- Adding the background and icon theme here -->
 
@@ -261,7 +266,8 @@
 						<div class="header">
 							<div class="logo"></div>
 							<div class="section">A table and code only</div>
-							<div class="twitter"><a href="https://twitter.com/ixek"><i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+							<div class="twitter"><a href="https://twitter.com/ixek"><i class="fab fa-twitter"></i>
+									<span>ixek</span></a></div>
 						</div>
 						<div class="content">
 							<h1>Dimensions</h1>
@@ -365,6 +371,33 @@
 						</figure>
 					</div>
 			</section>
+			<!-- Slide with code -->
+			<section id="code--path">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="section">Creating code sections</div>
+					</div>
+					<div class="content">
+						Now with line numbers and lines syntax!
+						<pre><code class="hljs" data-line-numbers="4-8">
+import React, { useState } from 'react';
+	
+function Example() {
+	const [count, setCount] = useState(0);
+	
+	return (
+	<div>
+		<p>You clicked {count} times</p>
+		<button onClick={() => setCount(count + 1)}>
+		Click me
+		</button>
+	</div>
+	);
+}
+						</code></pre>
+					</div>
+			</section>
 
 			<!-- Slide with image -->
 			<section>
@@ -401,7 +434,8 @@
 						<h4>Images</h4>
 						Larger image
 						<div class="images">
-							<img src="./assets/herdata/puzzle.PNG" alt="reproduce" style='border: 0px; height:400px; box-shadow: none;'>
+							<img src="./assets/herdata/puzzle.PNG" alt="reproduce"
+								style='border: 0px; height:400px; box-shadow: none;'>
 						</div>
 
 					</div>
@@ -425,6 +459,27 @@
 						<pre><code> for i in element</code></pre>
 						Use the following section:
 						<pre><code> section class="color--code" </code></pre>
+					</div>
+				</div>
+			</section>
+
+			<section class=" color--code-dark">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+						<div class="section">Code only slides
+						</div>
+						<div class="twitter"><a href="https://twitter.com/ixek">
+								<i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+					</div>
+					<div class="content">
+						<h2>Using the highlighter</h2>
+						<pre><code class="hljs" data-line-numbers="4"> for i in element:
+	print (f'hola {i}')
+	if element == 0:
+		print('Cannot do that mate')
+						</code></pre>
+
 					</div>
 				</div>
 			</section>
@@ -544,7 +599,8 @@
 							<p class='modal_p'>"It is like agreeing that we will all drive on the left or
 								the right. A hallmark of civilization is following conventions
 								that constrain your behaviour a little, in the name of public safety"</p>
-							<p class='caption_p'>- Jenny Brian on <a href="https://www.tidyverse.org/articles/2017/12/workflow-vs-script/">
+							<p class='caption_p'>- Jenny Brian on <a
+									href="https://www.tidyverse.org/articles/2017/12/workflow-vs-script/">
 									Project oriented workflows</p>
 						</div>
 					</div>

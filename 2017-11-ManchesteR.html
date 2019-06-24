@@ -1,0 +1,327 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title> Tania A. for Manchester R </title>
+
+	<link rel="stylesheet" href="reveal.js/css/reveal.css">
+	<link rel="stylesheet" href="reveal.js/css/theme/white.css">
+
+	<!-- Using my custom theme -->
+	<link rel="stylesheet" href="css/trallard_pt.css">
+
+	<!-- Font awesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"
+		media="all">
+
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h2> Tania Allard </h2>
+				<p>
+					<strong> What has reproducibility even done for us?</strong>
+					A primer
+					<br>
+					<hr>
+					<small>November 9th, 2017 <br>
+						<a href="http://twitter.com/ixek" target="_blank">
+							<i class="fa fa-twitter" aria-hidden="true">
+							</i> @ixek </a> </small>
+					<br> <br>
+					<small>The interactive version of the slides can be found at:
+						<a href="www.bitsandchips.me/Talks/2017-11-ManchesteR.html">
+							www.bitsandchips.me/Talks/2017-11-ManchesteR.html</a> </small>
+				</p>
+			</section>
+
+			<section>
+				<h2>Who am I?</h2>
+				<div class="sm_img">
+					<img src="./assets/Tania_logo.png" alt="yo" />
+				</div>
+				<ul>
+					<li>RSE (research software engineer)<br>
+						at Sheffield</li>
+					<li>Nasa DataNaut</li>
+					<li>Mozilla Open leaders</li>
+					<li>Reproducibility champion</li>
+					<li>Diversity and equality in STEM advocate</li>
+					<li>Programming instructor/mentor</li>
+				</ul>
+			</section>
+
+			<section data-background-image='./assets/code.jpg' class='dark_box'>
+				<div class="white_overlay">
+					<h2>What has reproducibility done for us?</h2>
+				</div>
+			</section>
+
+			<section>
+				<h2> Antibiotics! </h2>
+				About 150 years ago Pasteur demonstrated how experiments can be conducted
+				reproducibly and the value of doing it that way.
+				<img src="./assets/ManchesteR/pasteur2.jpg" alt="pasteur" height='300px;'>
+				<img src="./assets/ManchesteR/pasteur1.jpg" alt="pasteur" height='300px;'>
+			</section>
+
+			<section>
+				<h3>Drugs and vaccinations in general </h3>
+				<img src="./assets/ManchesteR/medicine.jpg" alt="medicine">
+			</section>
+
+			<section data-background-image='./assets/code.jpg' class='dark_box'>
+				<div class="white_overlay">
+					<h2>There *is* a crisis in reproducibility </h2>
+				</div>
+			</section>
+
+			<section>
+				<img src="./assets/ManchesteR/excel2.png" alt="excel">
+			</section>
+
+			<section>
+				<h3>One more for spreadsheets</h3>
+				<img src="./assets/ManchesteR/excel3.png" alt="excel3">
+				<small><a href="https://www.mpls.ox.ac.uk/mplsinsights/science-relies-on-computer-modelling">
+						https://www.mpls.ox.ac.uk/mplsinsights/science-relies-on-computer-modelling</a></small>
+
+			</section>
+
+			<section>
+				<img src="./assets/ManchesteR/excel.png" alt="excelno">
+				<div class="float_modal fragment">
+					<p class='modal_p'>"...the user interface conflated input, output,
+						code, and presentation, making testing code and discovering bugs
+						difficult"</p>
+					<p class='caption_p'>Philip Stark, Science is 'show me' not
+						'trust me' (2015) </p>
+				</div>
+				<small><a href="http://www.bitss.org/2015/12/31/science-is-show-me-not-trust-me/">
+						http://www.bitss.org/2015/12/31/science-is-show-me-not-trust-me/</a></small>
+			</section>
+
+
+			<section>
+				<img src="./assets/ManchesteR/obataka.png" alt="obataka" , height='650px;'>
+			</section>
+
+			<section>
+				<img src="./assets/ManchesteR/repro1.jpg" alt="repro1">
+				<small><a href="http://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970">
+						http://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970</a></small>
+			</section>
+
+			<section data-background-image='./assets/code2.jpg' class='dark_box'>
+				<div class="white_overlay">
+					<h2>We first need to understand what is reproducibility </h2>
+				</div>
+			</section>
+
+			<section>
+				<img src="./assets/ManchesteR/spectrum.png" alt="spectrum">
+			</section>
+
+			<section>
+				<h2> Reproducible</h2>
+				<img src="./assets/ManchesteR/reproducibility.png" alt="rep"
+					style='border: 0px; height:500px; box-shadow: none;'>
+			</section>
+
+			<section>
+				<h2> Replicable </h2>
+				<img src="./assets/ManchesteR/replicability.png" alt="rep"
+					style='border: 0px; height:500px; box-shadow: none;'>
+			</section>
+
+			<section>
+				<h2> Robust </h2>
+				<img src="./assets/ManchesteR/robust.png" alt="rep"
+					style='border: 0px; height:500px; box-shadow: none;'>
+			</section>
+
+			<section class='two-colors'>
+				<div class='items-block'>
+					<div class="single-block single1">
+						Reproducible
+					</div>
+
+					<div class="single-block single2">
+						Open science
+					</div>
+				</div>
+
+				<hr>
+				You can still have reproducible workflows without them being open!
+			</section>
+
+			<section>
+				<h2>Why is reproducibility so important?</h2>
+				<p>
+					Nowadays science relies on software no matter the discipline,
+					the industry, or the openess of the research.
+				</p>
+			</section>
+
+			<section data-background-image='./assets/code.jpg' class='dark_box'>
+				<div class="white_overlay">
+					<h2>Common barriers to reproducibility</h2>
+				</div>
+			</section>
+
+			<section>
+				<img src="./assets/ManchesteR/repro4.jpg" alt="repro4" height="600px">
+			</section>
+
+			<section>
+				<h3>Code not available</h3>
+				<img src="./assets/ManchesteR/request.png" alt="request" , height='500px'>
+			</section>
+
+			<section>
+				<h3>Small bus factor</h3>
+				<img src="./assets/ManchesteR/bus.png" alt="bus" height='550px'>
+			</section>
+
+			<section>
+				<h3> People </h3>
+				<img src="./assets/ManchesteR/error.png" alt="error" height='550px'>
+			</section>
+
+			<section>
+				<h3> People </h3>
+				<img src="./assets/ManchesteR/mine.jpg" alt="mine" height='550px'>
+			</section>
+
+			<section data-background-image='./assets/code.jpg' class='dark_box'>
+				<div class="white_overlay">
+					<h2>So what can I do?</h2>
+				</div>
+			</section>
+
+			<section>
+				<h2>Version control is your best friend</h2>
+				<img src="./assets/ManchesteR/git.png" alt="git" width="200px" style='border: 0px; box-shadow: none;'>
+				<img src="./assets/ManchesteR/github.png" alt="git" width="200px"
+					style='border: 0px; box-shadow: none;'>
+				<img src="./assets/ManchesteR/gitlab.png" alt="git" width="200px"
+					style='border: 0px; box-shadow: none;'>
+				<img src="./assets/ManchesteR/bitbucket.png" alt="git" width="200px"
+					style='border: 0px; box-shadow: none;'>
+				<br>
+				<hr>
+				<p class='fragment'>I mainly collaborate with myself and my two-months-back self is
+					quite bad at replying to emails</p>
+			</section>
+
+			<section>
+				<img src="./assets/ManchesteR/kaggle1.png" alt="kaggle" height='500px'>
+				<small><a href="https://www.kaggle.com/surveys/2017">
+						https://www.kaggle.com/surveys/2017</a></small>
+			</section>
+
+			<section>
+				<h3>Testing is your second best friend</h3>
+				<ul>
+					<li><a href="http://testthat.r-lib.org">Test that</a></li>
+					<li><a href="https://rstudio.github.io/shinytest/">Shinytest</a></li>
+				</ul>
+				<br>
+				<p>
+					<small>This is a brief intro to using testthat
+						<a href="http://r-pkgs.had.co.nz/tests.html">http://r-pkgs.had.co.nz/tests.html</a>
+					</small></p>
+			</section>
+
+			<section>
+				<h3> Automate </h3>
+				<p> Minimize the user dependent steps</p>
+				<img src="./assets/ManchesteR/automate.png" alt="auto" height='500px'>
+			</section>
+
+			<section>
+				<h3>Document, share, report... and keep updated</h3>
+				<ul>
+					<li>Rmarkdown</li>
+					<li><a href="https://jdblischak.github.io/workflowr/">
+							WorflowR</a></li>
+				</ul>
+				<img src="./assets/ManchesteR/workflowr.png" alt="wf">
+			</section>
+
+			<section>
+				<img src="./assets/ManchesteR/comm.png" alt="wf">
+			</section>
+
+			<section>
+				<h2>Science is a conversation</h2>
+				<ul>
+					<li> A conversation between scientists and their body of knowledge</li>
+					<li>A conversation among scientists</li>
+					<li>A conversation between scientists and machines</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Something else</h3>
+				Consider your execution environment:
+				help others to run your scripts by using
+				something like <strong>Docker*</strong> or <a href="https://rstudio.github.io/packrat/">
+					Packrat**</a>
+				<hr>
+				<div style='text-align:left;'>
+
+					<small>*or any other option for containerization e.g. Vagrant, Kubernetes <br />
+						**a package manager for R</small>
+				</div>
+			</section>
+
+			<section>
+				<h3>Thank you all</h3>
+				<img src="./assets/ManchesteR/Frink.jpg" alt="frink" height='500px'>
+
+				<p><small><a href="http://twitter.com/ixek" target="_blank">
+							<i class="fa fa-twitter" aria-hidden="true">
+							</i> @ixek </a>| <a href="www.bitsandchips.me">www.bitsandchips.me
+						</a> </small></p>
+			</section>
+
+		</div>
+	</div>
+
+	<script src="reveal.js/lib/js/head.min.js"></script>
+	<script src="reveal.js/js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'reveal.js/plugin/markdown/marked.js' },
+				{ src: 'reveal.js/plugin/markdown/markdown.js' },
+				{ src: 'reveal.js/plugin/notes/notes.js', async: true },
+				{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+
+</html>
