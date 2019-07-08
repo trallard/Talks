@@ -390,14 +390,11 @@ div {
 .reveal h5.glow,
 .reveal big-font.glow,
 .reveal mega-font.glow,
-.reveal huge-font.glow,
-    {
+.reveal huge-font.glow,{
     @include themify($themes) {
         text-shadow: 0px 0px 5px themed('primary'), 0 0 20px #fff;
     }
     padding: 0 2rem;
-    font-family: $title-font,
-    sans-serif;
 }
 
 /*********************************************
@@ -435,11 +432,10 @@ div {
     }
     &.default {
         // default for the theme
-    @include themify($themes) {
-        background-color: themed('primary');
-        border-color: darken($color: themed('primary'), $amount: 10);
-        border-left: darken($color: themed('primary'), $amount: 15)
-    }
+        @include themify($themes) {
+            background-color: themed('primary-light');
+            border-left: themed('primary');
+        }
         padding: 15px 15px;
         color: #fff;
         margin: 1em;
