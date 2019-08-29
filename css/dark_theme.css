@@ -1133,10 +1133,10 @@ has a background image and a box with the details */
 figure.display {
   margin: auto;
   text-align: center;
-  max-width: 100vmin;
+  max-width: 100%;
   width: 100% vw;
   height: auto;
-  display: block;
+  display: flex;
   padding: 10px;
 }
 figure.display figcaption {
@@ -1152,11 +1152,10 @@ figure.display figcaption {
 div.images {
   text-align: center;
   margin: auto;
-  padding: 10px;
+  padding: 5px;
   width: auto;
   height: 60vh;
-  display: f;
-  background-color: #fb5c6f;
+  display: flex;
 }
 div.images img {
   padding: 5px;
@@ -1164,35 +1163,18 @@ div.images img {
   border: 0px solid #303030;
   max-width: 90%;
   height: auto;
-  margin-left: auto;
+  margin-left: -2%;
   margin-right: auto;
 }
 
-.img-fill img {
-  object-fit: fill;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
+.reveal .l-multiple {
+  display: flex;
+  justify-content: space-around;
 }
 
-.img-contain img {
-  object-fit: contain;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-
-.img-cover img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-
-.img-none img {
-  object-fit: none;
-  height: 100%;
-  width: 100%;
+.reveal .l-double {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 /*********************************************
@@ -3292,7 +3274,7 @@ figure.code pre + figcaption {
   color: #51637a;
 }
 .reveal.pattern--bwlines {
-  background-image: url("../assets/patterns/bwlines.svg");
+  background-image: url("../assets/patterns/memphispink.svg");
 }
 
 .theme-sedona .reveal.pattern--bwlines .slides section.intro {
