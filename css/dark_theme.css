@@ -2611,7 +2611,7 @@ figure.code pre + figcaption {
   color: #5f6c7a;
   /*slate grey*/
   text-decoration: none;
-  font-size: 0.5em !important;
+  font-size: 0.8em !important;
 }
 .header .twitter .fa-twitter {
   color: #5f6c7a;
@@ -3274,7 +3274,7 @@ figure.code pre + figcaption {
   color: #51637a;
 }
 .reveal.pattern--bwlines {
-  background-image: url("../assets/patterns/memphispink.svg");
+  background-image: url("../assets/patterns/bwlines.svg");
 }
 
 .theme-sedona .reveal.pattern--bwlines .slides section.intro {
@@ -3747,6 +3747,87 @@ figure.code pre + figcaption {
 }
 .theme-tank .reveal.pattern--quetzal .slides section.title .presentation-url {
   color: #080D15;
+}
+.reveal.pattern--memphis {
+  background-image: url("../assets/patterns/memphispink.svg");
+}
+
+.theme-sedona .reveal.pattern--memphis .slides section.intro {
+  background-color: #d1d7e0;
+}
+.theme-cyber .reveal.pattern--memphis .slides section.intro {
+  background-color: #a240c5;
+}
+.theme-bright-blue .reveal.pattern--memphis .slides section.intro {
+  background-color: #99738e;
+}
+.theme-black .reveal.pattern--memphis .slides section.intro {
+  background-color: #F2E38A;
+}
+.theme-candy .reveal.pattern--memphis .slides section.intro {
+  background-color: #4ec5c1;
+}
+.theme-skeletor .reveal.pattern--memphis .slides section.intro {
+  background-color: #22c4ec;
+}
+.theme-honey .reveal.pattern--memphis .slides section.intro {
+  background-color: #B5B5B7;
+}
+.theme-ultra .reveal.pattern--memphis .slides section.intro {
+  background-color: #FAC668;
+}
+.theme-borealis .reveal.pattern--memphis .slides section.intro {
+  background-color: #7489C7;
+}
+.theme-python .reveal.pattern--memphis .slides section.intro {
+  background-color: #EC9B5F;
+}
+.theme-tank .reveal.pattern--memphis .slides section.intro {
+  background-color: #A8ACBF;
+}
+.theme-sedona .reveal.pattern--memphis .slides section.title {
+  background-color: #747CA8;
+  color: #d1d7e0;
+}
+.theme-cyber .reveal.pattern--memphis .slides section.title {
+  background-color: #ea00d9;
+  color: #a240c5;
+}
+.theme-bright-blue .reveal.pattern--memphis .slides section.title {
+  background-color: #553d67;
+  color: #99738e;
+}
+.theme-black .reveal.pattern--memphis .slides section.title {
+  background-color: #C687E8;
+  color: #F2E38A;
+}
+.theme-candy .reveal.pattern--memphis .slides section.title {
+  background-color: #e5e338;
+  color: #4ec5c1;
+}
+.theme-skeletor .reveal.pattern--memphis .slides section.title {
+  background-color: #987cb0;
+  color: #22c4ec;
+}
+.theme-honey .reveal.pattern--memphis .slides section.title {
+  background-color: #677077;
+  color: #B5B5B7;
+}
+.theme-ultra .reveal.pattern--memphis .slides section.title {
+  background-color: #9B84C0;
+  color: #FAC668;
+}
+.theme-borealis .reveal.pattern--memphis .slides section.title {
+  background-color: #ABB1D9;
+  color: #7489C7;
+}
+.theme-python .reveal.pattern--memphis .slides section.title {
+  background-color: #FDD45E;
+  color: #EC9B5F;
+}
+.theme-tank .reveal.pattern--memphis .slides section.title {
+  background-color: #51637a;
+  color: #A8ACBF;
 }
 /*********************************************
  * IMPORT FONTS
