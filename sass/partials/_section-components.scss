@@ -133,12 +133,12 @@ div {
         display: flex;
         img {
             padding: 5px;
-            display: block;
-            border: 0px solid #303030;
+            display: inline-block;
             max-width: 90%;
             height: auto;
             margin-left: -2%;
             margin-right: auto;
+            vertical-align: middle;
         }
     }
 }

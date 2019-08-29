@@ -38,7 +38,7 @@
 <!-- Need to specify the theme here: the first defines the color palette and the 
 	second the font theme -->
 
-<body class="theme-sedona theme-cunia-font">
+<body class="theme-sedona theme-cunia2-font">
 
     <!-- Adding the background and icon theme here -->
 
@@ -108,13 +108,13 @@
                 <div class="grid-wrapper">
                     <div class="header">
                         <div class="logo"></div>
-                        <div class="section"></div>
+                        <div class="section"><small>Gracias Carol Willing por la inspiración</small></div>
                         <div class="twitter"><a href="https://twitter.com/ixek">
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                       <pre>
-                           <code style="max-height: 600px;">
+                        <pre>
+                           <code style="max-height: 500px;">
 """PyCon_Latam_Gratitude.py"""
 
 # Let's take a moment to say thank you
@@ -125,8 +125,8 @@ def say_thanks(name):
   print(f'Thank you {name}!')
   make_investment(amount, name)
                            </code>
-                       </pre> 
-                       <small>Gracias Carol Willing por la inspiración</small>
+                       </pre>
+
                     </div>
                 </div>
             </section>
@@ -193,7 +193,7 @@ def say_thanks(name):
                     </div>
             </section>
 
-            <!-- Start from the beginning section -->
+            <!-- intro a Mexico y comunidad -->
             <section class="dark_box" style="background-image:url('./assets/pycon_latam/xochi.jpeg');">
             </section>
             <section class="dark_box" style="background-image:url('./assets/pycon_latam/latino.jpeg');">
@@ -201,6 +201,7 @@ def say_thanks(name):
             <section class="dark_box" style="background-image:url('./assets/pycon_latam/tulum.jpg');">
             </section>
 
+            <!-- incertidumbre en la vida -->
             <section>
                 <div class="grid-wrapper">
                     <div class="header">
@@ -210,7 +211,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        <h2>Momentos de reflexión de la vida cotidiana</h2>
+                        <h2>Reflexión e incertidumbre</h2>
                         <ul class="icon">
                             <li class="fragment fade-in-then-semi-out">Python 2 vs Python 3</li>
                             <li class="fragment">Pip vs conda</li>
@@ -233,11 +234,14 @@ def say_thanks(name):
                         <div
                             style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;grid-template-rows:3fr 1fr 1fr 3fr;grid-template-areas:'a a b b''a a b b''c c d d''c c d d';grid-gap:1em;height:65vh">
                             <h2 style="grid-row:2/4;grid-column:2/4">Todos estamos intentando cambiar el mundo</h2>
-                            <ul style="display:contents;list-style-position:inside">
+                            <ul style="display:contents;list-style-position:inside; list-style-type:none;">
                                 <li style="grid-area:a;text-align:center" class="fragment">Investigadores</li>
-                                <li style="grid-area:b;justify-self:end;text-align:center" class="fragment">Desarrolladores en la industria</small></li>
-                                <li style="grid-area:c;align-self:end;text-align:center" class="fragment">Sin fines de lucro</li>
-                                <li style="grid-area:d;align-self:end;justify-self:end;text-align:center" class="fragment">Profesores o educadores</li>
+                                <li style="grid-area:b;justify-self:end;text-align:center" class="fragment">
+                                    Desarrolladores en la industria</small></li>
+                                <li style="grid-area:c;align-self:end;text-align:center" class="fragment">Sin fines de
+                                    lucro</li>
+                                <li style="grid-area:d;align-self:end;justify-self:end;text-align:center"
+                                    class="fragment">Profesores o educadores</li>
                             </ul>
                         </div>
                     </div>
@@ -255,18 +259,20 @@ def say_thanks(name):
                         <div
                             style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;grid-template-rows:3fr 1fr 1fr 3fr;grid-template-areas:'a a b b''a a b b''c c d d''c c d d';grid-gap:1em;height:65vh">
                             <h2 style="grid-row:2/4;grid-column:2/4">Nuestras motivaciones y caminos cambian</h2>
-                            <ul style="display:contents;list-style-position:inside">
-                                <li style="grid-area:a;text-align:center" >Investigadores</li>
-                                <li style="grid-area:b;justify-self:end;text-align:center" >Desarrolladores en la industria</small></li>
-                                <li style="grid-area:c;align-self:end;text-align:center" >Sin fines de lucro</li>
-                                <li style="grid-area:d;align-self:end;justify-self:end;text-align:center" >Profesores o educadores</li>
+                            <ul style="display:contents;list-style-position:inside; list-style-type:none;">
+                                <li style="grid-area:a;text-align:center">Investigadores</li>
+                                <li style="grid-area:b;justify-self:end;text-align:center">Desarrolladores en la
+                                    industria</small></li>
+                                <li style="grid-area:c;align-self:end;text-align:center">Sin fines de lucro</li>
+                                <li style="grid-area:d;align-self:end;justify-self:end;text-align:center">Profesores o
+                                    educadores</li>
                             </ul>
                         </div>
                     </div>
             </section>
 
-            <!-- instrucciones -->
-            <section>
+            <!-- comienza aventura: instrucciones -->
+            <section style="background-color: #747CA8;" data-transition="slide">
                 <div class="grid-wrapper">
                     <div class="header">
                         <div class="logo"></div>
@@ -275,7 +281,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        <h2>Algo diferente... elige tu propia aventura con Python</h2>
+                        <h2 style="color: white">✨ Algo diferente... elige tu propia aventura con Python ✨</h2>
                     </div>
             </section>
 
@@ -288,15 +294,16 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
+                        <p>Vamos a construir la historia durante la charla</p>
                         <div class="l-double" style="grid-gap:0.5em">
-                            <div>
-                                <h3>Opción 1</h3>
+                            <div>   
+                                <h3 class="fragment">Opción 1</h3>
                                 <div class="fragment">
                                     <h1>☝🏽</h1>
                                 </div>
                             </div>
                             <div>
-                                <h3>Opción 2</h3>
+                                <h3 class="fragment">Opción 2</h3>
                                 <div class="fragment">
                                     <h1>✊🏽</h1>
                                 </div>
@@ -306,66 +313,145 @@ def say_thanks(name):
                 </div>
             </section>
 
-        <section>
-            <section class="color--dark">
-                <div class="grid-wrapper">
-                    <div class="header">
-                        <div class="logo"></div>
-                        <div class="section"></div>
-                        <div class="twitter"><a href="https://twitter.com/ixek">
-                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-                    </div>
-                    <div class="content">
-                        El proyecto que mantienes usa Python 2 todavía, tu....
-                        <br><br>
-                        <ol>
-                            <li><a href="#/ejemplo1">Cambias a Python 3</a></li>
-                            <li><a href="#/ejemplo2">No haces nada</a></li>
-            
-                        </ol>
-                    </div>
+            <section>
+                <section class="color--dark">
+                    <div class="grid-wrapper">
+                        <div class="header">
+                            <div class="logo"></div>
+                            <div class="section">ejemplo</div>
+                            <div class="twitter"><a href="https://twitter.com/ixek">
+                                    <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                        </div>
+                        <div class="content">
+                            El proyecto que mantienes usa Python 2 todavía, tu....
+                            <br><br>
+                            <ol>
+                                <li><a href="#/ejemplo1">Cambias a Python 3</a></li>
+                                <li><a href="#/ejemplo2">No haces nada</a></li>
+
+                            </ol>
+                        </div>
+                </section>
+
+                <section id="ejemplo1">
+                    <div class="grid-wrapper">
+                        <div class="header">
+                            <div class="logo"></div>
+                            <div class="section"></div>
+                            <div class="twitter"><a href="https://twitter.com/ixek">
+                                    <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                        </div>
+                        <div class="content">
+                            <img src="./assets/pycon_latam/rip.jpg" alt="Source document" class="plain"
+                                style="max-height:65vh;justify-self:center">
+                            <br> <br>
+                                <a href="#/capitulo1">Respawn</a>
+                        </div>
+                </section>
+
+                <section id="ejemplo2">
+                    <div class="grid-wrapper">
+                        <div class="header">
+                            <div class="logo"></div>
+                            <div class="section"></div>
+                            <div class="twitter"><a href="https://twitter.com/ixek">
+                                    <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                        </div>
+                        <div class="content">
+                            <h2>Wooo 🍪</h2>
+                            <a href="#/capitulo1">Respawn</a>
+                        </div>
+                </section>
             </section>
-            
-            <section id="ejemplo1">
+
+            <!-- capitulo 1 -->
+            <section class="dark_box" style="background-image:url('./assets/pycon_latam/python-gv1.jpg'); background-size:contain;">
+            <h3 style="background-color: rgba(0, 0, 0, 0.7); position:absolute;  bottom:2%; right : 2%;">
+                Capítulo 1: El comienzo</h3>
+            </section>
+
+            <section>
                 <div class="grid-wrapper">
                     <div class="header">
                         <div class="logo"></div>
-                        <div class="section"></div>
+                        <div class="section">CAPÍTULO 1</div>
                         <div class="twitter"><a href="https://twitter.com/ixek">
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        <h2>ejemplo 1!</h2>
-                        <a href="#/capitulo1">Respawn</a>
+                        🏝 Estás en una isla semi-desierta. El único modo de salir es haciendo un 
+                        proyecto de investigación.
+
+                        <p>🧪 Necesitas replicar un estudio así que escribes a los autores.</p>
+
                     </div>
             </section>
 
-            <section id="ejemplo2">
-                <div class="grid-wrapper">
-                    <div class="header">
-                        <div class="logo"></div>
-                        <div class="section"></div>
-                        <div class="twitter"><a href="https://twitter.com/ixek">
-                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-                    </div>
-                    <div class="content">
-                        <h2>ejemplo 2!</h2>
-                        <a href="#/capitulo1">Respawn</a>
-                    </div>
+            <!-- codigo: replicar -->
+            <section>
+                <section id="replicar">
+                    <div class="grid-wrapper">
+                        <div class="header">
+                            <div class="logo"></div>
+                            <div class="section"></div>
+                            <div class="twitter"><a href="https://twitter.com/ixek">
+                                    <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                        </div>
+                        <div class="content">
+                            Los autores te piden firmar un acuerdo para darte acceso al código, tú:
+                            <br> <br>
+                            <ol class="fragment">
+                                <li><a href="#/replicar1">Firmas el acuerdo para ahorrarte tiempo</a></li>
+                                <li><a href="#/replicar2">Decides implementar tu propia versión del código</a></li>
+                            
+                            </ol>
+                        </div>
+                </section>
+                
+                <section id="replicar1">
+                    <div class="grid-wrapper">
+                        <div class="header">
+                            <div class="logo"></div>
+                            <div class="section"></div>
+                            <div class="twitter"><a href="https://twitter.com/ixek">
+                                    <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                        </div>
+                        <div class="content">
+                            <h3>❌ El código no funciona </h3>
+
+                            <a href="#/replicar">Respawn</a>
+                        </div>
+                </section>
+
+                <section id="replicar2">
+                    <div class="grid-wrapper">
+                        <div class="header">
+                            <div class="logo"></div>
+                            <div class="section"></div>
+                            <div class="twitter"><a href="https://twitter.com/ixek">
+                                    <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                        </div>
+                        <div class="content">
+                            <p>Pasas 7 meses intentando implementar tu código.
+                              <br> <br>  Pero comienzas a darte cuenta que no es tan sencillo como parecia.
+                            </p>
+                        </div>
+                </section>
             </section>
-        </section>
-            
-            <!-- comienza aventura -->
-            <section id="capitulo1">
+
+            <section class="color--light">
                 <div class="grid-wrapper">
                     <div class="header">
                         <div class="logo"></div>
-                        <div class="section"></div>
+                        <div class="section">🎉🎉</div>
                         <div class="twitter"><a href="https://twitter.com/ixek">
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
                         
+                        <figure class="display" style="max-width: 85vh" >
+                            <img src="./assets/pycon_latam/carpentries.png" alt="blank noise" />
+                        </figure>
                     </div>
             </section>
 
@@ -378,7 +464,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        
+
                     </div>
             </section>
 
@@ -391,7 +477,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        
+
                     </div>
             </section>
 
@@ -404,7 +490,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        
+
                     </div>
             </section>
 
@@ -417,7 +503,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        
+
                     </div>
             </section>
 
@@ -430,7 +516,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        
+
                     </div>
             </section>
 
@@ -443,7 +529,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        
+
                     </div>
             </section>
 
@@ -456,7 +542,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        
+
                     </div>
             </section>
 
@@ -469,7 +555,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        
+
                     </div>
             </section>
 
@@ -482,7 +568,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        
+
                     </div>
             </section>
 
@@ -495,7 +581,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        
+
                     </div>
             </section>
 
@@ -508,7 +594,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        
+
                     </div>
             </section>
 
@@ -521,7 +607,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        
+
                     </div>
             </section>
 
@@ -534,7 +620,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        
+
                     </div>
             </section>
 
@@ -547,7 +633,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        
+
                     </div>
             </section>
 
@@ -560,7 +646,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        
+
                     </div>
             </section>
 
@@ -573,7 +659,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        
+
                     </div>
             </section>
 
@@ -586,7 +672,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        
+
                     </div>
             </section>
 
@@ -599,7 +685,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        
+
                     </div>
             </section>
 
@@ -612,7 +698,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        
+
                     </div>
             </section>
 
@@ -625,7 +711,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        
+
                     </div>
             </section>
 
@@ -638,7 +724,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        
+
                     </div>
             </section>
 
@@ -651,7 +737,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        
+
                     </div>
             </section>
 
@@ -664,7 +750,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        
+
                     </div>
             </section>
 
@@ -677,7 +763,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        
+
                     </div>
             </section>
 
@@ -690,7 +776,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        
+
                     </div>
             </section>
 
@@ -703,7 +789,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        
+
                     </div>
             </section>
 
@@ -716,7 +802,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        
+
                     </div>
             </section>
 
@@ -729,59 +815,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        
-                    </div>
-            </section>
 
-            <section>
-                <div class="grid-wrapper">
-                    <div class="header">
-                        <div class="logo"></div>
-                        <div class="section"></div>
-                        <div class="twitter"><a href="https://twitter.com/ixek">
-                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-                    </div>
-                    <div class="content">
-                        
-                    </div>
-            </section>
-
-            <section>
-                <div class="grid-wrapper">
-                    <div class="header">
-                        <div class="logo"></div>
-                        <div class="section"></div>
-                        <div class="twitter"><a href="https://twitter.com/ixek">
-                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-                    </div>
-                    <div class="content">
-                        
-                    </div>
-            </section>
-
-            <section>
-                <div class="grid-wrapper">
-                    <div class="header">
-                        <div class="logo"></div>
-                        <div class="section"></div>
-                        <div class="twitter"><a href="https://twitter.com/ixek">
-                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-                    </div>
-                    <div class="content">
-                        
-                    </div>
-            </section>
-
-            <section>
-                <div class="grid-wrapper">
-                    <div class="header">
-                        <div class="logo"></div>
-                        <div class="section"></div>
-                        <div class="twitter"><a href="https://twitter.com/ixek">
-                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-                    </div>
-                    <div class="content">
-                        
                     </div>
             </section>
 
@@ -793,8 +827,8 @@ def say_thanks(name):
 
 
 
-<!--  -->
-<!--  -->
+            <!--  -->
+            <!--  -->
             <section>
                 <div class="grid-wrapper">
                     <div class="header">
@@ -809,15 +843,18 @@ def say_thanks(name):
                             <h2 style="grid-row:2/4;grid-column:2/4">Layout of boxes</h2>
                             <ul style="display:contents;list-style-type:'📦 ';list-style-position:inside">
                                 <li style="grid-area:a;text-align:center" class="fragment">Box dimensions and type</li>
-                                <li style="grid-area:b;justify-self:end;text-align:center" class="fragment">Positioning scheme <small>(normal
+                                <li style="grid-area:b;justify-self:end;text-align:center" class="fragment">Positioning
+                                    scheme <small>(normal
                                         flow / float / absolute positioning)</small></li>
-                                <li style="grid-area:c;align-self:end;text-align:center" class="fragment">Relationships between elements in the
+                                <li style="grid-area:c;align-self:end;text-align:center" class="fragment">Relationships
+                                    between elements in the
                                     document tree</li>
-                                <li style="grid-area:d;align-self:end;justify-self:end;text-align:center" class="fragment">External information
+                                <li style="grid-area:d;align-self:end;justify-self:end;text-align:center"
+                                    class="fragment">External information
                                     <small>(e.g. viewport size, intrinsic dimensions of images etc.)</small></li>
                             </ul>
+                        </div>
                     </div>
-                </div>
             </section>
 
 
@@ -831,8 +868,10 @@ def say_thanks(name):
                     </div>
                     <div class="content">
                         <div style="display:grid;grid-template-columns:40% 60%;justify-content:center">
-                            <img data-src="https://www.chenhuijing.com/slides/33-cssday-2018/img/source.svg" alt="Source document" class="plain" style="max-height:65vh;justify-self:center">
-                            <img data-src="https://www.chenhuijing.com/slides/33-cssday-2018/img/box-tree.svg" alt="Box tree" class="plain fragment" style="max-height:75vh">
+                            <img data-src="https://www.chenhuijing.com/slides/33-cssday-2018/img/source.svg"
+                                alt="Source document" class="plain" style="max-height:65vh;justify-self:center">
+                            <img data-src="https://www.chenhuijing.com/slides/33-cssday-2018/img/box-tree.svg"
+                                alt="Box tree" class="plain fragment" style="max-height:75vh">
                         </div>
                     </div>
                 </div>
@@ -852,14 +891,16 @@ def say_thanks(name):
                                 <h2>Inner display type</h2>
                                 <div class="fragment">
                                     <p>Defines the generated formatting context for descendant boxes</p>
-                                    <img data-src="img/inside-display.svg" alt="Inner display type" class="plain" style="max-height:35vh">
+                                    <img data-src="img/inside-display.svg" alt="Inner display type" class="plain"
+                                        style="max-height:35vh">
                                 </div>
                             </div>
                             <div>
                                 <h2>Outer display type</h2>
                                 <div class="fragment">
                                     <p>Dictates a principal box's own participation in flow layout</p>
-                                    <img data-src="img/outside-display.svg" alt="Outer display type" class="plain" style="max-height:45vh">
+                                    <img data-src="img/outside-display.svg" alt="Outer display type" class="plain"
+                                        style="max-height:45vh">
                                 </div>
                             </div>
                         </div>
