@@ -239,7 +239,7 @@
 
 .reveal.pattern--memphis .slides section.intro {
   @include themify($themes) {
-    background-color: themed("third");
+    background-color: themed("secondary-light");
   }
 }
 

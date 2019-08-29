@@ -469,6 +469,9 @@ All code slide
 .theme-cunia-font .items-block {
   font-family: Coves, Helvetica, sans-serif;
 }
+.theme-cunia2-font .items-block {
+  font-family: Poppins, Helvetica, sans-serif;
+}
 .theme-plex-font .items-block {
   font-family: IBMPlexSans, sans-serif;
 }
@@ -738,6 +741,9 @@ has a background image and a box with the details */
 .theme-cunia-font .reveal {
   font-family: Coves, Helvetica, sans-serif;
 }
+.theme-cunia2-font .reveal {
+  font-family: Poppins, Helvetica, sans-serif;
+}
 .theme-plex-font .reveal {
   font-family: IBMPlexSans, sans-serif;
 }
@@ -805,7 +811,7 @@ has a background image and a box with the details */
   text-shadow: none;
 }
 .theme-sedona ::-moz-selection {
-  background: #d1d7e0;
+  background: #6bc5d2;
 }
 .theme-cyber ::-moz-selection {
   background: #a240c5;
@@ -1023,6 +1029,17 @@ has a background image and a box with the details */
 .theme-cunia-font .reveal big-font {
   font-family: Cunia, sans-serif;
 }
+.theme-cunia2-font .reveal h1,
+.theme-cunia2-font .reveal h2,
+.theme-cunia2-font .reveal h3,
+.theme-cunia2-font .reveal h4,
+.theme-cunia2-font .reveal h5,
+.theme-cunia2-font .reveal h6,
+.theme-cunia2-font .reveal mega-font,
+.theme-cunia2-font .reveal huge-font,
+.theme-cunia2-font .reveal big-font {
+  font-family: Cunia, sans-serif;
+}
 .theme-plex-font .reveal h1,
 .theme-plex-font .reveal h2,
 .theme-plex-font .reveal h3,
@@ -1186,9 +1203,9 @@ div.images img {
   transition: color 0.15s ease;
 }
 .theme-sedona .reveal a {
-  text-decoration-color: #d1d7e0;
-  -webkit-text-decoration-color: #d1d7e0;
-  color: #d1d7e0;
+  text-decoration-color: #6bc5d2;
+  -webkit-text-decoration-color: #6bc5d2;
+  color: #6bc5d2;
 }
 .theme-cyber .reveal a {
   text-decoration-color: #a240c5;
@@ -1245,8 +1262,8 @@ div.images img {
   border: none;
 }
 .theme-sedona .reveal a:hover {
-  color: #d1d7e0;
-  border-bottom: 2px solid #d1d7e0;
+  color: #6bc5d2;
+  border-bottom: 2px solid #6bc5d2;
   /* I prefer a thicker line than the underline */
 }
 .theme-cyber .reveal a:hover {
@@ -1307,6 +1324,10 @@ div.images img {
   border-bottom: 2px solid;
   /* I prefer a thicker line than the underline */
 }
+.theme-cunia2-font .reveal a:hover {
+  border-bottom: 2px solid;
+  /* I prefer a thicker line than the underline */
+}
 .theme-plex-font .reveal a:hover {
   border-bottom: 2px solid;
   /* I prefer a thicker line than the underline */
@@ -1344,7 +1365,7 @@ div.images img {
   color: #fff;
 }
 .theme-sedona .reveal .roll span:after {
-  background: #d1d7e0;
+  background: #6bc5d2;
 }
 .theme-cyber .reveal .roll span:after {
   background: #a240c5;
@@ -1380,7 +1401,7 @@ div.images img {
  * NAVIGATION CONTROLS
  *********************************************/
 .theme-sedona .reveal .controls {
-  color: #d1d7e0;
+  color: #6bc5d2;
 }
 .theme-cyber .reveal .controls {
   color: #a240c5;
@@ -1430,7 +1451,7 @@ div.images img {
   background: rgba(48, 40, 63, 0.2);
 }
 .theme-sedona .reveal .progress {
-  color: #d1d7e0;
+  color: #6bc5d2;
 }
 .theme-cyber .reveal .progress {
   color: #a240c5;
@@ -1873,6 +1894,11 @@ div.images img {
   line-height: 1.2;
   word-wrap: break-word;
 }
+.theme-cunia2-font .reveal mega-font {
+  font-family: Cunia, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
 .theme-plex-font .reveal mega-font {
   font-family: IBMPlexSerif, monospace;
   line-height: 1.2;
@@ -1977,6 +2003,11 @@ div.images img {
   word-wrap: break-word;
 }
 .theme-cunia-font .reveal huge-font {
+  font-family: Cunia, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.theme-cunia2-font .reveal huge-font {
   font-family: Cunia, sans-serif;
   line-height: 1.2;
   word-wrap: break-word;
@@ -2097,6 +2128,12 @@ div.images img {
   letter-spacing: normal;
 }
 .theme-cunia-font .reveal big-font {
+  font-family: Cunia, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
+.theme-cunia2-font .reveal big-font {
   font-family: Cunia, sans-serif;
   line-height: 1.2;
   word-wrap: break-word;
@@ -2296,6 +2333,16 @@ div.images img {
 .theme-cunia-font .reveal big-font.glow,
 .theme-cunia-font .reveal mega-font.glow,
 .theme-cunia-font .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px, 0 0 20px #fff;
+}
+.theme-cunia2-font .reveal h1.glow,
+.theme-cunia2-font .reveal h2.glow,
+.theme-cunia2-font .reveal h3.glow,
+.theme-cunia2-font .reveal h4.glow,
+.theme-cunia2-font .reveal h5.glow,
+.theme-cunia2-font .reveal big-font.glow,
+.theme-cunia2-font .reveal mega-font.glow,
+.theme-cunia2-font .reveal huge-font.glow {
   text-shadow: 0px 0px 5px, 0 0 20px #fff;
 }
 .theme-plex-font .reveal h1.glow,
@@ -2642,6 +2689,9 @@ figure.code pre + figcaption {
 .theme-cunia-font .reveal .slides section .section {
   font-family: Cunia, sans-serif;
 }
+.theme-cunia2-font .reveal .slides section .section {
+  font-family: Cunia, sans-serif;
+}
 .theme-plex-font .reveal .slides section .section {
   font-family: IBMPlexSerif, monospace;
 }
@@ -2866,7 +2916,7 @@ figure.code pre + figcaption {
   color: #9366DA;
 }
 .theme-sedona .reveal.pattern--lines .progress {
-  background-color: #d1d7e0;
+  background-color: #6bc5d2;
 }
 .theme-cyber .reveal.pattern--lines .progress {
   background-color: #a240c5;
@@ -2980,7 +3030,7 @@ figure.code pre + figcaption {
   color: #9366DA;
 }
 .theme-sedona .reveal.pattern--hex .progress {
-  background-color: #d1d7e0;
+  background-color: #6bc5d2;
 }
 .theme-cyber .reveal.pattern--hex .progress {
   background-color: #a240c5;
@@ -3094,7 +3144,7 @@ figure.code pre + figcaption {
   color: #9366DA;
 }
 .theme-sedona .reveal.pattern--star .progress {
-  background-color: #d1d7e0;
+  background-color: #6bc5d2;
 }
 .theme-cyber .reveal.pattern--star .progress {
   background-color: #a240c5;
@@ -3673,7 +3723,7 @@ figure.code pre + figcaption {
 }
 .theme-sedona .reveal.pattern--quetzal .slides section.title {
   background-color: #BD80E0;
-  color: #d1d7e0;
+  color: #6bc5d2;
 }
 .theme-cyber .reveal.pattern--quetzal .slides section.title {
   background-color: #0abdc6;
@@ -3753,41 +3803,41 @@ figure.code pre + figcaption {
 }
 
 .theme-sedona .reveal.pattern--memphis .slides section.intro {
-  background-color: #d1d7e0;
+  background-color: #939abc;
 }
 .theme-cyber .reveal.pattern--memphis .slides section.intro {
-  background-color: #a240c5;
+  background-color: #ff1eef;
 }
 .theme-bright-blue .reveal.pattern--memphis .slides section.intro {
-  background-color: #99738e;
+  background-color: #f87d98;
 }
 .theme-black .reveal.pattern--memphis .slides section.intro {
-  background-color: #F2E38A;
+  background-color: #ada1ce;
 }
 .theme-candy .reveal.pattern--memphis .slides section.intro {
-  background-color: #4ec5c1;
+  background-color: #ebe965;
 }
 .theme-skeletor .reveal.pattern--memphis .slides section.intro {
-  background-color: #22c4ec;
+  background-color: #b19cc3;
 }
 .theme-honey .reveal.pattern--memphis .slides section.intro {
-  background-color: #B5B5B7;
+  background-color: #cfcfd0;
 }
 .theme-ultra .reveal.pattern--memphis .slides section.intro {
-  background-color: #FAC668;
+  background-color: #b6a6d1;
 }
 .theme-borealis .reveal.pattern--memphis .slides section.intro {
-  background-color: #7489C7;
+  background-color: #ced2e9;
 }
 .theme-python .reveal.pattern--memphis .slides section.intro {
-  background-color: #EC9B5F;
+  background-color: #fee190;
 }
 .theme-tank .reveal.pattern--memphis .slides section.intro {
-  background-color: #A8ACBF;
+  background-color: #46678e;
 }
 .theme-sedona .reveal.pattern--memphis .slides section.title {
   background-color: #747CA8;
-  color: #d1d7e0;
+  color: #6bc5d2;
 }
 .theme-cyber .reveal.pattern--memphis .slides section.title {
   background-color: #ea00d9;
