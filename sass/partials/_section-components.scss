@@ -104,15 +104,21 @@
 
 // display images
 figure.display {
-    margin: auto;
     text-align: center;
-    max-width: 100vmin;
-    width: 100% vw;
-    height: auto;
-    display: block;
-    padding: 10px;
+    white-space: nowrap;
+    :before{
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -0.25em;
+    }
+    img{
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 70%;
+    }
     figcaption {
-        padding: 5px;
         font-size: 0.85rem;
         color: #121212;
         float: left;
