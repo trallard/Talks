@@ -143,31 +143,17 @@ div {
     }
 }
 
-.img-fill img {
-    object-fit: fill;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+
+// for ultiple images
+
+.reveal .l-multiple {
+    display: flex;
+    justify-content: space-around;
 }
 
-.img-contain img {
-    object-fit: contain;
-    height: 100%;
-    width: 100%;
-    overflow: hidden
-}
-
-.img-cover img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    overflow: hidden
-}
-
-.img-none img {
-    object-fit: none;
-    height: 100%;
-    width: 100%;
+.reveal .l-double{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 /*********************************************
