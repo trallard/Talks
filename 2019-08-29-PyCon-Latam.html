@@ -64,13 +64,13 @@
                         </div>
                         <div class="content">
                             <h1>Historias de ciencia, comunidad, fracasos y éxitos</h1>
-                            <div class="description">
+                            <div class="description" style="color: lighten(#6bc5d2, 10%);">
                                 PyCon Latam 2019
                             </div>
                         </div>
                         <div class="credit">
                             <hr>
-                            <div class="name">Tania Allard, PhD</div>
+                            <div class="name" style="color: lighten(#6bc5d2, 10%);">Tania Allard, PhD</div>
                         </div>
                         <a class="presentation-url" href="https://biy.ly/2019-08-29-PyCon-Latam">
                             https://bit.ly/PyConLatam-2019</a>
@@ -108,7 +108,7 @@
                 <div class="grid-wrapper">
                     <div class="header">
                         <div class="logo"></div>
-                        <div class="section"><small>Gracias Carol Willing por la inspiración</small></div>
+                        <div class="section"><small>Kudos to Carol W.</small></div>
                         <div class="twitter"><a href="https://twitter.com/ixek">
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
@@ -131,29 +131,6 @@ def say_thanks(name):
                 </div>
             </section>
 
-            <!-- Used to introduce a subsection: you can specify
-					a slide colour here, title and description -->
-            <!-- <section class="subsection ">
-                <div class=" grid-wrapper">
-                    <div class="header">
-                        <div class="twitter"><a href="https://twitter.com/ixek">
-                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-                    </div>
-                    <div class="logo"></div>
-                    <h1>
-                        <h1>class = 'subsection'</h1>
-                    </h1>
-                    <div class="description">
-                        This is where the description goes. Keep it short and 🍬.
-                        You can use this with a coloured slide too
-                        <ul class='icon'>
-                            <li class='pinata'>hola</li>
-                        </ul>
-                    </div>
-                </div>
-            </section> -->
-
-
             <section>
                 <div class="grid-wrapper">
                     <div class="header">
@@ -164,19 +141,6 @@ def say_thanks(name):
                     </div>
                     <div class="content">
                         <h1>🤯 ¡Qué emoción!</h1>
-                    </div>
-            </section>
-
-            <section>
-                <div class="grid-wrapper">
-                    <div class="header">
-                        <div class="logo"></div>
-                        <div class="section"></div>
-                        <div class="twitter"><a href="https://twitter.com/ixek">
-                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
-                    </div>
-                    <div class="content">
-                        <h1>😩 ¡Qué nervios!</h1>
                     </div>
             </section>
 
@@ -258,7 +222,7 @@ def say_thanks(name):
                     <div class="content">
                         <div
                             style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;grid-template-rows:3fr 1fr 1fr 3fr;grid-template-areas:'a a b b''a a b b''c c d d''c c d d';grid-gap:1em;height:65vh">
-                            <h2 style="grid-row:2/4;grid-column:2/4">Nuestras motivaciones y caminos cambian</h2>
+                            <h2 style="grid-row:2/4;grid-column:2/4">Distintas motivaciones y caminos</h2>
                             <ul style="display:contents;list-style-position:inside; list-style-type:none;">
                                 <li style="grid-area:a;text-align:center">Investigadores</li>
                                 <li style="grid-area:b;justify-self:end;text-align:center">Desarrolladores en la
@@ -294,7 +258,7 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        <p>Vamos a construir la historia durante la charla</p>
+                        <p>Vamos a crear la charla</p>
                         <div class="l-double" style="grid-gap:0.5em">
                             <div>
                                 <h3 class="fragment">Opción 1</h3>
@@ -326,9 +290,8 @@ def say_thanks(name):
                             El proyecto que mantienes usa Python 2 todavía, tu....
                             <br><br>
                             <ol>
-                                <li><a href="#/ejemplo1">Cambias a Python 3</a></li>
-                                <li><a href="#/ejemplo2">No haces nada</a></li>
-
+                                <li><a class="fragment" href="#/ejemplo2">Cambias a Python 3</a></li>
+                                <li><a class="fragment" href="#/ejemplo1">No haces nada</a></li>
                             </ol>
                         </div>
                 </section>
@@ -380,12 +343,20 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        🏝 Estás en una isla semi-desierta. El único modo de salir es haciendo un
-                        proyecto de investigación.
+                        <p class="fragment fade-out">Estás en una isla desierta 🏝. Sin forma de escapar.</p>
+                        <p class="fragment">Estás haciendo el doctorado 🤷🏻‍♀️.
+                            El único modo de salir es haciendo un
+                            proyecto de investigación.
+                        </p>
 
-                        <p class="fragment"> 🧪 Necesitas replicar un estudio así que escribes a los autores.</p>
+
+                        <p class="fragment"> 🧪 Tu primer tarea es replicar un estudio publicado.</p>
 
                     </div>
+            </section>
+
+            <section class="dark_box" style="background-image:url('./assets/pycon_latam/fair.svg');"
+                style="background-size:contain;">
             </section>
 
             <!-- codigo: replicar -->
@@ -402,8 +373,8 @@ def say_thanks(name):
                             Los autores te piden firmar un acuerdo para darte acceso al código, tú:
                             <br> <br>
                             <ol class="fragment">
-                                <li><a href="#/replicar1">Firmas el acuerdo para ahorrarte tiempo</a></li>
-                                <li><a href="#/replicar2">Decides implementar tu propia versión del código</a></li>
+                                <li><a href="#/replicar1">☝🏽 Firmas el acuerdo para ahorrarte tiempo</a></li>
+                                <li><a href="#/replicar2">✊🏽 Decides implementar tu propia versión del código</a></li>
 
                             </ol>
                         </div>
@@ -433,7 +404,7 @@ def say_thanks(name):
                                     <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                         </div>
                         <div class="content">
-                            <p>Pasas 7 meses intentando implementar tu código.
+                            <p>Pasas 7 meses trabajando en el código y recolectando datos.
                                 <br> <br> Pero comienzas a darte cuenta que no es tan sencillo como pensabas.
                             </p>
                         </div>
@@ -450,8 +421,7 @@ def say_thanks(name):
                     </div>
                     <div class="content">
                         <figure class="display">
-                            <img src="https://imgs.xkcd.com/comics/code_quality_2x.png" alt="repro">
-
+                            <img src="./assets/pycon_latam/code_quality.png" alt="repro">
                         </figure>
                     </div>
             </section>
@@ -473,7 +443,10 @@ def say_thanks(name):
                     </div>
             </section>
 
-            <section>
+            <section class="dark_box" style="background-image:url('./assets/pycon_latam/reinhart.png');">
+            </section>
+
+            <section class="color--light">
                 <div class="grid-wrapper">
                     <div class="header">
                         <div class="logo"></div>
@@ -482,36 +455,124 @@ def say_thanks(name):
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
+                        <figure class="display">
+                            <img src="./assets/ManchesteR/obataka.png" alt="Obataka" style="max-height:70vh;">
+                        </figure>
+                    </div>
+            </section>
+
+            <section>
+                <section id="repro-club">
+                    <div class="grid-wrapper">
+                        <div class="header">
+                            <div class="logo"></div>
+                            <div class="section"></div>
+                            <div class="twitter"><a href="https://twitter.com/ixek">
+                                    <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                        </div>
+                        <div class="content">
+                            Al ver esto comienzas a cuestionar los métodos de tu unidad.
+
+                            Todos te dicen que así es como siempre se han hecho las cosas.
+                            <br><br>
+                            <ol>
+                                <li><a href="#repro-club1">☝🏽Entiendes que así se hace ciencia en todo el mundo (en
+                                        ese momento)</a></li>
+                                <li><a href="#repro-club2">✊🏽Decides empezar un club de reproducibilidad en tu
+                                        departamento</a></li>
+                            </ol>
+                        </div>
+                </section>
+
+                <section class="color--light" id="repro-club1">
+                    <div class="grid-wrapper">
+                        <div class="header">
+                            <div class="logo"></div>
+                            <div class="section"></div>
+                            <div class="twitter"><a href="https://twitter.com/ixek">
+                                    <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                        </div>
+                        <div class="content">
+                            <figure class="display">
+                                <img src="./assets/pycon_latam/killme.jpg" alt="repro">
+
+                            </figure>
+                            <a href="#repro-club">Respawn</a>
+                        </div>
+                </section>
+
+                <section id="repro-club2" class="dark_box"
+                    style="background-image:url('./assets/pycon_latam/lock.jpg');">
+                </section>
+
+            </section>
+
+            <section class="color--light">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section">No todo esta perdido</div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+
+                        <figure class="display">
+                            <img src="./assets/pycon_latam/ecosystem.png" alt="ecosystem scipy">
+                        </figure>
                     </div>
             </section>
 
 
-
-            <!--  -->
-            <!--  -->
-
-
-
-            <section>
+            <section class="color--light">
                 <div class="grid-wrapper">
                     <div class="header">
                         <div class="logo"></div>
-                        <div class="section"></div>
+                        <div class="section">no todo está perdido</div>
                         <div class="twitter"><a href="https://twitter.com/ixek">
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
                         <div style="display:grid;grid-template-columns:40% 60%;justify-content:center">
-                            <img data-src="https://www.chenhuijing.com/slides/33-cssday-2018/img/source.svg"
-                                alt="Source document" class="plain" style="max-height:65vh;justify-self:center">
-                            <img data-src="https://www.chenhuijing.com/slides/33-cssday-2018/img/box-tree.svg"
-                                alt="Box tree" class="plain fragment" style="max-height:75vh">
+                            <img data-src="./assets/pycon_latam/pythonlogo.png" alt="Python logo" class="plain"
+                                style="max-height:65vh;justify-self:center">
+                            <img data-src="./assets/pycon_latam/community.jpg" alt="Box tree" class="plain fragment"
+                                style="max-height:75vh">
                         </div>
                     </div>
                 </div>
             </section>
 
             <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section">no todo está perdido</div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h2>Aprendiste una valiosa lección:</h2>
+                        <br><br>
+                        La parte más difícil de hacer ciencia reproducible es
+                        <strong-alt>la gente</strong-alt>
+                    </div>
+            </section>
+
+
+            <!-- capitulo 2 -->
+            <section class="dark_box" style="background-image:url('./assets/pycon_latam/python-gv2.jpg'); background-size:fill; background-repeat:no-repeat;">
+                <h3 style="background-color: rgba(0, 0, 0, 0.7); position:absolute;  bottom:2%; right : 2%;">
+                    Capítulo 2: Dónde los caminos se separan</h3>
+            </section>
+
+
+            <!--  -->
+            <!--  -->
+
+
+
+            <!-- <section>
                 <div class="grid-wrapper">
                     <div class="header">
                         <div class="logo"></div>
@@ -540,7 +601,7 @@ def say_thanks(name):
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
 
 
@@ -560,7 +621,7 @@ def say_thanks(name):
             // or "visible"
             controlsBackArrows: 'hidden',
             progress: true,
-            slideNumber: false,
+            slideNumber: "c/t",
             center: false,
             width: "100%",
             height: "100%",
