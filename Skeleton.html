@@ -135,8 +135,64 @@
                                 <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
                     </div>
                     <div class="content">
-                        <div class="images">
-                            <img src="./assets/DevOps/devops1.jpg" alt="what is devops" height="70%" />
+                        <div
+                            style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;grid-template-rows:3fr 1fr 1fr 3fr;grid-template-areas:'a a b b''a a b b''c c d d''c c d d';grid-gap:1em;height:65vh">
+                            <h2 style="grid-row:2/4;grid-column:2/4">Layout of boxes</h2>
+                            <ul style="display:contents;list-style-type:'📦 ';list-style-position:inside">
+                                <li style="grid-area:a;text-align:center" class="fragment">Box dimensions and type</li>
+                                <li style="grid-area:b;justify-self:end;text-align:center" class="fragment">Positioning scheme <small>(normal
+                                        flow / float / absolute positioning)</small></li>
+                                <li style="grid-area:c;align-self:end;text-align:center" class="fragment">Relationships between elements in the
+                                    document tree</li>
+                                <li style="grid-area:d;align-self:end;justify-self:end;text-align:center" class="fragment">External information
+                                    <small>(e.g. viewport size, intrinsic dimensions of images etc.)</small></li>
+                            </ul>
+                    </div>
+                </div>
+            </section>
+
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <div style="display:grid;grid-template-columns:40% 60%;justify-content:center">
+                            <img data-src="https://www.chenhuijing.com/slides/33-cssday-2018/img/source.svg" alt="Source document" class="plain" style="max-height:65vh;justify-self:center">
+                            <img data-src="https://www.chenhuijing.com/slides/33-cssday-2018/img/box-tree.svg" alt="Box tree" class="plain fragment" style="max-height:75vh">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <div class="l-double" style="grid-gap:0.5em">
+                            <div>
+                                <h2>Inner display type</h2>
+                                <div class="fragment">
+                                    <p>Defines the generated formatting context for descendant boxes</p>
+                                    <img data-src="img/inside-display.svg" alt="Inner display type" class="plain" style="max-height:35vh">
+                                </div>
+                            </div>
+                            <div>
+                                <h2>Outer display type</h2>
+                                <div class="fragment">
+                                    <p>Dictates a principal box's own participation in flow layout</p>
+                                    <img data-src="img/outside-display.svg" alt="Outer display type" class="plain" style="max-height:45vh">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

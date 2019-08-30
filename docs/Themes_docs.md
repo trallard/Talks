@@ -155,15 +155,6 @@ These have a white base for the slides background  and the accent colours as sho
 - bwlines
 <img src=../assets/patterns/bwlines.svg/ width=400px; height=400px;>
 
-- cubes
-<img src=../assets/patterns/cubes.png/ width=400px; height=400px;>
-
-- gatsbyblue
-<img src=../assets/patterns/gatsbyblue.svg/ width=400px; height=400px;>
-
-- gatsby
-<img src=../assets/patterns/gatsby.svg/ width=400px; height=400px;>
-
 - hexgray
 <img src=../assets/patterns/hex_gray.svg/ width=400px; height=400px;>
 
@@ -181,9 +172,6 @@ These have a white base for the slides background  and the accent colours as sho
 
 - zigzag
 <img src=../assets/patterns/zigzag_purple.svg/ width=400px; height=400px;>
-
--floral
-<img src=../assets/patterns/floral_pattern.svg/ width=400px; height=400px;>
 
 
 ---

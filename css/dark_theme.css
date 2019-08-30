@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 * Tania's theme for Reveal.js, this is a highly customised very opinionated
 * theme originated from the many many hours I have spent customising 
@@ -59,39 +60,34 @@
 * ENABLE RESPONSIVENESS FOR THE SLIDES
 *********************************************/
 html {
-  font-size: 1.5em;
+  font-size: 1.3em;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 @media (min-width: 48em) {
   html {
-    font-size: 2.25em;
+    font-size: 1.95em;
   }
 }
-
 @media (min-width: 64em) {
   html {
-    font-size: 2.55em;
+    font-size: 2.21em;
   }
 }
-
 @media (min-width: 85.375em) {
   html {
-    font-size: 2.85em;
+    font-size: 2.47em;
   }
 }
-
 @media (min-width: 120em) {
   html {
-    font-size: 3em;
+    font-size: 2.6em;
   }
 }
-
 @media (min-width: 160em) {
   html {
-    font-size: 3.3em;
+    font-size: 2.86em;
   }
 }
 
@@ -104,7 +100,6 @@ html {
     /* width: calc(80% - 1em); */
   }
 }
-
 /*********************************************
 * INTRO SLIDE
 *********************************************/
@@ -113,7 +108,6 @@ html {
     display: none;
   }
 }
-
 @media (max-width: 768px) {
   .reveal .slides section.intro {
     height: calc(100vh - 4vmin);
@@ -121,44 +115,36 @@ html {
     width: calc(100vw - 4vmin);
   }
 }
-
 /*********************************************
 * SLIDES GRID
 *********************************************/
 @media (max-width: 568px) {
   .reveal .slides section.title .grid-wrapper {
-        grid-template-areas: "header" "content" "credit";
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
+    grid-template-areas: "header" "content" "credit";
+    grid-template-columns: auto;
   }
+
   .reveal .slides section.title .credit {
-    -ms-grid-column-align: end;
-        justify-self: end;
+    justify-self: end;
   }
 }
-
 @media (min-width: 1280px) {
   .reveal .slides section.title .content {
-    display: -ms-grid;
     display: grid;
-        grid-template-areas: "title description";
-    -ms-grid-columns: auto 40%;
-        grid-template-columns: auto 40%;
+    grid-template-areas: "title description";
+    grid-template-columns: auto 40%;
     grid-column-gap: 10vmin;
   }
+
   .reveal .slides section.title h1 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
     grid-area: title;
   }
+
   .reveal .slides section.title .description {
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
     grid-area: description;
     margin-top: 0.5em;
   }
 }
-
 /*********************************************
 * PRESENTATION SLIDE
 *********************************************/
@@ -169,20 +155,19 @@ html {
     width: calc(100vw - 4vmin);
   }
 }
-
 /*********************************************
 * HEADINGS
 *********************************************/
 .reveal h1 {
-  font-size: 3.052em;
+  font-size: 2.344em;
 }
 
 .reveal h2 {
-  font-size: 2.11em;
+  font-size: 1.5em;
 }
 
 .reveal h3 {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 .reveal h4 {
@@ -204,8 +189,6 @@ Intro slide
 }
 
 .reveal .slides section.intro .logo-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 100%;
 }
@@ -234,11 +217,9 @@ Presentation title
 }
 
 .reveal .slides section.title .grid-wrapper {
-      grid-template-areas: "header header2" "content content" ". credit";
-  -ms-grid-columns: auto 50%;
-      grid-template-columns: auto 50%;
-  -ms-grid-rows: 6vmin 1fr auto;
-      grid-template-rows: 6vmin 1fr auto;
+  grid-template-areas: "header header2" "content content" ". credit";
+  grid-template-columns: auto 50%;
+  grid-template-rows: 6vmin 1fr auto;
   grid-column-gap: 5vmin;
 }
 
@@ -248,11 +229,7 @@ Presentation title
 }
 
 .reveal .slides section.title .credit {
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
+  align-self: end;
   grid-area: credit;
   line-height: 1.8em;
 }
@@ -260,7 +237,7 @@ Presentation title
 .reveal .slides section.title .credit hr {
   border: solid #EEEDEF;
   border-width: 2px 0 0 0;
-  margin: 0 0 .8em 0;
+  margin: 0 0 0.8em 0;
   width: 35%;
 }
 
@@ -274,13 +251,9 @@ Presentation title
 }
 
 .slides .title .presentation-url {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: header2;
   font-size: 0.8em;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   opacity: 0.5;
   color: #2A2A49;
 }
@@ -289,25 +262,18 @@ Presentation title
 * Subsection: used to introduce a topic
 ******************************************/
 .reveal .slides section.subsection .grid-wrapper {
-      grid-template-areas: ". header . " ". title ." ". description .";
-  -ms-grid-rows: 5.5vmin 3fr 1fr;
-      grid-template-rows: 5.5vmin 3fr 1fr;
+  grid-template-areas: ". header . " ". title ." ". description .";
+  grid-template-rows: 5.5vmin 3fr 1fr;
 }
 
 .reveal .slides section.subsection h1, h2, h3, h4 {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  align-self: center;
   grid-area: title;
   margin: 0;
 }
 
 .reveal .slides section.subsection .description {
   color: #9292A8;
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
   grid-area: description;
   min-height: 4em;
 }
@@ -322,14 +288,11 @@ Presentation title
 *  FULL QUOTE SLIDES
 *********************************************/
 .reveal .slides section.quote blockquote {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   background: none;
   color: #2A2A49;
   border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   font-size: 1.2em;
   font-style: normal;
   margin: 0;
@@ -341,7 +304,7 @@ Presentation title
 .reveal .slides section.quote hr {
   border: solid #9292A8;
   border-width: 1px 0 0 0;
-  margin: .8em 0;
+  margin: 0.8em 0;
   width: 15%;
 }
 
@@ -376,13 +339,11 @@ All code slide
   /* pale gray */
   font-family: "Overpass Mono", monospace;
 }
-
 .reveal .slides section.color--code h1,
 .reveal .slides section.color--code h2,
 .reveal .slides section.color--code h3 {
   font-family: "Overpass Mono", monospace;
 }
-
 .reveal .slides section.color--code code {
   background-color: transparent;
 }
@@ -391,17 +352,14 @@ All code slide
   background-color: #1d1941;
   font-family: "Overpass Mono", monospace;
 }
-
 .reveal .slides section.color--code-dark h1,
 .reveal .slides section.color--code-dark h2,
 .reveal .slides section.color--code-dark h3 {
   font-family: "Overpass Mono", monospace;
 }
-
 .reveal .slides section.color--code-dark code {
   background-color: transparent;
 }
-
 .reveal .slides section.color--code-dark pre {
   color: #C2CAFD !important;
 }
@@ -413,7 +371,6 @@ All code slide
   background-color: #22272B;
   color: #ede7f3;
 }
-
 .reveal .slides section.color--dark h1,
 .reveal .slides section.color--dark h2 {
   color: #A881FF;
@@ -428,7 +385,6 @@ All code slide
   background-color: #3A015C;
   color: #fff;
 }
-
 .reveal .slides section.color--violet h1,
 .reveal .slides section.color--violet h2 {
   color: #41ead4;
@@ -438,7 +394,6 @@ All code slide
   background-color: #472C7D;
   color: #fff;
 }
-
 .reveal .slides section.color--violet h1,
 .reveal .slides section.color--violet h2 {
   color: #41ead4;
@@ -464,7 +419,6 @@ All code slide
   /* navy blue */
   color: #fff;
 }
-
 .reveal .slides section.color--sodadark h1,
 .reveal .slides section.color--sodadark h2 {
   color: #95d5d4;
@@ -479,7 +433,6 @@ All code slide
   /* navy blue */
   color: #fff;
 }
-
 .reveal .slides section.color--midnight h1,
 .reveal .slides section.color--midnight h2 {
   color: #F8757F;
@@ -489,7 +442,6 @@ All code slide
   background-color: #00BCD4;
   color: #fff;
 }
-
 .reveal .slides section.color--vibrant h1 {
   color: #472C7D;
 }
@@ -498,7 +450,6 @@ All code slide
   background-color: #67aeca;
   color: #fff;
 }
-
 .reveal .slides section.color--topaz h1 {
   color: #472C7D;
 }
@@ -506,69 +457,54 @@ All code slide
 .reveal .slides section.color--two {
   background-color: #fff;
   color: #fff;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #5F4B8B), color-stop(50%, #fff));
   background: linear-gradient(to right, #5F4B8B 50%, #fff 50%);
 }
 
 .items-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .theme-poppins-font .items-block {
   font-family: Poppins, Helvetica, sans-serif;
 }
-
 .theme-cunia-font .items-block {
   font-family: Coves, Helvetica, sans-serif;
 }
-
+.theme-cunia2-font .items-block {
+  font-family: Poppins, Helvetica, sans-serif;
+}
 .theme-plex-font .items-block {
   font-family: IBMPlexSans, sans-serif;
 }
-
 .theme-dosis-font .items-block {
   font-family: Didact Gothic, sans-serif;
 }
-
 .theme-leafy-font .items-block {
   font-family: Dosis, sans-serif;
 }
-
 .theme-allmono-font .items-block {
   font-family: Space Mono, monospace;
 }
-
 .theme-soda-font .items-block {
   font-family: Nunito, sans-serif;
 }
-
 .theme-klasik-font .items-block {
   font-family: Nunito, sans-serif;
 }
-
 .theme-klasik-rough-font .items-block {
   font-family: Nunito, sans-serif;
 }
-
 .theme-nox-font .items-block {
   font-family: Poppins, Helvetica, sans-serif;
 }
-
 .items-block.single-block {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 10px;
 }
-
 .items-block.single-block.left {
   width: 50%;
   color: #fff;
 }
-
 .items-block.single-block.right {
   width: 50%;
 }
@@ -581,7 +517,6 @@ All code slide
   background: linear-gradient(45deg, #2D266F, #7C2289);
   color: #fff !important;
 }
-
 .reveal .slides section.color--grad-purple h1 {
   color: #fff;
 }
@@ -591,7 +526,6 @@ All code slide
   color: #fff;
   background: linear-gradient(45deg, #90218C, #009890);
 }
-
 .reveal .slides section.color--grad-green h1 {
   color: #fff;
 }
@@ -601,7 +535,6 @@ All code slide
   color: #FFFFFF;
   background: linear-gradient(45deg, #303395, #27F0F0);
 }
-
 .reveal .slides section.color--grad-blue h1 {
   color: #fff;
 }
@@ -614,7 +547,6 @@ All code slide
   margin: 0;
   width: 100vw;
 }
-
 .reveal .slides section.end .content {
   margin-top: auto;
   text-align: center;
@@ -622,8 +554,6 @@ All code slide
 }
 
 .reveal .slides section.end .logo-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 100%;
 }
@@ -659,7 +589,6 @@ black box with white text (ideal for presentation sections) */
   background-position: center center;
   /* floating dark box */
 }
-
 .dark_box aside {
   background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
@@ -671,12 +600,10 @@ black box with white text (ideal for presentation sections) */
   top: 50%;
   left: 50%;
   position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: 1.5em;
   text-align: center;
 }
-
 .dark_box aside h2 {
   font-weight: bold;
   font-size: 3.5rem;
@@ -697,11 +624,9 @@ has a background image and a box with the details */
   background-size: cover;
   background-position: center center;
 }
-
 #about a {
   color: #2A2A49;
 }
-
 #about aside {
   background-color: rgba(171, 177, 186, 0.562);
   border-radius: 10px;
@@ -709,57 +634,44 @@ has a background image and a box with the details */
   float: left;
   padding: 3vmin;
 }
-
 #about aside hr {
   margin: 2vmin 0;
   border: solid;
   border-width: 2px 0 0 0;
 }
-
 .theme-sedona #about aside hr {
   color: #d2a9ea;
 }
-
 .theme-cyber #about aside hr {
   color: #10e8f3;
 }
-
 .theme-bright-blue #about aside hr {
   color: #f87d98;
 }
-
 .theme-black #about aside hr {
   color: #d0ea95;
 }
-
 .theme-candy #about aside hr {
   color: #f78392;
 }
-
 .theme-skeletor #about aside hr {
   color: #f4ce89;
 }
-
 .theme-honey #about aside hr {
   color: #808a91;
 }
-
 .theme-ultra #about aside hr {
   color: #fcd999;
 }
-
 .theme-borealis #about aside hr {
   color: #13ffd1;
 }
-
 .theme-python #about aside hr {
   color: #7db3d7;
 }
-
 .theme-tank #about aside hr {
   color: #b08fe4;
 }
-
 #about aside ul {
   display: block;
   font-size: inherit;
@@ -767,76 +679,54 @@ has a background image and a box with the details */
   margin: 2.5vmin 0 0;
   width: auto;
 }
-
 #about .projects {
   text-align: left;
 }
-
 #about .accounts {
-  display: -ms-grid;
   display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 #about .accounts a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  align-items: baseline;
 }
 
 .social_icon {
   padding-right: 10px;
 }
-
 .theme-sedona .social_icon {
   color: #BD80E0;
 }
-
 .theme-cyber .social_icon {
   color: #0abdc6;
 }
-
 .theme-bright-blue .social_icon {
   color: #f64c72;
 }
-
 .theme-black .social_icon {
   color: #BDE16B;
 }
-
 .theme-candy .social_icon {
   color: #f45368;
 }
-
 .theme-skeletor .social_icon {
   color: #f0bb5a;
 }
-
 .theme-honey .social_icon {
   color: #F2B632;
 }
-
 .theme-ultra .social_icon {
   color: #E55982;
 }
-
 .theme-borealis .social_icon {
   color: #00DFB4;
 }
-
 .theme-python .social_icon {
   color: #569CCB;
 }
-
 .theme-tank .social_icon {
   color: #9366DA;
 }
-
 /*********************************************
  * GLOBAL STYLES- go over the reveal.js 
  *********************************************/
@@ -845,201 +735,120 @@ has a background image and a box with the details */
   font-weight: normal;
   color: #2A2A49;
 }
-
 .theme-poppins-font .reveal {
   font-family: Poppins, Helvetica, sans-serif;
 }
-
 .theme-cunia-font .reveal {
   font-family: Coves, Helvetica, sans-serif;
 }
-
+.theme-cunia2-font .reveal {
+  font-family: Poppins, Helvetica, sans-serif;
+}
 .theme-plex-font .reveal {
   font-family: IBMPlexSans, sans-serif;
 }
-
 .theme-dosis-font .reveal {
   font-family: Didact Gothic, sans-serif;
 }
-
 .theme-leafy-font .reveal {
   font-family: Dosis, sans-serif;
 }
-
 .theme-allmono-font .reveal {
   font-family: Space Mono, monospace;
 }
-
 .theme-soda-font .reveal {
   font-family: Nunito, sans-serif;
 }
-
 .theme-klasik-font .reveal {
   font-family: Nunito, sans-serif;
 }
-
 .theme-klasik-rough-font .reveal {
   font-family: Nunito, sans-serif;
 }
-
 .theme-nox-font .reveal {
   font-family: Poppins, Helvetica, sans-serif;
-}
-
-::-moz-selection {
-  color: #151515;
-  text-shadow: none;
 }
 
 ::selection {
   color: #151515;
   text-shadow: none;
 }
-
-.theme-sedona ::-moz-selection {
-  background: #939abc;
-}
-
 .theme-sedona ::selection {
   background: #939abc;
 }
-
-.theme-cyber ::-moz-selection {
-  background: #ff1eef;
-}
-
 .theme-cyber ::selection {
   background: #ff1eef;
 }
-
-.theme-bright-blue ::-moz-selection {
-  background: #f87d98;
-}
-
 .theme-bright-blue ::selection {
   background: #f87d98;
 }
-
-.theme-black ::-moz-selection {
-  background: #ada1ce;
-}
-
 .theme-black ::selection {
   background: #ada1ce;
 }
-
-.theme-candy ::-moz-selection {
-  background: #ebe965;
-}
-
 .theme-candy ::selection {
   background: #ebe965;
 }
-
-.theme-skeletor ::-moz-selection {
-  background: #b19cc3;
-}
-
 .theme-skeletor ::selection {
   background: #b19cc3;
 }
-
-.theme-honey ::-moz-selection {
-  background: #cfcfd0;
-}
-
 .theme-honey ::selection {
   background: #cfcfd0;
 }
-
-.theme-ultra ::-moz-selection {
-  background: #b6a6d1;
-}
-
 .theme-ultra ::selection {
   background: #b6a6d1;
 }
-
-.theme-borealis ::-moz-selection {
-  background: #ced2e9;
-}
-
 .theme-borealis ::selection {
   background: #ced2e9;
 }
-
-.theme-python ::-moz-selection {
-  background: #fee190;
-}
-
 .theme-python ::selection {
   background: #fee190;
 }
-
-.theme-tank ::-moz-selection {
-  background: #46678e;
-}
-
 .theme-tank ::selection {
   background: #46678e;
 }
-
 ::-moz-selection {
   color: #fff;
   text-shadow: none;
 }
-
 .theme-sedona ::-moz-selection {
-  background: #d1d7e0;
+  background: #6bc5d2;
 }
-
 .theme-cyber ::-moz-selection {
   background: #a240c5;
 }
-
 .theme-bright-blue ::-moz-selection {
   background: #99738e;
 }
-
 .theme-black ::-moz-selection {
   background: #F2E38A;
 }
-
 .theme-candy ::-moz-selection {
   background: #4ec5c1;
 }
-
 .theme-skeletor ::-moz-selection {
   background: #22c4ec;
 }
-
 .theme-honey ::-moz-selection {
   background: #B5B5B7;
 }
-
 .theme-ultra ::-moz-selection {
   background: #FAC668;
 }
-
 .theme-borealis ::-moz-selection {
   background: #7489C7;
 }
-
 .theme-python ::-moz-selection {
   background: #EC9B5F;
 }
-
 .theme-tank ::-moz-selection {
   background: #A8ACBF;
 }
-
 .reveal .slides {
   text-align: left;
 }
 
 .reveal .slides section {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
 }
 
@@ -1077,256 +886,246 @@ has a background image and a box with the details */
   text-shadow: none;
   word-wrap: break-word;
 }
-
-.theme-sedona .reveal h1, .theme-sedona
-.reveal h2, .theme-sedona
-.reveal h3, .theme-sedona
-.reveal h4, .theme-sedona
-.reveal h5, .theme-sedona
-.reveal h6, .theme-sedona
-.reveal mega-font, .theme-sedona
-.reveal huge-font, .theme-sedona
-.reveal big-font {
+.theme-sedona .reveal h1,
+.theme-sedona .reveal h2,
+.theme-sedona .reveal h3,
+.theme-sedona .reveal h4,
+.theme-sedona .reveal h5,
+.theme-sedona .reveal h6,
+.theme-sedona .reveal mega-font,
+.theme-sedona .reveal huge-font,
+.theme-sedona .reveal big-font {
   color: #BD80E0;
 }
-
-.theme-cyber .reveal h1, .theme-cyber
-.reveal h2, .theme-cyber
-.reveal h3, .theme-cyber
-.reveal h4, .theme-cyber
-.reveal h5, .theme-cyber
-.reveal h6, .theme-cyber
-.reveal mega-font, .theme-cyber
-.reveal huge-font, .theme-cyber
-.reveal big-font {
+.theme-cyber .reveal h1,
+.theme-cyber .reveal h2,
+.theme-cyber .reveal h3,
+.theme-cyber .reveal h4,
+.theme-cyber .reveal h5,
+.theme-cyber .reveal h6,
+.theme-cyber .reveal mega-font,
+.theme-cyber .reveal huge-font,
+.theme-cyber .reveal big-font {
   color: #0abdc6;
 }
-
-.theme-bright-blue .reveal h1, .theme-bright-blue
-.reveal h2, .theme-bright-blue
-.reveal h3, .theme-bright-blue
-.reveal h4, .theme-bright-blue
-.reveal h5, .theme-bright-blue
-.reveal h6, .theme-bright-blue
-.reveal mega-font, .theme-bright-blue
-.reveal huge-font, .theme-bright-blue
-.reveal big-font {
+.theme-bright-blue .reveal h1,
+.theme-bright-blue .reveal h2,
+.theme-bright-blue .reveal h3,
+.theme-bright-blue .reveal h4,
+.theme-bright-blue .reveal h5,
+.theme-bright-blue .reveal h6,
+.theme-bright-blue .reveal mega-font,
+.theme-bright-blue .reveal huge-font,
+.theme-bright-blue .reveal big-font {
   color: #f64c72;
 }
-
-.theme-black .reveal h1, .theme-black
-.reveal h2, .theme-black
-.reveal h3, .theme-black
-.reveal h4, .theme-black
-.reveal h5, .theme-black
-.reveal h6, .theme-black
-.reveal mega-font, .theme-black
-.reveal huge-font, .theme-black
-.reveal big-font {
+.theme-black .reveal h1,
+.theme-black .reveal h2,
+.theme-black .reveal h3,
+.theme-black .reveal h4,
+.theme-black .reveal h5,
+.theme-black .reveal h6,
+.theme-black .reveal mega-font,
+.theme-black .reveal huge-font,
+.theme-black .reveal big-font {
   color: #BDE16B;
 }
-
-.theme-candy .reveal h1, .theme-candy
-.reveal h2, .theme-candy
-.reveal h3, .theme-candy
-.reveal h4, .theme-candy
-.reveal h5, .theme-candy
-.reveal h6, .theme-candy
-.reveal mega-font, .theme-candy
-.reveal huge-font, .theme-candy
-.reveal big-font {
+.theme-candy .reveal h1,
+.theme-candy .reveal h2,
+.theme-candy .reveal h3,
+.theme-candy .reveal h4,
+.theme-candy .reveal h5,
+.theme-candy .reveal h6,
+.theme-candy .reveal mega-font,
+.theme-candy .reveal huge-font,
+.theme-candy .reveal big-font {
   color: #f45368;
 }
-
-.theme-skeletor .reveal h1, .theme-skeletor
-.reveal h2, .theme-skeletor
-.reveal h3, .theme-skeletor
-.reveal h4, .theme-skeletor
-.reveal h5, .theme-skeletor
-.reveal h6, .theme-skeletor
-.reveal mega-font, .theme-skeletor
-.reveal huge-font, .theme-skeletor
-.reveal big-font {
+.theme-skeletor .reveal h1,
+.theme-skeletor .reveal h2,
+.theme-skeletor .reveal h3,
+.theme-skeletor .reveal h4,
+.theme-skeletor .reveal h5,
+.theme-skeletor .reveal h6,
+.theme-skeletor .reveal mega-font,
+.theme-skeletor .reveal huge-font,
+.theme-skeletor .reveal big-font {
   color: #f0bb5a;
 }
-
-.theme-honey .reveal h1, .theme-honey
-.reveal h2, .theme-honey
-.reveal h3, .theme-honey
-.reveal h4, .theme-honey
-.reveal h5, .theme-honey
-.reveal h6, .theme-honey
-.reveal mega-font, .theme-honey
-.reveal huge-font, .theme-honey
-.reveal big-font {
+.theme-honey .reveal h1,
+.theme-honey .reveal h2,
+.theme-honey .reveal h3,
+.theme-honey .reveal h4,
+.theme-honey .reveal h5,
+.theme-honey .reveal h6,
+.theme-honey .reveal mega-font,
+.theme-honey .reveal huge-font,
+.theme-honey .reveal big-font {
   color: #F2B632;
 }
-
-.theme-ultra .reveal h1, .theme-ultra
-.reveal h2, .theme-ultra
-.reveal h3, .theme-ultra
-.reveal h4, .theme-ultra
-.reveal h5, .theme-ultra
-.reveal h6, .theme-ultra
-.reveal mega-font, .theme-ultra
-.reveal huge-font, .theme-ultra
-.reveal big-font {
+.theme-ultra .reveal h1,
+.theme-ultra .reveal h2,
+.theme-ultra .reveal h3,
+.theme-ultra .reveal h4,
+.theme-ultra .reveal h5,
+.theme-ultra .reveal h6,
+.theme-ultra .reveal mega-font,
+.theme-ultra .reveal huge-font,
+.theme-ultra .reveal big-font {
   color: #E55982;
 }
-
-.theme-borealis .reveal h1, .theme-borealis
-.reveal h2, .theme-borealis
-.reveal h3, .theme-borealis
-.reveal h4, .theme-borealis
-.reveal h5, .theme-borealis
-.reveal h6, .theme-borealis
-.reveal mega-font, .theme-borealis
-.reveal huge-font, .theme-borealis
-.reveal big-font {
+.theme-borealis .reveal h1,
+.theme-borealis .reveal h2,
+.theme-borealis .reveal h3,
+.theme-borealis .reveal h4,
+.theme-borealis .reveal h5,
+.theme-borealis .reveal h6,
+.theme-borealis .reveal mega-font,
+.theme-borealis .reveal huge-font,
+.theme-borealis .reveal big-font {
   color: #00DFB4;
 }
-
-.theme-python .reveal h1, .theme-python
-.reveal h2, .theme-python
-.reveal h3, .theme-python
-.reveal h4, .theme-python
-.reveal h5, .theme-python
-.reveal h6, .theme-python
-.reveal mega-font, .theme-python
-.reveal huge-font, .theme-python
-.reveal big-font {
+.theme-python .reveal h1,
+.theme-python .reveal h2,
+.theme-python .reveal h3,
+.theme-python .reveal h4,
+.theme-python .reveal h5,
+.theme-python .reveal h6,
+.theme-python .reveal mega-font,
+.theme-python .reveal huge-font,
+.theme-python .reveal big-font {
   color: #569CCB;
 }
-
-.theme-tank .reveal h1, .theme-tank
-.reveal h2, .theme-tank
-.reveal h3, .theme-tank
-.reveal h4, .theme-tank
-.reveal h5, .theme-tank
-.reveal h6, .theme-tank
-.reveal mega-font, .theme-tank
-.reveal huge-font, .theme-tank
-.reveal big-font {
+.theme-tank .reveal h1,
+.theme-tank .reveal h2,
+.theme-tank .reveal h3,
+.theme-tank .reveal h4,
+.theme-tank .reveal h5,
+.theme-tank .reveal h6,
+.theme-tank .reveal mega-font,
+.theme-tank .reveal huge-font,
+.theme-tank .reveal big-font {
   color: #9366DA;
 }
-
-.theme-poppins-font .reveal h1, .theme-poppins-font
-.reveal h2, .theme-poppins-font
-.reveal h3, .theme-poppins-font
-.reveal h4, .theme-poppins-font
-.reveal h5, .theme-poppins-font
-.reveal h6, .theme-poppins-font
-.reveal mega-font, .theme-poppins-font
-.reveal huge-font, .theme-poppins-font
-.reveal big-font {
+.theme-poppins-font .reveal h1,
+.theme-poppins-font .reveal h2,
+.theme-poppins-font .reveal h3,
+.theme-poppins-font .reveal h4,
+.theme-poppins-font .reveal h5,
+.theme-poppins-font .reveal h6,
+.theme-poppins-font .reveal mega-font,
+.theme-poppins-font .reveal huge-font,
+.theme-poppins-font .reveal big-font {
   font-family: IBMPlexSerif, monospace;
 }
-
-.theme-cunia-font .reveal h1, .theme-cunia-font
-.reveal h2, .theme-cunia-font
-.reveal h3, .theme-cunia-font
-.reveal h4, .theme-cunia-font
-.reveal h5, .theme-cunia-font
-.reveal h6, .theme-cunia-font
-.reveal mega-font, .theme-cunia-font
-.reveal huge-font, .theme-cunia-font
-.reveal big-font {
+.theme-cunia-font .reveal h1,
+.theme-cunia-font .reveal h2,
+.theme-cunia-font .reveal h3,
+.theme-cunia-font .reveal h4,
+.theme-cunia-font .reveal h5,
+.theme-cunia-font .reveal h6,
+.theme-cunia-font .reveal mega-font,
+.theme-cunia-font .reveal huge-font,
+.theme-cunia-font .reveal big-font {
   font-family: Cunia, sans-serif;
 }
-
-.theme-plex-font .reveal h1, .theme-plex-font
-.reveal h2, .theme-plex-font
-.reveal h3, .theme-plex-font
-.reveal h4, .theme-plex-font
-.reveal h5, .theme-plex-font
-.reveal h6, .theme-plex-font
-.reveal mega-font, .theme-plex-font
-.reveal huge-font, .theme-plex-font
-.reveal big-font {
+.theme-cunia2-font .reveal h1,
+.theme-cunia2-font .reveal h2,
+.theme-cunia2-font .reveal h3,
+.theme-cunia2-font .reveal h4,
+.theme-cunia2-font .reveal h5,
+.theme-cunia2-font .reveal h6,
+.theme-cunia2-font .reveal mega-font,
+.theme-cunia2-font .reveal huge-font,
+.theme-cunia2-font .reveal big-font {
+  font-family: Cunia, sans-serif;
+}
+.theme-plex-font .reveal h1,
+.theme-plex-font .reveal h2,
+.theme-plex-font .reveal h3,
+.theme-plex-font .reveal h4,
+.theme-plex-font .reveal h5,
+.theme-plex-font .reveal h6,
+.theme-plex-font .reveal mega-font,
+.theme-plex-font .reveal huge-font,
+.theme-plex-font .reveal big-font {
   font-family: IBMPlexSerif, monospace;
 }
-
-.theme-dosis-font .reveal h1, .theme-dosis-font
-.reveal h2, .theme-dosis-font
-.reveal h3, .theme-dosis-font
-.reveal h4, .theme-dosis-font
-.reveal h5, .theme-dosis-font
-.reveal h6, .theme-dosis-font
-.reveal mega-font, .theme-dosis-font
-.reveal huge-font, .theme-dosis-font
-.reveal big-font {
+.theme-dosis-font .reveal h1,
+.theme-dosis-font .reveal h2,
+.theme-dosis-font .reveal h3,
+.theme-dosis-font .reveal h4,
+.theme-dosis-font .reveal h5,
+.theme-dosis-font .reveal h6,
+.theme-dosis-font .reveal mega-font,
+.theme-dosis-font .reveal huge-font,
+.theme-dosis-font .reveal big-font {
   font-family: Dosis, sans-serif;
 }
-
-.theme-leafy-font .reveal h1, .theme-leafy-font
-.reveal h2, .theme-leafy-font
-.reveal h3, .theme-leafy-font
-.reveal h4, .theme-leafy-font
-.reveal h5, .theme-leafy-font
-.reveal h6, .theme-leafy-font
-.reveal mega-font, .theme-leafy-font
-.reveal huge-font, .theme-leafy-font
-.reveal big-font {
+.theme-leafy-font .reveal h1,
+.theme-leafy-font .reveal h2,
+.theme-leafy-font .reveal h3,
+.theme-leafy-font .reveal h4,
+.theme-leafy-font .reveal h5,
+.theme-leafy-font .reveal h6,
+.theme-leafy-font .reveal mega-font,
+.theme-leafy-font .reveal huge-font,
+.theme-leafy-font .reveal big-font {
   font-family: Leafy, cursive;
 }
-
-.theme-allmono-font .reveal h1, .theme-allmono-font
-.reveal h2, .theme-allmono-font
-.reveal h3, .theme-allmono-font
-.reveal h4, .theme-allmono-font
-.reveal h5, .theme-allmono-font
-.reveal h6, .theme-allmono-font
-.reveal mega-font, .theme-allmono-font
-.reveal huge-font, .theme-allmono-font
-.reveal big-font {
+.theme-allmono-font .reveal h1,
+.theme-allmono-font .reveal h2,
+.theme-allmono-font .reveal h3,
+.theme-allmono-font .reveal h4,
+.theme-allmono-font .reveal h5,
+.theme-allmono-font .reveal h6,
+.theme-allmono-font .reveal mega-font,
+.theme-allmono-font .reveal huge-font,
+.theme-allmono-font .reveal big-font {
   font-family: Muli, sans-serif;
 }
-
-.theme-soda-font .reveal h1, .theme-soda-font
-.reveal h2, .theme-soda-font
-.reveal h3, .theme-soda-font
-.reveal h4, .theme-soda-font
-.reveal h5, .theme-soda-font
-.reveal h6, .theme-soda-font
-.reveal mega-font, .theme-soda-font
-.reveal huge-font, .theme-soda-font
-.reveal big-font {
+.theme-soda-font .reveal h1,
+.theme-soda-font .reveal h2,
+.theme-soda-font .reveal h3,
+.theme-soda-font .reveal h4,
+.theme-soda-font .reveal h5,
+.theme-soda-font .reveal h6,
+.theme-soda-font .reveal mega-font,
+.theme-soda-font .reveal huge-font,
+.theme-soda-font .reveal big-font {
   font-family: Open Sans, sans-serif;
 }
-
-.theme-klasik-font .reveal h1, .theme-klasik-font
-.reveal h2, .theme-klasik-font
-.reveal h3, .theme-klasik-font
-.reveal h4, .theme-klasik-font
-.reveal h5, .theme-klasik-font
-.reveal h6, .theme-klasik-font
-.reveal mega-font, .theme-klasik-font
-.reveal huge-font, .theme-klasik-font
-.reveal big-font {
+.theme-klasik-font .reveal h1,
+.theme-klasik-font .reveal h2,
+.theme-klasik-font .reveal h3,
+.theme-klasik-font .reveal h4,
+.theme-klasik-font .reveal h5,
+.theme-klasik-font .reveal h6,
+.theme-klasik-font .reveal mega-font,
+.theme-klasik-font .reveal huge-font,
+.theme-klasik-font .reveal big-font {
   font-family: Klasik, sans-serif;
 }
-
-.theme-klasik-rough-font .reveal h1, .theme-klasik-rough-font
-.reveal h2, .theme-klasik-rough-font
-.reveal h3, .theme-klasik-rough-font
-.reveal h4, .theme-klasik-rough-font
-.reveal h5, .theme-klasik-rough-font
-.reveal h6, .theme-klasik-rough-font
-.reveal mega-font, .theme-klasik-rough-font
-.reveal huge-font, .theme-klasik-rough-font
-.reveal big-font {
+.theme-klasik-rough-font .reveal h1,
+.theme-klasik-rough-font .reveal h2,
+.theme-klasik-rough-font .reveal h3,
+.theme-klasik-rough-font .reveal h4,
+.theme-klasik-rough-font .reveal h5,
+.theme-klasik-rough-font .reveal h6,
+.theme-klasik-rough-font .reveal mega-font,
+.theme-klasik-rough-font .reveal huge-font,
+.theme-klasik-rough-font .reveal big-font {
   font-family: Klasik-Rough, sans-serif;
 }
-
-.theme-nox-font .reveal h1, .theme-nox-font
-.reveal h2, .theme-nox-font
-.reveal h3, .theme-nox-font
-.reveal h4, .theme-nox-font
-.reveal h5, .theme-nox-font
-.reveal h6, .theme-nox-font
-.reveal mega-font, .theme-nox-font
-.reveal huge-font, .theme-nox-font
-.reveal big-font {
+.theme-nox-font .reveal h1,
+.theme-nox-font .reveal h2,
+.theme-nox-font .reveal h3,
+.theme-nox-font .reveal h4,
+.theme-nox-font .reveal h5,
+.theme-nox-font .reveal h6,
+.theme-nox-font .reveal mega-font,
+.theme-nox-font .reveal huge-font,
+.theme-nox-font .reveal big-font {
   font-family: Annie Use Your Telescope, cursive;
 }
 
@@ -1336,8 +1135,7 @@ has a background image and a box with the details */
 .reveal section img {
   background: none;
   border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   margin: 0;
 }
 
@@ -1350,15 +1148,21 @@ has a background image and a box with the details */
 }
 
 figure.display {
-  margin: auto;
   text-align: center;
-  max-width: 100vmin;
-  width: 100% vw;
-  height: auto;
-  display: block;
-  padding: 10px;
+  white-space: nowrap;
 }
-
+figure.display :before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+figure.display img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 70%;
+}
 figure.display figcaption {
   padding: 5px;
   font-size: 0.85rem;
@@ -1374,7 +1178,6 @@ div.images {
   margin: auto;
   padding: 10px;
 }
-
 div.images img {
   padding: 10px;
   display: block;
@@ -1386,227 +1189,178 @@ div.images img {
   margin-right: auto;
 }
 
-.img-fill img {
-  -o-object-fit: fill;
-     object-fit: fill;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
+.reveal .l-multiple {
+  display: flex;
+  justify-content: space-around;
 }
 
-.img-contain img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-
-.img-cover img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-
-.img-none img {
-  -o-object-fit: none;
-     object-fit: none;
-  height: 100%;
-  width: 100%;
+.reveal .l-double {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 /*********************************************
  * LINKS
  *********************************************/
 .reveal a {
-  -webkit-transition: color .15s ease;
-  transition: color .15s ease;
+  -webkit-transition: color 0.15s ease;
+  -moz-transition: color 0.15s ease;
+  transition: color 0.15s ease;
 }
-
 .theme-sedona .reveal a {
-  text-decoration-color: #d1d7e0;
-  -webkit-text-decoration-color: #d1d7e0;
-  color: #d1d7e0;
+  text-decoration-color: #6bc5d2;
+  -webkit-text-decoration-color: #6bc5d2;
+  color: #6bc5d2;
 }
-
 .theme-cyber .reveal a {
   text-decoration-color: #a240c5;
   -webkit-text-decoration-color: #a240c5;
   color: #a240c5;
 }
-
 .theme-bright-blue .reveal a {
   text-decoration-color: #99738e;
   -webkit-text-decoration-color: #99738e;
   color: #99738e;
 }
-
 .theme-black .reveal a {
   text-decoration-color: #F2E38A;
   -webkit-text-decoration-color: #F2E38A;
   color: #F2E38A;
 }
-
 .theme-candy .reveal a {
   text-decoration-color: #4ec5c1;
   -webkit-text-decoration-color: #4ec5c1;
   color: #4ec5c1;
 }
-
 .theme-skeletor .reveal a {
   text-decoration-color: #22c4ec;
   -webkit-text-decoration-color: #22c4ec;
   color: #22c4ec;
 }
-
 .theme-honey .reveal a {
   text-decoration-color: #B5B5B7;
   -webkit-text-decoration-color: #B5B5B7;
   color: #B5B5B7;
 }
-
 .theme-ultra .reveal a {
   text-decoration-color: #FAC668;
   -webkit-text-decoration-color: #FAC668;
   color: #FAC668;
 }
-
 .theme-borealis .reveal a {
   text-decoration-color: #7489C7;
   -webkit-text-decoration-color: #7489C7;
   color: #7489C7;
 }
-
 .theme-python .reveal a {
   text-decoration-color: #EC9B5F;
   -webkit-text-decoration-color: #EC9B5F;
   color: #EC9B5F;
 }
-
 .theme-tank .reveal a {
   text-decoration-color: #A8ACBF;
   -webkit-text-decoration-color: #A8ACBF;
   color: #A8ACBF;
 }
-
 .reveal a:hover {
   text-shadow: none;
   border: none;
 }
-
 .theme-sedona .reveal a:hover {
-  color: #d1d7e0;
-  border-bottom: 2px solid #d1d7e0;
+  color: #6bc5d2;
+  border-bottom: 2px solid #6bc5d2;
   /* I prefer a thicker line than the underline */
 }
-
 .theme-cyber .reveal a:hover {
   color: #a240c5;
   border-bottom: 2px solid #a240c5;
   /* I prefer a thicker line than the underline */
 }
-
 .theme-bright-blue .reveal a:hover {
   color: #99738e;
   border-bottom: 2px solid #99738e;
   /* I prefer a thicker line than the underline */
 }
-
 .theme-black .reveal a:hover {
   color: #F2E38A;
   border-bottom: 2px solid #F2E38A;
   /* I prefer a thicker line than the underline */
 }
-
 .theme-candy .reveal a:hover {
   color: #4ec5c1;
   border-bottom: 2px solid #4ec5c1;
   /* I prefer a thicker line than the underline */
 }
-
 .theme-skeletor .reveal a:hover {
   color: #22c4ec;
   border-bottom: 2px solid #22c4ec;
   /* I prefer a thicker line than the underline */
 }
-
 .theme-honey .reveal a:hover {
   color: #B5B5B7;
   border-bottom: 2px solid #B5B5B7;
   /* I prefer a thicker line than the underline */
 }
-
 .theme-ultra .reveal a:hover {
   color: #FAC668;
   border-bottom: 2px solid #FAC668;
   /* I prefer a thicker line than the underline */
 }
-
 .theme-borealis .reveal a:hover {
   color: #7489C7;
   border-bottom: 2px solid #7489C7;
   /* I prefer a thicker line than the underline */
 }
-
 .theme-python .reveal a:hover {
   color: #EC9B5F;
   border-bottom: 2px solid #EC9B5F;
   /* I prefer a thicker line than the underline */
 }
-
 .theme-tank .reveal a:hover {
   color: #A8ACBF;
   border-bottom: 2px solid #A8ACBF;
   /* I prefer a thicker line than the underline */
 }
-
 .theme-poppins-font .reveal a:hover {
   border-bottom: 2px solid;
   /* I prefer a thicker line than the underline */
 }
-
 .theme-cunia-font .reveal a:hover {
   border-bottom: 2px solid;
   /* I prefer a thicker line than the underline */
 }
-
+.theme-cunia2-font .reveal a:hover {
+  border-bottom: 2px solid;
+  /* I prefer a thicker line than the underline */
+}
 .theme-plex-font .reveal a:hover {
   border-bottom: 2px solid;
   /* I prefer a thicker line than the underline */
 }
-
 .theme-dosis-font .reveal a:hover {
   border-bottom: 2px solid;
   /* I prefer a thicker line than the underline */
 }
-
 .theme-leafy-font .reveal a:hover {
   border-bottom: 2px solid;
   /* I prefer a thicker line than the underline */
 }
-
 .theme-allmono-font .reveal a:hover {
   border-bottom: 2px solid;
   /* I prefer a thicker line than the underline */
 }
-
 .theme-soda-font .reveal a:hover {
   border-bottom: 2px solid;
   /* I prefer a thicker line than the underline */
 }
-
 .theme-klasik-font .reveal a:hover {
   border-bottom: 2px solid;
   /* I prefer a thicker line than the underline */
 }
-
 .theme-klasik-rough-font .reveal a:hover {
   border-bottom: 2px solid;
   /* I prefer a thicker line than the underline */
 }
-
 .theme-nox-font .reveal a:hover {
   border-bottom: 2px solid;
   /* I prefer a thicker line than the underline */
@@ -1615,98 +1369,75 @@ div.images img {
 .reveal .roll span:after {
   color: #fff;
 }
-
 .theme-sedona .reveal .roll span:after {
-  background: #d1d7e0;
+  background: #6bc5d2;
 }
-
 .theme-cyber .reveal .roll span:after {
   background: #a240c5;
 }
-
 .theme-bright-blue .reveal .roll span:after {
   background: #99738e;
 }
-
 .theme-black .reveal .roll span:after {
   background: #F2E38A;
 }
-
 .theme-candy .reveal .roll span:after {
   background: #4ec5c1;
 }
-
 .theme-skeletor .reveal .roll span:after {
   background: #22c4ec;
 }
-
 .theme-honey .reveal .roll span:after {
   background: #B5B5B7;
 }
-
 .theme-ultra .reveal .roll span:after {
   background: #FAC668;
 }
-
 .theme-borealis .reveal .roll span:after {
   background: #7489C7;
 }
-
 .theme-python .reveal .roll span:after {
   background: #EC9B5F;
 }
-
 .theme-tank .reveal .roll span:after {
   background: #A8ACBF;
 }
-
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
 .theme-sedona .reveal .controls {
-  color: #d1d7e0;
+  color: #6bc5d2;
 }
-
 .theme-cyber .reveal .controls {
   color: #a240c5;
 }
-
 .theme-bright-blue .reveal .controls {
   color: #99738e;
 }
-
 .theme-black .reveal .controls {
   color: #F2E38A;
 }
-
 .theme-candy .reveal .controls {
   color: #4ec5c1;
 }
-
 .theme-skeletor .reveal .controls {
   color: #22c4ec;
 }
-
 .theme-honey .reveal .controls {
   color: #B5B5B7;
 }
-
 .theme-ultra .reveal .controls {
   color: #FAC668;
 }
-
 .theme-borealis .reveal .controls {
   color: #7489C7;
 }
-
 .theme-python .reveal .controls {
   color: #EC9B5F;
 }
-
 .theme-tank .reveal .controls {
   color: #A8ACBF;
 }
-
 .reveal .controls {
   right: 4vmin;
   bottom: 4vmin;
@@ -1718,102 +1449,78 @@ div.images img {
     bottom: 2vmin;
   }
 }
-
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
   background: rgba(48, 40, 63, 0.2);
 }
-
 .theme-sedona .reveal .progress {
-  color: #d1d7e0;
+  color: #6bc5d2;
 }
-
 .theme-cyber .reveal .progress {
   color: #a240c5;
 }
-
 .theme-bright-blue .reveal .progress {
   color: #99738e;
 }
-
 .theme-black .reveal .progress {
   color: #F2E38A;
 }
-
 .theme-candy .reveal .progress {
   color: #4ec5c1;
 }
-
 .theme-skeletor .reveal .progress {
   color: #22c4ec;
 }
-
 .theme-honey .reveal .progress {
   color: #B5B5B7;
 }
-
 .theme-ultra .reveal .progress {
   color: #FAC668;
 }
-
 .theme-borealis .reveal .progress {
   color: #7489C7;
 }
-
 .theme-python .reveal .progress {
   color: #EC9B5F;
 }
-
 .theme-tank .reveal .progress {
   color: #A8ACBF;
 }
-
 .theme-sedona .reveal .progress span {
   background: #747CA8;
 }
-
 .theme-cyber .reveal .progress span {
   background: #ea00d9;
 }
-
 .theme-bright-blue .reveal .progress span {
   background: #553d67;
 }
-
 .theme-black .reveal .progress span {
   background: #C687E8;
 }
-
 .theme-candy .reveal .progress span {
   background: #e5e338;
 }
-
 .theme-skeletor .reveal .progress span {
   background: #987cb0;
 }
-
 .theme-honey .reveal .progress span {
   background: #677077;
 }
-
 .theme-ultra .reveal .progress span {
   background: #9B84C0;
 }
-
 .theme-borealis .reveal .progress span {
   background: #ABB1D9;
 }
-
 .theme-python .reveal .progress span {
   background: #FDD45E;
 }
-
 .theme-tank .reveal .progress span {
   background: #51637a;
 }
-
 /*********************************************
 * LISTS
 *********************************************/
@@ -1821,258 +1528,196 @@ div.images img {
 .reveal ul.icon {
   list-style-type: none;
 }
-
 .reveal ul.icon li {
   text-indent: -1.3em;
   margin-bottom: 0.5em;
 }
-
 .reveal ul.icon li::before {
-  font-family: 'flaticon';
-  content: "\f102";
+  font-family: "flaticon";
+  content: "";
   /* maguey */
   float: left;
   width: 1.2em;
   font-size: 1em;
   padding-right: 0.5em;
 }
-
 .theme-sedona .reveal ul.icon li::before {
   color: #747CA8;
 }
-
 .theme-cyber .reveal ul.icon li::before {
   color: #ea00d9;
 }
-
 .theme-bright-blue .reveal ul.icon li::before {
   color: #553d67;
 }
-
 .theme-black .reveal ul.icon li::before {
   color: #C687E8;
 }
-
 .theme-candy .reveal ul.icon li::before {
   color: #e5e338;
 }
-
 .theme-skeletor .reveal ul.icon li::before {
   color: #987cb0;
 }
-
 .theme-honey .reveal ul.icon li::before {
   color: #677077;
 }
-
 .theme-ultra .reveal ul.icon li::before {
   color: #9B84C0;
 }
-
 .theme-borealis .reveal ul.icon li::before {
   color: #ABB1D9;
 }
-
 .theme-python .reveal ul.icon li::before {
   color: #FDD45E;
 }
-
 .theme-tank .reveal ul.icon li::before {
   color: #51637a;
 }
-
 .reveal ul.icon li.pinata::before {
-  content: "\f100";
+  content: "";
 }
-
 .theme-sedona .reveal ul.icon li.pinata::before {
   color: #747CA8;
 }
-
 .theme-cyber .reveal ul.icon li.pinata::before {
   color: #ea00d9;
 }
-
 .theme-bright-blue .reveal ul.icon li.pinata::before {
   color: #553d67;
 }
-
 .theme-black .reveal ul.icon li.pinata::before {
   color: #C687E8;
 }
-
 .theme-candy .reveal ul.icon li.pinata::before {
   color: #e5e338;
 }
-
 .theme-skeletor .reveal ul.icon li.pinata::before {
   color: #987cb0;
 }
-
 .theme-honey .reveal ul.icon li.pinata::before {
   color: #677077;
 }
-
 .theme-ultra .reveal ul.icon li.pinata::before {
   color: #9B84C0;
 }
-
 .theme-borealis .reveal ul.icon li.pinata::before {
   color: #ABB1D9;
 }
-
 .theme-python .reveal ul.icon li.pinata::before {
   color: #FDD45E;
 }
-
 .theme-tank .reveal ul.icon li.pinata::before {
   color: #51637a;
 }
-
 .reveal ul.icon li.nopal::before {
-  content: "\f101";
+  content: "";
 }
-
 .theme-sedona .reveal ul.icon li.nopal::before {
   color: #747CA8;
 }
-
 .theme-cyber .reveal ul.icon li.nopal::before {
   color: #ea00d9;
 }
-
 .theme-bright-blue .reveal ul.icon li.nopal::before {
   color: #553d67;
 }
-
 .theme-black .reveal ul.icon li.nopal::before {
   color: #C687E8;
 }
-
 .theme-candy .reveal ul.icon li.nopal::before {
   color: #e5e338;
 }
-
 .theme-skeletor .reveal ul.icon li.nopal::before {
   color: #987cb0;
 }
-
 .theme-honey .reveal ul.icon li.nopal::before {
   color: #677077;
 }
-
 .theme-ultra .reveal ul.icon li.nopal::before {
   color: #9B84C0;
 }
-
 .theme-borealis .reveal ul.icon li.nopal::before {
   color: #ABB1D9;
 }
-
 .theme-python .reveal ul.icon li.nopal::before {
   color: #FDD45E;
 }
-
 .theme-tank .reveal ul.icon li.nopal::before {
   color: #51637a;
 }
-
 .reveal ul.icon li.cactus::before {
-  content: "\f103";
+  content: "";
 }
-
 .theme-sedona .reveal ul.icon li.cactus::before {
   color: #747CA8;
 }
-
 .theme-cyber .reveal ul.icon li.cactus::before {
   color: #ea00d9;
 }
-
 .theme-bright-blue .reveal ul.icon li.cactus::before {
   color: #553d67;
 }
-
 .theme-black .reveal ul.icon li.cactus::before {
   color: #C687E8;
 }
-
 .theme-candy .reveal ul.icon li.cactus::before {
   color: #e5e338;
 }
-
 .theme-skeletor .reveal ul.icon li.cactus::before {
   color: #987cb0;
 }
-
 .theme-honey .reveal ul.icon li.cactus::before {
   color: #677077;
 }
-
 .theme-ultra .reveal ul.icon li.cactus::before {
   color: #9B84C0;
 }
-
 .theme-borealis .reveal ul.icon li.cactus::before {
   color: #ABB1D9;
 }
-
 .theme-python .reveal ul.icon li.cactus::before {
   color: #FDD45E;
 }
-
 .theme-tank .reveal ul.icon li.cactus::before {
   color: #51637a;
 }
-
 .reveal ul.icon li.skull::before {
-  content: "\f104";
+  content: "";
 }
-
 .theme-sedona .reveal ul.icon li.skull::before {
   color: #747CA8;
 }
-
 .theme-cyber .reveal ul.icon li.skull::before {
   color: #ea00d9;
 }
-
 .theme-bright-blue .reveal ul.icon li.skull::before {
   color: #553d67;
 }
-
 .theme-black .reveal ul.icon li.skull::before {
   color: #C687E8;
 }
-
 .theme-candy .reveal ul.icon li.skull::before {
   color: #e5e338;
 }
-
 .theme-skeletor .reveal ul.icon li.skull::before {
   color: #987cb0;
 }
-
 .theme-honey .reveal ul.icon li.skull::before {
   color: #677077;
 }
-
 .theme-ultra .reveal ul.icon li.skull::before {
   color: #9B84C0;
 }
-
 .theme-borealis .reveal ul.icon li.skull::before {
   color: #ABB1D9;
 }
-
 .theme-python .reveal ul.icon li.skull::before {
   color: #FDD45E;
 }
-
 .theme-tank .reveal ul.icon li.skull::before {
   color: #51637a;
 }
-
 /*********************************************
 * TABLES
 *********************************************/
@@ -2080,68 +1725,52 @@ div.images img {
 .reveal table th {
   font-weight: bold;
 }
-
 .theme-sedona .reveal table th {
   color: #747CA8;
 }
-
 .theme-cyber .reveal table th {
   color: #ea00d9;
 }
-
 .theme-bright-blue .reveal table th {
   color: #553d67;
 }
-
 .theme-black .reveal table th {
   color: #C687E8;
 }
-
 .theme-candy .reveal table th {
   color: #e5e338;
 }
-
 .theme-skeletor .reveal table th {
   color: #987cb0;
 }
-
 .theme-honey .reveal table th {
   color: #677077;
 }
-
 .theme-ultra .reveal table th {
   color: #9B84C0;
 }
-
 .theme-borealis .reveal table th {
   color: #ABB1D9;
 }
-
 .theme-python .reveal table th {
   color: #FDD45E;
 }
-
 .theme-tank .reveal table th {
   color: #51637a;
 }
-
 .commands table {
   margin: 0;
 }
-
 .commands table th {
   text-align: right;
   border-bottom: none;
 }
-
 .commands table td {
   border-bottom: none;
 }
-
 .commands table td + td {
   opacity: 0.5;
 }
-
 .commands table + figure {
   margin-top: 2em;
 }
@@ -2160,467 +1789,403 @@ div.images img {
   font-weight: 400;
   color: #F8757F;
 }
-
 .reveal strong-alt {
   font-weight: 400;
 }
-
 .theme-sedona .reveal strong-alt {
   color: #d2a9ea;
 }
-
 .theme-cyber .reveal strong-alt {
   color: #10e8f3;
 }
-
 .theme-bright-blue .reveal strong-alt {
   color: #f87d98;
 }
-
 .theme-black .reveal strong-alt {
   color: #d0ea95;
 }
-
 .theme-candy .reveal strong-alt {
   color: #f78392;
 }
-
 .theme-skeletor .reveal strong-alt {
   color: #f4ce89;
 }
-
 .theme-honey .reveal strong-alt {
   color: #808a91;
 }
-
 .theme-ultra .reveal strong-alt {
   color: #fcd999;
 }
-
 .theme-borealis .reveal strong-alt {
   color: #13ffd1;
 }
-
 .theme-python .reveal strong-alt {
   color: #7db3d7;
 }
-
 .theme-tank .reveal strong-alt {
   color: #b08fe4;
 }
-
 .reveal small {
   font-size: 0.6em;
 }
-
 .reveal em {
   font-style: italic;
 }
-
 .reveal mega-font {
   font-size: 6.583em;
 }
-
 .theme-sedona .reveal mega-font {
   color: #BD80E0;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-cyber .reveal mega-font {
   color: #0abdc6;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-bright-blue .reveal mega-font {
   color: #f64c72;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-black .reveal mega-font {
   color: #BDE16B;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-candy .reveal mega-font {
   color: #f45368;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-skeletor .reveal mega-font {
   color: #f0bb5a;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-honey .reveal mega-font {
   color: #F2B632;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-ultra .reveal mega-font {
   color: #E55982;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-borealis .reveal mega-font {
   color: #00DFB4;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-python .reveal mega-font {
   color: #569CCB;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-tank .reveal mega-font {
   color: #9366DA;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-poppins-font .reveal mega-font {
   font-family: IBMPlexSerif, monospace;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-cunia-font .reveal mega-font {
   font-family: Cunia, sans-serif;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
+.theme-cunia2-font .reveal mega-font {
+  font-family: Cunia, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
 .theme-plex-font .reveal mega-font {
   font-family: IBMPlexSerif, monospace;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-dosis-font .reveal mega-font {
   font-family: Dosis, sans-serif;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-leafy-font .reveal mega-font {
   font-family: Leafy, cursive;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-allmono-font .reveal mega-font {
   font-family: Muli, sans-serif;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-soda-font .reveal mega-font {
   font-family: Open Sans, sans-serif;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-klasik-font .reveal mega-font {
   font-family: Klasik, sans-serif;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-klasik-rough-font .reveal mega-font {
   font-family: Klasik-Rough, sans-serif;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-nox-font .reveal mega-font {
   font-family: Annie Use Your Telescope, cursive;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .reveal huge-font {
   font-size: 5.202em;
 }
-
 .theme-sedona .reveal huge-font {
   color: #BD80E0;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-cyber .reveal huge-font {
   color: #0abdc6;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-bright-blue .reveal huge-font {
   color: #f64c72;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-black .reveal huge-font {
   color: #BDE16B;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-candy .reveal huge-font {
   color: #f45368;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-skeletor .reveal huge-font {
   color: #f0bb5a;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-honey .reveal huge-font {
   color: #F2B632;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-ultra .reveal huge-font {
   color: #E55982;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-borealis .reveal huge-font {
   color: #00DFB4;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-python .reveal huge-font {
   color: #569CCB;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-tank .reveal huge-font {
   color: #9366DA;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-poppins-font .reveal huge-font {
   font-family: IBMPlexSerif, monospace;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-cunia-font .reveal huge-font {
   font-family: Cunia, sans-serif;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
+.theme-cunia2-font .reveal huge-font {
+  font-family: Cunia, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
 .theme-plex-font .reveal huge-font {
   font-family: IBMPlexSerif, monospace;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-dosis-font .reveal huge-font {
   font-family: Dosis, sans-serif;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-leafy-font .reveal huge-font {
   font-family: Leafy, cursive;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-allmono-font .reveal huge-font {
   font-family: Muli, sans-serif;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-soda-font .reveal huge-font {
   font-family: Open Sans, sans-serif;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-klasik-font .reveal huge-font {
   font-family: Klasik, sans-serif;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-klasik-rough-font .reveal huge-font {
   font-family: Klasik-Rough, sans-serif;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .theme-nox-font .reveal huge-font {
   font-family: Annie Use Your Telescope, cursive;
   line-height: 1.2;
   word-wrap: break-word;
 }
-
 .reveal big-font {
   font-size: 4.624em;
 }
-
 .theme-sedona .reveal big-font {
   color: #BD80E0;
   line-height: 1.2;
   word-wrap: break-word;
   letter-spacing: normal;
 }
-
 .theme-cyber .reveal big-font {
   color: #0abdc6;
   line-height: 1.2;
   word-wrap: break-word;
   letter-spacing: normal;
 }
-
 .theme-bright-blue .reveal big-font {
   color: #f64c72;
   line-height: 1.2;
   word-wrap: break-word;
   letter-spacing: normal;
 }
-
 .theme-black .reveal big-font {
   color: #BDE16B;
   line-height: 1.2;
   word-wrap: break-word;
   letter-spacing: normal;
 }
-
 .theme-candy .reveal big-font {
   color: #f45368;
   line-height: 1.2;
   word-wrap: break-word;
   letter-spacing: normal;
 }
-
 .theme-skeletor .reveal big-font {
   color: #f0bb5a;
   line-height: 1.2;
   word-wrap: break-word;
   letter-spacing: normal;
 }
-
 .theme-honey .reveal big-font {
   color: #F2B632;
   line-height: 1.2;
   word-wrap: break-word;
   letter-spacing: normal;
 }
-
 .theme-ultra .reveal big-font {
   color: #E55982;
   line-height: 1.2;
   word-wrap: break-word;
   letter-spacing: normal;
 }
-
 .theme-borealis .reveal big-font {
   color: #00DFB4;
   line-height: 1.2;
   word-wrap: break-word;
   letter-spacing: normal;
 }
-
 .theme-python .reveal big-font {
   color: #569CCB;
   line-height: 1.2;
   word-wrap: break-word;
   letter-spacing: normal;
 }
-
 .theme-tank .reveal big-font {
   color: #9366DA;
   line-height: 1.2;
   word-wrap: break-word;
   letter-spacing: normal;
 }
-
 .theme-poppins-font .reveal big-font {
   font-family: IBMPlexSerif, monospace;
   line-height: 1.2;
   word-wrap: break-word;
   letter-spacing: normal;
 }
-
 .theme-cunia-font .reveal big-font {
   font-family: Cunia, sans-serif;
   line-height: 1.2;
   word-wrap: break-word;
   letter-spacing: normal;
 }
-
+.theme-cunia2-font .reveal big-font {
+  font-family: Cunia, sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+  letter-spacing: normal;
+}
 .theme-plex-font .reveal big-font {
   font-family: IBMPlexSerif, monospace;
   line-height: 1.2;
   word-wrap: break-word;
   letter-spacing: normal;
 }
-
 .theme-dosis-font .reveal big-font {
   font-family: Dosis, sans-serif;
   line-height: 1.2;
   word-wrap: break-word;
   letter-spacing: normal;
 }
-
 .theme-leafy-font .reveal big-font {
   font-family: Leafy, cursive;
   line-height: 1.2;
   word-wrap: break-word;
   letter-spacing: normal;
 }
-
 .theme-allmono-font .reveal big-font {
   font-family: Muli, sans-serif;
   line-height: 1.2;
   word-wrap: break-word;
   letter-spacing: normal;
 }
-
 .theme-soda-font .reveal big-font {
   font-family: Open Sans, sans-serif;
   line-height: 1.2;
   word-wrap: break-word;
   letter-spacing: normal;
 }
-
 .theme-klasik-font .reveal big-font {
   font-family: Klasik, sans-serif;
   line-height: 1.2;
   word-wrap: break-word;
   letter-spacing: normal;
 }
-
 .theme-klasik-rough-font .reveal big-font {
   font-family: Klasik-Rough, sans-serif;
   line-height: 1.2;
   word-wrap: break-word;
   letter-spacing: normal;
 }
-
 .theme-nox-font .reveal big-font {
   font-family: Annie Use Your Telescope, cursive;
   line-height: 1.2;
@@ -2645,235 +2210,224 @@ div.images img {
 .reveal huge-font.glow {
   padding: 0 2rem;
 }
-
-.theme-sedona .reveal h1.glow, .theme-sedona
-.reveal h2.glow, .theme-sedona
-.reveal h3.glow, .theme-sedona
-.reveal h4.glow, .theme-sedona
-.reveal h5.glow, .theme-sedona
-.reveal big-font.glow, .theme-sedona
-.reveal mega-font.glow, .theme-sedona
-.reveal huge-font.glow {
+.theme-sedona .reveal h1.glow,
+.theme-sedona .reveal h2.glow,
+.theme-sedona .reveal h3.glow,
+.theme-sedona .reveal h4.glow,
+.theme-sedona .reveal h5.glow,
+.theme-sedona .reveal big-font.glow,
+.theme-sedona .reveal mega-font.glow,
+.theme-sedona .reveal huge-font.glow {
   text-shadow: 0px 0px 5px #BD80E0, 0 0 20px #fff;
 }
-
-.theme-cyber .reveal h1.glow, .theme-cyber
-.reveal h2.glow, .theme-cyber
-.reveal h3.glow, .theme-cyber
-.reveal h4.glow, .theme-cyber
-.reveal h5.glow, .theme-cyber
-.reveal big-font.glow, .theme-cyber
-.reveal mega-font.glow, .theme-cyber
-.reveal huge-font.glow {
+.theme-cyber .reveal h1.glow,
+.theme-cyber .reveal h2.glow,
+.theme-cyber .reveal h3.glow,
+.theme-cyber .reveal h4.glow,
+.theme-cyber .reveal h5.glow,
+.theme-cyber .reveal big-font.glow,
+.theme-cyber .reveal mega-font.glow,
+.theme-cyber .reveal huge-font.glow {
   text-shadow: 0px 0px 5px #0abdc6, 0 0 20px #fff;
 }
-
-.theme-bright-blue .reveal h1.glow, .theme-bright-blue
-.reveal h2.glow, .theme-bright-blue
-.reveal h3.glow, .theme-bright-blue
-.reveal h4.glow, .theme-bright-blue
-.reveal h5.glow, .theme-bright-blue
-.reveal big-font.glow, .theme-bright-blue
-.reveal mega-font.glow, .theme-bright-blue
-.reveal huge-font.glow {
+.theme-bright-blue .reveal h1.glow,
+.theme-bright-blue .reveal h2.glow,
+.theme-bright-blue .reveal h3.glow,
+.theme-bright-blue .reveal h4.glow,
+.theme-bright-blue .reveal h5.glow,
+.theme-bright-blue .reveal big-font.glow,
+.theme-bright-blue .reveal mega-font.glow,
+.theme-bright-blue .reveal huge-font.glow {
   text-shadow: 0px 0px 5px #f64c72, 0 0 20px #fff;
 }
-
-.theme-black .reveal h1.glow, .theme-black
-.reveal h2.glow, .theme-black
-.reveal h3.glow, .theme-black
-.reveal h4.glow, .theme-black
-.reveal h5.glow, .theme-black
-.reveal big-font.glow, .theme-black
-.reveal mega-font.glow, .theme-black
-.reveal huge-font.glow {
+.theme-black .reveal h1.glow,
+.theme-black .reveal h2.glow,
+.theme-black .reveal h3.glow,
+.theme-black .reveal h4.glow,
+.theme-black .reveal h5.glow,
+.theme-black .reveal big-font.glow,
+.theme-black .reveal mega-font.glow,
+.theme-black .reveal huge-font.glow {
   text-shadow: 0px 0px 5px #BDE16B, 0 0 20px #fff;
 }
-
-.theme-candy .reveal h1.glow, .theme-candy
-.reveal h2.glow, .theme-candy
-.reveal h3.glow, .theme-candy
-.reveal h4.glow, .theme-candy
-.reveal h5.glow, .theme-candy
-.reveal big-font.glow, .theme-candy
-.reveal mega-font.glow, .theme-candy
-.reveal huge-font.glow {
+.theme-candy .reveal h1.glow,
+.theme-candy .reveal h2.glow,
+.theme-candy .reveal h3.glow,
+.theme-candy .reveal h4.glow,
+.theme-candy .reveal h5.glow,
+.theme-candy .reveal big-font.glow,
+.theme-candy .reveal mega-font.glow,
+.theme-candy .reveal huge-font.glow {
   text-shadow: 0px 0px 5px #f45368, 0 0 20px #fff;
 }
-
-.theme-skeletor .reveal h1.glow, .theme-skeletor
-.reveal h2.glow, .theme-skeletor
-.reveal h3.glow, .theme-skeletor
-.reveal h4.glow, .theme-skeletor
-.reveal h5.glow, .theme-skeletor
-.reveal big-font.glow, .theme-skeletor
-.reveal mega-font.glow, .theme-skeletor
-.reveal huge-font.glow {
+.theme-skeletor .reveal h1.glow,
+.theme-skeletor .reveal h2.glow,
+.theme-skeletor .reveal h3.glow,
+.theme-skeletor .reveal h4.glow,
+.theme-skeletor .reveal h5.glow,
+.theme-skeletor .reveal big-font.glow,
+.theme-skeletor .reveal mega-font.glow,
+.theme-skeletor .reveal huge-font.glow {
   text-shadow: 0px 0px 5px #f0bb5a, 0 0 20px #fff;
 }
-
-.theme-honey .reveal h1.glow, .theme-honey
-.reveal h2.glow, .theme-honey
-.reveal h3.glow, .theme-honey
-.reveal h4.glow, .theme-honey
-.reveal h5.glow, .theme-honey
-.reveal big-font.glow, .theme-honey
-.reveal mega-font.glow, .theme-honey
-.reveal huge-font.glow {
+.theme-honey .reveal h1.glow,
+.theme-honey .reveal h2.glow,
+.theme-honey .reveal h3.glow,
+.theme-honey .reveal h4.glow,
+.theme-honey .reveal h5.glow,
+.theme-honey .reveal big-font.glow,
+.theme-honey .reveal mega-font.glow,
+.theme-honey .reveal huge-font.glow {
   text-shadow: 0px 0px 5px #F2B632, 0 0 20px #fff;
 }
-
-.theme-ultra .reveal h1.glow, .theme-ultra
-.reveal h2.glow, .theme-ultra
-.reveal h3.glow, .theme-ultra
-.reveal h4.glow, .theme-ultra
-.reveal h5.glow, .theme-ultra
-.reveal big-font.glow, .theme-ultra
-.reveal mega-font.glow, .theme-ultra
-.reveal huge-font.glow {
+.theme-ultra .reveal h1.glow,
+.theme-ultra .reveal h2.glow,
+.theme-ultra .reveal h3.glow,
+.theme-ultra .reveal h4.glow,
+.theme-ultra .reveal h5.glow,
+.theme-ultra .reveal big-font.glow,
+.theme-ultra .reveal mega-font.glow,
+.theme-ultra .reveal huge-font.glow {
   text-shadow: 0px 0px 5px #E55982, 0 0 20px #fff;
 }
-
-.theme-borealis .reveal h1.glow, .theme-borealis
-.reveal h2.glow, .theme-borealis
-.reveal h3.glow, .theme-borealis
-.reveal h4.glow, .theme-borealis
-.reveal h5.glow, .theme-borealis
-.reveal big-font.glow, .theme-borealis
-.reveal mega-font.glow, .theme-borealis
-.reveal huge-font.glow {
+.theme-borealis .reveal h1.glow,
+.theme-borealis .reveal h2.glow,
+.theme-borealis .reveal h3.glow,
+.theme-borealis .reveal h4.glow,
+.theme-borealis .reveal h5.glow,
+.theme-borealis .reveal big-font.glow,
+.theme-borealis .reveal mega-font.glow,
+.theme-borealis .reveal huge-font.glow {
   text-shadow: 0px 0px 5px #00DFB4, 0 0 20px #fff;
 }
-
-.theme-python .reveal h1.glow, .theme-python
-.reveal h2.glow, .theme-python
-.reveal h3.glow, .theme-python
-.reveal h4.glow, .theme-python
-.reveal h5.glow, .theme-python
-.reveal big-font.glow, .theme-python
-.reveal mega-font.glow, .theme-python
-.reveal huge-font.glow {
+.theme-python .reveal h1.glow,
+.theme-python .reveal h2.glow,
+.theme-python .reveal h3.glow,
+.theme-python .reveal h4.glow,
+.theme-python .reveal h5.glow,
+.theme-python .reveal big-font.glow,
+.theme-python .reveal mega-font.glow,
+.theme-python .reveal huge-font.glow {
   text-shadow: 0px 0px 5px #569CCB, 0 0 20px #fff;
 }
-
-.theme-tank .reveal h1.glow, .theme-tank
-.reveal h2.glow, .theme-tank
-.reveal h3.glow, .theme-tank
-.reveal h4.glow, .theme-tank
-.reveal h5.glow, .theme-tank
-.reveal big-font.glow, .theme-tank
-.reveal mega-font.glow, .theme-tank
-.reveal huge-font.glow {
+.theme-tank .reveal h1.glow,
+.theme-tank .reveal h2.glow,
+.theme-tank .reveal h3.glow,
+.theme-tank .reveal h4.glow,
+.theme-tank .reveal h5.glow,
+.theme-tank .reveal big-font.glow,
+.theme-tank .reveal mega-font.glow,
+.theme-tank .reveal huge-font.glow {
   text-shadow: 0px 0px 5px #9366DA, 0 0 20px #fff;
 }
-
-.theme-poppins-font .reveal h1.glow, .theme-poppins-font
-.reveal h2.glow, .theme-poppins-font
-.reveal h3.glow, .theme-poppins-font
-.reveal h4.glow, .theme-poppins-font
-.reveal h5.glow, .theme-poppins-font
-.reveal big-font.glow, .theme-poppins-font
-.reveal mega-font.glow, .theme-poppins-font
-.reveal huge-font.glow {
+.theme-poppins-font .reveal h1.glow,
+.theme-poppins-font .reveal h2.glow,
+.theme-poppins-font .reveal h3.glow,
+.theme-poppins-font .reveal h4.glow,
+.theme-poppins-font .reveal h5.glow,
+.theme-poppins-font .reveal big-font.glow,
+.theme-poppins-font .reveal mega-font.glow,
+.theme-poppins-font .reveal huge-font.glow {
   text-shadow: 0px 0px 5px, 0 0 20px #fff;
 }
-
-.theme-cunia-font .reveal h1.glow, .theme-cunia-font
-.reveal h2.glow, .theme-cunia-font
-.reveal h3.glow, .theme-cunia-font
-.reveal h4.glow, .theme-cunia-font
-.reveal h5.glow, .theme-cunia-font
-.reveal big-font.glow, .theme-cunia-font
-.reveal mega-font.glow, .theme-cunia-font
-.reveal huge-font.glow {
+.theme-cunia-font .reveal h1.glow,
+.theme-cunia-font .reveal h2.glow,
+.theme-cunia-font .reveal h3.glow,
+.theme-cunia-font .reveal h4.glow,
+.theme-cunia-font .reveal h5.glow,
+.theme-cunia-font .reveal big-font.glow,
+.theme-cunia-font .reveal mega-font.glow,
+.theme-cunia-font .reveal huge-font.glow {
   text-shadow: 0px 0px 5px, 0 0 20px #fff;
 }
-
-.theme-plex-font .reveal h1.glow, .theme-plex-font
-.reveal h2.glow, .theme-plex-font
-.reveal h3.glow, .theme-plex-font
-.reveal h4.glow, .theme-plex-font
-.reveal h5.glow, .theme-plex-font
-.reveal big-font.glow, .theme-plex-font
-.reveal mega-font.glow, .theme-plex-font
-.reveal huge-font.glow {
+.theme-cunia2-font .reveal h1.glow,
+.theme-cunia2-font .reveal h2.glow,
+.theme-cunia2-font .reveal h3.glow,
+.theme-cunia2-font .reveal h4.glow,
+.theme-cunia2-font .reveal h5.glow,
+.theme-cunia2-font .reveal big-font.glow,
+.theme-cunia2-font .reveal mega-font.glow,
+.theme-cunia2-font .reveal huge-font.glow {
   text-shadow: 0px 0px 5px, 0 0 20px #fff;
 }
-
-.theme-dosis-font .reveal h1.glow, .theme-dosis-font
-.reveal h2.glow, .theme-dosis-font
-.reveal h3.glow, .theme-dosis-font
-.reveal h4.glow, .theme-dosis-font
-.reveal h5.glow, .theme-dosis-font
-.reveal big-font.glow, .theme-dosis-font
-.reveal mega-font.glow, .theme-dosis-font
-.reveal huge-font.glow {
+.theme-plex-font .reveal h1.glow,
+.theme-plex-font .reveal h2.glow,
+.theme-plex-font .reveal h3.glow,
+.theme-plex-font .reveal h4.glow,
+.theme-plex-font .reveal h5.glow,
+.theme-plex-font .reveal big-font.glow,
+.theme-plex-font .reveal mega-font.glow,
+.theme-plex-font .reveal huge-font.glow {
   text-shadow: 0px 0px 5px, 0 0 20px #fff;
 }
-
-.theme-leafy-font .reveal h1.glow, .theme-leafy-font
-.reveal h2.glow, .theme-leafy-font
-.reveal h3.glow, .theme-leafy-font
-.reveal h4.glow, .theme-leafy-font
-.reveal h5.glow, .theme-leafy-font
-.reveal big-font.glow, .theme-leafy-font
-.reveal mega-font.glow, .theme-leafy-font
-.reveal huge-font.glow {
+.theme-dosis-font .reveal h1.glow,
+.theme-dosis-font .reveal h2.glow,
+.theme-dosis-font .reveal h3.glow,
+.theme-dosis-font .reveal h4.glow,
+.theme-dosis-font .reveal h5.glow,
+.theme-dosis-font .reveal big-font.glow,
+.theme-dosis-font .reveal mega-font.glow,
+.theme-dosis-font .reveal huge-font.glow {
   text-shadow: 0px 0px 5px, 0 0 20px #fff;
 }
-
-.theme-allmono-font .reveal h1.glow, .theme-allmono-font
-.reveal h2.glow, .theme-allmono-font
-.reveal h3.glow, .theme-allmono-font
-.reveal h4.glow, .theme-allmono-font
-.reveal h5.glow, .theme-allmono-font
-.reveal big-font.glow, .theme-allmono-font
-.reveal mega-font.glow, .theme-allmono-font
-.reveal huge-font.glow {
+.theme-leafy-font .reveal h1.glow,
+.theme-leafy-font .reveal h2.glow,
+.theme-leafy-font .reveal h3.glow,
+.theme-leafy-font .reveal h4.glow,
+.theme-leafy-font .reveal h5.glow,
+.theme-leafy-font .reveal big-font.glow,
+.theme-leafy-font .reveal mega-font.glow,
+.theme-leafy-font .reveal huge-font.glow {
   text-shadow: 0px 0px 5px, 0 0 20px #fff;
 }
-
-.theme-soda-font .reveal h1.glow, .theme-soda-font
-.reveal h2.glow, .theme-soda-font
-.reveal h3.glow, .theme-soda-font
-.reveal h4.glow, .theme-soda-font
-.reveal h5.glow, .theme-soda-font
-.reveal big-font.glow, .theme-soda-font
-.reveal mega-font.glow, .theme-soda-font
-.reveal huge-font.glow {
+.theme-allmono-font .reveal h1.glow,
+.theme-allmono-font .reveal h2.glow,
+.theme-allmono-font .reveal h3.glow,
+.theme-allmono-font .reveal h4.glow,
+.theme-allmono-font .reveal h5.glow,
+.theme-allmono-font .reveal big-font.glow,
+.theme-allmono-font .reveal mega-font.glow,
+.theme-allmono-font .reveal huge-font.glow {
   text-shadow: 0px 0px 5px, 0 0 20px #fff;
 }
-
-.theme-klasik-font .reveal h1.glow, .theme-klasik-font
-.reveal h2.glow, .theme-klasik-font
-.reveal h3.glow, .theme-klasik-font
-.reveal h4.glow, .theme-klasik-font
-.reveal h5.glow, .theme-klasik-font
-.reveal big-font.glow, .theme-klasik-font
-.reveal mega-font.glow, .theme-klasik-font
-.reveal huge-font.glow {
+.theme-soda-font .reveal h1.glow,
+.theme-soda-font .reveal h2.glow,
+.theme-soda-font .reveal h3.glow,
+.theme-soda-font .reveal h4.glow,
+.theme-soda-font .reveal h5.glow,
+.theme-soda-font .reveal big-font.glow,
+.theme-soda-font .reveal mega-font.glow,
+.theme-soda-font .reveal huge-font.glow {
   text-shadow: 0px 0px 5px, 0 0 20px #fff;
 }
-
-.theme-klasik-rough-font .reveal h1.glow, .theme-klasik-rough-font
-.reveal h2.glow, .theme-klasik-rough-font
-.reveal h3.glow, .theme-klasik-rough-font
-.reveal h4.glow, .theme-klasik-rough-font
-.reveal h5.glow, .theme-klasik-rough-font
-.reveal big-font.glow, .theme-klasik-rough-font
-.reveal mega-font.glow, .theme-klasik-rough-font
-.reveal huge-font.glow {
+.theme-klasik-font .reveal h1.glow,
+.theme-klasik-font .reveal h2.glow,
+.theme-klasik-font .reveal h3.glow,
+.theme-klasik-font .reveal h4.glow,
+.theme-klasik-font .reveal h5.glow,
+.theme-klasik-font .reveal big-font.glow,
+.theme-klasik-font .reveal mega-font.glow,
+.theme-klasik-font .reveal huge-font.glow {
   text-shadow: 0px 0px 5px, 0 0 20px #fff;
 }
-
-.theme-nox-font .reveal h1.glow, .theme-nox-font
-.reveal h2.glow, .theme-nox-font
-.reveal h3.glow, .theme-nox-font
-.reveal h4.glow, .theme-nox-font
-.reveal h5.glow, .theme-nox-font
-.reveal big-font.glow, .theme-nox-font
-.reveal mega-font.glow, .theme-nox-font
-.reveal huge-font.glow {
+.theme-klasik-rough-font .reveal h1.glow,
+.theme-klasik-rough-font .reveal h2.glow,
+.theme-klasik-rough-font .reveal h3.glow,
+.theme-klasik-rough-font .reveal h4.glow,
+.theme-klasik-rough-font .reveal h5.glow,
+.theme-klasik-rough-font .reveal big-font.glow,
+.theme-klasik-rough-font .reveal mega-font.glow,
+.theme-klasik-rough-font .reveal huge-font.glow {
+  text-shadow: 0px 0px 5px, 0 0 20px #fff;
+}
+.theme-nox-font .reveal h1.glow,
+.theme-nox-font .reveal h2.glow,
+.theme-nox-font .reveal h3.glow,
+.theme-nox-font .reveal h4.glow,
+.theme-nox-font .reveal h5.glow,
+.theme-nox-font .reveal big-font.glow,
+.theme-nox-font .reveal mega-font.glow,
+.theme-nox-font .reveal huge-font.glow {
   text-shadow: 0px 0px 5px, 0 0 20px #fff;
 }
 
@@ -2890,7 +2444,6 @@ div.warn {
   margin-top: 0;
   opacity: 0.8;
 }
-
 div.info {
   background-color: #208a96;
   border-color: #208a96;
@@ -2901,14 +2454,11 @@ div.info {
   margin: 1em;
   margin-top: 0;
 }
-
 div.info a {
   color: #e8f3f4 !important;
   text-decoration: underline;
-  -webkit-text-decoration-color: #e8f3f4 !important;
-          text-decoration-color: #e8f3f4 !important;
+  text-decoration-color: #e8f3f4 !important;
 }
-
 div.default {
   padding: 15px 15px;
   color: #fff;
@@ -2916,62 +2466,50 @@ div.default {
   margin-top: 0;
   opacity: 0.8;
 }
-
 .theme-sedona div.default {
   background-color: #d2a9ea;
   border-left: #BD80E0;
 }
-
 .theme-cyber div.default {
   background-color: #10e8f3;
   border-left: #0abdc6;
 }
-
 .theme-bright-blue div.default {
   background-color: #f87d98;
   border-left: #f64c72;
 }
-
 .theme-black div.default {
   background-color: #d0ea95;
   border-left: #BDE16B;
 }
-
 .theme-candy div.default {
   background-color: #f78392;
   border-left: #f45368;
 }
-
 .theme-skeletor div.default {
   background-color: #f4ce89;
   border-left: #f0bb5a;
 }
-
 .theme-honey div.default {
   background-color: #808a91;
   border-left: #F2B632;
 }
-
 .theme-ultra div.default {
   background-color: #fcd999;
   border-left: #E55982;
 }
-
 .theme-borealis div.default {
   background-color: #13ffd1;
   border-left: #00DFB4;
 }
-
 .theme-python div.default {
   background-color: #7db3d7;
   border-left: #569CCB;
 }
-
 .theme-tank div.default {
   background-color: #b08fe4;
   border-left: #9366DA;
 }
-
 /* Floating modal */
 /* I like using this to add quotes in slides  */
 /* when I am not using the whole slide for quote */
@@ -2984,8 +2522,7 @@ div.default {
   max-height: 600px;
   min-height: 100px;
   z-index: 2000;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
   background: rgba(45, 51, 57, 0.98);
   border-radius: 10px;
   text-align: center;
@@ -3008,7 +2545,6 @@ div.default {
   /* font-family: $base-font; */
   padding: 10px !important;
 }
-
 .caption_p a {
   /* color:  #B2BAE5!important; /*lavender violet*/
   font-style: italic !important;
@@ -3019,8 +2555,7 @@ div.default {
  ****************/
 /* pre and code */
 .reveal pre {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   line-height: 1.2rem;
   width: 100%;
   font-size: 0.8em;
@@ -3028,8 +2563,7 @@ div.default {
 
 .reveal pre code {
   -moz-tab-size: 2;
-  -o-tab-size: 2;
-     tab-size: 2;
+  tab-size: 2;
   font-family: "Overpass Mono", monospace;
 }
 
@@ -3041,30 +2575,21 @@ div.default {
 }
 
 figure.code {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   overflow: hidden;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
 figure.code pre {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   line-height: 1.3rem;
   margin: 0;
   overflow: hidden;
   border-radius: 5px;
 }
-
 figure.code figcaption {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 1ex;
   width: 100%;
   font-size: 0.875em;
@@ -3074,7 +2599,6 @@ figure.code figcaption {
   border-radius: 3px;
   color: #EEEDEF !important;
 }
-
 figure.code pre + figcaption {
   border-top-width: 0;
   border-bottom-width: 1px;
@@ -3083,7 +2607,7 @@ figure.code pre + figcaption {
 /*********************************************
 * APPLY THEMES
 *********************************************/
-.reveal[class*="pattern--"] {
+.reveal[class*=pattern--] {
   background-position: center center;
   background-size: 133vmax auto;
 }
@@ -3092,7 +2616,6 @@ figure.code pre + figcaption {
 * CSS GRID USE
 *********************************************/
 .grid-wrapper {
-  display: -ms-grid;
   display: grid;
 }
 
@@ -3113,29 +2636,19 @@ figure.code pre + figcaption {
 }
 
 .reveal .slides section .grid-wrapper {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   grid-column-gap: 5vmin;
   grid-row-gap: 2vmin;
-  -ms-grid-rows: 5.5vmin 1fr;
-      grid-template-rows: 5.5vmin 1fr;
-  -ms-grid-columns: 1fr 90% 1fr;
-      grid-template-columns: 1fr 90% 1fr;
-      grid-template-areas: ". header ." ". content .";
+  grid-template-rows: 5.5vmin 1fr;
+  grid-template-columns: 1fr 90% 1fr;
+  grid-template-areas: ". header ." ". content .";
   height: 100%;
   padding: 10vmin;
 }
 
 .reveal .slides section .header {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: center;
   display: flex;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: header;
   padding: 5px;
 }
@@ -3146,14 +2659,12 @@ figure.code pre + figcaption {
   opacity: 0.7;
   text-decoration: none;
 }
-
 .header .twitter a {
   color: #5f6c7a;
   /*slate grey*/
   text-decoration: none;
-  font-size: 0.5em !important;
+  font-size: 0.8em !important;
 }
-
 .header .twitter .fa-twitter {
   color: #5f6c7a;
   /*slate grey*/
@@ -3165,9 +2676,6 @@ figure.code pre + figcaption {
   background-repeat: no-repeat;
   background-size: auto 100%;
   display: inline-block;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: header;
   height: 5.5vmin;
   margin-right: 1.5vmin;
@@ -3180,94 +2688,70 @@ figure.code pre + figcaption {
   font-size: 0.8em;
   font-weight: 500;
 }
-
 .theme-poppins-font .reveal .slides section .section {
   font-family: IBMPlexSerif, monospace;
 }
-
 .theme-cunia-font .reveal .slides section .section {
   font-family: Cunia, sans-serif;
 }
-
+.theme-cunia2-font .reveal .slides section .section {
+  font-family: Cunia, sans-serif;
+}
 .theme-plex-font .reveal .slides section .section {
   font-family: IBMPlexSerif, monospace;
 }
-
 .theme-dosis-font .reveal .slides section .section {
   font-family: Dosis, sans-serif;
 }
-
 .theme-leafy-font .reveal .slides section .section {
   font-family: Leafy, cursive;
 }
-
 .theme-allmono-font .reveal .slides section .section {
   font-family: Muli, sans-serif;
 }
-
 .theme-soda-font .reveal .slides section .section {
   font-family: Open Sans, sans-serif;
 }
-
 .theme-klasik-font .reveal .slides section .section {
   font-family: Klasik, sans-serif;
 }
-
 .theme-klasik-rough-font .reveal .slides section .section {
   font-family: Klasik-Rough, sans-serif;
 }
-
 .theme-nox-font .reveal .slides section .section {
   font-family: Annie Use Your Telescope, cursive;
 }
 
 .reveal .slides section .content {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  align-self: center;
   grid-area: content;
 }
 
 .doublegrid {
-  display: -ms-grid;
   display: grid;
 }
 
 .reveal .slides section .doublegrid {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   grid-column-gap: 1vmin;
   grid-row-gap: 2vmin;
-  -ms-grid-rows: 5.5vmin 1fr;
-      grid-template-rows: 5.5vmin 1fr;
-  -ms-grid-columns: 1fr 50%;
-      grid-template-columns: 1fr 50%;
-      grid-template-areas: "header header" "east west ";
+  grid-template-rows: 5.5vmin 1fr;
+  grid-template-columns: 1fr 50%;
+  grid-template-areas: "header header" "east west ";
   height: 100%;
   padding: 10vmin;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #5F4B8B), color-stop(50%, #fff));
   background: linear-gradient(to right, #5F4B8B 50%, #fff 50%);
 }
 
 .reveal .slides section .east {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   text-align: center;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: east;
 }
 
 .reveal .slides section .west {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   text-align: center;
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: west;
 }
 
@@ -3276,14 +2760,13 @@ figure.code pre + figcaption {
   position: relative;
   display: block;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   opacity: 0.8;
 }
 
 /*********************************************
-* PATTERS USED FOR THE SLIDES BACKGROUNDS
+* PATTERNS USED FOR THE SLIDES BACKGROUNDS
 *********************************************/
 .reveal.pattern--stream {
   background-image: url(../assets/patterns//zigzag_purple.svg);
@@ -3293,91 +2776,69 @@ figure.code pre + figcaption {
 .theme-sedona .reveal.pattern--stream .slides section.intro {
   background-color: #BD80E0;
 }
-
 .theme-cyber .reveal.pattern--stream .slides section.intro {
   background-color: #0abdc6;
 }
-
 .theme-bright-blue .reveal.pattern--stream .slides section.intro {
   background-color: #f64c72;
 }
-
 .theme-black .reveal.pattern--stream .slides section.intro {
   background-color: #BDE16B;
 }
-
 .theme-candy .reveal.pattern--stream .slides section.intro {
   background-color: #f45368;
 }
-
 .theme-skeletor .reveal.pattern--stream .slides section.intro {
   background-color: #f0bb5a;
 }
-
 .theme-honey .reveal.pattern--stream .slides section.intro {
   background-color: #F2B632;
 }
-
 .theme-ultra .reveal.pattern--stream .slides section.intro {
   background-color: #E55982;
 }
-
 .theme-borealis .reveal.pattern--stream .slides section.intro {
   background-color: #00DFB4;
 }
-
 .theme-python .reveal.pattern--stream .slides section.intro {
   background-color: #569CCB;
 }
-
 .theme-tank .reveal.pattern--stream .slides section.intro {
   background-color: #9366DA;
 }
-
 .theme-sedona .reveal.pattern--stream .slides section.title {
   background-color: #BD80E0;
 }
-
 .theme-cyber .reveal.pattern--stream .slides section.title {
   background-color: #0abdc6;
 }
-
 .theme-bright-blue .reveal.pattern--stream .slides section.title {
   background-color: #f64c72;
 }
-
 .theme-black .reveal.pattern--stream .slides section.title {
   background-color: #BDE16B;
 }
-
 .theme-candy .reveal.pattern--stream .slides section.title {
   background-color: #f45368;
 }
-
 .theme-skeletor .reveal.pattern--stream .slides section.title {
   background-color: #f0bb5a;
 }
-
 .theme-honey .reveal.pattern--stream .slides section.title {
   background-color: #F2B632;
 }
-
 .theme-ultra .reveal.pattern--stream .slides section.title {
   background-color: #E55982;
 }
-
 .theme-borealis .reveal.pattern--stream .slides section.title {
   background-color: #00DFB4;
 }
-
 .theme-python .reveal.pattern--stream .slides section.title {
   background-color: #569CCB;
 }
-
 .theme-tank .reveal.pattern--stream .slides section.title {
   background-color: #9366DA;
 }
-
 .reveal.pattern--lines {
   background-image: url(../assets/patterns//lines.png);
 }
@@ -3385,146 +2846,113 @@ figure.code pre + figcaption {
 .theme-sedona .reveal.pattern--lines .slides section.intro {
   background-color: #747CA8;
 }
-
 .theme-cyber .reveal.pattern--lines .slides section.intro {
   background-color: #ea00d9;
 }
-
 .theme-bright-blue .reveal.pattern--lines .slides section.intro {
   background-color: #553d67;
 }
-
 .theme-black .reveal.pattern--lines .slides section.intro {
   background-color: #C687E8;
 }
-
 .theme-candy .reveal.pattern--lines .slides section.intro {
   background-color: #e5e338;
 }
-
 .theme-skeletor .reveal.pattern--lines .slides section.intro {
   background-color: #987cb0;
 }
-
 .theme-honey .reveal.pattern--lines .slides section.intro {
   background-color: #677077;
 }
-
 .theme-ultra .reveal.pattern--lines .slides section.intro {
   background-color: #9B84C0;
 }
-
 .theme-borealis .reveal.pattern--lines .slides section.intro {
   background-color: #ABB1D9;
 }
-
 .theme-python .reveal.pattern--lines .slides section.intro {
   background-color: #FDD45E;
 }
-
 .theme-tank .reveal.pattern--lines .slides section.intro {
   background-color: #51637a;
 }
-
 .theme-sedona .reveal.pattern--lines .slides section.title {
   background-color: #747CA8;
   color: #BD80E0;
 }
-
 .theme-cyber .reveal.pattern--lines .slides section.title {
   background-color: #ea00d9;
   color: #0abdc6;
 }
-
 .theme-bright-blue .reveal.pattern--lines .slides section.title {
   background-color: #553d67;
   color: #f64c72;
 }
-
 .theme-black .reveal.pattern--lines .slides section.title {
   background-color: #C687E8;
   color: #BDE16B;
 }
-
 .theme-candy .reveal.pattern--lines .slides section.title {
   background-color: #e5e338;
   color: #f45368;
 }
-
 .theme-skeletor .reveal.pattern--lines .slides section.title {
   background-color: #987cb0;
   color: #f0bb5a;
 }
-
 .theme-honey .reveal.pattern--lines .slides section.title {
   background-color: #677077;
   color: #F2B632;
 }
-
 .theme-ultra .reveal.pattern--lines .slides section.title {
   background-color: #9B84C0;
   color: #E55982;
 }
-
 .theme-borealis .reveal.pattern--lines .slides section.title {
   background-color: #ABB1D9;
   color: #00DFB4;
 }
-
 .theme-python .reveal.pattern--lines .slides section.title {
   background-color: #FDD45E;
   color: #569CCB;
 }
-
 .theme-tank .reveal.pattern--lines .slides section.title {
   background-color: #51637a;
   color: #9366DA;
 }
-
 .theme-sedona .reveal.pattern--lines .progress {
-  background-color: #d1d7e0;
+  background-color: #6bc5d2;
 }
-
 .theme-cyber .reveal.pattern--lines .progress {
   background-color: #a240c5;
 }
-
 .theme-bright-blue .reveal.pattern--lines .progress {
   background-color: #99738e;
 }
-
 .theme-black .reveal.pattern--lines .progress {
   background-color: #F2E38A;
 }
-
 .theme-candy .reveal.pattern--lines .progress {
   background-color: #4ec5c1;
 }
-
 .theme-skeletor .reveal.pattern--lines .progress {
   background-color: #22c4ec;
 }
-
 .theme-honey .reveal.pattern--lines .progress {
   background-color: #B5B5B7;
 }
-
 .theme-ultra .reveal.pattern--lines .progress {
   background-color: #FAC668;
 }
-
 .theme-borealis .reveal.pattern--lines .progress {
   background-color: #7489C7;
 }
-
 .theme-python .reveal.pattern--lines .progress {
   background-color: #EC9B5F;
 }
-
 .theme-tank .reveal.pattern--lines .progress {
   background-color: #A8ACBF;
 }
-
 .reveal.pattern--hex {
   background-image: url("../assets/patterns/hex_pattern.png");
 }
@@ -3532,146 +2960,113 @@ figure.code pre + figcaption {
 .theme-sedona .reveal.pattern--hex .slides section.intro {
   background-color: #747CA8;
 }
-
 .theme-cyber .reveal.pattern--hex .slides section.intro {
   background-color: #ea00d9;
 }
-
 .theme-bright-blue .reveal.pattern--hex .slides section.intro {
   background-color: #553d67;
 }
-
 .theme-black .reveal.pattern--hex .slides section.intro {
   background-color: #C687E8;
 }
-
 .theme-candy .reveal.pattern--hex .slides section.intro {
   background-color: #e5e338;
 }
-
 .theme-skeletor .reveal.pattern--hex .slides section.intro {
   background-color: #987cb0;
 }
-
 .theme-honey .reveal.pattern--hex .slides section.intro {
   background-color: #677077;
 }
-
 .theme-ultra .reveal.pattern--hex .slides section.intro {
   background-color: #9B84C0;
 }
-
 .theme-borealis .reveal.pattern--hex .slides section.intro {
   background-color: #ABB1D9;
 }
-
 .theme-python .reveal.pattern--hex .slides section.intro {
   background-color: #FDD45E;
 }
-
 .theme-tank .reveal.pattern--hex .slides section.intro {
   background-color: #51637a;
 }
-
 .theme-sedona .reveal.pattern--hex .slides section.title {
   background-color: #747CA8;
   color: #BD80E0;
 }
-
 .theme-cyber .reveal.pattern--hex .slides section.title {
   background-color: #ea00d9;
   color: #0abdc6;
 }
-
 .theme-bright-blue .reveal.pattern--hex .slides section.title {
   background-color: #553d67;
   color: #f64c72;
 }
-
 .theme-black .reveal.pattern--hex .slides section.title {
   background-color: #C687E8;
   color: #BDE16B;
 }
-
 .theme-candy .reveal.pattern--hex .slides section.title {
   background-color: #e5e338;
   color: #f45368;
 }
-
 .theme-skeletor .reveal.pattern--hex .slides section.title {
   background-color: #987cb0;
   color: #f0bb5a;
 }
-
 .theme-honey .reveal.pattern--hex .slides section.title {
   background-color: #677077;
   color: #F2B632;
 }
-
 .theme-ultra .reveal.pattern--hex .slides section.title {
   background-color: #9B84C0;
   color: #E55982;
 }
-
 .theme-borealis .reveal.pattern--hex .slides section.title {
   background-color: #ABB1D9;
   color: #00DFB4;
 }
-
 .theme-python .reveal.pattern--hex .slides section.title {
   background-color: #FDD45E;
   color: #569CCB;
 }
-
 .theme-tank .reveal.pattern--hex .slides section.title {
   background-color: #51637a;
   color: #9366DA;
 }
-
 .theme-sedona .reveal.pattern--hex .progress {
-  background-color: #d1d7e0;
+  background-color: #6bc5d2;
 }
-
 .theme-cyber .reveal.pattern--hex .progress {
   background-color: #a240c5;
 }
-
 .theme-bright-blue .reveal.pattern--hex .progress {
   background-color: #99738e;
 }
-
 .theme-black .reveal.pattern--hex .progress {
   background-color: #F2E38A;
 }
-
 .theme-candy .reveal.pattern--hex .progress {
   background-color: #4ec5c1;
 }
-
 .theme-skeletor .reveal.pattern--hex .progress {
   background-color: #22c4ec;
 }
-
 .theme-honey .reveal.pattern--hex .progress {
   background-color: #B5B5B7;
 }
-
 .theme-ultra .reveal.pattern--hex .progress {
   background-color: #FAC668;
 }
-
 .theme-borealis .reveal.pattern--hex .progress {
   background-color: #7489C7;
 }
-
 .theme-python .reveal.pattern--hex .progress {
   background-color: #EC9B5F;
 }
-
 .theme-tank .reveal.pattern--hex .progress {
   background-color: #A8ACBF;
 }
-
 .reveal.pattern--star {
   background-image: url("../assets/patterns/star_pattern.svg");
 }
@@ -3679,146 +3074,113 @@ figure.code pre + figcaption {
 .theme-sedona .reveal.pattern--star .slides section.intro {
   background-color: #747CA8;
 }
-
 .theme-cyber .reveal.pattern--star .slides section.intro {
   background-color: #ea00d9;
 }
-
 .theme-bright-blue .reveal.pattern--star .slides section.intro {
   background-color: #553d67;
 }
-
 .theme-black .reveal.pattern--star .slides section.intro {
   background-color: #C687E8;
 }
-
 .theme-candy .reveal.pattern--star .slides section.intro {
   background-color: #e5e338;
 }
-
 .theme-skeletor .reveal.pattern--star .slides section.intro {
   background-color: #987cb0;
 }
-
 .theme-honey .reveal.pattern--star .slides section.intro {
   background-color: #677077;
 }
-
 .theme-ultra .reveal.pattern--star .slides section.intro {
   background-color: #9B84C0;
 }
-
 .theme-borealis .reveal.pattern--star .slides section.intro {
   background-color: #ABB1D9;
 }
-
 .theme-python .reveal.pattern--star .slides section.intro {
   background-color: #FDD45E;
 }
-
 .theme-tank .reveal.pattern--star .slides section.intro {
   background-color: #51637a;
 }
-
 .theme-sedona .reveal.pattern--star .slides section.title {
   background-color: #747CA8;
   color: #BD80E0;
 }
-
 .theme-cyber .reveal.pattern--star .slides section.title {
   background-color: #ea00d9;
   color: #0abdc6;
 }
-
 .theme-bright-blue .reveal.pattern--star .slides section.title {
   background-color: #553d67;
   color: #f64c72;
 }
-
 .theme-black .reveal.pattern--star .slides section.title {
   background-color: #C687E8;
   color: #BDE16B;
 }
-
 .theme-candy .reveal.pattern--star .slides section.title {
   background-color: #e5e338;
   color: #f45368;
 }
-
 .theme-skeletor .reveal.pattern--star .slides section.title {
   background-color: #987cb0;
   color: #f0bb5a;
 }
-
 .theme-honey .reveal.pattern--star .slides section.title {
   background-color: #677077;
   color: #F2B632;
 }
-
 .theme-ultra .reveal.pattern--star .slides section.title {
   background-color: #9B84C0;
   color: #E55982;
 }
-
 .theme-borealis .reveal.pattern--star .slides section.title {
   background-color: #ABB1D9;
   color: #00DFB4;
 }
-
 .theme-python .reveal.pattern--star .slides section.title {
   background-color: #FDD45E;
   color: #569CCB;
 }
-
 .theme-tank .reveal.pattern--star .slides section.title {
   background-color: #51637a;
   color: #9366DA;
 }
-
 .theme-sedona .reveal.pattern--star .progress {
-  background-color: #d1d7e0;
+  background-color: #6bc5d2;
 }
-
 .theme-cyber .reveal.pattern--star .progress {
   background-color: #a240c5;
 }
-
 .theme-bright-blue .reveal.pattern--star .progress {
   background-color: #99738e;
 }
-
 .theme-black .reveal.pattern--star .progress {
   background-color: #F2E38A;
 }
-
 .theme-candy .reveal.pattern--star .progress {
   background-color: #4ec5c1;
 }
-
 .theme-skeletor .reveal.pattern--star .progress {
   background-color: #22c4ec;
 }
-
 .theme-honey .reveal.pattern--star .progress {
   background-color: #B5B5B7;
 }
-
 .theme-ultra .reveal.pattern--star .progress {
   background-color: #FAC668;
 }
-
 .theme-borealis .reveal.pattern--star .progress {
   background-color: #7489C7;
 }
-
 .theme-python .reveal.pattern--star .progress {
   background-color: #EC9B5F;
 }
-
 .theme-tank .reveal.pattern--star .progress {
   background-color: #A8ACBF;
 }
-
 .reveal.pattern--pupilines {
   background-image: url("../assets/patterns/pupilines.svg");
 }
@@ -3826,190 +3188,146 @@ figure.code pre + figcaption {
 .theme-sedona .reveal.pattern--pupilines .slides section.intro {
   background-color: #747CA8;
 }
-
 .theme-cyber .reveal.pattern--pupilines .slides section.intro {
   background-color: #ea00d9;
 }
-
 .theme-bright-blue .reveal.pattern--pupilines .slides section.intro {
   background-color: #553d67;
 }
-
 .theme-black .reveal.pattern--pupilines .slides section.intro {
   background-color: #C687E8;
 }
-
 .theme-candy .reveal.pattern--pupilines .slides section.intro {
   background-color: #e5e338;
 }
-
 .theme-skeletor .reveal.pattern--pupilines .slides section.intro {
   background-color: #987cb0;
 }
-
 .theme-honey .reveal.pattern--pupilines .slides section.intro {
   background-color: #677077;
 }
-
 .theme-ultra .reveal.pattern--pupilines .slides section.intro {
   background-color: #9B84C0;
 }
-
 .theme-borealis .reveal.pattern--pupilines .slides section.intro {
   background-color: #ABB1D9;
 }
-
 .theme-python .reveal.pattern--pupilines .slides section.intro {
   background-color: #FDD45E;
 }
-
 .theme-tank .reveal.pattern--pupilines .slides section.intro {
   background-color: #51637a;
 }
-
 .theme-sedona .reveal.pattern--pupilines .slides section.title {
   background-color: #747CA8;
   color: #BD80E0;
 }
-
 .theme-cyber .reveal.pattern--pupilines .slides section.title {
   background-color: #ea00d9;
   color: #0abdc6;
 }
-
 .theme-bright-blue .reveal.pattern--pupilines .slides section.title {
   background-color: #553d67;
   color: #f64c72;
 }
-
 .theme-black .reveal.pattern--pupilines .slides section.title {
   background-color: #C687E8;
   color: #BDE16B;
 }
-
 .theme-candy .reveal.pattern--pupilines .slides section.title {
   background-color: #e5e338;
   color: #f45368;
 }
-
 .theme-skeletor .reveal.pattern--pupilines .slides section.title {
   background-color: #987cb0;
   color: #f0bb5a;
 }
-
 .theme-honey .reveal.pattern--pupilines .slides section.title {
   background-color: #677077;
   color: #F2B632;
 }
-
 .theme-ultra .reveal.pattern--pupilines .slides section.title {
   background-color: #9B84C0;
   color: #E55982;
 }
-
 .theme-borealis .reveal.pattern--pupilines .slides section.title {
   background-color: #ABB1D9;
   color: #00DFB4;
 }
-
 .theme-python .reveal.pattern--pupilines .slides section.title {
   background-color: #FDD45E;
   color: #569CCB;
 }
-
 .theme-tank .reveal.pattern--pupilines .slides section.title {
   background-color: #51637a;
   color: #9366DA;
 }
-
 .theme-sedona .reveal.pattern--pupilines .progress {
   background-color: #747CA8;
 }
-
 .theme-cyber .reveal.pattern--pupilines .progress {
   background-color: #ea00d9;
 }
-
 .theme-bright-blue .reveal.pattern--pupilines .progress {
   background-color: #553d67;
 }
-
 .theme-black .reveal.pattern--pupilines .progress {
   background-color: #C687E8;
 }
-
 .theme-candy .reveal.pattern--pupilines .progress {
   background-color: #e5e338;
 }
-
 .theme-skeletor .reveal.pattern--pupilines .progress {
   background-color: #987cb0;
 }
-
 .theme-honey .reveal.pattern--pupilines .progress {
   background-color: #677077;
 }
-
 .theme-ultra .reveal.pattern--pupilines .progress {
   background-color: #9B84C0;
 }
-
 .theme-borealis .reveal.pattern--pupilines .progress {
   background-color: #ABB1D9;
 }
-
 .theme-python .reveal.pattern--pupilines .progress {
   background-color: #FDD45E;
 }
-
 .theme-tank .reveal.pattern--pupilines .progress {
   background-color: #51637a;
 }
-
 .theme-sedona .reveal.pattern--pupilines .controls {
   color: #747CA8;
 }
-
 .theme-cyber .reveal.pattern--pupilines .controls {
   color: #ea00d9;
 }
-
 .theme-bright-blue .reveal.pattern--pupilines .controls {
   color: #553d67;
 }
-
 .theme-black .reveal.pattern--pupilines .controls {
   color: #C687E8;
 }
-
 .theme-candy .reveal.pattern--pupilines .controls {
   color: #e5e338;
 }
-
 .theme-skeletor .reveal.pattern--pupilines .controls {
   color: #987cb0;
 }
-
 .theme-honey .reveal.pattern--pupilines .controls {
   color: #677077;
 }
-
 .theme-ultra .reveal.pattern--pupilines .controls {
   color: #9B84C0;
 }
-
 .theme-borealis .reveal.pattern--pupilines .controls {
   color: #ABB1D9;
 }
-
 .theme-python .reveal.pattern--pupilines .controls {
   color: #FDD45E;
 }
-
 .theme-tank .reveal.pattern--pupilines .controls {
   color: #51637a;
 }
-
 .reveal.pattern--bwlines {
   background-image: url("../assets/patterns/bwlines.svg");
 }
@@ -4017,102 +3335,80 @@ figure.code pre + figcaption {
 .theme-sedona .reveal.pattern--bwlines .slides section.intro {
   background-color: #747CA8;
 }
-
 .theme-cyber .reveal.pattern--bwlines .slides section.intro {
   background-color: #ea00d9;
 }
-
 .theme-bright-blue .reveal.pattern--bwlines .slides section.intro {
   background-color: #553d67;
 }
-
 .theme-black .reveal.pattern--bwlines .slides section.intro {
   background-color: #C687E8;
 }
-
 .theme-candy .reveal.pattern--bwlines .slides section.intro {
   background-color: #e5e338;
 }
-
 .theme-skeletor .reveal.pattern--bwlines .slides section.intro {
   background-color: #987cb0;
 }
-
 .theme-honey .reveal.pattern--bwlines .slides section.intro {
   background-color: #677077;
 }
-
 .theme-ultra .reveal.pattern--bwlines .slides section.intro {
   background-color: #9B84C0;
 }
-
 .theme-borealis .reveal.pattern--bwlines .slides section.intro {
   background-color: #ABB1D9;
 }
-
 .theme-python .reveal.pattern--bwlines .slides section.intro {
   background-color: #FDD45E;
 }
-
 .theme-tank .reveal.pattern--bwlines .slides section.intro {
   background-color: #51637a;
 }
-
 .theme-sedona .reveal.pattern--bwlines .slides section.title {
   background-color: #747CA8;
   color: #BD80E0;
 }
-
 .theme-cyber .reveal.pattern--bwlines .slides section.title {
   background-color: #ea00d9;
   color: #0abdc6;
 }
-
 .theme-bright-blue .reveal.pattern--bwlines .slides section.title {
   background-color: #553d67;
   color: #f64c72;
 }
-
 .theme-black .reveal.pattern--bwlines .slides section.title {
   background-color: #C687E8;
   color: #BDE16B;
 }
-
 .theme-candy .reveal.pattern--bwlines .slides section.title {
   background-color: #e5e338;
   color: #f45368;
 }
-
 .theme-skeletor .reveal.pattern--bwlines .slides section.title {
   background-color: #987cb0;
   color: #f0bb5a;
 }
-
 .theme-honey .reveal.pattern--bwlines .slides section.title {
   background-color: #677077;
   color: #F2B632;
 }
-
 .theme-ultra .reveal.pattern--bwlines .slides section.title {
   background-color: #9B84C0;
   color: #E55982;
 }
-
 .theme-borealis .reveal.pattern--bwlines .slides section.title {
   background-color: #ABB1D9;
   color: #00DFB4;
 }
-
 .theme-python .reveal.pattern--bwlines .slides section.title {
   background-color: #FDD45E;
   color: #569CCB;
 }
-
 .theme-tank .reveal.pattern--bwlines .slides section.title {
   background-color: #51637a;
   color: #9366DA;
 }
-
 .reveal.pattern--space2 {
   background-image: url("../assets/patterns/space2.png");
 }
@@ -4120,102 +3416,80 @@ figure.code pre + figcaption {
 .theme-sedona .reveal.pattern--space2 .slides section.intro {
   background-color: #747CA8;
 }
-
 .theme-cyber .reveal.pattern--space2 .slides section.intro {
   background-color: #ea00d9;
 }
-
 .theme-bright-blue .reveal.pattern--space2 .slides section.intro {
   background-color: #553d67;
 }
-
 .theme-black .reveal.pattern--space2 .slides section.intro {
   background-color: #C687E8;
 }
-
 .theme-candy .reveal.pattern--space2 .slides section.intro {
   background-color: #e5e338;
 }
-
 .theme-skeletor .reveal.pattern--space2 .slides section.intro {
   background-color: #987cb0;
 }
-
 .theme-honey .reveal.pattern--space2 .slides section.intro {
   background-color: #677077;
 }
-
 .theme-ultra .reveal.pattern--space2 .slides section.intro {
   background-color: #9B84C0;
 }
-
 .theme-borealis .reveal.pattern--space2 .slides section.intro {
   background-color: #ABB1D9;
 }
-
 .theme-python .reveal.pattern--space2 .slides section.intro {
   background-color: #FDD45E;
 }
-
 .theme-tank .reveal.pattern--space2 .slides section.intro {
   background-color: #51637a;
 }
-
 .theme-sedona .reveal.pattern--space2 .slides section.title {
   background-color: #747CA8;
   color: #BD80E0;
 }
-
 .theme-cyber .reveal.pattern--space2 .slides section.title {
   background-color: #ea00d9;
   color: #0abdc6;
 }
-
 .theme-bright-blue .reveal.pattern--space2 .slides section.title {
   background-color: #553d67;
   color: #f64c72;
 }
-
 .theme-black .reveal.pattern--space2 .slides section.title {
   background-color: #C687E8;
   color: #BDE16B;
 }
-
 .theme-candy .reveal.pattern--space2 .slides section.title {
   background-color: #e5e338;
   color: #f45368;
 }
-
 .theme-skeletor .reveal.pattern--space2 .slides section.title {
   background-color: #987cb0;
   color: #f0bb5a;
 }
-
 .theme-honey .reveal.pattern--space2 .slides section.title {
   background-color: #677077;
   color: #F2B632;
 }
-
 .theme-ultra .reveal.pattern--space2 .slides section.title {
   background-color: #9B84C0;
   color: #E55982;
 }
-
 .theme-borealis .reveal.pattern--space2 .slides section.title {
   background-color: #ABB1D9;
   color: #00DFB4;
 }
-
 .theme-python .reveal.pattern--space2 .slides section.title {
   background-color: #FDD45E;
   color: #569CCB;
 }
-
 .theme-tank .reveal.pattern--space2 .slides section.title {
   background-color: #51637a;
   color: #9366DA;
 }
-
 .reveal.pattern--space3 {
   background-image: url("../assets/patterns/space3.png");
 }
@@ -4223,47 +3497,36 @@ figure.code pre + figcaption {
 .theme-sedona .reveal.pattern--space3 .slides section.intro {
   background-color: #BD80E0;
 }
-
 .theme-cyber .reveal.pattern--space3 .slides section.intro {
   background-color: #0abdc6;
 }
-
 .theme-bright-blue .reveal.pattern--space3 .slides section.intro {
   background-color: #f64c72;
 }
-
 .theme-black .reveal.pattern--space3 .slides section.intro {
   background-color: #BDE16B;
 }
-
 .theme-candy .reveal.pattern--space3 .slides section.intro {
   background-color: #f45368;
 }
-
 .theme-skeletor .reveal.pattern--space3 .slides section.intro {
   background-color: #f0bb5a;
 }
-
 .theme-honey .reveal.pattern--space3 .slides section.intro {
   background-color: #F2B632;
 }
-
 .theme-ultra .reveal.pattern--space3 .slides section.intro {
   background-color: #E55982;
 }
-
 .theme-borealis .reveal.pattern--space3 .slides section.intro {
   background-color: #00DFB4;
 }
-
 .theme-python .reveal.pattern--space3 .slides section.intro {
   background-color: #569CCB;
 }
-
 .theme-tank .reveal.pattern--space3 .slides section.intro {
   background-color: #9366DA;
 }
-
 .reveal.pattern--trooper {
   background-image: url("../assets/patterns/trooper.jpg");
 }
@@ -4271,102 +3534,80 @@ figure.code pre + figcaption {
 .theme-sedona .reveal.pattern--trooper .slides section.intro {
   background-color: #BD80E0;
 }
-
 .theme-cyber .reveal.pattern--trooper .slides section.intro {
   background-color: #0abdc6;
 }
-
 .theme-bright-blue .reveal.pattern--trooper .slides section.intro {
   background-color: #f64c72;
 }
-
 .theme-black .reveal.pattern--trooper .slides section.intro {
   background-color: #BDE16B;
 }
-
 .theme-candy .reveal.pattern--trooper .slides section.intro {
   background-color: #f45368;
 }
-
 .theme-skeletor .reveal.pattern--trooper .slides section.intro {
   background-color: #f0bb5a;
 }
-
 .theme-honey .reveal.pattern--trooper .slides section.intro {
   background-color: #F2B632;
 }
-
 .theme-ultra .reveal.pattern--trooper .slides section.intro {
   background-color: #E55982;
 }
-
 .theme-borealis .reveal.pattern--trooper .slides section.intro {
   background-color: #00DFB4;
 }
-
 .theme-python .reveal.pattern--trooper .slides section.intro {
   background-color: #569CCB;
 }
-
 .theme-tank .reveal.pattern--trooper .slides section.intro {
   background-color: #9366DA;
 }
-
 .theme-sedona .reveal.pattern--trooper .slides section.title {
   background-color: #BD80E0;
   color: #747CA8;
 }
-
 .theme-cyber .reveal.pattern--trooper .slides section.title {
   background-color: #0abdc6;
   color: #ea00d9;
 }
-
 .theme-bright-blue .reveal.pattern--trooper .slides section.title {
   background-color: #f64c72;
   color: #553d67;
 }
-
 .theme-black .reveal.pattern--trooper .slides section.title {
   background-color: #BDE16B;
   color: #C687E8;
 }
-
 .theme-candy .reveal.pattern--trooper .slides section.title {
   background-color: #f45368;
   color: #e5e338;
 }
-
 .theme-skeletor .reveal.pattern--trooper .slides section.title {
   background-color: #f0bb5a;
   color: #987cb0;
 }
-
 .theme-honey .reveal.pattern--trooper .slides section.title {
   background-color: #F2B632;
   color: #677077;
 }
-
 .theme-ultra .reveal.pattern--trooper .slides section.title {
   background-color: #E55982;
   color: #9B84C0;
 }
-
 .theme-borealis .reveal.pattern--trooper .slides section.title {
   background-color: #00DFB4;
   color: #ABB1D9;
 }
-
 .theme-python .reveal.pattern--trooper .slides section.title {
   background-color: #569CCB;
   color: #FDD45E;
 }
-
 .theme-tank .reveal.pattern--trooper .slides section.title {
   background-color: #9366DA;
   color: #51637a;
 }
-
 .reveal.pattern--fox {
   background-image: url("../assets/patterns/fox.png");
 }
@@ -4374,102 +3615,80 @@ figure.code pre + figcaption {
 .theme-sedona .reveal.pattern--fox .slides section.intro {
   background-color: #BD80E0;
 }
-
 .theme-cyber .reveal.pattern--fox .slides section.intro {
   background-color: #0abdc6;
 }
-
 .theme-bright-blue .reveal.pattern--fox .slides section.intro {
   background-color: #f64c72;
 }
-
 .theme-black .reveal.pattern--fox .slides section.intro {
   background-color: #BDE16B;
 }
-
 .theme-candy .reveal.pattern--fox .slides section.intro {
   background-color: #f45368;
 }
-
 .theme-skeletor .reveal.pattern--fox .slides section.intro {
   background-color: #f0bb5a;
 }
-
 .theme-honey .reveal.pattern--fox .slides section.intro {
   background-color: #F2B632;
 }
-
 .theme-ultra .reveal.pattern--fox .slides section.intro {
   background-color: #E55982;
 }
-
 .theme-borealis .reveal.pattern--fox .slides section.intro {
   background-color: #00DFB4;
 }
-
 .theme-python .reveal.pattern--fox .slides section.intro {
   background-color: #569CCB;
 }
-
 .theme-tank .reveal.pattern--fox .slides section.intro {
   background-color: #9366DA;
 }
-
 .theme-sedona .reveal.pattern--fox .slides section.title {
   background-color: #BD80E0;
   color: #747CA8;
 }
-
 .theme-cyber .reveal.pattern--fox .slides section.title {
   background-color: #0abdc6;
   color: #ea00d9;
 }
-
 .theme-bright-blue .reveal.pattern--fox .slides section.title {
   background-color: #f64c72;
   color: #553d67;
 }
-
 .theme-black .reveal.pattern--fox .slides section.title {
   background-color: #BDE16B;
   color: #C687E8;
 }
-
 .theme-candy .reveal.pattern--fox .slides section.title {
   background-color: #f45368;
   color: #e5e338;
 }
-
 .theme-skeletor .reveal.pattern--fox .slides section.title {
   background-color: #f0bb5a;
   color: #987cb0;
 }
-
 .theme-honey .reveal.pattern--fox .slides section.title {
   background-color: #F2B632;
   color: #677077;
 }
-
 .theme-ultra .reveal.pattern--fox .slides section.title {
   background-color: #E55982;
   color: #9B84C0;
 }
-
 .theme-borealis .reveal.pattern--fox .slides section.title {
   background-color: #00DFB4;
   color: #ABB1D9;
 }
-
 .theme-python .reveal.pattern--fox .slides section.title {
   background-color: #569CCB;
   color: #FDD45E;
 }
-
 .theme-tank .reveal.pattern--fox .slides section.title {
   background-color: #9366DA;
   color: #51637a;
 }
-
 .reveal.pattern--quetzal {
   background-image: url("../assets/patterns/corazon.jpg");
 }
@@ -4477,146 +3696,194 @@ figure.code pre + figcaption {
 .theme-sedona .reveal.pattern--quetzal .slides section.intro {
   background-color: #2A2A49;
 }
-
 .theme-cyber .reveal.pattern--quetzal .slides section.intro {
   background-color: #091833;
 }
-
 .theme-bright-blue .reveal.pattern--quetzal .slides section.intro {
   background-color: #2f2fa2;
 }
-
 .theme-black .reveal.pattern--quetzal .slides section.intro {
   background-color: #2A2A49;
 }
-
 .theme-candy .reveal.pattern--quetzal .slides section.intro {
   background-color: #211a38;
 }
-
 .theme-skeletor .reveal.pattern--quetzal .slides section.intro {
   background-color: #21122c;
 }
-
 .theme-honey .reveal.pattern--quetzal .slides section.intro {
   background-color: #252839;
 }
-
 .theme-ultra .reveal.pattern--quetzal .slides section.intro {
   background-color: #5F4B8B;
 }
-
 .theme-borealis .reveal.pattern--quetzal .slides section.intro {
   background-color: #08142F;
 }
-
 .theme-python .reveal.pattern--quetzal .slides section.intro {
   background-color: #282d32;
 }
-
 .theme-tank .reveal.pattern--quetzal .slides section.intro {
   background-color: #080D15;
 }
-
 .theme-sedona .reveal.pattern--quetzal .slides section.title {
   background-color: #BD80E0;
-  color: #d1d7e0;
+  color: #6bc5d2;
 }
-
 .theme-cyber .reveal.pattern--quetzal .slides section.title {
   background-color: #0abdc6;
   color: #a240c5;
 }
-
 .theme-bright-blue .reveal.pattern--quetzal .slides section.title {
   background-color: #f64c72;
   color: #99738e;
 }
-
 .theme-black .reveal.pattern--quetzal .slides section.title {
   background-color: #BDE16B;
   color: #F2E38A;
 }
-
 .theme-candy .reveal.pattern--quetzal .slides section.title {
   background-color: #f45368;
   color: #4ec5c1;
 }
-
 .theme-skeletor .reveal.pattern--quetzal .slides section.title {
   background-color: #f0bb5a;
   color: #22c4ec;
 }
-
 .theme-honey .reveal.pattern--quetzal .slides section.title {
   background-color: #F2B632;
   color: #B5B5B7;
 }
-
 .theme-ultra .reveal.pattern--quetzal .slides section.title {
   background-color: #E55982;
   color: #FAC668;
 }
-
 .theme-borealis .reveal.pattern--quetzal .slides section.title {
   background-color: #00DFB4;
   color: #7489C7;
 }
-
 .theme-python .reveal.pattern--quetzal .slides section.title {
   background-color: #569CCB;
   color: #EC9B5F;
 }
-
 .theme-tank .reveal.pattern--quetzal .slides section.title {
   background-color: #9366DA;
   color: #A8ACBF;
 }
-
 .theme-sedona .reveal.pattern--quetzal .slides section.title .presentation-url {
   color: #2A2A49;
 }
-
 .theme-cyber .reveal.pattern--quetzal .slides section.title .presentation-url {
   color: #091833;
 }
-
 .theme-bright-blue .reveal.pattern--quetzal .slides section.title .presentation-url {
   color: #2f2fa2;
 }
-
 .theme-black .reveal.pattern--quetzal .slides section.title .presentation-url {
   color: #2A2A49;
 }
-
 .theme-candy .reveal.pattern--quetzal .slides section.title .presentation-url {
   color: #211a38;
 }
-
 .theme-skeletor .reveal.pattern--quetzal .slides section.title .presentation-url {
   color: #21122c;
 }
-
 .theme-honey .reveal.pattern--quetzal .slides section.title .presentation-url {
   color: #252839;
 }
-
 .theme-ultra .reveal.pattern--quetzal .slides section.title .presentation-url {
   color: #5F4B8B;
 }
-
 .theme-borealis .reveal.pattern--quetzal .slides section.title .presentation-url {
   color: #08142F;
 }
-
 .theme-python .reveal.pattern--quetzal .slides section.title .presentation-url {
   color: #282d32;
 }
-
 .theme-tank .reveal.pattern--quetzal .slides section.title .presentation-url {
   color: #080D15;
 }
+.reveal.pattern--memphis {
+  background-image: url("../assets/patterns/memphispink.svg");
+}
 
+.theme-sedona .reveal.pattern--memphis .slides section.intro {
+  background-color: #939abc;
+}
+.theme-cyber .reveal.pattern--memphis .slides section.intro {
+  background-color: #ff1eef;
+}
+.theme-bright-blue .reveal.pattern--memphis .slides section.intro {
+  background-color: #f87d98;
+}
+.theme-black .reveal.pattern--memphis .slides section.intro {
+  background-color: #ada1ce;
+}
+.theme-candy .reveal.pattern--memphis .slides section.intro {
+  background-color: #ebe965;
+}
+.theme-skeletor .reveal.pattern--memphis .slides section.intro {
+  background-color: #b19cc3;
+}
+.theme-honey .reveal.pattern--memphis .slides section.intro {
+  background-color: #cfcfd0;
+}
+.theme-ultra .reveal.pattern--memphis .slides section.intro {
+  background-color: #b6a6d1;
+}
+.theme-borealis .reveal.pattern--memphis .slides section.intro {
+  background-color: #ced2e9;
+}
+.theme-python .reveal.pattern--memphis .slides section.intro {
+  background-color: #fee190;
+}
+.theme-tank .reveal.pattern--memphis .slides section.intro {
+  background-color: #46678e;
+}
+.theme-sedona .reveal.pattern--memphis .slides section.title {
+  background-color: #747CA8;
+  color: #6bc5d2;
+}
+.theme-cyber .reveal.pattern--memphis .slides section.title {
+  background-color: #ea00d9;
+  color: #a240c5;
+}
+.theme-bright-blue .reveal.pattern--memphis .slides section.title {
+  background-color: #553d67;
+  color: #99738e;
+}
+.theme-black .reveal.pattern--memphis .slides section.title {
+  background-color: #C687E8;
+  color: #F2E38A;
+}
+.theme-candy .reveal.pattern--memphis .slides section.title {
+  background-color: #e5e338;
+  color: #4ec5c1;
+}
+.theme-skeletor .reveal.pattern--memphis .slides section.title {
+  background-color: #987cb0;
+  color: #22c4ec;
+}
+.theme-honey .reveal.pattern--memphis .slides section.title {
+  background-color: #677077;
+  color: #B5B5B7;
+}
+.theme-ultra .reveal.pattern--memphis .slides section.title {
+  background-color: #9B84C0;
+  color: #FAC668;
+}
+.theme-borealis .reveal.pattern--memphis .slides section.title {
+  background-color: #ABB1D9;
+  color: #7489C7;
+}
+.theme-python .reveal.pattern--memphis .slides section.title {
+  background-color: #FDD45E;
+  color: #EC9B5F;
+}
+.theme-tank .reveal.pattern--memphis .slides section.title {
+  background-color: #51637a;
+  color: #A8ACBF;
+}
 /*********************************************
  * IMPORT FONTS
  *********************************************/
@@ -4626,134 +3893,105 @@ figure.code pre + figcaption {
   font-style: normal;
   font-weight: 300;
 }
-
 @font-face {
   font-family: "Coves";
   src: url("../../fonts/Coves.woff") format("woff");
   font-style: normal;
   font-weight: 300;
 }
-
 @font-face {
   font-family: "NeoNeon";
   src: url("../../fonts/Neoneon.woff") format("woff");
   font-style: normal;
 }
-
 @font-face {
   font-family: "Klasik";
   src: url("../../fonts/Klasik_Regular.woff") format("woff");
   font-style: normal;
 }
-
 @font-face {
   font-family: "Klasik-Rough";
   src: url("../../fonts/Klasik_Rough.woff") format("woff");
   font-style: normal;
 }
-
 /***********************
 * VARIABLES FOR LIGHT-THEME
 ************************/
 /*****************************
 * USE DEFAULT COLOR FOR SLIDES
 ******************************/
-.reveal .slides section.subsection:not([class*='color--']) {
+.reveal .slides section.subsection:not([class*=color--]) {
   color: #c5c2c2;
 }
-
-.theme-sedona .reveal .slides section.subsection:not([class*='color--']) {
+.theme-sedona .reveal .slides section.subsection:not([class*=color--]) {
   background-color: #2A2A49;
 }
-
-.theme-cyber .reveal .slides section.subsection:not([class*='color--']) {
+.theme-cyber .reveal .slides section.subsection:not([class*=color--]) {
   background-color: #091833;
 }
-
-.theme-bright-blue .reveal .slides section.subsection:not([class*='color--']) {
+.theme-bright-blue .reveal .slides section.subsection:not([class*=color--]) {
   background-color: #2f2fa2;
 }
-
-.theme-black .reveal .slides section.subsection:not([class*='color--']) {
+.theme-black .reveal .slides section.subsection:not([class*=color--]) {
   background-color: #2A2A49;
 }
-
-.theme-candy .reveal .slides section.subsection:not([class*='color--']) {
+.theme-candy .reveal .slides section.subsection:not([class*=color--]) {
   background-color: #211a38;
 }
-
-.theme-skeletor .reveal .slides section.subsection:not([class*='color--']) {
+.theme-skeletor .reveal .slides section.subsection:not([class*=color--]) {
   background-color: #21122c;
 }
-
-.theme-honey .reveal .slides section.subsection:not([class*='color--']) {
+.theme-honey .reveal .slides section.subsection:not([class*=color--]) {
   background-color: #252839;
 }
-
-.theme-ultra .reveal .slides section.subsection:not([class*='color--']) {
+.theme-ultra .reveal .slides section.subsection:not([class*=color--]) {
   background-color: #5F4B8B;
 }
-
-.theme-borealis .reveal .slides section.subsection:not([class*='color--']) {
+.theme-borealis .reveal .slides section.subsection:not([class*=color--]) {
   background-color: #08142F;
 }
-
-.theme-python .reveal .slides section.subsection:not([class*='color--']) {
+.theme-python .reveal .slides section.subsection:not([class*=color--]) {
   background-color: #282d32;
 }
-
-.theme-tank .reveal .slides section.subsection:not([class*='color--']) {
+.theme-tank .reveal .slides section.subsection:not([class*=color--]) {
   background-color: #080D15;
 }
-
-.reveal .slides section:not([class*='color--']) {
+.reveal .slides section:not([class*=color--]) {
   color: #c5c2c2;
 }
-
-.theme-sedona .reveal .slides section:not([class*='color--']) {
+.theme-sedona .reveal .slides section:not([class*=color--]) {
   background-color: #2A2A49;
 }
-
-.theme-cyber .reveal .slides section:not([class*='color--']) {
+.theme-cyber .reveal .slides section:not([class*=color--]) {
   background-color: #091833;
 }
-
-.theme-bright-blue .reveal .slides section:not([class*='color--']) {
+.theme-bright-blue .reveal .slides section:not([class*=color--]) {
   background-color: #2f2fa2;
 }
-
-.theme-black .reveal .slides section:not([class*='color--']) {
+.theme-black .reveal .slides section:not([class*=color--]) {
   background-color: #2A2A49;
 }
-
-.theme-candy .reveal .slides section:not([class*='color--']) {
+.theme-candy .reveal .slides section:not([class*=color--]) {
   background-color: #211a38;
 }
-
-.theme-skeletor .reveal .slides section:not([class*='color--']) {
+.theme-skeletor .reveal .slides section:not([class*=color--]) {
   background-color: #21122c;
 }
-
-.theme-honey .reveal .slides section:not([class*='color--']) {
+.theme-honey .reveal .slides section:not([class*=color--]) {
   background-color: #252839;
 }
-
-.theme-ultra .reveal .slides section:not([class*='color--']) {
+.theme-ultra .reveal .slides section:not([class*=color--]) {
   background-color: #5F4B8B;
 }
-
-.theme-borealis .reveal .slides section:not([class*='color--']) {
+.theme-borealis .reveal .slides section:not([class*=color--]) {
   background-color: #08142F;
 }
-
-.theme-python .reveal .slides section:not([class*='color--']) {
+.theme-python .reveal .slides section:not([class*=color--]) {
   background-color: #282d32;
 }
-
-.theme-tank .reveal .slides section:not([class*='color--']) {
+.theme-tank .reveal .slides section:not([class*=color--]) {
   background-color: #080D15;
 }
-
 .reveal {
   color: white !important;
 }
@@ -4767,12 +4005,10 @@ has a background image and a box with the details */
 #about a {
   color: #c5c2c2;
 }
-
 #about aside {
   background-color: rgba(17, 18, 19, 0.85) !important;
   color: #c5c2c2 !important;
 }
-
 #about .accounts a {
   color: #c5c2c2 !important;
 }
@@ -4787,12 +4023,11 @@ has a background image and a box with the details */
   font-size: 0.8rem;
   text-decoration: none;
 }
-
 .header .twitter a {
   color: #d5d5d5 !important;
 }
-
 .header .twitter .fa-twitter {
   color: #d5d5d5 !important;
 }
+
 /*# sourceMappingURL=dark_theme.css.map */

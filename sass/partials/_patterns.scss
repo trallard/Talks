@@ -1,5 +1,5 @@
 /*********************************************
-* PATTERS USED FOR THE SLIDES BACKGROUNDS
+* PATTERNS USED FOR THE SLIDES BACKGROUNDS
 *********************************************/
 
 // zigzag
@@ -228,5 +228,24 @@
 .reveal.pattern--quetzal .slides section.title .presentation-url {
   @include themify($themes) {
     color: themed("dark-col");
+  }
+}
+
+
+// memphis
+.reveal.pattern--memphis {
+  background-image: url("../assets/patterns/memphispink.svg");
+}
+
+.reveal.pattern--memphis .slides section.intro {
+  @include themify($themes) {
+    background-color: themed("secondary-light");
+  }
+}
+
+.reveal.pattern--memphis .slides section.title {
+  @include themify($themes) {
+    background-color: themed("secondary");
+    color: themed("third");
   }
 }

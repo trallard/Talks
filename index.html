@@ -1,0 +1,1202 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>PyConLatam</title>
+
+    <!-- Reveal themes -->
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/white.css">
+
+    <!-- Full theme:light version -->
+    <link rel="stylesheet" href="css/dark_theme.css">
+    <link rel="stylesheet" href="sass/presentation.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="css/syntax/colorbrewer_syntax.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/personal/Purple.png" />
+
+    <!-- Font awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" media="all">
+
+    <!-- Tania custom icons  -->
+    <link rel="stylesheet" type="text/css" href="assets/icons_collection/font/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+
+    <script src="reveal.js/js/reveal-print.js"></script>
+
+</head>
+
+
+<!-- to do ensure the url is visible -->
+
+<!-- Need to specify the theme here: the first defines the color palette and the 
+	second the font theme -->
+
+<body class="theme-sedona theme-cunia2-font">
+
+    <!-- Adding the background and icon theme here -->
+
+    <div class="reveal pattern--memphis">
+        <div class="slides">
+
+            <!-- Intro slide, this is only the logo in a squared slide -->
+            <!-- <section class="intro">
+                <div class="logo-wrapper">
+                    <div class="logo">
+                    </div>
+                </div>
+            </section> -->
+
+            <!-- Introduction slide -->
+            <section>
+                <section class="title">
+                    <div class="grid-wrapper">
+                        <div class="header">
+                            <!-- Remove logo--full class to only show brand mark -->
+                            <div class="logo logo--full">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h1>Historias de ciencia, comunidad, fracasos y éxitos</h1>
+                            <div class="description" style="color: lighten(#6bc5d2, 10%);">
+                                PyCon Latam 2019
+                            </div>
+                        </div>
+                        <div class="credit">
+                            <hr>
+                            <div class="name" style="color: lighten(#6bc5d2, 10%);">Tania Allard, PhD</div>
+                        </div>
+                        <a class="presentation-url" href="https://biy.ly/2019-08-29-PyCon-Latam">
+                            https://bit.ly/PyConLatam-2019</a>
+                    </div>
+                </section>
+
+                <!--About section: add name, job and handles -->
+                <section class="about" id="about">
+                    <div class="grid-wrapper">
+                        <div class="content">
+                            <aside>
+                                <h2>Tania Allard</h2>
+                                <hr>
+                                <ul class="projects">
+                                    <li>Developer advocate @MSFT</li>
+                                    <li>Data expert</li>
+                                    <li>Open source nerd/advocate</li>
+                                    <!-- <li>Cloud developer advocate</li> -->
+                                </ul>
+                                <hr>
+                                <ul class="accounts">
+                                    <li><a href="https://github.com/trallard">
+                                            <i class="fab fa-github social_icon"></i> <span> trallard</span></a></li>
+                                    <li><a href="https://twitter.com/ixek">
+                                            <i class="fab fa-twitter social_icon"></i><span> ixek</span></a></li>
+                                </ul>
+                            </aside>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Gratitude slide -->
+            <section class="color--code">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"><small>Kudos to Carol W.</small></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <pre>
+                           <code style="max-height: 500px;">
+"""PyCon_Latam_Gratitude.py"""
+
+# Let's take a moment to say thank you
+import all_the_organisers
+
+def say_thanks(name):
+  while True:
+  print(f'Thank you {name}!')
+  make_investment(amount, name)
+                           </code>
+                       </pre>
+
+                    </div>
+                </div>
+            </section>
+            <!-- 
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h1>🤯 ¡Qué emoción!</h1>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h1>🤔 ¿Pero de qué voy a hablar?</h1>
+                    </div>
+            </section> -->
+
+            <!-- intro a Mexico y comunidad -->
+            <!-- <section class="dark_box" style="background-image:url('./assets/pycon_latam/xochi.jpeg');">
+            </section> -->
+            <section class="dark_box" style="background-image:url('./assets/pycon_latam/latino.jpeg');">
+            </section>
+
+            <!-- incertidumbre en la vida -->
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h2>Reflexión e incertidumbre</h2>
+                        <ul class="icon">
+                            <li class="fragment fade-in-then-semi-out">Python 2 vs Python 3</li>
+                            <li class="fragment">Pip vs conda</li>
+                            <li class="fragment">El futuro de Python y OSS</li>
+                            <li class="fragment">Modelos para ayudar y empoderar a nuestros líderes y contribuidores
+                            </li>
+                            <li class="fragment">Mi propio camino y el camino de los demás</li>
+                        </ul>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <div
+                            style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;grid-template-rows:3fr 1fr 1fr 3fr;grid-template-areas:'a a b b''a a b b''c c d d''c c d d';grid-gap:1em;height:65vh">
+                            <h2 style="grid-row:2/4;grid-column:2/4">Todos estamos intentando cambiar el mundo</h2>
+                            <ul style="display:contents;list-style-position:inside; list-style-type:none;">
+                                <li style="grid-area:a;text-align:center" class="fragment">Investigadores</li>
+                                <li style="grid-area:b;justify-self:end;text-align:center" class="fragment">
+                                    Desarrolladores en la industria</small></li>
+                                <li style="grid-area:c;align-self:end;text-align:center" class="fragment">Sin fines de
+                                    lucro</li>
+                                <li style="grid-area:d;align-self:end;justify-self:end;text-align:center"
+                                    class="fragment">Profesores o educadores</li>
+                            </ul>
+                        </div>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <div
+                            style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;grid-template-rows:3fr 1fr 1fr 3fr;grid-template-areas:'a a b b''a a b b''c c d d''c c d d';grid-gap:1em;height:65vh">
+                            <h2 style="grid-row:2/4;grid-column:2/4">Distintas motivaciones y caminos</h2>
+                            <ul style="display:contents;list-style-position:inside; list-style-type:none;">
+                                <li style="grid-area:a;text-align:center">Investigadores</li>
+                                <li style="grid-area:b;justify-self:end;text-align:center">Desarrolladores en la
+                                    industria</small></li>
+                                <li style="grid-area:c;align-self:end;text-align:center">Sin fines de lucro</li>
+                                <li style="grid-area:d;align-self:end;justify-self:end;text-align:center">Profesores o
+                                    educadores</li>
+                            </ul>
+                        </div>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h2>Ikigai - siempre en búsqueda</h2>
+                        <figure class="display">
+                            <img src="./assets/pycon_latam/ikiagi.png" alt="repro">
+                        </figure>
+                    </div>
+            </section>
+
+            <!-- comienza aventura: instrucciones -->
+            <section style="background-color: #747CA8;" data-transition="slide">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h2 style="color: white">✨ Algo diferente... elige tu propia aventura ✨</h2>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <p>Oportunidad de crear partes de la charla</p>
+                        <div class="l-double" style="grid-gap:0.5em">
+                            <div>
+                                <h3 class="fragment">Opción 1</h3>
+                                <div class="fragment">
+                                    <h1>☝🏽</h1>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="fragment">Opción 2</h3>
+                                <div class="fragment">
+                                    <h1>✊🏽</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <section class="color--dark">
+                    <div class="grid-wrapper">
+                        <div class="header">
+                            <div class="logo"></div>
+                            <div class="section">ejemplo</div>
+                            <div class="twitter"><a href="https://twitter.com/ixek">
+                                    <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                        </div>
+                        <div class="content">
+                            El proyecto que mantienes usa Python 2 todavía, tu....
+                            <br><br>
+                            <ol>
+                                <li><a class="fragment" href="#/ejemplo2">Cambias a Python 3</a></li>
+                                <li><a class="fragment" href="#/ejemplo1">No haces nada</a></li>
+                            </ol>
+                        </div>
+                </section>
+
+                <section id="ejemplo1">
+                    <div class="grid-wrapper">
+                        <div class="header">
+                            <div class="logo"></div>
+                            <div class="section"></div>
+                            <div class="twitter"><a href="https://twitter.com/ixek">
+                                    <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                        </div>
+                        <div class="content">
+                            <img src="./assets/pycon_latam/rip.jpg" alt="Source document" class="plain"
+                                style="max-height:65vh;justify-self:center">
+                            <br> <br>
+                            <a href="#/capitulo1">Respawn</a>
+                        </div>
+                </section>
+
+                <section id="ejemplo2">
+                    <div class="grid-wrapper">
+                        <div class="header">
+                            <div class="logo"></div>
+                            <div class="section"></div>
+                            <div class="twitter"><a href="https://twitter.com/ixek">
+                                    <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                        </div>
+                        <div class="content">
+                            <h2>Wooo 🍪</h2>
+                            <a href="#/capitulo1">Respawn</a>
+                        </div>
+                </section>
+            </section>
+
+            <!-- capitulo 1 -->
+            <section class="dark_box"
+                style="background-image:url('./assets/pycon_latam/python-gv1.jpg'); background-size:contain;">
+                <h3 style="background-color: rgba(0, 0, 0, 0.7); position:absolute;  bottom:2%; right : 2%;">
+                    Capítulo 1: El comienzo</h3>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section">CAPÍTULO 1</div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <p class="fragment fade-out">Estás en una isla desierta 🏝. Sin forma de escapar.</p>
+                        <p class="fragment">Estás haciendo el doctorado 🤷🏻‍♀️.
+                            El único modo de salir es haciendo un
+                            proyecto de investigación.
+                        </p>
+
+
+                        <p class="fragment"> 🧪 Tu primer tarea es replicar un estudio publicado.</p>
+
+                    </div>
+            </section>
+
+            <section class="dark_box" style="background-image:url('./assets/pycon_latam/fair.svg');"
+                style="background-size:contain;">
+            </section>
+
+            <!-- codigo: replicar -->
+            <section>
+                <section id="replicar">
+                    <div class="grid-wrapper">
+                        <div class="header">
+                            <div class="logo"></div>
+                            <div class="section">CAPÍTULO 1</div>
+                            <div class="twitter"><a href="https://twitter.com/ixek">
+                                    <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                        </div>
+                        <div class="content">
+                            Los autores te piden firmar un acuerdo para darte acceso al código, tú:
+                            <br> <br>
+                            <ol class="fragment">
+                                <li><a href="#/replicar1">☝🏽 Firmas el acuerdo para ahorrarte tiempo</a></li>
+                                <li><a href="#/replicar2">✊🏽 Decides implementar tu propia versión del código</a></li>
+
+                            </ol>
+                        </div>
+                </section>
+
+                <section id="replicar1">
+                    <div class="grid-wrapper">
+                        <div class="header">
+                            <div class="logo"></div>
+                            <div class="section"></div>
+                            <div class="twitter"><a href="https://twitter.com/ixek">
+                                    <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                        </div>
+                        <div class="content">
+                            <h3>❌ El código no funciona y tampoco puedes acceder los datos </h3>
+
+                            <a href="#/replicar">Respawn</a>
+                        </div>
+                </section>
+
+                <section id="replicar2">
+                    <div class="grid-wrapper">
+                        <div class="header">
+                            <div class="logo"></div>
+                            <div class="section">CAPÍTULO 1</div>
+                            <div class="twitter"><a href="https://twitter.com/ixek">
+                                    <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                        </div>
+                        <div class="content">
+                            <p>Pasas 7 meses trabajando en el código y recolectando datos.
+                                <br> <br> Pero comienzas a darte cuenta que no es tan sencillo como pensabas.
+                            </p>
+                        </div>
+                </section>
+            </section>
+
+            <section class="color--light">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section">https://xkcd.com/1513/</div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <figure class="display">
+                            <img src="./assets/pycon_latam/code_quality.png" alt="repro">
+                        </figure>
+                    </div>
+            </section>
+
+            <section class="dark_box" style="background-image:url('./assets/pycon_latam/carpentries.png');
+            background-size:contain; background-repeat:no-repeat;">
+            </section>
+
+            <section class="color--ice">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h1 style="color: white;">Hay un problema crónico de reproducibilidad</h1>
+                    </div>
+            </section>
+
+            <section class="dark_box" style="background-image:url('./assets/pycon_latam/reinhart.png');">
+            </section>
+
+            <section class="color--light">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <figure class="display">
+                            <img src="./assets/ManchesteR/obataka.png" alt="Obataka" style="max-height:70vh;">
+                        </figure>
+                    </div>
+            </section>
+
+            <section>
+                <section id="repro-club">
+                    <div class="grid-wrapper">
+                        <div class="header">
+                            <div class="logo"></div>
+                            <div class="section"></div>
+                            <div class="twitter"><a href="https://twitter.com/ixek">
+                                    <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                        </div>
+                        <div class="content">
+                            Al ver esto comienzas a cuestionar los métodos de tu unidad.
+
+                            Todos te dicen que así es como siempre se han hecho las cosas.
+                            <br><br>
+                            <ol>
+                                <li><a href="#repro-club1">☝🏽Entiendes que así se hace ciencia en todo el mundo (en
+                                        ese momento)</a></li>
+                                <li><a href="#repro-club2">✊🏽Decides empezar un club de reproducibilidad en tu
+                                        departamento</a></li>
+                            </ol>
+                        </div>
+                </section>
+
+                <section class="color--light" id="repro-club1">
+                    <div class="grid-wrapper">
+                        <div class="header">
+                            <div class="logo"></div>
+                            <div class="section"></div>
+                            <div class="twitter"><a href="https://twitter.com/ixek">
+                                    <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                        </div>
+                        <div class="content">
+                            <figure class="display">
+                                <img src="./assets/pycon_latam/killme.jpg" alt="repro">
+
+                            </figure>
+                            <a href="#repro-club">Respawn</a>
+                        </div>
+                </section>
+
+                <section id="repro-club2" class="dark_box"
+                    style="background-image:url('./assets/pycon_latam/lock.jpg');">
+                </section>
+
+            </section>
+
+            <section class="color--light">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section">No todo esta perdido</div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+
+                        <figure class="display">
+                            <img src="./assets/pycon_latam/ecosystem.png" alt="ecosystem scipy">
+                        </figure>
+                    </div>
+            </section>
+
+
+            <section class="color--light">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section">no todo está perdido</div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <div style="display:grid;grid-template-columns:40% 60%;justify-content:center">
+                            <img data-src="./assets/pycon_latam/pythonlogo.png" alt="Python logo" class="plain"
+                                style="max-height:65vh;justify-self:center">
+                            <img data-src="./assets/pycon_latam/community.jpg" alt="Box tree" class="plain fragment"
+                                style="max-height:75vh">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section">no todo está perdido</div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h2>Lección aprendida:</h2>
+                        <br><br>
+                        La parte más difícil de hacer ciencia reproducible es
+                        <strong-alt>la gente</strong-alt>
+                    </div>
+            </section>
+
+
+            <!-- capitulo 2 -->
+            <section class="dark_box"
+                style="background-image:url('./assets/pycon_latam/python-gv2.jpg'); background-size:fill; background-repeat:no-repeat;">
+                <h3 style="background-color: rgba(0, 0, 0, 0.7); position:absolute;  bottom:2%; right : 2%;">
+                    Capítulo 2: Dónde los caminos se separan</h3>
+            </section>
+
+            <section>
+                <section id="career">
+                    <div class="grid-wrapper">
+                        <div class="header">
+                            <div class="logo"></div>
+                            <div class="section"></div>
+                            <div class="twitter"><a href="https://twitter.com/ixek">
+                                    <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                        </div>
+                        <div class="content">
+                            Se acerca el año final... es hora de tomar decisiones, Tú:
+                            <br> <br>
+                            <ol>
+                                <a href="#career1">
+                                    <li>☝🏽Decides quedarte en academia -> full professor</li>
+                                </a>
+                                <a href="#career1">
+                                    <li>✊🏽Huyes a la primer oportunidad</li>
+                                </a>
+                            </ol>
+                        </div>
+                </section>
+
+                <section id="career1" class="dark_box" style="background-image:url('./assets/pycon_latam/barriers.png');
+                            background-size:contain; background-repeat:no-repeat;">
+                </section>
+
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h1>RSE</h1>
+                        <strong>R</strong>esearch
+                        <strong>S</strong>oftware
+                        <strong>E</strong>ngineering
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h2>Panorama</h2>
+                        <ul class="icon">
+                            <li class="fragment">Suicidio de carrera académica</li>
+                            <li class="fragment">Falta de un plan de carrera</li>
+                            <li class="fragment">Falta de soporte institucional</li>
+                            <li class="fragment">Falta de $$$ </li>
+                        </ul>
+                    </div>
+            </section>
+
+            <section class="dark_box" style="background-image:url('./assets/pycon_latam/hard.png');">
+            </section>
+
+            <section class="dark_box" style="background-image:url('./assets/pycon_latam/odk.png');
+            background-size:contain; background-repeat:no-repeat;">
+            </section>
+
+            <section class="color--light">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <div style="display:grid;grid-template-columns:40% 60%;justify-content:center">
+                            <img src="./assets/pycon_latam/sanjose.png" alt="repro">
+                            <ul class="icon fragment">
+                                <li>Caminar hasta allá</li>
+                                <li>Pagar para que alguien me lleve</li>
+                                <li>Usar la infraestructura pública</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="color--light">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <figure class="display">
+                            <img src="./assets/pycon_latam/sanjose2.png" alt="repro">
+                        </figure>
+                    </div>
+            </section>
+
+            <section class="dark_box" style="background-image:url('./assets/pycon_latam/odk2.png');
+                                            background-size:contain; background-repeat:no-repeat;">
+            </section>
+
+            <section class="dark_box" style="background-image:url('./assets/pycon_latam/pipeline.png');"
+                style="background-size:contain;">
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h2>Lección aprendida:</h2>
+                        Hay que adoptar la incertidumbre
+                    </div>
+            </section>
+
+            <!-- capitulo 3 -->
+            <section class="dark_box"
+                style="background-image:url('./assets/pycon_latam/python-gv3.jpg'); background-size:contain;">
+                <h3 style="background-color: rgba(0, 0, 0, 0.7); position:absolute;  bottom:2%; right : 2%;">
+                    Capítulo 3: Comunidad</h3>
+            </section>
+
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h2>¿Cómo vendes algo?</h2>
+                        <p class="fragment">Creas valor... o demuestras el valor agregado</p>
+                    </div>
+            </section>
+
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h2>RSE</h2>
+                        No sólo es crear código o data, pero implica un cambio
+                        cultural drástico.
+                        <br>
+                        Cambia completamente cómo se ha hecho investigación por décadas.
+                    </div>
+            </section>
+
+            <section>
+
+                <section id="community">
+                    <div class="grid-wrapper">
+                        <div class="header">
+                            <div class="logo"></div>
+                            <div class="section"></div>
+                            <div class="twitter"><a href="https://twitter.com/ixek">
+                                    <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                        </div>
+                        <div class="content">
+                            Quieres cambiar la cultura institucional y el enfoque en el cómputo científico.
+                            Tú:
+                            <br> <br>
+                            <ol>
+                                <a href="#community1">
+                                    <li>☝🏽Esperas que las personas en alto nivel impulsen el cambio </li>
+                                </a>
+                                <a href="#community2">
+                                    <li>✊🏽Decides crear y fortalecer la comunidad institucional y nacional</li>
+                                </a>
+                            </ol>
+
+                        </div>
+                </section>
+
+                <section id="community1" class="dark_box"
+                    style="background-image:url('./assets/pycon_latam/slow.jpg');">
+
+                </section>
+
+                <section id="community2" class="dark_box"
+                    style="background-image:url('./assets/pycon_latam/THIS_IS_FINE_BIT.svg');">
+                </section>
+
+
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        ¿Cuántos intentos debes hacer para crear una comunidad que cuestione el status quo?
+                        <br> <br>
+                        <ul class="icon">
+                            <li>2 -4 ?</li>
+                            <li>5 ?</li>
+                            <li>10 +</li>
+                        </ul>
+
+                    </div>
+            </section>
+
+            <section class="dark_box" style="background-image:url('./assets/pycon_latam/rseconf.jpeg');">
+            </section>
+
+
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>Historia real</h3>
+                        Yo: Necesito acceso al código, necesitan comenzar a usar control de versiones
+                        <br>
+                        *: No tenemos un problema de versiones, ahora te mandamos el archivo
+                        <br>
+                        Yo: Este código no está arrojando las respuestas que debería y tampoco es compatible con las
+                        versiones en el cluster
+                        <br><br>
+                        <p class="fragment">*: ah... es la versión incorrecta</p>
+                    </div>
+            </section>
+
+            <section class="color--light">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <figure class="display">
+                            <img src="./assets/pycon_latam/rseuk.png" alt="repro">
+                        </figure>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h1>Nada es tan poderoso como una idea a la cuál le ha llegado su tiempo</h1>
+                    </div>
+            </section>
+
+            <section class="color--light">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h4> SSI fellowship</h4>
+                        <figure class="display">
+                            <img src="./assets/pycon_latam/ssi.png" alt="repro">
+                        </figure>
+                    </div>
+            </section>
+
+            <section class="dark_box" style="background-image:url('./assets/pycon_latam/joss.png');">
+            </section>
+
+            <section class="dark_box" style="background-image:url('./assets/pycon_latam/community.svg');">
+            </section>
+
+            <!-- capitulo 4 -->
+            <section class="dark_box"
+                style="background-image:url('./assets/pycon_latam/python-gv4.jpg'); background-size:contain;">
+                <h3 style="background-color: rgba(0, 0, 0, 0.7); position:absolute;  bottom:2%; right : 2%;">
+                    Capítulo 4: El principio y final</h3>
+            </section>
+
+            <section class="color--light">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <figure class="display">
+                            <img src="./assets/pycon_latam/rsesoc.png" alt="repro">
+                        </figure>
+                    </div>
+            </section>
+
+            <section class="color--light">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <figure class="display">
+                            <img src="./assets/pycon_latam/rsesocs.png" alt="repro">
+                        </figure>
+                    </div>
+            </section>
+
+            <section class="color--light">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <figure class="display">
+                            <img src="./assets/pycon_latam/leaders.png" alt="repro" style="max-height: 70vh;">
+                        </figure>
+                    </div>
+            </section>
+
+            <section class="color--light">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h4>RSE groups 2018</h4>
+                        <figure class="display">
+                            <img src="./assets/pycon_latam/groups.png" alt="repro" style="max-height: 70vh;">
+                        </figure>
+                    </div>
+            </section>
+
+            <section class="color--light">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section">Turing way - a handbook for reproducible science</div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <figure class="display">
+                            <img src="./assets/pycon_latam/turingway.png" alt="repro" style="max-height: 70vh;">
+                        </figure>
+                        <a
+                            href="https://the-turing-way.netlify.com/introduction/introduction">https://the-turing-way.netlify.com/introduction/introduction</a>
+                    </div>
+            </section>
+
+            <section class="color--light">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section">Red de reproducibilidad en el UK</div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <figure class="display">
+                            <img src="./assets/pycon_latam/uknetwork.png" alt="repro" style="max-height: 70vh;">
+                        </figure>
+
+                    </div>
+            </section>
+
+            <section class="color--light">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <!-- <div class="section">Using data</div> -->
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+
+                    <div class="content">
+                        <figure class="display">
+                            <img src="./assets/pycon_latam/ucl.png" alt="repro">
+                        </figure>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>¿Qué sigue?</h3>
+                        <ul class="icon">
+                            <li class="fragment">Esquema de mentorado para código científico</li>
+                            <li class="fragment">RSE en Latam y África</li>
+                            <li class="fragment">Infraestructura tradicional -> futuro </li>
+                            <li class="fragment">Modelos de sustentabilidad en cómputo científico</li>
+                        </ul>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h3>¿Qué sigue?</h3>
+                        <ul class="icon">
+                            <li class="fragment">Mentored sprints diverse beginners</li>
+                            <li class="fragment">Sustentabilidad de OSS</li>
+                            <li class="fragment">Maintainers & community managers </li>
+
+                        </ul>
+                    </div>
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h1>¿A dónde te va a llevar Python?</h1>
+                    </div>
+            </section>
+
+            <section class="dark_box" style="background-image:url('./assets/pycon_latam/passion.jpg');">
+            </section>
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <h4>Eligiendo nuestro camino</h4>
+                        <ul class="icon">
+                            <li class="fragment">Usando, apoyando y contribuyendo a OSS</li>
+                            <li class="fragment">Desarrollando mejores prácticas </li>
+                            <li class="fragment">Cuidando de ti y tus maintainers para evitar burnout</li>
+                            <li class="fragment">Apostando por la infraestructura abierta </li>
+                            <li class="fragment">Enfocándote en el impacto</li>
+                        </ul>
+                    </div>
+            </section>
+
+            <!-- End slide -->
+            <section id="end" class="end color--dark">
+                <div class="grid-wrapper">
+                    <div class="content">
+                        <h2>Gracias</h2><br><br>
+                        <p style="text-align:left;"><a href="https://twitter.com/ixek"><i
+                                    class="fab fa-twitter-square"></i>
+                                <span></span>ixek</span></a><br>
+                            <a href="https://twitter.com/ixek"><i class="fas fa-envelope"></i></i>
+                                <span>tania.allard@microsoft.com</span></a></p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <ul class="icon">
+                            <li>Imágenes de Unsplash</li>
+                            <li>Ilustraciones comisionadas de Good Vibes</li>
+                            <li>Turing way & Scriberia http://doi.org/10.5281/zenodo.3332808</li>
+                            <li>Gracias infinitas al equipo de Jupyter, RSE UK, Kirstie Whitaker, ODK, y toda la
+                                comunidad de Python</li>
+                        </ul>
+                    </div>
+            </section>
+            <!--  -->
+            <!--  -->
+
+
+
+            <!-- <section>
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section"></div>
+                        <div class="twitter"><a href="https://twitter.com/ixek">
+                                <i class="fab fa-twitter"></i> <span>ixek</span></a></div>
+                    </div>
+                    <div class="content">
+                        <div class="l-double" style="grid-gap:0.5em">
+                            <div>
+                                <h2>Inner display type</h2>
+                                <div class="fragment">
+                                    <p>Defines the generated formatting context for descendant boxes</p>
+                                    <img data-src="img/inside-display.svg" alt="Inner display type" class="plain"
+                                        style="max-height:35vh">
+                                </div>
+                            </div>
+                            <div>
+                                <h2>Outer display type</h2>
+                                <div class="fragment">
+                                    <p>Dictates a principal box's own participation in flow layout</p>
+                                    <img data-src="img/outside-display.svg" alt="Outer display type" class="plain"
+                                        style="max-height:45vh">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+
+
+
+        </div>
+    </div>
+
+    <script src="reveal.js/lib/js/head.min.js"></script>
+    <script src="reveal.js/js/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            // Show the control arrows
+            controls: true,
+            // Location of the arrows
+            controlsLayout: 'bottom-right',
+            // Visibility rule for backwards navigation arrows; "faded", "hidden"
+            // or "visible"
+            controlsBackArrows: 'hidden',
+            progress: true,
+            slideNumber: false,
+            center: false,
+            width: "100%",
+            height: "100%",
+            margin: 0,
+            minScale: 1,
+            maxScale: 1,
+            history: true,
+            touch: true,
+            transition: 'none',
+
+            // Arrow keys progress through sub-slides
+            // keyboard: {
+            // 	39: 'next', // right key
+            // 	37: 'prev'  // left key
+            // },
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [
+                { src: 'reveal.js/plugin/markdown/marked.js' },
+                { src: 'reveal.js/plugin/markdown/markdown.js' },
+                { src: 'reveal.js/plugin/notes/notes.js', async: true },
+                { src: 'js/embed-tweet.js' },
+                {
+                    src: 'reveal.js/plugin/highlight/highlight.js',
+                    async: true,
+                    callback: function () { hljs.initHighlightingOnLoad(); }
+                }
+            ]
+        });
+    </script>
+
+
+</body>
+
+</html>
